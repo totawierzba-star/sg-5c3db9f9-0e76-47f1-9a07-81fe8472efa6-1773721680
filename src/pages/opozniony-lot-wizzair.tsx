@@ -11,7 +11,7 @@ export default function OpoznionyLotWizzair() {
       <SEO
         title="Opóźniony lot Wizzair – czy należy się odszkodowanie?"
         description="Poznaj swoje prawa przy opóźnionym locie Wizzair i sprawdź możliwość uzyskania pieniędzy."
-        url="https://lotproblem.pl/opozniony-lot-wizzair"
+        url="https://problemlot.com/opozniony-lot-wizzair"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

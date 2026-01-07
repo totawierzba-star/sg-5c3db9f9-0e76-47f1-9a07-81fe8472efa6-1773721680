@@ -11,7 +11,7 @@ export default function OpoznionyLotWarszawa() {
       <SEO
         title="Opóźniony lot Warszawa – prawa pasażera i odszkodowanie"
         description="Co zrobić gdy Twój lot z Warszawy jest opóźniony? Sprawdź swoje prawa."
-        url="https://lotproblem.pl/opozniony-lot-warszawa"
+        url="https://problemlot.com/opozniony-lot-warszawa"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

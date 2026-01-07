@@ -11,7 +11,7 @@ export default function OpoznionyLot() {
       <SEO
         title="Opóźniony lot – co zrobić i ile odszkodowania?"
         description="Dowiedz się, co zrobić gdy lot jest opóźniony i kiedy należy Ci się odszkodowanie do 600 €."
-        url="https://lotproblem.pl/opozniony-lot"
+        url="https://problemlot.com/opozniony-lot"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

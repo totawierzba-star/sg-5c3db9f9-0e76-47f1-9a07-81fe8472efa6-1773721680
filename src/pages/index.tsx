@@ -11,7 +11,7 @@ export default function Home() {
       <SEO
         title="Opóźniony lub odwołany lot – sprawdź odszkodowanie do 600 €"
         description="Masz problem z lotem? Sprawdź, czy przysługuje Ci nawet 600 € odszkodowania za opóźniony lub odwołany lot."
-        url="https://lotproblem.pl"
+        url="https://problemlot.com"
       />
 
       <section className="bg-gradient-to-br from-primary/10 via-background to-primary/5 py-20 md:py-28">

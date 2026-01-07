@@ -1,5 +1,5 @@
-# robots.txt for LotProblem.pl
+# robots.txt for ProblemLot.com
 User-agent: *
 Allow: /
 
-Sitemap: https://lotproblem.pl/sitemap.xml
+Sitemap: https://problemlot.com/sitemap.xml

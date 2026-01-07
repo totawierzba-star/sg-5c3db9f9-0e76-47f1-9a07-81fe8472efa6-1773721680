@@ -11,7 +11,7 @@ export default function OpoznionyLotLOT() {
       <SEO
         title="Opóźniony lot LOT – odszkodowanie i zwrot kosztów"
         description="Sprawdź, kiedy LOT musi wypłacić odszkodowanie za opóźniony lot."
-        url="https://lotproblem.pl/opozniony-lot-lot"
+        url="https://problemlot.com/opozniony-lot-lot"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

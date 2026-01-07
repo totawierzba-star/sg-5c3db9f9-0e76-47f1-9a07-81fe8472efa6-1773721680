@@ -11,7 +11,7 @@ export default function OpoznionyLotKrakow() {
       <SEO
         title="Opóźniony lot Kraków – odszkodowanie"
         description="Twój lot z Krakowa jest opóźniony? Sprawdź czy przysługuje Ci rekompensata."
-        url="https://lotproblem.pl/opozniony-lot-krakow"
+        url="https://problemlot.com/opozniony-lot-krakow"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

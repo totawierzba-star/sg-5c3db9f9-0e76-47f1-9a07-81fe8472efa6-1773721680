@@ -11,7 +11,7 @@ export default function OpoznionyLotLufthansa() {
       <SEO
         title="Opóźniony lot Lufthansa – prawa pasażera"
         description="Dowiedz się, jakie odszkodowanie przysługuje przy opóźnieniu lotu Lufthansa."
-        url="https://lotproblem.pl/opozniony-lot-lufthansa"
+        url="https://problemlot.com/opozniony-lot-lufthansa"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

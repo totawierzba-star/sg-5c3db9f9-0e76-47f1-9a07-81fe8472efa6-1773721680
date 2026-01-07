@@ -11,7 +11,7 @@ export default function IleMozeszDostac() {
       <SEO
         title="Ile odszkodowania za opóźniony lot? 250 €, 400 €, 600 €"
         description="Sprawdź, ile pieniędzy możesz otrzymać za opóźniony lub odwołany lot."
-        url="https://lotproblem.pl/ile-mozesz-dostac"
+        url="https://problemlot.com/ile-mozesz-dostac"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

@@ -11,7 +11,7 @@ export default function OpoznionyLotRyanair() {
       <SEO
         title="Opóźniony lot Ryanair – odszkodowanie i prawa pasażera"
         description="Sprawdź, kiedy Ryanair musi wypłacić odszkodowanie za opóźniony lot."
-        url="https://lotproblem.pl/opozniony-lot-ryanair"
+        url="https://problemlot.com/opozniony-lot-ryanair"
       />
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">

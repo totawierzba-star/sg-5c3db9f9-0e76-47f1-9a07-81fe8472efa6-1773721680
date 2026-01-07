@@ -23,7 +23,7 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl hover:opacity-80 transition-opacity">
               <Plane className="h-6 w-6 text-primary" />
-              <span>LotProblem.pl</span>
+              <span>ProblemLot.com</span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-6">
@@ -82,7 +82,7 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <div className="flex items-center gap-2 font-display font-bold text-lg mb-4">
                 <Plane className="h-5 w-5 text-primary" />
-                <span>LotProblem.pl</span>
+                <span>ProblemLot.com</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Pomoc pasażerom w uzyskaniu odszkodowania za problemy z lotami zgodnie z rozporządzeniem UE 261/2004.
@@ -159,7 +159,7 @@ export function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2026 LotProblem.pl. Wszystkie prawa zastrzeżone.</p>
+            <p>© 2026 ProblemLot.com. Wszystkie prawa zastrzeżone.</p>
             <p className="mt-2">Profesjonalna pomoc w uzyskaniu odszkodowania lotniczego do 600 €</p>
           </div>
         </div>
