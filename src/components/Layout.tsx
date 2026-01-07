@@ -18,10 +18,10 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b bg-white sticky top-0 z-50">
+      <header className="border-b bg-white sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl">
+            <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl hover:opacity-80 transition-opacity">
               <Plane className="h-6 w-6 text-primary" />
               <span>LotProblem.pl</span>
             </Link>
@@ -36,7 +36,7 @@ export function Layout({ children }: LayoutProps) {
                   {link.label}
                 </Link>
               ))}
-              <Button asChild>
+              <Button asChild className="shadow-md hover:shadow-lg transition-shadow">
                 <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
                   Sprawdź odszkodowanie
                 </a>
@@ -78,33 +78,54 @@ export function Layout({ children }: LayoutProps) {
 
       <footer className="bg-secondary/30 border-t mt-20">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 font-display font-bold text-lg mb-4">
                 <Plane className="h-5 w-5 text-primary" />
                 <span>LotProblem.pl</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Pomoc pasażerom w uzyskaniu odszkodowania za problemy z lotami.
+                Pomoc pasażerom w uzyskaniu odszkodowania za problemy z lotami zgodnie z rozporządzeniem UE 261/2004.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Najczęściej wyszukiwane</h3>
+              <h3 className="font-semibold mb-4">Linie lotnicze</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/opozniony-lot-ryanair" className="text-muted-foreground hover:text-primary">
+                  <Link href="/opozniony-lot-ryanair" className="text-muted-foreground hover:text-primary transition-colors">
                     Opóźniony lot Ryanair
                   </Link>
                 </li>
                 <li>
-                  <Link href="/opozniony-lot-wizzair" className="text-muted-foreground hover:text-primary">
+                  <Link href="/opozniony-lot-wizzair" className="text-muted-foreground hover:text-primary transition-colors">
                     Opóźniony lot Wizzair
                   </Link>
                 </li>
                 <li>
-                  <Link href="/opozniony-lot-lot" className="text-muted-foreground hover:text-primary">
+                  <Link href="/opozniony-lot-lot" className="text-muted-foreground hover:text-primary transition-colors">
                     Opóźniony lot LOT
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/opozniony-lot-lufthansa" className="text-muted-foreground hover:text-primary transition-colors">
+                    Opóźniony lot Lufthansa
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Lotniska</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/opozniony-lot-warszawa" className="text-muted-foreground hover:text-primary transition-colors">
+                    Opóźniony lot Warszawa
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/opozniony-lot-krakow" className="text-muted-foreground hover:text-primary transition-colors">
+                    Opóźniony lot Kraków
                   </Link>
                 </li>
               </ul>
@@ -114,7 +135,12 @@ export function Layout({ children }: LayoutProps) {
               <h3 className="font-semibold mb-4">Informacje</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/ile-mozesz-dostac" className="text-muted-foreground hover:text-primary">
+                  <Link href="/opozniony-lot" className="text-muted-foreground hover:text-primary transition-colors">
+                    Opóźniony lot
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/ile-mozesz-dostac" className="text-muted-foreground hover:text-primary transition-colors">
                     Ile możesz dostać?
                   </Link>
                 </li>
@@ -123,7 +149,7 @@ export function Layout({ children }: LayoutProps) {
                     href="https://claimwinger.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary"
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     ClaimWinger
                   </a>
@@ -134,6 +160,7 @@ export function Layout({ children }: LayoutProps) {
 
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>© 2026 LotProblem.pl. Wszystkie prawa zastrzeżone.</p>
+            <p className="mt-2">Profesjonalna pomoc w uzyskaniu odszkodowania lotniczego do 600 €</p>
           </div>
         </div>
       </footer>
