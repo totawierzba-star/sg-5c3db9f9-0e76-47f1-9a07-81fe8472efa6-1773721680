@@ -38,7 +38,7 @@ export default function Home() {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
-              ⚡ Sprawdzenie zajmuje 2 minuty • 💰 Bez kosztów początkowych • ⚖️ 98% skuteczności
+              ⚡ Sprawdzenie zajmuje 2 minuty • 💰 Bez kosztów początkowych
             </p>
           </div>
         </div>
@@ -283,8 +283,8 @@ export default function Home() {
               <Card className="p-6 flex gap-4 border-2 hover:border-primary transition-colors">
                 <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">98% skuteczności</h3>
-                  <p className="text-sm text-muted-foreground">Wysokie wskaźniki wygranych spraw i zadowolenia klientów.</p>
+                  <h3 className="font-semibold text-lg mb-2">Wysokie wskaźniki sukcesu</h3>
+                  <p className="text-sm text-muted-foreground">Profesjonalna obsługa i skuteczne dochodzenie roszczeń.</p>
                 </div>
               </Card>
             </div>
