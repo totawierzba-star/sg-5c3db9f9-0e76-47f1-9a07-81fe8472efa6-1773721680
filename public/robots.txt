@@ -1,0 +1,5 @@
+# robots.txt for LotProblem.pl
+User-agent: *
+Allow: /
+
+Sitemap: https://lotproblem.pl/sitemap.xml
