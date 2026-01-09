@@ -22,9 +22,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/opozniony-lot"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
               >
                 Opóźniony lot
+              </Link>
+              <Link
+                href="/odwolany-lot"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+              >
+                Odwołany lot
               </Link>
               
               {/* Blog Dropdown */}
@@ -88,14 +94,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200">
-              <div className="flex flex-col space-y-4">
+            <div className="md:hidden border-t border-gray-200 dark:border-gray-700">
+              <div className="px-4 py-6 space-y-4">
                 <Link
                   href="/opozniony-lot"
-                  className="text-gray-700 hover:text-blue-600 transition-colors"
+                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Opóźniony lot
+                </Link>
+                <Link
+                  href="/odwolany-lot"
+                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Odwołany lot
                 </Link>
                 
                 {/* Mobile Blog Section */}
