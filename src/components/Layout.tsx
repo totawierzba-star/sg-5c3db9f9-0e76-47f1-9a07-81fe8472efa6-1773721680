@@ -14,21 +14,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="text-2xl font-bold text-blue-600">
-              LotProblem.pl
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">P</span>
+              </div>
+              <span className="text-xl font-bold text-gray-900 dark:text-white">
+                ProblemLot.com
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center gap-8 ml-12">
               <Link
                 href="/opozniony-lot"
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Opóźniony lot
               </Link>
               <Link
                 href="/odwolany-lot"
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Odwołany lot
               </Link>
@@ -39,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 onMouseEnter={() => setBlogDropdownOpen(true)}
                 onMouseLeave={() => setBlogDropdownOpen(false)}
               >
-                <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center gap-1">
+                <button className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1">
                   Blog
                   <ChevronDown className="w-4 h-4" />
                 </button>
@@ -61,7 +66,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
               <Link
                 href="/ile-mozesz-dostac"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Ile możesz dostać?
               </Link>
@@ -157,7 +162,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Column 1 */}
             <div>
-              <h3 className="text-lg font-bold mb-4">LotProblem.pl</h3>
+              <h3 className="text-lg font-bold mb-4">ProblemLot.com</h3>
               <p className="text-gray-400 text-sm">
                 Pomoc pasażerom w dochodzeniu odszkodowań za opóźnione i
                 odwołane loty.
@@ -234,8 +239,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-            <p>© 2026 LotProblem.pl. Wszelkie prawa zastrzeżone.</p>
+          <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+            <p>© 2026 ProblemLot.com - Wszystkie prawa zastrzeżone</p>
+            <p className="mt-2">
+              Strona informacyjna. Roszczenia obsługuje{" "}
+              <a
+                href="https://claimwinger.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                ClaimWinger
+              </a>
+            </p>
           </div>
         </div>
       </footer>
