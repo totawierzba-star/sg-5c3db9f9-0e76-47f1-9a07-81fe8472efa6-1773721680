@@ -24,16 +24,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8 ml-12">
+            <div className="hidden md:flex items-center space-x-6 ml-12">
               <Link
                 href="/opozniony-lot"
-                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Opóźniony lot
               </Link>
               <Link
                 href="/odwolany-lot"
-                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Odwołany lot
               </Link>
@@ -44,21 +44,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 onMouseEnter={() => setBlogDropdownOpen(true)}
                 onMouseLeave={() => setBlogDropdownOpen(false)}
               >
-                <button className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1">
+                <button
+                  className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1"
+                >
                   Blog
-                  <ChevronDown className="w-4 h-4" />
+                  <ChevronDown className="w-3 h-3" />
                 </button>
                 
                 {blogDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg py-2">
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50">
                     <Link
                       href="/blog/odwolany-lot-historia-pasazera"
-                      className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
                     >
-                      <div className="font-medium">Mój lot został odwołany</div>
-                      <div className="text-sm text-gray-500 mt-1">
-                        Historia pasażera
-                      </div>
+                      Odwołany lot – historia pasażera
                     </Link>
                   </div>
                 )}
@@ -66,19 +65,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
               <Link
                 href="/ile-mozesz-dostac"
-                className="text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Ile możesz dostać?
               </Link>
-              <a
-                href="https://claimwinger.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Sprawdź odszkodowanie
-              </a>
-              <ThemeSwitch />
             </div>
 
             {/* Mobile menu button */}
