@@ -107,15 +107,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
                 
                 {/* Mobile Blog Section */}
-                <div className="border-l-2 border-gray-200 pl-4">
-                  <div className="text-sm font-medium text-gray-500 mb-2">Blog</div>
+                <div className="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
+                  <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">Blog</div>
                   <Link
                     href="/blog/odwolany-lot-historia-pasazera"
-                    className="block text-gray-700 hover:text-blue-600 transition-colors"
+                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <div className="font-medium">Mój lot został odwołany</div>
-                    <div className="text-sm text-gray-500 mt-1">
+                    <div className="font-medium text-sm">Mój lot został odwołany</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                       Historia pasażera
                     </div>
                   </Link>
@@ -123,7 +123,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
                 <Link
                   href="/ile-mozesz-dostac"
-                  className="text-gray-700 hover:text-blue-600 transition-colors"
+                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Ile możesz dostać?
@@ -132,7 +132,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   href="https://claimwinger.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center"
+                  className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Sprawdź odszkodowanie
