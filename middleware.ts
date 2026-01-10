@@ -1,0 +1,20 @@
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(request: NextRequest) {
+  const hostname = request.headers.get("host") || "";
+  
+  // Redirect www to non-www
+  if (hostname.startsWith("www.")) {
+    const url = request.nextUrl.clone();
+    url.host = hostname.replace("www.", "");
+    return NextResponse.redirect(url, 301);
+  }
+  
+  return NextResponse.next();
+}
+
+// Apply middleware to all routes
+export const config = {
+  matcher: "/:path*",
+};
