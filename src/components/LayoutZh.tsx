@@ -148,17 +148,17 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </Link>
                 <Link
                   href="/zh/blog/beijing-capital-delayed-flight-compensation"
-                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   北京首都机场延误
                 </Link>
                 <Link
-                  href="/zh/blog/beijing-capital-cancelled-flight-compensation"
-                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  href="/zh/blog/chinese-citizens-eu261-compensation-guide"
+                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  北京首都机场取消
+                  中国公民完整指南
                 </Link>
               </div>
               <Link
