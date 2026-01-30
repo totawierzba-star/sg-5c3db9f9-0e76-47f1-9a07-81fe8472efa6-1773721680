@@ -69,6 +69,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
               >
                 Ile możesz dostać?
               </Link>
+
+              {/* Language Switcher */}
+              <Link
+                href="/zh"
+                className="flex items-center gap-1 text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <span>中文</span>
+              </Link>
+
+              <ThemeSwitch />
             </div>
 
             {/* Mobile menu button */}
@@ -90,7 +100,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden border-t border-gray-200 dark:border-gray-700">
-              <div className="px-4 py-6 space-y-4">
+              <div className="px-6 py-8 space-y-6">
                 <Link
                   href="/opozniony-lot"
                   className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
@@ -128,6 +138,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 >
                   Ile możesz dostać?
                 </Link>
+
+                {/* Language Switcher Mobile */}
+                <Link
+                  href="/zh"
+                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  🌐 中文版本
+                </Link>
+
                 <a
                   href="https://claimwinger.com"
                   target="_blank"

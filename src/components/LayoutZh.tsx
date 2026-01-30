@@ -61,6 +61,14 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 赔偿计算器
               </Link>
 
+              {/* Language Switcher */}
+              <Link
+                href="/"
+                className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+              >
+                <span>PL</span>
+              </Link>
+
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
@@ -134,6 +142,16 @@ export function LayoutZh({ children }: LayoutZhProps) {
               >
                 赔偿计算器
               </Link>
+
+              {/* Language Switcher Mobile */}
+              <Link
+                href="/"
+                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                🌐 Polski
+              </Link>
+
               <a
                 href="https://claimwinger.com"
                 target="_blank"
