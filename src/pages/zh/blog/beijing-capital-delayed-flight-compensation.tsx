@@ -51,7 +51,7 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                     AI 概览 - 延误赔偿核心要点
                   </h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    <strong>从北京首都国际机场（PEK）出发的航班延误超过 3 小时？</strong> 根据 <strong>EU261 和 UK261</strong>，若您的航班受保护（从欧盟/英国出发，或由欧盟/英国航司执飞到达欧盟/英国），<strong>实际到达时间比原定晚 ≥3 小时</strong>时，您可能有权获得 <strong>€250–€600</strong> 赔偿。关键条件：(1) 延误原因非"特殊情况"（如极端天气、战争、空管罢工）；(2) 航空公司可控因素（机务故障、人员调度等）；(3) 您按时值机且持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>。通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 underline font-semibold">ClaimWinger 专业服务</a>，3 分钟即可检查资格并开始索赔（无前期费用，98% 成功率）。
+                    <strong>从北京首都国际机场（PEK）出发的航班延误超过 3 小时？</strong> 根据 <strong>EU261 和 UK261</strong>，若您的航班受保护（从欧盟/英国出发，或由欧盟/英国航司执飞到达欧盟/英国），<strong>实际到达时间比原定晚 ≥3 小时</strong>时，您可能有权获得 <strong>€250–€600</strong> 赔偿。关键条件：(1) 延误原因非&quot;特殊情况&quot;（如极端天气、战争、空管罢工）；(2) 航空公司可控因素（机务故障、人员调度等）；(3) 您按时值机且持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>。通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 underline font-semibold">ClaimWinger 专业服务</a>，3 分钟即可检查资格并开始索赔（无前期费用，98% 成功率）。
                   </p>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                         💡 "特殊情况"常见争议
                       </h4>
                       <p className="text-gray-700 dark:text-gray-300 mb-3">
-                        航空公司常以"技术故障"为由拒赔，但<strong>普通机务维护故障通常不属于特殊情况</strong>（欧洲法院判例支持）。只有"不可预见的技术问题且航空公司已尽合理维护义务"才可能免责。
+                        航空公司常以&quot;技术故障&quot;为由拒赔，但<strong>普通机务维护故障通常不属于特殊情况</strong>（欧洲法院判例支持）。只有&quot;不可预见的技术问题且航空公司已尽合理维护义务&quot;才可能免责。
                       </p>
                       <p className="text-gray-700 dark:text-gray-300">
                         若被拒赔，<a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger 的法律团队</a> 会审查证据并代表您与航空公司交涉。
@@ -305,10 +305,10 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                       </h3>
                     </div>
                     <p className="text-gray-700 dark:text-gray-300 mb-3">
-                      <strong>情况：</strong>李先生预订汉莎航空 LH720（北京 PEK → 法兰克福 FRA），原定 13:30 起飞。因"机组调度问题"延误，实际 18:00 起飞，到达法兰克福晚 3 小时 40 分钟。
+                      <strong>情况：</strong>李先生预订汉莎航空 LH720（北京 PEK → 法兰克福 FRA），原定 13:30 起飞。因&quot;机组调度问题&quot;延误，实际 18:00 起飞，到达法兰克福晚 3 小时 40 分钟。
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      <strong>结果：</strong>通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，李先生在 6 周内收到 <strong>€600 赔偿</strong>（航程 >3,500 km，延误 ≥3 小时，非特殊情况）。
+                      <strong>结果：</strong>通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，李先生在 6 周内收到 <strong>€600 赔偿</strong>（航程 &gt;3,500 km，延误 ≥3 小时，非特殊情况）。
                     </p>
                   </div>
 
@@ -320,7 +320,7 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                       </h3>
                     </div>
                     <p className="text-gray-700 dark:text-gray-300 mb-3">
-                      <strong>情况：</strong>王女士乘坐国航 CA855（北京 PEK → 伦敦 LHR），因"机械故障"延误 4 小时，到达伦敦晚 3.5 小时。
+                      <strong>情况：</strong>王女士乘坐国航 CA855（北京 PEK → 伦敦 LHR），因&quot;机械故障&quot;延误 4 小时，到达伦敦晚 3.5 小时。
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
                       <strong>结果：</strong><strong>无 EU261 赔偿</strong>。国航是中国航司，从中国出发到英国的航班不受 EU261/UK261 保护。王女士只能根据国航自身政策索赔（通常仅提供积分或代金券）。
@@ -331,14 +331,14 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                     <div className="flex items-start gap-3 mb-3">
                       <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                        ⚠️ 争议案例：芬兰航空 AY "天气"延误
+                        ⚠️ 争议案例：芬兰航空 AY &quot;天气&quot;延误
                       </h3>
                     </div>
                     <p className="text-gray-700 dark:text-gray-300 mb-3">
-                      <strong>情况：</strong>赵女士乘坐芬兰航空 AY086（北京 PEK → 赫尔辛基 HEL），到达晚 4 小时。芬兰航空以"赫尔辛基降雪"为由拒赔。
+                      <strong>情况：</strong>赵女士乘坐芬兰航空 AY086（北京 PEK → 赫尔辛基 HEL），到达晚 4 小时。芬兰航空以&quot;赫尔辛基降雪&quot;为由拒赔。
                     </p>
                     <p className="text-gray-700 dark:text-gray-300">
-                      <strong>结果：</strong>ClaimWinger 调查发现赫尔辛基当天降雪<strong>属于正常冬季天气</strong>，非"极端"情况。通过法律团队交涉，赵女士最终获得 <strong>€600 赔偿</strong>。
+                      <strong>结果：</strong>ClaimWinger 调查发现赫尔辛基当天降雪<strong>属于正常冬季天气</strong>，非&quot;极端&quot;情况。通过法律团队交涉，赵女士最终获得 <strong>€600 赔偿</strong>。
                     </p>
                   </div>
                 </div>
@@ -454,7 +454,7 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                     {
                       step: 4,
                       title: "ClaimWinger 处理索赔",
-                      description: "法律团队与航空公司交涉，审查拒赔理由（如"特殊情况"），必要时提起法律诉讼。您无需做任何事。",
+                      description: "法律团队与航空公司交涉，审查拒赔理由（如\"特殊情况\"），必要时提起法律诉讼。您无需做任何事。",
                     },
                     {
                       step: 5,
@@ -517,10 +517,10 @@ export default function BeijingCapitalDelayedFlightCompensation() {
 
                   <details className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
                     <summary className="font-bold text-gray-900 dark:text-white cursor-pointer">
-                      Q3: 汉莎以"技术故障"拒赔，这属于特殊情况吗？
+                      Q3: 汉莎以&quot;技术故障&quot;拒赔，这属于特殊情况吗？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-indigo-600">
-                      <strong>通常不属于。</strong>欧洲法院判例表明，普通机务维护故障不属于"特殊情况"。只有"不可预见的技术问题且航空公司已尽合理维护义务"才可能免责。通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</a> 可以挑战此类拒赔。
+                      <strong>通常不属于。</strong>欧洲法院判例表明，普通机务维护故障不属于&quot;特殊情况&quot;。只有&quot;不可预见的技术问题且航空公司已尽合理维护义务&quot;才可能免责。通过 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</a> 可以挑战此类拒赔。
                     </p>
                   </details>
 

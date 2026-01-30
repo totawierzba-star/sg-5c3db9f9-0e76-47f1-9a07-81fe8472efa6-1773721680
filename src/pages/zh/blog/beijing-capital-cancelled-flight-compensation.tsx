@@ -51,7 +51,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     AI 概览 - 快速理解您的权利
                   </h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    <strong>从北京首都国际机场（PEK）出发的航班被取消？</strong> 如果您的航班受 <strong>EU261 或 UK261</strong> 保护（即从欧盟/英国出发，或由欧盟/英国航空公司执飞并到达欧盟/英国），您可能有权获得 <strong>€250–€600</strong> 的赔偿。关键条件：(1) 航空公司未提前 ≥14 天通知；(2) 取消原因非"特殊情况"（如极端天气、战争）；(3) 您持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>，但转机至欧盟/英国时可能适用。本指南逐条解释何时可以、何时不能索赔，以及如何通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger 专业服务</a> 快速获得赔偿（无前期费用，只在成功后收费）。
+                    <strong>从北京首都国际机场（PEK）出发的航班被取消？</strong> 如果您的航班受 <strong>EU261 或 UK261</strong> 保护（即从欧盟/英国出发，或由欧盟/英国航空公司执飞并到达欧盟/英国），您可能有权获得 <strong>€250–€600</strong> 的赔偿。关键条件：(1) 航空公司未提前 ≥14 天通知；(2) 取消原因非&quot;特殊情况&quot;（如极端天气、战争）；(3) 您持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>，但转机至欧盟/英国时可能适用。本指南逐条解释何时可以、何时不能索赔，以及如何通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger 专业服务</a> 快速获得赔偿（无前期费用，只在成功后收费）。
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                  根据 <a href="https://eur-lex.europa.eu/eli/reg/2004/261/oj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">EU 法规 261/2004</a> 和 <a href="https://www.caa.co.uk/passengers" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">英国 UK261</a>，当航班取消且航空公司无法证明"特殊情况"时，乘客有权获得标准化赔偿。这是您的<strong>法定权利</strong>，与机票价格无关。
+                  根据 <a href="https://eur-lex.europa.eu/eli/reg/2004/261/oj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">EU 法规 261/2004</a> 和 <a href="https://www.caa.co.uk/passengers" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">英国 UK261</a>，当航班取消且航空公司无法证明&quot;特殊情况&quot;时，乘客有权获得标准化赔偿。这是您的<strong>法定权利</strong>，与机票价格无关。
                 </p>
 
                 <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 my-6">
@@ -120,7 +120,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     💡 实际案例（北京首都机场）
                   </h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    <strong>案例：</strong>张女士预订了 <strong>汉莎航空 LH720</strong>（北京 PEK → 法兰克福 FRA），起飞前 6 小时接到取消通知。汉莎以"机组调度问题"为由取消。
+                    <strong>案例：</strong>张女士预订了 <strong>汉莎航空 LH720</strong>（北京 PEK → 法兰克福 FRA），起飞前 6 小时接到取消通知。汉莎以&quot;机组调度问题&quot;为由取消。
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     <strong>结果：</strong>通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，张女士在 8 周内获得 <strong>€600 赔偿</strong>（航程 &gt; 3,500 km），因为：(1) 航班受 EU261 保护（欧盟航司到达欧盟）；(2) 未提前 14 天通知；(3) 非特殊情况。
@@ -295,7 +295,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                  航空公司经常以"特殊情况"为由拒绝赔偿，或要求您填写复杂的表格。<a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a> 是专业的航空乘客权利服务平台，为您处理整个索赔流程 — <strong>无前期费用，只在成功后收取服务费</strong>。
+                  航空公司经常以&quot;特殊情况&quot;为由拒绝赔偿，或要求您填写复杂的表格。<a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a> 是专业的航空乘客权利服务平台，为您处理整个索赔流程 — <strong>无前期费用，只在成功后收取服务费</strong>。
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -454,7 +454,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
 
                   <details className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
                     <summary className="font-bold text-gray-900 dark:text-white cursor-pointer">
-                      Q2: 汉莎航空以"天气原因"拒绝赔偿，但当时北京天气正常。我该怎么办？
+                      Q2: 汉莎航空以&quot;天气原因&quot;拒绝赔偿，但当时北京天气正常。我该怎么办？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
                       要求汉莎提供证据（如气象局报告、空管通知）。若无法提供，您可以通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</a> 提起正式索赔。我们的法律团队会审查证据并代表您与航空公司交涉。
@@ -466,7 +466,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q3: 航班取消前 10 天收到通知，还能索赔吗？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误超过 4 小时），您仍可能有权获得部分或全额赔偿。
+                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 &gt; 4 小时），您仍可能有权获得部分或全额赔偿。
                     </p>
                   </details>
 
@@ -475,7 +475,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q4: ClaimWinger 收费多少？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      ClaimWinger 采用 <strong>"不成功不收费"</strong> 模式。只在成功获得赔偿后收取服务费（通常为赔偿金额的 25–30%，具体以平台显示为准）。检查航班资格和提交索赔完全免费，无隐藏费用。
+                      ClaimWinger 采用 <strong>&quot;不成功不收费&quot;</strong> 模式。只在成功获得赔偿后收取服务费（通常为赔偿金额的 25–30%，具体以平台显示为准）。检查航班资格和提交索赔完全免费，无隐藏费用。
                     </p>
                   </details>
 

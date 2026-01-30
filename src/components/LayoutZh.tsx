@@ -48,9 +48,21 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                   <Link
                     href="/zh/blog/eu261-uk261-passenger-rights"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     EU261/UK261 赔偿指南
+                  </Link>
+                  <Link
+                    href="/zh/blog/beijing-capital-delayed-flight-compensation"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    北京首都机场延误
+                  </Link>
+                  <Link
+                    href="/zh/blog/beijing-capital-cancelled-flight-compensation"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    北京首都机场取消
                   </Link>
                 </div>
               </div>
@@ -129,10 +141,24 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 <div className="text-sm font-semibold text-gray-500 dark:text-gray-400">博客</div>
                 <Link
                   href="/zh/blog/eu261-uk261-passenger-rights"
-                  className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 py-1 text-sm"
+                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   EU261/UK261 赔偿指南
+                </Link>
+                <Link
+                  href="/zh/blog/beijing-capital-delayed-flight-compensation"
+                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  北京首都机场延误
+                </Link>
+                <Link
+                  href="/zh/blog/beijing-capital-cancelled-flight-compensation"
+                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  北京首都机场取消
                 </Link>
               </div>
               <Link
