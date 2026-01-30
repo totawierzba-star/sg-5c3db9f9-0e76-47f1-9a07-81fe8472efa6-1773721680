@@ -155,10 +155,17 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </Link>
                 <Link
                   href="/zh/blog/chinese-citizens-eu261-compensation-guide"
-                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                  className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   中国公民完整指南
+                </Link>
+                <Link
+                  href="/zh/blog/lufthansa-delay-cancellation-compensation"
+                  className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  汉莎航空赔偿指南
                 </Link>
               </div>
               <Link
