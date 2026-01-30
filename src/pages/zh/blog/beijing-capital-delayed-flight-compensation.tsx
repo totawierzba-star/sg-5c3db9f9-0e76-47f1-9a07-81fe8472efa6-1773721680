@@ -285,7 +285,7 @@ export default function BeijingCapitalDelayedFlightCompensation() {
                     </table>
                   </div>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                    💡 <strong>结论：</strong>所有从北京首都机场直飞欧洲的航线均属 >3,500 km 类别，符合条件时可获<strong>最高 €600 赔偿</strong>。
+                    💡 <strong>结论：</strong>所有从北京首都机场直飞欧洲的航线均属 &gt; 3,500 km 类别，符合条件时可获<strong>最高 €600 赔偿</strong>。
                   </p>
                 </div>
               </section>

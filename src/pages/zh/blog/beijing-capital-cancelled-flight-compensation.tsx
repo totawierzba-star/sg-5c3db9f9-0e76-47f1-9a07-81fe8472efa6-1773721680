@@ -123,7 +123,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     <strong>案例：</strong>张女士预订了 <strong>汉莎航空 LH720</strong>（北京 PEK → 法兰克福 FRA），起飞前 6 小时接到取消通知。汉莎以"机组调度问题"为由取消。
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    <strong>结果：</strong>通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，张女士在 8 周内获得 <strong>€600 赔偿</strong>（航程 >3,500 km），因为：(1) 航班受 EU261 保护（欧盟航司到达欧盟）；(2) 未提前 14 天通知；(3) 非特殊情况。
+                    <strong>结果：</strong>通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，张女士在 8 周内获得 <strong>€600 赔偿</strong>（航程 &gt; 3,500 km），因为：(1) 航班受 EU261 保护（欧盟航司到达欧盟）；(2) 未提前 14 天通知；(3) 非特殊情况。
                   </p>
                 </div>
               </section>
@@ -210,7 +210,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                   </div>
                   <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-xl p-6 text-center shadow-lg">
                     <div className="text-4xl font-bold mb-2">€600</div>
-                    <div className="text-sm opacity-90">航程 > 3,500 公里</div>
+                    <div className="text-sm opacity-90">航程 &gt; 3,500 公里</div>
                     <div className="text-xs mt-2 opacity-75">例如：北京 → 法兰克福</div>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     <li>• 北京 PEK → 慕尼黑 MUC：<strong>7,600 km</strong> → €600</li>
                   </ul>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                    💡 <strong>提示：</strong>所有从北京首都机场直飞欧洲的航线均属 >3,500 km 类别，符合条件时可获最高 €600 赔偿。
+                    💡 <strong>提示：</strong>所有从北京首都机场直飞欧洲的航线均属 &gt; 3,500 km 类别，符合条件时可获最高 €600 赔偿。
                   </p>
                 </div>
               </section>
@@ -466,7 +466,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q3: 航班取消前 10 天收到通知，还能索赔吗？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 >4 小时），您仍可能有权获得部分或全额赔偿。具体取决于替代航班时刻和到达延误时间。
+                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 > 4 小时），您仍可能有权获得部分或全额赔偿。
                     </p>
                   </details>
 
@@ -630,6 +630,14 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "平均 8–12 周。时间取决于航空公司的回应速度。若航空公司快速同意，可能 4–6 周。若需法律行动，可能 3–6 个月。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "航班取消前 10 天收到通知，还能索赔吗？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "可能可以。如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 > 4 小时），您仍可能有权获得部分或全额赔偿。"
                 }
               },
               {
