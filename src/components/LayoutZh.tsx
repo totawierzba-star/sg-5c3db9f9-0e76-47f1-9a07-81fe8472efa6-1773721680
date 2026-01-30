@@ -47,10 +47,10 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                   <Link
-                    href="/zh/blog/article-1"
+                    href="/zh/blog/eu261-uk261-passenger-rights"
                     className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                   >
-                    我的航班被取消了
+                    EU261/UK261 赔偿指南
                   </Link>
                 </div>
               </div>
@@ -128,11 +128,11 @@ export function LayoutZh({ children }: LayoutZhProps) {
               <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-4 space-y-2">
                 <div className="text-sm font-semibold text-gray-500 dark:text-gray-400">博客</div>
                 <Link
-                  href="/zh/blog/article-1"
+                  href="/zh/blog/eu261-uk261-passenger-rights"
                   className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 py-1 text-sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  我的航班被取消了
+                  EU261/UK261 赔偿指南
                 </Link>
               </div>
               <Link
@@ -213,7 +213,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
               <h3 className="text-white font-semibold mb-4">资源</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/zh/blog/article-1" className="text-sm hover:text-blue-400 transition-colors">
+                  <Link href="/zh/blog/eu261-uk261-passenger-rights" className="text-sm hover:text-blue-400 transition-colors">
                     博客
                   </Link>
                 </li>

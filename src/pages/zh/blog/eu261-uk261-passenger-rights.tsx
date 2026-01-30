@@ -70,10 +70,10 @@ export default function EU261Article() {
               },
               {
                 "@type": "Question",
-                "name": "航空公司以"天气"为由拒赔，但当时天气并不差，我该怎么办？",
+                "name": "航空公司以\"天气\"为由拒赔，但当时天气并不差，我该怎么办？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "要求航空公司提供证据证明天气确实构成"特殊情况"（例如气象局报告、空管通知）。若航空公司无法提供有力证据，您可以向国家主管机关或 ECC-Net 投诉并寻求仲裁。"
+                  "text": "要求航空公司提供证据证明天气确实构成\"特殊情况\"（例如气象局报告、空管通知）。若航空公司无法提供有力证据，您可以向国家主管机关或 ECC-Net 投诉并寻求仲裁。"
                 }
               },
               {
@@ -297,7 +297,7 @@ export default function EU261Article() {
               <div>
                 <h4 className="font-semibold mb-2">3. 向航空公司提出书面索赔</h4>
                 <p className="text-sm text-foreground/90 ml-4">
-                  按照航空公司网站的官方流程提交索赔，明确要求赔偿金额并附证据。若被拒，可向目的地/出发地的国家主管机关或 ECC-Net 投诉或寻求帮助。
+                  按照航空公司网站的官方流程提交索赔，明确要求赔偿金额并附证据。若被拒，可向国家主管机关或 ECC-Net 投诉或寻求帮助。
                 </p>
               </div>
             </div>
