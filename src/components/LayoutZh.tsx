@@ -162,10 +162,17 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </Link>
                 <Link
                   href="/zh/blog/lufthansa-delay-cancellation-compensation"
-                  className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   汉莎航空赔偿指南
+                </Link>
+                <Link
+                  href="/zh/blog/lot-polish-airlines-compensation-guide"
+                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  LOT 波兰航空赔偿
                 </Link>
               </div>
               <Link
