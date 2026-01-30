@@ -466,7 +466,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q3: 航班取消前 10 天收到通知，还能索赔吗？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 > 4 小时），您仍可能有权获得部分或全额赔偿。
+                      <strong>可能可以。</strong>如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误超过 4 小时），您仍可能有权获得部分或全额赔偿。
                     </p>
                   </details>
 
@@ -637,7 +637,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                 "name": "航班取消前 10 天收到通知，还能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "可能可以。如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误 > 4 小时），您仍可能有权获得部分或全额赔偿。"
+                  "text": "可能可以。如果航空公司提前 7–14 天通知但未提供合理替代航班（如到达时间延误超过 4 小时），您仍可能有权获得部分或全额赔偿。"
                 }
               },
               {
