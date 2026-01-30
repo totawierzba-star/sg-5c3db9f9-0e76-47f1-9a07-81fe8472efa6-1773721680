@@ -80,7 +80,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
 
               {/* CTA Button */}
               <a
-                href="https://claimwinger.com"
+                href="https://claimwinger.com/delayed-flight"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
@@ -153,7 +153,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
               </Link>
 
               <a
-                href="https://claimwinger.com"
+                href="https://claimwinger.com/delayed-flight"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"

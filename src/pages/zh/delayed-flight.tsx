@@ -27,7 +27,7 @@ export default function ZhDelayedFlightPage() {
               查看您的权利并了解何时可以因航班延误获得高达 <span className="font-bold text-blue-600 dark:text-blue-400">600 €</span> 的赔偿。
             </p>
             <a
-              href="https://claimwinger.com"
+              href="https://claimwinger.com/delayed-flight"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
@@ -152,16 +152,13 @@ export default function ZhDelayedFlightPage() {
                 检查您是否有权因航班延误获得赔偿
               </p>
               <a
-                href="https://claimwinger.com"
+                href="https://claimwinger.com/delayed-flight"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"
               >
                 检查我的赔偿
               </a>
-              <p className="mt-4 text-sm text-blue-100">
-                无风险 – 只在成功时付款
-              </p>
             </div>
           </div>
         </section>

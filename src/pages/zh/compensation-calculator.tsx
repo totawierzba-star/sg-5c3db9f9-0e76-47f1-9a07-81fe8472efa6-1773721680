@@ -106,7 +106,7 @@ export default function ZhCompensationCalculatorPage() {
                 看看您是否有权获得赔偿
               </p>
               <a
-                href="https://claimwinger.com"
+                href="https://claimwinger.com/delayed-flight"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"

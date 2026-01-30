@@ -27,7 +27,7 @@ export default function ZhHomePage() {
               根据欧盟法规 261/2004，乘客在航班延误、取消或超额预订的情况下有权获得赔偿。检查您的权利并立即获得应得的补偿。
             </p>
             <a
-              href="https://claimwinger.com"
+              href="https://claimwinger.com/delayed-flight"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
@@ -171,7 +171,7 @@ export default function ZhHomePage() {
               检查您是否有权因航班延误或取消获得赔偿
             </p>
             <a
-              href="https://claimwinger.com"
+              href="https://claimwinger.com/delayed-flight"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"

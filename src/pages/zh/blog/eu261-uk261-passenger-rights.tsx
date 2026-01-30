@@ -403,7 +403,7 @@ export default function EU261Article() {
               我们的合作伙伴可以帮助您快速、无风险地获得应得的赔偿
             </p>
             <a
-              href="https://claimwinger.com"
+              href="https://claimwinger.com/delayed-flight"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
@@ -582,7 +582,7 @@ export default function EU261Article() {
             不要让航空公司忽视您的权利。我们的合作伙伴已帮助数千名乘客成功获得超过 5000 万欧元的赔偿。
           </p>
           <a
-            href="https://claimwinger.com"
+            href="https://claimwinger.com/delayed-flight"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"
