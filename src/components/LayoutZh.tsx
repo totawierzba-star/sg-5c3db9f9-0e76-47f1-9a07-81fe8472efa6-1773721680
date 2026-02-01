@@ -88,6 +88,12 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   >
                     法国航空赔偿指南
                   </Link>
+                  <Link
+                    href="/zh/blog/british-airways-compensation-guide"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    英国航空赔偿指南
+                  </Link>
                 </div>
               </div>
               <Link
@@ -200,10 +206,17 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </Link>
                 <Link
                   href="/zh/blog/air-france-compensation-guide"
-                  className="block px-4 py-3 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
+                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   法国航空赔偿指南
+                </Link>
+                <Link
+                  href="/zh/blog/british-airways-compensation-guide"
+                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  英国航空赔偿指南
                 </Link>
               </div>
               <Link
