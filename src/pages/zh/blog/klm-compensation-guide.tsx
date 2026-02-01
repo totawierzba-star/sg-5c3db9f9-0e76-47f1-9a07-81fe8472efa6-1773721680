@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 import { AlertCircle, CheckCircle, XCircle, ArrowRight, Plane, Clock, Euro, Shield, AlertTriangle } from "lucide-react";
 
 export default function KLMCompensationGuide() {
@@ -113,14 +114,14 @@ export default function KLMCompensationGuide() {
               className="bg-white text-orange-600 hover:bg-blue-50 font-bold text-lg px-8 py-6"
               asChild
             >
-              <a
+              <Link
                 href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=cta-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 免费检查我的航班
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
+              </Link>
             </Button>
           </Card>
         </section>
@@ -634,14 +635,14 @@ export default function KLMCompensationGuide() {
                   className="bg-white text-purple-600 hover:bg-purple-50 font-bold"
                   asChild
                 >
-                  <a
+                  <Link
                     href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=cta-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     免费检查我的航班
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button
                   size="lg"
@@ -649,13 +650,13 @@ export default function KLMCompensationGuide() {
                   className="bg-transparent border-2 border-white text-white hover:bg-white/10"
                   asChild
                 >
-                  <a
+                  <Link
                     href="https://claimwinger.com/how-it-works?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=cta-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     了解工作流程
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </Card>
@@ -1093,14 +1094,14 @@ export default function KLMCompensationGuide() {
                       <li>• 预计处理时间（通常 8-10 周）</li>
                     </ul>
                     <Button className="mt-4" asChild>
-                      <a
+                      <Link
                         href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=step-1"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         立即免费检查
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </a>
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -1232,14 +1233,14 @@ export default function KLMCompensationGuide() {
                   className="bg-white text-blue-600 hover:bg-blue-50 font-bold text-lg px-8"
                   asChild
                 >
-                  <a
+                  <Link
                     href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=5-step-cta"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     立即免费检查我的 KLM 航班
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </Card>
@@ -1420,9 +1421,9 @@ export default function KLMCompensationGuide() {
                   了解欧盟和英国乘客权利法规的基础知识
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/zh/blog/eu261-uk261-passenger-rights">
+                  <Link href="/zh/blog/eu261-uk261-passenger-rights">
                     阅读更多 <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
               </Card>
 
@@ -1434,9 +1435,9 @@ export default function KLMCompensationGuide() {
                   中国护照持有者的欧盟航班赔偿权利详解
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/zh/blog/chinese-citizens-eu261-compensation-guide">
+                  <Link href="/zh/blog/chinese-citizens-eu261-compensation-guide">
                     阅读更多 <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
               </Card>
 
@@ -1448,9 +1449,9 @@ export default function KLMCompensationGuide() {
                   汉莎航空延误/取消航班的赔偿流程
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/zh/blog/lufthansa-delay-cancellation-compensation">
+                  <Link href="/zh/blog/lufthansa-delay-cancellation-compensation">
                     阅读更多 <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
               </Card>
 
@@ -1462,9 +1463,9 @@ export default function KLMCompensationGuide() {
                   British Airways 航班延误/取消的 UK261 赔偿
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/zh/blog/british-airways-compensation-guide">
+                  <Link href="/zh/blog/british-airways-compensation-guide">
                     阅读更多 <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
               </Card>
             </div>
@@ -1497,14 +1498,14 @@ export default function KLMCompensationGuide() {
                 className="bg-white text-orange-600 hover:bg-blue-50 font-bold text-xl px-12 py-6 mb-4"
                 asChild
               >
-                <a
+                <Link
                   href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=klm-guide-zh&utm_content=final-cta"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   免费检查我的赔偿
                   <ArrowRight className="ml-2 w-6 h-6" />
-                </a>
+                </Link>
               </Button>
               <p className="text-sm text-blue-100">
                 ✓ 2 分钟免费评估 | ✓ 无需信用卡 | ✓ 中文支持 | ✓ SWIFT 转账到中国
