@@ -3,7 +3,7 @@ import { LayoutZh } from "@/components/LayoutZh";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { AlertCircle, CheckCircle, Clock, Euro, Plane, Shield, Users, Snowflake } from "lucide-react";
+import { AlertCircle, CheckCircle, Clock, Plane, Shield, Users, Snowflake } from "lucide-react";
 
 export default function FinnairCompensationGuide() {
   return (
@@ -1523,10 +1523,10 @@ export default function FinnairCompensationGuide() {
 
               <Card className="p-6 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
-                  Q3: 芬兰航空说"赫尔辛基冬季天气" - 还能索赔吗？
+                  Q3: 芬兰航空说&quot;赫尔辛基冬季天气&quot; - 还能索赔吗？
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>A:</strong> 通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。<strong>约 90% 的"冬季天气"拒赔理由被成功推翻</strong>。
+                  <strong>A:</strong> 通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。<strong>约 90% 的&quot;冬季天气&quot;拒赔理由被成功推翻</strong>。
                 </p>
               </Card>
 
@@ -1535,7 +1535,7 @@ export default function FinnairCompensationGuide() {
                   Q4: 我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>A:</strong> 能！关键看登机牌："Operating Carrier: AY"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。
+                  <strong>A:</strong> 能！关键看登机牌：&quot;Operating Carrier: AY&quot;（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。
                 </p>
               </Card>
 
@@ -1544,7 +1544,7 @@ export default function FinnairCompensationGuide() {
                   Q5: 芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>A:</strong> 不！EU261 Article 7(3)：您有权要求<strong>现金</strong>。Finnair Plus 积分 = "goodwill gesture" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。
+                  <strong>A:</strong> 不！EU261 Article 7(3)：您有权要求<strong>现金</strong>。Finnair Plus 积分 = &quot;goodwill gesture&quot; ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。
                 </p>
               </Card>
 
@@ -1562,7 +1562,7 @@ export default function FinnairCompensationGuide() {
                   Q7: 我从西安/重庆/南京出发，也能索赔吗？
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>A:</strong> 能！二三线城市乘客享有与北京/上海乘客<strong>完全相同的权利</strong>。芬兰航空不能因为您的城市"不知名"而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！
+                  <strong>A:</strong> 能！二三线城市乘客享有与北京/上海乘客<strong>完全相同的权利</strong>。芬兰航空不能因为您的城市&quot;不知名&quot;而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！
                 </p>
               </Card>
 
@@ -1838,10 +1838,10 @@ export default function FinnairCompensationGuide() {
               },
               {
                 "@type": "Question",
-                "name": "芬兰航空说"赫尔辛基冬季天气" - 还能索赔吗？",
+                "name": "芬兰航空说\"赫尔辛基冬季天气\" - 还能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的"冬季天气"拒赔理由被成功推翻。"
+                  "text": "通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的\"冬季天气\"拒赔理由被成功推翻。"
                 }
               },
               {
@@ -1849,7 +1849,7 @@ export default function FinnairCompensationGuide() {
                 "name": "我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "能！关键看登机牌："Operating Carrier: AY"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。"
+                  "text": "能！关键看登机牌：\"Operating Carrier: AY\"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。"
                 }
               },
               {
@@ -1857,7 +1857,7 @@ export default function FinnairCompensationGuide() {
                 "name": "芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = "goodwill gesture" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。"
+                  "text": "不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = \"goodwill gesture\" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。"
                 }
               },
               {
@@ -1873,7 +1873,7 @@ export default function FinnairCompensationGuide() {
                 "name": "我从西安/重庆/南京出发，也能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "能！二三线城市乘客享有与北京/上海乘客完全相同的权利。芬兰航空不能因为您的城市"不知名"而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！"
+                  "text": "能！二三线城市乘客享有与北京/上海乘客完全相同的权利。芬兰航空不能因为您的城市\"不知名\"而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！"
                 }
               },
               {
