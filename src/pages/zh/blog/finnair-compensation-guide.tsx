@@ -26,7 +26,7 @@ export default function FinnairCompensationGuide() {
                   芬兰航空延误或取消航班赔偿完整指南 2026
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mt-4">
-                  中国乘客如何获得 €250-€600 EU261 赔偿 | 赫尔辛基转机/北京/上海/重庆/西安航线 + 冬季延误特别提示
+                  中国乘客如何获得 €250-€600 欧盟赔偿。赫尔辛基转机/北京/上海/重庆/西安航线完整指南 + 冬季延误特别提示。
                 </p>
               </div>
             </div>
@@ -323,19 +323,19 @@ export default function FinnairCompensationGuide() {
                     <strong>乘客：</strong>王先生（西安本地居民，首次欧洲旅行）
                   </p>
                   <p>
-                    <strong>航班：</strong>AY094（西安 → 赫尔辛基）2026 年 1 月
+                    <strong>航班：</strong>AY094（西安 XIY → 赫尔辛基 HEL）2026 年 1 月
                   </p>
                   <p>
                     <strong>问题：</strong>5 小时延误，赫尔辛基 -25°C，去冰延误
                   </p>
                   <p>
-                    <strong>芬兰航空借口：</strong>"严重冬季天气 = extraordinary circumstances"
+                    <strong>芬兰航空借口：</strong>"严重冬季天气条件 = extraordinary circumstances"
                   </p>
                   <p>
                     <strong>ClaimWinger 调查：</strong>
                   </p>
                   <ul className="list-disc list-inside space-y-1 ml-4">
-                    <li>芬兰气象局数据：-25°C = 1 月份赫尔辛基正常气温</li>
+                    <li>芬兰气象局 (FMI) 数据：-25°C = 1 月份赫尔辛基正常气温</li>
                     <li>其他芬兰航空航班正常起飞</li>
                     <li>去冰是常规冬季操作，非 extraordinary</li>
                   </ul>
@@ -343,7 +343,7 @@ export default function FinnairCompensationGuide() {
                     <strong>结果：</strong>成功获得 €600 赔偿（约 ¥4,700）✅
                   </p>
                   <p className="text-sm italic">
-                    王先生最初认为"西安是小城市，不可能索赔"。通过 ClaimWinger，他了解到自己的权利与一线城市乘客完全相同，最终成功获赔。
+                    王先生最初认为"西安是小城市，不可能索赔"。通过 ClaimWinger，他了解到自己的权利与一线城市乘客完全相同，最终成功获赔。这也证明：芬兰航空的"冬季天气"借口在大多数情况下站不住脚。
                   </p>
                 </div>
               </div>
@@ -1225,7 +1225,7 @@ export default function FinnairCompensationGuide() {
                     1
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                       免费航班检查（2 分钟）
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -1281,7 +1281,7 @@ export default function FinnairCompensationGuide() {
                     2
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                       提交文件（5 分钟）
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -1342,7 +1342,7 @@ export default function FinnairCompensationGuide() {
                     3
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                       ClaimWinger 代表您谈判（您无需做任何事）
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -1389,7 +1389,7 @@ export default function FinnairCompensationGuide() {
                     4
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                       处理拒赔（如需要） - 我们承担风险
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -1473,7 +1473,7 @@ export default function FinnairCompensationGuide() {
                           <p className="text-gray-700 dark:text-gray-300">12-18 周</p>
                         </div>
                         <div>
-                          <p className="font-semibold text-gray-900 dark:text-white">含法院（罕见）：</p>
+                          <p className="font-semibold text-gray-900 dark:text-white">含法院（极少）：</p>
                           <p className="text-gray-700 dark:text-gray-300">6-12 个月</p>
                         </div>
                       </div>
@@ -1838,26 +1838,26 @@ export default function FinnairCompensationGuide() {
               },
               {
                 "@type": "Question",
-                "name": "芬兰航空说\"赫尔辛基冬季天气\" - 还能索赔吗？",
+                "name": '芬兰航空说"赫尔辛基冬季天气" - 还能索赔吗？',
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的\"冬季天气\"拒赔理由被成功推翻。"
+                  "text": '通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的"冬季天气"拒赔理由被成功推翻。'
                 }
               },
               {
                 "@type": "Question",
-                "name": "我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？",
+                "name": '我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？',
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "能！关键看登机牌：\"Operating Carrier: AY\"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。"
+                  "text": '能！关键看登机牌："Operating Carrier: AY"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。'
                 }
               },
               {
                 "@type": "Question",
-                "name": "芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？",
+                "name": '芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？',
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = \"goodwill gesture\" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。"
+                  "text": '不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = "goodwill gesture" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。'
                 }
               },
               {
