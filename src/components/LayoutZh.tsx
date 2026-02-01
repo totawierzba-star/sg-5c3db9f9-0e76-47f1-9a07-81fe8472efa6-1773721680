@@ -94,6 +94,12 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   >
                     英国航空赔偿指南
                   </Link>
+                  <Link
+                    href="/zh/blog/klm-compensation-guide"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    荷兰皇家航空赔偿
+                  </Link>
                 </div>
               </div>
               <Link
@@ -217,6 +223,13 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   英国航空赔偿指南
+                </Link>
+                <Link
+                  href="/zh/blog/klm-compensation-guide"
+                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  荷兰皇家航空赔偿
                 </Link>
               </div>
               <Link

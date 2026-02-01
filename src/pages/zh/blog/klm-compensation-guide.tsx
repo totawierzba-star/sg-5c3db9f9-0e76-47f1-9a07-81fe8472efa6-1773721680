@@ -55,7 +55,7 @@ export default function KLMCompensationGuide() {
                   </p>
                   <p className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span><strong>赔偿金额：</strong>€250（≤1,500km）、€400（1,500-3,500km）、€600（>3,500km）。KLM 中国航线 = <strong>全部 €600</strong></span>
+                    <span><strong>赔偿金额：</strong>€250（≤1,500km）、€400（1,500-3,500km）、€600（&gt;3,500km）。KLM 中国航线 = <strong>全部 €600</strong></span>
                   </p>
                   <p className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -63,7 +63,7 @@ export default function KLMCompensationGuide() {
                   </p>
                   <p className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span><strong>取消航班：</strong>通知 <14 天 + 未提供合理替代航班 = 现金赔偿</span>
+                    <span><strong>取消航班：</strong>通知 &lt;14 天 + 未提供合理替代航班 = 现金赔偿</span>
                   </p>
                   <p className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -134,7 +134,7 @@ export default function KLMCompensationGuide() {
             </h2>
             <Card className="p-6">
               <p className="text-gray-700 dark:text-gray-300 mb-6">
-                KLM 从阿姆斯特丹史基浦机场 (AMS) 运营 <strong>4 条直飞中国航线</strong>，年运送约 <strong>700,000 名乘客</strong>。所有航线距离均 >3,500 公里，符合 <strong>最高赔偿级别 €600</strong>。
+                KLM 从阿姆斯特丹史基浦机场 (AMS) 运营 <strong>4 条直飞中国航线</strong>，年运送约 <strong>700,000 名乘客</strong>。所有航线距离均 &gt;3,500 公里，符合 <strong>最高赔偿级别 €600</strong>。
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
@@ -248,7 +248,7 @@ export default function KLMCompensationGuide() {
                   </p>
                   <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded">
                     <p className="font-semibold text-green-700 dark:text-green-300">
-                      ✅ <strong>赔偿：€600</strong>（总距离 LHR-PVG >3,500km）<br/>
+                      ✅ <strong>赔偿：€600</strong>（总距离 LHR-PVG &gt;3,500km）<br/>
                       ✅ <strong>额外权利：</strong>KLM 必须提供酒店、餐饮、交通（从机场往返酒店）<br/>
                       ✅ <strong>关键：</strong>单张票 = 整个行程受保护
                     </p>
@@ -463,7 +463,7 @@ export default function KLMCompensationGuide() {
                     赔偿结果
                   </h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-3">
-                    ✅ <strong>€600 现金赔偿</strong>（总距离 LHR-PVG >3,500km）<br/>
+                    ✅ <strong>€600 现金赔偿</strong>（总距离 LHR-PVG &gt;3,500km）<br/>
                     ✅ <strong>酒店：</strong>KLM 提供阿姆斯特丹酒店 1 晚<br/>
                     ✅ <strong>餐饮：</strong>€25 餐券 × 3（早餐 + 午餐 + 晚餐）<br/>
                     ✅ <strong>交通：</strong>机场 ↔ 酒店免费班车
@@ -700,7 +700,7 @@ export default function KLMCompensationGuide() {
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">2. 航班取消 (Cancelled Flight)</h3>
                   <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
                     <p className="text-gray-700 dark:text-gray-300 mb-3">
-                      <strong>条件：</strong>KLM 通知您 <14 天 + 未提供合理替代航班
+                      <strong>条件：</strong>KLM 通知您 &lt;14 天 + 未提供合理替代航班
                     </p>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
@@ -1318,11 +1318,7 @@ export default function KLMCompensationGuide() {
                     Q7: 从上海飞阿姆斯特丹（KLM 执飞）延误，能索赔吗？
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    <strong>A:</strong> <strong>能！</strong>虽然从中国出发（非欧盟），但因为：<br/>
-                    • <strong>KLM = 欧盟航空公司</strong><br/>
-                    • <strong>抵达欧盟</strong>（阿姆斯特丹）<br/>
-                    = EU261 保护！延误 ≥3h = €600。<br/><br/>
-                    ⚠️ <strong>注意：</strong>如果是东航 (MU) 执飞从上海 → 阿姆斯特丹 = ❌ 不受保护（非欧盟航空公司从非欧盟出发）。
+                    <strong>A:</strong> <strong>能！</strong>虽然从中国出发（非欧盟），但因为 KLM = 欧盟航空公司 + 抵达欧盟（阿姆斯特丹）= EU261 保护！延误 ≥3h = €600。注意：如果是东航 (MU) 执飞从上海 → 阿姆斯特丹 = 不受保护（非欧盟航空公司从非欧盟出发）。
                   </p>
                 </div>
 
@@ -1331,10 +1327,7 @@ export default function KLMCompensationGuide() {
                     Q8: ClaimWinger 费用？中国乘客如何收款？
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    <strong>A:</strong> <strong>不赢不收费。</strong>通常 25% + VAT（从赔偿中扣除）。示例：<br/>
-                    • KLM 支付 €600 → ClaimWinger 扣费 → 您收到约 <strong>€450</strong><br/>
-                    • 收款方式：<strong>SWIFT 银行转账</strong>到中国银行账户（3-5 工作日）<br/>
-                    • 不成功 = €0 费用（完全无风险）
+                    <strong>A:</strong> <strong>不赢不收费。</strong>通常 25% + VAT（从赔偿中扣除）。示例：KLM 支付 €600 → ClaimWinger 扣费 → 您收到约 <strong>€450</strong>。收款方式：SWIFT 银行转账到中国银行账户（3-5 工作日）。不成功 = €0 费用（完全无风险）。
                   </p>
                 </div>
               </div>
