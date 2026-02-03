@@ -64,7 +64,7 @@ export default function FinnairCompensationGuide() {
                   <p className="text-sm">所有芬兰航空中国航线距离超过 3,500 km，延误 ≥3 小时或取消 = <strong>€600</strong>（约 ¥4,500+）</p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
-                  <p className="font-semibold mb-2">🌨️ 冬季延误能赔吗？</p>
+                  <p className="font-semibold mb-2">❄️ 冬季延误能赔吗？</p>
                   <p className="text-sm">能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。只有机场完全关闭才可能例外。</p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
@@ -1503,7 +1503,7 @@ export default function FinnairCompensationGuide() {
               ❓ 常见问题（FAQ）
             </h2>
             <div className="space-y-4">
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q1: 我是中国护照持有者，芬兰航空赫尔辛基→北京延误 5 小时，能索赔吗？
                 </h3>
@@ -1512,7 +1512,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q2: 我在赫尔辛基错过了转机 - 能索赔吗？
                 </h3>
@@ -1521,7 +1521,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q3: 芬兰航空说&quot;赫尔辛基冬季天气&quot; - 还能索赔吗？
                 </h3>
@@ -1530,7 +1530,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q4: 我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？
                 </h3>
@@ -1539,7 +1539,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q5: 芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？
                 </h3>
@@ -1548,7 +1548,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q6: 索赔时效多久？
                 </h3>
@@ -1557,7 +1557,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q7: 我从西安/重庆/南京出发，也能索赔吗？
                 </h3>
@@ -1566,7 +1566,7 @@ export default function FinnairCompensationGuide() {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-blue-500">
+              <Card className="p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                   Q8: ClaimWinger 费用多少？中国乘客如何收款？
                 </h3>
@@ -1838,26 +1838,26 @@ export default function FinnairCompensationGuide() {
               },
               {
                 "@type": "Question",
-                "name": '芬兰航空说"赫尔辛基冬季天气" - 还能索赔吗？',
+                "name": "芬兰航空说赫尔辛基冬季天气 - 还能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": '通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的"冬季天气"拒赔理由被成功推翻。'
+                  "text": "通常能！常规冬季天气（-20°C 降雪、去冰延误）≠ extraordinary。ClaimWinger 会获取芬兰气象局数据、检查其他航班、引用判例。约 90% 的冬季天气拒赔理由被成功推翻。"
                 }
               },
               {
                 "@type": "Question",
-                "name": '我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？',
+                "name": "我的票是国泰航空 (CX)，但飞机是芬兰航空 - 能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": '能！关键看登机牌："Operating Carrier: AY"（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。'
+                  "text": "能！关键看登机牌：Operating Carrier: AY（芬兰航空）= 受 EU261 保护。票号航空公司（国泰）不影响责任归属。实际承运人 = 芬兰航空 + 从欧盟出发/到达 = €600 赔偿。"
                 }
               },
               {
                 "@type": "Question",
-                "name": '芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？',
+                "name": "芬兰航空提供了 Finnair Plus 积分 - 必须接受吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": '不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = "goodwill gesture" ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。'
+                  "text": "不！EU261 Article 7(3)：您有权要求现金。Finnair Plus 积分 = goodwill gesture ≠ 法律赔偿。ClaimWinger 会正式拒绝积分并要求 €600 现金银行转账。"
                 }
               },
               {
@@ -1873,7 +1873,7 @@ export default function FinnairCompensationGuide() {
                 "name": "我从西安/重庆/南京出发，也能索赔吗？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "能！二三线城市乘客享有与北京/上海乘客完全相同的权利。芬兰航空不能因为您的城市\"不知名\"而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！"
+                  "text": "能！二三线城市乘客享有与北京/上海乘客完全相同的权利。芬兰航空不能因为您的城市不知名而拒赔。EU261 对所有欧盟航线一视同仁，€600 = 约 ¥4,500+，绝对值得！"
                 }
               },
               {
