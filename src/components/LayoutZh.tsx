@@ -125,12 +125,23 @@ export function LayoutZh({ children }: LayoutZhProps) {
               </Link>
 
               {/* Language Switcher */}
-              <Link
-                href="/"
-                className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
-              >
-                <span>PL</span>
-              </Link>
+              <div className="relative group">
+                <button className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
+                  🇵🇱 Polski
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <Link href="/" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-t-lg">
+                    🇵🇱 Polski
+                  </Link>
+                  <Link href="/zh" className="block px-4 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 font-medium">
+                    🇨🇳 中文
+                  </Link>
+                  <Link href="/cs" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-b-lg">
+                    🇨🇿 Čeština
+                  </Link>
+                </div>
+              </div>
 
               {/* Theme Toggle */}
               <button
@@ -270,13 +281,20 @@ export function LayoutZh({ children }: LayoutZhProps) {
               </Link>
 
               {/* Language Switcher Mobile */}
-              <Link
-                href="/"
-                className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                🌐 Polski
-              </Link>
+              <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
+                <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">语言</div>
+                <div className="flex flex-col space-y-2">
+                  <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    🇵🇱 Polski
+                  </Link>
+                  <div className="text-blue-600 dark:text-blue-400 font-medium">
+                    🇨🇳 中文
+                  </div>
+                  <Link href="/cs" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    🇨🇿 Čeština
+                  </Link>
+                </div>
+              </div>
 
               <a
                 href="https://claimwinger.com/delayed-flight"

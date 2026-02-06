@@ -71,12 +71,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </Link>
 
               {/* Language Switcher */}
-              <Link
-                href="/zh"
-                className="flex items-center gap-1 text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              >
-                <span>中文</span>
-              </Link>
+              <div className="relative group">
+                <button className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <span>🇵🇱 PL</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <Link href="/" className="block px-4 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-t-lg font-medium">
+                    🇵🇱 Polski
+                  </Link>
+                  <Link href="/zh" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
+                    🇨🇳 中文
+                  </Link>
+                  <Link href="/cs" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-b-lg">
+                    🇨🇿 Čeština
+                  </Link>
+                </div>
+              </div>
 
               <ThemeSwitch />
             </div>
@@ -140,13 +151,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
 
                 {/* Language Switcher Mobile */}
-                <Link
-                  href="/zh"
-                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  🌐 中文版本
-                </Link>
+                <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
+                  <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">Język</div>
+                  <div className="flex flex-col space-y-2">
+                    <div className="text-blue-600 dark:text-blue-400 font-medium">
+                      🇵🇱 Polski
+                    </div>
+                    <Link href="/zh" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                      🇨🇳 中文
+                    </Link>
+                    <Link href="/cs" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                      🇨🇿 Čeština
+                    </Link>
+                  </div>
+                </div>
 
                 <a
                   href="https://claimwinger.com"
