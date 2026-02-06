@@ -100,4 +100,86 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://lotproblem.pl/zh/blog</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles - Foundation Guides -->
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/eu261-uk261-passenger-rights</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/chinese-citizens-eu261-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Articles - Airport Guides -->
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/beijing-capital-delayed-flight-compensation</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/beijing-capital-cancelled-flight-compensation</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Articles - Airline Guides -->
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/lufthansa-delay-cancellation-compensation</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/lot-polish-airlines-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/air-france-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/british-airways-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/klm-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lotproblem.pl/zh/blog/finnair-compensation-guide</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

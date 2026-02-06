@@ -2,7 +2,15 @@ import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
 import Link from "next/link";
 import { useState } from "react";
-import { blogArticles, getCategoryLabel, getTotalWordCount, type BlogArticle } from "./blogArticles";
+import { BookOpen, TrendingUp, FileText, Award } from "lucide-react";
+import {
+  blogArticles,
+  getCategoryLabel,
+  getArticlesByCategory,
+  getFeaturedArticles,
+  getTotalWordCount,
+  type BlogArticle
+} from "@/lib/blogArticles";
 
 export default function BlogIndex() {
   const [selectedCategory, setSelectedCategory] = useState<BlogArticle["category"] | "all">("all");
