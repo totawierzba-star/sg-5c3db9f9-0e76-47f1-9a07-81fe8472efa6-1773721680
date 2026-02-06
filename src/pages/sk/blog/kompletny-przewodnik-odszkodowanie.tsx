@@ -287,9 +287,9 @@ export default function KompletnyPrzevodnikOdszkodowanie() {
                 📊 Štatistika: Priemerné meškania na slovenských letiskách
               </h4>
               <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li><strong>Bratislava (BTS):</strong> 15% letov má meškanie >3h (hlavne Wizz Air)</li>
-                <li><strong>Viedeň (VIE):</strong> 8% letov má meškanie >3h</li>
-                <li><strong>Košice (KSC):</strong> 12% letov má meškanie >3h</li>
+                <li><strong>Bratislava (BTS):</strong> 15% letov má meškanie &gt;3h (hlavne Wizz Air)</li>
+                <li><strong>Viedeň (VIE):</strong> 8% letov má meškanie &gt;3h</li>
+                <li><strong>Košice (KSC):</strong> 12% letov má meškanie &gt;3h</li>
               </ul>
             </div>
           </section>
