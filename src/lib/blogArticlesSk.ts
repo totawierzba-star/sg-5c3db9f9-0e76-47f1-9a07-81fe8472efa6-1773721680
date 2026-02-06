@@ -171,7 +171,7 @@ export const blogArticlesSk: BlogArticleSk[] = [
   // KLASTER 4: LONG-TAIL (FAQ Featured Snippets)
   {
     id: "nadzwyczajne-okolicznosci-pogoda",
-    title: "„Mimoriadne okolnosti" – oslobodzuje zlé počasie vždy leteckú spoločnosť od výplaty?",
+    title: "„Mimoriadne okolnosti“ – oslobodzuje zlé počasie vždy leteckú spoločnosť od výplaty?",
     slug: "nadzwyczajne-okolicznosci-pogoda",
     category: "longtail",
     wordCount: 5200,
