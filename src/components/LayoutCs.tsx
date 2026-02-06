@@ -33,6 +33,9 @@ export function LayoutCs({ children }: LayoutCsProps) {
               <Link href="/cs/kompenzace-kalkulacka" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Kalkulačka
               </Link>
+              <Link href="/cs/blog" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Blog
+              </Link>
 
               {/* Language Switcher */}
               <div className="relative group">
@@ -101,6 +104,13 @@ export function LayoutCs({ children }: LayoutCsProps) {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Kalkulačka
+                </Link>
+                <Link
+                  href="/cs/blog"
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-4 py-2 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Blog
                 </Link>
 
                 {/* Language Switcher Mobile */}
@@ -184,6 +194,11 @@ export function LayoutCs({ children }: LayoutCsProps) {
                 Zdroje
               </h3>
               <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/cs/blog" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    Blog
+                  </Link>
+                </li>
                 <li>
                   <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     Podat reklamaci
