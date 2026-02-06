@@ -85,6 +85,12 @@ export function LayoutHi({ children }: LayoutHiProps) {
                   >
                     🇮🇳 हिन्दी
                   </Link>
+                  <Link
+                    href="/sk"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    🇸🇰 Slovenčina
+                  </Link>
                 </div>
               </div>
 
@@ -196,6 +202,13 @@ export function LayoutHi({ children }: LayoutHiProps) {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       🇮🇳 हिन्दी
+                    </Link>
+                    <Link
+                      href="/sk"
+                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      🇸🇰 Slovenčina
                     </Link>
                   </div>
                 </div>
@@ -317,7 +330,10 @@ export function LayoutHi({ children }: LayoutHiProps) {
                   🇨🇿 Čeština
                 </Link>
                 <Link href="/hi" className="text-blue-600 dark:text-blue-400 font-medium transition-colors">
-                  🇮🇳 हिन्दी
+                  🇮🇳 HI
+                </Link>
+                <Link href="/sk" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  🇸🇰 SK
                 </Link>
               </div>
             </div>

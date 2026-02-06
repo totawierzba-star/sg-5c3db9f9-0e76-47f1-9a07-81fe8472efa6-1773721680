@@ -91,9 +91,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   </Link>
                   <Link
                     href="/hi"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     🇮🇳 हिन्दी
+                  </Link>
+                  <Link
+                    href="/sk"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    🇸🇰 Slovenčina
                   </Link>
                 </div>
               </div>
@@ -181,10 +187,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     </Link>
                     <Link
                       href="/hi"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       🇮🇳 हिन्दी
+                    </Link>
+                    <Link
+                      href="/sk"
+                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      🇸🇰 Slovenčina
                     </Link>
                   </div>
                 </div>

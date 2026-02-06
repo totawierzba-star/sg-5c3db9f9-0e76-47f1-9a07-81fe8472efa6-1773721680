@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { blogArticlesSk, getCategoryLabelSk, getTotalWordCountSk } from "@/lib/blogArticlesSk";
 import Link from "next/link";
 import { useState } from "react";
-import { Search, Filter, BookOpen, Clock, Tag, ArrowRight } from "lucide-react";
+import { Search, Filter, BookOpen, Clock, Tag, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function BlogIndexSk() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
