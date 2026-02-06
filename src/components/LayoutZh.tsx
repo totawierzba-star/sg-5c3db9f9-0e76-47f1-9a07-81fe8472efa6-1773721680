@@ -137,8 +137,14 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   <Link href="/zh" className="block px-4 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 font-medium">
                     🇨🇳 中文
                   </Link>
-                  <Link href="/cs" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-b-lg">
+                  <Link href="/cs" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
                     🇨🇿 Čeština
+                  </Link>
+                  <Link
+                    href="/hi"
+                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
+                  >
+                    🇮🇳 हिन्दी
                   </Link>
                 </div>
               </div>
@@ -292,6 +298,13 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   </div>
                   <Link href="/cs" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                     🇨🇿 Čeština
+                  </Link>
+                  <Link
+                    href="/hi"
+                    className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇮🇳 हिन्दी
                   </Link>
                 </div>
               </div>
