@@ -9,7 +9,6 @@ export default function WizzAirOdszkodowanieSk() {
       <SEO
         title="Wizz Air – ako získať kompenzáciu za meškanie? Sprievodca krok za krokom"
         description="Všetko o kompenzácii od Wizz Air za meškaný alebo zrušený let. Praktický sprievodca pre slovenských cestujúcich z Bratislavy a Košíc."
-        keywords="wizz air kompenzácia, wizz air meškanie letu, wizz air zrušený let, bratislava wizz air, košice wizz air"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 py-12">
@@ -525,7 +524,7 @@ export default function WizzAirOdszkodowanieSk() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span><strong>Dôkaz o meškám</strong> (napr. screenshot z FlightRadar24)</span>
+                        <span><strong>Dôkaz o meškaniu</strong> (napr. screenshot z FlightRadar24)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -679,7 +678,7 @@ export default function WizzAirOdszkodowanieSk() {
                 <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <p className="text-green-900 dark:text-green-100 font-semibold mb-2">✅ Realita (podľa súdov EÚ):</p>
                   <p className="text-green-800 dark:text-green-200 text-sm leading-relaxed">
-                    Európsky súdny dvor (rozsudok <strong>C-549/07</strong>) rozhodol, že <strong>bežné technické problémy NIE SÚ mimoriadne okolnosti</strong>. Výnimkou sú len úplne nepredvídateľné udalosti (napr. škody od vtáka počas letu, sabotáž). Wizz Air má povinnosť udržiavať lietadlá v dobrom stave.
+                    Európsky súdny dvor (rozsudok <strong>C-549/07</strong>) rozhodol, že <strong>bežná údržba a technické problémy NIE SÚ mimoriadne okolnosti</strong>. Výnimkou sú len úplne nepredvídateľné udalosti (napr. škody od vtáka počas letu, sabotáž). Wizz Air má povinnosť udržiavať lietadlá v dobrom stave.
                   </p>
                 </div>
               </div>
@@ -730,7 +729,7 @@ export default function WizzAirOdszkodowanieSk() {
                 <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <p className="text-green-900 dark:text-green-100 font-semibold mb-2">✅ Realita:</p>
                   <p className="text-green-800 dark:text-green-200 text-sm leading-relaxed">
-                    Podľa nariadenia EU 261/2004, <strong>kompenzácia MUSÍ byť vyplatená v hotovosti</strong> (alebo bankovým prevodom). Wizz Air nemôže nútiť cestujúcich prijať voucher. Ak vám ponúknu len voucher, môžete odmietnuť a požadovať peniaze.
+                    Podľa nariadenia EU 261/2004, <strong>kompenzácia MUSÍ byť vyplatená v hotovosti</strong> (alebo bankovým prevodom). Wizz Air nemôže nútiť cestujúcich prijať voucher. Ak vám ponúknu len voucher, môžete odmietnuť a vyžiadať si peniaze.
                   </p>
                 </div>
               </div>
@@ -826,7 +825,7 @@ export default function WizzAirOdszkodowanieSk() {
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
                     <li><strong>Voucher/refundácia:</strong> Vrátenie ceny letenky (napr. 50 € za letenku)</li>
-                    <li><strong>Kompenzácia:</strong> Peňažná náhrada za stratu času a nepohodlie (250-600 €)</li>
+                    <li><strong>Kompenzácia:</strong> Peňežná náhrada za stratu času a nepohodlie (250-600 €)</li>
                   </ul>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     Aj keď ste prijali voucher, <strong>stále máte právo</strong> požiadať o hotovostnú kompenzáciu (pokiaľ ste nepodpísali dokument, že sa vzdávate všetkých nárokov). Wizz Air vás o tom neinformuje, ale to je vaše právo.
@@ -1038,7 +1037,7 @@ export default function WizzAirOdszkodowanieSk() {
                 "name": "Ako dlho trvá, kým dostanem peniaze od Wizz Air?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Pri priamom kontakte: 3-6 mesiacov (často vôbec neodpovedia). Cez ClaimWinger: 8-12 týždňov v priemere s 98% úspešnosťou."
+                  "text": "Pri priamom kontakte: 3-6 mesiacov (často vôbec neodpovedia alebo zamietnu). Cez ClaimWinger: 8-12 týždňov v priemere s 98% úspešnosťou."
                 }
               },
               {
