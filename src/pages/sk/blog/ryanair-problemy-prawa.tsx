@@ -829,7 +829,7 @@ export default function RyanairProblemyPrawaSk() {
                     <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm">
-                    <p><strong>ÁNO! Každý pasažier má nárok samostatne, vrátane detí. Príklad: Bratislava → Londýn (1,440 km), Kompenzácia na osobu: €250, Rodina 4 osoby: 4 × €250 = €1,000! Aj bábätká majú nárok na kompenzáciu (ak mali vlastný lístok)!</p>
+                    <p><strong>ÁNO!</strong> Každý pasažier má nárok samostatne, vrátane detí. Príklad: Bratislava → Londýn (1,440 km), Kompenzácia na osobu: €250, Rodina 4 osoby: 4 × €250 = €1,000! Aj bábätká majú nárok na kompenzáciu (ak mali vlastný lístok)!</p>
                   </div>
                 </details>
               </div>

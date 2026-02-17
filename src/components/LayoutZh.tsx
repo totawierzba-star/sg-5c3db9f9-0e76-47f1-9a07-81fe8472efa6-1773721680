@@ -123,6 +123,16 @@ export function LayoutZh({ children }: LayoutZhProps) {
               >
                 赔偿计算器
               </Link>
+              
+              <a
+                href="https://wa.me/212709526999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 font-medium transition-colors flex items-center gap-1"
+              >
+                <span>📱</span>
+                联系我们
+              </a>
 
               {/* Language Switcher */}
               <div className="relative group">
@@ -291,6 +301,17 @@ export function LayoutZh({ children }: LayoutZhProps) {
               >
                 赔偿计算器
               </Link>
+
+              <a
+                href="https://wa.me/212709526999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 font-medium py-2 flex items-center gap-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span>📱</span>
+                联系我们 (WhatsApp)
+              </a>
 
               {/* Language Switcher Mobile */}
               <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
