@@ -118,7 +118,7 @@ export const blogArticlesSk: BlogArticleSk[] = [
     excerpt: "Meškal váš let na dovolenku so Smartwings? Nežiadajte biuro podróży! Zistite, ako získať 400-600 € priamo od leteckej spoločnosti.",
     publishDate: "2026-02-17",
     featured: true,
-    color: "orange"
+    color: "blue"
   },
 
   // KLASTER 3: AIRPORTS (Geographic)
