@@ -82,17 +82,27 @@ export const blogArticlesSk: BlogArticleSk[] = [
   },
   {
     id: "ryanair-problemy-prawa",
-    title: "Ryanair – ako získať kompenzáciu za meškanie a zrušenie? Sprievodca 2025",
+    title: "Ryanair – ako získať kompenzáciu za meškanie a zrušenie?",
     slug: "ryanair-problemy-prawa",
-    category: "airline",
-    airlineName: "Ryanair",
-    flag: "🔵",
-    wordCount: 7200,
-    readTime: 24,
-    excerpt: "Mal váš let Ryanair meškanie alebo bol zrušený? Zistite, ako získať kompenzáciu až 600 €. Praktický sprievodca pre slovenských cestujúcich.",
+    category: "Airlines",
+    excerpt: "Komplexný sprievodca právami pasažiera Ryanair. Zistite, prečo má Ryanair problémy s oneskore a ako získať kompenzáciu až 600 €.",
     publishDate: "2026-02-17",
     featured: true,
-    color: "blue"
+    color: "yellow",
+    wordCount: 7200,
+    readTime: 24
+  },
+  {
+    id: "zmeskany-prestup-kompenzacia",
+    title: "Zmeškaný prestup – kedy máte nárok na kompenzáciu?",
+    slug: "zmeskany-prestup-kompenzacia",
+    category: "Pillar",
+    excerpt: "Prvý let oneskoreý, zmeškali ste nadväzujúci? Zistite, kedy vám patrí až 600 € kompenzácie za zmeškaný prestup a ako ju získať.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "blue",
+    wordCount: 6500,
+    readTime: 18
   },
 
   // KLASTER 3: AIRPORTS (Geographic)
