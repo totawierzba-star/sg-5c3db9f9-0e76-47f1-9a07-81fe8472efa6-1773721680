@@ -64,7 +64,7 @@ export default function RyanairProblemyPrawaSk() {
                     ⚠️ POZOR: Ryanair má zlú povesť pri kompenzáciách
                   </p>
                   <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                    <li>• <strong>22% letov</strong> má meškanie {'>'} 15 minút (2024)</li>
+                    <li>• <strong>22% letov</strong> má meškanie &gt; 15 minút (2024)</li>
                     <li>• <strong>4% letov</strong> je zrušených (dvojnásobok priemeru EÚ)</li>
                     <li>• <strong>95% nárokov</strong> automaticky odmietnutých priamo</li>
                     <li>• <strong>Podľa AirHelp:</strong> 68/80 aerolínií v spoľahlivosti</li>
@@ -427,7 +427,7 @@ export default function RyanairProblemyPrawaSk() {
                   <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Meškanie <strong>{'>'} 3h pri príchode</strong></span>
+                      <span>Meškanie <strong>&gt; 3h pri príchode</strong></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
@@ -558,11 +558,11 @@ export default function RyanairProblemyPrawaSk() {
                     </li>
                     <li className="flex items-start gap-2">
                       <XCircle className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-400">Ryanair neposkytuje dlhé trasy {'>'} 3,500 km</span>
+                      <span className="text-gray-400">Ryanair neposkytuje dlhé trasy &gt; 3,500 km</span>
                     </li>
                   </ul>
                   <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 italic">
-                    * V praxi Ryanair nelietať trasy {'>'} 3,500 km (low-cost model)
+                    * V praxi Ryanair nelietať trasy &gt; 3,500 km (low-cost model)
                   </p>
                 </div>
               </div>
