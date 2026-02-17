@@ -136,6 +136,21 @@ export const blogArticlesSk: BlogArticleSk[] = [
     publishDate: "2026-02-17",
     featured: true,
     color: "red"
+  },
+  {
+    id: "letisko-bratislava-opoznienie",
+    title: "Letisko Bratislava (BTS) – čo robiť, keď sa letíte z Bratislavy?",
+    slug: "letisko-bratislava-opoznienie",
+    category: "airport",
+    airportCode: "BTS",
+    airportName: "Bratislava",
+    flag: "🇸🇰",
+    wordCount: 7800,
+    readTime: 26,
+    excerpt: "Zistite, ako sa vyrobiť pri meškaní letu z Bratislavy. Praktický sprievodca pre cestujúcich z Bratislavy.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "blue"
   }
 ];
 
