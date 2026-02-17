@@ -79,30 +79,30 @@ export const blogArticlesSk: BlogArticleSk[] = [
 
   // KLASTER 2: VEĽKÁ TROJKA (Airlines)
   {
-    id: "wizz-air-odszkodowanie-poradnik",
+    id: "wizz-air-odszkodowanie",
     title: "Wizz Air – ako získať kompenzáciu za meškanie? Sprievodca krok za krokom",
-    slug: "wizz-air-odszkodowanie-poradnik",
+    slug: "wizz-air-odszkodowanie",
     category: "airline",
     airlineName: "Wizz Air",
     flag: "🟣",
     wordCount: 7500,
     readTime: 25,
     excerpt: "Praktický sprievodca získaním kompenzácie od Wizz Air za meškanie alebo zrušenie letu z Bratislavy. Formuláre, termíny, úspešné stratégie.",
-    publishDate: "2026-02-06",
+    publishDate: "2026-02-17",
     featured: true,
     color: "purple"
   },
   {
-    id: "ryanair-problemy-z-lotem",
-    title: "Ryanair a problémy s letom – ako bojovať za svoje práva?",
-    slug: "ryanair-problemy-z-lotem",
+    id: "ryanair-problemy-prawa",
+    title: "Ryanair – ako získať kompenzáciu za meškanie a zrušenie? Sprievodca 2025",
+    slug: "ryanair-problemy-prawa",
     category: "airline",
     airlineName: "Ryanair",
     flag: "🔵",
     wordCount: 7200,
     readTime: 24,
-    excerpt: "Ryanair často ignoruje žiadosti o kompenzáciu. Zistite, ako účinne získať svoje peniaze a čo robiť pri odmietnutí.",
-    publishDate: "2026-02-06",
+    excerpt: "Mal váš let Ryanair meškanie alebo bol zrušený? Zistite, ako získať kompenzáciu až 600 €. Praktický sprievodca pre slovenských cestujúcich.",
+    publishDate: "2026-02-17",
     featured: true,
     color: "blue"
   },
@@ -123,9 +123,9 @@ export const blogArticlesSk: BlogArticleSk[] = [
 
   // KLASTER 3: GEOGRAFICKÉ (Airports)
   {
-    id: "lotnisko-wieden-schwechat-poradnik",
+    id: "lotnisko-wieden-opoznienie",
     title: "Letisko Viedeň (Schwechat) – čo robiť pri meškaní letu? Sprievodca pre Slovákov",
-    slug: "lotnisko-wieden-schwechat-poradnik",
+    slug: "lotnisko-wieden-opoznienie",
     category: "airport",
     airportCode: "VIE",
     airportName: "Viedeň Schwechat",
@@ -133,7 +133,7 @@ export const blogArticlesSk: BlogArticleSk[] = [
     wordCount: 8200,
     readTime: 27,
     excerpt: "Viedeň je hlavná brána Slovákov do sveta. Zistite svoje práva pri meškaní letu z VIE – právo EÚ vás chráni rovnako ako Rakúšanov!",
-    publishDate: "2026-02-06",
+    publishDate: "2026-02-17",
     featured: true,
     color: "red"
   },

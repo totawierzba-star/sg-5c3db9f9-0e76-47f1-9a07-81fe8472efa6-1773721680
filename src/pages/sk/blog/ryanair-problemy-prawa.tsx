@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Plane, AlertCircle, CheckCircle2, Euro, ArrowRight, Clock, Shield, XCircle } from "lucide-react";
 
-export default function RyanairProblemyPrawaSk() {
+export default function RyanairProblemyPravaSk() {
   return (
     <LayoutSk>
       <SEO
@@ -287,7 +287,7 @@ export default function RyanairProblemyPrawaSk() {
                 {/* Problem 3: Long Delays */}
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-yellow-500">
                   <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
-                    3️⃣ Dlhé Meškania (>3 hodiny)
+                    3️⃣ Dlhé Meškania (&gt;3 hodiny)
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-3">
                     <strong>Problém:</strong> Let má výrazné meškanie, často kvôli kaskádovým problémom.
@@ -338,7 +338,7 @@ export default function RyanairProblemyPrawaSk() {
                     </div>
                     <div className="bg-purple-50 dark:bg-purple-900/20 rounded p-3">
                       <p className="text-sm font-semibold text-gray-900 dark:text-white mb-1">
-                        B) Stratená Batožina (>21 dní)
+                        B) Stratená Batožina (&gt;21 dní)
                       </p>
                       <ul className="text-xs text-gray-700 dark:text-gray-300 space-y-1">
                         <li>• Kompenzácia až <strong>€1,600</strong> (podľa Montreal Convention)</li>
@@ -431,7 +431,7 @@ export default function RyanairProblemyPrawaSk() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Zrušený let (<strong>{'<'}14 dní</strong> pred odletom)</span>
+                      <span>Zrušený let (<strong>&lt;14 dní</strong> pred odletom)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
@@ -755,7 +755,7 @@ export default function RyanairProblemyPrawaSk() {
                     <ul className="list-disc list-inside mt-1 space-y-1">
                       <li>Bratislava → Londýn = 1,440 km</li>
                       <li>Kompenzácia: <strong>250 €</strong> (do 1,500 km)</li>
-                      <li>Nemusíte platiť €500 za lístok, aby ste mali nárok!). Vždy hotovosť, nikdy voucher</li>
+                      <li>Nemusíte platiť €500 za lístok, aby ste mali nárok!</li>
                     </ul>
                   </div>
                 </details>
