@@ -208,6 +208,32 @@ export const blogArticlesSk: BlogArticleSk[] = [
         }
       ]
     }
+  },
+
+  // KLASTER 4: LONG-TAIL (FAQ a Tipy)
+  {
+    id: "overbooking-odmietnutie-nastupu",
+    title: "Overbooking – odmietnutie nástupu na palubu a vaše práva (kompenzácia na letisku!)",
+    slug: "overbooking-odmietnutie-nastupu",
+    category: "longtail",
+    wordCount: 5500,
+    readTime: 16,
+    excerpt: "Aerolínka vám odmietla nástup na palubu? Poznajte svoje práva! Okamžitá kompenzácia až 600 € priamo na letisku. Dobrovoľné vs nedobrovoľné odmietnutie – kritický rozdiel!",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "red",
+    schema: {
+      faqItems: [
+        {
+          question: "Musím prijať voucher, ak mi ho aerolínka ponúka?",
+          answer: "NIE! Podľa EÚ 261/2004, článok 7, máte právo na kompenzáciu v hotovosti. Voucher je povolený LEN ak písomne súhlasíte."
+        },
+        {
+          question: "Môžem dostať kompenzáciu aj za deti?",
+          answer: "ÁNO! Kompenzácia sa vypláca na každého cestujúceho, vrátane detí a bábätiek, pokiaľ majú vlastný lístok. Rodina 4 osoby = 4 × kompenzácia!"
+        }
+      ]
+    }
   }
 ];
 
