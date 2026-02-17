@@ -188,6 +188,26 @@ export const blogArticlesSk: BlogArticleSk[] = [
         }
       ]
     }
+  },
+  {
+    id: "premlcanie-narokov-kompenzacia",
+    title: "Premlčanie nárokov na kompenzáciu za let – koľko máte času?",
+    slug: "premlcanie-narokov-kompenzacia",
+    category: "longtail",
+    wordCount: 4800,
+    readTime: 16,
+    excerpt: "Máte len 3 roky na podanie reklamácie za opoždený alebo zrušený let. Zistite, ako sa počíta lehota a prečo konať hneď.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        {
+          question: "Môj let bol 20. februára 2023. Do kedy môžem reklamovať?",
+          answer: "Máte čas do 20. februára 2026 (3 roky od dátumu letu). ClaimWinger dokáže spracovať vašu reklamáciu za 24 hodín."
+        }
+      ]
+    }
   }
 ];
 
