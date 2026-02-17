@@ -151,6 +151,43 @@ export const blogArticlesSk: BlogArticleSk[] = [
     publishDate: "2026-02-17",
     featured: true,
     color: "blue"
+  },
+  {
+    id: "letisko-kosice-opoznienie",
+    title: "Letisko Košice (KSC) – čo robiť, keď sa letíte z Košíc?",
+    slug: "letisko-kosice-opoznienie",
+    category: "airport",
+    airportCode: "KSC",
+    airportName: "Košice",
+    flag: "🇸🇰",
+    wordCount: 6900,
+    readTime: 23,
+    excerpt: "Zistite, ako sa vyrobiť pri meškaní letu z Košíc. Praktický sprievodca pre cestujúcich z Košíc.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "blue"
+  },
+
+  // KLASTER 4: LONG-TAIL (FAQ a Tipy)
+  {
+    id: "mimoriadne-okolnosti-kompenzacia",
+    title: "Mimoriadne okolnosti – kedy aerolínka nemusí platiť kompenzáciu?",
+    slug: "mimoriadne-okolnosti-kompenzacia",
+    category: "longtail",
+    wordCount: 5200,
+    readTime: 17,
+    excerpt: "Zistite, kedy sú mimoriadne okolnosti skutočné a kedy len výhovorka aerolíniek. Praktický sprievodca s judikatúrou EÚ a reálnymi prípadmi.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        {
+          question: "Ako viem, či aerolínka klame o mimoriadnych okolnostiach?",
+          answer: "Použite 3 kroky: 1) FlightRadar24 (lietali iné lety?), 2) Weather reports (overenie počasia), 3) Novinové články (štrajky, technické problémy). ClaimWinger to overí za vás automaticky."
+        }
+      ]
+    }
   }
 ];
 
