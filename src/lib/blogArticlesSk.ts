@@ -84,25 +84,41 @@ export const blogArticlesSk: BlogArticleSk[] = [
     id: "ryanair-problemy-prawa",
     title: "Ryanair – ako získať kompenzáciu za meškanie a zrušenie?",
     slug: "ryanair-problemy-prawa",
-    category: "Airlines",
-    excerpt: "Komplexný sprievodca právami pasažiera Ryanair. Zistite, prečo má Ryanair problémy s oneskore a ako získať kompenzáciu až 600 €.",
+    category: "airline",
+    airlineName: "Ryanair",
+    flag: "🔵",
+    wordCount: 7200,
+    readTime: 24,
+    excerpt: "Mal váš let Ryanair meškanie alebo bol zrušený? Zistite, ako získať kompenzáciu až 600 €. Praktický sprievodca pre slovenských cestujúcich.",
     publishDate: "2026-02-17",
     featured: true,
-    color: "yellow",
-    wordCount: 7200,
-    readTime: 24
+    color: "blue"
   },
   {
     id: "zmeskany-prestup-kompenzacia",
     title: "Zmeškaný prestup – kedy máte nárok na kompenzáciu?",
     slug: "zmeskany-prestup-kompenzacia",
-    category: "Pillar",
-    excerpt: "Prvý let oneskoreý, zmeškali ste nadväzujúci? Zistite, kedy vám patrí až 600 € kompenzácie za zmeškaný prestup a ako ju získať.",
+    category: "foundation",
+    wordCount: 6500,
+    readTime: 18,
+    excerpt: "Prvý let oneskorený, zmeškali ste nadväzujúci? Zistite, kedy vám patrí až 600 € kompenzácie za zmeškaný prestup a ako ju získať.",
     publishDate: "2026-02-17",
     featured: true,
-    color: "blue",
-    wordCount: 6500,
-    readTime: 18
+    color: "blue"
+  },
+  {
+    id: "smartwings-meskanie-kompenzacia",
+    title: "Smartwings – meškanie dovolenkového letu: Kto platí kompenzáciu?",
+    slug: "smartwings-meskanie-kompenzacia",
+    category: "airline",
+    airlineName: "Smartwings",
+    flag: "🟠",
+    wordCount: 7800,
+    readTime: 26,
+    excerpt: "Meškal váš let na dovolenku so Smartwings? Nežiadajte biuro podróży! Zistite, ako získať 400-600 € priamo od leteckej spoločnosti.",
+    publishDate: "2026-02-17",
+    featured: true,
+    color: "orange"
   },
 
   // KLASTER 3: AIRPORTS (Geographic)
