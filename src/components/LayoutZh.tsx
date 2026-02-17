@@ -411,6 +411,30 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 </li>
               </ul>
             </div>
+
+            {/* Contact - WhatsApp */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">联系我们</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a 
+                    href="https://wa.me/212709526999" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm hover:text-blue-400 transition-colors flex items-center gap-2"
+                  >
+                    <span>📱</span>
+                    <span>WhatsApp 中文客服</span>
+                  </a>
+                </li>
+                <li className="text-sm text-gray-400">
+                  +212 709 526 999
+                </li>
+                <li className="text-xs text-gray-500">
+                  为中国旅客提供支持
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">

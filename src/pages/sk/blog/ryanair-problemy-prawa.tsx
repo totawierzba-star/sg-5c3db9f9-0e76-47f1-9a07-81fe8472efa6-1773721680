@@ -64,10 +64,10 @@ export default function RyanairProblemyPrawaSk() {
                     ⚠️ POZOR: Ryanair má zlú povesť pri kompenzáciách
                   </p>
                   <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                    <li>• <strong>22% letov</strong> má meškanie &gt;15 minút (2024)</li>
+                    <li>• <strong>22% letov</strong> má meškanie {'>'} 15 minút (2024)</li>
                     <li>• <strong>4% letov</strong> je zrušených (dvojnásobok priemeru EÚ)</li>
                     <li>• <strong>95% nárokov</strong> automaticky odmietnutých priamo</li>
-                    <li>• <strong>Podľa AirHelp:</strong> 68. miesto z 80 aerolínií v spoľahlivosti</li>
+                    <li>• <strong>Podľa AirHelp:</strong> 68/80 aerolínií v spoľahlivosti</li>
                   </ul>
                 </div>
               </div>
@@ -427,11 +427,11 @@ export default function RyanairProblemyPrawaSk() {
                   <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Meškanie <strong>&gt;3h pri príchode</strong></span>
+                      <span>Meškanie <strong>{'>'} 3h pri príchode</strong></span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
-                      <span>Zrušený let (<strong>&lt;14 dní</strong> pred odletom)</span>
+                      <span>Zrušený let (<strong>{'<'}14 dní</strong> pred odletom)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 font-bold">✓</span>
@@ -497,7 +497,7 @@ export default function RyanairProblemyPrawaSk() {
                   <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>Bratislava → Londýn (1,440 km)</span>
+                      <span>Bratislava → Londýn Stansted (1,440 km)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -505,7 +505,7 @@ export default function RyanairProblemyPrawaSk() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>Košice → Londýn (1,780 km)</span>
+                      <span>Košice → Londýn Stansted (1,780 km)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -536,7 +536,7 @@ export default function RyanairProblemyPrawaSk() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>Košice → Miláno (1,050 km)</span>
+                      <span>Košice → Miláno Bergamo (1,050 km)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -558,11 +558,11 @@ export default function RyanairProblemyPrawaSk() {
                     </li>
                     <li className="flex items-start gap-2">
                       <XCircle className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-400">Ryanair neposkytuje dlhé trasy &gt;3,500 km</span>
+                      <span className="text-gray-400">Ryanair neposkytuje dlhé trasy {'>'} 3,500 km</span>
                     </li>
                   </ul>
                   <p className="text-xs text-gray-600 dark:text-gray-400 mt-3 italic">
-                    * V praxi Ryanair nelietať trasy &gt;3,500 km (low-cost model)
+                    * V praxi Ryanair nelietať trasy {'>'} 3,500 km (low-cost model)
                   </p>
                 </div>
               </div>
@@ -710,7 +710,7 @@ export default function RyanairProblemyPrawaSk() {
                     </p>
                     <ul className="text-xs text-gray-700 dark:text-gray-300 space-y-1">
                       <li>• Právny tím špecializovaný na letecké právo</li>
-                      <li>• Ryanair berie vážne (nie ignoruje)</li>
+                      <li>• Ryanair berie vážnejšie a rýchlejšie vypláca</li>
                       <li>• Platíte iba pri úspechu (25% provízia)</li>
                       <li>• Môžete podať nárok až 3 roky dozadu</li>
                       <li>• Vždy hotovosť, nikdy voucher</li>
@@ -732,7 +732,7 @@ export default function RyanairProblemyPrawaSk() {
               <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 p-4 rounded-lg mt-6">
                 <p className="text-sm text-gray-700 dark:text-gray-300">
                   💡 <strong>Prečo anglický formulár ClaimWinger funguje lepšie?</strong><br />
-                  Ryanair často ignoruje nároky v slovenčine (vie, že Slováci sa nevedia dobre brániť). ClaimWinger má medzinárodný právny tím – Ryanair vás berie vážnejšie a rýchlejšie vypláca.
+                  Ryanair často ignoruje nároky v slovenčine (vie, že Slováci sa nevedia dobre brániť). ClaimWinger má medzinárodný právny tím – overíme pravdivosť výhovorky!
                 </p>
               </div>
             </section>
@@ -755,7 +755,7 @@ export default function RyanairProblemyPrawaSk() {
                     <ul className="list-disc list-inside mt-1 space-y-1">
                       <li>Bratislava → Londýn = 1,440 km</li>
                       <li>Kompenzácia: <strong>250 €</strong> (do 1,500 km)</li>
-                      <li>Nemusíte platiť €500 za lístok, aby ste mali nárok!</li>
+                      <li>Nemusíte platiť €500 za lístok, aby ste mali nárok!). Vždy hotovosť, nikdy voucher</li>
                     </ul>
                   </div>
                 </details>
@@ -786,18 +786,7 @@ export default function RyanairProblemyPrawaSk() {
                     <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm">
-                    <p><strong>ÁNO, často áno!</strong> Voucher = náhrada lístka (ticket refund), NIE kompenzácia.</p>
-                    <p className="mt-2"><strong>Príklad:</strong></p>
-                    <div className="bg-gray-50 dark:bg-gray-700 rounded p-2 my-2">
-                      <p className="text-xs">
-                        Lístok: €50<br />
-                        Voucher: €50 (náhrada lístka)<br />
-                        Kompenzácia: <strong>€250</strong> (stále vám patrí!)
-                      </p>
-                    </div>
-                    <p className="mt-2">
-                      Voucher a kompenzácia sú <strong>2 rozdielne veci</strong>. Máte nárok na oboje!
-                    </p>
+                    <p><strong>ÁNO, často áno!</strong> Voucher = náhrada lístka (ticket refund), NIE kompenzácia. Príklad: Lístok €50 + Voucher €50 (náhrada lístka) + Kompenzácia €250 (stále vám patrí!). Voucher a kompenzácia sú 2 rozdielne veci. Máte nárok na oboje!</p>
                   </div>
                 </details>
 
@@ -827,8 +816,7 @@ export default function RyanairProblemyPrawaSk() {
                     <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm">
-                    <p><strong>ÁNO!</strong> Máte <strong>3 roky</strong> na podanie nároku (na Slovensku).</p>
-                    <p className="mt-2"><strong>Príklad:</strong> Ak mal váš Ryanair let meškanie v júni 2022, môžete podať nárok až do júna 2025.</p>
+                    <p><strong>ÁNO!</strong> Máte <strong>3 roky</strong> na podanie nároku (na Slovensku). Príklad: Ak mal váš Ryanair let meškanie v júni 2022, môžete podať nárok až do júna 2025.</p>
                     <p className="mt-2 text-blue-600 font-semibold">
                       💰 Koľko peňazí ste možno nechali na stole? <Link href="/sk/kalkulacka-kompenzacie" className="underline">Skontrolujte teraz</Link>
                     </p>
@@ -841,18 +829,7 @@ export default function RyanairProblemyPrawaSk() {
                     <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm">
-                    <p><strong>ÁNO!</strong> Každý pasažier má nárok samostatne, vrátane detí.</p>
-                    <p className="mt-2"><strong>Príklad:</strong></p>
-                    <div className="bg-green-50 dark:bg-green-900/20 rounded p-2 my-2">
-                      <p className="text-xs">
-                        Trasa: Bratislava → Londýn (1,440 km)<br />
-                        Kompenzácia na osobu: €250<br />
-                        Rodina 4 osoby: <strong>4 × €250 = €1,000!</strong>
-                      </p>
-                    </div>
-                    <p className="mt-2">
-                      Aj bábätká majú nárok na kompenzáciu (ak mali vlastný lístok)!
-                    </p>
+                    <p><strong>ÁNO! Každý pasažier má nárok samostatne, vrátane detí. Príklad: Bratislava → Londýn (1,440 km), Kompenzácia na osobu: €250, Rodina 4 osoby: 4 × €250 = €1,000! Aj bábätká majú nárok na kompenzáciu (ak mali vlastný lístok)!</p>
                   </div>
                 </details>
               </div>
