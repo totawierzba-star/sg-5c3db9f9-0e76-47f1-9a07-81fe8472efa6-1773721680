@@ -52,7 +52,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "narizeni-es-261-2004",
     title: "Co je nařízení ES 261/2004 a jak chrání cestující v EU",
-    slug: "narizeni-es-261-2004",
+    slug: "/cs/blog/narizeni-es-261-2004",
     excerpt: "Zjistěte, jak nařízení ES 261/2004 chrání vaše práva při zpožděných a zrušených letech. Až 600 € kompenzace – zjistěte, kdy máte nárok.",
     category: "foundation",
     wordCount: 2500,
@@ -62,7 +62,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "prava-cestujicich-ceska-republika",
     title: "Práva leteckých cestujících v České republice",
-    slug: "prava-cestujicich-ceska-republika",
+    slug: "/cs/blog/prava-cestujicich-ceska-republika",
     category: "foundation",
     excerpt: "Kompletní průvodce právy leteckých cestujících v ČR. ÚCL, ČOI, soudy, promlčecí lhůta a statistiky z českých letišť.",
     wordCount: 3800,
@@ -72,7 +72,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "kdy-mate-narok-kompenzaci",
     title: "Kdy máte nárok na kompenzaci za zpožděný let?",
-    slug: "kdy-mate-narok-kompenzaci",
+    slug: "/cs/blog/kdy-mate-narok-kompenzaci",
     category: "foundation",
     excerpt: "4 hlavní podmínky nároku, jak se měří zpoždění, mimořádné okolnosti, speciální případy a časté chyby.",
     wordCount: 4200,
