@@ -9,7 +9,7 @@ export default function NarizeniES2612004Article() {
       <SEO
         title="Nařízení ES 261/2004 – práva cestujících při zpoždění letu"
         description="Zjistěte, jak nařízení ES 261/2004 chrání vaše práva při zpožděných a zrušených letech. Až 600 € kompenzace – zjistěte, kdy máte nárok."
-        canonical="https://lotproblem.pl/cs/blog/narizeni-es-261-2004"
+        url="https://lotproblem.pl/cs/blog/narizeni-es-261-2004"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -527,7 +527,7 @@ export default function NarizeniES2612004Article() {
                   <span className="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold mt-0.5">1</span>
                   <div>
                     <strong>Úřad pro civilní letectví (ÚCL)</strong><br />
-                    Je národní dozorový orgán pro civilní letectví v ČR. Pokud aerolinka odmítá kompenzaci, 
+                    Je národní dozorový orgán pro civilní letectví v ČR. Pokud aerolinka odmítá vyplácet kompenzaci, 
                     můžete podat stížnost na ÚCL (zdarma). ÚCL může vydat rozhodnutí, ale nemůže přímo vynutit platbu.
                   </div>
                 </li>
@@ -661,32 +661,6 @@ export default function NarizeniES2612004Article() {
                 <div className="px-6 py-4 bg-gray-50 dark:bg-gray-900/50 text-gray-700 dark:text-gray-300">
                   <p className="mb-3">
                     <strong>Záleží na směru letu a aerolince:</strong>
-                  </p>
-                  <ul className="space-y-2 text-sm list-disc list-inside">
-                    <li><strong>Praha → New York</strong> (jakákoliv aerolinka) = ✅ Pokryto (let odlétá z EU)</li>
-                    <li><strong>New York → Praha</strong> (ČSA, Lufthansa...) = ✅ Pokryto (aerolinka z EU)</li>
-                    <li><strong>New York → Praha</strong> (American Airlines, Delta...) = ❌ Nepokryto (ne-EU aerolinka)</li>
-                    <li><strong>Bangkok → New York</strong> (Thai Airways) = ❌ Nepokryto (mimo EU + ne-EU aerolinka)</li>
-                  </ul>
-                  <p className="text-sm mt-3">
-                    💡 <strong>Pravidlo:</strong> Pokud <strong>odlétáte z EU</strong>, máte vždy nárok (jakákoliv aerolinka). 
-                    Pokud <strong>přilétáte do EU</strong>, máte nárok jen pokud provozuje aerolinka z EU.
-                  </p>
-                </div>
-              </details>
-
-              <details className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden group">
-                <summary className="px-6 py-4 cursor-pointer font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-between">
-                  <span>Co když aerolinka tvrdí "mimořádná okolnost" (technická závada, počasí)?</span>
-                  <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <div className="px-6 py-4 bg-gray-50 dark:bg-gray-900/50 text-gray-700 dark:text-gray-300">
-                  <p className="mb-3">
-                    <strong>Aeroliky velmi často LŽOU!</strong> 95% zamítnutých žádostí s důvodem "mimořádná okolnost" 
-                    je ve skutečnosti nepravdivých. ClaimWinger to ví a aktivně tyto lži vyvrací.
-                  </p>
-                  <p className="text-sm mb-3">
-                    <strong>Příklady, kdy aerolinka MUSÍ platit (i když tvrdí opak):</strong>
                   </p>
                   <ul className="space-y-2 text-sm list-disc list-inside">
                     <li><strong>Technická závada</strong> – 99% případů = aerolinka zodpovídá (údržba je její povinnost)</li>

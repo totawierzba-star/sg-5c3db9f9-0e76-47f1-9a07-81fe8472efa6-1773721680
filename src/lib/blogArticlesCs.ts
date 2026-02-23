@@ -55,6 +55,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
     slug: "narizeni-es-261-2004",
     excerpt: "Zjistěte, jak nařízení ES 261/2004 chrání vaše práva při zpožděných a zrušených letech. Až 600 € kompenzace – zjistěte, kdy máte nárok.",
     category: "foundation",
+    wordCount: 2500,
     readTime: 12,
     publishDate: "2026-02-23"
   }
