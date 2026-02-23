@@ -46,6 +46,17 @@ export const blogArticlesCs: BlogArticleCs[] = [
     publishDate: "2026-02-06",
     featured: true,
     color: "bg-blue-50 dark:bg-blue-950"
+  },
+
+  // New article - Legal foundation
+  {
+    id: "narizeni-es-261-2004",
+    title: "Co je nařízení ES 261/2004 a jak chrání cestující v EU",
+    slug: "narizeni-es-261-2004",
+    excerpt: "Zjistěte, jak nařízení ES 261/2004 chrání vaše práva při zpožděných a zrušených letech. Až 600 € kompenzace – zjistěte, kdy máte nárok.",
+    category: "foundation",
+    readTime: 12,
+    publishDate: "2026-02-23"
   }
 ];
 
