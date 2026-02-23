@@ -118,6 +118,34 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 900,
     readTime: 7,
     publishDate: "2026-02-23"
+  },
+
+  // ČSA Czech Airlines article
+  {
+    id: "csa-czech-airlines-kompenzace",
+    title: "ČSA (Czech Airlines) kompenzace za zpoždění a zrušení letu 2026",
+    slug: "/cs/blog/csa-czech-airlines-kompenzace",
+    excerpt: "Máte zpožděný nebo zrušený let s ČSA? Zjistěte, jak získat kompenzaci až 600 € podle nařízení EU 261/2004. Návod krok za krokem.",
+    category: "airline",
+    airlineName: "ČSA Czech Airlines",
+    wordCount: 1200,
+    readTime: 6,
+    publishDate: "2026-02-23"
+  },
+
+  // Letiště Brno article
+  {
+    id: "letiste-brno-zpozdeni",
+    title: "Letiště Brno-Tuřany (BRQ): Zpožděný let a kompenzace 2026",
+    slug: "/cs/blog/letiste-brno-zpozdeni",
+    excerpt: "Měli jste zpoždění z letiště Brno (BRQ)? Zjistěte, jak získat až 600 € odškodnění. Smartwings, Ryanair a další lety z Brna.",
+    category: "airport",
+    airportCode: "BRQ",
+    airportName: "Letiště Brno-Tuřany",
+    flag: "🇨🇿",
+    wordCount: 1100,
+    readTime: 7,
+    publishDate: "2026-02-23"
   }
 ];
 
