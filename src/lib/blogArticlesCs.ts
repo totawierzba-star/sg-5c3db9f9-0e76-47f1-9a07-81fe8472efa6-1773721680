@@ -106,6 +106,18 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 3500,
     readTime: 7,
     publishDate: "2026-02-23"
+  },
+
+  // Smartwings article
+  {
+    id: "smartwings-prava-cestujicich",
+    title: "Smartwings kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/smartwings-prava-cestujicich",
+    excerpt: "Jak reklamovat zpožděný nebo zrušený let u Smartwings? Zjistěte své práva, postupy a získejte až 600 € kompenzace.",
+    category: "airline",
+    wordCount: 900,
+    readTime: 7,
+    publishDate: "2026-02-23"
   }
 ];
 
