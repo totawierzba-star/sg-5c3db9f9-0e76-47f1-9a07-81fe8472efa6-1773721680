@@ -344,7 +344,7 @@ export default function PragueAirportDelayedFlight() {
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-2">
                     Náš tým zařídí celý proces za vás: komunikace s aerolinkou, právní zastoupení, 
-                    soudní řízení (pokud nutné). Platíte pouze při úspěchu (25% provize).
+                    soudní řízení (pokud nutné). Platíte pouze při úspěchu (30% provize).
                   </p>
                   <a
                     href="https://claimwinger.com"
@@ -435,7 +435,7 @@ export default function PragueAirportDelayedFlight() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <p className="text-blue-100 mt-4 text-sm">
-              ✓ Žádné riziko • ✓ Žádné skryté poplatky • ✓ 25% provize pouze při úspěchu
+              ✓ Žádné riziko • ✓ Žádné skryté poplatky • ✓ 30% provize pouze při úspěchu
             </p>
           </div>
 

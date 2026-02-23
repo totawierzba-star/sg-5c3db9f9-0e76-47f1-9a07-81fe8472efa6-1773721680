@@ -793,7 +793,7 @@ export default function KdyMateNarokKompenzaci() {
               <p className="text-gray-700 dark:text-gray-300">
                 U charteru odpovídá <strong>aerolinka</strong> (např. Smartwings, Travel Service), 
                 <strong>NIKOLI</strong> cestovní kancelář! CK zodpovídá jen za zrušení/změnu zájezdu, 
-                ale kompenzaci za let řeší přímo s aerolinkou.
+                ale kompenzaci řeší přímo s aerolinkou.
               </p>
             </div>
           </div>
@@ -801,7 +801,7 @@ export default function KdyMateNarokKompenzaci() {
 
         {/* Časté chyby */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
             ⚠️ 7 nejčastějších chyb, kvůli kterým lidé přijdou o kompenzaci
           </h2>
 
@@ -892,7 +892,7 @@ export default function KdyMateNarokKompenzaci() {
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 <strong>Řešení:</strong> S <Link href="https://claimwinger.com/cs?utm_source=blog&utm_medium=article&utm_campaign=kdy_mate_narok" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</Link> <strong>neplatíte nic předem</strong>. 
-                Provize (25 %) se strhne až při úspěchu. Pokud neuspějeme → neplatíte nic!
+                Provize (30 %) se strhne až při úspěchu. Pokud neuspějeme → neplatíte nic!
               </p>
             </div>
           </div>
@@ -971,20 +971,7 @@ export default function KdyMateNarokKompenzaci() {
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                4. Co když jsem letěl na dovolenou přes 3. zemi? (Praha → Istanbul → Hurghada)
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-3">
-                Pokud máte <strong>jednu rezervaci</strong> (jedno PNR), kompenzace se počítá podle <strong>celkové vzdálenosti</strong> 
-                Praha → Hurghada (i když měl zpoždění jen let Istanbul → Hurghada).
-              </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                <strong>Podmínka:</strong> První let musel odletět z EU, NEBO všechny lety provozovala evropská aerolinka.
-              </p>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                5. Co když jsem koupil letenku přes Kiwi.com – kdo mi zaplatí kompenzaci?
+                4. Co když jsem koupil letenku přes Kiwi.com – kdo mi zaplatí kompenzaci?
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
                 <strong>Kompenzaci VŽDY platí aerolinka, ne Kiwi.com!</strong> Online travel agencies (OTA) jako Kiwi, Booking, Expedia 
@@ -994,36 +981,7 @@ export default function KdyMateNarokKompenzaci() {
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                6. Jak dlouho mám čas na podání žádosti?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-3">
-                V <strong>České republice</strong> je promlčecí lhůta <strong>3 roky</strong> od data letu. 
-                Ale doporučujeme podat žádost co nejdříve, protože:
-              </p>
-              <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                <li>Po 2-3 letech můžete ztratit důkazy (boarding pass, e-maily)</li>
-                <li>Aerolinka může zkrachovat nebo změnit vlastníka</li>
-                <li>Inflace snižuje hodnotu kompenzace</li>
-              </ul>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                7. Co když aerolinka ignoruje mé žádosti?
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-3">
-                To je <strong>velmi časté</strong>! Aerolinie často neodpovídají nebo odpovídají až po 60-90 dnech s odmítnutím. 
-                Když neuspějete individuálně:
-              </p>
-              <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                <li><strong>Možnost 1:</strong> Kontaktujte ÚCL (Úřad pro civilní letectví) – ale trvá to 4-6 měsíců a ÚCL nevymáhá peníze za vás</li>
-                <li><strong>Možnost 2:</strong> Nechte <Link href="https://claimwinger.com/cs?utm_source=blog&utm_medium=article&utm_campaign=kdy_mate_narok" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</Link> vyřídit vše za vás – včetně soudu (98 % úspěšnost)</li>
-              </ul>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                8. Mám nárok i pokud jsem nestihl check-in kvůli zpoždění?
+                5. Co když jsem nestihl check-in kvůli zpoždění?
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-3">
                 <strong>Záleží na situaci:</strong>
@@ -1133,14 +1091,6 @@ export default function KdyMateNarokKompenzaci() {
               },
               {
                 "@type": "Question",
-                "name": "Co když jsem letěl na dovolenou přes 3. zemi?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Pokud máte jednu rezervaci (jedno PNR), kompenzace se počítá podle celkové vzdálenosti. První let musel odletět z EU, NEBO všechny lety provozovala evropská aerolinka."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "Co když jsem koupil letenku přes Kiwi.com – kdo mi zaplatí kompenzaci?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -1160,7 +1110,7 @@ export default function KdyMateNarokKompenzaci() {
                 "name": "Co když aerolinka ignoruje mé žádosti?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "To je velmi časté! Můžete kontaktovat ÚCL (Úřad pro civilní letectví), nebo nechat ClaimWinger vyřídit vše za vás – včetně soudu (98 % úspěšnost)."
+                  "text": "To je velmi časté! Můžete kontaktovat ÚCL (Úřad pro civilní letectví), nebo nechte <Link href=\"https://claimwinger.com/cs?utm_source=blog&utm_medium=article&utm_campaign=kdy_mate_narok\" className=\"text-blue-600 dark:text-blue-400 underline\">ClaimWinger</Link> vyřídit vše za vás – včetně soudu (98 % úspěšnost)."
                 }
               },
               {

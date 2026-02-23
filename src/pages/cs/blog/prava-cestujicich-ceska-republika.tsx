@@ -433,7 +433,7 @@ export default function PravaCestujicichCeskaRepublika() {
                   </p>
                   <p className="text-yellow-800 dark:text-yellow-200 text-sm leading-relaxed">
                     <strong>Řešení:</strong> Služby jako <strong>ClaimWinger</strong> jdou 
-                    k soudu za vás. Vy neplatíte nic předem (provize jen při úspěchu 25%), 
+                    k soudu za vás. Vy neplatíte nic předem (provize jen při úspěchu 30%), 
                     nemáte žádné starosti a <strong>98% úspěšnost</strong> díky zkušenému 
                     právnímu týmu.
                   </p>
@@ -504,34 +504,34 @@ export default function PravaCestujicichCeskaRepublika() {
                   </thead>
                   <tbody className="text-gray-700 dark:text-gray-300">
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <td className="py-2">Wizz Air</td>
-                      <td className="text-center py-2 text-red-600 font-semibold">34%</td>
-                      <td className="text-center py-2">4.2%</td>
-                      <td className="text-center py-2">18%</td>
+                      <td className="py-3 px-4">Wizz Air</td>
+                      <td className="text-center py-3 px-4 text-red-600 font-semibold">34%</td>
+                      <td className="text-center py-3 px-4">4.2%</td>
+                      <td className="text-center py-3 px-4">18%</td>
                     </tr>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <td className="py-2">Ryanair</td>
-                      <td className="text-center py-2 text-orange-600 font-semibold">22%</td>
-                      <td className="text-center py-2">2.1%</td>
-                      <td className="text-center py-2">25%</td>
+                      <td className="py-3 px-4">Ryanair</td>
+                      <td className="text-center py-3 px-4 text-orange-600 font-semibold">22%</td>
+                      <td className="text-center py-3 px-4">2.1%</td>
+                      <td className="text-center py-3 px-4">25%</td>
                     </tr>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <td className="py-2">Smartwings</td>
-                      <td className="text-center py-2 text-orange-600 font-semibold">28%</td>
-                      <td className="text-center py-2">3.8%</td>
-                      <td className="text-center py-2">12%</td>
+                      <td className="py-3 px-4">Smartwings</td>
+                      <td className="text-center py-3 px-4 text-orange-600 font-semibold">28%</td>
+                      <td className="text-center py-3 px-4">3.8%</td>
+                      <td className="text-center py-3 px-4">12%</td>
                     </tr>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <td className="py-2">ČSA (Czech Airlines)</td>
-                      <td className="text-center py-2 text-yellow-600">16%</td>
-                      <td className="text-center py-2">1.8%</td>
-                      <td className="text-center py-2">8%</td>
+                      <td className="py-3 px-4">ČSA (Czech Airlines)</td>
+                      <td className="text-center py-3 px-4 text-yellow-600">16%</td>
+                      <td className="text-center py-3 px-4">1.8%</td>
+                      <td className="text-center py-3 px-4">8%</td>
                     </tr>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <td className="py-2">Lufthansa</td>
-                      <td className="text-center py-2 text-green-600">12%</td>
-                      <td className="text-center py-2">1.2%</td>
-                      <td className="text-center py-2">15%</td>
+                      <td className="py-3 px-4">Lufthansa</td>
+                      <td className="text-center py-3 px-4 text-green-600">12%</td>
+                      <td className="text-center py-3 px-4">1.2%</td>
+                      <td className="text-center py-3 px-4">15%</td>
                     </tr>
                   </tbody>
                 </table>
@@ -660,7 +660,9 @@ export default function PravaCestujicichCeskaRepublika() {
                   <tr className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-3 px-4 font-medium">Čas na vyřízení</td>
                     <td className="text-center py-3 px-4">6-12 měsíců</td>
-                    <td className="text-center py-3 px-4 bg-blue-50 dark:bg-blue-900/20">8-12 týdnů</td>
+                    <td className="text-center py-3 px-4 font-semibold text-green-600 dark:text-green-400 bg-blue-50 dark:bg-blue-900/20">
+                      8-12 týdnů
+                    </td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-3 px-4 font-medium">Náklady předem</td>
@@ -670,7 +672,7 @@ export default function PravaCestujicichCeskaRepublika() {
                   <tr className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-3 px-4 font-medium">Provize při úspěchu</td>
                     <td className="text-center py-3 px-4">0%</td>
-                    <td className="text-center py-3 px-4 bg-blue-50 dark:bg-blue-900/20">25%</td>
+                    <td className="text-center py-3 px-4 text-green-600 bg-blue-50 dark:bg-blue-900/20">30%</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-3 px-4 font-medium">Soudní zastoupení</td>
@@ -697,30 +699,24 @@ export default function PravaCestujicichCeskaRepublika() {
             </div>
 
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-6">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">
-                💡 Kalkulace: Co je výhodnější?
-              </h3>
-              <div className="space-y-3 text-gray-700 dark:text-gray-300 text-sm">
-                <div className="flex items-start gap-3">
-                  <strong className="flex-shrink-0 w-28">Váš nárok:</strong>
-                  <span>400 € (let Praha → Barcelona, zpoždění 4h)</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <strong className="flex-shrink-0 w-28">Individuálně:</strong>
-                  <span>
-                    5% šance na úspěch → očekávaný výnos: <strong>20 €</strong> (400 × 0.05)<br/>
-                    <span className="text-red-600">+ 6-12 měsíců stresu, korespondence, možná soud</span>
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <strong className="flex-shrink-0 w-28">ClaimWinger:</strong>
-                  <span>
-                    98% šance na úspěch → očekávaný výnos: <strong>294 €</strong> (400 × 0.98 × 0.75)<br/>
-                    <span className="text-green-600">+ Žádné starosti, automatické vymáhání, právní tým</span>
-                  </span>
-                </div>
-                <div className="pt-3 border-t border-gray-300 dark:border-gray-600 font-semibold text-base">
-                  <strong>Verdikt:</strong> ClaimWinger je <strong>14× výhodnější</strong> (294 € vs 20 €)!
+              <p className="text-xl text-blue-100 mb-6">
+                Vymůžeme vaše peníze bez rizika. Platíte jen při úspěchu (30% provize).
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <strong>Kalkulace: Co je výhodnější?</strong>
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+                <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                  <p>📊 <strong>Váš nárok:</strong> 400 € (Praha → Barcelona, 4h zpoždění)</p>
+                  <p className="pt-2 border-t border-gray-300 dark:border-gray-600">
+                    <strong>Individuálně:</strong> 5% šance → očekávaný výnos: <strong className="text-red-600 dark:text-red-400">20 €</strong> + 6-12 měsíců stresu
+                  </p>
+                  <p>
+                    <strong>ClaimWinger:</strong> 98% šance → očekávaný výnos: <strong className="text-green-600 dark:text-green-400">274 €</strong> (400 × 0.98 × 0.70) + žádné starosti
+                  </p>
+                  <p className="pt-2 border-t border-gray-300 dark:border-gray-600 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                    → <strong>Verdikt:</strong> ClaimWinger je <strong>13× výhodnější!</strong>
+                  </p>
                 </div>
               </div>
             </div>
@@ -734,7 +730,7 @@ export default function PravaCestujicichCeskaRepublika() {
               </h3>
               <p className="text-lg mb-6 text-blue-100">
                 Získejte až 600 € kompenzace pomocí ClaimWinger. Bez starostí, bez rizika, 
-                98% úspěšnost. Platíte jen při úspěchu (25% provize).
+                98% úspěšnost. Platíte jen při úspěchu (30% provize).
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -782,7 +778,7 @@ export default function PravaCestujicichCeskaRepublika() {
                 },
                 {
                   question: "Kolik stojí služba ClaimWinger?",
-                  answer: "Nic předem! ClaimWinger si účtuje 25% provizi pouze v případě úspěchu. Pokud kompenzaci nevymůžeme, neplatíte nic. Bez rizika, bez starostí."
+                  answer: "Nic předem! ClaimWinger si účtuje 30% provizi z vymožené částky. Platíte pouze v případě úspěchu. Pokud aerolinka nezaplatí, vy neplatíte nic. Žádné skryté poplatky, žádná rizika."
                 },
                 {
                   question: "Mám nárok na kompenzaci i za děti?",
@@ -926,7 +922,7 @@ export default function PravaCestujicichCeskaRepublika() {
                 "name": "Kolik stojí služba ClaimWinger?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Nic předem! ClaimWinger si účtuje 25% provizi pouze v případě úspěchu. Pokud kompenzaci nevymůžeme, neplatíte nic. Bez rizika, bez starostí."
+                  "text": "Nic předem! ClaimWinger si účtuje 30% provizi z vymožené částky. Platíte pouze v případě úspěchu. Pokud aerolinka nezaplatí, vy neplatíte nic. Žádné skryté poplatky, žádná rizika."
                 }
               },
               {
