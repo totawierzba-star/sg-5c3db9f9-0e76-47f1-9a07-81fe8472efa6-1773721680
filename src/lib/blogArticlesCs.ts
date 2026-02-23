@@ -78,6 +78,34 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 4200,
     readTime: 15,
     publishDate: "2026-02-23"
+  },
+
+  // Ryanair article
+  {
+    id: "ryanair-kompenzace-reklamace",
+    title: "Ryanair kompenzace za zpoždění a zrušení letu – Jak na reklamaci",
+    slug: "/cs/blog/ryanair-kompenzace-reklamace",
+    excerpt: "Kompletní průvodce kompenzací u Ryanairu. Zjistěte, jak správně reklamovat zpoždění nebo zrušení letu a získat až 600 € kompenzace.",
+    category: "airline",
+    airlineName: "Ryanair",
+    featured: true,
+    wordCount: 4000,
+    readTime: 8,
+    publishDate: "2026-02-23"
+  },
+
+  // Wizz Air article
+  {
+    id: "wizz-air-zpozdeni-zruseni",
+    title: "Wizz Air kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/wizz-air-zpozdeni-zruseni",
+    excerpt: "Kompletní průvodce reklamací u Wizz Air. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let.",
+    category: "airline",
+    airlineName: "Wizz Air",
+    featured: true,
+    wordCount: 3500,
+    readTime: 7,
+    publishDate: "2026-02-23"
   }
 ];
 
