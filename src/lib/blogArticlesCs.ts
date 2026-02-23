@@ -58,6 +58,26 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 2500,
     readTime: 12,
     publishDate: "2026-02-23"
+  },
+  {
+    id: "prava-cestujicich-ceska-republika",
+    title: "Práva leteckých cestujících v České republice",
+    slug: "prava-cestujicich-ceska-republika",
+    category: "foundation",
+    excerpt: "Kompletní průvodce právy leteckých cestujících v ČR. ÚCL, ČOI, soudy, promlčecí lhůta a statistiky z českých letišť.",
+    wordCount: 3800,
+    readTime: 14,
+    publishDate: "2026-02-23"
+  },
+  {
+    id: "kdy-mate-narok-kompenzaci",
+    title: "Kdy máte nárok na kompenzaci za zpožděný let?",
+    slug: "kdy-mate-narok-kompenzaci",
+    category: "foundation",
+    excerpt: "4 hlavní podmínky nároku, jak se měří zpoždění, mimořádné okolnosti, speciální případy a časté chyby.",
+    wordCount: 4200,
+    readTime: 15,
+    publishDate: "2026-02-23"
   }
 ];
 
