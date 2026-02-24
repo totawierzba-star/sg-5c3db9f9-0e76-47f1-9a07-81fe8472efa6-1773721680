@@ -343,6 +343,16 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 1100,
     readTime: 9,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "rozdil-kompenzace-refundace",
+    title: "Rozdíl mezi kompenzací a refundací letenky - co vám náleží?",
+    slug: "/cs/blog/rozdil-kompenzace-refundace",
+    excerpt: "Kompenzace vs. refundace - zjistěte, co je co a kdy máte nárok na obojí. Kompletní právní průvodce.",
+    category: "legal",
+    wordCount: 1000,
+    readTime: 8,
+    publishDate: "2026-02-24"
   }
 ];
 
