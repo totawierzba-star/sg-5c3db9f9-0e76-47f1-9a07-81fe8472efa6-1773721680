@@ -146,6 +146,19 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 1100,
     readTime: 7,
     publishDate: "2026-02-23"
+  },
+
+  // Letiště Ostrava article
+  {
+    id: "letiste-ostrava-kompenzace",
+    title: "Letiště Ostrava (OSR): Zpožděný let a kompenzace 2026",
+    slug: "/cs/blog/letiste-ostrava-kompenzace",
+    excerpt: "Měli jste zpoždění z letiště v Ostravě? Zjistěte, jak získat až 600 € odškodnění za zpožděný nebo zrušený let.",
+    category: "airport",
+    flag: "🇨🇿",
+    wordCount: 800,
+    readTime: 6,
+    publishDate: "2026-02-23"
   }
 ];
 
