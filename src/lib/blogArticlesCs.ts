@@ -2,7 +2,7 @@ export interface BlogArticleCs {
   id: string;
   title: string;
   slug: string;
-  category: "airport" | "airline" | "foundation";
+  category: "airport" | "airline" | "foundation" | "situations" | "legal";
   airportCode?: string;
   airportName?: string;
   airlineCode?: string;
@@ -159,6 +159,54 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 800,
     readTime: 6,
     publishDate: "2026-02-23"
+  },
+
+  // Missed connections article
+  {
+    id: "zmeskane-prestupy-kompenzace",
+    title: "Zmeškané přestupy - máte nárok na kompenzaci?",
+    slug: "/cs/blog/zmeskane-prestupy-kompenzace",
+    excerpt: "Co dělat když zmeškáte přestup kvůli zpožděnému letu? Zjistěte, kdy máte nárok na kompenzaci až 600 €.",
+    category: "situations",
+    wordCount: 1100,
+    readTime: 8,
+    publishDate: "2026-02-24"
+  },
+
+  // Overbooking article
+  {
+    id: "overbooking-odmitnuty-nastup",
+    title: "Overbooking - odmítnutí nástupu na palubu a kompenzace",
+    slug: "/cs/blog/overbooking-odmitnuty-nastup",
+    excerpt: "Aerolinka vám odmítla nástup kvůli přeplněnému letu? Máte nárok na kompenzaci až 600 € a další výhody.",
+    category: "situations",
+    wordCount: 1000,
+    readTime: 8,
+    publishDate: "2026-02-24"
+  },
+
+  // Airline strikes article
+  {
+    id: "stavky-leteckych-spolecnosti",
+    title: "Stávka letecké společnosti - nárok na kompenzaci",
+    slug: "/cs/blog/stavky-leteckych-spolecnosti",
+    excerpt: "Váš let byl zrušen kvůli stávce? Zjistěte, kdy vám přísluší kompenzace - záleží na typu stávky.",
+    category: "situations",
+    wordCount: 900,
+    readTime: 7,
+    publishDate: "2026-02-24"
+  },
+
+  // Statute of limitations article
+  {
+    id: "promlceni-naroku-kompenzace",
+    title: "Promlčení nároků na kompenzaci za zpožděný let",
+    slug: "/cs/blog/promlceni-naroku-kompenzace",
+    excerpt: "Máte zpožděný let z minulého roku? Zjistěte, jak dlouho máte na uplatnění nároku na kompenzaci podle právní úpravy v ČR.",
+    category: "legal",
+    wordCount: 800,
+    readTime: 6,
+    publishDate: "2026-02-24"
   }
 ];
 
@@ -166,7 +214,9 @@ export const getCategoryLabelCs = (category: BlogArticleCs["category"]): string 
   const labels: Record<BlogArticleCs["category"], string> = {
     airport: "Průvodce letiště",
     airline: "Průvodce aerolinek",
-    foundation: "Základní informace"
+    foundation: "Základní informace",
+    situations: "Speciální situace",
+    legal: "Právní informace"
   };
   return labels[category];
 };
