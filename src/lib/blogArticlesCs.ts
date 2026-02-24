@@ -242,6 +242,17 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 850,
     readTime: 7,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "british-airways-zpozdeni-zruseni",
+    title: "British Airways kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/british-airways-zpozdeni-zruseni",
+    excerpt: "Kompletní průvodce reklamací u British Airways. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let British Airways.",
+    category: "airline",
+    airlineName: "British Airways",
+    wordCount: 850,
+    readTime: 7,
+    publishDate: "2026-02-24"
   }
 ];
 
