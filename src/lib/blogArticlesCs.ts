@@ -319,6 +319,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
     title: "Jak podat reklamaci za zpožděný let krok za krokem",
     slug: "/cs/blog/jak-podat-reklamaci-krok-za-krokem",
     excerpt: "Detailní návod, jak správně podat reklamaci. Šablony, dokumenty a časté chyby.",
+    category: "legal",
     wordCount: 1200,
     readTime: 10,
     publishDate: "2026-02-24"
@@ -331,6 +332,16 @@ export const blogArticlesCs: BlogArticleCs[] = [
     category: "legal",
     wordCount: 1000,
     readTime: 8,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "soudni-vymahani-kompenzaci",
+    title: "Soudní vymáhání kompenzace za zpožděný let - kdy se vyplatí žaloba?",
+    slug: "/cs/blog/soudni-vymahani-kompenzaci",
+    excerpt: "Kdy se vyplatí soudit s aerolinkou? Průvodce soudním vymáháním, evropské drobné nároky a náklady řízení.",
+    category: "legal",
+    wordCount: 1100,
+    readTime: 9,
     publishDate: "2026-02-24"
   }
 ];
