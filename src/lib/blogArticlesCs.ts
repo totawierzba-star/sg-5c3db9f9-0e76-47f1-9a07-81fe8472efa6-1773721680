@@ -380,7 +380,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
     slug: "/cs/blog/caste-chyby-pri-reklamaci",
     excerpt: "Zjistěte nejčastější chyby při reklamaci kompenzace a jak se jim vyhnout. Zvyšte své šance na úspěch.",
     category: "legal",
-    wordCount: 900,
+    wordCount: 800,
     readTime: 8,
     publishDate: "2026-02-24"
   }
