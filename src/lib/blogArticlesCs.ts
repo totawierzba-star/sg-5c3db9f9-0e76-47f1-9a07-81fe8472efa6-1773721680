@@ -253,6 +253,28 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 850,
     readTime: 7,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "british-airways-kompenzace",
+    title: "British Airways kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/british-airways-kompenzace",
+    excerpt: "Kompletní průvodce reklamací u British Airways. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let British Airways.",
+    category: "airline",
+    airlineName: "British Airways",
+    wordCount: 850,
+    readTime: 7,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "turkish-airlines-kompenzace",
+    title: "Turkish Airlines kompenzace za zpoždění a zrušení letu 2026",
+    slug: "/cs/blog/turkish-airlines-kompenzace",
+    excerpt: "Kompletní průvodce reklamací u Turkish Airlines. Zjistěte, kdy máte nárok na kompenzaci až 600 € za lety THY z EU.",
+    category: "airline",
+    airlineName: "Turkish Airlines",
+    wordCount: 800,
+    readTime: 6,
+    publishDate: "2026-02-24"
   }
 ];
 
