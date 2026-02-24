@@ -353,6 +353,36 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 1000,
     readTime: 8,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "co-delat-primo-na-letisti",
+    title: "Co dělat přímo na letišti při zpožděném letu - praktický průvodce",
+    slug: "/cs/blog/co-delat-primo-na-letisti",
+    excerpt: "Detailní návod, co dělat přímo na letišti když máte zpoždění nebo zrušení letu. Dokumentace, fotky, formuláře.",
+    category: "legal",
+    wordCount: 1000,
+    readTime: 8,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "jake-dokumenty-si-ponechat",
+    title: "Jaké dokumenty si ponechat při zpožděném letu - kompletní checklist",
+    slug: "/cs/blog/jake-dokumenty-si-ponechat",
+    excerpt: "Zjistěte, které dokumenty jsou klíčové pro získání kompenzace. Boarding pass, účtenky, fotky a další důkazy.",
+    category: "legal",
+    wordCount: 1000,
+    readTime: 8,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "caste-chyby-pri-reklamaci",
+    title: "Časté chyby při reklamaci zpožděného letu - jak se jich vyhnout",
+    slug: "/cs/blog/caste-chyby-pri-reklamaci",
+    excerpt: "Zjistěte nejčastější chyby při reklamaci kompenzace a jak se jim vyhnout. Zvyšte své šance na úspěch.",
+    category: "legal",
+    wordCount: 900,
+    readTime: 8,
+    publishDate: "2026-02-24"
   }
 ];
 
