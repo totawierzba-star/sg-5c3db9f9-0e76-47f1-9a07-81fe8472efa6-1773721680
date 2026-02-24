@@ -291,8 +291,8 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "letiste-karlovy-vary-kompenzace",
     title: "Letiště Karlovy Vary - práva pasažérů a kompenzace",
-    slug: "letiste-karlovy-vary-kompenzace",
-    category: "airports",
+    slug: "/cs/blog/letiste-karlovy-vary-kompenzace",
+    category: "airport",
     airportCode: "KLV",
     airportName: "Karlovy Vary",
     flag: "🇨🇿",
@@ -303,8 +303,8 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "letiste-pardubice-kompenzace",
     title: "Letiště Pardubice - práva pasažérů a kompenzace",
-    slug: "letiste-pardubice-kompenzace",
-    category: "airports",
+    slug: "/cs/blog/letiste-pardubice-kompenzace",
+    category: "airport",
     airportCode: "PED",
     airportName: "Pardubice",
     flag: "🇨🇿",
