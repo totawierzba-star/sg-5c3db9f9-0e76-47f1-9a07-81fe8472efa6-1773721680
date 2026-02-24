@@ -298,7 +298,8 @@ export const blogArticlesCs: BlogArticleCs[] = [
     flag: "🇨🇿",
     wordCount: 700,
     readTime: 6,
-    publishDate: "2026-02-24"
+    publishDate: "2026-02-24",
+    excerpt: "Měli jste zpoždění z letiště Karlovy Vary? Zjistěte, jak získat až 600 € odškodnění."
   },
   {
     id: "letiste-pardubice-kompenzace",
@@ -310,7 +311,8 @@ export const blogArticlesCs: BlogArticleCs[] = [
     flag: "🇨🇿",
     wordCount: 700,
     readTime: 6,
-    publishDate: "2026-02-24"
+    publishDate: "2026-02-24",
+    excerpt: "Měli jste zpoždění z letiště Pardubice? Zjistěte, jak získat až 600 € odškodnění."
   }
 ];
 
