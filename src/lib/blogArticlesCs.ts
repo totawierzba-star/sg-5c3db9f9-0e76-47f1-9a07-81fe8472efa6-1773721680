@@ -220,6 +220,28 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 900,
     readTime: 7,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "austrian-airlines-kompenzace",
+    title: "Austrian Airlines kompenzace za zpoždění a zrušení letu 2026",
+    slug: "/cs/blog/austrian-airlines-kompenzace",
+    excerpt: "Kompletní průvodce reklamací u Austrian Airlines. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let.",
+    category: "airline",
+    airlineName: "Austrian Airlines",
+    wordCount: 900,
+    readTime: 7,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "easyjet-zpozdeni-zruseni",
+    title: "easyJet kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/easyjet-zpozdeni-zruseni",
+    excerpt: "Kompletní průvodce reklamací u easyJet. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let easyJet.",
+    category: "airline",
+    airlineName: "easyJet",
+    wordCount: 850,
+    readTime: 7,
+    publishDate: "2026-02-24"
   }
 ];
 
