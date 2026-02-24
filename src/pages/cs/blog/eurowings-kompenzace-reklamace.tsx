@@ -57,6 +57,22 @@ export default function EurowingsKompenzaceReklamace() {
             </ul>
           </div>
 
+          {/* Early CTA */}
+          <div className="bg-blue-600 text-white rounded-xl p-8 text-center mb-12">
+            <h3 className="text-2xl font-bold mb-4">Měli jste problém s letem Eurowings?</h3>
+            <p className="text-blue-100 mb-6 text-lg">
+              Zjistěte zdarma, zda máte nárok na kompenzaci až 600 €
+            </p>
+            <a 
+              href="https://claimwinger.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors text-lg"
+            >
+              Zkontrolovat nárok zdarma →
+            </a>
+          </div>
+
           {/* Section 1 */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
