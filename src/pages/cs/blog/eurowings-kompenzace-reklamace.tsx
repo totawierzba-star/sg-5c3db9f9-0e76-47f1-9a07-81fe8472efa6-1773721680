@@ -9,8 +9,7 @@ export default function EurowingsKompenzaceReklamace() {
       <SEO 
         title="Eurowings kompenzace za zpoždění a zrušení letu – Průvodce 2026"
         description="Komplexní průvodce reklamací u Eurowings. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let Eurowings."
-        keywords="eurowings kompenzace, eurowings reklamace, eurowings zpoždění, eurowings zrušený let, eurowings odszkodowanie"
-        ogImage="https://lotproblem.pl/og-image.png"
+        image="https://lotproblem.pl/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -207,6 +207,19 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 800,
     readTime: 6,
     publishDate: "2026-02-24"
+  },
+
+  // Eurowings article
+  {
+    id: "eurowings-kompenzace-reklamace",
+    title: "Eurowings kompenzace za zpoždění a zrušení letu – Průvodce 2026",
+    slug: "/cs/blog/eurowings-kompenzace-reklamace",
+    excerpt: "Komplexní průvodce reklamací u Eurowings. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let Eurowings.",
+    category: "airline",
+    airlineName: "Eurowings",
+    wordCount: 900,
+    readTime: 7,
+    publishDate: "2026-02-24"
   }
 ];
 
