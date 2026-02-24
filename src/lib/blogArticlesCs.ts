@@ -313,6 +313,25 @@ export const blogArticlesCs: BlogArticleCs[] = [
     readTime: 6,
     publishDate: "2026-02-24",
     excerpt: "Měli jste zpoždění z letiště Pardubice? Zjistěte, jak získat až 600 € odškodnění."
+  },
+  {
+    id: "jak-podat-reklamaci-krok-za-krokem",
+    title: "Jak podat reklamaci za zpožděný let krok za krokem",
+    slug: "/cs/blog/jak-podat-reklamaci-krok-za-krokem",
+    excerpt: "Detailní návod, jak správně podat reklamaci. Šablony, dokumenty a časté chyby.",
+    wordCount: 1200,
+    readTime: 10,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "dukazni-bremeno-kompenzaci",
+    title: "Důkazní břemeno u kompenzací za zpožděný let",
+    slug: "/cs/blog/dukazni-bremeno-kompenzaci",
+    excerpt: "Zjistěte, kdo musí co dokazovat při reklamaci. Komplexní právní průvodce.",
+    category: "legal",
+    wordCount: 1000,
+    readTime: 8,
+    publishDate: "2026-02-24"
   }
 ];
 
