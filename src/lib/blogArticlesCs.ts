@@ -275,6 +275,42 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 800,
     readTime: 6,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "letiste-karlovy-vary",
+    title: "Letiště Karlovy Vary: Zpožděný let a kompenzace 2026",
+    slug: "/cs/blog/letiste-karlovy-vary",
+    excerpt: "Měli jste zpoždění z letiště Karlovy Vary? Zjistěte, jak získat až 600 € odškodnění.",
+    category: "airport",
+    airportName: "Letiště Karlovy Vary",
+    flag: "🇨🇿",
+    wordCount: 700,
+    readTime: 6,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "letiste-karlovy-vary-kompenzace",
+    title: "Letiště Karlovy Vary - práva pasažérů a kompenzace",
+    slug: "letiste-karlovy-vary-kompenzace",
+    category: "airports",
+    airportCode: "KLV",
+    airportName: "Karlovy Vary",
+    flag: "🇨🇿",
+    wordCount: 700,
+    readTime: 6,
+    publishDate: "2026-02-24"
+  },
+  {
+    id: "letiste-pardubice-kompenzace",
+    title: "Letiště Pardubice - práva pasažérů a kompenzace",
+    slug: "letiste-pardubice-kompenzace",
+    category: "airports",
+    airportCode: "PED",
+    airportName: "Pardubice",
+    flag: "🇨🇿",
+    wordCount: 700,
+    readTime: 6,
+    publishDate: "2026-02-24"
   }
 ];
 
