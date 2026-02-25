@@ -697,10 +697,10 @@ export default function ExtraordinaryCircumstancesExplained() {
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "航空公司说"特殊情况"就一定不能赔吗？",
+                    "name": "航空公司说'特殊情况'就一定不能赔吗？",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "不一定！航司必须提供证据证明：(1) 情况超出控制，(2) 采取一切合理措施仍无法避免。约90%的"特殊情况"声明经不起法律审查。建议通过ClaimWinger等专业平台审查航司的理由是否成立。"
+                      "text": "不一定！航司必须提供证据证明：(1) 情况超出控制，(2) 采取一切合理措施仍无法避免。约90%的'特殊情况'声明经不起法律审查。建议通过ClaimWinger等专业平台审查航司的理由是否成立。"
                     }
                   },
                   {
@@ -708,7 +708,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                     "name": "技术故障算特殊情况吗？",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "不算！欧洲法院在Wallentin-Hermann案（C-549/07）中明确判决：技术故障不属于特殊情况，因为飞机维护是航司的核心责任。即使是"突发"、"无法预见"的故障也必须赔偿。"
+                      "text": "不算！欧洲法院在Wallentin-Hermann案（C-549/07）中明确判决：技术故障不属于特殊情况，因为飞机维护是航司的核心责任。即使是'突发'、'无法预见'的故障也必须赔偿。"
                     }
                   },
                   {
@@ -716,7 +716,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                     "name": "下雨/下雪算特殊情况吗？",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "通常不算。只有极端恶劣天气导致机场关闭或严重到无法安全飞行才算特殊情况（如飓风、严重暴风雪）。轻微降雨、降雪、常见雾、或航司自己决定的"预防性延误"不构成特殊情况。判断标准：同时段其他航班是否正常起飞？"
+                      "text": "通常不算。只有极端恶劣天气导致机场关闭或严重到无法安全飞行才算特殊情况（如飓风、严重暴风雪）。轻微降雨、降雪、常见雾、或航司自己决定的'预防性延误'不构成特殊情况。判断标准：同时段其他航班是否正常起飞？"
                     }
                   },
                   {
@@ -729,7 +729,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                   },
                   {
                     "@type": "Question",
-                    "name": "如何证明航司的"特殊情况"说法不成立？",
+                    "name": "如何证明航司的'特殊情况'说法不成立？",
                     "acceptedAnswer": {
                       "@type": "Answer",
                       "text": "你可以：1. 要求书面说明（根据EU 261第14条），2. 自行验证：查询历史天气数据、FlightRadar24同时段其他航班情况，3. 对比航司证据：是否提供了具体的气象/ATC/技术报告？4. 委托专业平台：ClaimWinger有法律团队专门审查这类案件。"
