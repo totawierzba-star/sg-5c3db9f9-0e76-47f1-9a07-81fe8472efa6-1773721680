@@ -5,7 +5,7 @@ import { Clock, Calendar, Tag, FileText } from "lucide-react";
 import { blogArticlesZh } from "@/lib/blogArticlesZh";
 
 export default function BlogIndexZh() {
-  const totalArticles = 19;
+  const totalArticles = blogArticlesZh.length;
 
   return (
     <LayoutZh>

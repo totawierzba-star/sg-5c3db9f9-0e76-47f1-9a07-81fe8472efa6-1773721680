@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "extraordinary-circumstances-explained",
+    title: "什么是'特殊情况'？航空公司何时可以拒绝赔偿？",
+    excerpt: "航司说'特殊情况'拒绝赔偿？90%是借口！完整解析EU261例外条款：技术故障能拒赔吗？天气延误算吗？如何反驳航司借口",
+    date: "2026-02-25",
+    readTime: "12 分钟",
+    category: "法律解读"
+  },
+  {
     slug: "compensation-vs-refund-difference",
     title: "赔偿金与退票款的区别——哪个更合适？",
     excerpt: "航班取消/延误后能拿多少钱？赔偿金€250-€600与退票款的关键区别详解。多数情况可以同时申请两者！3分钟搞懂你的全部权利",
