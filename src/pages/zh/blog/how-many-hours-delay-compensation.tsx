@@ -208,7 +208,7 @@ export default function HowManyHoursDelayCompensation() {
                   <Plane className="w-8 h-8 text-purple-600" />
                 </div>
                 <p className="text-gray-700 mb-2">
-                  <strong>长途航班</strong> - 航程 > 3,500公里
+                  <strong>长途航班</strong> - 航程 &gt; 3,500公里
                 </p>
                 <p className="text-sm text-gray-600">
                   示例：法兰克福→北京、巴黎→上海、伦敦→香港、阿姆斯特丹→纽约
@@ -275,7 +275,7 @@ export default function HowManyHoursDelayCompensation() {
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• 航程距离：约5,000公里（但属于"中程"类别）</li>
-                  <li>• EU法规特殊规定：欧盟外航班>3,500km但<6,000km只赔€400</li>
+                  <li>• EU法规特殊规定：欧盟外航班&gt;3,500km但&lt;6,000km只赔€400</li>
                   <li>• 延误3小时+ → €400赔偿</li>
                 </ul>
               </div>
@@ -444,7 +444,7 @@ export default function HowManyHoursDelayCompensation() {
                 </summary>
                 <p className="mt-4 text-gray-700">
                   赔偿金额主要根据<strong>航程距离</strong>计算，而非延误时间长短。≤1,500公里€250，
-                  1,500-3,500公里€400，>3,500公里€600。<strong>延误3小时和10小时获得的赔偿金额相同</strong>。
+                  1,500-3,500公里€400，&gt;3,500公里€600。<strong>延误3小时和10小时获得的赔偿金额相同</strong>。
                 </p>
               </details>
 
