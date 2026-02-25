@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "europe-to-china-flight-delay-rights",
+    title: "🇪🇺→🇨🇳从欧洲飞往中国航班延误索赔【2026】€600赔偿权利详解",
+    excerpt: "法兰克福/巴黎/阿姆斯特丹飞北京/上海航班延误？中国乘客完整赔偿指南💰EU 261保护所有欧洲出发航班⏱️3分钟了解您的权利",
+    date: "2026-02-25",
+    readTime: "6 分钟",
+    category: "欧洲航班权利"
+  },
+  {
     slug: "lufthansa-delay-cancellation-compensation",
     title: "🇩🇪汉莎航空Lufthansa延误/取消索赔攻略【2026】€250-€600赔偿",
     excerpt: "法兰克福/慕尼黑转机延误？汉莎航空拒赔？✅本文教你如何成功索赔€250-€600 | 3分钟了解你的权利 | 真实案例分析",
