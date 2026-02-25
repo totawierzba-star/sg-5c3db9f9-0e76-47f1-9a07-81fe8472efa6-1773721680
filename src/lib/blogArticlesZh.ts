@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "swiss-compensation-guide",
+    title: "瑞士航空延误/取消索赔指南【2026】Swiss International完整攻略",
+    excerpt: "瑞士国际航空延误或取消？本指南详解EU 261赔偿权利、索赔流程、常见拒赔理由应对策略。北京/上海往返苏黎世航线最高可获€600赔偿。",
+    date: "2026-02-25",
+    readTime: "12分钟",
+    category: "航空公司指南"
+  },
+  {
     slug: "flight-cancellation-compensation-guide",
     title: "航班取消如何索赔？取消vs延误赔偿规则对比【2026】",
     excerpt: "航班取消与延误有何不同？了解EU 261/2004取消航班赔偿规则、14天通知规则、再安排权利。中国乘客必读完整指南。",
@@ -120,14 +128,6 @@ export const blogArticlesZh: BlogArticleZh[] = [
     date: "2026-02-25",
     readTime: "10分钟",
     category: "航空公司"
-  },
-  {
-    slug: "swiss-compensation-guide",
-    title: "🇨🇭瑞士航空SWISS延误/取消索赔攻略【2026】€250-€600赔偿",
-    excerpt: "瑞士航空（SWISS）航班延误或取消？中国乘客专用赔偿指南：苏黎世转机权益、实时申诉技巧、典型拒赔理由应对策略。3小时+延误可获€250-€600。",
-    date: "2026-02-25",
-    readTime: "10分钟",
-    category: "航空公司指南"
   },
   {
     slug: "klm-compensation-guide",

@@ -5,7 +5,22 @@ export default function Document() {
   return (
     <Html lang="pl">
       <Head>
-        <SEOElements />
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        
+        {/* PWA Meta Tags */}
+        <meta name="theme-color" content="#1e40af" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        
+        <SEOElements
+          title="ProblemLot.pl – Odszkodowanie za opóźniony lub odwołany lot"
+          description="Specjalizujemy się w sprawach odszkodowań lotniczych. Zajmujemy się całą dokumentacją, negocjacjami z linią lotniczą i ewentualnymi procedurami sądowymi."
+          image="https://problemlot.com/og-image.png"
+          url="https://problemlot.com"
+        />
         
         {/* Google Tag Manager */}
         <script
