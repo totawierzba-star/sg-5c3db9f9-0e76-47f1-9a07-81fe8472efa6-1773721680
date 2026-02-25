@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "chinese-airlines-china-departure-no-eu261",
+    title: "中国航司从中国出发无法申请EU261",
+    excerpt: "为什么从中国出发乘坐中国航空公司的航班（国航、东航、南航）即使飞往欧洲也无法申请EU 261/2004赔偿？完整法律解释+替代方案指南",
+    date: "2026-02-25",
+    readTime: "8 分钟",
+    category: "法律解读"
+  },
+  {
     slug: "extraordinary-circumstances-explained",
     title: "什么是'特殊情况'？航空公司何时可以拒绝赔偿？",
     excerpt: "航司说'特殊情况'拒绝赔偿？90%是借口！完整解析EU261例外条款：技术故障能拒赔吗？天气延误算吗？如何反驳航司借口",
