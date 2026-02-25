@@ -9,9 +9,9 @@ export default function BlogIndexZh() {
 
   return (
     <LayoutZh>
-      <SEO 
-        title="航班延误赔偿博客 | 欧洲航班权益指南【中文】"
-        description="专为中国乘客打造的欧洲航班延误/取消赔偿完整指南。了解EU 261/2004法规、索赔流程、真实案例。已发布22篇深度文章"
+      <SEO
+        title="中国乘客欧洲航班赔偿指南【2026】EU 261/2004完整攻略"
+        description="专为中国乘客打造的欧洲航班延误/取消赔偿完整指南。了解EU 261/2004法规、索赔流程、真实案例。已发布23篇深度文章"
       />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-12">
@@ -23,7 +23,7 @@ export default function BlogIndexZh() {
               专为中国乘客打造的欧洲航班赔偿完整指南
             </p>
             <div className="mt-4 inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full">
-              <span className="font-semibold">已发布 22 篇深度文章</span>
+              <span className="font-semibold">已发布 23 篇深度文章</span>
             </div>
           </header>
 

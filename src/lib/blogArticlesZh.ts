@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "flight-cancellation-compensation-guide",
+    title: "航班取消如何索赔？取消vs延误赔偿规则对比【2026】",
+    excerpt: "航班取消与延误有何不同？了解EU 261/2004取消航班赔偿规则、14天通知规则、再安排权利。中国乘客必读完整指南。",
+    date: "2026-02-25",
+    readTime: "12分钟",
+    category: "法律解读"
+  },
+  {
     slug: "how-many-hours-delay-compensation",
     title: "航班延误超过几小时才能索赔？3小时规则详解",
     excerpt: "了解EU 261/2004的3小时规则、时间计算方式、不同距离的赔偿金额（€250/€400/€600）及航空公司常见陷阱",
