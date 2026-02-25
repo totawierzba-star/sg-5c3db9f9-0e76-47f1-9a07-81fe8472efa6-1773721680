@@ -11,7 +11,6 @@ export default function SwissCompensationGuide() {
       <SEO
         title="瑞士航空延误/取消索赔指南【2026】Swiss International完整攻略"
         description="瑞士国际航空延误或取消？本指南详解EU 261赔偿权利、索赔流程、常见拒赔理由应对策略。北京/上海往返苏黎世航线最高可获€600赔偿。"
-        keywords="瑞士航空赔偿, Swiss延误索赔, 苏黎世航班取消, EU261瑞航, 中国瑞士航线赔偿"
       />
 
       <article className="prose prose-slate max-w-4xl mx-auto px-4 py-12">
