@@ -58,6 +58,14 @@ export const blogArticlesZh: BlogArticleZh[] = [
     category: "航空公司"
   },
   {
+    slug: "swiss-compensation-guide",
+    title: "🇨🇭瑞士航空SWISS延误/取消索赔攻略【2026】€250-€600赔偿",
+    excerpt: "瑞士航空（SWISS）航班延误或取消？中国乘客专用赔偿指南：苏黎世转机权益、实时申诉技巧、典型拒赔理由应对策略。3小时+延误可获€250-€600。",
+    date: "2026-02-25",
+    readTime: "10分钟",
+    category: "航空公司指南"
+  },
+  {
     slug: "klm-compensation-guide",
     title: "荷兰皇家航空KLM延误/取消赔偿指南",
     excerpt: "KLM是中国乘客前往欧洲的热门选择。了解通过阿姆斯特丹转机时的权益保护和赔偿申请流程。",
