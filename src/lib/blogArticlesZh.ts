@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "3-hour-delay-compensation-rule",
+    title: "航班延误3小时补偿规则【2026最新】3小时延误赔偿详解",
+    excerpt: "详解欧盟EU 261/2004航班延误3小时补偿规则。了解如何正确计算延误时间、不同距离补偿金额、证据收集方法。最高可获€600赔偿。",
+    date: "2026-02-25",
+    readTime: "15分钟",
+    category: "赔偿规则"
+  },
+  {
     slug: "swiss-compensation-guide",
     title: "瑞士航空延误/取消索赔指南【2026】Swiss International完整攻略",
     excerpt: "瑞士国际航空延误或取消？本指南详解EU 261赔偿权利、索赔流程、常见拒赔理由应对策略。北京/上海往返苏黎世航线最高可获€600赔偿。",
