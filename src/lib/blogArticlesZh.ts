@@ -10,12 +10,28 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
-    slug: "3-hour-delay-compensation-rule",
-    title: "航班延误3小时补偿规则【2026最新】3小时延误赔偿详解",
-    excerpt: "详解欧盟EU 261/2004航班延误3小时补偿规则。了解如何正确计算延误时间、不同距离补偿金额、证据收集方法。最高可获€600赔偿。",
+    slug: "european-airline-china-departure-compensation",
+    title: "欧洲航司从中国出发航班补偿【2026】Europe Airlines China Departure",
+    excerpt: "汉莎、法航等欧洲航司从北京、上海出发延误有赔偿吗？详解EU 261对China→Europe航线适用规则、实际案例、索赔流程。最高€600。",
     date: "2026-02-25",
     readTime: "15分钟",
-    category: "赔偿规则"
+    category: "从中国出发"
+  },
+  {
+    slug: "europe-to-china-flight-delay-rights",
+    title: "欧洲出发飞中国航班延误权利【完整指南】Europe→China Flight Delay Rights",
+    excerpt: "欧洲飞中国的航班延误有赔偿吗？详解EU 261对Europe→China航线的适用规则、欧盟航司vs中国航司差异、codeshare陷阱、实际案例分析。",
+    date: "2026-02-25",
+    readTime: "15分钟",
+    category: "核心规则解析"
+  },
+  {
+    slug: "3-hour-delay-compensation-rule",
+    title: "航班延误3小时补偿规则【2026最新】3小时延误赔偿详解",
+    excerpt: "为什么3小时是EU 261赔偿的关键门槛？详解3小时延误规则、如何正确测量延误时间、边界情况处理、常见错误避免。北京/上海往返欧洲航线最高€600赔偿指南。",
+    date: "2026-02-25",
+    readTime: "12分钟",
+    category: "赔偿金额"
   },
   {
     slug: "swiss-compensation-guide",

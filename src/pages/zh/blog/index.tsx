@@ -1,7 +1,7 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
 import Link from "next/link";
-import { Clock, Calendar, Tag, FileText, Award } from "lucide-react";
+import { Clock, Calendar, Tag, FileText, Award, BookOpen } from "lucide-react";
 import { blogArticlesZh } from "@/lib/blogArticlesZh";
 
 export default function BlogIndexZh() {
@@ -10,8 +10,8 @@ export default function BlogIndexZh() {
   return (
     <LayoutZh>
       <SEO
-        title="航空延误/取消赔偿博客 - 欧盟EU 261专业指南【中文】"
-        description="专为中国乘客打造的欧洲航班延误/取消赔偿完整指南。了解EU 261/2004法规、索赔流程、真实案例。已发布25篇深度文章"
+        title="航班延误/取消索赔知识库【2026最新】- 中国旅客EU 261完整指南"
+        description="已发布27篇深度文章，覆盖EU 261法规、主要航司索赔攻略、北京上海等机场指南、实际案例分析。助您成功获得最高€600赔偿。"
       />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-12">
@@ -22,9 +22,10 @@ export default function BlogIndexZh() {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-4">
               专为中国乘客打造的欧洲航班赔偿完整指南
             </p>
-            <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-              <Award className="w-4 h-4" />
-              <span>已发布 25 篇深度文章</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+              <span>📚</span>
+              <Clock className="w-4 h-4" />
+              <span>已发布 27 篇深度文章</span>
             </div>
           </header>
 
