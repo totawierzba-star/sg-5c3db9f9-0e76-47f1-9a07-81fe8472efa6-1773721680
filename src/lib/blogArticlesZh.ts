@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "compensation-vs-refund-difference",
+    title: "赔偿金与退票款的区别——哪个更合适？",
+    excerpt: "航班取消/延误后能拿多少钱？赔偿金€250-€600与退票款的关键区别详解。多数情况可以同时申请两者！3分钟搞懂你的全部权利",
+    date: "2026-02-25",
+    readTime: "8 分钟",
+    category: "权益解读"
+  },
+  {
     slug: "european-airline-china-departure-compensation",
     title: "欧洲航空公司运营的航班延误——即使从中国出发也能索赔吗？",
     excerpt: "从北京/上海出发乘坐汉莎、法航、KLM等欧洲航司——即使从中国起飞也可能获得€250-€600赔偿！关键规则与例外详解",
