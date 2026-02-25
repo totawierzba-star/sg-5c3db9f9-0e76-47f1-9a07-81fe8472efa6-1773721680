@@ -7,8 +7,8 @@ export default function LufthansaCompensationGuide() {
   return (
     <LayoutZh>
       <SEO
-        title="汉莎航空延误或取消航班赔偿指南 2026 | 如何获得 €600"
-        description="汉莎航空航班延误或取消？了解如何获得 €250-€600 欧盟赔偿。法兰克福、慕尼黑飞中国航班的中国乘客权利完整指南。"
+        title="🇩🇪汉莎航空Lufthansa延误/取消索赔攻略【2026】€250-€600赔偿"
+        description="✈️ 汉莎延误3小时+？立即索赔€600！法兰克福/慕尼黑转机中国乘客专用指南。真实案例分析、拒赔应对策略。3分钟了解全部流程 →"
       />
 
       {/* Article Schema */}
@@ -18,7 +18,7 @@ export default function LufthansaCompensationGuide() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "汉莎航空延误或取消航班赔偿指南 2026 - 中国乘客权利",
+            "headline": "汉莎航空Lufthansa延误/取消索赔攻略【2026】",
             "description": "汉莎航空航班延误或取消时，中国护照持有者如何获得 €250-€600 欧盟赔偿的完整指南。",
             "image": "https://lotproblem.pl/og-image.png",
             "author": {
@@ -33,8 +33,8 @@ export default function LufthansaCompensationGuide() {
                 "url": "https://lotproblem.pl/og-image.png"
               }
             },
-            "datePublished": "2026-01-30",
-            "dateModified": "2026-01-30"
+            "datePublished": "2026-02-25",
+            "dateModified": "2026-02-25"
           })
         }}
       />
@@ -52,13 +52,13 @@ export default function LufthansaCompensationGuide() {
         {/* Header */}
         <header className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            汉莎航空延误或取消航班赔偿指南 2026
+            🇩🇪 汉莎航空Lufthansa延误/取消索赔攻略【2026】
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             法兰克福、慕尼黑飞中国航班的中国乘客如何获得 €250–€600 欧盟赔偿
           </p>
           <div className="flex items-center gap-4 mt-4 text-sm text-gray-500 dark:text-gray-400">
-            <span>📅 更新于：2026年1月30日</span>
+            <span>📅 更新于：2026年2月25日</span>
             <span>⏱️ 阅读时间：8 分钟</span>
           </div>
         </header>
@@ -538,7 +538,7 @@ export default function LufthansaCompensationGuide() {
                 <div className="text-4xl mb-3">🎯</div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">98% 成功率</h3>
                 <p className="text-gray-700 dark:text-gray-300 text-sm">
-                  我们的法律团队拥有处理数千起汉莎案件的经验，熟悉航空公司的所有拒赔套路和反驳策略。
+                  我们法律团队拥有处理数千起汉莎案件的经验，熟悉航空公司的所有拒赔套路和反驳策略。
                 </p>
               </div>
 

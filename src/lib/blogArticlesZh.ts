@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "lufthansa-delay-cancellation-compensation",
+    title: "🇩🇪汉莎航空Lufthansa延误/取消索赔攻略【2026】€250-€600赔偿",
+    excerpt: "法兰克福/慕尼黑转机延误？汉莎航空拒赔？✅本文教你如何成功索赔€250-€600 | 3分钟了解你的权利 | 真实案例分析",
+    date: "2026-02-25",
+    readTime: "4分钟",
+    category: "航空公司指南"
+  },
+  {
     slug: "eu261-complete-guide-protected-flights",
     title: "欧盟航班延误赔偿完整指南——哪些航班受EU 261/2004保护？",
     excerpt: "详细解读EU 261/2004法规，了解哪些从中国出发或抵达欧洲的航班有资格申请最高€600的延误赔偿。",
@@ -95,14 +103,6 @@ export const blogArticlesZh: BlogArticleZh[] = [
     excerpt: "LOT波兰航空通过华沙连接亚洲和欧洲。详解华沙转机延误、行李丢失和航班取消的赔偿申请全流程。",
     date: "2026-02-24",
     readTime: "12分钟",
-    category: "航空公司"
-  },
-  {
-    slug: "lufthansa-delay-cancellation-compensation",
-    title: "汉莎航空Lufthansa延误/取消赔偿全攻略【2026】",
-    excerpt: "作为欧洲最大航空公司之一，汉莎航空连接中国多个城市。了解法兰克福/慕尼黑转机时的权益保护和申请技巧。",
-    date: "2026-02-24",
-    readTime: "15分钟",
     category: "航空公司"
   },
   {
