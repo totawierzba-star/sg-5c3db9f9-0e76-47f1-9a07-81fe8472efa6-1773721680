@@ -272,7 +272,7 @@ export default function ThreeHourDelayRule() {
         <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8 rounded-r-lg">
           <h3 className="font-bold text-orange-900 mb-3 flex items-center gap-2">
             <AlertTriangle className="w-5 h-5" />
-            ⚠️ 特别注意：>3,500km航线的"50%减免"规则
+            ⚠️ 特别注意：&gt;3,500km航线的"50%减免"规则
           </h3>
           <div className="text-sm text-orange-800 space-y-3">
             <p>
@@ -357,7 +357,7 @@ export default function ThreeHourDelayRule() {
         <div className="bg-green-50 border border-green-200 p-5 rounded-lg mb-8">
           <h4 className="font-bold text-green-900 mb-2 flex items-center gap-2">
             <CheckCircle2 className="w-5 h-5" />
-            ✅ 重要结论：所有中欧直飞航线都是>3,500km
+            ✅ 重要结论：所有中欧直飞航线都是&gt;3,500km
           </h4>
           <p className="text-green-800 text-sm leading-relaxed">
             这意味着：如果你的<strong>中国↔欧洲直飞航班延误≥4小时</strong>到达，你有权获得<strong>最高档€600赔偿</strong>（约¥4,800）。如果延误在3-4小时之间，赔偿为€300（约¥2,400）。
