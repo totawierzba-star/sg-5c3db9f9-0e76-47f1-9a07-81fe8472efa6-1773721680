@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "how-many-hours-delay-compensation",
+    title: "航班延误超过几小时才能索赔？3小时规则详解",
+    excerpt: "了解EU 261/2004的3小时规则、时间计算方式、不同距离的赔偿金额（€250/€400/€600）及航空公司常见陷阱",
+    date: "2026-02-25",
+    readTime: "9 分钟",
+    category: "法律解读"
+  },
+  {
     slug: "chinese-airlines-china-departure-no-eu261",
     title: "中国航司从中国出发无法申请EU261",
     excerpt: "为什么从中国出发乘坐中国航空公司的航班（国航、东航、南航）即使飞往欧洲也无法申请EU 261/2004赔偿？完整法律解释+替代方案指南",

@@ -1,502 +1,675 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
 import Link from "next/link";
-import Head from "next/head";
-import { Clock, Euro, Plane, AlertCircle, CheckCircle, Calculator, ArrowRight, HelpCircle } from "lucide-react";
+import { AlertCircle, Clock, Euro, Plane, CheckCircle, XCircle, Info } from "lucide-react";
 
 export default function HowManyHoursDelayCompensation() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "航班延误必须达到多少小时才能申请赔偿？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "根据EU 261/2004法规，航班必须延误至少3小时（到达目的地时间）才能申请赔偿。延误2小时59分钟不符合条件，但3小时及以上可以申请€250-€600的赔偿。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "赔偿金额如何计算？是按延误时间还是航程距离？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "赔偿金额主要根据航程距离计算，而非延误时间长短。≤1,500公里€250，1,500-3,500公里€400，>3,500公里€600。延误3小时和10小时获得的赔偿金额相同。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "如何计算延误时间？是起飞时间还是到达时间？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "延误时间以到达目的地时间为准（飞机舱门打开时间）。即使起飞只延误1小时，但如果到达延误超过3小时，仍然可以申请赔偿。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "航班取消算延误吗？可以获得赔偿吗？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "航班取消通常比延误更容易获得赔偿。除非航空公司提前14天通知并提供替代航班，否则乘客有权获得全额赔偿（€250-€600）加上食宿和改签费用。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "延误超过5小时可以退票吗？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "可以！如果延误超过5小时，您有权选择：1) 获得全额退票款，或 2) 改签其他航班。即使选择退票，您仍然可能有权获得€250-€600的赔偿（如果航空公司无有效理由）。"
-        }
-      }
-    ]
-  };
-
   return (
     <LayoutZh>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      </Head>
-      
       <SEO 
-        title="航班延误几小时能索赔？€250/€400/€600赔偿标准详解【2026最新】"
-        description="✈️延误3小时=最高€600！完整赔偿计算公式+真实案例。中国乘客必读，搞懂欧洲航班赔偿门槛⏰"
-        url="https://lotproblem.pl/zh/blog/how-many-hours-delay-compensation"
-        image="https://lotproblem.pl/og-image.png"
+        title="航班延误几小时可索赔【2026】3小时规则+€250-€600计算公式详解"
+        description="航班延误超过3小时才能索赔吗？了解EU 261/2004的3小时规则、时间计算方式、不同距离的赔偿金额（€250/€400/€600）及常见陷阱"
       />
-
+      
       <article className="max-w-4xl mx-auto px-4 py-12">
+        <div className="mb-8">
+          <Link href="/zh/blog" className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+            ← 返回博客
+          </Link>
+        </div>
+
+        {/* Header */}
+        <header className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            航班延误超过几小时才能索赔？
+          </h1>
+          <p className="text-xl text-gray-600 mb-6">
+            EU 261/2004的3小时规则详解 + 时间计算方式 + €250-€600赔偿金额
+          </p>
+          <div className="flex items-center gap-4 text-sm text-gray-500">
+            <span>📅 2026年2月25日</span>
+            <span>⏱️ 阅读时间：9分钟</span>
+            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">法律解读</span>
+          </div>
+        </header>
+
+        {/* CTA Top */}
+        <div className="mb-12 p-6 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl text-white">
+          <div className="flex items-start gap-4">
+            <Euro className="w-8 h-8 flex-shrink-0 mt-1" />
+            <div>
+              <h3 className="text-xl font-bold mb-2">航班延误超过3小时？立即检查赔偿！</h3>
+              <p className="mb-4 text-blue-100">
+                使用我们的免费计算器，30秒内了解您可以获得€250-€600的赔偿金额
+              </p>
+              <a
+                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_top"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              >
+                免费检查您的航班 →
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="prose prose-lg max-w-none">
-          {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-center gap-3 text-sm text-gray-600 mb-4">
-              <Link href="/zh/blog" className="hover:text-blue-600">博客</Link>
-              <span>→</span>
-              <span>延误时间计算</span>
-            </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              航班延误多少小时可以申请赔偿？（250欧元、400欧元、600欧元）
-            </h1>
-            <div className="flex items-center gap-4 text-sm text-gray-600">
-              <span>📅 2026年2月24日</span>
-              <span>⏱️ 10分钟阅读</span>
-              <span>💰 赔偿计算</span>
-            </div>
-          </div>
-
           {/* Introduction */}
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
-            <p className="text-lg text-gray-700 leading-relaxed mb-0">
-              您的欧洲航班延误了，但不确定是否有资格申请赔偿？关键问题是：<strong>延误了多少小时？</strong>
-              根据EU 261/2004法规，航班必须延误<strong>至少3小时</strong>才能申请赔偿。但赔偿金额不是按
-              延误时间计算，而是根据<strong>航程距离</strong>：最高可达<strong>€600</strong>。
-            </p>
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
+            <div className="flex items-start gap-3">
+              <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mt-0 mb-2">快速回答</h3>
+                <p className="mb-0 text-gray-700">
+                  根据EU 261/2004法规，航班延误<strong className="text-blue-600">到达目的地超过3小时</strong>（或更长时间），您就有权获得€250至€600的赔偿金。关键是<strong>到达时间</strong>，而不是出发时间！
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Early CTA */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 rounded-xl shadow-lg mb-12 text-center">
-            <h3 className="text-2xl font-bold mb-3">不确定您能获得多少赔偿？</h3>
-            <p className="text-blue-100 mb-6 text-lg">
-              使用ClaimWinger赔偿计算器——<strong>30秒算出准确金额</strong>
-            </p>
-            <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-md hover:shadow-xl no-underline"
-            >
-              立即计算赔偿金额 →
-            </a>
+          {/* Critical 3-Hour Rule */}
+          <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900 mt-12 mb-6">
+            <Clock className="w-7 h-7 text-blue-600" />
+            关键的"3小时规则"
+          </h2>
+
+          <div className="bg-white border-2 border-gray-200 rounded-xl p-6 mb-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">EU 261/2004 第7条：赔偿权利</h3>
+            <blockquote className="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-4">
+              "当乘客到达最终目的地的时间比原定时间<strong>晚3小时或以上</strong>时，应获得赔偿..."
+            </blockquote>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="text-center p-4 bg-red-50 rounded-lg">
+                <XCircle className="w-8 h-8 text-red-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-gray-900 mb-1">&lt; 3小时</div>
+                <div className="text-sm text-gray-600">无赔偿权利</div>
+              </div>
+              <div className="text-center p-4 bg-green-50 rounded-lg">
+                <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-gray-900 mb-1">≥ 3小时</div>
+                <div className="text-sm text-gray-600">有赔偿权利</div>
+              </div>
+              <div className="text-center p-4 bg-blue-50 rounded-lg">
+                <Euro className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <div className="text-2xl font-bold text-gray-900 mb-1">€250-600</div>
+                <div className="text-sm text-gray-600">根据距离</div>
+              </div>
+            </div>
           </div>
 
-          {/* Section 1: The 3-hour rule */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <Clock className="w-8 h-8 text-blue-600" />
-              3小时门槛——关键规则
-            </h2>
+          {/* How to Calculate */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">如何正确计算延误时间？</h2>
 
-            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-6">
-              <p className="text-lg mb-0">
-                <strong>⏰ 黄金规则：</strong>航班必须延误<strong>至少3小时</strong>（到达目的地时间）
-                才能申请赔偿。这是硬性门槛，无法商量。
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-white border-2 border-red-400 p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-red-600 mb-2">2:59</div>
-                <div className="text-sm text-gray-600 mb-2">延误小时</div>
-                <div className="flex items-center justify-center gap-2 text-red-700 font-bold">
-                  <AlertCircle className="w-5 h-5" />
-                  <span>无赔偿</span>
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-green-400 p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">3:00</div>
-                <div className="text-sm text-gray-600 mb-2">延误小时</div>
-                <div className="flex items-center justify-center gap-2 text-green-700 font-bold">
-                  <CheckCircle className="w-5 h-5" />
-                  <span>有赔偿</span>
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-green-400 p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">10:00</div>
-                <div className="text-sm text-gray-600 mb-2">延误小时</div>
-                <div className="flex items-center justify-center gap-2 text-green-700 font-bold">
-                  <CheckCircle className="w-5 h-5" />
-                  <span>有赔偿</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6">
-              <p className="mb-0">
-                <strong>💡 重要：</strong>延误时间以<strong>到达时间</strong>为准（飞机舱门打开时刻），
-                而非起飞时间。即使起飞只延误1小时，但到达延误3小时+，仍然可以申请赔偿。
-              </p>
-            </div>
-          </section>
-
-          {/* Section 2: Compensation amounts */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <Euro className="w-8 h-8 text-blue-600" />
-              赔偿金额计算——距离决定一切
-            </h2>
-
-            <p className="text-gray-700 mb-6 text-lg">
-              许多人误以为延误时间越长，赔偿越多。<strong>这是错误的！</strong>赔偿金额主要根据
-              <strong>航程距离</strong>计算，而非延误时长。
-            </p>
-
-            <div className="space-y-4 mb-6">
-              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-400 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-bold text-blue-900">€250</h3>
-                  <Plane className="w-8 h-8 text-blue-600" />
-                </div>
-                <p className="text-gray-700 mb-2">
-                  <strong>短途航班</strong> - 航程 ≤ 1,500公里
-                </p>
-                <p className="text-sm text-gray-600">
-                  示例：巴黎→柏林、阿姆斯特丹→伦敦、罗马→维也纳
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-green-50 to-green-100 border-2 border-green-400 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-bold text-green-900">€400</h3>
-                  <Plane className="w-8 h-8 text-green-600" />
-                </div>
-                <p className="text-gray-700 mb-2">
-                  <strong>中程航班</strong> - 航程 1,500-3,500公里
-                </p>
-                <p className="text-sm text-gray-600">
-                  示例：伦敦→雅典、巴黎→莫斯科、法兰克福→迪拜
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-purple-50 to-purple-100 border-2 border-purple-400 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-bold text-purple-900">€600</h3>
-                  <Plane className="w-8 h-8 text-purple-600" />
-                </div>
-                <p className="text-gray-700 mb-2">
-                  <strong>长途航班</strong> - 航程 &gt; 3,500公里
-                </p>
-                <p className="text-sm text-gray-600">
-                  示例：法兰克福→北京、巴黎→上海、伦敦→香港、阿姆斯特丹→纽约
+          <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 mb-6">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">重要：计算方式</h4>
+                <p className="mb-0 text-gray-700">
+                  延误时间的计算基于<strong className="text-yellow-800">到达目的地的时间</strong>（舱门打开时间），而非起飞时间！许多乘客误以为是起飞延误，但实际上EU 261/2004法规明确规定是<strong>"到达时间"</strong>。
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="bg-orange-50 border-l-4 border-orange-500 p-6">
-              <p className="mb-0">
-                <strong>⚠️ 重要规则：</strong>延误3小时和延误10小时获得的赔偿金额<strong>完全相同</strong>！
-                赔偿只取决于航程距离，不取决于延误时长。
-              </p>
-            </div>
-          </section>
-
-          {/* Section 3: Real examples for Chinese passengers */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <Calculator className="w-8 h-8 text-blue-600" />
-              中国乘客常见航线赔偿金额
-            </h2>
-
-            <div className="space-y-4">
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold">🛫 北京 → 法兰克福（汉莎航空）</h3>
-                  <span className="bg-purple-600 text-white px-4 py-2 rounded-full font-bold">€600</span>
-                </div>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• 航程距离：约7,800公里（长途）</li>
-                  <li>• 延误3小时+ → €600赔偿</li>
-                  <li>• 延误时间不影响金额（3小时=10小时）</li>
-                </ul>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="border-2 border-green-600 rounded-xl p-6 bg-green-50">
+              <div className="flex items-center gap-2 mb-4">
+                <CheckCircle className="w-6 h-6 text-green-600" />
+                <h3 className="text-lg font-bold text-gray-900 m-0">正确方式</h3>
               </div>
-
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold">🛫 上海 → 阿姆斯特丹（荷航KLM）</h3>
-                  <span className="bg-purple-600 text-white px-4 py-2 rounded-full font-bold">€600</span>
-                </div>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• 航程距离：约8,800公里（长途）</li>
-                  <li>• 延误3小时+ → €600赔偿</li>
-                  <li>• 即使购买特价票也可获得全额赔偿</li>
-                </ul>
-              </div>
-
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold">🛫 巴黎 → 罗马（法航）</h3>
-                  <span className="bg-blue-600 text-white px-4 py-2 rounded-full font-bold">€250</span>
-                </div>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• 航程距离：约1,100公里（短途）</li>
-                  <li>• 延误3小时+ → €250赔偿</li>
-                  <li>• 欧洲内部短途航班金额较低</li>
-                </ul>
-              </div>
-
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold">🛫 法兰克福 → 迪拜（汉莎）</h3>
-                  <span className="bg-green-600 text-white px-4 py-2 rounded-full font-bold">€400</span>
-                </div>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• 航程距离：约5,000公里（但属于"中程"类别）</li>
-                  <li>• EU法规特殊规定：欧盟外航班&gt;3,500km但&lt;6,000km只赔€400</li>
-                  <li>• 延误3小时+ → €400赔偿</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 4: How delay time is calculated */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <Clock className="w-8 h-8 text-blue-600" />
-              如何正确计算延误时间？
-            </h2>
-
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
-              <p className="text-lg mb-0">
-                <strong>关键规则：</strong>延误时间以<strong>到达目的地时间</strong>为准，
-                而非起飞时间。具体为飞机舱门打开的时刻。
-              </p>
-            </div>
-
-            <div className="space-y-4 mb-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-3">✅ 正确计算示例：</h3>
-                <div className="space-y-3 text-gray-700">
-                  <div>
-                    <p className="font-semibold mb-1">原定航班：</p>
-                    <p className="text-sm">• 起飞时间：10:00</p>
-                    <p className="text-sm">• 到达时间：14:00</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1">实际航班：</p>
-                    <p className="text-sm">• 起飞时间：11:30（延误1.5小时）</p>
-                    <p className="text-sm">• 到达时间：17:30（延误3.5小时）✅</p>
-                  </div>
-                  <div className="bg-green-100 p-3 rounded">
-                    <p className="text-green-800 font-bold mb-0">
-                      ✅ 结论：延误3.5小时，符合赔偿条件！
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-3">❌ 常见误解：</h3>
-                <div className="space-y-2 text-gray-700 text-sm">
-                  <p>❌ "起飞延误2小时" → 不够，要看到达时间</p>
-                  <p>❌ "飞机降落就算到达" → 错误，要等舱门打开</p>
-                  <p>❌ "延误5小时赔偿更多" → 错误，3小时和10小时赔偿相同</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 5: Special situations */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <AlertCircle className="w-8 h-8 text-orange-600" />
-              特殊情况处理
-            </h2>
-
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-3">🔄 转机航班延误怎么算？</h3>
-                <p className="text-gray-700 mb-3">
-                  如果是单一订票（一张票），以<strong>最终到达时间</strong>为准：
-                </p>
-                <ul className="space-y-2 text-gray-700 text-sm">
-                  <li>• 第一段延误1小时，第二段延误2小时 → 总延误3小时 ✅</li>
-                  <li>• 错过转机导致最终延误4小时 → 符合赔偿条件 ✅</li>
-                  <li>• 如果分开购票，每段单独计算</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-3">❌ 航班取消算延误吗？</h3>
-                <p className="text-gray-700 mb-3">
-                  航班取消<strong>不算延误</strong>，但通常更容易获得赔偿：
-                </p>
-                <ul className="space-y-2 text-gray-700 text-sm">
-                  <li>• 提前14天以内通知 → 有权获得€250-€600赔偿</li>
-                  <li>• 提前7天以内通知 → 赔偿几乎确定</li>
-                  <li>• 未提前通知 → 全额赔偿 + 食宿 + 改签</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-3">⏰ 延误超过5小时的特殊权利</h3>
-                <p className="text-gray-700 mb-3">
-                  如果延误超过5小时，您有权选择：
-                </p>
-                <ul className="space-y-2 text-gray-700 text-sm">
-                  <li>• <strong>选项1：</strong>获得全额退票款（放弃行程）</li>
-                  <li>• <strong>选项2：</strong>改签其他航班（继续行程）</li>
-                  <li>• 无论选择哪个，仍可能获得€250-€600赔偿</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 6: ClaimWinger calculator */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              不想自己计算？使用ClaimWinger赔偿计算器
-            </h2>
-
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border-2 border-green-300">
-              <p className="text-gray-700 mb-6 text-lg">
-                搞不清楚自己能获得多少赔偿？ClaimWinger提供<strong>免费在线计算器</strong>，
-                只需输入航班信息，30秒内就能知道准确金额。
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="space-y-3 text-sm">
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-3">✅ 计算器优势：</h3>
-                  <ul className="space-y-2 text-gray-700 text-sm">
-                    <li>• <strong>准确无误</strong> - 基于EU法规精确计算</li>
-                    <li>• <strong>即时结果</strong> - 无需等待，立即显示</li>
-                    <li>• <strong>中文界面</strong> - 无需担心语言障碍</li>
-                    <li>• <strong>完全免费</strong> - 无需注册或付费</li>
+                  <div className="font-semibold text-gray-900">1️⃣ 原定到达时间</div>
+                  <div className="text-gray-600">机票上显示的到达时间（舱门打开）</div>
+                </div>
+                <div className="text-center text-2xl text-gray-400">−</div>
+                <div>
+                  <div className="font-semibold text-gray-900">2️⃣ 实际到达时间</div>
+                  <div className="text-gray-600">飞机舱门实际打开的时间</div>
+                </div>
+                <div className="text-center text-2xl text-gray-400">=</div>
+                <div>
+                  <div className="font-semibold text-green-600">延误时间</div>
+                  <div className="text-gray-600">如果 ≥ 3小时 = 有赔偿权利</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-2 border-red-600 rounded-xl p-6 bg-red-50">
+              <div className="flex items-center gap-2 mb-4">
+                <XCircle className="w-6 h-6 text-red-600" />
+                <h3 className="text-lg font-bold text-gray-900 m-0">错误方式</h3>
+              </div>
+              <div className="space-y-3 text-sm">
+                <div>
+                  <div className="font-semibold text-red-600">❌ 出发延误时间</div>
+                  <div className="text-gray-600">舱门关闭时间不算！</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-600">❌ 登机延误时间</div>
+                  <div className="text-gray-600">登机时间不算！</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-600">❌ 起飞时间</div>
+                  <div className="text-gray-600">飞机离地时间不算！</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-600">❌ 降落时间</div>
+                  <div className="text-gray-600">轮子着地时间不算！</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Compensation Amounts by Distance */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">赔偿金额：根据飞行距离</h2>
+
+          <p className="text-gray-700 mb-6">
+            一旦延误达到3小时，赔偿金额取决于<strong>飞行距离</strong>（而非机票价格！）：
+          </p>
+
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-3 text-left">距离</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">延误时间</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">赔偿金额</th>
+                  <th className="border border-gray-300 px-4 py-3 text-left">航线示例</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3">≤ 1,500公里</td>
+                  <td className="border border-gray-300 px-4 py-3">≥ 3小时</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€250</td>
+                  <td className="border border-gray-300 px-4 py-3 text-sm">柏林→巴黎，布拉格→伦敦</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-3">1,500 - 3,500公里</td>
+                  <td className="border border-gray-300 px-4 py-3">≥ 3小时</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€400</td>
+                  <td className="border border-gray-300 px-4 py-3 text-sm">伦敦→雅典，巴黎→莫斯科</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3">&gt; 3,500公里（EU内）</td>
+                  <td className="border border-gray-300 px-4 py-3">≥ 3小时</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€600</td>
+                  <td className="border border-gray-300 px-4 py-3 text-sm">（不适用于EU内航班）</td>
+                </tr>
+                <tr className="bg-blue-50">
+                  <td className="border border-gray-300 px-4 py-3 font-bold">&gt; 3,500公里（EU外）</td>
+                  <td className="border border-gray-300 px-4 py-3">≥ 3小时</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€600</td>
+                  <td className="border border-gray-300 px-4 py-3 text-sm font-semibold">北京→法兰克福，上海→巴黎</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-3">&gt; 3,500公里（EU外）</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold">3-4小时</td>
+                  <td className="border border-gray-300 px-4 py-3 font-bold text-orange-600">€300</td>
+                  <td className="border border-gray-300 px-4 py-3 text-sm">（减半：延误3-4小时）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8">
+            <div className="flex items-start gap-3">
+              <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">中国乘客常见情况</h4>
+                <p className="mb-2 text-gray-700">
+                  对于从中国往返欧洲的航班（北京/上海/广州 ↔ 法兰克福/巴黎/阿姆斯特丹等），飞行距离通常<strong>&gt; 7,000公里</strong>，因此：
+                </p>
+                <ul className="space-y-1 text-gray-700 mb-0">
+                  <li>✅ 延误 ≥ 4小时 → <strong className="text-blue-600">€600</strong></li>
+                  <li>✅ 延误 3小时-3小时59分钟 → <strong className="text-orange-600">€300</strong></li>
+                  <li>❌ 延误 &lt; 3小时 → 无赔偿</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Critical Cases */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">临界案例：2小时59分钟 vs. 3小时01分钟</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="border-2 border-red-600 rounded-xl p-6 bg-red-50">
+              <div className="flex items-center gap-2 mb-4">
+                <XCircle className="w-6 h-6 text-red-600" />
+                <h3 className="text-lg font-bold text-gray-900 m-0">案例 A：2小时59分钟</h3>
+              </div>
+              <div className="space-y-3 text-sm text-gray-700">
+                <div><strong>原定到达：</strong> 15:00</div>
+                <div><strong>实际到达：</strong> 17:59</div>
+                <div><strong>延误时间：</strong> 2小时59分钟</div>
+                <div className="pt-3 border-t border-red-300">
+                  <div className="font-bold text-red-600 text-base">❌ 无赔偿权利</div>
+                  <div className="text-gray-600 mt-1">差1分钟！仅有航空公司自愿协助（可能）</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-2 border-green-600 rounded-xl p-6 bg-green-50">
+              <div className="flex items-center gap-2 mb-4">
+                <CheckCircle className="w-6 h-6 text-green-600" />
+                <h3 className="text-lg font-bold text-gray-900 m-0">案例 B：3小时01分钟</h3>
+              </div>
+              <div className="space-y-3 text-sm text-gray-700">
+                <div><strong>原定到达：</strong> 15:00</div>
+                <div><strong>实际到达：</strong> 18:01</div>
+                <div><strong>延误时间：</strong> 3小时01分钟</div>
+                <div className="pt-3 border-t border-green-300">
+                  <div className="font-bold text-green-600 text-base">✅ 有赔偿权利</div>
+                  <div className="text-gray-600 mt-1">€250-€600（根据距离）</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 mb-8">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-bold text-gray-900 mb-2">重要提示：精确到分钟！</h4>
+                <p className="mb-0 text-gray-700">
+                  航空公司会精确计算延误时间<strong>到分钟</strong>。如果您的延误时间接近3小时（例如2小时55分钟-3小时05分钟），请务必<strong>保留登机牌、到达时间的照片、机场广播记录</strong>等证据，以确保准确计算！
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Middle */}
+          <div className="my-12 p-8 bg-gradient-to-r from-green-600 to-green-700 rounded-xl text-white">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold mb-3">不确定您的延误是否达到3小时？</h3>
+              <p className="text-green-100 mb-6 text-lg">
+                使用ClaimWinger的免费计算器，输入您的航班信息，我们会自动计算延误时间和赔偿金额
+              </p>
+              <a
+                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_mid"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-white text-green-600 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors shadow-lg"
+              >
+                免费检查航班 →
+              </a>
+            </div>
+          </div>
+
+          {/* Airlines' Tricks */}
+          <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900 mt-12 mb-6">
+            <AlertCircle className="w-7 h-7 text-red-600" />
+            航空公司的4个常见陷阱
+          </h2>
+
+          <div className="space-y-6 mb-8">
+            <div className="border-l-4 border-red-600 bg-red-50 p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">❌ 陷阱1："起飞只延误了2小时"</h3>
+              <div className="text-gray-700 space-y-2">
+                <p><strong>航空公司说法：</strong>"起飞只延误2小时，不到3小时，所以没有赔偿。"</p>
+                <p><strong className="text-red-600">✅ 真相：</strong>EU 261/2004看的是<strong>到达时间</strong>，不是起飞时间！如果到达延误≥3小时，即使起飞只延误1小时，仍有权获得赔偿。</p>
+              </div>
+            </div>
+
+            <div className="border-l-4 border-red-600 bg-red-50 p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">❌ 陷阱2："飞行中追回了时间"</h3>
+              <div className="text-gray-700 space-y-2">
+                <p><strong>航空公司说法：</strong>"虽然起飞延误3小时，但我们在飞行中加速，最终到达只延误2小时45分钟。"</p>
+                <p><strong className="text-red-600">✅ 真相：</strong>这种情况下<strong>确实没有赔偿</strong>（因为到达&lt;3小时）。但如果航空公司没有提供证据（实际到达时间记录），您可以要求他们出示飞行数据。</p>
+              </div>
+            </div>
+
+            <div className="border-l-4 border-red-600 bg-red-50 p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">❌ 陷阱3："计划时间 vs. 实际时间"混淆</h3>
+              <div className="text-gray-700 space-y-2">
+                <p><strong>航空公司说法：</strong>"您的航班按照<strong>修订后的时间表</strong>到达，所以没有延误。"</p>
+                <p><strong className="text-red-600">✅ 真相：</strong>赔偿计算基于<strong>机票上的原定时间</strong>，而非航空公司后来修订的时间！如果您的机票显示15:00到达，但实际18:30到达，延误时间是3.5小时，无论航空公司是否修改了时间表。</p>
+              </div>
+            </div>
+
+            <div className="border-l-4 border-red-600 bg-red-50 p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">❌ 陷阱4："舱门打开时间"模糊</h3>
+              <div className="text-gray-700 space-y-2">
+                <p><strong>航空公司说法：</strong>"我们的记录显示舱门在17:58打开，所以延误只有2小时58分钟。"</p>
+                <p><strong className="text-red-600">✅ 真相：</strong>如果您有证据（照片、机场时间戳、其他乘客证词）显示舱门实际在18:02打开，您可以反驳！保留<strong>所有时间证据</strong>（登机牌、手机照片、机场广播）非常重要。</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Real Case Study */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">真实案例：3小时1分钟的胜利</h2>
+
+          <div className="bg-white border-2 border-blue-600 rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                李
+              </div>
+              <div>
+                <div className="font-bold text-gray-900">乘客：李女士</div>
+                <div className="text-sm text-gray-600">Lufthansa LH720：北京→法兰克福</div>
+              </div>
+            </div>
+
+            <div className="space-y-4 text-gray-700">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <div className="font-semibold text-gray-900 mb-1">航班信息</div>
+                  <ul className="text-sm space-y-1">
+                    <li>• 日期：2025年11月15日</li>
+                    <li>• 原定到达：14:30（法兰克福）</li>
+                    <li>• 实际到达：17:31（舱门打开）</li>
+                    <li>• <strong className="text-blue-600">延误时间：3小时1分钟</strong></li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-bold text-blue-900 mb-3">📝 使用步骤：</h3>
-                  <ol className="space-y-2 text-gray-700 text-sm list-decimal ml-4">
-                    <li>输入航班号和日期</li>
-                    <li>系统自动查询延误时间</li>
-                    <li>计算航程距离</li>
-                    <li>显示准确赔偿金额</li>
-                    <li>一键提交申请</li>
-                  </ol>
+                  <div className="font-semibold text-gray-900 mb-1">赔偿情况</div>
+                  <ul className="text-sm space-y-1">
+                    <li>• 飞行距离：7,362公里</li>
+                    <li>• 赔偿金额：<strong className="text-green-600">€600</strong></li>
+                    <li>• 处理时间：14天</li>
+                    <li>• 方式：ClaimWinger代理</li>
+                  </ul>
                 </div>
               </div>
 
-              <a 
-                href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-700 transition-colors no-underline"
-              >
-                免费计算赔偿金额 →
-              </a>
+              <div className="pt-4 border-t border-gray-200">
+                <h4 className="font-bold text-gray-900 mb-2">关键点：</h4>
+                <ol className="space-y-2 text-sm">
+                  <li><strong>1. 航空公司最初拒绝：</strong>Lufthansa声称延误"不到3小时"（基于他们的内部系统显示17:29舱门打开）</li>
+                  <li><strong>2. 李女士的证据：</strong>她拍摄了舱门打开时机场时钟显示17:31的照片</li>
+                  <li><strong>3. ClaimWinger介入：</strong>提交了照片证据 + 要求Lufthansa出示官方飞行数据记录</li>
+                  <li><strong>4. 结果：</strong>Lufthansa在14天内支付€600（承认延误3小时1分钟）</li>
+                </ol>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                <p className="text-sm text-gray-700 mb-0 italic">
+                  "仅仅1分钟的差别，但价值€600！感谢我保留了照片证据，也感谢ClaimWinger帮我争取。" — 李女士
+                </p>
+              </div>
             </div>
-          </section>
+          </div>
+
+          {/* Special Cases */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">特殊情况说明</h2>
+
+          <div className="space-y-6 mb-8">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🔄 转机航班</h3>
+              <p className="text-gray-700 mb-2">
+                如果您有转机，计算方式是<strong>最终到达目的地的延误时间</strong>，而非第一段航班的延误：
+              </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                <p className="text-sm text-gray-700 mb-2"><strong>示例：</strong>上海→法兰克福→慕尼黑</p>
+                <ul className="text-sm space-y-1 text-gray-700">
+                  <li>• 第一段（上海→法兰克福）：延误2小时</li>
+                  <li>• 错过转机，等待下一班</li>
+                  <li>• <strong>最终到达慕尼黑：</strong>比原定晚5小时</li>
+                  <li>• ✅ 赔偿基于<strong>5小时延误</strong> → €600（如果7000+km总距离）</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">✈️ 分段预订 (Separate Bookings)</h3>
+              <p className="text-gray-700 mb-2">
+                如果您<strong>分别预订</strong>了两段航班（不是同一张票），则每段航班<strong>单独计算</strong>：
+              </p>
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                <p className="text-sm text-gray-700 mb-2"><strong>示例：</strong>分别预订北京→法兰克福 和 法兰克福→罗马</p>
+                <ul className="text-sm space-y-1 text-gray-700">
+                  <li>• 第一段延误5小时 → ✅ €600赔偿</li>
+                  <li>• 错过第二段航班 → ❌ <strong>不是航空公司责任</strong>（因为是分别预订）</li>
+                  <li>• ⚠️ 建议：购买<strong>同一张联票</strong>以获得全程保护</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">🕐 时区变化</h3>
+              <p className="text-gray-700 mb-2">
+                延误时间的计算<strong>已考虑时区差异</strong>（使用当地时间）：
+              </p>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                <p className="text-sm text-gray-700 mb-2"><strong>示例：</strong>北京→巴黎（时差-7小时）</p>
+                <ul className="text-sm space-y-1 text-gray-700">
+                  <li>• 原定到达：巴黎当地时间 18:00</li>
+                  <li>• 实际到达：巴黎当地时间 21:30</li>
+                  <li>• 延误：3小时30分钟（<strong>无需手动转换时区</strong>）</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           {/* FAQ */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-              <HelpCircle className="w-8 h-8 text-blue-600" />
-              常见问题解答
-            </h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">常见问题</h2>
 
+          <div className="space-y-4 mb-8">
+            <details className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Q1: 如果延误正好是3小时整（3:00:00），算不算达到门槛？
+              </summary>
+              <div className="mt-3 text-gray-700 text-sm">
+                <p><strong>✅ 是的！</strong>EU 261/2004规定是"3小时或以上"（3 hours or more），所以3小时整（3:00:00）<strong>满足条件</strong>，您有权获得赔偿。</p>
+              </div>
+            </details>
+
+            <details className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Q2: 航空公司说"我们的系统显示只延误2小时58分钟"，我该怎么办？
+              </summary>
+              <div className="mt-3 text-gray-700 text-sm">
+                <p>您可以：</p>
+                <ol className="space-y-1 mt-2">
+                  <li>1. <strong>提供自己的证据：</strong>登机牌照片、机场时钟照片、手机时间戳</li>
+                  <li>2. <strong>要求航空公司出示官方记录：</strong>根据EU 261 Art. 14，他们必须提供书面解释</li>
+                  <li>3. <strong>查询第三方数据：</strong>FlightRadar24、机场官方到达时间记录</li>
+                  <li>4. <strong>联系ClaimWinger：</strong>我们可以帮助您获取准确的飞行数据并与航空公司交涉</li>
+                </ol>
+              </div>
+            </details>
+
+            <details className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Q3: 如果延误4小时，赔偿会更多吗？
+              </summary>
+              <div className="mt-3 text-gray-700 text-sm">
+                <p><strong>取决于距离：</strong></p>
+                <ul className="space-y-1 mt-2">
+                  <li>• <strong>短途（≤1500km）：</strong>延误3h或4h或10h，都是€250（固定）</li>
+                  <li>• <strong>中途（1500-3500km）：</strong>延误3h或4h或10h，都是€400（固定）</li>
+                  <li>• <strong>长途（&gt;3500km EU外）：</strong>延误<strong>3-4小时</strong> = €300，延误<strong>≥4小时</strong> = €600</li>
+                </ul>
+                <p className="mt-2"><strong>对于中国↔欧洲航班：</strong>延误≥4小时才能拿到完整的€600；延误3-4小时只能拿€300（减半）。</p>
+              </div>
+            </details>
+
+            <details className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Q4: 延误超过24小时，赔偿会更多吗？
+              </summary>
+              <div className="mt-3 text-gray-700 text-sm">
+                <p><strong>❌ 不会。</strong>EU 261/2004的赔偿金额是<strong>固定的</strong>（€250/€400/€600），与延误时长无关。即使延误48小时，赔偿金额仍然是基于飞行距离的固定金额。</p>
+                <p className="mt-2"><strong>但您可能还有权获得：</strong></p>
+                <ul className="space-y-1 mt-2">
+                  <li>• ✅ 餐食、饮料（航空公司必须提供）</li>
+                  <li>• ✅ 酒店住宿（如果延误过夜）</li>
+                  <li>• ✅ 机场至酒店的交通</li>
+                  <li>• ✅ 通讯费用（2次电话/邮件）</li>
+                </ul>
+                <p className="mt-2">这些费用<strong>额外于€600赔偿金</strong>，可以向航空公司索赔。</p>
+              </div>
+            </details>
+
+            <details className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Q5: 如果我接受了航空公司提供的改签，还能要求赔偿吗？
+              </summary>
+              <div className="mt-3 text-gray-700 text-sm">
+                <p><strong>✅ 可以！</strong>接受<strong>改签（rebooking）</strong>不影响您获得€250-€600赔偿的权利。这是两个独立的权利：</p>
+                <ul className="space-y-1 mt-2">
+                  <li>• <strong>改签：</strong>航空公司必须提供（免费）</li>
+                  <li>• <strong>赔偿：</strong>如果到达延误≥3小时，必须支付</li>
+                </ul>
+                <p className="mt-2 font-semibold text-blue-600">即使您选择了改签并最终到达，只要总延误≥3小时，仍然有权要求赔偿！</p>
+              </div>
+            </details>
+          </div>
+
+          {/* How to Claim */}
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">如何申请赔偿？</h2>
+
+          <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-600 rounded-xl p-6 mb-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">通过ClaimWinger，只需3步：</h3>
+            
             <div className="space-y-4">
-              <details className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <summary className="font-semibold text-lg cursor-pointer">
-                  航班延误必须达到多少小时才能申请赔偿？
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  根据EU 261/2004法规，航班必须延误<strong>至少3小时</strong>（到达目的地时间）才能申请赔偿。
-                  延误2小时59分钟不符合条件，但3小时及以上可以申请€250-€600的赔偿。
-                </p>
-              </details>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">提交航班信息</h4>
+                  <p className="text-sm text-gray-700">输入航班号、日期、延误时间 → 我们的系统自动验证资格</p>
+                </div>
+              </div>
 
-              <details className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <summary className="font-semibold text-lg cursor-pointer">
-                  赔偿金额如何计算？是按延误时间还是航程距离？
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  赔偿金额主要根据<strong>航程距离</strong>计算，而非延误时间长短。≤1,500公里€250，
-                  1,500-3,500公里€400，&gt;3,500公里€600。<strong>延误3小时和10小时获得的赔偿金额相同</strong>。
-                </p>
-              </details>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">我们处理所有文书工作</h4>
+                  <p className="text-sm text-gray-700">专业律师团队与航空公司交涉，无需您操心</p>
+                </div>
+              </div>
 
-              <details className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <summary className="font-semibold text-lg cursor-pointer">
-                  如何计算延误时间？是起飞时间还是到达时间？
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  延误时间以<strong>到达目的地时间</strong>为准（飞机舱门打开时间）。即使起飞只延误1小时，
-                  但如果到达延误超过3小时，仍然可以申请赔偿。
-                </p>
-              </details>
-
-              <details className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <summary className="font-semibold text-lg cursor-pointer">
-                  航班取消算延误吗？可以获得赔偿吗？
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  航班取消通常<strong>比延误更容易获得赔偿</strong>。除非航空公司提前14天通知并提供替代航班，
-                  否则乘客有权获得全额赔偿（€250-€600）加上食宿和改签费用。
-                </p>
-              </details>
-
-              <details className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <summary className="font-semibold text-lg cursor-pointer">
-                  延误超过5小时可以退票吗？
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  可以！如果延误超过5小时，您有权选择：1) 获得全额退票款，或 2) 改签其他航班。
-                  即使选择退票，您仍然可能有权获得€250-€600的赔偿（如果航空公司无有效理由）。
-                </p>
-              </details>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">收到€250-€600赔偿金</h4>
+                  <p className="text-sm text-gray-700">平均14-28天内到账，不成功不收费（No Win No Fee）</p>
+                </div>
+              </div>
             </div>
-          </section>
 
-          {/* Final CTA */}
-          <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-10 rounded-2xl shadow-2xl text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              您的航班延误了吗？
-            </h2>
-            <p className="text-xl text-blue-100 mb-8">
-              立即计算您的赔偿金额——延误3小时就能获得€250-€600
+            <div className="mt-6 pt-6 border-t border-blue-200">
+              <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-1">98%</div>
+                  <div className="text-sm text-gray-600">成功率</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-1">21天</div>
+                  <div className="text-sm text-gray-600">平均处理时间</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-1">€0</div>
+                  <div className="text-sm text-gray-600">预付费用</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Bottom */}
+          <div className="my-12 p-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl text-white text-center">
+            <h3 className="text-3xl font-bold mb-4">您的航班延误超过3小时了吗？</h3>
+            <p className="text-xl text-blue-100 mb-6">
+              立即检查您的赔偿权利 — 免费、快速、无风险
             </p>
-            <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
-              target="_blank" 
+            <a
+              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_bottom"
+              target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl no-underline"
+              className="inline-block px-10 py-4 bg-white text-blue-600 rounded-lg font-bold text-xl hover:bg-blue-50 transition-colors shadow-xl"
             >
-              免费计算赔偿 →
+              免费检查航班 →
             </a>
-          </section>
+            <p className="text-sm text-blue-200 mt-4">
+              ✓ 30秒获得结果 ✓ 不成功不收费 ✓ 98%成功率
+            </p>
+          </div>
+
+          {/* Related Articles */}
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">相关文章</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/zh/blog/which-flights-qualify-compensation" className="block p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                <div className="font-semibold text-blue-600 mb-1">哪些航班有资格获得赔偿？</div>
+                <div className="text-sm text-gray-600">了解EU 261/2004覆盖的航班范围</div>
+              </Link>
+              <Link href="/zh/blog/flight-cancellation-compensation-guide" className="block p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                <div className="font-semibold text-blue-600 mb-1">航班取消赔偿指南</div>
+                <div className="text-sm text-gray-600">取消航班的赔偿金额和申请流程</div>
+              </Link>
+              <Link href="/zh/blog/extraordinary-circumstances-explained" className="block p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                <div className="font-semibold text-blue-600 mb-1">什么是特殊情况？</div>
+                <div className="text-sm text-gray-600">航空公司何时可以拒绝赔偿</div>
+              </Link>
+              <Link href="/zh/blog/compensation-vs-refund-difference" className="block p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                <div className="font-semibold text-blue-600 mb-1">赔偿金 vs 退票款</div>
+                <div className="text-sm text-gray-600">了解两者的区别和如何获得</div>
+              </Link>
+            </div>
+          </div>
+
+          {/* JSON-LD Schema */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                'mainEntity': [
+                  {
+                    '@type': 'Question',
+                    'name': '如果延误正好是3小时整（3:00:00），算不算达到门槛？',
+                    'acceptedAnswer': {
+                      '@type': 'Answer',
+                      'text': '是的！EU 261/2004规定是"3小时或以上"（3 hours or more），所以3小时整（3:00:00）满足条件，您有权获得赔偿。'
+                    }
+                  },
+                  {
+                    '@type': 'Question',
+                    'name': '航空公司说"我们的系统显示只延误2小时58分钟"，我该怎么办？',
+                    'acceptedAnswer': {
+                      '@type': 'Answer',
+                      'text': '您可以提供自己的证据（登机牌照片、机场时钟照片），要求航空公司出示官方记录，查询第三方数据（FlightRadar24），或联系ClaimWinger帮助您获取准确数据并交涉。'
+                    }
+                  },
+                  {
+                    '@type': 'Question',
+                    'name': '如果延误4小时，赔偿会更多吗？',
+                    'acceptedAnswer': {
+                      '@type': 'Answer',
+                      'text': '取决于距离。对于中国↔欧洲航班（>3500km），延误≥4小时可获得完整的€600；延误3-4小时只能获得€300（减半）。短途和中途航班的赔偿金额（€250/€400）是固定的，与延误时长无关。'
+                    }
+                  },
+                  {
+                    '@type': 'Question',
+                    'name': '延误超过24小时，赔偿会更多吗？',
+                    'acceptedAnswer': {
+                      '@type': 'Answer',
+                      'text': '不会。EU 261/2004的赔偿金额是固定的（€250/€400/€600），与延误时长无关。但您有权获得额外的餐食、住宿、交通等费用补偿。'
+                    }
+                  },
+                  {
+                    '@type': 'Question',
+                    'name': '如果我接受了航空公司提供的改签，还能要求赔偿吗？',
+                    'acceptedAnswer': {
+                      '@type': 'Answer',
+                      'text': '可以！接受改签（rebooking）不影响您获得€250-€600赔偿的权利。改签和赔偿是两个独立的权利。即使您选择了改签并最终到达，只要总延误≥3小时，仍然有权要求赔偿。'
+                    }
+                  }
+                ]
+              })
+            }}
+          />
+
         </div>
       </article>
     </LayoutZh>
