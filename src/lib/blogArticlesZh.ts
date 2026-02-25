@@ -10,6 +10,15 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "european-airline-china-departure-compensation",
+    title: "欧洲航空公司运营的航班延误——即使从中国出发也能索赔吗？",
+    excerpt: "从北京/上海出发乘坐汉莎、法航、KLM等欧洲航司——即使从中国起飞也可能获得€250-€600赔偿！关键规则与例外详解",
+    author: "航空权益专家团队",
+    date: "2026-02-25",
+    readTime: "10 分钟",
+    category: "权益解读"
+  },
+  {
     slug: "europe-to-china-flight-delay-rights",
     title: "🇪🇺→🇨🇳从欧洲飞往中国航班延误索赔【2026】€600赔偿权利详解",
     excerpt: "法兰克福/巴黎/阿姆斯特丹飞北京/上海航班延误？中国乘客完整赔偿指南💰EU 261保护所有欧洲出发航班⏱️3分钟了解您的权利",
