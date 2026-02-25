@@ -9,7 +9,6 @@ export default function EuropeanAirlineChinaDepartureCompensation() {
       <SEO 
         title="🇨🇳→🇪🇺欧洲航司从中国出发航班延误赔偿【2026】能否索赔？"
         description="从北京/上海出发乘坐汉莎、法航、KLM等欧洲航司——即使从中国起飞也可能获得€250-€600赔偿！EU261法规关键例外详解"
-        path="/zh/blog/european-airline-china-departure-compensation"
       />
       
       <article className="max-w-4xl mx-auto px-4 py-12">

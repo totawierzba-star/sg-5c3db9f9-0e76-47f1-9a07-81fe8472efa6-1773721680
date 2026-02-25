@@ -12,7 +12,6 @@ export default function BlogIndexZh() {
       <SEO 
         title="航班延误赔偿博客 | 欧洲航班权益指南【中文】"
         description="专业解读EU261法规，涵盖汉莎、法航、KLM等航司延误赔偿。中国乘客欧洲航班维权完整指南"
-        path="/zh/blog"
       />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-12">
