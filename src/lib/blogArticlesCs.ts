@@ -18,6 +18,18 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
+    id: "mimoradne-okolnosti-vysvetleny",
+    title: "Mimořádné okolnosti vysvětleny【2026】Kdy aerolinka může odmítnout kompenzaci?",
+    slug: "/cs/blog/mimoradne-okolnosti-vysvetleny",
+    excerpt: "60% aerolinek lže o mimořádných okolnostech! Zjistěte pravdu o technických závadách, počasí a stávkách. Kompletní průvodce jak zpochybnit odmítnutí.",
+    category: "legal",
+    wordCount: 1800,
+    readTime: 12,
+    publishDate: "2026-02-26",
+    featured: true,
+    color: "bg-red-50 dark:bg-red-950"
+  },
+  {
     id: "letiste-praha-zpozdeny-let",
     title: "Letiště Praha-Ruzyně: Zpožděný let - kompenzace 2026",
     slug: "/cs/blog/letiste-praha-zpozdeny-let",
