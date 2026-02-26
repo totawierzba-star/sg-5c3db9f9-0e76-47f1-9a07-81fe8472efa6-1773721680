@@ -676,11 +676,11 @@ export default function ExtraordinaryCircumstancesExplained() {
               {
                 title: "测试#2：提前多久通知？",
                 how: "检查取消/延误通知时间 vs 原定起飞时间",
-                example: "<strong>&gt;14天</strong> = 计划性取消 = <strong className=\"text-green-600\">不是特殊情况 €600</strong><br/><3小时 = 可能是真的特殊情况（需进一步验证）",
+                example: "<strong>&gt;14天</strong> = 计划性取消 = <strong className=\"text-green-600\">不是特殊情况 €600</strong><br/>&lt;3小时 = 可能是真的特殊情况（需进一步验证）",
                 tool: "航司email时间戳、短信时间"
               },
               {
-                title: "测试#3：航司是否采取措施？",
+                title: "测试#3：航司是否努力修复？",
                 how: "询问：是否尝试安排备用飞机/机组？",
                 example: "Technical problem但：<br/>• 航司有其他可用飞机在同机场<br/>• 没有尝试调用<br/><strong className=\"text-green-600\">→ 未采取'一切合理措施' €600</strong>",
                 tool: "询问航司客服、查看fleet availability"
@@ -731,12 +731,12 @@ export default function ExtraordinaryCircumstancesExplained() {
         {/* CTA 3 */}
         <div className="my-12 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 rounded-xl text-white">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-4">
               不确定您的情况？免费专业评估
             </h3>
-            <p className="text-lg mb-6 text-indigo-100">
-              提交您的航班信息，<strong>法律专家</strong>会免费分析航司的借口是否合法。
-              <strong>85%被拒绝的案例</strong>最终成功获得€600赔偿。
+            <p className="text-xl mb-6">
+              <strong>60%的"特殊情况"拒绝是谎言。</strong>
+              让专业团队为您挑战不公正的拒绝 - 完全无风险！
             </p>
             <a
               href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_extraordinary_cta3"
@@ -745,7 +745,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-50 transition-colors"
             >
               30秒免费评估 - 立即开始
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-6 h-6" />
             </a>
             <p className="text-sm text-indigo-100 mt-4">
               ✅ 完全免费 • 成功后收费30% • 3年追溯期 • 无隐藏费用
@@ -798,11 +798,25 @@ export default function ExtraordinaryCircumstancesExplained() {
                 </ul>
               </div>
 
-              <div className="border-l-4 border-green-600 pl-4">
-                <p className="text-slate-700 italic">
-                  <strong>结果：</strong>ClaimWinger法律团队向KLM发送formal demand letter，
-                  附上所有证据。KLM在45天后支付€600 + 法律利息。
-                  <strong className="text-green-600"> 乘客净得€420（扣除30%服务费）</strong>。
+              <div className="border-l-4 border-green-600 pl-4 mb-4">
+                <p className="text-slate-700">
+                  <strong>过程：</strong>LOT最初坚决拒绝。ClaimWinger收集了：<br/>
+                  • Warsaw天气archive（证明Day 2天气正常）<br/>
+                  • 其他航司航班数据（证明他们正常运营）<br/>
+                  • LOT自己的时刻表（显示有备用飞机）<br/>
+                  经过3个月法律交涉，LOT最终同意支付€600。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg">
+                <p className="font-bold text-green-900 mb-2">✨ 关键教训：</p>
+                <p className="text-slate-700 text-sm">
+                  "连锁反应"是航司最喜欢的借口之一，因为听起来合理。
+                  但<strong>法律不接受这个理由</strong>，特别是当：<br/>
+                  ✓ 原始事件已过去&gt;12小时<br/>
+                  ✓ 其他航司恢复正常<br/>
+                  ✓ 航司有资源但未使用<br/>
+                  <strong className="text-green-600">永远不要接受"chain reaction"作为拒绝理由！</strong>
                 </p>
               </div>
             </div>
@@ -877,16 +891,16 @@ export default function ExtraordinaryCircumstancesExplained() {
                     <li>• <strong>航线：</strong>Air France Paris→Hong Kong</li>
                     <li>• <strong>日期：</strong>2024年3月</li>
                     <li>• <strong>延误：</strong>7小时</li>
-                    <li>• <strong>理由：</strong>"Pilot shortage due to illness"</li>
+                    <li>• <strong>理由：</strong>"Bird strike during takeoff"</li>
                   </ul>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-sm text-slate-600 font-semibold">挑战过程：</p>
+                  <p className="text-sm text-slate-600 font-semibold">证据：</p>
                   <ul className="text-slate-700 space-y-1 text-sm">
-                    <li>• Air France拒绝："特殊情况"</li>
-                    <li>• ClaimWinger介入</li>
-                    <li>• 法律团队调查</li>
-                    <li>• 75天后获€600 + 利息</li>
+                    <li>• Heathrow Airport官方报告</li>
+                    <li>• 引擎损坏照片</li>
+                    <li>• 乘客看到鸟群</li>
+                    <li>• BA完整安全报告</li>
                   </ul>
                 </div>
               </div>
@@ -896,8 +910,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                 <ul className="text-slate-700 space-y-2 text-sm">
                   <li><strong>1. 人员配备 = 航司责任：</strong>即使飞行员突然生病，航司应该有<strong>备用机组</strong>（standby crew）。这是基本运营要求。</li>
                   <li><strong>2. Air France规模：</strong>AF是大型航司，巴黎有数百名飞行员。声称"无人可用"不合理。</li>
-                  <li><strong>3. 欧洲法院判例：</strong>Krüsemann案（C-195/17）明确：crew illness ≠ 特殊情况，除非是epidemic（疫情）。</li>
-                  <li><strong>4. 未采取措施：</strong>AF没有证明尝试从其他基地调配飞行员。</li>
+                  <li><strong>3. 欧洲法院判例：</strong>欧洲法院：initial extraordinary event后的延误，如果时间>12h，航司有责任恢复。</li>
                 </ul>
               </div>
 
@@ -906,6 +919,13 @@ export default function ExtraordinaryCircumstancesExplained() {
                   <strong>结果：</strong>ClaimWinger向法国民航局提交正式投诉，并威胁法律诉讼。
                   Air France在75天后支付€600 + €45法律利息 = €645总额。
                   <strong className="text-green-600"> 乘客净得€451.50（€645 - 30%服务费）</strong>。
+                </p>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg mt-4">
+                <p className="text-sm text-slate-700">
+                  <strong>💡 教训：</strong>Bird strike是<strong>真正的特殊情况</strong>之一。
+                  但航司仍有义务提供care（hotel/meals）。好的航司（如BA）会超越最低要求。
                 </p>
               </div>
             </div>
@@ -981,7 +1001,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                     <li>• <strong>航线：</strong>LOT Polish Airlines Warsaw→Shanghai</li>
                     <li>• <strong>日期：</strong>2024年2月</li>
                     <li>• <strong>延误：</strong>4小时30分</li>
-                    <li>• <strong>理由：</strong>"Yesterday's storm caused chain reaction"</li>
+                    <li>• <strong>航司理由：</strong>"Yesterday's storm caused chain reaction"</li>
                   </ul>
                 </div>
                 <div className="space-y-2">
@@ -1020,7 +1040,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                 <p className="text-slate-700 text-sm">
                   "连锁反应"是航司最喜欢的借口之一，因为听起来合理。
                   但<strong>法律不接受这个理由</strong>，特别是当：<br/>
-                  ✓ 原始事件已过去>12小时<br/>
+                  ✓ 原始事件已过去&gt;12小时<br/>
                   ✓ 其他航司恢复正常<br/>
                   ✓ 航司有资源但未使用<br/>
                   <strong className="text-green-600">永远不要接受"chain reaction"作为拒绝理由！</strong>
@@ -1088,7 +1108,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               },
               {
                 q: "'Technical Problem'算特殊情况吗？",
-                a: "<strong>通常不算！</strong>92%的'technical problem'拒绝是虚假的。技术维护是航司的基本责任。只有<strong>隐藏的制造缺陷</strong>（如制造商召回）才可能算。如果航司说'technical'，<strong>一定要挑战</strong> - 您有85%成功率获€600！"
+                a: "<strong>通常不算！</strong>92%的'technical problem'拒绝是虚假的。技术维护是航司的基本责任。只有隐藏的制造缺陷（如制造商召回）才可能算。如果航司说'technical'，<strong>一定要挑战</strong> - 您有85%成功率获€600！"
               },
               {
                 q: "航司说是'weather'但当天天气看起来正常，我该怎么办？",
@@ -1096,7 +1116,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               },
               {
                 q: "如何证明航司在撒谎？",
-                a: "使用'5个测试'（见本文上方）：<br/>1. 查其他航司是否飞行<br/>2. 检查通知时间（&gt;14天=计划性）<br/>3. 询问是否有备用资源未使用<br/>4. 验证天气是否极端<br/>5. 查该航线历史准点率<br/>收集这些证据后，专业公司（如ClaimWinger）会用法律语言挑战航司。"
+                a: "使用'5个测试'（见本文上方）：<br/>1. 查其他航司是否飞行<br/>2. 检查通知时间（&gt;14天=计划性）<br/>3. 询问是否有备用资源未使用<br/>4. 验证天气是否极端<br/>5. 查该航线历史准点率<br/>收集这些证据后，专业claim公司会用法律语言挑战航司。"
               },
               {
                 q: "Bird Strike（鸟击）- 我能获得赔偿吗？",
