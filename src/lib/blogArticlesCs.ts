@@ -20,9 +20,12 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "lufthansa-kompenzace-reklamace",
     title: "Lufthansa Kompenzace【2026】Jak získat až €600 za zpoždění",
+    slug: "/cs/blog/lufthansa-kompenzace-reklamace",
     excerpt: "Lufthansa odmítá 89% českých reklamací! Naučte se 7 triků jak úspěšně získat €250-600 za zpoždění nebo zrušený let. Praktický průvodce s case studies.",
     publishDate: "2026-02-26",
     category: "airline",
+    wordCount: 3800,
+    readTime: 15,
     featured: true,
     color: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100"
   },
