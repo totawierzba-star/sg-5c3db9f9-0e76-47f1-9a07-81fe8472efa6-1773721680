@@ -461,6 +461,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/3hodinove-pravidlo-zpozdeni</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Hindi Pages -->
   <url>
