@@ -23,10 +23,9 @@ export default function BlogIndexZh() {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-4">
               专为中国乘客打造的欧洲航班赔偿完整指南
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-              <span>📚</span>
-              <Clock className="w-4 h-4" />
-              <span>已发布 28 篇深度文章</span>
+            <div className="flex items-center gap-2 text-slate-600">
+              <BookOpen className="w-4 h-4" />
+              <span>已发布 29 篇深度文章</span>
             </div>
           </header>
 

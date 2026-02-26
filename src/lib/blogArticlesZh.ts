@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "extraordinary-circumstances-explained",
+    title: "特殊情况解释【2026】航空公司何时可以拒绝赔偿",
+    excerpt: "航空公司说'特殊情况'拒绝赔偿？60%案例中航司在撒谎！详解合法vs虚假借口、如何识别和挑战。",
+    date: "2026-02-26",
+    readTime: "15分钟",
+    category: "权利保护"
+  },
+  {
     slug: "compensation-vs-refund-difference",
     title: "航班补偿vs退款【完整区别】Compensation vs Refund Difference Explained",
     excerpt: "95%的乘客混淆补偿(€250-€600)和退款！详解两者区别、何时可同时获得、航司5大陷阱、实际案例、如何正确索赔双重赔偿。",
