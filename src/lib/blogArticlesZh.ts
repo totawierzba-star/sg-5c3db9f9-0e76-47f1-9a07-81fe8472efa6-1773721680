@@ -10,6 +10,14 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "compensation-vs-refund-difference",
+    title: "航班补偿vs退款【完整区别】Compensation vs Refund Difference Explained",
+    excerpt: "95%的乘客混淆补偿(€250-€600)和退款！详解两者区别、何时可同时获得、航司5大陷阱、实际案例、如何正确索赔双重赔偿。",
+    date: "2026-02-26",
+    readTime: "12分钟",
+    category: "赔偿基础"
+  },
+  {
     slug: "european-airline-china-departure-compensation",
     title: "欧洲航司从中国出发航班补偿【2026】Europe Airlines China Departure",
     excerpt: "汉莎、法航等欧洲航司从北京、上海出发延误有赔偿吗？详解EU 261对China→Europe航线适用规则、实际案例、索赔流程。最高€600。",
