@@ -18,8 +18,20 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
+    id: "3hodinove-pravidlo-zpozdeni",
+    title: "3hodinové Pravidlo Zpoždění - Kdy Máte Nárok na €600?【2026】",
+    slug: "/cs/blog/3hodinove-pravidlo-zpozdeni",
+    excerpt: "Kompletní průvodce 3hodinovým pravidlem EU 261. Jak správně měřit zpoždění, hraniczne případy 2h59 vs 3h01, kalkulátor kompenzace.",
+    category: "foundation",
+    wordCount: 2100,
+    readTime: 12,
+    publishDate: "2026-02-26",
+    featured: true,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
     id: "rozdil-kompenzace-refundace",
-    title: "Rozdíl mezi kompenzací a vrácením peněz - co vám náleží?【2026】",
+    title: "Rozdíl mezi kompenzací a vrácení peněz - co vám náleží?【2026】",
     slug: "/cs/blog/rozdil-kompenzace-refundace",
     excerpt: "95% lidí neví rozdíl! Zjistěte kdy můžete dostat OBOJÍ (€600 kompenzace + vrácení letenky). Kompletní průvodce s praktickými příklady a pasti aerolinek.",
     category: "legal",
