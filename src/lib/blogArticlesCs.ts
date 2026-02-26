@@ -18,6 +18,18 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
+    id: "rozdil-kompenzace-refundace",
+    title: "Rozdíl mezi kompenzací a vrácením peněz - co vám náleží?【2026】",
+    slug: "/cs/blog/rozdil-kompenzace-refundace",
+    excerpt: "95% lidí neví rozdíl! Zjistěte kdy můžete dostat OBOJÍ (€600 kompenzace + vrácení letenky). Kompletní průvodce s praktickými příklady a pasti aerolinek.",
+    category: "legal",
+    wordCount: 3200,
+    readTime: 15,
+    publishDate: "2026-02-26",
+    featured: true,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
     id: "mimoradne-okolnosti-vysvetleny",
     title: "Mimořádné okolnosti vysvětleny【2026】Kdy aerolinka může odmítnout kompenzaci?",
     slug: "/cs/blog/mimoradne-okolnosti-vysvetleny",
