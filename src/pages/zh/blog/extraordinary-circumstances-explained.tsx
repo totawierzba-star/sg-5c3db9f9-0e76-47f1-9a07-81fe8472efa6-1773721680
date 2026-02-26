@@ -532,7 +532,7 @@ export default function ExtraordinaryCircumstancesExplained() {
                   <td className="border border-slate-300 px-4 py-2">航司飞行员罢工</td>
                   <td className="border border-slate-300 px-4 py-2 text-center">❌ 否</td>
                   <td className="border border-slate-300 px-4 py-2 text-center text-green-600 font-semibold">€600</td>
-                  <td className="border border-slate-300 px-4 py-2">内部劳资纠纷，航司责任</td>
+                  <td className="border border-slate-300 px-4 py-2">航司内部劳资纠纷，航司责任</td>
                 </tr>
                 <tr className="bg-green-50">
                   <td className="border border-slate-300 px-4 py-2">地勤人员罢工</td>
@@ -676,7 +676,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               {
                 title: "测试#2：提前多久通知？",
                 how: "检查取消/延误通知时间 vs 原定起飞时间",
-                example: "<strong>>14天</strong> = 计划性取消 = <strong className=\"text-green-600\">不是特殊情况 €600</strong><br/><3小时 = 可能是真的特殊情况（需进一步验证）",
+                example: "<strong>&gt;14天</strong> = 计划性取消 = <strong className=\"text-green-600\">不是特殊情况 €600</strong><br/><3小时 = 可能是真的特殊情况（需进一步验证）",
                 tool: "航司email时间戳、短信时间"
               },
               {
@@ -729,7 +729,7 @@ export default function ExtraordinaryCircumstancesExplained() {
         </section>
 
         {/* CTA 3 */}
-        <div className="my-12 bg-gradient-to-br from-indigo-600 to-purple-700 p-8 rounded-xl text-white">
+        <div className="my-12 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 rounded-xl text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               不确定您的情况？免费专业评估
@@ -1096,7 +1096,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               },
               {
                 q: "如何证明航司在撒谎？",
-                a: "使用'5个测试'（见本文上方）：<br/>1. 查其他航司是否飞行<br/>2. 检查通知时间（>14天=计划性）<br/>3. 询问是否有备用资源未使用<br/>4. 验证天气是否极端<br/>5. 查该航线历史准点率<br/>收集这些证据后，专业公司（如ClaimWinger）会用法律语言挑战航司。"
+                a: "使用'5个测试'（见本文上方）：<br/>1. 查其他航司是否飞行<br/>2. 检查通知时间（&gt;14天=计划性）<br/>3. 询问是否有备用资源未使用<br/>4. 验证天气是否极端<br/>5. 查该航线历史准点率<br/>收集这些证据后，专业公司（如ClaimWinger）会用法律语言挑战航司。"
               },
               {
                 q: "Bird Strike（鸟击）- 我能获得赔偿吗？",
@@ -1187,10 +1187,10 @@ export default function ExtraordinaryCircumstancesExplained() {
                 },
                 {
                   "@type": "Question",
-                  "name": "Technical Problem算特殊情况吗？",
+                  "name": "'Technical Problem'算特殊情况吗？",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "通常不算！92%的technical problem拒绝是虚假的。技术维护是航司的基本责任。只有隐藏的制造缺陷（如制造商召回）才可能算。如果航司说technical，一定要挑战 - 您有85%成功率获€600！"
+                    "text": "通常不算！92%的'technical problem'拒绝是虚假的。技术维护是航司的基本责任。只有隐藏的制造缺陷（如制造商召回）才可能算。如果航司说'technical'，一定要挑战 - 您有85%成功率获€600！"
                   }
                 }
               ]
