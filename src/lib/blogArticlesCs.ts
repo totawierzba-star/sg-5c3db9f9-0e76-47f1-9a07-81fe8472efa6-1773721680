@@ -18,6 +18,18 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
+    id: "zmeskany-prestup-kompenzacia",
+    slug: "/cs/blog/zmeskany-prestup-kompenzacia",
+    title: "Zmeškaný Přestup Kompenzace【2026】Až €600 za 45min Zpoždění!",
+    excerpt: "45minutové zpoždění může = €600 kompenzace! 92% lidí neví že zmeškaný přestup = plná kompenzace i za malé zpoždění prvního letu. Hidden goldmine!",
+    publishDate: "2026-02-26",
+    category: "situations",
+    wordCount: 3200,
+    readTime: 12,
+    featured: true,
+    color: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100"
+  },
+  {
     id: "lufthansa-kompenzace-reklamace",
     title: "Lufthansa Kompenzace【2026】Jak získat až €600 za zpoždění",
     slug: "/cs/blog/lufthansa-kompenzace-reklamace",
