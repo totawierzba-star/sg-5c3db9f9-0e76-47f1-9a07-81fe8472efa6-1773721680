@@ -25,7 +25,7 @@ export default function BlogIndexZh() {
             </p>
             <div className="flex items-center gap-2 text-slate-600">
               <BookOpen className="w-4 h-4" />
-              <span>已发布 29 篇深度文章</span>
+              <span>已发布 30 篇深度文章</span>
             </div>
           </header>
 

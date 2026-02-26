@@ -10,11 +10,19 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
-    slug: "extraordinary-circumstances-explained",
-    title: "特殊情况解释【2026】航空公司何时可以拒绝赔偿",
-    excerpt: "航空公司说'特殊情况'拒绝赔偿？60%案例中航司在撒谎！详解合法vs虚假借口、如何识别和挑战。",
+    slug: "missed-connection-compensation-guide",
+    title: "错过转机赔偿指南【2026】Missed Connection Compensation",
+    excerpt: "第一程只延误40分钟却导致错过转机？您可能获得€600赔偿！详解联程机票权益、转机延误计算规则、食宿安排及索赔流程。北京/上海经欧洲转机乘客必读。",
     date: "2026-02-26",
-    readTime: "15分钟",
+    readTime: "14 分钟",
+    category: "转机权益"
+  },
+  {
+    slug: "extraordinary-circumstances-explained",
+    title: "特殊情况解释【2026】Extraordinary Circumstances - When Airlines Can Refuse",
+    excerpt: "航空公司说'特殊情况'拒绝赔偿？了解真相！60%案例中航司在撒谎。详解合法vs虚假借口、技术故障真相、如何挑战拒绝、真实案例分析。",
+    date: "2026-02-26",
+    readTime: "15 分钟",
     category: "权利保护"
   },
   {
@@ -82,38 +90,6 @@ export const blogArticlesZh: BlogArticleZh[] = [
     category: "法律解读"
   },
   {
-    slug: "extraordinary-circumstances-explained",
-    title: "什么是'特殊情况'？航空公司何时可以拒绝赔偿？",
-    excerpt: "航司说'特殊情况'拒绝赔偿？90%是借口！完整解析EU261例外条款：技术故障能拒赔吗？天气延误算吗？如何反驳航司借口",
-    date: "2026-02-25",
-    readTime: "12 分钟",
-    category: "法律解读"
-  },
-  {
-    slug: "compensation-vs-refund-difference",
-    title: "赔偿金与退票款的区别——哪个更合适？",
-    excerpt: "航班取消/延误后能拿多少钱？赔偿金€250-€600与退票款的关键区别详解。多数情况可以同时申请两者！3分钟搞懂你的全部权利",
-    date: "2026-02-25",
-    readTime: "8 分钟",
-    category: "权益解读"
-  },
-  {
-    slug: "european-airline-china-departure-compensation",
-    title: "欧洲航空公司运营的航班延误——即使从中国出发也能索赔吗？",
-    excerpt: "从北京/上海出发乘坐汉莎、法航、KLM等欧洲航司——即使从中国起飞也可能获得€250-€600赔偿！关键规则与例外详解",
-    date: "2026-02-25",
-    readTime: "10 分钟",
-    category: "权益解读"
-  },
-  {
-    slug: "europe-to-china-flight-delay-rights",
-    title: "🇪🇺→🇨🇳从欧洲飞往中国航班延误索赔【2026】€600赔偿权利详解",
-    excerpt: "法兰克福/巴黎/阿姆斯特丹飞北京/上海航班延误？中国乘客完整赔偿指南💰EU 261保护所有欧洲出发航班⏱️3分钟了解您的权利",
-    date: "2026-02-25",
-    readTime: "6 分钟",
-    category: "欧洲航班权利"
-  },
-  {
     slug: "lufthansa-delay-cancellation-compensation",
     title: "🇩🇪汉莎航空Lufthansa延误/取消索赔攻略【2026】€250-€600赔偿",
     excerpt: "法兰克福/慕尼黑转机延误？汉莎航空拒赔？✅本文教你如何成功索赔€250-€600 | 3分钟了解你的权利 | 真实案例分析",
@@ -144,22 +120,6 @@ export const blogArticlesZh: BlogArticleZh[] = [
     date: "2026-02-24",
     readTime: "10分钟",
     category: "资格判断"
-  },
-  {
-    slug: "how-many-hours-delay-compensation",
-    title: "航班延误几小时能索赔？€250/€400/€600赔偿标准详解",
-    excerpt: "了解EU261规定的3小时延误门槛，以及如何根据航程距离计算€250、€400或€600的赔偿金额。",
-    date: "2026-02-24",
-    readTime: "8分钟",
-    category: "赔偿标准"
-  },
-  {
-    slug: "flight-cancellation-compensation-guide",
-    title: "航班取消能赔多少钱？€250-€600索赔指南",
-    excerpt: "航班突然取消？了解中国乘客在欧洲的权益，包括14天通知规则、替代航班权利和现金赔偿申请流程。",
-    date: "2026-02-25",
-    readTime: "12分钟",
-    category: "航班取消"
   },
   {
     slug: "finnair-compensation-guide",
