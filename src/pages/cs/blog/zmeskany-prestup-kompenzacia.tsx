@@ -420,7 +420,7 @@ export default function ZmeskanyPrestupKompenzacia() {
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-5 text-center">
                   <Utensils className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-3" />
-                  <p className="font-semibold text-gray-900 dark:text-white mb-2">Jídlo & Pití</p>
+                  <p className="font-semibold text-gray-900 dark:text-white mb-2">Jídlo &amp; Pití</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Přiměřené refreshmenty</p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-5 text-center">
@@ -439,7 +439,7 @@ export default function ZmeskanyPrestupKompenzacia() {
                   <li><strong>2)</strong> Požádejte o "care assistance" podle EU261</li>
                   <li><strong>3)</strong> Nečekejte až vás někdo osloví — ŽÁDEJTE AKTIVNĚ!</li>
                   <li><strong>4)</strong> Pokud odmítnou: Zařiďte si hotel/jídlo sami a <strong>USCHOVEJTE ÚČTENKY</strong></li>
-                  <li><strong>5)</strong> Aerolinka MUČení<Í refundovat (max €150/noc hotel, €30 jídlo)</li>
+                  <li><strong>5)</strong> Aerolinka MUSÍ refundovat (max €150/noc hotel, €30 jídlo)</li>
                 </ol>
               </div>
             </div>
@@ -560,42 +560,50 @@ export default function ZmeskanyPrestupKompenzacia() {
               🚨 5 Typických Triků Aerolinií
             </h2>
             <div className="space-y-4">
-              {[
-                {
-                  title: 'TRIK #1: "To nebyly přestupy"',
-                  content: 'Aerolinka tvrdí že jste měli "dva samostatné tikety". Vyvrátíte: Ukažte jeden PNR kód na booking confirmation!',
-                  color: 'red'
-                },
-                {
-                  title: 'TRIK #2: "Minimum connection time nebyl dodržen"',
-                  content: 'Aerolinka: "Bookovali jste si příliš krátký přestup." Vyvrátíte: "To vy jste mi nabídli tento connection time při bookingu!"',
-                  color: 'orange'
-                },
-                {
-                  title: 'TRIK #3: "Počasí / ATC stávka"',
-                  content: 'Standardní výmluva. Vyvrátíte: Prověřte na Eurocontrol.int a Wunderground.com!',
-                  color: 'yellow'
-                },
-                {
-                  title: 'TRIK #4: "Nabízíme voucher místo peněz"',
-                  content: '€600 voucher místo €600 cash. Vyvrátíte: "EU261 garantuje HOTOVOST, ne voucher!"',
-                  color: 'purple'
-                },
-                {
-                  title: 'TRIK #5: "Prekládka do 3 let"',
-                  content: 'Ignorují vaši reklamaci. Vyvrátíte: Send reminder každé 2 týdny + hrozba ClaimWinger/soudem.',
-                  color: 'pink'
-                }
-              ].map((trick, idx) => (
-                <details key={idx} className={`bg-${trick.color}-50 dark:bg-${trick.color}-950 border border-${trick.color}-200 dark:border-${trick.color}-800 rounded-lg p-5`}>
-                  <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                    {trick.title}
-                  </summary>
-                  <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {trick.content}
-                  </p>
-                </details>
-              ))}
+              <details className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-lg p-5">
+                <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  TRIK #1: "To nebyly přestupy"
+                </summary>
+                <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Aerolinka tvrdí že jste měli "dva samostatné tikety". Vyvrátíte: Ukažte jeden PNR kód na booking confirmation!
+                </p>
+              </details>
+
+              <details className="bg-orange-50 dark:bg-orange-950 border border-orange-200 dark:border-orange-800 rounded-lg p-5">
+                <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  TRIK #2: "Minimum connection time nebyl dodržen"
+                </summary>
+                <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Aerolinka: "Bookovali jste si příliš krátký přestup." Vyvrátíte: "To vy jste mi nabídli tento connection time při bookingu!"
+                </p>
+              </details>
+
+              <details className="bg-yellow-50 dark:bg-yellow-950 border border-yellow-200 dark:border-yellow-800 rounded-lg p-5">
+                <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  TRIK #3: "Počasí / ATC stávka"
+                </summary>
+                <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Standardní výmluva. Vyvrátíte: Prověřte na Eurocontrol.int a Wunderground.com!
+                </p>
+              </details>
+
+              <details className="bg-purple-50 dark:bg-purple-950 border border-purple-200 dark:border-purple-800 rounded-lg p-5">
+                <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  TRIK #4: "Nabízíme voucher místo peněz"
+                </summary>
+                <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  €600 voucher místo €600 cash. Vyvrátíte: "EU261 garantuje HOTOVOST, ne voucher!"
+                </p>
+              </details>
+
+              <details className="bg-pink-50 dark:bg-pink-950 border border-pink-200 dark:border-pink-800 rounded-lg p-5">
+                <summary className="font-bold text-gray-900 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  TRIK #5: "Prekládka do 3 let"
+                </summary>
+                <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Ignorují vaši reklamaci. Vyvrátíte: Send reminder každé 2 týdny + hrozba ClaimWinger/soudem.
+                </p>
+              </details>
             </div>
           </section>
 
