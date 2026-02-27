@@ -42,12 +42,15 @@ export const blogArticles: BlogArticle[] = [
 ];
 
 export const getCategoryLabel = (category: BlogArticle["category"]): string => {
-  const labels = {
-    airline: "航空公司指南",
-    airport: "机场指南",
-    foundation: "基础知识"
+  const labels: Record<string, string> = {
+    "LOT Polish Airlines": "LOT Polish Airlines",
+    "Ryanair": "Ryanair",
+    "Case Studies": "Case Studies",
+    "airline": "Linie lotnicze",
+    "airport": "Lotniska",
+    "foundation": "Podstawy"
   };
-  return labels[category];
+  return labels[category] || category;
 };
 
 export const getArticlesByCategory = (category: BlogArticle["category"] | "all"): BlogArticle[] => {
@@ -57,8 +60,4 @@ export const getArticlesByCategory = (category: BlogArticle["category"] | "all")
 
 export const getFeaturedArticles = (): BlogArticle[] => {
   return blogArticles.filter(article => article.featured);
-};
-
-export const getTotalWordCount = (): number => {
-  return blogArticles.reduce((total, article) => total + article.wordCount, 0);
 };
