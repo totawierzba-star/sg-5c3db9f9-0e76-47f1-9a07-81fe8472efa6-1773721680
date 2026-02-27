@@ -353,7 +353,7 @@ export default function RyanairCompensationGuide() {
                     <li>• Katowice → Faro (2,670 km)</li>
                   </ul>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-                    *Wyspy Kanaryjskie to 400€ mimo >3500km (specjalny przypadek EU261)
+                    *Wyspy Kanaryjskie to 400€ mimo &gt;3500km (specjalny przypadek EU261)
                   </p>
                 </div>
               </div>
