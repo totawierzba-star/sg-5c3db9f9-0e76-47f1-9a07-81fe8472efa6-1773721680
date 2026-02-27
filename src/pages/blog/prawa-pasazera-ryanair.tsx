@@ -324,7 +324,7 @@ export default function PrawaRyanair() {
                   </div>
                   <div className="bg-white dark:bg-slate-800 p-6 rounded-xl text-center shadow-lg">
                     <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">600 €</div>
-                    <p className="text-slate-700 dark:text-slate-300 font-semibold mb-3">Loty >3500 km</p>
+                    <p className="text-slate-700 dark:text-slate-300 font-semibold mb-3">Loty {'>'}3500 km</p>
                     <p className="text-sm text-slate-600 dark:text-slate-400">
                       Ryanair nie lata na takie dystanse (teoretycznie)
                     </p>
@@ -475,7 +475,7 @@ export default function PrawaRyanair() {
               </div>
             </section>
 
-            {/* Section 4: Pozostałe prawa (zwrot, informacje, etc.) - skrócone dla oszczędności miejsca */}
+            {/* Section 4: Pozostałe prawa */}
             <section>
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
                 📋 Pozostałe prawa pasażera Ryanair
