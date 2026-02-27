@@ -356,7 +356,7 @@ export default function PrawaRyanair() {
                     <div>
                       <h4 className="font-bold text-slate-900 dark:text-white mb-2">Odwołanie</h4>
                       <p className="text-slate-700 dark:text-slate-300">
-                        <strong>Zawsze</strong> przysługuje odszkodowanie (chyba że Ryanair poinformował Cię &gt;14 dni wcześniej 
+                        <strong>Zawsze</strong> przysługuje odszkodowanie (chyba że Ryanair poinformował Cię {'>'} 14 dni wcześniej 
                         lub zapewnił alternatywny lot z niewielkim opóźnieniem).
                       </p>
                     </div>
