@@ -125,92 +125,36 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden border-t border-gray-200 dark:border-gray-700">
-              <div className="px-6 py-8 space-y-6">
+            <div className="md:hidden">
+              <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                 <Link
                   href="/opozniony-lot"
-                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                  className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Opóźniony lot
                 </Link>
                 <Link
                   href="/odwolany-lot"
-                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                  className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Odwołany lot
                 </Link>
-                
-                {/* Mobile Blog Section */}
-                <div className="border-l-2 border-gray-200 dark:border-gray-700 pl-4">
-                  <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">Blog</div>
-                  <Link
-                    href="/blog/odwolany-lot-historia-pasazera"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    <div className="font-medium text-sm">Mój lot został odwołany</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                      Historia pasażera
-                    </div>
-                  </Link>
-                </div>
-
+                <Link
+                  href="/blog"
+                  className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Blog
+                </Link>
                 <Link
                   href="/ile-mozesz-dostac"
-                  className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                  className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Ile możesz dostać?
+                  Kalkulator
                 </Link>
-
-                {/* Language Switcher Mobile */}
-                <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
-                  <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">Język</div>
-                  <div className="flex flex-col space-y-2">
-                    <div className="text-blue-600 dark:text-blue-400 font-medium">
-                      🇵🇱 Polski
-                    </div>
-                    <Link href="/zh" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                      🇨🇳 中文
-                    </Link>
-                    <Link href="/cs" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                      🇨🇿 Čeština
-                    </Link>
-                    <Link
-                      href="/cs"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇨🇿 Čeština
-                    </Link>
-                    <Link
-                      href="/hi"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇮🇳 हिन्दी
-                    </Link>
-                    <Link
-                      href="/sk"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇸🇰 Slovenčina
-                    </Link>
-                  </div>
-                </div>
-
-                <a
-                  href="https://claimwinger.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Sprawdź odszkodowanie
-                </a>
               </div>
             </div>
           )}

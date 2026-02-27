@@ -652,6 +652,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Index -->
+  <url>
+    <loc>https://lotproblem.pl/blog</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog Articles -->
   <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-lot-polish-airlines</loc>
