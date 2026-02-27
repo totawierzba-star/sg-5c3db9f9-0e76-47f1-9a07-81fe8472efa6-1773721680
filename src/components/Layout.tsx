@@ -38,30 +38,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Odwołany lot
               </Link>
               
-              {/* Blog Dropdown */}
-              <div 
-                className="relative"
-                onMouseEnter={() => setBlogDropdownOpen(true)}
-                onMouseLeave={() => setBlogDropdownOpen(false)}
+              {/* Blog Link - Simple direct link */}
+              <Link
+                href="/blog"
+                className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
-                <button
-                  className="text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1"
-                >
-                  Blog
-                  <ChevronDown className="w-3 h-3" />
-                </button>
-                
-                {blogDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50">
-                    <Link
-                      href="/blog/odwolany-lot-historia-pasazera"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-                    >
-                      Odwołany lot – historia pasażera
-                    </Link>
-                  </div>
-                )}
-              </div>
+                Blog
+              </Link>
 
               <Link
                 href="/ile-mozesz-dostac"
