@@ -152,7 +152,7 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     title: "Utracona przesiadka — co zrobić?",
-    slug: "utracona-przesiadka",
+    slug: "utracona-przesiadka-odszkodowanie",
     excerpt: "Nie przegralaj! 85% skuteczności odzyskania przesiadki po utracie. Sprawdzone metody i najważniejsze kroki.",
     date: "2025-01-28",
     readTime: "9 min",

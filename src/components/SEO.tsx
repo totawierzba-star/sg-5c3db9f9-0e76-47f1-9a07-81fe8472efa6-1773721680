@@ -5,6 +5,7 @@ interface SEOProps {
   description?: string;
   image?: string;
   url?: string;
+  canonical?: string;
 }
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
@@ -13,7 +14,11 @@ export function SEOElements({
   description = "Welcome to my app",
   image = "/og-image.png",
   url,
+  canonical,
 }: SEOProps) {
+  const siteUrl = "https://lotproblem.pl";
+  const defaultImage = `${siteUrl}/og-image.png`;
+  const metaImage = image || defaultImage;
   return (
     <>
       <title>{title}</title>
@@ -31,7 +36,8 @@ export function SEOElements({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {image && <meta name="twitter:image" content={image} />}
+      {image && <meta name="twitter:image" content={metaImage} />}
+      {canonical && <link rel="canonical" href={canonical} />}
 
       {/* Viewport and mobile optimization */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
