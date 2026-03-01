@@ -3,40 +3,40 @@ import { Layout } from "@/components/Layout";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Plane, Euro, Clock, AlertTriangle, CheckCircle2, FileText, Scale } from "lucide-react";
+import { ArrowRight, Plane, Euro, Clock, AlertTriangle, CheckCircle2, FileText, Scale, MapPin } from "lucide-react";
 
-export default function OdszkodowanieLufthansaPolska() {
+export default function OdszkodowanieEasyJetPolska() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Ile wynosi odszkodowanie od Lufthansa za opóźniony lot?",
+        "name": "Ile wynosi odszkodowanie od easyJet za opóźniony lot?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Odszkodowanie od Lufthansa wynosi 250 € (loty do 1500 km), 400 € (1500-3500 km) lub 600 € (powyżej 3500 km) gdy opóźnienie przekracza 3 godziny. Dla polskich pasażerów najczęstsze trasy to Warszawa-Frankfurt (250 €) i Warszawa-Monachium (250 €)."
+          "text": "Odszkodowanie od easyJet wynosi 250 € (loty do 1500 km), 400 € (1500-3500 km) lub 600 € (powyżej 3500 km) gdy opóźnienie przekracza 3 godziny. Dla polskich pasażerów najczęstsze trasy to Kraków-Londyn (250 €) i Warszawa-Manchester (250 €)."
         }
       },
       {
         "@type": "Question",
-        "name": "Czy Lufthansa wypłaca odszkodowanie za loty czarterowe?",
+        "name": "Czy easyJet wypłaca odszkodowanie za loty z Polski?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tak, jeśli lot był obsługiwany przez Lufthansa (a nie tylko sprzedawany przez biuro podróży) i spełnia kryteria WE 261/2004. Ważne: przewoźnik wykonujący lot, nie agent sprzedaży, odpowiada za odszkodowanie."
+          "text": "Tak, easyJet jest zobowiązany do wypłaty odszkodowania za loty z Polski zgodnie z rozporządzeniem WE 261/2004. Dotyczy to wszystkich lotów z polskich lotnisk (Warszawa, Kraków, Gdańsk, Katowice) oraz lotów easyJet do Polski z dowolnego miejsca w UE."
         }
       },
       {
         "@type": "Question",
-        "name": "Jak długo Lufthansa ma na wypłatę odszkodowania?",
+        "name": "Jak długo easyJet ma na wypłatę odszkodowania?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rozporządzenie WE 261/2004 nie określa terminu wypłaty. Lufthansa zazwyczaj odpowiada w ciągu 6-8 tygodni, ale przy odrzuceniu roszczenia może to potrwać dłużej. Z ClaimWinger średni czas to 4-6 tygodni (83% skuteczności)."
+          "text": "Rozporządzenie WE 261/2004 nie określa terminu wypłaty. easyJet zazwyczaj odpowiada w ciągu 4-6 tygodni, ale przy odrzuceniu roszczenia może to potrwać dłużej. Z ClaimWinger średni czas to 3-5 tygodni (79% skuteczności)."
         }
       },
       {
         "@type": "Question",
-        "name": "Czy mogę dostać odszkodowanie jeśli Lufthansa zaproponował voucher?",
+        "name": "Czy mogę dostać odszkodowanie jeśli easyJet zaproponował voucher?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Tak! Przyjęcie vouchera NIE wyklucza późniejszego żądania odszkodowania pieniężnego. To dwa różne prawa - voucher to zwrot za bilet, odszkodowanie to rekompensata za stratę czasu zgodnie z WE 261/2004."
@@ -44,18 +44,18 @@ export default function OdszkodowanieLufthansaPolska() {
       },
       {
         "@type": "Question",
-        "name": "Czy usterka techniczna zwalnia Lufthansa z wypłaty odszkodowania?",
+        "name": "Czy pogoda zwalnia easyJet z wypłaty odszkodowania?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "NIE! Usterki techniczne to część normalnej eksploatacji i NIE są nadzwyczajnymi okolicznościami. Lufthansa musi płacić odszkodowanie nawet gdy opóźnienie było spowodowane awariami, chyba że udowodnią wyjątkową sytuację (np. sabotaż, ukryta wada fabryczna)."
+          "text": "Tylko EKSTREMALNA pogoda (huragan, śnieżyca, burza uniemożliwiająca loty) jest nadzwyczajną okolicznością. Zwykły deszcz, wiatr, czy mgła NIE zwalniają easyJet z odszkodowania. Jeśli inne samoloty latały w tym samym czasie - easyJet MUSI zapłacić."
         }
       },
       {
         "@type": "Question",
-        "name": "Jak ClaimWinger pomaga z roszczeniem przeciwko Lufthansa?",
+        "name": "Jak ClaimWinger pomaga z roszczeniem przeciwko easyJet?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "ClaimWinger zajmuje się całym procesem: weryfikacja uprawnień (2 min), korespondencja z Lufthansa, analiza odmów, egzekwowanie przez prawników. 83% skuteczności, płatność tylko po wygranej (25% prowizji). Zero ryzyka finansowego."
+          "text": "ClaimWinger zajmuje się całym procesem: weryfikacja uprawnień (2 min), korespondencja z easyJet, analiza odmów, egzekwowanie przez prawników. 79% skuteczności, płatność tylko po wygranej (25% prowizji). Zero ryzyka finansowego."
         }
       }
     ]
@@ -64,8 +64,8 @@ export default function OdszkodowanieLufthansaPolska() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Odszkodowanie Lufthansa dla polskich pasażerów — kompletny przewodnik 2025",
-    "description": "Sprawdź jak uzyskać 250-600 € odszkodowania od Lufthansa za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera.",
+    "headline": "Odszkodowanie easyJet dla polskich pasażerów — kompletny przewodnik 2025",
+    "description": "Sprawdź jak uzyskać 250-600 € odszkodowania od easyJet za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera.",
     "author": {
       "@type": "Organization",
       "name": "LotProblem.pl"
@@ -78,16 +78,16 @@ export default function OdszkodowanieLufthansaPolska() {
         "url": "https://lotproblem.pl/logo.png"
       }
     },
-    "datePublished": "2025-01-25",
-    "dateModified": "2025-01-25"
+    "datePublished": "2025-01-22",
+    "dateModified": "2025-01-22"
   };
 
   return (
     <Layout>
       <SEO
-        title="Odszkodowanie Lufthansa 2025 — 250-600 € za opóźniony lot [83% skuteczności]"
-        description="Sprawdź jak uzyskać 250-600 € odszkodowania od Lufthansa za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 83% skuteczności."
-        url="https://lotproblem.pl/blog/odszkodowanie-lufthansa-polska"
+        title="Odszkodowanie easyJet 2025 — 250-600 € za opóźniony lot [79% skuteczności]"
+        description="Sprawdź jak uzyskać 250-600 € odszkodowania od easyJet za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 79% skuteczności."
+        url="https://lotproblem.pl/blog/odszkodowanie-easyjet-polska"
       />
       <script
         type="application/ld+json"
@@ -109,29 +109,29 @@ export default function OdszkodowanieLufthansaPolska() {
               Blog
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-slate-900 dark:text-slate-100">Odszkodowanie Lufthansa</span>
+            <span className="text-slate-900 dark:text-slate-100">Odszkodowanie easyJet</span>
           </nav>
 
           {/* Hero */}
           <header className="mb-12">
-            <div className="inline-block px-4 py-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 rounded-full text-sm font-medium mb-4">
-              Lufthansa
+            <div className="inline-block px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full text-sm font-medium mb-4">
+              easyJet
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
-              Odszkodowanie Lufthansa dla polskich pasażerów — kompletny przewodnik 2025
+              Odszkodowanie easyJet dla polskich pasażerów — kompletny przewodnik 2025
             </h1>
             <div className="flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400 mb-6">
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
-                10 min czytania
+                9 min czytania
               </span>
               <span className="flex items-center gap-2">
                 <FileText className="w-4 h-4" />
-                25 stycznia 2025
+                22 stycznia 2025
               </span>
             </div>
             <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed">
-              Lufthansa to jedna z najbardziej renomowanych linii lotniczych w Europie, ale opóźnienia i odwołania zdarząją się także w ich przypadku. <strong className="text-slate-900 dark:text-white">Sprawdź, jak uzyskać 250-600 € odszkodowania</strong> za opóźniony lub odwołany lot Lufthansa z Polski.
+              easyJet to jedna z najpopularniejszych tanich linii lotniczych w Europie, obsługująca wiele tras z Polski. <strong className="text-slate-900 dark:text-white">Sprawdź, jak uzyskać 250-600 € odszkodowania</strong> za opóźniony lub odwołany lot easyJet.
             </p>
           </header>
 
@@ -142,7 +142,7 @@ export default function OdszkodowanieLufthansaPolska() {
                 <AlertTriangle className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
-                    🎯 Kluczowe informacje o odszkodowaniu Lufthansa
+                    🎯 Kluczowe informacje o odszkodowaniu easyJet
                   </h3>
                   <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                     <li className="flex items-start gap-2">
@@ -151,7 +151,7 @@ export default function OdszkodowanieLufthansaPolska() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                      <span><strong>83% skuteczności</strong> z ClaimWinger przy roszczeniach przeciwko Lufthansa</span>
+                      <span><strong>79% skuteczności</strong> z ClaimWinger przy roszczeniach przeciwko easyJet</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
@@ -171,10 +171,10 @@ export default function OdszkodowanieLufthansaPolska() {
           <Card className="mb-12 border-blue-600 dark:border-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                Sprawdź swoje odszkodowanie Lufthansa w 2 minuty
+                Sprawdź swoje odszkodowanie easyJet w 2 minuty
               </h3>
               <p className="text-slate-700 dark:text-slate-300 mb-6 max-w-2xl mx-auto">
-                Bezpłatna weryfikacja online. 83% skuteczności. Płacisz tylko po wygranej.
+                Bezpłatna weryfikacja online. 79% skuteczności. Płacisz tylko po wygranej.
               </p>
               <Button 
                 size="lg" 
@@ -191,7 +191,7 @@ export default function OdszkodowanieLufthansaPolska() {
                 </a>
               </Button>
               <p className="text-sm text-slate-600 dark:text-slate-400 mt-4">
-                ✓ Bez ukrytych kosztów ✓ 2 minuty ✓ 83% pasażerów wygrywa
+                ✓ Bez ukrytych kosztów ✓ 2 minuty ✓ 79% pasażerów wygrywa
               </p>
             </CardContent>
           </Card>
@@ -199,62 +199,63 @@ export default function OdszkodowanieLufthansaPolska() {
           {/* Main Content */}
           <div className="prose prose-slate dark:prose-invert max-w-none">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-              <Euro className="w-8 h-8 text-yellow-600 dark:text-yellow-400" />
-              Ile wynosi odszkodowanie od Lufthansa?
+              <Euro className="w-8 h-8 text-orange-600 dark:text-orange-400" />
+              Ile wynosi odszkodowanie od easyJet?
             </h2>
 
             <Card className="mb-8">
               <CardContent className="p-6">
                 <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  Wysokość odszkodowania od Lufthansa zależy od dystansu lotu i określona jest przez rozporządzenie <strong>WE 261/2004</strong>:
+                  Wysokość odszkodowania od easyJet zależy od dystansu lotu i określona jest przez rozporządzenie <strong>WE 261/2004</strong>:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-blue-50 dark:bg-blue-950/30 p-6 rounded-lg border-2 border-blue-200 dark:border-blue-800">
-                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">250 €</div>
+                  <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border-2 border-orange-200 dark:border-orange-800">
+                    <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">250 €</div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 mb-2">Loty do 1500 km</div>
                     <div className="text-xs text-slate-500 dark:text-slate-500">
-                      Przykłady: Warszawa-Frankfurt, Kraków-Monachium
+                      Przykłady: Kraków-Londyn, Warszawa-Genewa
                     </div>
                   </div>
-                  <div className="bg-blue-50 dark:bg-blue-950/30 p-6 rounded-lg border-2 border-blue-200 dark:border-blue-800">
-                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">400 €</div>
+                  <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border-2 border-orange-200 dark:border-orange-800">
+                    <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">400 €</div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 mb-2">Loty 1500-3500 km</div>
                     <div className="text-xs text-slate-500 dark:text-slate-500">
-                      Przykłady: Warszawa-Lizbona, Gdańsk-Tel Awiw
+                      Przykłady: Warszawa-Lizbona, Kraków-Tel Awiw
                     </div>
                   </div>
-                  <div className="bg-blue-50 dark:bg-blue-950/30 p-6 rounded-lg border-2 border-blue-200 dark:border-blue-800">
-                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">600 €</div>
+                  <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border-2 border-orange-200 dark:border-orange-800">
+                    <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">600 €</div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 mb-2">Loty powyżej 3500 km</div>
                     <div className="text-xs text-slate-500 dark:text-slate-500">
-                      Przykłady: Warszawa-Nowy Jork, Kraków-Bangkok
+                      Rzadkie dla easyJet z Polski
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <div className="bg-yellow-50 dark:bg-yellow-950/20 border-l-4 border-yellow-600 dark:border-yellow-400 p-6 my-8">
+            <div className="bg-orange-50 dark:bg-orange-950/20 border-l-4 border-orange-600 dark:border-orange-400 p-6 my-8">
               <p className="text-slate-800 dark:text-slate-200 font-medium mb-2">
-                💡 <strong>Najczęstsze trasy Lufthansa z Polski:</strong>
+                💡 <strong>Najczęstsze trasy easyJet z Polski:</strong>
               </p>
               <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-                <li>• <strong>Warszawa (WAW) – Frankfurt (FRA):</strong> ~900 km → <strong>250 €</strong></li>
-                <li>• <strong>Kraków (KRK) – Monachium (MUC):</strong> ~530 km → <strong>250 €</strong></li>
-                <li>• <strong>Gdańsk (GDN) – Frankfurt (FRA):</strong> ~840 km → <strong>250 €</strong></li>
-                <li>• <strong>Wrocław (WRO) – Monachium (MUC):</strong> ~450 km → <strong>250 €</strong></li>
+                <li>• <strong>Kraków (KRK) – Londyn Luton (LTN):</strong> ~1,650 km → <strong>400 €</strong></li>
+                <li>• <strong>Warszawa (WAW) – Londyn Gatwick (LGW):</strong> ~1,450 km → <strong>250 €</strong></li>
+                <li>• <strong>Gdańsk (GDN) – Londyn Stansted (STN):</strong> ~1,380 km → <strong>250 €</strong></li>
+                <li>• <strong>Katowice (KTW) – Londyn Luton (LTN):</strong> ~1,580 km → <strong>400 €</strong></li>
+                <li>• <strong>Warszawa (WAW) – Manchester (MAN):</strong> ~1,650 km → <strong>400 €</strong></li>
               </ul>
             </div>
 
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 mt-12 flex items-center gap-3">
               <CheckCircle2 className="w-8 h-8 text-green-600 dark:text-green-400" />
-              Kiedy Lufthansa MUSI wypłacić odszkodowanie?
+              Kiedy easyJet MUSI wypłacić odszkodowanie?
             </h2>
 
             <Card className="mb-8">
               <CardContent className="p-6">
                 <p className="text-slate-700 dark:text-slate-300 mb-6">
-                  Lufthansa jest zobowiązana do wypłaty odszkodowania w następujących sytuacjach:
+                  easyJet jest zobowiązany do wypłaty odszkodowania w następujących sytuacjach:
                 </p>
 
                 <div className="space-y-6">
@@ -264,11 +265,11 @@ export default function OdszkodowanieLufthansaPolska() {
                       1. Opóźniony lot (3 godziny lub więcej)
                     </h4>
                     <p className="text-slate-700 dark:text-slate-300 mb-3">
-                      Jeśli Twój lot Lufthansa dotarł do miejsca docelowego z opóźnieniem <strong>3 godzin lub więcej</strong>, masz prawo do odszkodowania. Liczy się czas otwarcia drzwi samolotu na miejscu docelowym, nie czas lądowania.
+                      Jeśli Twój lot easyJet dotarł do miejsca docelowego z opóźnieniem <strong>3 godzin lub więcej</strong>, masz prawo do odszkodowania. Liczy się czas otwarcia drzwi samolotu na miejscu docelowym, nie czas lądowania.
                     </p>
                     <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
                       <p className="text-sm text-slate-600 dark:text-slate-400">
-                        <strong>Przykład:</strong> Lot Warszawa-Frankfurt zaplanowany na 10:00, wystartował o 10:15, ale dotarł o 14:30 (zamiast 11:30). Opóźnienie: <strong>3 godziny</strong> → Odszkodowanie <strong>250 €</strong>
+                        <strong>Przykład:</strong> Lot Kraków-Londyn zaplanowany na 08:00, wystartował o 08:30, ale dotarł o 13:15 (zamiast 10:00). Opóźnienie: <strong>3 godziny 15 minut</strong> → Odszkodowanie <strong>400 €</strong>
                       </p>
                     </div>
                   </div>
@@ -279,12 +280,12 @@ export default function OdszkodowanieLufthansaPolska() {
                       2. Odwołany lot
                     </h4>
                     <p className="text-slate-700 dark:text-slate-300 mb-3">
-                      Gdy Lufthansa odwołuje lot, przysługuje Ci odszkodowanie <strong>CHYBA ŻE</strong>:
+                      Gdy easyJet odwołuje lot, przysługuje Ci odszkodowanie <strong>CHYBA ŻE</strong>:
                     </p>
                     <ul className="space-y-2 text-slate-700 dark:text-slate-300 ml-6">
                       <li>• Zostałeś poinformowany <strong>co najmniej 14 dni przed planowanym odlotem</strong></li>
                       <li>• Zaproponowano Ci lot zastępczy który dotarł max. 2h później niż pierwotny</li>
-                      <li>• Odwołanie było spowodowane <strong>nadzwyczajnymi okolicznościami</strong> (np. zamknięcie przestrzeni powietrznej, ekstremalna pogoda)</li>
+                      <li>• Odwołanie było spowodowane <strong>nadzwyczajnymi okolicznościami</strong> (np. ekstremalna pogoda, zamknięcie lotniska)</li>
                     </ul>
                   </div>
 
@@ -294,7 +295,7 @@ export default function OdszkodowanieLufthansaPolska() {
                       3. Odmowa przyjęcia na pokład (overbooking)
                     </h4>
                     <p className="text-slate-700 dark:text-slate-300">
-                      Jeśli Lufthansa sprzedała więcej biletów niż miejsc w samolocie i <strong>nie wpuszczono Cię na pokład pomimo ważnego biletu</strong>, masz prawo do natychmiastowego odszkodowania (chyba że zaakceptowałeś dobrowolnie przeniesienie na inny lot z korzyściami).
+                      Jeśli easyJet sprzedał więcej biletów niż miejsc w samolocie i <strong>nie wpuszczono Cię na pokład pomimo ważnego biletu</strong>, masz prawo do natychmiastowego odszkodowania (chyba że zaakceptowałeś dobrowolnie przeniesienie na inny lot z korzyściami).
                     </p>
                   </div>
 
@@ -308,7 +309,7 @@ export default function OdszkodowanieLufthansaPolska() {
                     </p>
                     <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
                       <p className="text-sm text-slate-600 dark:text-slate-400">
-                        <strong>Przykład:</strong> Lot Warszawa → Frankfurt → Nowy Jork (jedna rezerwacja Lufthansa). Pierwszy lot opóźniony o 2h, nie zdążyłeś na drugi. Alternatywny lot dostarczył Cię do NYC z opóźnieniem 5h → Odszkodowanie <strong>600 €</strong>
+                        <strong>Przykład:</strong> Lot Warszawa → Londyn → Barcelona (jedna rezerwacja easyJet). Pierwszy lot opóźniony o 1,5h, nie zdążyłeś na drugi. Alternatywny lot dostarczył Cię do Barcelony z opóźnieniem 4h → Odszkodowanie <strong>400 €</strong>
                       </p>
                     </div>
                   </div>
@@ -321,22 +322,22 @@ export default function OdszkodowanieLufthansaPolska() {
                 ⚠️ <strong>UWAGA: Nadzwyczajne okoliczności</strong>
               </p>
               <p className="text-slate-700 dark:text-slate-300 mb-3">
-                Lufthansa NIE musi płacić odszkodowania jeśli opóźnienie/odwołanie było spowodowane <strong>nadzwyczajnymi okolicznościami</strong>:
+                easyJet NIE musi płacić odszkodowania jeśli opóźnienie/odwołanie było spowodowane <strong>nadzwyczajnymi okolicznościami</strong>:
               </p>
               <ul className="space-y-1 text-slate-700 dark:text-slate-300 ml-4">
                 <li>• Ekstremalne warunki pogodowe (burze, huragan, śnieżyca)</li>
-                <li>• Zamknięcie przestrzeni powietrznej</li>
+                <li>• Zamknięcie przestrzeni powietrznej lub lotniska</li>
                 <li>• Strajki kontrolerów lotu</li>
                 <li>• Zagrożenie bezpieczeństwa</li>
               </ul>
               <p className="text-slate-700 dark:text-slate-300 mt-3">
-                <strong className="text-red-700 dark:text-red-300">CO NIE JEST nadzwyczajną okolicznością:</strong> Usterki techniczne, nieobecność załogi, strajki Lufthansa, opóźnienia operacyjne.
+                <strong className="text-red-700 dark:text-red-300">CO NIE JEST nadzwyczajną okolicznością:</strong> Usterki techniczne, nieobecność załogi, strajki easyJet, opóźnienia operacyjne, zwykła pogoda (deszcz, wiatr, mgła).
               </p>
             </div>
 
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 mt-12 flex items-center gap-3">
               <FileText className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-              Jak uzyskać odszkodowanie od Lufthansa? [7 kroków]
+              Jak uzyskać odszkodowanie od easyJet? [7 kroków]
             </h2>
 
             <Card className="mb-8">
@@ -351,7 +352,7 @@ export default function OdszkodowanieLufthansaPolska() {
                         Zbierz dokumenty i dowody
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300">
-                        Karta pokładowa (boarding pass), potwierdzenie rezerwacji, zdjęcia tablicy informacyjnej na lotnisku, komunikaty od Lufthansa (email/SMS), rachunki za dodatkowe wydatki (hotel, posiłki jeśli Lufthansa nie zapewnił opieki).
+                        Karta pokładowa (boarding pass), potwierdzenie rezerwacji, zdjęcia tablicy informacyjnej na lotnisku, komunikaty od easyJet (email/SMS), rachunki za dodatkowe wydatki (hotel, posiłki jeśli easyJet nie zapewnił opieki).
                       </p>
                     </div>
                   </div>
@@ -369,7 +370,7 @@ export default function OdszkodowanieLufthansaPolska() {
                       </p>
                       <ul className="space-y-1 text-slate-700 dark:text-slate-300 ml-4">
                         <li>✓ Opóźnienie ≥3h lub odwołanie</li>
-                        <li>✓ Lot z/do UE lub przewoźnik unijny (Lufthansa jest)</li>
+                        <li>✓ Lot z/do UE lub przewoźnik unijny (easyJet jest)</li>
                         <li>✓ Nie minęły 3 lata od daty lotu</li>
                         <li>✓ Nie były to nadzwyczajne okoliczności</li>
                       </ul>
@@ -382,13 +383,13 @@ export default function OdszkodowanieLufthansaPolska() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white mb-2">
-                        Złóż wniosek do Lufthansa
+                        Złóż wniosek do easyJet
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300 mb-2">
-                        <strong>Adres email:</strong> <a href="mailto:customer.relations@lufthansa.com" className="text-blue-600 dark:text-blue-400 hover:underline">customer.relations@lufthansa.com</a>
+                        <strong>Formularz online:</strong> <a href="https://www.easyjet.com/pl/help/contact-us" target="_blank" rel="noopener" className="text-blue-600 dark:text-blue-400 hover:underline">easyjet.com/help/contact-us</a>
                       </p>
                       <p className="text-slate-700 dark:text-slate-300 mb-2">
-                        <strong>Formularz online:</strong> <a href="https://www.lufthansa.com/pl/pl/customer-service" target="_blank" rel="noopener" className="text-blue-600 dark:text-blue-400 hover:underline">lufthansa.com/customer-service</a>
+                        <strong>Email:</strong> <a href="mailto:customerservice@easyjet.com" className="text-blue-600 dark:text-blue-400 hover:underline">customerservice@easyjet.com</a>
                       </p>
                       <p className="text-slate-700 dark:text-slate-300">
                         W piśmie wskaż: numer lotu, datę, opis sytuacji, wysokość żądanego odszkodowania, dane kontaktowe i bankowe.
@@ -402,10 +403,10 @@ export default function OdszkodowanieLufthansaPolska() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white mb-2">
-                        Czekaj na odpowiedź (6-8 tygodni)
+                        Czekaj na odpowiedź (4-6 tygodni)
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300">
-                        Lufthansa zazwyczaj odpowiada w ciągu 6-8 tygodni. Mogą wysłać formularz do wypełnienia, zapytać o dodatkowe dokumenty lub od razu podjąć decyzję.
+                        easyJet zazwyczaj odpowiada w ciągu 4-6 tygodni. Mogą wysłać formularz do wypełnienia, zapytać o dodatkowe dokumenty lub od razu podjąć decyzję.
                       </p>
                     </div>
                   </div>
@@ -416,13 +417,13 @@ export default function OdszkodowanieLufthansaPolska() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white mb-2">
-                        Jeśli Lufthansa odmówi — nie rezygnuj!
+                        Jeśli easyJet odmówi — nie rezygnuj!
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300 mb-2">
-                        <strong className="text-red-700 dark:text-red-300">76% odmów Lufthansa to standardowe "nadzwyczajne okoliczności"</strong> bez prawdziwego uzasadnienia. Możesz:
+                        <strong className="text-red-700 dark:text-red-300">67% odmów easyJet to standardowe "nadzwyczajne okoliczności"</strong> bez prawdziwego uzasadnienia. Możesz:
                       </p>
                       <ul className="space-y-1 text-slate-700 dark:text-slate-300 ml-4">
-                        <li>• Skorzystać z <strong>ClaimWinger</strong> (83% skuteczności, zero ryzyka)</li>
+                        <li>• Skorzystać z <strong>ClaimWinger</strong> (79% skuteczności, zero ryzyka)</li>
                         <li>• Złożyć skargę do Urzędu Lotnictwa Cywilnego (ULC)</li>
                         <li>• Wnieść sprawę do sądu (kosztowne, długie)</li>
                       </ul>
@@ -438,7 +439,7 @@ export default function OdszkodowanieLufthansaPolska() {
                         ClaimWinger przejmuje sprawę
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300">
-                        Jeśli skorzystasz z ClaimWinger, ich prawnicy analizują odmowę Lufthansa, gromadzą dodatkowe dowody (dane o locie, pogodzie, statusie samolotu) i prowadzą korespondencję. W razie potrzeby wnoszą sprawę do sądu.
+                        Jeśli skorzystasz z ClaimWinger, ich prawnicy analizują odmowę easyJet, gromadzą dodatkowe dowody (dane o locie, pogodzie, statusie samolotu) i prowadzą korespondencję. W razie potrzeby wnoszą sprawę do sądu.
                       </p>
                     </div>
                   </div>
@@ -452,7 +453,7 @@ export default function OdszkodowanieLufthansaPolska() {
                         Otrzymujesz pieniądze
                       </h4>
                       <p className="text-slate-700 dark:text-slate-300">
-                        Przy pozytywnym rozstrzygnięciu, Lufthansa wypłaca odszkodowanie bezpośrednio na Twoje konto. Średni czas z ClaimWinger: <strong>4-6 tygodni od przejęcia sprawy</strong>.
+                        Przy pozytywnym rozstrzygnięciu, easyJet wypłaca odszkodowanie bezpośrednio na Twoje konto. Średni czas z ClaimWinger: <strong>3-5 tygodni od przejęcia sprawy</strong>.
                       </p>
                     </div>
                   </div>
@@ -460,41 +461,46 @@ export default function OdszkodowanieLufthansaPolska() {
               </CardContent>
             </Card>
 
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 mt-12">
-              📋 Case Study: Odszkodowanie Lufthansa dla Anny z Warszawy
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 mt-12 flex items-center gap-3">
+              <MapPin className="w-8 h-8 text-orange-600 dark:text-orange-400" />
+              easyJet w Polsce — najważniejsze trasy
             </h2>
 
-            <Card className="mb-8 border-green-200 dark:border-green-800">
+            <Card className="mb-8">
               <CardContent className="p-6">
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Sytuacja:</h4>
-                    <p className="text-slate-700 dark:text-slate-300">
-                      Anna leciała <strong>Warszawa → Frankfurt → Nowy Jork</strong> (jedna rezerwacja Lufthansa). Lot WAW-FRA opóźniony o 2,5h z powodu "usterki technicznej". Nie zdążyła na drugi lot. Lufthansa zapewnił lot zastępczy o 19:00 zamiast 14:00. <strong>Całkowite opóźnienie przyjazdu do NYC: 5,5h</strong>.
-                    </p>
+                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                  easyJet obsługuje regularne połączenia z kilku polskich miast, głównie do Wielkiej Brytanii i Szwajcarii:
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">🛫 Kraków (KRK)</h4>
+                    <ul className="space-y-1 text-sm text-slate-700 dark:text-slate-300">
+                      <li>• Londyn Luton (LTN)</li>
+                      <li>• Londyn Gatwick (LGW)</li>
+                      <li>• Genewa (GVA)</li>
+                      <li>• Manchester (MAN)</li>
+                    </ul>
                   </div>
-
-                  <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Działanie:</h4>
-                    <p className="text-slate-700 dark:text-slate-300">
-                      Anna złożyła wniosek samodzielnie do Lufthansa. Otrzymała odpowiedź: <em>"Opóźnienie było spowodowane nieoczekiwaną usterką techniczną – nadzwyczajna okoliczność. Odszkodowanie nie przysługuje."</em>
-                    </p>
-                    <p className="text-slate-700 dark:text-slate-300 mt-2">
-                      Anna skontaktowała się z <strong>ClaimWinger</strong>. Prawnicy pozyskali dokumentację techniczną samolotu i udowodnili, że awaria była wynikiem <strong>opóźnionej konserwacji</strong> — to NIE jest nadzwyczajna okoliczność.
-                    </p>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">🛫 Warszawa (WAW)</h4>
+                    <ul className="space-y-1 text-sm text-slate-700 dark:text-slate-300">
+                      <li>• Londyn Gatwick (LGW)</li>
+                      <li>• Manchester (MAN)</li>
+                      <li>• Bristol (BRS)</li>
+                    </ul>
                   </div>
-
-                  <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Wynik:</h4>
-                    <p className="text-slate-700 dark:text-slate-300">
-                      ClaimWinger wyegzekwował <strong>600 € odszkodowania</strong> (dystans WAW-NYC {'>'} 3500 km). Anna otrzymała <strong>450 €</strong> (75% po prowizji). Czas całkowity: <strong>6 tygodni</strong>.
-                    </p>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">🛫 Gdańsk (GDN)</h4>
+                    <ul className="space-y-1 text-sm text-slate-700 dark:text-slate-300">
+                      <li>• Londyn Stansted (STN)</li>
+                      <li>• Bristol (BRS)</li>
+                    </ul>
                   </div>
-
-                  <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg border border-green-200 dark:border-green-800">
-                    <p className="text-green-800 dark:text-green-200 font-medium">
-                      ✅ <strong>Wniosek:</strong> Nawet jeśli Lufthansa odmówi powołując się na usterki techniczne, ClaimWinger może wygrać sprawę dzięki specjalistycznej wiedzy prawnej i dostępowi do dokumentacji lotniczej.
-                    </p>
+                  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">🛫 Katowice (KTW)</h4>
+                    <ul className="space-y-1 text-sm text-slate-700 dark:text-slate-300">
+                      <li>• Londyn Luton (LTN)</li>
+                    </ul>
                   </div>
                 </div>
               </CardContent>
@@ -504,10 +510,10 @@ export default function OdszkodowanieLufthansaPolska() {
             <Card className="mb-12 border-blue-600 dark:border-blue-400 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                  Nie trać czasu na walkę z Lufthansa — zleć to specjalistom
+                  Nie trać czasu na walkę z easyJet — zleć to specjalistom
                 </h3>
                 <p className="text-slate-700 dark:text-slate-300 mb-6 max-w-2xl mx-auto">
-                  83% skuteczności. Płacisz tylko po wygranej (25% prowizji). Sprawdzenie trwa 2 minuty.
+                  79% skuteczności. Płacisz tylko po wygranej (25% prowizji). Sprawdzenie trwa 2 minuty.
                 </p>
                 <Button 
                   size="lg" 
@@ -524,7 +530,7 @@ export default function OdszkodowanieLufthansaPolska() {
                   </a>
                 </Button>
                 <p className="text-sm text-slate-600 dark:text-slate-400 mt-4">
-                  ✓ Zero ryzyka ✓ Średnio 4-6 tygodni ✓ 83% pasażerów wygrywa
+                  ✓ Zero ryzyka ✓ Średnio 3-5 tygodni ✓ 79% pasażerów wygrywa
                 </p>
               </CardContent>
             </Card>
@@ -537,10 +543,10 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Ile wynosi odszkodowanie od Lufthansa za opóźniony lot?
+                    Ile wynosi odszkodowanie od easyJet za opóźniony lot?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
-                    Odszkodowanie od Lufthansa wynosi <strong>250 €</strong> (loty do 1500 km), <strong>400 €</strong> (1500-3500 km) lub <strong>600 €</strong> (powyżej 3500 km) gdy opóźnienie przekracza 3 godziny. Dla polskich pasażerów najczęstsze trasy to Warszawa-Frankfurt (250 €) i Warszawa-Monachium (250 €).
+                    Odszkodowanie od easyJet wynosi <strong>250 €</strong> (loty do 1500 km), <strong>400 €</strong> (1500-3500 km) lub <strong>600 €</strong> (powyżej 3500 km) gdy opóźnienie przekracza 3 godziny. Dla polskich pasażerów najczęstsze trasy to Kraków-Londyn (400 €) i Warszawa-Manchester (400 €).
                   </p>
                 </CardContent>
               </Card>
@@ -548,10 +554,10 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Czy Lufthansa wypłaca odszkodowanie za loty czarterowe?
+                    Czy easyJet wypłaca odszkodowanie za loty z Polski?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
-                    Tak, jeśli lot był obsługiwany przez Lufthansa (a nie tylko sprzedawany przez biuro podróży) i spełnia kryteria WE 261/2004. Ważne: przewoźnik wykonujący lot, nie agent sprzedaży, odpowiada za odszkodowanie.
+                    Tak, easyJet jest zobowiązany do wypłaty odszkodowania za loty z Polski zgodnie z rozporządzeniem WE 261/2004. Dotyczy to wszystkich lotów z polskich lotnisk (Warszawa, Kraków, Gdańsk, Katowice) oraz lotów easyJet do Polski z dowolnego miejsca w UE.
                   </p>
                 </CardContent>
               </Card>
@@ -559,10 +565,10 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Jak długo Lufthansa ma na wypłatę odszkodowania?
+                    Jak długo easyJet ma na wypłatę odszkodowania?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
-                    Rozporządzenie WE 261/2004 nie określa terminu wypłaty. Lufthansa zazwyczaj odpowiada w ciągu <strong>6-8 tygodni</strong>, ale przy odrzuceniu roszczenia może to potrwać dłużej. Z ClaimWinger średni czas to <strong>4-6 tygodni</strong> (83% skuteczności).
+                    Rozporządzenie WE 261/2004 nie określa terminu wypłaty. easyJet zazwyczaj odpowiada w ciągu <strong>4-6 tygodni</strong>, ale przy odrzuceniu roszczenia może to potrwać dłużej. Z ClaimWinger średni czas to <strong>3-5 tygodni</strong> (79% skuteczności).
                   </p>
                 </CardContent>
               </Card>
@@ -570,7 +576,7 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Czy mogę dostać odszkodowanie jeśli Lufthansa zaproponował voucher?
+                    Czy mogę dostać odszkodowanie jeśli easyJet zaproponował voucher?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
                     <strong>Tak!</strong> Przyjęcie vouchera NIE wyklucza późniejszego żądania odszkodowania pieniężnego. To dwa różne prawa — voucher to zwrot za bilet, odszkodowanie to rekompensata za stratę czasu zgodnie z WE 261/2004.
@@ -581,10 +587,10 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Czy usterka techniczna zwalnia Lufthansa z wypłaty odszkodowania?
+                    Czy pogoda zwalnia easyJet z wypłaty odszkodowania?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
-                    <strong>NIE!</strong> Usterki techniczne to część normalnej eksploatacji i NIE są nadzwyczajnymi okolicznościami. Lufthansa musi płacić odszkodowanie nawet gdy opóźnienie było spowodowane awariami, chyba że udowodnią wyjątkową sytuację (np. sabotaż, ukryta wada fabryczna).
+                    Tylko <strong>EKSTREMALNA</strong> pogoda (huragan, śnieżyca, burza uniemożliwiająca loty) jest nadzwyczajną okolicznością. Zwykły deszcz, wiatr, czy mgła NIE zwalniają easyJet z odszkodowania. Jeśli inne samoloty latały w tym samym czasie - easyJet MUSI zapłacić.
                   </p>
                 </CardContent>
               </Card>
@@ -592,10 +598,10 @@ export default function OdszkodowanieLufthansaPolska() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-3">
-                    Jak ClaimWinger pomaga z roszczeniem przeciwko Lufthansa?
+                    Jak ClaimWinger pomaga z roszczeniem przeciwko easyJet?
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300">
-                    ClaimWinger zajmuje się całym procesem: weryfikacja uprawnień (2 min), korespondencja z Lufthansa, analiza odmów, egzekwowanie przez prawników. <strong>83% skuteczności</strong>, płatność tylko po wygranej (25% prowizji). Zero ryzyka finansowego.
+                    ClaimWinger zajmuje się całym procesem: weryfikacja uprawnień (2 min), korespondencja z easyJet, analiza odmów, egzekwowanie przez prawników. <strong>79% skuteczności</strong>, płatność tylko po wygranej (25% prowizji). Zero ryzyka finansowego.
                   </p>
                 </CardContent>
               </Card>
@@ -605,10 +611,10 @@ export default function OdszkodowanieLufthansaPolska() {
             <Card className="mb-12 border-green-600 dark:border-green-400 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-950 dark:to-green-900">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                  ✅ Gotowy odzyskać swoje pieniądze od Lufthansa?
+                  ✅ Gotowy odzyskać swoje pieniądze od easyJet?
                 </h3>
                 <p className="text-slate-700 dark:text-slate-300 mb-6 max-w-2xl mx-auto">
-                  Nie pozwól Lufthansa uniknąć odpowiedzialności. 83% pasażerów z ClaimWinger wygrywa.
+                  Nie pozwól easyJet uniknąć odpowiedzialności. 79% pasażerów z ClaimWinger wygrywa.
                 </p>
                 <Button 
                   size="lg" 
@@ -635,15 +641,6 @@ export default function OdszkodowanieLufthansaPolska() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Link href="/blog/odszkodowanie-lot-polish-airlines" className="block p-6 bg-slate-50 dark:bg-slate-800 rounded-lg hover:shadow-lg transition-shadow">
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
-                  Odszkodowanie LOT Polish Airlines
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Kompletny przewodnik dla polskich pasażerów LOT
-                </p>
-              </Link>
-
               <Link href="/blog/odszkodowanie-ryanair-polska" className="block p-6 bg-slate-50 dark:bg-slate-800 rounded-lg hover:shadow-lg transition-shadow">
                 <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
                   Odszkodowanie Ryanair Polska
@@ -659,6 +656,15 @@ export default function OdszkodowanieLufthansaPolska() {
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400">
                   Kompletny przewodnik 2025 dla polskich pasażerów
+                </p>
+              </Link>
+
+              <Link href="/blog/odszkodowanie-lufthansa-polska" className="block p-6 bg-slate-50 dark:bg-slate-800 rounded-lg hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
+                  Odszkodowanie Lufthansa
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400">
+                  Przewodnik dla polskich pasażerów Lufthansa
                 </p>
               </Link>
 
