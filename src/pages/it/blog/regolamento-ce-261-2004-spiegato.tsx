@@ -3,7 +3,7 @@ import { LayoutIt } from "@/components/LayoutIt";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Scale, Clock, Plane, Shield, HelpCircle, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowRight, BookOpen, Scale, Clock, Plane, Shield, HelpCircle, AlertTriangle, CheckCircle2, XCircle, Euro } from "lucide-react";
 
 export default function RegolamentoCE261() {
   return (
