@@ -71,6 +71,32 @@ export const blogArticlesHi: BlogArticleHi[] = [
     publishDate: "2026-03-01",
     featured: true,
     color: "green"
+  },
+  {
+    id: "delhi-london-flight-cancelled-compensation",
+    title: "दिल्ली–लंदन उड़ान रद्द – मुआवजे के लिए कदम दर कदम प्रक्रिया",
+    slug: "delhi-london-flight-cancelled-compensation",
+    category: "ट्रैवल गाइड",
+    flag: "🇮🇳",
+    wordCount: 10000,
+    readTime: 14,
+    excerpt: "दिल्ली-लंदन उड़ान रद्द होने पर €600 (₹52,000) मुआवज़ा कैसे प्राप्त करें। Air India, British Airways और Vistara के लिए विस्तृत गाइड। समय सीमा, दस्तावेज़ और विशेषज्ञ टिप्स।",
+    publishDate: "2026-03-01",
+    featured: true,
+    color: "blue"
+  },
+  {
+    id: "mumbai-frankfurt-flight-delay-compensation",
+    title: "मुंबई–फ्रैंकफर्ट उड़ान में देरी – यूरोपीय कानून के तहत आपके अधिकार",
+    slug: "mumbai-frankfurt-flight-delay-compensation",
+    category: "ट्रैवल गाइड",
+    flag: "🇮🇳",
+    wordCount: 10000,
+    readTime: 12,
+    excerpt: "मुंबई-फ्रैंकफर्ट रूट पर देरी के लिए €600 मुआवज़ा। Lufthansa, Air India और Emirates के लिए विशेष सलाह। कनेक्शन छूटने पर दोगुना मुआवज़ा।",
+    publishDate: "2026-03-01",
+    featured: false,
+    color: "purple"
   }
 ];
 
