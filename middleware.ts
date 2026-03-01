@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// Supported locales
+const locales = ['pl', 'zh', 'cs', 'hi', 'sk', 'it'] as const;
+type Locale = (typeof locales)[number];
+
+// Default locale
+const defaultLocale: Locale = 'pl';
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const hostname = request.headers.get("host") || "";
