@@ -49,5 +49,25 @@ export const blogArticlesIt: BlogArticle[] = [
     category: "Compagnie aeree",
     featured: true,
     color: "blue"
+  },
+  {
+    slug: "aeroporto-milano-malpensa-ritardi",
+    title: "Aeroporto Milano Malpensa: ritardi, cancellazioni e risarcimenti",
+    excerpt: "Volo in ritardo o cancellato a Milano Malpensa (MXP)? Scopri i tuoi diritti e come ottenere fino a 600 € di risarcimento secondo il Regolamento CE 261/2004.",
+    date: "2026-03-01",
+    readTime: "9 min",
+    category: "Aeroporti",
+    featured: true,
+    color: "green"
+  },
+  {
+    slug: "aeroporto-bergamo-orio-al-serio-risarcimento",
+    title: "Aeroporto Bergamo Orio al Serio: guida al risarcimento voli",
+    excerpt: "Problemi con il volo a Bergamo (BGY)? Guida completa ai diritti passeggeri e procedure per ottenere compensazione fino a 600 € per ritardi e cancellazioni.",
+    date: "2026-03-01",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green"
   }
 ];
