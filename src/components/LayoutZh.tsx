@@ -162,6 +162,12 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   >
                     🇸🇰 Slovenčina
                   </Link>
+                  <Link
+                    href="/it"
+                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
+                  >
+                    🇮🇹 Italiano
+                  </Link>
                 </div>
               </div>
 

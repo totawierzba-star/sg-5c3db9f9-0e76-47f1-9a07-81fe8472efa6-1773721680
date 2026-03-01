@@ -87,9 +87,15 @@ export function LayoutSk({ children }: LayoutSkProps) {
                     </Link>
                     <Link
                       href="/sk"
-                      className="block px-4 py-2 text-sm text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 font-medium"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 bg-blue-50 font-medium"
                     >
                       🇸🇰 Slovenčina
+                    </Link>
+                    <Link
+                      href="/it"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-lg"
+                    >
+                      🇮🇹 Italiano
                     </Link>
                   </div>
                 )}

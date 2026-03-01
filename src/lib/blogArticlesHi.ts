@@ -18,7 +18,7 @@ export interface BlogArticleHi {
 export const blogArticlesHi: BlogArticleHi[] = [
   {
     id: "delhi-airport-der-se-flight",
-    title: "दिल्ली हवाई अड्डा विलंबित उड़ान – मुआवजा गाइड 2026",
+    title: "दिल्ली हवाई अड्डा देर से उड़ान — मुआवज़ा और अधिकार",
     slug: "delhi-airport-der-se-flight",
     category: "airport",
     airportCode: "DEL",
@@ -26,14 +26,14 @@ export const blogArticlesHi: BlogArticleHi[] = [
     flag: "🇮🇳",
     wordCount: 7500,
     readTime: 25,
-    excerpt: "दिल्ली हवाई अड्डे से विलंबित उड़ान के लिए €600 तक का मुआवजा कैसे प्राप्त करें। EU 261/2004 अधिकार, दावा प्रक्रिया और भारतीय यात्रियों के लिए टिप्स।",
-    publishDate: "2026-02-06",
+    excerpt: "दिल्ली हवाई अड्डे से देर से उड़ान के लिए मुआवज़ा कैसे प्राप्त करें। इंदिरा गांधी अंतर्राष्ट्रीय हवाई अड्डे के लिए विस्तृत गाइड।",
+    publishDate: "2026-03-01",
     featured: true,
     color: "blue"
   },
   {
     id: "delhi-airport-cancel-flight",
-    title: "दिल्ली हवाई अड्डा रद्द उड़ान – मुआवजा और रिफंड गाइड",
+    title: "दिल्ली हवाई अड्डा रद्द उड़ान — मुआवज़ा के लिए चरण-दर-चरण गाइड",
     slug: "delhi-airport-cancel-flight",
     category: "airport",
     airportCode: "DEL",
@@ -41,10 +41,36 @@ export const blogArticlesHi: BlogArticleHi[] = [
     flag: "🇮🇳",
     wordCount: 7200,
     readTime: 24,
-    excerpt: "दिल्ली से रद्द की गई उड़ान के लिए मुआवजा + पूर्ण रिफंड प्राप्त करें। आपके अधिकार, प्रक्रिया और सफल दावे के लिए टिप्स।",
-    publishDate: "2026-02-06",
-    featured: true,
+    excerpt: "दिल्ली से रद्द की गई उड़ान के लिए मुआवज़े के लिए दावा करने का तरीका जानें। भारतीय यात्रियों के लिए व्यावहारिक सलाह।",
+    publishDate: "2026-02-28",
+    featured: false,
     color: "red"
+  },
+  {
+    id: "eu-regulation-261-2004-indian-passengers",
+    title: "यूरोपीय संघ विनियमन EC 261/2004 — भारतीय यात्रियों के लिए संपूर्ण मार्गदर्शिका",
+    slug: "eu-regulation-261-2004-indian-passengers",
+    category: "foundation",
+    flag: "🇮🇳",
+    wordCount: 8000,
+    readTime: 30,
+    excerpt: "EU की उड़ानों पर भारतीय यात्रियों के अधिकारों का विस्तृत मार्गदर्शिका। EC 261/2004 के तहत मुआवज़ा कैसे प्राप्त करें।",
+    publishDate: "2026-03-01",
+    featured: true,
+    color: "purple"
+  },
+  {
+    id: "flight-delay-cancellation-compensation-amount",
+    title: "उड़ान में देरी या रद्दीकरण: मुझे कितना मुआवज़ा मिल सकता है?",
+    slug: "flight-delay-cancellation-compensation-amount",
+    category: "foundation",
+    flag: "🇮🇳",
+    wordCount: 5000,
+    readTime: 20,
+    excerpt: "देरी या रद्द उड़ान के लिए मुआवज़े की राशि की गणना करें। ₹20,000 से ₹50,000 तक — जानें आपको कितना मिल सकता है।",
+    publishDate: "2026-03-01",
+    featured: true,
+    color: "green"
   }
 ];
 

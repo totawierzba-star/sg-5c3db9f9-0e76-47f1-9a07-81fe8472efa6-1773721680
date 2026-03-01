@@ -69,7 +69,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   </Link>
                   <Link
                     href="/cs"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
+                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     🇨🇿 Čeština
                   </Link>
@@ -84,6 +84,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     🇸🇰 Slovenčina
+                  </Link>
+                  <Link
+                    href="/it"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
+                  >
+                    🇮🇹 Italiano
                   </Link>
                 </div>
               </div>
