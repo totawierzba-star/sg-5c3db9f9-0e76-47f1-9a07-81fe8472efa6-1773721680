@@ -29,5 +29,25 @@ export const blogArticlesIt: BlogArticle[] = [
     category: "Aeroporti",
     featured: true,
     color: "green"
+  },
+  {
+    slug: "wizz-air-italia-risarcimento",
+    title: "Wizz Air Italia — risarcimento per ritardi e cancellazioni",
+    excerpt: "Guida completa su come ottenere risarcimento da Wizz Air per voli in ritardo o cancellati in Italia. Procedure, importi fino a 600 € e diritti passeggeri CE 261/2004.",
+    date: "2026-03-01",
+    readTime: "11 min",
+    category: "Compagnie aeree",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "ita-airways-risarcimento",
+    title: "ITA Airways risarcimento — diritti passeggeri e procedure",
+    excerpt: "Tutto quello che devi sapere sui tuoi diritti con ITA Airways (ex Alitalia). Come ottenere risarcimento fino a 600 € per ritardi e cancellazioni secondo CE 261/2004.",
+    date: "2026-03-01",
+    readTime: "10 min",
+    category: "Compagnie aeree",
+    featured: true,
+    color: "blue"
   }
 ];
