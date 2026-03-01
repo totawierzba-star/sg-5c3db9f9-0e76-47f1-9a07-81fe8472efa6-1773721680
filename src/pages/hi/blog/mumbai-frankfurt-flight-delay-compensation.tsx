@@ -3,7 +3,7 @@ import { LayoutHi } from "@/components/LayoutHi";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import { Plane, AlertTriangle, CheckCircle2, XCircle, Euro, Clock, FileText, Calendar, MapPin, TrendingUp } from "lucide-react";
+import { Plane, AlertTriangle, CheckCircle2, XCircle, Euro, Clock, FileText, Calendar, MapPin, TrendingUp, Users } from "lucide-react";
 
 export default function MumbaiFrankfurtFlightDelayCompensation() {
   return (

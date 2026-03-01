@@ -10,7 +10,40 @@ export default function DelhiLondonFlightCancelledCompensation() {
     <LayoutHi>
       <SEO 
         title="दिल्ली–लंदन उड़ान रद्द — €600 मुआवज़े के लिए पूरी प्रक्रिया [2026]"
-        description="दिल्ली-लंदन भारत का सबसे व्यस्त अंतरराष्ट्रीय मार्ग है — हर साल <strong className="text-blue-600">2.5 मिलियन से अधिक यात्री</strong> इस रूट पर यात्रा करते हैं। यदि आपकी दिल्ली-लंदन उड़ान रद्द हो जाती है, तो आप <strong className="text-green-600">€600 (₹52,000) तक मुआवज़े के हकदार</strong> हो सकते हैं — यूरोपीय संघ विनियमन EC 261/2004 के तहत।
+        description="दिल्ली-लंदन उड़ान रद्द होने पर €600 (₹52,000) मुआवज़ा कैसे प्राप्त करें। Air India, British Airways और Vistara के लिए विस्तृत गाइड। समय सीमा, दस्तावेज़ और विशेषज्ञ टिप्स।"
+        canonical="https://lotproblem.pl/hi/blog/delhi-london-flight-cancelled-compensation"
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        {/* Breadcrumbs */}
+        <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-6">
+          <Link href="/hi" className="hover:text-blue-600">होम</Link>
+          <span>/</span>
+          <Link href="/hi/blog" className="hover:text-blue-600">ब्लॉग</Link>
+          <span>/</span>
+          <span className="text-gray-900">दिल्ली-लंदन मुआवज़ा</span>
+        </nav>
+
+        {/* Article Header */}
+        <header className="mb-8">
+          <div className="flex items-center space-x-2 text-blue-600 font-semibold mb-4">
+            <Plane className="h-5 w-5" />
+            <span>ट्रैवल गाइड</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            दिल्ली–लंदन उड़ान रद्द: €600 मुआवज़े के लिए कदम दर कदम प्रक्रिया
+          </h1>
+          <div className="flex items-center space-x-4 text-gray-600">
+            <time dateTime="2026-03-01">1 मार्च 2026</time>
+            <span>•</span>
+            <span>14 मिनट पठन</span>
+          </div>
+        </header>
+
+        {/* Hero Content */}
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl text-gray-700 leading-relaxed">
+            दिल्ली-लंदन भारत का सबसे व्यस्त अंतरराष्ट्रीय मार्ग है — हर साल <strong className="text-blue-600">2.5 मिलियन से अधिक यात्री</strong> इस रूट पर यात्रा करते हैं। यदि आपकी दिल्ली-लंदन उड़ान रद्द हो जाती है, तो आप <strong className="text-green-600">€600 (₹52,000) तक मुआवज़े के हकदार</strong> हो सकते हैं — यूरोपीय संघ विनियमन EC 261/2004 के तहत।
           </p>
 
           <p className="text-lg text-gray-700">
