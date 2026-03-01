@@ -83,12 +83,42 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Wizz Air odmówił odszkodowania — co zrobić?",
     slug: "wizz-air-odmowil-odszkodowania",
-    excerpt: "Wizz Air odmówił wypłaty? 76% pasażerów którzy walczą ostatecznie wygrywa. Sprawdzone metody + najczęstsze powody odmowy Wizz Air.",
+    excerpt: "Wizz Air odmówił wypłaty? 76% pasażerów którzy walczą ostatecznie wygrywa. Sprawdzone metody odzyskania odszkodowania.",
     date: "2025-01-21",
-    readTime: "9 min",
+    readTime: "12 min",
     category: "Wizz Air",
-    color: "purple",
-    featured: true
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Odszkodowanie Lufthansa dla polskich pasażerów — kompletny przewodnik 2025",
+    slug: "odszkodowanie-lufthansa-polska",
+    excerpt: "Sprawdź jak uzyskać 250-600 € odszkodowania od Lufthansa za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera.",
+    date: "2025-01-25",
+    readTime: "10 min",
+    category: "Lufthansa",
+    featured: true,
+    color: "yellow"
+  },
+  {
+    title: "Odszkodowanie easyJet dla polskich pasażerów — kompletny przewodnik 2025",
+    slug: "odszkodowanie-easyjet-polska",
+    excerpt: "Sprawdź jak uzyskać 250-600 € odszkodowania od easyJet za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera.",
+    date: "2025-01-22",
+    readTime: "9 min",
+    category: "easyJet",
+    featured: true,
+    color: "orange"
+  },
+  {
+    title: "Enter Air odszkodowanie — czarter a prawa pasażera WE 261/2004",
+    slug: "enter-air-odszkodowanie-czarter",
+    excerpt: "TAK, czarter też podlega WE 261/2004! Sprawdź jak uzyskać 250-600 € odszkodowania za lot wakacyjny Enter Air. Przewodnik dla pasażerów.",
+    date: "2025-01-23",
+    readTime: "11 min",
+    category: "Enter Air",
+    featured: true,
+    color: "teal"
   },
   {
     title: "Odwołany lot — historia pasażera",
