@@ -138,6 +138,48 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 >
                   Kalkulator
                 </Link>
+
+                {/* Mobile Language Selector */}
+                <div className="border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                  <div className="px-3 py-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Wybierz język
+                  </div>
+                  <Link
+                    href="/"
+                    className="block px-3 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-md font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇵🇱 Polski
+                  </Link>
+                  <Link
+                    href="/zh"
+                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇨🇳 中文
+                  </Link>
+                  <Link
+                    href="/cs"
+                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇨🇿 Čeština
+                  </Link>
+                  <Link
+                    href="/hi"
+                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇮🇳 हिन्दी
+                  </Link>
+                  <Link
+                    href="/sk"
+                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇸🇰 Slovenčina
+                  </Link>
+                </div>
               </div>
             </div>
           )}
