@@ -141,6 +141,26 @@ export const blogArticles: BlogArticle[] = [
     color: "amber"
   },
   {
+    title: "Co zrobić na lotnisku?",
+    slug: "co-zrobic-na-lotnisku",
+    excerpt: "Poznaj najważniejsze informacje na temat lotnisk. Jak się poruszać, co wziąć z sobą, gdzie znaleźć parking i więcej.",
+    date: "2025-01-27",
+    readTime: "8 min",
+    category: "Lotniska",
+    featured: true,
+    color: "blue"
+  },
+  {
+    title: "Utracona przesiadka — co zrobić?",
+    slug: "utracona-przesiadka",
+    excerpt: "Nie przegralaj! 85% skuteczności odzyskania przesiadki po utracie. Sprawdzone metody i najważniejsze kroki.",
+    date: "2025-01-28",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
     title: "Odwołany lot — historia pasażera",
     slug: "odwolany-lot-historia-pasazera",
     excerpt: "Prawdziwa historia pasażera, który wywalczył odszkodowanie po odwołaniu lotu. Zobacz jak to zrobić krok po kroku.",
