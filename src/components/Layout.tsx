@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeSwitch } from "./ThemeSwitch";
+import { Button } from "@/components/ui/button";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -178,6 +179,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     🇸🇰 Slovenčina
+                  </Link>
+                  <Link href="/it" className="block px-3 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                    🇮🇹 Italiano
                   </Link>
                 </div>
               </div>
