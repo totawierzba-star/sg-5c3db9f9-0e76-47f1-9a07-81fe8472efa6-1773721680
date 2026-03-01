@@ -161,6 +161,46 @@ export const blogArticles: BlogArticle[] = [
     color: "red"
   },
   {
+    slug: "lotnisko-modlin-odszkodowanie",
+    title: "Lotnisko Warszawa Modlin — odszkodowanie za opóźniony lot [2025]",
+    excerpt: "Twój lot z Modlina jest opóźniony? Sprawdź jak uzyskać 250-600 € odszkodowania od Ryanair i innych linii. Kompletny przewodnik.",
+    date: "2025-01-28",
+    readTime: "9 min",
+    category: "Lotniska",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "lotnisko-katowice-odszkodowanie",
+    title: "Lotnisko Katowice Pyrzowice — odszkodowanie za opóźniony lot [2025]",
+    excerpt: "Lot z Katowic opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Wizz Air, Ryanair - kompletny przewodnik.",
+    date: "2025-01-28",
+    readTime: "9 min",
+    category: "Lotniska",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "lotnisko-gdansk-odszkodowanie",
+    title: "Lotnisko Gdańsk Rębiechowo — odszkodowanie za opóźniony lot [2025]",
+    excerpt: "Twój lot z Gdańska jest opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Wizz Air, Ryanair, LOT - kompletny przewodnik.",
+    date: "2025-01-28",
+    readTime: "9 min",
+    category: "Lotniska",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "lotnisko-wroclaw-odszkodowanie",
+    title: "Lotnisko Wrocław Strachowice — odszkodowanie za opóźniony lot [2025]",
+    excerpt: "Twój lot z Wrocławia jest opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Ryanair, Wizz Air, LOT - kompletny przewodnik.",
+    date: "2025-01-28",
+    readTime: "9 min",
+    category: "Lotniska",
+    featured: true,
+    color: "green"
+  },
+  {
     title: "Odwołany lot — historia pasażera",
     slug: "odwolany-lot-historia-pasazera",
     excerpt: "Prawdziwa historia pasażera, który wywalczył odszkodowanie po odwołaniu lotu. Zobacz jak to zrobić krok po kroku.",
