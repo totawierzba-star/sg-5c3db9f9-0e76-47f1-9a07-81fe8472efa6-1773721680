@@ -172,7 +172,7 @@ export default function RegolamentoCE261() {
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">3. Diritto al Rimborso o Riprotestione</h3>
                   <p className="text-gray-700 mb-2">
-                    In caso di cancellazione o ritardo > 5 ore, puoi scegliere tra:
+                    In caso di cancellazione o ritardo &gt; 5 ore, puoi scegliere tra:
                   </p>
                   <ul className="list-disc pl-5 text-gray-700 space-y-1">
                     <li><strong>Rimborso completo</strong> del biglietto entro 7 giorni</li>
