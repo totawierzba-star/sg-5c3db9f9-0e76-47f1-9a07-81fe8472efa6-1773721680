@@ -859,6 +859,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/easyjet-italia-risarcimento</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/regolamento-ce-261-2004-spiegato</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Main Pages -->
 </urlset>

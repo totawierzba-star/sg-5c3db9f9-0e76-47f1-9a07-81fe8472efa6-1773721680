@@ -69,5 +69,25 @@ export const blogArticlesIt: BlogArticle[] = [
     category: "Aeroporti",
     featured: false,
     color: "green"
+  },
+  {
+    slug: "easyjet-italia-risarcimento",
+    title: "easyJet Italia risarcimento — ritardi e cancellazioni 2026",
+    excerpt: "Guida completa su come ottenere risarcimento da easyJet per voli in ritardo o cancellati in Italia. Procedure, importi e diritti passeggeri.",
+    date: "2026-03-01",
+    readTime: "11 min",
+    category: "Compagnie aeree",
+    featured: true,
+    color: "orange"
+  },
+  {
+    slug: "regolamento-ce-261-2004-spiegato",
+    title: "Regolamento CE 261/2004 spiegato — Guida completa 2026",
+    excerpt: "Tutto quello che devi sapere sul Regolamento europeo 261/2004: diritti passeggeri, compensazioni e quando si applicano.",
+    date: "2026-03-01",
+    readTime: "15 min",
+    category: "Guide",
+    featured: true,
+    color: "purple"
   }
 ];
