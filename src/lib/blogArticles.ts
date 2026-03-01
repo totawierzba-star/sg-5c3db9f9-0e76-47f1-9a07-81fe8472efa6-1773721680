@@ -121,6 +121,26 @@ export const blogArticles: BlogArticle[] = [
     color: "teal"
   },
   {
+    title: "Nadzwyczajne okoliczności — kiedy linie NIE muszą płacić odszkodowania?",
+    slug: "nadzwyczajne-okolicznosci-odszkodowanie",
+    excerpt: "Poznaj prawdę o nadzwyczajnych okolicznościach. Kiedy linie faktycznie nie muszą płacić i jak weryfikować ich wymówki. 68% odmów to fałszywe powołanie się na WE 261/2004.",
+    date: "2025-01-24",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    title: "Przedawnienie roszczeń lotniczych — ile czasu masz na dochodzenie odszkodowania?",
+    slug: "przedawnienie-roszczen-lotniczych",
+    excerpt: "Sprawdź kiedy przedawniają się roszczenia lotnicze w Polsce. 3 lata czy 6? WE 261 vs Montreal Convention. Kompletny przewodnik.",
+    date: "2025-01-26",
+    readTime: "12 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "amber"
+  },
+  {
     title: "Odwołany lot — historia pasażera",
     slug: "odwolany-lot-historia-pasazera",
     excerpt: "Prawdziwa historia pasażera, który wywalczył odszkodowanie po odwołaniu lotu. Zobacz jak to zrobić krok po kroku.",
