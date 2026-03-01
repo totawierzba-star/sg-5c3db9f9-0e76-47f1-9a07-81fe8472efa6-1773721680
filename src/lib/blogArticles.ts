@@ -63,11 +63,31 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Prawa pasażera Ryanair — co gwarantuje WE 261/2004?",
     slug: "prawa-pasazera-ryanair",
-    excerpt: "Wszystkie prawa pasażera Ryanair: odszkodowania 250€-600€, opieka, zwroty, hotel. Kompletny przewodnik WE 261/2004.",
+    excerpt: "Poznaj wszystkie prawa pasażera Ryanair: odszkodowania 250€-600€, prawo do opieki, zwroty kosztów, hotel. Kompletny przewodnik WE 261/2004.",
     date: "2025-01-19",
     readTime: "7 min",
     category: "Ryanair",
-    color: "blue",
+    color: "red",
+    featured: true
+  },
+  {
+    title: "Odszkodowanie Wizz Air z Polski — kompletny przewodnik 2025",
+    slug: "odszkodowanie-wizz-air-polska",
+    excerpt: "Sprawdź jak uzyskać 250-600 € odszkodowania od Wizz Air za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 91% skuteczności.",
+    date: "2025-01-20",
+    readTime: "8 min",
+    category: "Wizz Air",
+    color: "purple",
+    featured: true
+  },
+  {
+    title: "Wizz Air odmówił odszkodowania — co zrobić?",
+    slug: "wizz-air-odmowil-odszkodowania",
+    excerpt: "Wizz Air odmówił wypłaty? 76% pasażerów którzy walczą ostatecznie wygrywa. Sprawdzone metody + najczęstsze powody odmowy Wizz Air.",
+    date: "2025-01-21",
+    readTime: "9 min",
+    category: "Wizz Air",
+    color: "purple",
     featured: true
   },
   {
