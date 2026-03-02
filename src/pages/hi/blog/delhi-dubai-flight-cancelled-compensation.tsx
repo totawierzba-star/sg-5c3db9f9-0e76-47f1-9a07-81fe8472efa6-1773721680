@@ -136,7 +136,7 @@ export default function DelhiDubaiFlightCancelledCompensation() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">भारतीय कानून के तहत अधिकार:</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• देरी &gt; 2 घंटे: भोजन/पेय</li>
-                <li>• देरी &gt; 4 घंटे: होटल (यदि हवाई अड्डे पर प्रतीक्षा &gt; 2-3 घंटे है।)</li>
+                <li>• देरी &gt; 4 घंटे: होटल (यदि हवाई अड्डे पर प्रतीक्षा &gt; 2-3 घंटे है)</li>
                 <li>• रद्दीकरण: रिफंड या री-बुकिंग (कोई निश्चित मुआवज़ा नहीं)</li>
               </ul>
             </div>
@@ -176,7 +176,7 @@ export default function DelhiDubaiFlightCancelledCompensation() {
             <div className="bg-green-50 p-6 rounded-lg mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">UAE कानून के तहत अधिकार:</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• देरी {'>'}  4 घंटे: सहायता (भोजन, संचार)</li>
+                <li>• देरी &gt; 4 घंटे: सहायता (भोजन, संचार)</li>
                 <li>• रद्दीकरण: रिफंड या री-रूटिंग</li>
                 <li>• &quot;Lost Chance&quot; या &quot;Moral Damage&quot; के लिए कोर्ट में दावा संभव (जटिल)</li>
               </ul>
@@ -192,9 +192,9 @@ export default function DelhiDubaiFlightCancelledCompensation() {
                 </p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-bold text-gray-900">2. IndiGo/SpiceJet पर "No-Show" से बचें</h4>
+                <h4 className="font-bold text-gray-900">2. IndiGo/SpiceJet पर &quot;No-Show&quot; से बचें</h4>
                 <p className="text-sm text-gray-700">
-                  बजट एयरलाइंस रिफंड देने में सख्त होती हैं। यदि उड़ान रद्द होती है, तो तुरंत हवाई अड्डे पर 'Flight Interruption Certificate' मांगें।
+                  बजट एयरलाइंस रिफंड देने में सख्त होती हैं। यदि उड़ान रद्द होती है, तो तुरंत हवाई अड्डे पर &apos;Flight Interruption Certificate&apos; मांगें।
                 </p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
@@ -212,7 +212,7 @@ export default function DelhiDubaiFlightCancelledCompensation() {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h4 className="font-bold text-gray-900">5. दावा कैसे करें?</h4>
                 <p className="text-sm text-gray-700">
-                  एयरलाइन वेबसाइट > Customer Service > File a Complaint. यदि 30 दिनों में उत्तर न मिले, तो <Link href="https://claimwinger.com/hi" className="text-blue-600 hover:underline">ClaimWinger</Link> जैसी सेवा का उपयोग करें।
+                  एयरलाइन वेबसाइट &gt; Customer Service &gt; File a Complaint. यदि 30 दिनों में उत्तर न मिले, तो <Link href="https://claimwinger.com/hi" className="text-blue-600 hover:underline">ClaimWinger</Link> जैसी सेवा का उपयोग करें।
                 </p>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function DelhiDubaiFlightCancelledCompensation() {
                 </p>
               </div>
               <div className="bg-white border-l-4 border-blue-600 p-6 rounded-r-lg">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Q: क्याClaimWinger भारत-दुबई दावों में मदद कर सकता है?</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Q: क्या ClaimWinger भारत-दुबई दावों में मदद कर सकता है?</h3>
                 <p className="text-gray-700">
                   <strong>A:</strong> हाँ, विशेष रूप से यदि कनेक्शन शामिल है या मामला जटिल है। वे एयरलाइन पर दबाव डालने में मदद कर सकते हैं।
                 </p>
