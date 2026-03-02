@@ -133,20 +133,11 @@ export default function DelhiDubaiFlightCancelledCompensation() {
             </p>
 
             <div className="bg-orange-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">रद्दीकरण (Cancellation) अधिकार:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">भारतीय कानून के तहत अधिकार:</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>
-                  <strong>&lt; 24 घंटे नोटिस:</strong><br/>
-                  वैकल्पिक उड़ान OR रिफंड + <span className="font-bold text-orange-600">₹10,000 तक मुआवज़ा</span>
-                </li>
-                <li>
-                  <strong>&lt; 2 सप्ताह नोटिस:</strong><br/>
-                  वैकल्पिक उड़ान OR रिफंड (कोई अतिरिक्त मुआवज़ा नहीं)
-                </li>
-                <li>
-                  <strong>उड़ान के दौरान भोजन/नाश्ता:</strong><br/>
-                  यदि हवाई अड्डे पर प्रतीक्षा &gt; 2-3 घंटे है।
-                </li>
+                <li>• देरी &gt; 2 घंटे: भोजन/पेय</li>
+                <li>• देरी &gt; 4 घंटे: होटल (यदि हवाई अड्डे पर प्रतीक्षा &gt; 2-3 घंटे है।)</li>
+                <li>• रद्दीकरण: रिफंड या री-बुकिंग (कोई निश्चित मुआवज़ा नहीं)</li>
               </ul>
             </div>
 
