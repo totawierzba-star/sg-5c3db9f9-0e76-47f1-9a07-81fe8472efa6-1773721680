@@ -185,9 +185,9 @@ export default function DelhiDubaiFlightCancelledCompensation() {
             <div className="bg-green-50 p-6 rounded-lg mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">UAE कानून के तहत अधिकार:</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• देरी {'>'} 4 घंटे: सहायता (भोजन, संचार)</li>
+                <li>• देरी {'>'}  4 घंटे: सहायता (भोजन, संचार)</li>
                 <li>• रद्दीकरण: रिफंड या री-रूटिंग</li>
-                <li>• "Lost Chance" या "Moral Damage" के लिए कोर्ट में दावा संभव (जटिल)</li>
+                <li>• &quot;Lost Chance&quot; या &quot;Moral Damage&quot; के लिए कोर्ट में दावा संभव (जटिल)</li>
               </ul>
             </div>
 
