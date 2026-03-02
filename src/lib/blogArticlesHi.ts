@@ -100,20 +100,24 @@ export const blogArticlesHi: BlogArticleHi[] = [
   },
   {
     id: "emirates-qatar-etihad-europe-via-gulf-hubs",
+    slug: "emirates-qatar-etihad-europe-via-gulf-hubs",
     title: "Emirates, Qatar Airways और Etihad के माध्यम से यूरोप – खाड़ी हब पर अधिकार",
-    excerpt: "दुबई, दोहा और अबू धाबी के माध्यम से यूरोप यात्रा करते समय देरी या रद्दीकरण के लिए मुआवज़े के अधिकार। EC 261/2004 और UAE/Qatar कानून की तुलना। कनेक्शन छूटने पर विशेष सलाह।",
-    publishDate: "2026-03-02",
-    readTime: 16,
-    category: "airport",
+    excerpt: "दुबई, दोहा या अबू धाबी में कनेक्टिंग उड़ान छूट गई? या देरी हुई? जानें कि EU विनियमन 261/2004 कब लागू होता है और कब नहीं।",
+    publishDate: "2026-03-01",
+    readTime: 14,
+    wordCount: 2800,
+    category: "airline",
     featured: true,
-    color: "teal"
+    color: "purple"
   },
   {
     id: "delhi-dubai-flight-cancelled-compensation",
+    slug: "delhi-dubai-flight-cancelled-compensation",
     title: "दिल्ली–दुबई उड़ान रद्द – UAE और भारत में मुआवज़े के नियम",
-    excerpt: "दिल्ली-दुबई रूट पर रद्दीकरण के लिए मुआवज़ा। Emirates, Air India Express, और IndiGo के लिए विशिष्ट नीतियां। UAE GCAA बनाम भारतीय DGCA नियम। वास्तविक केस स्टडीज़।",
+    excerpt: "दिल्ली-दुबई रूट (Emirates, Air India, IndiGo) पर रद्दीकरण के लिए आपके अधिकार। DGCA बनाम UAE GCAA नियमों की तुलना।",
     publishDate: "2026-03-02",
     readTime: 13,
+    wordCount: 2500,
     category: "airport",
     featured: false,
     color: "orange"
