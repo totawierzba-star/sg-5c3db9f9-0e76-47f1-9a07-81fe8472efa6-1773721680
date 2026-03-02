@@ -76,7 +76,7 @@ export const blogArticlesHi: BlogArticleHi[] = [
     id: "delhi-london-flight-cancelled-compensation",
     title: "दिल्ली–लंदन उड़ान रद्द – मुआवजे के लिए कदम दर कदम प्रक्रिया",
     slug: "delhi-london-flight-cancelled-compensation",
-    category: "airport",
+    category: "airline",
     flag: "🇮🇳",
     wordCount: 10000,
     readTime: 14,
