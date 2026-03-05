@@ -121,6 +121,66 @@ export const blogArticlesHi: BlogArticleHi[] = [
     category: "airport",
     featured: false,
     color: "orange"
+  },
+  {
+    id: "delhi-toronto-flight-cancelled-compensation",
+    slug: "delhi-toronto-flight-cancelled-compensation",
+    title: "दिल्ली–टोरंटो उड़ान रद्द – कनाडाई APPR और EU नियम",
+    excerpt: "Air Canada और Air India की तुलना। क्या आप जानते हैं कि यूरोप होकर जाने पर आपको €600 मिल सकते हैं? टोरंटो रूट के लिए गाइड।",
+    publishDate: "2026-03-02",
+    readTime: 15,
+    wordCount: 3000,
+    category: "airline",
+    featured: true,
+    color: "red"
+  },
+  {
+    id: "canada-appr-indian-passengers",
+    slug: "canada-appr-indian-passengers",
+    title: "Canada के Air Passenger Protection Regulations (APPR) – भारतीय यात्रियों के लिए",
+    excerpt: "कनाडाई हवाई यात्री सुरक्षा नियम (APPR) का विस्तृत विवरण। देरी और रद्दीकरण के लिए CAD 1,000 (₹60,000) तक का मुआवज़ा।",
+    publishDate: "2026-03-02",
+    readTime: 12,
+    wordCount: 2800,
+    category: "foundation",
+    featured: false,
+    color: "red"
+  },
+  {
+    id: "extraordinary-circumstances-compensation",
+    slug: "extraordinary-circumstances-compensation",
+    title: "असाधारण परिस्थितियाँ – कब एयरलाइन पैसे देने से मना कर सकती है?",
+    excerpt: "क्या 'तकनीकी खराबी' या 'खराब मौसम' वास्तव में असाधारण है? जानें कि एयरलाइंस कब बहाने बनाती हैं।",
+    publishDate: "2026-03-05",
+    readTime: 11,
+    wordCount: 2200,
+    category: "foundation",
+    featured: false,
+    color: "gray"
+  },
+  {
+    id: "turkish-airlines-istanbul-compensation-rights",
+    slug: "turkish-airlines-istanbul-compensation-rights",
+    title: "Turkish Airlines और इस्तांबुल (IST) हब – क्या EU कानून लागू होता है?",
+    excerpt: "तुर्की यूरोपीय संघ में नहीं है। जानें कि Turkish Airlines के साथ उड़ान भरने पर आपको कब EC 261 सुरक्षा मिलती है और कब नहीं।",
+    publishDate: "2026-03-02",
+    readTime: 12,
+    wordCount: 2400,
+    category: "airline",
+    featured: false,
+    color: "red"
+  },
+  {
+    id: "klm-air-france-amsterdam-paris-compensation",
+    slug: "klm-air-france-amsterdam-paris-compensation",
+    title: "KLM और Air France – एम्स्टर्डम और पेरिस के माध्यम से यात्रा (सुरक्षित विकल्प)",
+    excerpt: "KLM और Air France, EU एयरलाइंस होने के नाते, भारत से प्रस्थान करने पर भी पूर्ण सुरक्षा प्रदान करते हैं। अमेरिका/कनाडा कनेक्शन के लिए सबसे अच्छा विकल्प।",
+    publishDate: "2026-03-02",
+    readTime: 14,
+    wordCount: 2600,
+    category: "airline",
+    featured: true,
+    color: "blue"
   }
 ];
 

@@ -3,13 +3,44 @@ import { LayoutHi } from "@/components/LayoutHi";
 import Link from "next/link";
 import { Calculator, Euro, Plane, CheckCircle2, ArrowRight, MapPin } from "lucide-react";
 
-export default function HindiCompensationCalculator() {
+export default function CompensationCalculatorHi() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "मुझे कितनी मुआवजा राशि मिल सकती है?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "यूरोपीय कानून (EC 261/2004) के तहत, आप उड़ान की दूरी के आधार पर €250 (₹22,000), €400 (₹35,000), या €600 (₹52,000) प्राप्त कर सकते हैं।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "क्या भारतीय एयरलाइंस (जैसे Air India) पर यह लागू होता है?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "हां, लेकिन केवल तभी जब उड़ान किसी यूरोपीय हवाई अड्डे (जैसे लंदन, फ्रैंकफर्ट, पेरिस) से प्रस्थान कर रही हो। भारत से प्रस्थान करने वाली भारतीय एयरलाइनों पर यह लागू नहीं होता है।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "क्या मैं पुरानी उड़ानों के लिए दावा कर सकता हूँ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "हां, आप आमतौर पर पिछले 3 साल तक की उड़ानों के लिए दावा कर सकते हैं। कुछ देशों में यह सीमा 6 साल तक भी हो सकती है।"
+        }
+      }
+    ]
+  };
+
   return (
     <LayoutHi>
       <SEO
-        title="मुआवजा कैलकुलेटर – कितना पैसा मिलेगा? | EU 261/2004"
-        description="अपनी विलंबित या रद्द की गई उड़ान के लिए €250-€600 मुआवजा की गणना करें। दूरी के आधार पर तुरंत पता लगाएं।"
-        url="https://lotproblem.pl/hi/muavza-calculator"
+        title="मुआवज़ा कैलकुलेटर – अपनी फ्लाइट के लिए ₹52,000 तक चेक करें"
+        description="मुफ्त में जांचें कि आपको अपनी देरी या रद्द उड़ान के लिए कितना पैसा मिलना चाहिए। बस अपनी उड़ान का विवरण दर्ज करें और तुरंत परिणाम देखें।"
+        schema={JSON.stringify(schemaData)}
       />
 
       {/* Hero Section */}
@@ -86,7 +117,7 @@ export default function HindiCompensationCalculator() {
                   </div>
                   <div className="flex items-center justify-center space-x-2">
                     <MapPin className="h-4 w-4 text-green-600 dark:text-green-400" />
-                    <span>बैंगलोर → कोलंबो</span>
+                    <span>बैंगলोर → कोलंबो</span>
                   </div>
                 </div>
               </div>
@@ -116,7 +147,7 @@ export default function HindiCompensationCalculator() {
                   </div>
                   <div className="flex items-center justify-center space-x-2">
                     <MapPin className="h-4 w-4 text-green-600 dark:text-green-400" />
-                    <span>बैंगलोर → एम्स्टर्डम</span>
+                    <span>बैंगলोर → एम्स्टर्डम</span>
                   </div>
                 </div>
               </div>
@@ -127,7 +158,7 @@ export default function HindiCompensationCalculator() {
               <div className="text-center">
                 <Euro className="h-12 w-12 text-green-600 dark:text-green-400 mx-auto mb-4" />
                 <div className="text-5xl font-bold text-green-600 dark:text-green-400 mb-2">600 €</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mb-4">3,500 किमी से अधिक</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-4">3,500 किमी से अধিক</div>
                 <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                   <div className="flex items-center justify-center space-x-2">
                     <MapPin className="h-4 w-4 text-green-600 dark:text-green-400" />
@@ -143,7 +174,7 @@ export default function HindiCompensationCalculator() {
                   </div>
                   <div className="flex items-center justify-center space-x-2">
                     <MapPin className="h-4 w-4 text-green-600 dark:text-green-400" />
-                    <span>बैंगलोर → मेलबर्न</span>
+                    <span>बैंगলोर → मेलबर्न</span>
                   </div>
                 </div>
               </div>

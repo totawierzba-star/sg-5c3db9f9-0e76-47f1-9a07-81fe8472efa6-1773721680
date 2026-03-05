@@ -3,13 +3,68 @@ import { LayoutHi } from "@/components/LayoutHi";
 import Link from "next/link";
 import { Plane, Clock, Euro, MapPin, AlertCircle, CheckCircle2, Users, TrendingUp } from "lucide-react";
 
-export default function DelhiAirportDelayedFlight() {
+export default function DelhiAirportDerSeFlight() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "दिल्ली एयरपोर्ट से देर से Flight – अपने अधिकार और मुआवज़ा जानें",
+        "author": {
+          "@type": "Organization",
+          "name": "LotProblem.pl"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "LotProblem.pl",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lotproblem.pl/og-image.png"
+          }
+        },
+        "datePublished": "2026-02-20",
+        "dateModified": "2026-02-20",
+        "description": "दिल्ली एयरपोर्ट (DEL/IGI) से उड़ान में देरी? जानें यूरोपीय एयरलाइंस से €600 तक मुआवज़ा कैसे प्राप्त करें।"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "दिल्ली से लंदन की उड़ान में देरी – क्या मुझे मुआवज़ा मिलेगा?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "हाँ! यदि आप British Airways, Virgin Atlantic, या किसी EU एयरलाइन से उड़ान भर रहे हैं और आपकी उड़ान 3+ घंटे देर से पहुंचती है, तो आपको €600 तक मुआवज़ा मिल सकता है।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Air India की दिल्ली-लंदन उड़ान में देरी – क्या EU 261 लागू होगा?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "नहीं। Air India भारतीय एयरलाइन है (non-EU carrier), इसलिए EU 261 लागू नहीं होता। आपको केवल DGCA के तहत सीमित मुआवज़ा (खाना/होटल) मिलेगा।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "दिल्ली-फ्रैंकफर्ट-न्यूयॉर्क की उड़ान – मुआवज़ा कितना होगा?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "यदि Lufthansa द्वारा संचालित और कुल देरी 3+ घंटे, तो €600 (6,900+ km दूरी के लिए)। यदि आप connecting flight छूट जाते हैं, तो भी यही नियम लागू होता है।"
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <LayoutHi>
       <SEO
-        title="दिल्ली हवाई अड्डा विलंबित उड़ान – मुआवजा गाइड 2026 | €600 तक"
-        description="इंदिरा गांधी अंतर्राष्ट्रीय हवाई अड्डे से विलंबित उड़ान के लिए €600 तक का मुआवजा कैसे प्राप्त करें। EU 261/2004 अधिकार, दावा प्रक्रिया और भारतीय यात्रियों के लिए टिप्स।"
+        title="दिल्ली एयरपोर्ट से देर से Flight – अपने अधिकार और मुआवज़ा जानें"
+        description="दिल्ली एयरपोर्ट (DEL/IGI) से उड़ान में देरी? जानें यूरोपीय एयरलाइंस से €600 तक मुआवज़ा कैसे प्राप्त करें।"
         url="https://lotproblem.pl/hi/blog/delhi-airport-der-se-flight"
+        schema={JSON.stringify(schemaData)}
       />
 
       {/* Hero Section */}

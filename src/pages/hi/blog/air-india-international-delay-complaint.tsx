@@ -4,12 +4,67 @@ import Link from "next/link";
 import { Plane, AlertTriangle, CheckCircle2, XCircle, Clock, FileText, Phone, Mail, Building2, Scale, TrendingUp, Users, Euro } from "lucide-react";
 
 export default function AirIndiaInternationalDelayComplaint() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Air India International उड़ान में देरी – शिकायत और मुआवज़ा प्रक्रिया",
+        "author": {
+          "@type": "Organization",
+          "name": "LotProblem.pl"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "LotProblem.pl",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lotproblem.pl/og-image.png"
+          }
+        },
+        "datePublished": "2026-02-22",
+        "dateModified": "2026-02-22",
+        "description": "Air India की अंतरराष्ट्रीय उड़ान में देरी? जानें DGCA और EU 261 के तहत शिकायत कैसे दर्ज करें।"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Air India की दिल्ली-लंदन उड़ान में देरी – क्या EU 261 लागू होगा?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "नहीं। Air India भारतीय कैरियर है, इसलिए EU 261 लागू नहीं होता। केवल DGCA नियम (भोजन/होटल) लागू होते हैं। यदि आप पूर्ण मुआवज़ा चाहते हैं, तो European एयरलाइंस चुनें।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Air India के खिलाफ शिकायत कैसे दर्ज करें?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1) Air India के Customer Relations को ईमेल करें। 2) 30 दिनों में कोई जवाब नहीं मिलने पर DGCA AirSewa पोर्टल पर शिकायत दर्ज करें। 3) केवल बुनियादी सुविधाएं (भोजन/होटल) की उम्मीद करें, नकद मुआवज़ा नहीं।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Air India vs European Airlines – मुआवज़ा तुलना",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Air India: केवल भोजन/होटल (DGCA)। European Airlines (BA, Lufthansa): €250-600 नकद + भोजन/होटल (EU 261)। यदि संभव हो, तो EU एयरलाइन चुनें।"
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <LayoutHi>
       <SEO
         title="Air India की अंतरराष्ट्रीय उड़ानों में देरी – शिकायत कैसे दर्ज करें? [2026 गाइड]"
         description="Air India की देरी के लिए DGCA और EC 261/2004 के तहत शिकायत दर्ज करें। €600 (₹52,000) तक मुआवज़ा। Tata के बाद नई नीतियां + टेम्पलेट + विशेषज्ञ सलाह।"
         url="https://lotproblem.pl/hi/blog/air-india-international-delay-complaint"
+        schema={JSON.stringify(schemaData)}
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">

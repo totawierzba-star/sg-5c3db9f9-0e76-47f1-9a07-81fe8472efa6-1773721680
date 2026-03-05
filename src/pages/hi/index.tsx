@@ -3,13 +3,36 @@ import { LayoutHi } from "@/components/LayoutHi";
 import Link from "next/link";
 import { Plane, Euro, Clock, XCircle, CheckCircle2, ArrowRight } from "lucide-react";
 
-export default function HindiHomepage() {
+export default function HomeHi() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "LotProblem India",
+        "url": "https://lotproblem.pl/hi",
+        "logo": "https://lotproblem.pl/images/logo.png",
+        "sameAs": ["https://claimwinger.com"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "LotProblem India - Flight Compensation Guide",
+        "url": "https://lotproblem.pl/hi",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://lotproblem.pl/hi/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  };
+
   return (
     <LayoutHi>
       <SEO
-        title="विलंबित या रद्द की गई उड़ान – €600 तक का मुआवजा पाएं"
-        description="क्या आपकी उड़ान विलंबित या रद्द हो गई है? EU 261/2004 के तहत €600 तक का मुआवजा पाने के अपने अधिकार के बारे में जानें।"
-        url="https://lotproblem.pl/hi"
+        title="फ्लाइट में देरी या रद्दीकरण? ₹52,000 तक का मुआवजा (EU 261)"
+        description="क्या आपकी फ्लाइट लेट या कैंसिल हुई थी? जानें कि एयर इंडिया, लुफ्थांसा और अन्य से €600 (₹52,000) तक का रिफंड और मुआवजा कैसे प्राप्त करें।"
+        schema={JSON.stringify(schemaData)}
       />
 
       {/* Hero Section */}
