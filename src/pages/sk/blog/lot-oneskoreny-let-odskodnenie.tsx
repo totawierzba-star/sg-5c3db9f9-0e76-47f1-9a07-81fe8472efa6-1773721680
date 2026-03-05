@@ -341,7 +341,7 @@ export default function LOTOneskorenyLetOdskodnenie() {
 
                 <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <p className="text-sm">
-                    <strong>💡 Poznámka:</strong> Pri oneskorení 3-4 hodiny na dlhých trasách (nad 1 500 km) sa odškodnenie znižuje o 50 %. Pri oneskorení 4+ hodiny dostanete plnú sumu.
+                    <strong>💡 Poznámka:</strong> Pri oneskorení 3-4 hodiny na dlhých trasách (nad 1 500 km) sa odškodnenie znižuje o 50 %. Pri oneskorení 4h+ dostanete plnú sumu.
                   </p>
                 </div>
               </Card>

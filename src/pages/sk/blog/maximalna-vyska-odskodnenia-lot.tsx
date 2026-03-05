@@ -300,8 +300,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">Vzdialenosť: ~2 800 km</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-orange-600">200-400 €</p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">200€ (3-4h) / 400€ (4h+)</p>
+                    <p className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">-50%</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">300 € (3 až 4 hod.) / 600 € (viac ako 4 hod.)</p>
                   </div>
                 </div>
               </Card>
@@ -313,8 +313,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">Vzdialenosť: ~6 800 km</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-orange-600">300-600 €</p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">300€ (3-4h) / 600€ (viac ako 4h)</p>
+                    <p className="text-3xl font-bold text-orange-600">300 až 600 €</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">300 € (3 až 4 hod.) / 600 € (viac ako 4 hod.)</p>
                   </div>
                 </div>
               </Card>
@@ -326,8 +326,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">Vzdialenosť: ~8 600 km</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-orange-600">300-600 €</p>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">300€ (3-4h) / 600€ (viac ako 4h)</p>
+                    <p className="text-3xl font-bold text-orange-600">300 až 600 €</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">300 € (3 až 4 hod.) / 600 € (viac ako 4 hod.)</p>
                   </div>
                 </div>
               </Card>
