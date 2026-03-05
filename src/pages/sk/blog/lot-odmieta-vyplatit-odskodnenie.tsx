@@ -239,7 +239,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                     <ul className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
                       <li>• Európsky súdny dvor rozhodol, že <strong>technická porucha je mimoriadna okolnosť len ak je "nepredvídateľná a nezistiteľná bežnou údržbou"</strong></li>
                       <li>• LOT má povinnosť dokázať, že išlo o skrytú výrobnú chybu – to sa im málokedy podarí</li>
-                      <li>• Požadujte <strong>podrobný technický report</strong> – LOT ho zvyčajne neposkytne, čo oslaבuje ich argumentáciu</li>
+                      <li>• Požadujte <strong>podrobný technický report</strong> – LOT ho zvyčajne neposkytne, čo oslabuje ich argumentáciu</li>
                       <li>• ClaimWinger má databázu tisícov prípadov a vie, kedy je technická porucha platná výhovorka (zriedka!)</li>
                     </ul>
                   </div>
