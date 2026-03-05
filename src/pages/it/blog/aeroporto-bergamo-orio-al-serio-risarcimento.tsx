@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { LayoutIt } from "@/components/LayoutIt";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, Info, CheckCircle, Clock, PlaneTakeoff, Euro, FileText, Users, TrendingUp, MapPin } from "lucide-react";
+import { AlertCircle, Info, CheckCircle, Clock, PlaneTakeoff, Euro, FileText, Users, TrendingUp, MapPin, ArrowRight } from "lucide-react";
 
 export default function AeroportoBergamoRisarcimento() {
   return (
@@ -187,19 +187,14 @@ export default function AeroportoBergamoRisarcimento() {
 
           {/* CTA Section */}
           <section className="mb-12">
-            <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-white text-center shadow-lg">
-              <h3 className="text-2xl font-bold mb-4">Verifica il tuo volo da Bergamo</h3>
-              <p className="text-lg mb-6 text-green-100">
-                Non sei sicuro se il tuo caso è valido? Il nostro controllo è gratuito e richiede solo 2 minuti.
-              </p>
-              <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 font-bold text-lg px-8">
-                <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
-                  Controlla Gratuitamente Ora
-                </a>
-              </Button>
-              <p className="text-xs text-green-200 mt-4">
-                Nessun costo se non vinciamo • Oltre 50.000 passeggeri aiutati
-              </p>
+            <div className="text-center">
+              <Link
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=bergamo_orio"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Verifica il Tuo Risarcimento da Bergamo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </div>
           </section>
 

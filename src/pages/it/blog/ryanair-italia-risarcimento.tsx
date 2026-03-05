@@ -163,12 +163,15 @@ export default function RyanairItaliaRisarcimento() {
                   <p className="text-blue-100 mb-6">
                     Verifica gratuitamente se hai diritto al risarcimento. Il 89% dei nostri clienti Ryanair ottiene il pagamento entro 60 giorni.
                   </p>
-                  <Button size="lg" variant="secondary" asChild>
-                    <a href="https://claimwinger.com/it" className="inline-flex items-center">
+                  <div className="text-center">
+                    <Link
+                      href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=ryanair_italia"
+                      className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                    >
                       Verifica il tuo volo Ryanair ora
                       <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                  </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -367,12 +370,15 @@ export default function RyanairItaliaRisarcimento() {
                 <p className="text-green-100 mb-6">
                   L'89% dei rifiuti Ryanair può essere ribaltato con l'assistenza legale appropriata. Non accettare un "no" se hai ragione.
                 </p>
-                <Button size="lg" variant="secondary" asChild>
-                  <a href="https://claimwinger.com/it" className="inline-flex items-center">
+                <div className="text-center">
+                  <Link
+                    href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=ryanair_italia"
+                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
                     Fai valere i tuoi diritti
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -678,13 +684,14 @@ export default function RyanairItaliaRisarcimento() {
                 <p className="text-xl text-blue-100 mb-8">
                   Verifica gratuitamente il tuo volo Ryanair in 2 minuti. Nessun costo se non otteniamo il risarcimento.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" variant="secondary" asChild>
-                    <a href="https://claimwinger.com/it" className="inline-flex items-center">
-                      Verifica il tuo volo ora
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                  </Button>
+                <div className="text-center">
+                  <Link
+                    href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=ryanair_italia"
+                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
+                    Verifica il tuo volo ora
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </div>
                 <p className="text-sm text-blue-200 mt-6">
                   ✓ 89% di tasso di successo con Ryanair<br />

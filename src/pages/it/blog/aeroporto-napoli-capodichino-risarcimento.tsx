@@ -106,7 +106,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
                 Potresti avere diritto fino a <strong>600€ di risarcimento</strong>. Verifica gratuitamente in 2 minuti.
               </p>
               <a
-                href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=napoli_risarcimento&utm_content=cta_top"
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=napoli_airport"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -233,7 +233,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
             Hai <strong>2 anni</strong> dalla data del volo per richiedere il risarcimento. Non aspettare che sia troppo tardi.
           </p>
           <a
-            href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=napoli_risarcimento&utm_content=cta_middle"
+            href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=napoli_airport"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -390,15 +390,15 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
             <p className="text-lg mb-6 text-blue-100">
               ClaimWinger gestisce tutto per te - nessun rischio, paghi solo se vinciamo.
             </p>
-            <a
-              href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=napoli_risarcimento&utm_content=cta_bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
-            >
-              Verifica Gratis il Tuo Risarcimento
-              <ArrowRight className="w-6 h-6" />
-            </a>
+            <div className="text-center">
+              <Link
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=napoli_airport"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Verifica il Tuo Risarcimento da Napoli
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </div>
             <p className="text-sm text-blue-100 mt-4">
               ✅ Nessun costo anticipato • ✅ Processo 100% online • ✅ Esperti legali a tua disposizione
             </p>

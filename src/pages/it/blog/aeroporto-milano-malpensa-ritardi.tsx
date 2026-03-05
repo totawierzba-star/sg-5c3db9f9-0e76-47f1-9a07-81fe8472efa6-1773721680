@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { LayoutIt } from "@/components/LayoutIt";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, Info, CheckCircle, Clock, PlaneTakeoff, Euro, FileText, Users, TrendingUp } from "lucide-react";
+import { AlertCircle, Info, CheckCircle, Clock, PlaneTakeoff, Euro, FileText, Users, TrendingUp, ArrowRight } from "lucide-react";
 
 export default function AeroportoMilanoMalpensaRitardi() {
   return (
@@ -347,7 +347,7 @@ export default function AeroportoMilanoMalpensaRitardi() {
                 Verifica in 2 minuti se hai diritto a un risarcimento fino a 600 € per passeggero
               </p>
               <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8">
-                <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <a href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=milano_malpensa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Verifica il tuo risarcimento gratis
                 </a>
               </Button>
@@ -526,7 +526,7 @@ export default function AeroportoMilanoMalpensaRitardi() {
                         Una volta a casa (o anche dall'aeroporto), verifica gratuitamente se hai diritto a 250 €, 400 € o 600 €:
                       </p>
                       <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                        <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <a href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=milano_malpensa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                           Verifica gratis in 2 minuti
                         </a>
                       </Button>
@@ -629,7 +629,7 @@ export default function AeroportoMilanoMalpensaRitardi() {
                 </div>
 
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-10 py-6 mb-4">
-                  <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=milano_malpensa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <FileText className="w-5 h-5" />
                     Verifica il tuo risarcimento ora — Gratis
                   </a>

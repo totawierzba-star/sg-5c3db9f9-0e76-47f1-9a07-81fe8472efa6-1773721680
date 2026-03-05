@@ -15,7 +15,8 @@ import {
   TrendingUp,
   Calendar,
   Phone,
-  Mail
+  Mail,
+  ArrowRight
 } from "lucide-react";
 
 export default function WizzAirItaliaRisarcimento() {
@@ -289,15 +290,15 @@ export default function WizzAirItaliaRisarcimento() {
             <p className="text-lg mb-6">
               Verifica GRATIS se hai diritto al risarcimento. Nessun costo anticipato — paghi solo se vinci.
             </p>
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-white text-purple-600 hover:bg-purple-50 font-bold text-lg px-8"
-            >
-              <a href="https://claimwinger.com/it" target="_blank" rel="noopener noreferrer">
-                Verifica il tuo risarcimento →
-              </a>
-            </Button>
+            <div className="text-center">
+              <Link
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=wizz_air_italia"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Verifica il Tuo Risarcimento Wizz Air
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </div>
           </div>
 
           {/* Section 3: Circostanze straordinarie */}
@@ -466,15 +467,15 @@ export default function WizzAirItaliaRisarcimento() {
                   </p>
                 </div>
 
-                <Button 
-                  asChild 
-                  size="lg"
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold"
-                >
-                  <a href="https://claimwinger.com/it" target="_blank" rel="noopener noreferrer">
-                    Verifica il tuo risarcimento →
-                  </a>
-                </Button>
+                <div className="text-center">
+                  <Link
+                    href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=wizz_air_italia"
+                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
+                    Verifica il Tuo Risarcimento Wizz Air
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </div>
               </Card>
             </div>
 
@@ -702,16 +703,14 @@ export default function WizzAirItaliaRisarcimento() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                asChild 
-                size="lg"
-                className="bg-white text-purple-600 hover:bg-purple-50 font-bold text-lg px-8"
+            <div className="text-center">
+              <Link
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=wizz_air_italia"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                <a href="https://claimwinger.com/it" target="_blank" rel="noopener noreferrer">
-                  Verifica il tuo risarcimento →
-                </a>
-              </Button>
+                Verifica il Tuo Risarcimento Wizz Air
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </div>
 
             <p className="text-center text-purple-100 mt-6 text-sm">

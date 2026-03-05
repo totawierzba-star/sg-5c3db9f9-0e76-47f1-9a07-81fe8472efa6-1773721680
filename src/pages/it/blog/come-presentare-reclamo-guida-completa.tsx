@@ -131,7 +131,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
           <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
             <p className="text-gray-700">
               <strong>💡 Suggerimento:</strong> Questa guida ti mostra come fare tutto da solo. Se preferisci risparmiare tempo e affidare la pratica a esperti, 
-              <a href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=guida_reclamo&utm_content=intro_link" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold"> ClaimWinger può gestire tutto per te</a> con il sistema "no win, no fee".
+              <a href="https://claimwinger.com/it?utm_source=blog&utm_medium=guide&utm_campaign=claim_filing" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold"> ClaimWinger può gestire tutto per te</a> con il sistema "no win, no fee".
             </p>
           </div>
         </header>
@@ -146,7 +146,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
                 <strong>ClaimWinger</strong> si occupa di tutta la burocrazia, negozia con le compagnie aeree e ti garantisce il massimo risarcimento possibile. <strong>Paghi solo se vinciamo</strong>.
               </p>
               <a
-                href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=guida_reclamo&utm_content=cta_top"
+                href="https://claimwinger.com/it?utm_source=blog&utm_medium=guide&utm_campaign=claim_filing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -449,7 +449,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
               ClaimWinger gestisce tutta la burocrazia per te: dall'analisi del caso alla negoziazione con le compagnie aeree, fino all'eventuale azione legale. <strong>Paghi solo se otteniamo il risarcimento</strong>.
             </p>
             <a
-              href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=guida_reclamo&utm_content=cta_middle"
+              href="https://claimwinger.com/it?utm_source=blog&utm_medium=guide&utm_campaign=claim_filing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
@@ -548,7 +548,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
                 Se la compagnia nega il risarcimento, hai tre opzioni:
               </p>
               <ol className="list-decimal list-inside text-gray-700 mt-2 space-y-2">
-                <li><strong>Rivolgerti all'ente nazionale:</strong> In Italia è l'ENAC (Ente Nazionale per l'Aviazione Civile), che può mediare con la compagnia</li>
+                <li><strong>Rivolgiti all'ente nazionale:</strong> In Italia è l'ENAC (Ente Nazionale per l'Aviazione Civile), che può mediare con la compagnia</li>
                 <li><strong>Utilizzare servizi di mediazione ADR:</strong> Organismi europei di risoluzione alternativa delle controversie</li>
                 <li><strong>Affidare il caso a specialisti:</strong> Servizi come ClaimWinger gestiscono anche le controversie legali complesse e aumentano drasticamente le probabilità di successo</li>
               </ol>
@@ -609,25 +609,13 @@ export default function ComePresentareReclamoGuidaCompleta() {
         {/* CTA Box 3 - Final */}
         <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-600 p-8 rounded-lg mb-8">
           <div className="text-center">
-            <Euro className="w-16 h-16 mx-auto mb-4 text-green-600" />
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Hai Ancora Dubbi? Verifica Gratis i Tuoi Diritti
-            </h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Inserisci i dettagli del tuo volo e scopri immediatamente se hai diritto al risarcimento e per quale importo. <strong>Completamente gratuito e senza impegno</strong>.
-            </p>
-            <a
-              href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=guida_reclamo&utm_content=cta_bottom"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-colors"
+            <Link
+              href="https://claimwinger.com/it?utm_source=blog&utm_medium=guide&utm_campaign=claim_filing"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
             >
-              Verifica i Tuoi Diritti Gratis
-              <ArrowRight className="w-6 h-6" />
-            </a>
-            <p className="text-sm text-gray-600 mt-4">
-              ✅ Risposta in 2 minuti • ✅ Nessun dato sensibile richiesto • ✅ Zero impegno
-            </p>
+              Inizia la Tua Richiesta di Risarcimento
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
 

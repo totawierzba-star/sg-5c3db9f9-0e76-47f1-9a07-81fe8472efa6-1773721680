@@ -300,13 +300,14 @@ export default function AeroportoRomaFiumicinoRitardi() {
                 <p className="text-xl text-blue-100 mb-8">
                   Non lasciare i tuoi soldi alla compagnia aerea. Verifica gratis il tuo diritto al risarcimento.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" variant="secondary" asChild>
-                    <a href="https://claimwinger.com/it" className="inline-flex items-center">
-                      Verifica Risarcimento Ora
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                  </Button>
+                <div className="text-center">
+                  <Link
+                    href="https://claimwinger.com/it?utm_source=blog&utm_medium=article&utm_campaign=roma_fiumicino"
+                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                  >
+                    Verifica il Tuo Risarcimento da Fiumicino
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
                 </div>
                 <p className="text-sm text-blue-200 mt-6">
                   Nessun costo se non vinciamo • Verifica in 2 minuti
