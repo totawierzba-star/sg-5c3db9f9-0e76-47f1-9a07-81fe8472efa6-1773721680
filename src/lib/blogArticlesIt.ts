@@ -11,14 +11,34 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
-    slug: "ryanair-italia-risarcimento",
-    title: "Ryanair Italia — risarcimento per ritardi e cancellazioni",
-    excerpt: "Guida completa su come ottenere risarcimento da Ryanair per voli in ritardo o cancellati. Procedure, importi e diritti passeggeri.",
-    date: "2025-02-01",
-    readTime: "12 min",
-    category: "Compagnie aeree",
+    slug: "aeroporto-napoli-capodichino-risarcimento",
+    title: "Aeroporto di Napoli Capodichino: Risarcimenti per Ritardi e Cancellazioni",
+    excerpt: "Guida completa ai diritti dei passeggeri e alle procedure di risarcimento per voli in ritardo o cancellati dall'Aeroporto di Napoli Capodichino.",
+    date: "2026-03-05",
+    readTime: "8 min",
+    category: "Aeroporti",
     featured: true,
-    color: "blue"
+    color: "green"
+  },
+  {
+    slug: "come-presentare-reclamo-guida-completa",
+    title: "Come Presentare un Reclamo per Volo in Ritardo o Cancellato: Guida Completa",
+    excerpt: "Guida passo-passo per presentare un reclamo efficace alla compagnia aerea e ottenere fino a 600€ di risarcimento. Modelli, documenti e procedura completa.",
+    date: "2026-03-05",
+    readTime: "12 min",
+    category: "Guide Pratiche",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "ryanair-italia-risarcimento",
+    title: "Ryanair Italia: Guida Completa al Risarcimento per Ritardi e Cancellazioni",
+    excerpt: "Scopri come ottenere fino a 600€ di risarcimento da Ryanair per voli in ritardo o cancellati. Guida completa con procedura step-by-step.",
+    date: "2026-03-02",
+    readTime: "8 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "orange"
   },
   {
     slug: "aeroporto-roma-fiumicino-ritardi",
@@ -36,7 +56,7 @@ export const blogArticlesIt: BlogArticle[] = [
     excerpt: "Guida completa su come ottenere risarcimento da Wizz Air per voli in ritardo o cancellati in Italia. Procedure, importi fino a 600 € e diritti passeggeri CE 261/2004.",
     date: "2026-03-01",
     readTime: "11 min",
-    category: "Compagnie aeree",
+    category: "Compagnie Aeree",
     featured: true,
     color: "purple"
   },
@@ -46,7 +66,7 @@ export const blogArticlesIt: BlogArticle[] = [
     excerpt: "Tutto quello che devi sapere sui tuoi diritti con ITA Airways (ex Alitalia). Come ottenere risarcimento fino a 600 € per ritardi e cancellazioni secondo CE 261/2004.",
     date: "2026-03-01",
     readTime: "10 min",
-    category: "Compagnie aeree",
+    category: "Compagnie Aeree",
     featured: true,
     color: "blue"
   },
@@ -76,7 +96,7 @@ export const blogArticlesIt: BlogArticle[] = [
     excerpt: "Guida completa su come ottenere risarcimento da easyJet per voli in ritardo o cancellati in Italia. Procedure, importi e diritti passeggeri.",
     date: "2026-03-01",
     readTime: "11 min",
-    category: "Compagnie aeree",
+    category: "Compagnie Aeree",
     featured: true,
     color: "orange"
   },
@@ -86,7 +106,7 @@ export const blogArticlesIt: BlogArticle[] = [
     excerpt: "Tutto quello che devi sapere sul Regolamento europeo 261/2004: diritti passeggeri, compensazioni e quando si applicano.",
     date: "2026-03-01",
     readTime: "15 min",
-    category: "Guide",
+    category: "Regolamenti",
     featured: true,
     color: "purple"
   }

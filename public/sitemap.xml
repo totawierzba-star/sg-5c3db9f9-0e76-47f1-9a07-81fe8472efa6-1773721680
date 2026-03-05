@@ -951,10 +951,23 @@
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/regolamento-ce-261-2004-spiegato</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/aeroporto-napoli-capodichino-risarcimento</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/come-presentare-reclamo-guida-completa</loc>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Hindi Blog Articles -->
   <!-- Main Pages -->
 </urlset>

@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function BlogIt() {
   const featuredArticles = blogArticlesIt.filter(article => article.featured);
-  const categories = Array.from(new Set(blogArticlesIt.map(article => article.category)));
+  const categories = ["Tutte", "Compagnie Aeree", "Aeroporti", "Regolamenti", "Guide Pratiche"];
 
   const getColorClass = (color?: string) => {
     switch (color) {
