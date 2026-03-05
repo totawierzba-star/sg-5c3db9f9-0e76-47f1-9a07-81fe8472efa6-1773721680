@@ -6,7 +6,7 @@ export interface BlogArticle {
   readTime: string;
   category: string;
   featured?: boolean;
-  color?: "blue" | "green" | "orange" | "purple";
+  color?: "blue" | "green" | "orange" | "purple" | "amber" | "red";
 }
 
 export const blogArticlesIt: BlogArticle[] = [
@@ -102,12 +102,32 @@ export const blogArticlesIt: BlogArticle[] = [
   },
   {
     slug: "regolamento-ce-261-2004-spiegato",
-    title: "Regolamento CE 261/2004 spiegato — Guida completa 2026",
-    excerpt: "Tutto quello che devi sapere sul Regolamento europeo 261/2004: diritti passeggeri, compensazioni e quando si applicano.",
-    date: "2026-03-01",
+    title: "Regolamento CE 261/2004 Spiegato: Guida Completa ai Diritti dei Passeggeri",
+    excerpt: "Scopri tutto sul Regolamento CE 261/2004: quando si applica, quanto puoi ottenere e come far valere i tuoi diritti come passeggero aereo.",
+    date: "2026-03-05",
     readTime: "15 min",
     category: "Regolamenti",
     featured: true,
     color: "purple"
+  },
+  {
+    slug: "circostanze-straordinarie-spiegate",
+    title: "Circostanze Straordinarie: Quando NON Spetta il Risarcimento Volo",
+    excerpt: "Scopri cosa sono le circostanze straordinarie secondo il Regolamento CE 261/2004 e quando la compagnia aerea può rifiutare legalmente il risarcimento.",
+    date: "2026-03-05",
+    readTime: "10 min",
+    category: "Regolamenti",
+    featured: true,
+    color: "amber"
+  },
+  {
+    slug: "ritardo-3-ore-regola-risarcimento",
+    title: "Ritardo di 3 Ore: La Regola del Risarcimento Volo Spiegata",
+    excerpt: "Scopri quando scatta il diritto al risarcimento per ritardi superiori a 3 ore. Guida completa con calcoli, eccezioni e procedure per ottenere fino a 600€.",
+    date: "2026-03-05",
+    readTime: "12 min",
+    category: "Guide Pratiche",
+    featured: true,
+    color: "green"
   }
 ];

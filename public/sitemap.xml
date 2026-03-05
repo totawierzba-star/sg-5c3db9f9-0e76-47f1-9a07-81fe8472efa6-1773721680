@@ -967,6 +967,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/circostanze-straordinarie-spiegate</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/it/blog/ritardo-3-ore-regola-risarcimento</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Hindi Blog Articles -->
   <!-- Main Pages -->
