@@ -928,7 +928,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
                   <strong>重要区分：</strong><br/>
                   • <strong>照顾义务</strong>（Care）：餐饮、住宿、通讯 = LOT 的法定义务，免费提供，<strong>不影响赔偿权利</strong><br/>
                   • <strong>赔偿</strong>（Compensation）：€250-€600 现金 = <strong>独立的法定权利</strong>，与照顾义务分开<br/><br/>
-                  即使您接受了 €100 代金券，仍可索赔 €600 现金赔偿（符合条件）。
+                  即使您的航班已经过去一段时间（如 1-2 年前），仍可尝试索赔！
                 </p>
               </details>
 
@@ -1011,7 +1011,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
                     "name": "索赔有时间限制吗？",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "有。波兰（LOT 总部）民事诉讼时效 = 3 年，从航班日期起算。建议尽早索赔，证据越新鲜处理越快。即使航班过去 1-2 年，仍可尝试索赔。"
+                      "text": "有。波兰（LOT 总部）民事诉讼时效 = 3 年，从航班日期起算。建议尽早索赔，证据越新鲜处理越快。即使航班过去 1-2 年，仍可尝试索赔！"
                     }
                   }
                 ]
@@ -1063,11 +1063,15 @@ export default function LOTPolishAirlinesCompensationGuide() {
                   <span>✓ 8-12 周获赔</span>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50 text-lg px-8 py-6">
-                <a href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=lot_guide_final" target="_blank" rel="noopener noreferrer">
-                  免费检查我的赔偿 <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-              </Button>
+              <div className="text-center">
+                <Link
+                  href="https://claimwinger.com/zh?utm_source=blog&utm_medium=article&utm_campaign=lot_polish_china"
+                  className="inline-flex items-center justify-center bg-white text-green-600 hover:bg-green-50 px-8 py-6 text-lg font-semibold transition-colors"
+                >
+                  立即查询
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </div>
             </Card>
           </div>
 

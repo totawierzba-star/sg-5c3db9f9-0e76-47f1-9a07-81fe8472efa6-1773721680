@@ -844,14 +844,15 @@ export default function LufthansaCompensationGuide() {
           <p className="text-xl text-blue-100 mb-6">
             免费检查您的航班资格 - 只需 3 分钟！无风险，只在成功后收费。
           </p>
-          <a
-            href="https://claimwinger.com/delayed-flight"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
-          >
-            免费检查我的赔偿 <ArrowRight className="w-6 h-6" />
-          </a>
+          <div className="text-center">
+            <Link
+              href="https://claimwinger.com/zh?utm_source=blog&utm_medium=article&utm_campaign=lufthansa_china"
+              className="inline-flex items-center justify-center bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
+            >
+              立即查询
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
           <p className="text-blue-200 text-sm mt-4">
             ✓ 无风险 - 只在成功后收费　✓ 3 分钟快速检查　✓ 98% 成功率
           </p>

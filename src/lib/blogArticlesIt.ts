@@ -122,12 +122,39 @@ export const blogArticlesIt: BlogArticle[] = [
   },
   {
     slug: "ritardo-3-ore-regola-risarcimento",
-    title: "Ritardo di 3 Ore: La Regola del Risarcimento Volo Spiegata",
-    excerpt: "Scopri quando scatta il diritto al risarcimento per ritardi superiori a 3 ore. Guida completa con calcoli, eccezioni e procedure per ottenere fino a 600€.",
+    title: "Ritardo di 3 Ore: La Regola del Risarcimento Volo Spiegata [2026]",
+    excerpt: "Perché la soglia di 3 ore è fondamentale? Guida completa al calcolo del ritardo e ai tuoi diritti.",
     date: "2026-03-05",
     readTime: "12 min",
     category: "Guide Pratiche",
-    featured: true,
     color: "green"
+  },
+  {
+    slug: "volo-ita-roma-new-york-ritardi",
+    title: "Volo ITA Airways Roma-New York in Ritardo: Risarcimento fino a 600€",
+    excerpt: "Guida specifica per la rotta transatlantica Roma-New York. Scopri i tuoi diritti per ritardi e cancellazioni ITA.",
+    date: "2026-03-05",
+    readTime: "11 min",
+    category: "Compagnie Aeree",
+    color: "blue"
+  },
+  {
+    slug: "overbooking-negato-imbarco-diritti",
+    title: "Overbooking e Negato Imbarco: Tutti i Tuoi Diritti",
+    excerpt: "Ti hanno negato l'imbarco? Scopri la differenza tra volontario e involontario e come ottenere fino a 600€.",
+    date: "2026-03-05",
+    readTime: "15 min",
+    category: "Guide Pratiche",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "sciopero-compagnia-vs-atc-differenze",
+    title: "Sciopero Compagnia vs ATC: Chi Paga il Risarcimento?",
+    excerpt: "Non tutti gli scioperi sono uguali. Scopri quando hai diritto al risarcimento e quando è circostanza straordinaria.",
+    date: "2026-03-05",
+    readTime: "13 min",
+    category: "Regolamenti",
+    color: "orange"
   }
 ];

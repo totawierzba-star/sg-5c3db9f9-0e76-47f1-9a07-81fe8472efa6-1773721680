@@ -133,7 +133,7 @@ export default function VoloITARomaNewYorkRitardi() {
                     <p><strong>Durata volo:</strong> ~9-10 ore</p>
                   </div>
                   <div>
-                    <p><strong>Compagnia:</strong> ITA Airways (AZ)</strong></p>
+                    <p><strong>Compagnia:</strong> ITA Airways (AZ)</p>
                     <p><strong>Risarcimento:</strong> €600 (ritardo ≥4h)</p>
                     <p><strong>Riduzione 50%:</strong> €300 (ritardo 3-4h)</p>
                   </div>
