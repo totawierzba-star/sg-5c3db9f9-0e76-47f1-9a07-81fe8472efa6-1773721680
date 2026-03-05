@@ -181,8 +181,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     <p className="text-sm font-semibold">Príklad:</p>
                     <p className="text-sm mt-2">
                       Let Varšava → New York (6 800 km)<br/>
-                      • Oneskorenie 3-4h = <strong>300 €</strong><br/>
-                      • Oneskorenie 4h+ = <strong>600 €</strong>
+                      • Oneskorenie 3 až 4 hod. = <strong>300 €</strong><br/>
+                      • Oneskorenie viac ako 4 hod. = <strong>600 €</strong>
                     </p>
                   </div>
                 </Card>
@@ -209,8 +209,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                 <thead>
                   <tr className="border-b-2 border-gray-200 dark:border-gray-700">
                     <th className="text-left p-3">Vzdialenosť</th>
-                    <th className="text-left p-3">Oneskorenie 3-4h</th>
-                    <th className="text-left p-3">Oneskorenie 4h+</th>
+                    <th className="text-left p-3">Oneskorenie 3 až 4 hod.</th>
+                    <th className="text-left p-3">Oneskorenie viac ako 4 hod.</th>
                     <th className="text-left p-3">Zrušený let</th>
                   </tr>
                 </thead>
