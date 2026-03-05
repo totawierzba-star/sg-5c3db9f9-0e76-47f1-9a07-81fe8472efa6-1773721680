@@ -234,6 +234,69 @@ export const blogArticlesSk: BlogArticleSk[] = [
         }
       ]
     }
+  },
+  {
+    id: "kompletny-przewodnik-odszkodowanie",
+    title: "Kompletný przewodnik - Odszkodowanie za let",
+    excerpt: "Všetko, čo potrebujete vedieť o právach cestujúcich a odškodneniach za lety.",
+    date: "2026-02-28",
+    readTime: "15 min",
+    category: "Průvodce",
+    color: "blue"
+  },
+  {
+    id: "lot-oneskoreny-let-odskodnenie",
+    title: "Odškodnenie za oneskorený let LOT Polish Airlines",
+    excerpt: "Kompletný sprievodca pre slovenských cestujúcich - až 600 € odškodnenie.",
+    date: "2026-03-05",
+    readTime: "12 min",
+    category: "LOT Polish Airlines",
+    color: "blue"
+  },
+  {
+    id: "lot-zrusil-let-odskodnenie",
+    title: "LOT zrušil let - Ako získať odškodnenie až 600 €",
+    excerpt: "Krok za krokom sprievodca získaním odškodnenia pri zrušenom lete LOT.",
+    date: "2026-03-05",
+    readTime: "14 min",
+    category: "LOT Polish Airlines",
+    color: "blue"
+  },
+  {
+    id: "lot-odmieta-vyplatit-odskodnenie",
+    title: "LOT odmieta vyplatiť odškodnenie - Čo robiť ďalej?",
+    excerpt: "5 krokov ako prelomiť zamietnutie LOT a najčastejšie výhovorky.",
+    date: "2026-03-05",
+    readTime: "13 min",
+    category: "LOT Polish Airlines",
+    color: "red"
+  },
+  {
+    id: "lot-poukaz-odskodnenie-voucher",
+    title: "LOT ponúka voucher namiesto odškodnenia - Musíte ho prijať?",
+    excerpt: "Prečo je hotovosť lepšia ako voucher a ako odmietnuť poukaz od LOT.",
+    date: "2026-03-05",
+    readTime: "10 min",
+    category: "LOT Polish Airlines",
+    color: "amber"
+  },
+  {
+    id: "ako-dlho-trva-odskodnenie-lot",
+    title: "Koľko trvá vyplatenie odškodnenia od LOT?",
+    excerpt: "Aktuálne časy vyplácania a ako urýchliť proces získania peňazí.",
+    date: "2026-03-05",
+    readTime: "8 min",
+    category: "LOT Polish Airlines",
+    color: "purple"
+  },
+  {
+    id: "maximalna-vyska-odskodnenia-lot",
+    title: "Maximálna výška odškodnenia za let LOT - 250 €, 400 € alebo 600 €?",
+    excerpt: "Kalkulátor odškodnenia podľa vzdialenosti letu s LOT Polish Airlines.",
+    date: "2026-03-05",
+    readTime: "11 min",
+    category: "LOT Polish Airlines",
+    color: "green"
   }
 ];
 

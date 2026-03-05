@@ -691,7 +691,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                     "name": "LOT nereaguje vôbec – čo robiť?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "LOT má zákonný limit 2 mesiace na odpoveď. Ak nereagujú, máte právo ísť na súd alebo kontaktovať CAA."
+                      "text": "LOT má zákonný limit 2 mesiace na odpoveď. Ak nereagujú po 2 mesiacoch, máte právo ísť na súd alebo kontaktovať CAA."
                     }
                   }
                 ]
