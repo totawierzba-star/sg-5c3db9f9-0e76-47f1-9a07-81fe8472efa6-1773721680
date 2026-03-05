@@ -300,8 +300,8 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">Vzdialenosť: ~2 800 km</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">-50%</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">300 € (3 až 4 hod.) / 600 € (viac ako 4 hod.)</p>
+                    <p className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">200 až 400 €</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">200 € (3 až 4 hod.) / 400 € (viac ako 4 hod.)</p>
                   </div>
                 </div>
               </Card>
@@ -349,7 +349,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                   <p className="text-sm">
                     Bratislava → Varšava → New York (jedna rezervácia)<br/>
                     Celková vzdialenosť: ~7 400 km<br/>
-                    <strong>Odškodnenie: 600 € (pri oneskorení 4h+ príchodu do NYC)</strong>
+                    <strong>Odškodnenie: 600 € (pri oneskorení viac ako 4 hod. príchodu do NYC)</strong>
                   </p>
                 </div>
               </Card>
@@ -374,7 +374,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                 <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
                   <p className="font-semibold mb-2">Príklad:</p>
                   <p className="text-sm">
-                    Rodina 4 osôb (2 dospelí + 2 deti), let Bratislava → Varšava oneskorený o 4h:<br/>
+                    Rodina 4 osôb (2 dospelí + 2 deti), let Bratislava → Varšava oneskorený o 4 hod.:<br/>
                     <strong>4 × 250 € = 1 000 € spolu pre celú rodinu!</strong>
                   </p>
                 </div>
@@ -413,7 +413,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
               <details className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
                 <summary className="font-bold cursor-pointer">Dostanem viac peňazí, ak let mal dlhšie oneskorenie?</summary>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  <strong>Nie presne.</strong> Odškodnenie je buď 0 € (oneskorenie < 3h), čiastočné (3-4h pri dlhých trasách), alebo plné (4h+ alebo zrušenie). Neexistuje postupné navyšovanie – napr. 10h oneskorenie = rovnaká suma ako 4h oneskorenie.
+                  <strong>Nie presne.</strong> Odškodnenie je buď 0 € (oneskorenie menej ako 3 hod.), čiastočné (3-4 hod. pri dlhých trasách), alebo plné (viac ako 4 hod. alebo zrušenie). Neexistuje postupné navyšovanie – napr. 10 hod. oneskorenie = rovnaká suma ako 4 hod. oneskorenie.
                 </p>
               </details>
 
@@ -468,7 +468,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
                     "name": "Dostanem viac peňazí, ak let mal dlhšie oneskorenie?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Nie presne. Odškodnenie je buď 0 € (< 3h), čiastočné (3-4h), alebo plné (4h+)."
+                      "text": "Nie presne. Odškodnenie je buď 0 € (menej ako 3h), čiastočné (3-4h), alebo plné (viac ako 4h)."
                     }
                   },
                   {
