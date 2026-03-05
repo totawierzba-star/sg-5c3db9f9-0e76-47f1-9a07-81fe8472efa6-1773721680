@@ -175,7 +175,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                     <div>
                       <p className="font-semibold">Zamietnutie individuálnych žiadostí = nižšie náklady</p>
                       <p className="text-sm mt-1">
-                        LOT vie, že <strong>80-90% ľudí sa nevzdá</strong> po prvom zamietnutí. Ak LOT automaticky zamietne 1000 žiadostí, len 100-200 ľudí bude pokračovať ďalej.
+                        LOT vie, že <strong>80-90% ľudí sa vzdá</strong> po prvom zamietnutí. Ak LOT automaticky zamietne 1000 žiadostí, len 100-200 ľudí bude pokračovať ďalej.
                       </p>
                     </div>
                   </div>
@@ -453,7 +453,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                   <li className="flex items-start gap-3">
                     <XCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold">Oneskorenie príchodu < 3 hodiny</p>
+                      <p className="font-semibold">Oneskorenie príchodu menej ako 3 hodiny</p>
                       <p className="text-sm">Let priletěl s oneskorením 2 hodiny 45 minút = žiadne hotovostné odškodnenie (ale stále právo na starostlivosť).</p>
                     </div>
                   </li>
@@ -564,7 +564,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                   ClaimWinger si účtuje <strong>25% + DPH</strong> z vymôženého odškodnenia – ale len <strong>pri úspechu</strong>! Ak nevymôžime odškodnenie, neplatíte nič.
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  <strong>Príklad:</strong> Odškodnenie 400 € → ClaimWinger dostane ~100 € + DPH → vám zostane ~300 €. Ak by ste išli sami a LOT by odmietal, mohli by ste stratiť 6+ mesiacov času a nakoniec nič nedostať!
+                  <strong>Príklad:</strong> Odškodnenie 400 € → ClaimWinger dostane približne 100 € + DPH → vám zostane približne 300 €. Ak by ste išli sami a LOT by odmietal, mohli by ste stratiť 6+ mesiacov času a nakoniec nič nedostať!
                 </p>
               </div>
             </div>
@@ -580,15 +580,15 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>✓ Bez rizika</span>
+                  <span>Bez rizika</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>✓ Súdne konanie v cene</span>
+                  <span>Súdne konanie v cene</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>✓ 8-12 týždňov</span>
+                  <span>8-12 týždňov</span>
                 </div>
               </div>
               <div className="text-center">
@@ -656,7 +656,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
                   Môže LOT čierny zoznam ma za žiadosť o odškodnenie?
                 </summary>
                 <p className="mt-4 text-gray-600 dark:text-gray-400">
-                  <strong>Nie, to je nezákonné!</strong> LOT nemôže vás zabanovat alebo zhoršiť váš profil frequent flyer za žiadosť o odškodnenie. Ak by to urobili, je to diskriminácia a môžete to nahlásiť na CAA.
+                  <strong>Nie, to je nezákonné!</strong> LOT nemôže vás zabanovať alebo zhoršiť váš profil frequent flyer za žiadosť o odškodnenie. Ak by to urobili, je to diskriminácia a môžete to nahlásiť na CAA.
                 </p>
               </details>
             </div>
