@@ -74,6 +74,12 @@ export function LayoutCs({ children }: LayoutCsProps) {
                   >
                     🇮🇹 Italiano
                   </Link>
+                  <Link
+                    href="/en"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    🇺🇸 English
+                  </Link>
                 </div>
               </div>
 
@@ -164,6 +170,20 @@ export function LayoutCs({ children }: LayoutCsProps) {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       🇸🇰 Slovenčina
+                    </Link>
+                    <Link
+                      href="/it"
+                      className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      🇮🇹 Italiano
+                    </Link>
+                    <Link
+                      href="/en"
+                      className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      🇺🇸 English
                     </Link>
                   </div>
                 </div>
