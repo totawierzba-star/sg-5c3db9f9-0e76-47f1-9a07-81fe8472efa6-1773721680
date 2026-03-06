@@ -1,716 +1,764 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Polish Pages -->
+  <!-- Polish Main Pages -->
   <url>
     <loc>https://lotproblem.pl/</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/odwolany-lot</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-ryanair</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-wizzair</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-lot</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-lufthansa</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-warszawa</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/opozniony-lot-krakow</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/ile-mozesz-dostac</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://lotproblem.pl/odwolany-lot</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
+
   <!-- Polish Blog -->
   <url>
     <loc>https://lotproblem.pl/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lotproblem.pl/blog/odwolany-lot-historia-pasazera</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-lot-polish-airlines</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-ryanair-polska</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/prawa-pasazera-lot-polish-airlines</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/lot-odmowil-odszkodowania</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/ryanair-odmowil-odszkodowania</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/prawa-pasazera-ryanair</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-wizz-air-polska</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/wizz-air-odmowil-odszkodowania</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-lufthansa-polska</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/odszkodowanie-easyjet-polska</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/enter-air-odszkodowanie-czarter</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/nadzwyczajne-okolicznosci-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/przedawnienie-roszczen-lotniczych</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/jak-zlozyc-wniosek-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/najczestsze-bledy-reklamacja</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/co-zrobic-na-lotnisku-opoznienie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/utracona-przesiadka-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/lotnisko-modlin-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/lotnisko-katowice-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/lotnisko-gdansk-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/blog/lotnisko-wroclaw-odszkodowanie</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lotproblem.pl/blog/odwolany-lot-historia-pasazera</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- English Pages -->
+  <!-- English Main Pages -->
   <url>
     <loc>https://lotproblem.pl/en</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/delayed-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/cancelled-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/compensation-calculator</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- English Blog -->
   <url>
     <loc>https://lotproblem.pl/en/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-delay-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-cancelled-flight-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-denied-boarding-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-compensation-amounts</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-rejected-compensation-claim</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-voucher-vs-cash</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/en/blog/lot-polish-airlines-compensation-payment-timeline</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/ryanair-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/wizz-air-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/lufthansa-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/easyjet-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/british-airways-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/klm-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/air-france-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/en/blog/swiss-compensation-guide</loc>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-  <!-- Chinese Pages -->
+  <!-- Chinese Main Pages -->
   <url>
     <loc>https://lotproblem.pl/zh</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/delayed-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/cancelled-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/compensation-calculator</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Chinese Blog -->
   <url>
     <loc>https://lotproblem.pl/zh/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/eu261-uk261-passenger-rights</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/beijing-capital-cancelled-flight-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/beijing-capital-delayed-flight-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/chinese-citizens-eu261-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/lufthansa-delay-cancellation-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/lot-polish-airlines-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/air-france-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/british-airways-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/klm-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/finnair-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/eu261-complete-guide-protected-flights</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/eu261-regulation-explained-chinese-passengers</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/which-flights-qualify-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/how-many-hours-delay-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/flight-cancellation-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/swiss-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/europe-to-china-flight-delay-rights</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/european-airline-china-departure-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/compensation-vs-refund-difference</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/extraordinary-circumstances-explained</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/chinese-airlines-china-departure-no-eu261</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/3-hour-delay-compensation-rule</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/zh/blog/missed-connection-compensation-guide</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Czech Pages -->
+  <!-- Czech Main Pages -->
   <url>
     <loc>https://lotproblem.pl/cs</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/zpozdeny-let</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/zruseny-let</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/kompenzace-kalkulacka</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Czech Blog -->
   <url>
     <loc>https://lotproblem.pl/cs/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-praha-zpozdeny-let</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-praha-zruseny-let</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/narizeni-es-261-2004</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/prava-cestujicich-ceska-republika</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/kdy-mate-narok-kompenzaci</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/ryanair-kompenzace-reklamace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/wizz-air-zpozdeni-zruseni</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/smartwings-prava-cestujicich</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/csa-czech-airlines-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-brno-zpozdeni</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-ostrava-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/zmeskane-prestupy-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/overbooking-odmitnuty-nastup</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/stavky-leteckych-spolecnosti</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/promlceni-naroku-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/eurowings-kompenzace-reklamace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/austrian-airlines-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/easyjet-zpozdeni-zruseni</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/british-airways-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/turkish-airlines-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-karlovy-vary-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/letiste-pardubice-kompenzace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/jak-podat-reklamaci-krok-za-krokem</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/dukazni-bremeno-kompenzaci</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/soudni-vymahani-kompenzaci</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/rozdil-kompenzace-refundace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/co-delat-primo-na-letisti</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/jake-dokumenty-si-ponechat</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/caste-chyby-pri-reklamaci</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/jak-zvysit-sance-na-uspech</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/mimoradne-okolnosti-vysvetleny</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/3hodinove-pravidlo-zpozdeni</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/lufthansa-kompenzace-reklamace</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/cs/blog/zmeskany-prestup-kompenzacia</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Hindi Pages -->
+  <!-- Hindi Main Pages -->
   <url>
     <loc>https://lotproblem.pl/hi</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/der-se-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/cancel-flight</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/muavza-calculator</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -718,137 +766,137 @@
   <!-- Hindi Blog -->
   <url>
     <loc>https://lotproblem.pl/hi/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/delhi-airport-der-se-flight</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/delhi-airport-cancel-flight</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/eu-regulation-261-2004-indian-passengers</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/flight-delay-cancellation-compensation-amount</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/delhi-london-flight-cancelled-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/mumbai-frankfurt-flight-delay-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/air-india-international-delay-complaint</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/lufthansa-british-airways-air-france-comparison</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/emirates-qatar-etihad-europe-via-gulf-hubs</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/delhi-dubai-flight-cancelled-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/delhi-toronto-flight-cancelled-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/canada-appr-indian-passengers</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/dgca-vs-eu261-compensation-comparison</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/extraordinary-circumstances-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/turkish-airlines-istanbul-compensation-rights</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/hi/blog/klm-air-france-amsterdam-paris-compensation</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
 
-  <!-- Slovak Pages -->
+  <!-- Slovak Main Pages -->
   <url>
     <loc>https://lotproblem.pl/sk</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/sk/meskanie-letu</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/sk/zruseny-let</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/sk/kalkulacka-kompenzacie</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Slovak Blog -->
   <url>
     <loc>https://lotproblem.pl/sk/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -967,126 +1015,126 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Italian Pages -->
+  <!-- Italian Main Pages -->
   <url>
     <loc>https://lotproblem.pl/it</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/volo-in-ritardo</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/volo-cancellato</loc>
-    <lastmod>2025-03-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-06</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/calcolatore-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Italian Blog -->
   <url>
     <loc>https://lotproblem.pl/it/blog</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/ryanair-italia-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/aeroporto-roma-fiumicino-ritardi</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/wizz-air-italia-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/ita-airways-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/aeroporto-milano-malpensa-ritardi</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/aeroporto-bergamo-orio-al-serio-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/easyjet-italia-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/regolamento-ce-261-2004-spiegato</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/aeroporto-napoli-capodichino-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/come-presentare-reclamo-guida-completa</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/circostanze-straordinarie-spiegate</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/ritardo-3-ore-regola-risarcimento</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/overbooking-negato-imbarco-diritti</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/sciopero-compagnia-vs-atc-differenze</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lotproblem.pl/it/blog/volo-ita-roma-new-york-ritardi</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2025-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
