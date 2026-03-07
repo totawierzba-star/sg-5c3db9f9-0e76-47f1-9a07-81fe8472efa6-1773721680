@@ -780,5 +780,251 @@ export const blogArticlesSv: BlogArticle[] = [
     category: "Snabba svar",
     color: "blue",
     featured: true
+  },
+  {
+    id: "arlanda-forsenat-installat-flyg-guide",
+    title: "Försening eller inställt flyg på Arlanda (ARN) — Passagerarrättigheter 2025",
+    slug: "arlanda-forsenat-installat-flyg-guide",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 4200,
+    readTime: 14,
+    excerpt: "Komplett guide till dina rättigheter vid försening eller inställt flyg från Stockholm Arlanda. Få upp till 600 € ersättning enligt EU261.",
+    publishDate: "2026-03-07",
+    featured: true,
+    color: "blue",
+    schema: {
+      faqItems: [
+        {
+          question: "Hur lång försening krävs för ersättning från Arlanda?",
+          answer: "Du har rätt till ersättning om ditt flyg från Arlanda anländer minst 3 timmar försenat till slutdestinationen. Beloppet beror på flygsträckan: 250 € för flyg under 1500 km, 400 € för flyg 1500-3500 km inom EU, och 600 € för flyg över 3500 km eller utanför EU."
+        },
+        {
+          question: "Gäller EU261 för alla flyg från Arlanda?",
+          answer: "Ja, EU261 gäller för alla flyg som avgår från Arlanda (Stockholm Arlanda Airport), oavsett flygbolagets nationalitet. Det gäller även för ankommande flyg till Arlanda om flygbolaget är baserat i EU."
+        }
+      ]
+    }
+  },
+  {
+    id: "missat-anslutningsflyg-arlanda",
+    title: "Missat anslutningsflyg på Arlanda (ARN) — Ersättningsguide steg för steg 2025",
+    slug: "missat-anslutningsflyg-arlanda",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 3800,
+    readTime: 12,
+    excerpt: "Missade du ditt anslutningsflyg på Stockholm Arlanda? Få upp till 600 € ersättning enligt EU261. Komplett guide med juridiska tips.",
+    publishDate: "2026-03-07",
+    featured: true,
+    color: "blue",
+    schema: {
+      faqItems: [
+        {
+          question: "Hur mycket ersättning får jag om jag missar anslutningsflyg på Arlanda?",
+          answer: "Ersättningen beror på den totala sträckan från ursprungsflygplatsen till slutdestinationen. Du kan få 250 € (under 1500 km), 400 € (1500-3500 km) eller 600 € (över 3500 km). Avgörande är att du anländer minst 3 timmar försenat till slutmålet."
+        },
+        {
+          question: "Gäller ersättning om jag bokade flygningarna separat?",
+          answer: "Nej, EU261-ersättning gäller endast när båda flygningarna är bokade som en enda bokning (samma PNR-nummer)."
+        }
+      ]
+    }
+  },
+  {
+    id: "arlanda-forsenade-flygbolag-statistik",
+    title: "Mest försenade flygbolagen på Arlanda 2025 — Statistik och ersättningsråd",
+    slug: "arlanda-forsenade-flygbolag-statistik",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 4600,
+    readTime: 16,
+    excerpt: "Vilka flygbolag och rutter från Stockholm Arlanda har flest förseningar? Se aktuell statistik och lär dig maximera dina chanser till 600 € ersättning.",
+    publishDate: "2026-03-07",
+    featured: true,
+    color: "blue",
+    schema: {
+      faqItems: [
+        {
+          question: "Vilket flygbolag på Arlanda har flest förseningar?",
+          answer: "Enligt data från 2024 har Norwegian och Wizz Air högst andel förseningar på Arlanda med cirka 25-30% av flygningarna försenade över 15 minuter."
+        },
+        {
+          question: "Vilka rutter från Arlanda är mest försenade?",
+          answer: "De mest försenade rutterna är: Stockholm–London (22%), Stockholm–Oslo/Köpenhamn (20%), Stockholm–Bangkok/Phuket (18%), och Stockholm–New York (17%)."
+        }
+      ]
+    }
+  },
+  {
+    id: "arlanda-new-york-forsening-600-euro",
+    title: "Arlanda till New York försenat? Få 600 € (Krav och Guide)",
+    slug: "arlanda-new-york-forsening-600-euro",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 2200,
+    readTime: 11,
+    excerpt: "Har ditt flyg från Stockholm Arlanda (ARN) till New York (EWR/JFK) blivit försenat? Lär dig hur du säkrar 600 € ersättning enligt EU261.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "arlanda-london-uk261-eu261-brexit",
+    title: "Arlanda till London försenat? EU261 vs UK261 efter Brexit",
+    slug: "arlanda-london-uk261-eu261-brexit",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 1900,
+    readTime: 9,
+    excerpt: "Flygproblem mellan Stockholm och London? Förstå dina rättigheter efter Brexit och lär dig hur du kräver ersättning.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "arlanda-dubai-eu261-ersattning",
+    title: "Arlanda till Dubai försenat? När gäller EU261 för Mellanösternflyg",
+    slug: "arlanda-dubai-eu261-ersattning",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 1950,
+    readTime: 10,
+    excerpt: "Emirates eller Norwegian försenat mellan Stockholm och Dubai? Lär dig exakt när du kan kräva 600 € i ersättning enligt EU-lag.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "arlanda-massavbokningar-kris-rattigheter",
+    title: "Massavbokningar på Arlanda (ARN) — Passagerares rättigheter vid kris",
+    slug: "arlanda-massavbokningar-kris-rattigheter",
+    category: "airport",
+    airportCode: "ARN",
+    airportName: "Stockholm Arlanda",
+    flag: "🇸🇪",
+    wordCount: 2100,
+    readTime: 10,
+    excerpt: "Inställda flyg i massor på Stockholm Arlanda? Lär dig dina rättigheter vid strejk, väderkaos eller IT-problem.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "red"
+  },
+  {
+    id: "landvetter-forsenat-installt-flyg-guide",
+    title: "Försening eller inställt flyg på Landvetter (GOT) — Komplett guide",
+    slug: "landvetter-forsenat-installt-flyg-guide",
+    category: "airport",
+    airportCode: "GOT",
+    airportName: "Göteborg Landvetter",
+    flag: "🇸🇪",
+    wordCount: 2500,
+    readTime: 12,
+    excerpt: "Drabbats av ett försenat eller inställt flyg från Göteborg Landvetter? Få reda på hur du kräver upp till 600 € i ersättning enligt EU261.",
+    publishDate: "2026-03-07",
+    featured: true,
+    color: "blue"
+  },
+  {
+    id: "sas-norwegian-goteborg-forseningar-ersattning",
+    title: "SAS och Norwegian från Göteborg — Förseningar & Ersättning",
+    slug: "sas-norwegian-goteborg-forseningar-ersattning",
+    category: "airport",
+    airportCode: "GOT",
+    airportName: "Göteborg Landvetter",
+    flag: "🇸🇪",
+    wordCount: 2200,
+    readTime: 11,
+    excerpt: "Flyger du SAS eller Norwegian från Göteborg? Så här hanterar du inställda och försenade flyg, och säkrar din ekonomiska kompensation.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "ryanair-wizz-air-goteborg-rattigheter",
+    title: "Ryanair och Wizz Air från Göteborg — Rättigheter och Ersättning 2025",
+    slug: "ryanair-wizz-air-goteborg-rattigheter",
+    category: "airport",
+    airportCode: "GOT",
+    airportName: "Göteborg Landvetter",
+    flag: "🇸🇪",
+    wordCount: 2300,
+    readTime: 11,
+    excerpt: "Problem med Ryanair eller Wizz Air från Landvetter? Lär dig dina passagerarrättigheter och hur du tvingar lågprisbolagen att betala EU261-ersättning.",
+    publishDate: "2026-03-07",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "behover-jag-ombud",
+    title: "Behöver jag ett ombud eller advokat för att få ersättning?",
+    slug: "behover-jag-ombud",
+    category: "longtail",
+    wordCount: 1500,
+    readTime: 6,
+    excerpt: "Går det att kräva ersättning själv, eller måste man använda företag som ClaimWinger? Fördelar och nackdelar.",
+    publishDate: "2025-02-28",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "lonar-det-sig-ersattningsforetag",
+    title: "Lönar det sig att använda ett ersättningsföretag?",
+    slug: "lonar-det-sig-ersattningsforetag",
+    category: "longtail",
+    wordCount: 1600,
+    readTime: 7,
+    excerpt: "När är det värt att betala en provision för att få hjälp med sitt ärende? Jämförelse av olika tjänster.",
+    publishDate: "2025-02-28",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "hur-lang-tid-ansoka-sverige",
+    title: "Hur lång tid har jag på mig att ansöka om ersättning i Sverige?",
+    slug: "hur-lang-tid-ansoka-sverige",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Preskriptionstiden skiljer sig mellan olika länder. I Sverige har du ett visst antal år på dig - se vad som gäller.",
+    publishDate: "2025-02-28",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "vilka-dokument-behover-jag",
+    title: "Vilka dokument behöver jag spara vid en försening?",
+    slug: "vilka-dokument-behover-jag",
+    category: "longtail",
+    wordCount: 1400,
+    readTime: 6,
+    excerpt: "En checklista på allt du måste spara på flygplatsen för att säkerställa att du får din ersättning utbetald.",
+    publishDate: "2025-02-28",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "betalar-sas-ersattning-statistik",
+    title: "Hur ofta betalar SAS ut ersättning utan strid?",
+    slug: "betalar-sas-ersattning-statistik",
+    category: "longtail",
+    wordCount: 1800,
+    readTime: 8,
+    excerpt: "Statistik på hur flygbolag som SAS agerar vid ersättningskrav - hur stor chans är det att du får dina pengar direkt?",
+    publishDate: "2025-02-28",
+    featured: false,
+    color: "blue"
   }
 ];
