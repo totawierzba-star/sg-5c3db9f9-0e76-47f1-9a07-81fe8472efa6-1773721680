@@ -354,6 +354,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-trondheim-vaernes-erstatning",
     title: "Erstatning for Norwegian Trondheim–[destinasjon] — rettigheter fra Værnes",
+    slug: "norwegian-trondheim-vaernes-erstatning",
     excerpt: "Lær hvordan du krever 400 € erstatning for forsinkelser over 3 timer på flyvninger fra Trondheim Værnes med Norwegian.",
     category: "EU261-krav",
     color: "blue",
@@ -364,6 +365,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-sommersesong-forsinkelse-erstatning",
     title: "Erstatning for Norwegian i sommersesongen — forsinkelsesstatistikk og krav",
+    slug: "norwegian-sommersesong-forsinkelse-erstatning",
     excerpt: "Sommersesongen er verst for Norwegian-forsinkelser. Lær hvordan du krever erstatning for ferieflyvningen din.",
     category: "Flyselskap",
     color: "orange",
@@ -374,6 +376,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-lowfare-billett-forsinkelse",
     title: "Norwegian LowFare-billett og forsinkelse — gjelder de samme reglene?",
+    slug: "norwegian-lowfare-billett-forsinkelse",
     excerpt: "Har du en LowFare-billett? Du har fortsatt nøyaktig samme rettigheter til 250-600 € i erstatning under EU261.",
     category: "Flyselskap",
     color: "green",
@@ -384,6 +387,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-hvordan-soke-erstatning-steg-for-steg",
     title: "Hvordan søker du om erstatning fra Norwegian steg for steg?",
+    slug: "norwegian-hvordan-soke-erstatning-steg-for-steg",
     excerpt: "Komplett guide til hvordan du sender inn et erstatningskrav til Norwegian, og hva du gjør hvis de sier nei.",
     category: "Guider",
     color: "blue",
@@ -394,6 +398,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-dokumenter-kreve-erstatning",
     title: "Hvilke dokumenter trenger du for å kreve erstatning fra Norwegian?",
+    slug: "norwegian-dokumenter-kreve-erstatning",
     excerpt: "Dette er dokumentene du MÅ ha for å kreve erstatning fra Norwegian: Boardingkort, bookingbekreftelse og bevis på forsinkelse.",
     category: "Guider",
     color: "indigo",
@@ -404,6 +409,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-klagebrev-mal",
     title: "Hvordan skriver du et effektivt klagebrev til Norwegian — mal og råd",
+    slug: "norwegian-klagebrev-mal",
     excerpt: "Bruk vår gratis klagebrev-mal for å kreve 250-600 € i erstatning fra Norwegian. Slik sikrer du at de tar deg på alvor.",
     category: "Guider",
     color: "purple",
@@ -414,6 +420,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-ignorerer-soknaden-hva-gjore",
     title: "Norwegian ignorerer søknaden min — hva gjør du etter 30, 60 og 90 dager?",
+    slug: "norwegian-ignorerer-soknaden-hva-gjore",
     excerpt: "Norwegian svarer ikke? Lær nøyaktig hvordan du eskalerer saken etter 30, 60 og 90 dager for å få pengene dine.",
     category: "Guider",
     color: "orange",
@@ -424,6 +431,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-klage-forbrukerradet",
     title: "Hvordan klager du på Norwegian til Forbrukerrådet?",
+    slug: "norwegian-klage-forbrukerradet",
     excerpt: "Norwegian nektet kravet ditt? Slik klager du gratis til Forbrukerrådet, og hvorfor det kan ta lang tid.",
     category: "Rettigheter",
     color: "green",
@@ -434,6 +442,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-claimwinger-erstatningskrav-bekreftede-saker",
     title: "Hvordan ClaimWinger vinner erstatningskrav mot Norwegian — bekreftede saker",
+    slug: "norwegian-claimwinger-erstatningskrav-bekreftede-saker",
     excerpt: "Se bevis på hvordan ClaimWinger vinner 98% av erstatningskrav mot Norwegian gjennom juridisk ekspertise.",
     category: "EU261-krav",
     color: "green",
@@ -444,6 +453,7 @@ export const blogArticlesNo: BlogArticleNo[] = [
   {
     id: "norwegian-foreldelsesfrist-krav",
     title: "Foreldelsesfrist for Norwegian-krav — hvor lenge har du på deg?",
+    slug: "norwegian-foreldelsesfrist-krav",
     excerpt: "I Norge har du 3 år på deg til å kreve fly-erstatning fra Norwegian. Slik sikrer du at kravet ditt ikke foreldes.",
     category: "Rettigheter",
     color: "blue",
