@@ -114,6 +114,9 @@ export function LayoutIt({ children }: LayoutItProps) {
                     <Link href="/en" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                       🇬🇧 English
                     </Link>
+                    <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      🇸🇪 Svenska
+                    </Link>
                   </div>
                 )}
               </div>
@@ -220,6 +223,9 @@ export function LayoutIt({ children }: LayoutItProps) {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     🇮🇹 Italiano
+                  </Link>
+                  <Link href="/sv" className="block text-gray-700 dark:text-gray-300 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
+                    🇸🇪 Svenska
                   </Link>
                 </div>
               </div>

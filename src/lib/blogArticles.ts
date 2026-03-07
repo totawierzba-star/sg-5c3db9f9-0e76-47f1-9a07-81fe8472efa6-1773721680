@@ -1,8 +1,10 @@
 export interface BlogArticle {
+  id?: string;
   title: string;
   slug: string;
   excerpt: string;
   date: string;
+  publishDate?: string;
   readTime: string;
   category: string;
   featured?: boolean;

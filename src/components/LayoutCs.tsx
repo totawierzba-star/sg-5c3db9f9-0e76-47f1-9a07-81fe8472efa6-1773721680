@@ -44,41 +44,29 @@ export function LayoutCs({ children }: LayoutCsProps) {
                   <ChevronDown className="h-4 w-4" />
                 </button>
                 <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <Link href="/" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-t-lg">
+                  <Link href="/" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg">
                     🇵🇱 Polski
                   </Link>
-                  <Link href="/zh" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
+                  <Link href="/zh" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                     🇨🇳 中文
                   </Link>
-                  <Link
-                    href="/cs"
-                    className="block px-4 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/30 rounded-b-lg"
-                  >
+                  <Link href="/cs" className="block px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-b-lg">
                     🇨🇿 Čeština
                   </Link>
-                  <Link
-                    href="/hi"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
+                  <Link href="/hi" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                     🇮🇳 हिन्दी
                   </Link>
-                  <Link
-                    href="/sk"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
+                  <Link href="/sk" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                     🇸🇰 Slovenčina
                   </Link>
-                  <Link
-                    href="/it"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-lg"
-                  >
+                  <Link href="/it" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
                     🇮🇹 Italiano
                   </Link>
-                  <Link
-                    href="/en"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇺🇸 English
+                  <Link href="/en" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    🇬🇧 English
+                  </Link>
+                  <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg">
+                    🇸🇪 Svenska
                   </Link>
                 </div>
               </div>
@@ -184,6 +172,12 @@ export function LayoutCs({ children }: LayoutCsProps) {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       🇺🇸 English
+                    </Link>
+                    <Link href="/it" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
+                      <span className="mr-2">🇮🇹</span> Italiano
+                    </Link>
+                    <Link href="/sv" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
+                      <span className="mr-2">🇸🇪</span> Svenska
                     </Link>
                   </div>
                 </div>

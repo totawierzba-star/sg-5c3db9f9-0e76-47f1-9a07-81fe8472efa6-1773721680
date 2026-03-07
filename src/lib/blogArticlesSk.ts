@@ -322,6 +322,73 @@ export const blogArticlesSk: BlogArticleSk[] = [
     publishDate: "2026-03-05",
     featured: true,
     color: "green"
+  },
+  // NOVÉ ARTYKUŁY (Batch 2)
+  {
+    id: "austrian-airlines-meskanie-odskodnenie",
+    title: "Austrian Airlines – meškanie a zrušenie letu: Návod na odškodnenie",
+    slug: "austrian-airlines-meskanie-odskodnenie",
+    category: "airline",
+    airlineName: "Austrian Airlines",
+    flag: "🇦🇹",
+    wordCount: 1800,
+    readTime: 9,
+    excerpt: "Letíte z Viedne a váš let Austrian Airlines meškal? Zistite, ako získať až 600 € odškodné. Kompletný návod pre slovenských cestujúcich.",
+    publishDate: "2026-03-06",
+    featured: false,
+    color: "red"
+  },
+  {
+    id: "eurowings-odskodnenie-meskanie",
+    title: "Eurowings – odškodnenie za meškanie letu: Čo musíte vedieť?",
+    slug: "eurowings-odskodnenie-meskanie",
+    category: "airline",
+    airlineName: "Eurowings",
+    flag: "🇩🇪",
+    wordCount: 1650,
+    readTime: 8,
+    excerpt: "Nízkonákladovka Eurowings vám zrušila let? Poznáte svoje práva? Zistite, kedy vám patrí finančná kompenzácia a ako o ňu požiadať.",
+    publishDate: "2026-03-06",
+    featured: false,
+    color: "purple"
+  },
+  {
+    id: "lufthansa-odskodnenie-meskanie",
+    title: "Lufthansa – meškanie, zrušenie a štrajk: Sprievodca odškodnením",
+    slug: "lufthansa-odskodnenie-meskanie",
+    category: "airline",
+    airlineName: "Lufthansa",
+    flag: "🇩🇪",
+    wordCount: 2100,
+    readTime: 11,
+    excerpt: "Nemecký gigant Lufthansa a problémy s letmi. Ako získať kompenzáciu za meškanie alebo zrušenie letu? Všetko o vašich právach.",
+    publishDate: "2026-03-06",
+    featured: false,
+    color: "yellow"
+  },
+  {
+    id: "ako-podat-staznost-letecka-spolocnost",
+    title: "Ako podať sťažnosť leteckej spoločnosti? Vzor a postup krok za krokom",
+    slug: "ako-podat-staznost-letecka-spolocnost",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 12,
+    excerpt: "Chcete žiadať o odškodnenie sami? Ponúkame vám návod, ako napísať sťažnosť, čo do nej uviesť a kde ju poslať. Ušetrite čas a nervy.",
+    publishDate: "2026-03-06",
+    featured: false,
+    color: "blue"
+  },
+  {
+    id: "zamietnuta-reklamacia-co-robit",
+    title: "Letecká spoločnosť zamietla vašu reklamáciu? Nevzdávajte sa!",
+    slug: "zamietnuta-reklamacia-co-robit",
+    category: "longtail",
+    wordCount: 1900,
+    readTime: 10,
+    excerpt: "Dostali ste zamietavú odpoveď s odôvodnením 'mimoriadne okolnosti'? Zistite, prečo aerolinky často klamú a ako získať svoje peniaze aj tak.",
+    publishDate: "2026-03-06",
+    featured: false,
+    color: "red"
   }
 ];
 

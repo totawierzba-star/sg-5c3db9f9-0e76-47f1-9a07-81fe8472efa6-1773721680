@@ -31,6 +31,9 @@ class MyDocument extends Document<{ lang: string }> {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           
+          {/* Google Search Console Verification */}
+          <meta name="google-site-verification" content="DPV_dIXtVkWNE_tb-yvnEz2pTSn_JUs4WgVzj2jTKsE" />
+          
           <SEOElements
             title="ProblemLot.pl – Odszkodowanie za opóźniony lub odwołany lot"
             description="Specjalizujemy się w sprawach odszkodowań lotniczych. Zajmujemy się całą dokumentacją, negocjacjami z linią lotniczą i ewentualnymi procedurami sądowymi."

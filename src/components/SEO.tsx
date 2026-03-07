@@ -13,24 +13,27 @@ interface SEOProps {
 export function SEOElements({
   title = "Hello World",
   description = "Welcome to my app",
-  image = "/og-image.png",
+  image,
   url,
   canonical,
   schema,
 }: SEOProps) {
-  const siteUrl = "https://lotproblem.pl";
-  const defaultImage = `${siteUrl}/og-image.png`;
-  const metaImage = image || defaultImage;
+  const siteUrl = "https://problemlot.com";
+  
+  // Use dynamic OG image if no specific image is provided
+  const ogImageUrl = image || `${siteUrl}/api/og?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(description.slice(0, 100))}`;
+  
   return (
     <>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.svg" />
+      <link rel="alternate icon" href="/favicon.ico" />
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {image && <meta property="og:image" content={image} />}
+      <meta property="og:image" content={ogImageUrl} />
       {url && <meta property="og:url" content={url} />}
       <meta property="og:type" content="website" />
 
@@ -38,7 +41,7 @@ export function SEOElements({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {image && <meta name="twitter:image" content={metaImage} />}
+      <meta name="twitter:image" content={ogImageUrl} />
       {canonical && <link rel="canonical" href={canonical} />}
 
       {/* Schema.org JSON-LD */}
@@ -57,29 +60,35 @@ export function SEOElements({
 
 // SEO component for use in pages/_app.tsx or individual pages (uses next/head)
 export function SEO({ title, description, image, url, schema }: SEOProps) {
-  const siteTitle = "LotProblem.pl";
-  const defaultDescription = "Welcome to my app";
-  const siteUrl = "https://lotproblem.pl";
-  const defaultImage = `${siteUrl}/og-image.png`;
-  const metaImage = image || defaultImage;
+  const siteTitle = "Problemlot.com";
+  const defaultDescription = "Odszkodowania za opóźnione i odwołane loty";
+  const siteUrl = "https://problemlot.com";
+  
+  const finalTitle = title || siteTitle;
+  const finalDesc = description || defaultDescription;
+  
+  // Use dynamic OG image if no specific image is provided
+  const ogImageUrl = image || `${siteUrl}/api/og?title=${encodeURIComponent(finalTitle)}&desc=${encodeURIComponent(finalDesc.slice(0, 100))}`;
+
   return (
     <Head>
-      <title>{title || siteTitle}</title>
-      <meta name="description" content={description || defaultDescription} />
-      <link rel="icon" href="/favicon.ico" />
+      <title>{finalTitle}</title>
+      <meta name="description" content={finalDesc} />
+      <link rel="icon" href="/favicon.svg" />
+      <link rel="alternate icon" href="/favicon.ico" />
 
       {/* Open Graph */}
-      <meta property="og:title" content={title || siteTitle} />
-      <meta property="og:description" content={description || defaultDescription} />
-      {image && <meta property="og:image" content={image} />}
+      <meta property="og:title" content={finalTitle} />
+      <meta property="og:description" content={finalDesc} />
+      <meta property="og:image" content={ogImageUrl} />
       {url && <meta property="og:url" content={url} />}
       <meta property="og:type" content="website" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title || siteTitle} />
-      <meta name="twitter:description" content={description || defaultDescription} />
-      {image && <meta name="twitter:image" content={metaImage} />}
+      <meta name="twitter:title" content={finalTitle} />
+      <meta name="twitter:description" content={finalDesc} />
+      <meta name="twitter:image" content={ogImageUrl} />
       {schema && (
         <script
           type="application/ld+json"

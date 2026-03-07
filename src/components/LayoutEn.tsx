@@ -97,6 +97,12 @@ export function LayoutEn({ children }: LayoutEnProps) {
                   >
                     🇬🇧 English
                   </Link>
+                  <Link href="/it" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
+                    <span className="mr-2">🇮🇹</span> Italiano
+                  </Link>
+                  <Link href="/sv" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
+                    <span className="mr-2">🇸🇪</span> Svenska
+                  </Link>
                 </div>
               </div>
 
@@ -135,6 +141,15 @@ export function LayoutEn({ children }: LayoutEnProps) {
             >
               Blog
             </Link>
+            <div className="flex gap-4">
+              <Link href="/" className="text-xl">🇵🇱</Link>
+              <Link href="/cs" className="text-xl">🇨🇿</Link>
+              <Link href="/sk" className="text-xl">🇸🇰</Link>
+              <Link href="/zh" className="text-xl">🇨🇳</Link>
+              <Link href="/hi" className="text-xl">🇮🇳</Link>
+              <Link href="/it" className="text-xl">🇮🇹</Link>
+              <Link href="/sv" className="text-xl">🇸🇪</Link>
+            </div>
           </nav>
         </div>
       </header>

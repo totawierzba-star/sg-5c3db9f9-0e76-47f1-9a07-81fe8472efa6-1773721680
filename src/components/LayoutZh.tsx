@@ -169,6 +169,12 @@ export function LayoutZh({ children }: LayoutZhProps) {
                     🇮🇹 Italiano
                   </Link>
                   <Link
+                    href="/sv"
+                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    🇸🇪 Svenska
+                  </Link>
+                  <Link
                     href="/en"
                     className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
                   >
@@ -351,6 +357,20 @@ export function LayoutZh({ children }: LayoutZhProps) {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     🇸🇰 Slovenčina
+                  </Link>
+                  <Link
+                    href="/it"
+                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇮🇹 Italiano
+                  </Link>
+                  <Link
+                    href="/sv"
+                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🇸🇪 Svenska
                   </Link>
                 </div>
               </div>
