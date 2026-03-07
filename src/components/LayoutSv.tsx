@@ -154,6 +154,7 @@ export function LayoutSv({ children }: LayoutProps) {
                   <Link href="/hi" className="text-2xl hover:scale-110 transition-transform">🇮🇳</Link>
                   <Link href="/it" className="text-2xl hover:scale-110 transition-transform">🇮🇹</Link>
                   <Link href="/sv" className="text-2xl opacity-50 cursor-default">🇸🇪</Link>
+                  <Link href="/no" className="text-2xl">🇳🇴</Link>
                 </div>
               </div>
             </nav>

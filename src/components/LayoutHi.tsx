@@ -210,6 +210,9 @@ export function LayoutHi({ children }: LayoutHiProps) {
                     <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
                       <span className="mr-2">🇸🇪</span> Svenska
                     </Link>
+                    <Link href="/no" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
+                      <span className="mr-2">🇳🇴</span> Norsk
+                    </Link>
                   </div>
                 </div>
 

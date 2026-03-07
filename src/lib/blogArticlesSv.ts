@@ -821,13 +821,12 @@ export const blogArticlesSv: BlogArticle[] = [
     id: "arlanda-forsenade-flygbolag-statistik",
     title: "Mest försenade flygbolagen på Arlanda 2025 — Statistik och ersättningsråd",
     slug: "arlanda-forsenade-flygbolag-statistik",
-    category: "Stockholm Arlanda",
-    date: "2026-03-07",
-    publishDate: "2026-03-07",
-    readTime: "16 min",
-    excerpt: "Vilka flygbolag och rutter från Stockholm Arlanda har flest förseningar? Se aktuell statistik och lär dig maximera dina chanser till 600 € ersättning.",
+    category: "Arlanda",
+    excerpt: "Vilka flygbolag har flest förseningar på Arlanda? Se aktuell statistik och lär dig hur du kräver ersättning från värsta bovarna.",
     featured: true,
-    color: "blue"
+    color: "purple",
+    date: "2026-03-07",
+    readTime: "4 min"
   },
   {
     id: "arlanda-new-york-forsening-600-euro",
@@ -951,14 +950,143 @@ export const blogArticlesSv: BlogArticle[] = [
   },
   {
     id: "transatlantiska-flyg-sverige-600-euro",
-    title: "Transatlantiska flyg från Sverige — Hur du kräver 600 € maximalt",
+    title: "Transatlantiska flyg från Sverige — hur du kräver 600 € maximalt",
     slug: "transatlantiska-flyg-sverige-600-euro",
-    category: "Populära destinationer",
-    date: "2026-03-07",
-    publishDate: "2026-03-07",
-    readTime: "12 min",
-    excerpt: "Inställt eller försenat flyg till USA? Läs exakt hur 600 €-regeln fungerar över Atlanten och vad som gäller vid missade byten i Europa eller USA.",
+    category: "popular-routes",
+    excerpt: "Ska du flyga till USA eller Asien? Lär dig hur du säkrar den maximala ersättningen på 600 euro vid missade byten i Europa eller USA.",
     featured: true,
     color: "blue"
+  },
+  {
+    id: "hur-mycket-ersattning-forsenat-sas-flyg",
+    title: "Hur mycket ersättning får jag för ett försenat SAS-flyg?",
+    slug: "hur-mycket-ersattning-forsenat-sas-flyg",
+    category: "foundation",
+    excerpt: "Snabbt svar: Du kan få 250 €, 400 € eller 600 € för ett försenat SAS-flyg beroende på distans. Läs vår guide och kräv din rättmätiga flygersättning.",
+    featured: true,
+    color: "blue",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "hur-mycket-ersattning-installt-flyg-sverige",
+    title: "Hur mycket ersättning får jag för ett inställt flyg i Sverige?",
+    slug: "hur-mycket-ersattning-installt-flyg-sverige",
+    category: "foundation",
+    excerpt: "Få reda på exakt hur mycket pengar du har rätt till om ditt flyg från eller till Sverige ställs in.",
+    featured: true,
+    color: "red",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "hur-lang-tid-flygersattning-utbetald",
+    title: "Hur lång tid tar det att få flygersättning utbetald?",
+    slug: "hur-lang-tid-flygersattning-utbetald",
+    category: "long-tail",
+    excerpt: "Väntar du på dina pengar för ett försenat flyg? Så här lång tid tar det normalt att få utbetalningen.",
+    featured: false,
+    color: "yellow",
+    date: "2026-03-07",
+    readTime: "3 min"
+  },
+  {
+    id: "krava-ersattning-flyg-3-ar-sedan",
+    title: "Kan jag kräva ersättning för ett flyg för 3 år sedan?",
+    slug: "krava-ersattning-flyg-3-ar-sedan",
+    category: "long-tail",
+    excerpt: "I Sverige och EU gäller olika preskriptionstider. Få reda på exakt hur gamla flygningar du kan kräva ersättning för.",
+    featured: false,
+    color: "purple",
+    date: "2026-03-07",
+    readTime: "3 min"
+  },
+  {
+    id: "flygbolaget-ignorerar-min-ansokan",
+    title: "Vad gör jag om flygbolaget ignorerar min ansökan?",
+    slug: "flygbolaget-ignorerar-min-ansokan",
+    category: "foundation",
+    excerpt: "Får du inget svar från flygbolaget? Läs vår guide om nästa steg för att tvinga fram dina pengar via ombud eller ARN.",
+    featured: true,
+    color: "red",
+    date: "2026-03-07",
+    readTime: "5 min"
+  },
+  {
+    id: "vem-far-ersattningen-resenaren-eller-researrangor",
+    title: "Vem får ersättningen — resenären eller researrangören?",
+    slug: "vem-far-ersattningen-resenaren-eller-researrangor",
+    category: "long-tail",
+    excerpt: "Betalade företaget eller resebyrån din biljett? Läs om vem som faktiskt har laglig rätt till EU-kompensationen.",
+    featured: false,
+    color: "blue",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "galler-eu261-flyg-utanfor-europa",
+    title: "Gäller EU261 för flyg utanför Europa?",
+    slug: "galler-eu261-flyg-utanfor-europa",
+    category: "long-tail",
+    excerpt: "Flyger du till USA eller Asien? Läs exakt när EU:s passagerarregler skyddar din utlandsresa.",
+    featured: false,
+    color: "green",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "behover-jag-anlita-ombud-flygersattning",
+    title: "Behöver jag anlita ett ombud för att få flygersättning?",
+    slug: "behover-jag-anlita-ombud-flygersattning",
+    category: "foundation",
+    excerpt: "Göra det själv eller ta hjälp? Vi jämför kostnader, tid och chanser att vinna mot flygbolagen.",
+    featured: true,
+    color: "purple",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "lonar-sig-ersattningsforetag-flygkrav",
+    title: "Lönar det sig att använda ett ersättningsföretag för flygkrav?",
+    slug: "lonar-sig-ersattningsforetag-flygkrav",
+    category: "foundation",
+    excerpt: "Läs om kostnader, chanser att vinna och varför ersättningsföretag ofta är det snabbaste sättet att få pengarna.",
+    featured: true,
+    color: "blue",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "hur-lang-tid-ansoka-flygersattning-sverige",
+    title: "Hur lång tid har jag på mig att ansöka om flygersättning i Sverige?",
+    slug: "hur-lang-tid-ansoka-flygersattning-sverige",
+    category: "long-tail",
+    excerpt: "Läs allt om preskriptionstiden i Sverige (och EU) för att kräva ersättning för försenade flyg. Se tidsgränserna här.",
+    featured: false,
+    color: "red",
+    date: "2026-03-07",
+    readTime: "3 min"
+  },
+  {
+    id: "vilka-dokument-ersattning-forsenat-flyg",
+    title: "Vilka dokument behöver jag för att ansöka om ersättning för försenat flyg?",
+    slug: "vilka-dokument-ersattning-forsenat-flyg",
+    category: "foundation",
+    excerpt: "Checklista: PNR, bokningsnummer, boardingkort och kvitton. Så förbereder du din ansökan.",
+    featured: false,
+    color: "green",
+    date: "2026-03-07",
+    readTime: "4 min"
+  },
+  {
+    id: "betalar-sas-ersattning-fakta-statistik",
+    title: "Betalar SAS ersättning — fakta, statistik och bekräftade fall",
+    slug: "betalar-sas-ersattning-fakta-statistik",
+    category: "foundation",
+    excerpt: "Statistik om SAS utbetalningar av flygersättning enligt EU261. Får du nej på ditt krav? Se hur du tvingar fram pengarna.",
+    featured: true,
+    color: "blue",
+    date: "2026-03-07",
+    readTime: "4 min"
   }
 ];
