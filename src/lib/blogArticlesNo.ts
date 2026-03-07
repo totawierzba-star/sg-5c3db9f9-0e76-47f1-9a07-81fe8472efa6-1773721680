@@ -140,14 +140,83 @@ export const blogArticlesNo: BlogArticleNo[] = [
   },
   {
     id: "betaler-norwegian-erstatning-fakta-statistikk",
-    title: "Betaler Norwegian ut erstatning? Fakta og statistikk",
+    title: "Betaler Norwegian erstatning — fakta, statistikk og bekreftede saker",
     slug: "betaler-norwegian-erstatning-fakta-statistikk",
-    excerpt: "Fakta sjekk: Hvor ofte betaler Norwegian ut EU261 erstatning for forsinkelser frivillig? Unngå urettmessige avslag.",
+    excerpt: "Fakta sjekk: Hvor ofte betaler Norwegian ut EU261 erstatning for forsinkelser frivillig? Se statistikk og finn ut hvordan du unngår avslag.",
     category: "Flyselskap",
     color: "red",
     date: "2025-03-07",
     readTime: "4 min",
     wordCount: 810
+  },
+  {
+    id: "norwegian-forsinkelse-erstatning-guide",
+    title: "Erstatning for forsinket Norwegian-fly – komplett guide 2025 for norske reisende",
+    slug: "norwegian-forsinkelse-erstatning-guide",
+    excerpt: "Alt du trenger å vite om Norwegian-forsinkelse og erstatning: EU261-regler, 250-600 € kompensasjon, klagefrister, dokumenter og hvordan ClaimWinger kan hjelpe deg.",
+    category: "Norwegian",
+    featured: true,
+    color: "blue",
+    date: "2025-03-07",
+    readTime: "12 min",
+    wordCount: 3560
+  },
+  {
+    id: "norwegian-kansellert-fly-erstatning",
+    title: "Norwegian kansellerte flyet – hvordan får du opptil 600 € i erstatning?",
+    slug: "norwegian-kansellert-fly-erstatning",
+    excerpt: "Komplett guide til erstatning når Norwegian kansellerer flyet ditt. Lær om 250-600 € kompensasjon, dine rettigheter, og hvordan ClaimWinger kan hjelpe deg.",
+    category: "Norwegian",
+    featured: true,
+    color: "red",
+    date: "2025-03-07",
+    readTime: "10 min",
+    wordCount: 2880
+  },
+  {
+    id: "norwegian-hvor-mye-erstatning",
+    title: "Hvor mye erstatning kan du kreve fra Norwegian? (250 € / 400 € / 600 €)",
+    slug: "norwegian-hvor-mye-erstatning",
+    excerpt: "Få 250 €, 400 € eller 600 € fra Norwegian avhengig av flydistanse. Komplett guide til Norwegian-erstatning i Norge under EU261 og EØS-avtalen.",
+    category: "Norwegian",
+    featured: true,
+    color: "green",
+    date: "2025-03-07",
+    readTime: "8 min",
+    wordCount: 2450
+  },
+  {
+    id: "norwegian-forsinket-mer-enn-3-timer",
+    title: "Norwegian forsinket mer enn 3 timer – dine rettigheter steg for steg",
+    slug: "norwegian-forsinket-mer-enn-3-timer",
+    excerpt: "Komplett guide til hva du skal gjøre når Norwegian-flyet er mer enn 3 timer forsinket. Få opptil 600 € i erstatning + omsorg på flyplassen.",
+    category: "Norwegian",
+    color: "orange",
+    date: "2025-03-07",
+    readTime: "9 min",
+    wordCount: 2730
+  },
+  {
+    id: "norwegian-oslo-london-erstatning",
+    title: "Norwegian Oslo–London erstatning – mest trafikkerte rute, flest problemer",
+    slug: "norwegian-oslo-london-erstatning",
+    excerpt: "Oslo–London er Norwegians mest trafikkerte rute og har høyest forsinkelsesrate. Få opptil 250 € erstatning for forsinkede eller kansellerte fly.",
+    category: "Norwegian",
+    color: "blue",
+    date: "2025-03-07",
+    readTime: "7 min",
+    wordCount: 1850
+  },
+  {
+    id: "norwegian-oslo-new-york-erstatning",
+    title: "Norwegian Oslo–New York erstatning – hvordan få 600 € for langdistanse?",
+    slug: "norwegian-oslo-new-york-erstatning",
+    excerpt: "Oslo–New York er ~5900 km og kvalifiserer for maksimal 600 € erstatning ved forsinkelse eller kansellering. Komplett guide til transatlantiske rettigheter.",
+    category: "Norwegian",
+    color: "green",
+    date: "2025-03-07",
+    readTime: "8 min",
+    wordCount: 2150
   }
 ];
 
