@@ -432,6 +432,82 @@ export default function SasReserouteringPage() {
             </ul>
           </div>
         </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Kan jag få ersättning om SAS reserouterade mig 2 månader före avgång?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, om du når slutdestinationen 3+ timmar senare än ursprunglig plan. Det spelar ingen roll när SAS meddelade dig — avgörande är förseningen vid ankomst jämfört med ursprunglig bokad tid."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Räknas reseroutering som inställt flyg?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, i de flesta fall. Om ditt ursprungliga flygnummer inte längre avgår och du bokas om till annat flygnummer räknas det som inställning enligt EU261."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Kan jag kräva både ersättning OCH återbetalning?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej. Du måste välja: Antingen accepterar du reserouteringen och får €250-600 om 3+h försening, eller tar du återbetalning utan EU261-ersättning."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Får jag hotell och mat om jag måste vänta på reserouteringen?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, absolut! Enligt EU261 Artikel 9 måste SAS erbjuda mat och dryck, hotell om övernattning krävs, transport mellan flygplats och hotell, samt 2 telefonsamtal/e-post. Detta är utöver din rätt till €250-600 kompensation."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "SAS säger att reserouteringen berodde på teknisk fråga — måste jag acceptera det?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej! Tekniska fel är INTE extraordinära omständigheter enligt EU-domstolen (C-549/07). SAS måste underhålla sina plan ordentligt. Du har fortfarande rätt till ersättning."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Kan jag boka egen transport via konkurrent och kräva ersättning?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, men var försiktig. Om SAS erbjudande når destination 5+ timmar senare kan du boka själv och SAS betalar. Om SAS erbjudande når destination 2-3h senare är det svårare att motivera egen bokning."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Vad händer om mitt ursprungliga flyg ändå avgick utan mig?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Om SAS reserouterade dig till senare flyg men det ursprungliga flyget faktiskt avgick (t.ex. pga felaktig information från SAS), har du starkare rättsläge. Detta klassas som denied boarding och ger automatisk rätt till ersättning."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Vad händer om jag accepterar reserouteringen men sen ångrar mig?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Du kan fortfarande kräva återbetalning istället, så länge du inte har använt biljetten ännu. Kontakta SAS och säg att du ångrat dig och vill ha full återbetalning enligt EU261 Art. 8."
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </article>
     </LayoutSv>
   );
