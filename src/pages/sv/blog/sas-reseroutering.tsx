@@ -91,7 +91,7 @@ export default function SasReserouteringPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300 px-4 py-3">&le;1500 km</td>
+                  <td className="border border-gray-300 px-4 py-3">&lt;1500 km</td>
                   <td className="border border-gray-300 px-4 py-3">3+ timmar</td>
                   <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€250</td>
                 </tr>
