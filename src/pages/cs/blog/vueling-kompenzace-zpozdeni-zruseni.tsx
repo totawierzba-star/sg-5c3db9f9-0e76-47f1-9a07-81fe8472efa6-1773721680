@@ -1,0 +1,442 @@
+import { LayoutCs } from "@/components/LayoutCs";
+import { SEO } from "@/components/SEO";
+import Link from "next/link";
+import { Plane, Clock, Euro, AlertCircle, CheckCircle, ArrowRight, Users } from "lucide-react";
+
+export default function VuelingKompenzace() {
+  return (
+    <LayoutCs>
+      <SEO 
+        title="Vueling kompenzace 2026 — až 600 € za zpoždění a zrušení"
+        description="Zjistěte, jak získat kompenzaci až 600 € od Vueling za zpožděný nebo zrušený let. Kompletní průvodce pro české pasažéry + template reklamace."
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Kolik zaplatí Vueling za zpožděný let?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vueling vyplácí kompenzaci €250 za lety do 1500 km, €400 za lety 1500-3500 km a €600 za lety přes 3500 km při zpoždění ≥ 3 hodiny podle EU261."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Jak dlouho trvá výplata od Vueling?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vueling obvykle vyplácí kompenzaci do 35-50 dnů od schválení nároku. Patří mezi aerolinie s nižší mírou dobrovolných výplat (52%)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Vueling je low-cost — platí EU261?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ano. EU261 platí pro VŠECHNY aerolinie provozující lety z/do EU, bez ohledu na to, zda jsou low-cost nebo premium. Vueling musí vyplatit stejně jako Lufthansa."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-8">
+        <div className="mb-8">
+          <Link href="/cs/blog" className="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center gap-2">
+            ← Zpět na blog
+          </Link>
+        </div>
+
+        <header className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Plane className="w-10 h-10 text-blue-600" />
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+              Vueling
+            </span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Vueling kompenzace za zpoždění a zrušení letu 2026
+          </h1>
+          <div className="flex items-center text-gray-600 text-sm gap-4">
+            <time dateTime="2026-03-08">8. března 2026</time>
+            <span>•</span>
+            <span>13 min čtení</span>
+          </div>
+        </header>
+
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <strong>Vueling zpožděla nebo zrušila váš let?</strong> Máte nárok na kompenzaci <strong>až 600 €</strong> podle nařízení EU 261/2004. Vueling je španělská low-cost aerolinie (součást IAG Group spolu s Iberia a British Airways) s 73% on-time performance, ale i tak dochází ke zpožděním a zrušením — a v těchto případech musí Vueling vyplatit kompenzaci. V tomto komplexním průvodci se dozvíte, kdy máte nárok, jak správně reklamovat a jak přinutit Vueling k výplatě i při odmítnutí.
+          </p>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
+            <div className="flex items-start gap-4">
+              <Euro className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-lg font-semibold text-gray-900 mb-3">
+                  💡 Vueling odmítla kompenzaci nebo nereaguje?
+                </p>
+                <p className="text-gray-700 mb-4">
+                  ClaimWinger vymáhá kompenzace od Vueling za vás — včetně složitých případů s přestupy přes Barcelona (BCN) a sporů o mimořádné okolnosti. Bez rizika, platíte jen při úspěchu.
+                </p>
+                <Link 
+                  href="https://claimwinger.com/cs/zpozdeny-let"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Získat kompenzaci od Vueling
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 flex items-center gap-3">
+            <CheckCircle className="w-8 h-8 text-green-600" />
+            Kdy máte nárok na kompenzaci od Vueling?
+          </h2>
+
+          <p>
+            Kompenzace od Vueling vám přísluší, pokud jsou splněny <strong>všechny následující podmínky</strong>:
+          </p>
+
+          <div className="bg-blue-50 p-6 rounded-lg my-6">
+            <ol className="space-y-4">
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                <div>
+                  <strong className="text-gray-900">Zpoždění ≥ 3 hodiny při příchodu</strong>
+                  <p className="text-gray-700 mt-2">
+                    Měří se čas otevření dveří letadla na konečné destinaci. I pokud letadlo vzlétlo s 1h zpožděním, ale dorazilo s 4h zpožděním → <strong>PLATÍ kompenzace</strong>.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                <div>
+                  <strong className="text-gray-900">Let byl zrušen méně než 14 dní před odletem</strong>
+                  <p className="text-gray-700 mt-2">
+                    Pokud Vueling zrušila let více než 14 dní dopředu a nabídla alternativu, kompenzace NENÍ povinná (ale refundace letenky ano).
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                <div>
+                  <strong className="text-gray-900">Nebyla mimořádná okolnost</strong>
+                  <p className="text-gray-700 mt-2">
+                    Vueling musí prokázat, že zpoždění bylo způsobeno událostí mimo jejich kontrolu (bouře, stávka ATC). Běžná technická závada NENÍ mimořádná okolnost.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
+                <div>
+                  <strong className="text-gray-900">Let byl z EU nebo do EU</strong>
+                  <p className="text-gray-700 mt-2">
+                    Vueling je španělská aerolinie → EU261 platí pro všechny lety Vueling z/do Evropy.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div className="bg-green-50 border-l-4 border-green-600 p-6 my-8 rounded-r-lg">
+            <p className="font-semibold text-gray-900 flex items-center gap-2 mb-3">
+              <CheckCircle className="w-5 h-5 text-green-600" />
+              Příklad nárokového případu:
+            </p>
+            <div className="text-gray-700 space-y-2">
+              <p>• Let Vueling VY8782 z Barcelony (BCN) do Prahy (PRG), plánovaný odlet 16:35</p>
+              <p>• Odlet zpožděn na 20:10 kvůli "technické závadě"</p>
+              <p>• Přílet do Prahy: plánovaný 19:05, skutečný <strong>22:35</strong> → zpoždění <strong>3h 30min</strong></p>
+              <p className="font-semibold text-green-700">→ Nárok na €250 kompenzaci (vzdálenost BCN-PRG {"<"} 1500 km)</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 flex items-center gap-3">
+            <Euro className="w-8 h-8 text-blue-600" />
+            Výše kompenzace od Vueling — tabulka 2026
+          </h2>
+
+          <div className="overflow-x-auto my-6 rounded-lg border border-gray-200">
+            <table className="min-w-full bg-white">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">Vzdálenost letu</th>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">Zpoždění ≥ 3h</th>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">Příklady tras Vueling</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="px-6 py-4">Do 1 500 km</td>
+                  <td className="px-6 py-4">
+                    <span className="text-2xl font-bold text-blue-600">€250</span>
+                  </td>
+                  <td className="px-6 py-4 text-gray-700">Barcelona → Praha, Barcelona → Paříž</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="px-6 py-4">1 500 – 3 500 km</td>
+                  <td className="px-6 py-4">
+                    <span className="text-2xl font-bold text-blue-600">€400</span>
+                  </td>
+                  <td className="px-6 py-4 text-gray-700">Barcelona → Tel Aviv, Barcelona → Marrákeš</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-6 py-4">Přes 3 500 km</td>
+                  <td className="px-6 py-4">
+                    <span className="text-2xl font-bold text-blue-600">€600</span>
+                  </td>
+                  <td className="px-6 py-4 text-gray-700">Barcelona → Dakar (vzácně, Vueling většinou {"<"}3500km trasy)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-sm text-gray-600 mt-4 italic">
+            *Poznámka: Vueling provozuje převážně krátké a střední trasy, dlouhé transoceánské lety jsou vzácné.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+            Vueling vs. ostatní aerolinie — statistika plateb
+          </h2>
+
+          <div className="overflow-x-auto my-6 rounded-lg border border-gray-200">
+            <table className="min-w-full bg-white">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">Aerolinie</th>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">% dobrovolných výplat</th>
+                  <th className="px-6 py-4 border-b text-left font-semibold text-gray-900">Průměrný čas výplaty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-yellow-50 hover:bg-yellow-100">
+                  <td className="px-6 py-4 font-semibold">Vueling</td>
+                  <td className="px-6 py-4">
+                    <span className="text-yellow-700 font-bold">52 %</span>
+                  </td>
+                  <td className="px-6 py-4">42 dnů</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="px-6 py-4">Iberia (sesterská společnost IAG)</td>
+                  <td className="px-6 py-4">58 %</td>
+                  <td className="px-6 py-4">38 dnů</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="px-6 py-4">Lufthansa</td>
+                  <td className="px-6 py-4 text-green-600 font-bold">68 %</td>
+                  <td className="px-6 py-4">28 dnů</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="px-6 py-4">Ryanair</td>
+                  <td className="px-6 py-4">
+                    <span className="text-red-600 font-bold">12 %</span>
+                  </td>
+                  <td className="px-6 py-4">180+ dnů (po eskalaci)</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-6 py-4">Wizz Air</td>
+                  <td className="px-6 py-4">
+                    <span className="text-red-600 font-bold">18 %</span>
+                  </td>
+                  <td className="px-6 py-4">120+ dnů (po eskalaci)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-sm text-gray-600 mt-4 italic">
+            *Data: ÚCL & ClaimWinger statistiky 2023-2025. Vueling má nižší míru dobrovolných výplat než premium aerolinie, ale vyšší než ultra-low-cost konkurence.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+            Jak reklamovat kompenzaci u Vueling — krok za krokem
+          </h2>
+
+          <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+            <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg">1</span>
+            Shromážděte důkazy IHNED po letu
+          </h3>
+
+          <div className="bg-blue-50 p-6 rounded-lg my-6">
+            <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <AlertCircle className="w-5 h-5 text-blue-600" />
+              Checklist důkazů:
+            </h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>Palubní vstupenka (boarding pass)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>Potvrzení rezervace (booking confirmation + PNR číslo)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>Důkaz o zpoždění — FlightRadar24 screenshot</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>E-mail od Vueling (pokud bylo zrušení)</span>
+              </li>
+            </ul>
+          </div>
+
+          <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4 flex items-center gap-2">
+            <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-lg">2</span>
+            Podejte reklamaci u Vueling
+          </h3>
+
+          <div className="bg-gray-900 text-gray-100 p-6 rounded-lg my-6 overflow-x-auto">
+            <pre className="text-sm whitespace-pre-wrap font-mono">
+{`Předmět: Reklamace — zpoždění/zrušení letu VY[ČÍSLO], požadavek na kompenzaci €[ČÁSTKA]
+
+Vážená společnost Vueling,
+
+dne [DATUM] jsem letěl/a letem VY[ČÍSLO] z [ODKUD] do [KAM], který měl zpoždění [X] hodin / byl zrušen.
+
+Podrobnosti letu:
+• Číslo letu: VY[ČÍSLO]
+• Datum: [DD.MM.RRRR]
+• Plánovaný odlet: [ČAS]
+• Skutečný odlet: [ČAS]
+• Plánovaný přílet: [ČAS]
+• Skutečný přílet: [ČAS]
+• Celkové zpoždění: [X] hodin [Y] minut
+
+Podle čl. 7 nařízení (ES) 261/2004 požaduji kompenzaci ve výši €[250/400/600].
+
+Platební údaje:
+• Jméno účtu: [VAŠE JMÉNO]
+• IBAN: [CZ XX XXXX XXXX XXXX XXXX XXXX]
+• Adresa: [VAŠE ADRESA]
+
+V příloze: boarding pass, booking confirmation, FlightRadar24 screenshot.
+
+Lhůta: 14 dnů.
+
+S pozdravem,
+[VAŠE JMÉNO]
+[E-MAIL]
+[TELEFON]`}
+            </pre>
+          </div>
+
+          <div className="bg-blue-100 border-l-4 border-blue-600 p-6 my-6 rounded-r-lg">
+            <p className="font-semibold text-gray-900 mb-3">
+              📧 Kontakt Vueling Customer Relations:
+            </p>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600">•</span>
+                <span>Online formulář: <a href="https://www.vueling.com/en/we-are-vueling/customer-service" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">vueling.com → Customer Service → Claims</a></span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600">•</span>
+                <span>E-mail: <strong className="text-gray-900">customerrelations@vueling.com</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
+            <div className="flex items-start gap-4">
+              <AlertCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-lg font-semibold text-gray-900 mb-3">
+                  🚀 Vueling odmítla kompenzaci nebo nereaguje?
+                </p>
+                <p className="text-gray-700 mb-4">
+                  ClaimWinger má zkušenost s tisíci případů Vueling a zná všechny jejich argumenty. Vymůžeme kompenzaci za vás — platíte jen při úspěchu.
+                </p>
+                <Link 
+                  href="https://claimwinger.com/cs/zruseny-let"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Vymáhat kompenzaci bez starostí
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+            Časté dotazy (FAQ)
+          </h2>
+
+          <div className="space-y-6">
+            <div className="border-l-4 border-blue-600 pl-6 py-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Vueling je low-cost — platí stejná kompenzace jako u Lufthansy?
+              </h3>
+              <p className="text-gray-700">
+                ANO. EU261 platí pro VŠECHNY aerolinie bez ohledu na cenu letenky. Vueling musí vyplatit stejných €250-600 jako premium aerolinie.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-blue-600 pl-6 py-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Kolik času mám na podání reklamace u Vueling?
+              </h3>
+              <p className="text-gray-700">
+                V České republice: <strong>3 roky</strong> od data letu. Ve Španělsku: 5 let. Pokud jste český občan a let vycházel z ČR, platí česká 3letá lhůta.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-blue-600 pl-6 py-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Vyplatí se použít ClaimWinger místo samostatného vymáhání?
+              </h3>
+              <p className="text-gray-700">
+                Ano, zejména u Vueling. Má nízkou míru dobrovolných výplat (52 %). <Link href="https://claimwinger.com/cs" className="text-blue-600 hover:underline font-semibold">ClaimWinger získá kompenzaci</Link> za 4-8 týdnů vs. 12-18 měsíců při samostatném vymáhání.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
+            Závěr
+          </h2>
+
+          <p>
+            Vueling má nižší míru dobrovolných výplat než premium aerolinie, ale MUSÍ respektovat EU261. Znalost vašich práv je klíčová.
+          </p>
+
+          <ul className="list-disc ml-6 space-y-2 mt-4 text-gray-700">
+            <li>Nárok na <strong>€250-600</strong> při zpoždění ≥ 3h</li>
+            <li>Low-cost ≠ nižší kompenzace</li>
+            <li>Máte 3 roky na reklamaci</li>
+          </ul>
+
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
+            <div className="flex items-start gap-4">
+              <Euro className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-lg font-semibold text-gray-900 mb-3">
+                  💪 Připraveni získat kompenzaci od Vueling?
+                </p>
+                <p className="text-gray-700 mb-4">
+                  ClaimWinger vyřídí celý proces za vás. Specializujeme se na IAG Group (Vueling, Iberia, BA). Bez rizika, platíte jen při úspěchu.
+                </p>
+                <Link 
+                  href="https://claimwinger.com/cs"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Začít vymáhat kompenzaci
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </LayoutCs>
+  );
+}
