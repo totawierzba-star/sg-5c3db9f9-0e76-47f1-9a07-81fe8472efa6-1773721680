@@ -238,6 +238,51 @@ export const blogArticlesCs: BlogArticleCs[] = [
     featured: false,
     color: "bg-blue-50 dark:bg-blue-950"
   },
+  {
+    id: "letiste-pardubice-zpozdeny-let-kompenzace",
+    title: "Letiště Pardubice: Zpožděný let a kompenzace 2026",
+    slug: "/cs/blog/letiste-pardubice-zpozdeny-let-kompenzace",
+    category: "airport",
+    airportCode: "PED",
+    airportName: "Letiště Pardubice",
+    flag: "🇨🇿",
+    wordCount: 3200,
+    readTime: 14,
+    publishDate: "2026-03-09",
+    excerpt: "Měli jste zpoždění z letiště Pardubice? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z PED.",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "letiste-pardubice-zruseny-let-prava",
+    title: "Letiště Pardubice: Zrušený let — vaše práva 2026",
+    slug: "/cs/blog/letiste-pardubice-zruseny-let-prava",
+    category: "airport",
+    airportCode: "PED",
+    airportName: "Letiště Pardubice",
+    flag: "🇨🇿",
+    wordCount: 2600,
+    readTime: 12,
+    publishDate: "2026-03-09",
+    excerpt: "Byl váš let z Pardubic zrušen? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z letiště PED.",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "letiste-karlovy-vary-zruseny-let-prava",
+    title: "Letiště Karlovy Vary: Zrušený let — vaše práva 2026",
+    slug: "/cs/blog/letiste-karlovy-vary-zruseny-let-prava",
+    category: "airport",
+    airportCode: "KLV",
+    airportName: "Letiště Karlovy Vary",
+    flag: "🇨🇿",
+    wordCount: 2200,
+    readTime: 10,
+    publishDate: "2026-03-09",
+    excerpt: "Byl váš let z Karlových Varů zrušen? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z KLV.",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
 
   // Missed connections article
   {
@@ -358,7 +403,7 @@ export const blogArticlesCs: BlogArticleCs[] = [
   },
   {
     id: "letiste-pardubice-kompenzace",
-    title: "Letiště Pardubice a kompenzace za zpoždění letu",
+    title: "Letiště Pardubice a kompenzace za zpoždění letů z letiště Pardubice.",
     slug: "/cs/blog/letiste-pardubice-kompenzace",
     excerpt: "Kompletní průvodce kompenzacemi za zpoždění a zrušení letů z letiště Pardubice.",
     category: "airport",
