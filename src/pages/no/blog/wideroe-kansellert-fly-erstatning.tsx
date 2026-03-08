@@ -85,7 +85,7 @@ export default function WideRoeKansellertFlyErstatning() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="border border-gray-300 px-4 py-3">7-14 dager før</td>
-                  <td className="border border-gray-300 px-4 py-3">< 2 timer senere</td>
+                  <td className="border border-gray-300 px-4 py-3">&lt; 2 timer senere</td>
                   <td className="border border-gray-300 px-4 py-3 text-red-600">❌ Nei</td>
                 </tr>
                 <tr>
@@ -99,7 +99,7 @@ export default function WideRoeKansellertFlyErstatning() {
                   <td className="border border-gray-300 px-4 py-3 text-green-600">✅ Ja (250-600 €)</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 px-4 py-3">< 7 dager før</td>
+                  <td className="border border-gray-300 px-4 py-3">&lt; 7 dager før</td>
                   <td className="border border-gray-300 px-4 py-3">Når som helst</td>
                   <td className="border border-gray-300 px-4 py-3 text-green-600">✅ Ja (250-600 €)</td>
                 </tr>
