@@ -409,8 +409,91 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 800,
     readTime: 8,
     publishDate: "2026-02-24"
+  },
+  {
+    id: "kolik-dostanu-za-zpozdeny-let",
+    title: "Kolik dostanu za zpožděný let? Tabulka kompenzací 2024",
+    slug: "/cs/blog/kolik-dostanu-za-zpozdeny-let",
+    excerpt: "Zjistěte přesnou výši kompenzace za zpožděný let podle nařízení EU261. Tabulka s částkami 250 €, 400 € a 600 € dle vzdálenosti.",
+    category: "foundation",
+    wordCount: 2200,
+    readTime: 12,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "jak-dlouho-trva-vyplaceni-kompenzace",
+    title: "Jak dlouho trvá vyplacení kompenzace za zpožděný let?",
+    slug: "/cs/blog/jak-dlouho-trva-vyplaceni-kompenzace",
+    excerpt: "Zjistěte, jak dlouho trvá vyplacení kompenzace za zpožděný nebo zrušený let. Reálné lhůty u jednotlivých aerolinií a tipy na zrychlení.",
+    category: "foundation",
+    wordCount: 2400,
+    readTime: 13,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "co-delat-aerolinka-neodpovi-reklamaci",
+    title: "Co dělat když aerolinka neodpoví na reklamaci? [2024]",
+    slug: "/cs/blog/co-delat-aerolinka-neodpovi-reklamaci",
+    excerpt: "Aerolinka nereaguje na vaši reklamaci za zpožděný let? Zjistěte, jak postupovat krok za krokem a získat kompenzaci do 600 €.",
+    category: "situations",
+    wordCount: 2600,
+    readTime: 14,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "narok-kompenzace-zpozdeni-2-hodiny",
+    title: "Mám nárok na kompenzaci za zpoždění 2 hodiny? [EU261]",
+    slug: "/cs/blog/narok-kompenzace-zpozdeni-2-hodiny",
+    excerpt: "Zjistěte, zda vám náleží kompenzace za zpoždění letu 2 hodiny. Kdy platí EU261 a jaká je výše náhrady podle vzdálenosti.",
+    category: "foundation",
+    wordCount: 2100,
+    readTime: 11,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "jak-dlouho-narok-zpozdeny-let",
+    title: "Jak dlouho mám na uplatnění nároku za zpožděný let? [3 roky]",
+    slug: "/cs/blog/jak-dlouho-narok-zpozdeny-let",
+    excerpt: "Zjistěte, jak dlouho můžete reklamovat zpožděný nebo zrušený let. Prekluzivní lhůta 3 roky v ČR a postupy pro staré lety.",
+    category: "legal",
+    wordCount: 2500,
+    readTime: 12,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "co-je-mimoradna-okolnost-letu",
+    title: "Co je mimořádná okolnost u letů? [EU261 vysvětlení]",
+    slug: "/cs/blog/co-je-mimoradna-okolnost-letu",
+    excerpt: "Zjistěte, co je považováno za mimořádnou okolnost podle EU261 a kdy aerolinka nemusí vyplatit kompenzaci za zpožděný nebo zrušený let.",
+    category: "legal",
+    wordCount: 2800,
+    readTime: 15,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "plati-eu261-lety-mimo-eu",
+    title: "Platí EU261 pro lety mimo EU? [Kompletní přehled]",
+    slug: "/cs/blog/plati-eu261-lety-mimo-eu",
+    excerpt: "Zjistěte, kdy platí nařízení EU261 pro lety mimo Evropskou unii. Pravidla pro USA, Asii, Afriku a další destinace.",
+    category: "foundation",
+    wordCount: 2300,
+    readTime: 12,
+    publishDate: "2026-03-08"
+  },
+  {
+    id: "reklamovat-let-stary-3-roky",
+    title: "Mohu reklamovat let starý 3 roky?",
+    slug: "/cs/blog/reklamovat-let-stary-3-roky",
+    excerpt: "Zjistěte, zda můžete ještě reklamovat let starý 3 roky. Pravidla prekluzivní lhůty a výjimky v České republice.",
+    category: "legal",
+    publishDate: "2026-03-08",
+    readTime: 12,
+    wordCount: 2200,
+    featured: false
   }
 ];
+
+export const getTotalArticlesCs = () => blogArticlesCs.length;
 
 export const getCategoryLabelCs = (category: BlogArticleCs["category"]): string => {
   const labels: Record<BlogArticleCs["category"], string> = {
