@@ -199,14 +199,44 @@ export const blogArticlesCs: BlogArticleCs[] = [
   // Letiště Ostrava article
   {
     id: "letiste-ostrava-kompenzace",
-    title: "Letiště Ostrava (OSR): Zpožděný let a kompenzace 2026",
+    title: "Letiště Ostrava (OSR): Zpožděný let — kompenzace 2026",
     slug: "/cs/blog/letiste-ostrava-kompenzace",
-    excerpt: "Měli jste zpoždění z letiště v Ostravě? Zjistěte, jak získat až 600 € odškodnění za zpožděný nebo zrušený let.",
     category: "airport",
     flag: "🇨🇿",
     wordCount: 800,
     readTime: 6,
-    publishDate: "2026-02-23"
+    publishDate: "2026-02-23",
+    excerpt: "Měli jste zpoždění z letiště v Ostravě? Zjistěte, jak získat až 600 € odškodnění za zpožděný nebo zrušený let."
+  },
+  {
+    id: "letiste-brno-turany-zruseny-let-prava",
+    title: "Letiště Brno-Tuřany: Zrušený let — vaše práva 2026",
+    slug: "/cs/blog/letiste-brno-turany-zruseny-let-prava",
+    category: "airport",
+    airportCode: "BRQ",
+    airportName: "Letiště Brno-Tuřany",
+    flag: "🇨🇿",
+    wordCount: 2900,
+    readTime: 13,
+    publishDate: "2026-03-09",
+    excerpt: "Byl váš let z Brno-Tuřany zrušen? Zjistěte, jak získat kompenzaci až 600 € podle EU261. Průvodce právy pasažérů + kontakty na pomoc.",
+    featured: true,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "letiste-ostrava-zruseny-let-prava",
+    title: "Letiště Ostrava (OSR): Zrušený let — vaše práva 2026",
+    slug: "/cs/blog/letiste-ostrava-zruseny-let-prava",
+    category: "airport",
+    airportCode: "OSR",
+    airportName: "Letiště Leoše Janáčka Ostrava",
+    flag: "🇨🇿",
+    wordCount: 2400,
+    readTime: 11,
+    publishDate: "2026-03-09",
+    excerpt: "Byl váš let z Ostravy zrušen? Zjistěte, jak získat kompenzaci až 600 € podle EU261. Průvodce právy pasažérů z letiště Leoše Janáčka.",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
   },
 
   // Missed connections article
