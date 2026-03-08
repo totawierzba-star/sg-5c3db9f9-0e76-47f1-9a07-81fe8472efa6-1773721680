@@ -18,18 +18,6 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
-    id: "zmeskany-prestup-kompenzacia",
-    slug: "/cs/blog/zmeskany-prestup-kompenzacia",
-    title: "Zmeškaný Přestup Kompenzace【2026】Až €600 za 45min Zpoždění!",
-    excerpt: "45minutové zpoždění může = €600 kompenzace! 92% lidí neví že zmeškaný přestup = plná kompenzace i za malé zpoždění prvního letu. Hidden goldmine!",
-    publishDate: "2026-02-26",
-    category: "situations",
-    wordCount: 3200,
-    readTime: 12,
-    featured: true,
-    color: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100"
-  },
-  {
     id: "lufthansa-kompenzace-reklamace",
     title: "Lufthansa Kompenzace【2026】Jak získat až €600 za zpoždění",
     slug: "/cs/blog/lufthansa-kompenzace-reklamace",
@@ -326,18 +314,6 @@ export const blogArticlesCs: BlogArticleCs[] = [
     publishDate: "2026-02-24"
   },
   {
-    id: "letiste-karlovy-vary",
-    title: "Letiště Karlovy Vary: Zpožděný let a kompenzace 2026",
-    slug: "/cs/blog/letiste-karlovy-vary",
-    excerpt: "Měli jste zpoždění z letiště Karlovy Vary? Zjistěte, jak získat až 600 € odškodnění.",
-    category: "airport",
-    airportName: "Letiště Karlovy Vary",
-    flag: "🇨🇿",
-    wordCount: 700,
-    readTime: 6,
-    publishDate: "2026-02-24"
-  },
-  {
     id: "letiste-karlovy-vary-kompenzace",
     title: "Letiště Karlovy Vary - práva pasažérů a kompenzace",
     slug: "/cs/blog/letiste-karlovy-vary-kompenzace",
@@ -352,20 +328,21 @@ export const blogArticlesCs: BlogArticleCs[] = [
   },
   {
     id: "letiste-pardubice-kompenzace",
-    title: "Letiště Pardubice - práva pasažérů a kompenzace",
+    title: "Letiště Pardubice a kompenzace za zpoždění letu",
     slug: "/cs/blog/letiste-pardubice-kompenzace",
+    excerpt: "Kompletní průvodce kompenzacemi za zpoždění a zrušení letů z letiště Pardubice.",
     category: "airport",
     airportCode: "PED",
-    airportName: "Pardubice",
+    airportName: "Letiště Pardubice",
     flag: "🇨🇿",
-    wordCount: 700,
-    readTime: 6,
-    publishDate: "2026-02-24",
-    excerpt: "Měli jste zpoždění z letiště Pardubice? Zjistěte, jak získat až 600 € odškodnění."
+    wordCount: 1900,
+    readTime: 8,
+    publishDate: "2024-01-24",
+    featured: false
   },
   {
     id: "jak-podat-reklamaci-krok-za-krokem",
-    title: "Jak podat reklamaci za zpožděný let krok za krokem",
+    title: "Jak podat reklamaci za zpoždění letu krok za krokem",
     slug: "/cs/blog/jak-podat-reklamaci-krok-za-krokem",
     excerpt: "Detailní návod, jak správně podat reklamaci. Šablony, dokumenty a časté chyby.",
     category: "legal",
