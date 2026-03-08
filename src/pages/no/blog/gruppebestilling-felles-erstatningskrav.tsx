@@ -134,7 +134,7 @@ export default function GruppebestillingFellesErstatningskrav() {
           </h3>
 
           <p className="text-gray-700 mb-6">
-            Barn under 18 år har samme rett til erstatning som voksne. Foreldrene kan kreve på vegne av barna uten separate fullmakter. Spedbarn (<2 år) uten egen sitteplass har IKKE rett til erstatning.
+            Barn under 18 år har samme rett til erstatning som voksne. Foreldrene kan kreve på vegne av barna uten separate fullmakter. Spedbarn (&lt;2 år) uten egen sitteplass har IKKE rett til erstatning.
           </p>
 
           <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
