@@ -91,7 +91,7 @@ export default function SasReserouteringPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300 px-4 py-3">≤1500 km</td>
+                  <td className="border border-gray-300 px-4 py-3">&le;1500 km</td>
                   <td className="border border-gray-300 px-4 py-3">3+ timmar</td>
                   <td className="border border-gray-300 px-4 py-3 font-bold text-blue-600">€250</td>
                 </tr>
@@ -141,7 +141,7 @@ export default function SasReserouteringPage() {
           </div>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Vad räknas som "försening vid ankomst"?
+            Vad räknas som &quot;försening vid ankomst&quot;?
           </h2>
 
           <p>
@@ -165,7 +165,7 @@ export default function SasReserouteringPage() {
             <p className="font-semibold mb-3">Steg 1: Hitta ursprunglig planerad ankomst</p>
             <ul className="space-y-2 mb-4">
               <li>• Kolla din bokningsbekräftelse från SAS</li>
-              <li>• E-post med "Booking confirmation"</li>
+              <li>• E-post med &quot;Booking confirmation&quot;</li>
               <li>• SAS app eller EuroBonus-konto</li>
             </ul>
 
@@ -178,7 +178,7 @@ export default function SasReserouteringPage() {
 
             <p className="font-semibold mb-3">Steg 3: Räkna skillnaden</p>
             <p className="mb-0">
-              Om skillnaden är <strong>≥3 timmar</strong> (eller ≥4h för långdistans utanför EU) → du har rätt till ersättning!
+              Om skillnaden är <strong>&ge;3 timmar</strong> (eller &ge;4h för långdistans utanför EU) → du har rätt till ersättning!
             </p>
           </div>
 
@@ -208,7 +208,7 @@ export default function SasReserouteringPage() {
           <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-8">
             <p className="font-semibold mb-2">⚠️ OBS: Bevisbördan ligger på SAS!</p>
             <p className="mb-0">
-              Om SAS påstår "extraordinära omständigheter" måste DE bevisa detta med dokumentation. Acceptera aldrig deras påstående utan bevis — de ljuger ofta.
+              Om SAS påstår &quot;extraordinära omständigheter&quot; måste DE bevisa detta med dokumentation. Acceptera aldrig deras påstående utan bevis — de ljuger ofta.
             </p>
           </div>
 
@@ -271,7 +271,7 @@ export default function SasReserouteringPage() {
 
             <p className="font-semibold mb-3">Steg 3: Vänta 6-8 veckor</p>
             <p className="mb-0">
-              SAS svarar ofta inte alls, eller ger standardavslag med falska påståenden om "extraordinära omständigheter".
+              SAS svarar ofta inte alls, eller ger standardavslag med falska påståenden om &quot;extraordinära omständigheter&quot;.
             </p>
           </div>
 
@@ -488,7 +488,7 @@ export default function SasReserouteringPage() {
 
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                🔹 Räknas reseroutering som "inställt flyg"?
+                🔹 Räknas reseroutering som &quot;inställt flyg&quot;?
               </h3>
               <p className="text-gray-700">
                 <strong>Ja</strong>, i de flesta fall. Om ditt ursprungliga flygnummer inte längre avgår och du bokas om till annat flygnummer räknas det som inställning enligt EU261. Därmed gäller ersättningsrätt om förseningen är tillräcklig.
@@ -517,7 +517,7 @@ export default function SasReserouteringPage() {
 
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                🔹 SAS säger att reserouteringen berodde på "oväntad teknisk fråga" — måste jag acceptera det?
+                🔹 SAS säger att reserouteringen berodde på &quot;oväntad teknisk fråga&quot; — måste jag acceptera det?
               </h3>
               <p className="text-gray-700">
                 <strong>Nej!</strong> Tekniska fel är INTE extraordinära omständigheter enligt EU-domstolen (C-549/07). SAS måste underhålla sina plan ordentligt. Du har fortfarande rätt till ersättning. Ifrågasätt alltid detta påstående.
@@ -560,7 +560,7 @@ export default function SasReserouteringPage() {
                 🔹 Vad händer om mitt ursprungliga flyg ändå avgick utan mig?
               </h3>
               <p className="text-gray-700">
-                Om SAS reserouterade dig till senare flyg, men det ursprungliga flyget FAKTISKT avgick (t.ex. pga felaktig information från SAS), har du starkare rättsläge. Detta klassas som "denied boarding" och ger automatisk rätt till ersättning + alternativ transport.
+                Om SAS reserouterade dig till senare flyg, men det ursprungliga flyget FAKTISKT avgick (t.ex. pga felaktig information från SAS), har du starkare rättsläge. Detta klassas som &quot;denied boarding&quot; och ger automatisk rätt till ersättning + alternativ transport.
               </p>
             </div>
           </div>
