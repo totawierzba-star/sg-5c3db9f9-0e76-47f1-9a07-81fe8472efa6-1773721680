@@ -298,6 +298,18 @@ export const blogArticlesSv: BlogArticle[] = [
     readTime: "2 min"
   },
   {
+    id: "sas-reseroutering",
+    title: "SAS reseroutering — dina rättigheter vid ombokning 2026",
+    slug: "sas-reseroutering",
+    excerpt: "SAS bokade om dig till annat flyg? Få 250-600 € ersättning om reserouteringen innebär betydande försening. Guide för svenska resenärer.",
+    category: "SAS",
+    color: "purple",
+    date: "2026-03-08",
+    readTime: "11 min",
+    wordCount: 2800,
+    featured: false
+  },
+  {
     id: "hur-ansoka-ersattning-sas-steg-for-steg",
     title: "Hur ansöker du om ersättning från SAS steg för steg? — guide",
     slug: "hur-ansoka-ersattning-sas-steg-for-steg",
