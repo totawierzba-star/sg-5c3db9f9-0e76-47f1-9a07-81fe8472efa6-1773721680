@@ -86,7 +86,7 @@ export default function LufthansaZmeskanyPrestupFrankfurt() {
               • Let 2: Frankfurt (FRA) → New York (JFK), Lufthansa LH400, plánovaný odlet 11:30 → <strong>ZMEŠKANÝ</strong><br/>
               • Lufthansa vás přerezervovala na další spoj s odletem 18:00<br/>
               • Příjezd do NYC: plánovaný 14:45, skutečný <strong>21:30</strong> → zpoždění <strong>6h 45min</strong><br/>
-              → <strong>Nárok na €600 kompenzaci</strong> (vzdálenost PRG-JFK > 3500 km)
+              → <strong>Nárok na €600 kompenzaci</strong> (vzdálenost PRG-JFK &gt; 3500 km)
             </p>
           </div>
 
@@ -430,7 +430,7 @@ S pozdravem,
               <tbody>
                 <tr className="border-b">
                   <td className="px-6 py-4">Londýn, Paříž, Amsterdam</td>
-                  <td className="px-6 py-4">< 1500 km</td>
+                  <td className="px-6 py-4">&lt; 1500 km</td>
                   <td className="px-6 py-4 text-blue-600 font-bold">€250</td>
                 </tr>
                 <tr className="border-b">
@@ -440,7 +440,7 @@ S pozdravem,
                 </tr>
                 <tr>
                   <td className="px-6 py-4">New York, Dubai, Bangkok</td>
-                  <td className="px-6 py-4">> 3500 km</td>
+                  <td className="px-6 py-4">&gt; 3500 km</td>
                   <td className="px-6 py-4 text-blue-600 font-bold">€600</td>
                 </tr>
               </tbody>

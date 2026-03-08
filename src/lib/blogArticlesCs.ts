@@ -483,12 +483,113 @@ export const blogArticlesCs: BlogArticleCs[] = [
   {
     id: "reklamovat-let-stary-3-roky",
     title: "Mohu reklamovat let starý 3 roky?",
-    slug: "/cs/blog/reklamovat-let-stary-3-roky",
-    excerpt: "Zjistěte, zda můžete ještě reklamovat let starý 3 roky. Pravidla prekluzivní lhůty a výjimky v České republice.",
-    category: "legal",
+    excerpt: "Zjistěte, zda můžete uplatnit nárok na kompenzaci za let starý 3 roky a jaké jsou prekluzivní lhůty v České republice.",
+    category: "foundation",
     publishDate: "2026-03-08",
-    readTime: 12,
-    wordCount: 2200,
+    featured: false
+  },
+  {
+    id: "ryanair-odmitl-kompenzaci-jak-prinutit",
+    title: "Ryanair odmítl kompenzaci — jak ho přinutit zaplatit?",
+    excerpt: "Ryanair odmítl vaši reklamaci? Zjistěte 5 právních metod, jak přinutit Ryanair vyplatit kompenzaci €250-600 za zpožděný nebo zrušený let.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: true
+  },
+  {
+    id: "wizz-air-voucher-misto-penez-hotovost",
+    title: "Wizz Air voucher místo peněz — jak získat hotovost?",
+    excerpt: "Wizz Air nabízí voucher místo peněz? Zjistěte, jak odmítnout voucher a získat kompenzaci €250-600 v hotovosti podle EU261.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "smartwings-technicka-zavada-mimoradna-okolnost",
+    title: "Smartwings technická závada — mimořádná okolnost nebo ne?",
+    excerpt: "Smartwings odmítl kompenzaci kvůli technické závadě? Zjistěte, kdy je technická porucha mimořádná okolnost a kdy NE.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "lufthansa-zmeskany-prestup-frankfurt",
+    title: "Lufthansa zmeškaný přestup ve Frankfurtu — kdo platí?",
+    excerpt: "Zmeškal/a jste přestup ve Frankfurtu kvůli zpoždění Lufthansa? Zjistěte, kdy máte nárok na kompenzaci €250-600.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "swiss-air-kompenzace-zpozdeni-zruseni",
+    title: "Swiss Air kompenzace za zpoždění a zrušení letu 2026",
+    excerpt: "Kompletní průvodce kompenzacemi Swiss International Air Lines za zpožděné a zrušené lety. €250-600 podle EU261.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "wizz-air-technicka-zavada-mimoradna-okolnost",
+    title: "Wizz Air technická závada — mimořádná okolnost nebo ne?",
+    excerpt: "Wizz Air odmítl kompenzaci kvůli technické závadě? Zjistěte, kdy je technická porucha mimořádná okolnost a kdy NENÍ.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "klm-kompenzace-zpozdeni-cesko",
+    title: "KLM kompenzace za zpoždění — průvodce pro české cestující",
+    excerpt: "Kompletní průvodce kompenzacemi KLM Royal Dutch Airlines za zpožděné lety z/do České republiky. €250-600 podle EU261.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "air-france-kompenzace-zpozdeni-zruseni",
+    title: "Air France kompenzace za zpoždění a zrušení letu 2026",
+    excerpt: "Jak získat kompenzaci €250-600 od Air France za zpožděný nebo zrušený let? Průvodce pro české cestující 2026.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "iberia-kompenzace-zpozdeni-narok",
+    title: "Iberia kompenzace za zpoždění — kdy máte nárok?",
+    excerpt: "Zjistěte, kdy máte nárok na kompenzaci €250-600 od Iberia Airlines za zpožděný nebo zrušený let podle EU261.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "vueling-kompenzace-zpozdeni-zruseni",
+    title: "Vueling kompenzace za zpoždění a zrušení letu 2026",
+    excerpt: "Kompletní průvodce kompenzacemi Vueling Airlines za zpožděné a zrušené lety. €250-600 podle EU261 pro české cestující.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "transavia-kompenzace-zpozdeni",
+    title: "Transavia kompenzace za zpoždění — průvodce 2026",
+    excerpt: "Jak získat kompenzaci €250-600 od Transavia Airlines za zpožděný nebo zrušený let? Průvodce pro české pasažéry.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "wizz-air-group-booking-hromadny-narok",
+    title: "Wizz Air group booking — jak uplatnit hromadný nárok?",
+    excerpt: "Cestovali jste skupinově s Wizz Air a let byl zpožděný? Zjistěte, jak efektivně uplatnit hromadný nárok na kompenzaci.",
+    category: "airline",
+    publishDate: "2026-03-08",
+    featured: false
+  },
+  {
+    id: "pobeda-belavia-eu261-platnost",
+    title: "Pobeda / Belavia — platí EU261 pro tyto dopravce?",
+    excerpt: "Zjistěte, zda ruská Pobeda a běloruská Belavia spadají pod EU261 a kdy máte nárok na kompenzaci při letech z/do EU.",
+    category: "airline",
+    publishDate: "2026-03-08",
     featured: false
   }
 ];

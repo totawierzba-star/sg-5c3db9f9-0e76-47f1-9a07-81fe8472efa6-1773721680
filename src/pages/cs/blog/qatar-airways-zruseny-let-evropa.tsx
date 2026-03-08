@@ -213,14 +213,14 @@ export default function QatarAirwaysZrusenyLet() {
               <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded-r">
                 <p className="font-semibold text-red-900 mb-2">❌ BEZ nároku:</p>
                 <p className="text-sm text-gray-700">
-                  Qatar zrušil let 15 dní předem a nabídl přeložení na QR 185 (stejný den, odlet 18:00). Přílet s <strong>2h zpožděním</strong> → kompenzace NEPLATÍ (zrušení >14 dní + malé zpoždění).
+                  Qatar zrušil let 15 dní předem a nabídl přeložení na QR 185 (stejný den, odlet 18:00). Přílet s <strong>2h zpožděním</strong> → kompenzace NEPLATÍ (zrušení &gt;14 dní + malé zpoždění).
                 </p>
               </div>
             </div>
 
             <div className="bg-blue-100 border-l-4 border-blue-600 p-4 rounded-r mt-6">
               <p className="text-sm text-gray-700">
-                <strong>⚠️ Pravidlo:</strong> Při zrušení 7-14 dní předem platí kompenzace, pokud alternativní let dorazí ≥4h později. Při zrušení {"<"}7 dní předem stačí ≥2h zpoždění.
+                <strong>⚠️ Pravidlo:</strong> Při zrušení 7-14 dní předem platí kompenzace, pokud alternativní let dorazí ≥4h později. Při zrušení &lt;7 dní předem stačí ≥2h zpoždění.
               </p>
             </div>
           </div>

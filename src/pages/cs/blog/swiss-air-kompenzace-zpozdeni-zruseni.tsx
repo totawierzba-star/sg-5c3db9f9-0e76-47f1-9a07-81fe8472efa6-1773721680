@@ -30,7 +30,7 @@ export default function SwissAirKompenzace() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-700 leading-relaxed mb-6">
-            <strong>Swiss International Air Lines (SWISS) zpožděl nebo zrušil váš let?</strong> Máte nárok na kompenzaci <strong>až 600 €</strong> podle nařízení EU 261/2004. Swiss je jednou z nejspolehlivějších evropských aerolinií s 85% on-time performance, ale i tak dochází ke zpožděním a zrušením — a v těchto případech musí SWISS vyplatit kompenzaci. V tomto komplexním průvodci se dozvíte, kdy máte nárok, jak správně reklamovat a jak přinutit SWISS k výplatě i při odmítnutí.
+            <strong>Swiss International Air Lines (SWISS) zpožděl nebo zrušil váš let?</strong> Máte nárok na kompenzaci <strong>až 600 €</strong> podle nařízení EU 261/2004. Swiss je jednou z nejspolehlivějších evropských aeroliní s 85% on-time performance, ale i tak dochází ke zpožděním a zrušením — a v těchto případech musí SWISS vyplatit kompenzaci. V tomto komplexním průvodci se dozvíte, kdy máte nárok, jak správně reklamovat a jak přinutit SWISS k výplatě i při odmítnutí.
           </p>
 
           <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
@@ -97,7 +97,7 @@ export default function SwissAirKompenzace() {
               • Let SWISS LX1485 z Prahy (PRG) do Curychu (ZRH), plánovaný odlet 10:00<br/>
               • Odlet zpožděn na 13:30 kvůli "technické závadě"<br/>
               • Přílet do Curychu: plánovaný 11:10, skutečný <strong>14:45</strong> → zpoždění <strong>3h 35min</strong><br/>
-              → <strong>Nárok na €250 kompenzaci</strong> (vzdálenost PRG-ZRH < 1500 km)
+              → <strong>Nárok na €250 kompenzaci</strong> (vzdálenost PRG-ZRH &lt; 1500 km)
             </p>
           </div>
 
@@ -436,7 +436,7 @@ S pozdravem,
           </div>
 
           <p className="mt-4">
-            <strong>Příklad:</strong> Let Praha → Curych (LH zpožděn o 1h) + Curych → New York (zmeškaný) → SWISS vás přerezervuje na další spoj s odletem +6h → dorazíte do NYC s 5h zpožděním → <strong>Nárok na €600</strong> (vzdálenost PRG-JFK > 3500 km).
+            <strong>Příklad:</strong> Let Praha → Curych (LH zpožděn o 1h) + Curych → New York (zmeškaný) → SWISS vás přerezervuje na další spoj s odletem +6h → dorazíte do NYC s 5h zpožděním → <strong>Nárok na €600</strong> (vzdálenost PRG-JFK &gt; 3500 km).
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
