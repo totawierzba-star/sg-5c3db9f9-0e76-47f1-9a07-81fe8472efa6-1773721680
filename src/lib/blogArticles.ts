@@ -12,6 +12,7 @@ export interface BlogArticle {
 }
 
 export const blogArticles: BlogArticle[] = [
+  // Oryginalne artykuły (1-20)
   {
     title: "Odszkodowanie LOT Polish Airlines — kompletny przewodnik 2025",
     slug: "odszkodowanie-lot-polish-airlines",
@@ -203,6 +204,17 @@ export const blogArticles: BlogArticle[] = [
     color: "purple"
   },
   {
+    title: "Odwołany lot — historia pasażera",
+    slug: "odwolany-lot-historia-pasazera",
+    excerpt: "Prawdziwa historia pasażera, który wywalczył odszkodowanie po odwołaniu lotu. Zobacz jak to zrobić krok po kroku.",
+    date: "2025-01-15",
+    readTime: "5 min",
+    category: "Case Studies",
+    color: "purple"
+  },
+  
+  // Nowe artykuły LOT (21-45)
+  {
     slug: "lotnisko-gdansk-odszkodowanie",
     title: "Lotnisko Gdańsk Rębiechowo — odszkodowanie za opóźniony lot [2025]",
     excerpt: "Twój lot z Gdańska jest opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Wizz Air, Ryanair, LOT - kompletny przewodnik.",
@@ -391,15 +403,6 @@ export const blogArticles: BlogArticle[] = [
     category: "LOT Polish Airlines",
     featured: true,
     color: "amber"
-  },
-  {
-    title: "Odwołany lot — historia pasażera",
-    slug: "odwolany-lot-historia-pasazera",
-    excerpt: "Prawdziwa historia pasażera, który wywalczył odszkodowanie po odwołaniu lotu. Zobacz jak to zrobić krok po kroku.",
-    date: "2025-01-15",
-    readTime: "5 min",
-    category: "Case Studies",
-    color: "purple"
   }
 ];
 
@@ -407,7 +410,13 @@ export const getCategoryLabel = (category: BlogArticle["category"]): string => {
   const labels: Record<string, string> = {
     "LOT Polish Airlines": "LOT Polish Airlines",
     "Ryanair": "Ryanair",
+    "Wizz Air": "Wizz Air",
+    "Lufthansa": "Lufthansa",
+    "easyJet": "easyJet",
+    "Enter Air": "Enter Air",
     "Case Studies": "Case Studies",
+    "Prawo lotnicze": "Prawo lotnicze",
+    "Lotniska": "Lotniska",
     "airline": "Linie lotnicze",
     "airport": "Lotniska",
     "foundation": "Podstawy"
