@@ -403,6 +403,76 @@ export const blogArticles: BlogArticle[] = [
     category: "LOT Polish Airlines",
     featured: true,
     color: "amber"
+  },
+  {
+    slug: "lot-b2b-odszkodowanie-lot-sluzbowy",
+    title: "LOT B2B – odszkodowanie za lot służbowy firmy",
+    excerpt: "Kto dostaje odszkodowanie gdy lot służbowy był opóźniony – pracownik czy firma? Rozwiązujemy zagadkę lotów B2B.",
+    date: "2025-02-20",
+    readTime: "6 min",
+    category: "LOT Polish Airlines",
+    featured: false,
+    color: "blue"
+  },
+  {
+    slug: "zgubiony-zniszczony-bagaz-lotniczy-odszkodowanie",
+    title: "Zgubiony lub zniszczony bagaż – odszkodowanie i prawa pasażera",
+    excerpt: "Co zrobić gdy linia zgubiła lub zniszczyła Twój bagaż? Sprawdź limity zwrotów i terminy zgłoszeń według Konwencji Montrealskiej.",
+    date: "2025-02-21",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "odszkodowanie-za-lot-z-dzieckiem-infant",
+    title: "Odszkodowanie za lot z dzieckiem (infant) – czy niemowlę dostaje pieniądze?",
+    excerpt: "Czy dziecko bez osobnego miejsca (infant) ma prawo do odszkodowania 250–600 EUR? Wyjaśniamy przepisy UE 261/2004.",
+    date: "2025-02-22",
+    readTime: "6 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "loty-wielka-brytania-brexit-uk261-odszkodowanie",
+    title: "Loty do Wielkiej Brytanii po Brexicie – UK261 vs EU261",
+    excerpt: "Co się zmieniło po wyjściu UK z UE? Sprawdź różnice między UK261 a EU261 i kiedy masz prawo do odszkodowania za lot do Londynu.",
+    date: "2025-02-23",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "loty-poza-ue-turcja-egipt-odszkodowanie-eu261",
+    title: "Loty poza UE (Turcja, Egipt, Tunezja) – czy przysługuje odszkodowanie?",
+    excerpt: "Wakacyjny lot do Turcji lub Egiptu opóźniony? Sprawdź kiedy EU261 obowiązuje na lotach do krajów spoza Unii Europejskiej.",
+    date: "2025-02-24",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "strajk-kontrolerow-lotow-atc-odszkodowanie",
+    title: "Strajk kontrolerów lotów (ATC) a odszkodowanie – prawa pasażera",
+    excerpt: "Czy za opóźniony lub odwołany lot przez strajk kontrolerów ruchu lotniczego przysługuje odszkodowanie? Sprawdź różnicę między strajkiem ATC a strajkiem linii lotniczej.",
+    date: "2025-02-23",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "voucher-za-opozniony-lot-czy-brac-gotowke",
+    title: "Voucher od linii lotniczej czy gotówka – co wybrać przy odszkodowaniu?",
+    excerpt: "Linia lotnicza oferuje Ci voucher zamiast pieniędzy za opóźniony lot? Sprawdź, dlaczego gotówka jest lepsza i czy linia może Cię zmuszać do przyjęcia bonu.",
+    date: "2025-02-24",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
   }
 ];
 
