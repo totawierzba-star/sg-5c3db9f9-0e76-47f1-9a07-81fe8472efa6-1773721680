@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { ArrowRight, Clock, AlertCircle, CheckCircle, XCircle } from "lucide-react";
+import { ArrowRight, Clock, AlertCircle, CheckCircle, XCircle, Plane } from "lucide-react";
 
 export default function Odszkodowanie2GodzinneOpoznienie() {
   return (
