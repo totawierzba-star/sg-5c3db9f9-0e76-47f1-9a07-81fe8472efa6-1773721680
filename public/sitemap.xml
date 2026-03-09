@@ -790,6 +790,45 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/letiste-karlovy-vary-zruseny-let-prava</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/letiste-praha-presmerovani-letu-prava</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/praha-londyn-trasa-kompenzace</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/praha-barcelona-kompenzace</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/praha-amsterdam-kompenzace</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/praha-dubaj-eu261-mimounijni</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lotproblem.pl/cs/blog/zmeskane-prestupy-kompenzace</loc>
+  </url>
 
   <!-- Hindi Main Pages -->
   <url>

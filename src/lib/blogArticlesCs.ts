@@ -708,6 +708,72 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 2100,
     readTime: 10,
     featured: false
+  },
+  {
+    id: "letiste-karlovy-vary-zruseny-let-prava",
+    title: "Letiště Karlovy Vary: Zrušený let — vaše práva 2026",
+    slug: "/cs/blog/letiste-karlovy-vary-zruseny-let-prava",
+    excerpt: "Zrušený let na letišti Karlovy Vary? Získejte až 600 € kompenzace podle EU261. Průvodce právy pasažérů.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 4200,
+    readTime: 7,
+    featured: false
+  },
+  {
+    id: "letiste-praha-presmerovani-letu-prava",
+    title: "Letiště Václava Havla: Přesměrování letu — vaše práva 2026",
+    slug: "/cs/blog/letiste-praha-presmerovani-letu-prava",
+    excerpt: "Aerolinka vás přesměrovala na jiný let z Prahy? Získejte 250-600 € kompenzace pokud přesměrování znamená významné zpoždění.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 5800,
+    readTime: 11,
+    featured: false
+  },
+  {
+    id: "praha-londyn-trasa-kompenzace",
+    title: "Praha–Londýn: Nejčastější trasa a kompenzace za zpoždění 2026",
+    slug: "/cs/blog/praha-londyn-trasa-kompenzace",
+    excerpt: "Zpožděný nebo zrušený let Praha–Londýn? Získejte až 250 € kompenzace. Průvodce právy pasažérů na nejfrekventovanější trase.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 4500,
+    readTime: 10,
+    featured: false
+  },
+  {
+    id: "praha-barcelona-kompenzace",
+    title: "Praha–Barcelona: Kompenzace za zpoždění a zrušení 2026",
+    slug: "/cs/blog/praha-barcelona-kompenzace",
+    excerpt: "Zpožděný nebo zrušený let Praha–Barcelona? Získejte až 250 € kompenzace. Průvodce právy pasažérů na oblíbené trase.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 4200,
+    readTime: 9,
+    featured: false
+  },
+  {
+    id: "praha-amsterdam-kompenzace",
+    title: "Praha–Amsterdam: Nejčastější zpoždění a jak na kompenzaci",
+    slug: "/cs/blog/praha-amsterdam-kompenzace",
+    excerpt: "Zpožděný nebo zrušený let Praha–Amsterdam? Získejte až 250 € kompenzace. Průvodce právy pasažérů na klíčové evropské trase.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 4100,
+    readTime: 9,
+    featured: false
+  },
+  {
+    id: "praha-dubaj-eu261-mimounijni",
+    title: "Praha–Dubaj: Kdy platí EU261 na mimounijních dopravcích?",
+    slug: "/cs/blog/praha-dubaj-eu261-mimounijni",
+    excerpt: "Let Praha–Dubaj zpožděný nebo zrušený? Zjistěte, kdy máte nárok na kompenzaci až 600 € při letu s Emirates nebo FlyDubai.",
+    category: "airport",
+    publishDate: "2026-03-09",
+    wordCount: 4800,
+    readTime: 10,
+    featured: false
   }
 ];
 
