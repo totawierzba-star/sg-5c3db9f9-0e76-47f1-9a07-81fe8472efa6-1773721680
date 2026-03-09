@@ -473,6 +473,106 @@ export const blogArticles: BlogArticle[] = [
     category: "Prawo lotnicze",
     featured: false,
     color: "purple"
+  },
+  {
+    slug: "ile-odszkodowania-opozniony-lot",
+    title: "Ile odszkodowania za opóźniony lot? Tabela kwot 250-600 €",
+    excerpt: "Sprawdź dokładnie ile odszkodowania możesz dostać za opóźniony lot. Kompletna tabela: 250 €, 400 € lub 600 € w zależności od dystansu.",
+    date: "2025-02-25",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "jak-dlugo-czeka-odszkodowanie-za-lot",
+    title: "Jak długo czeka się na odszkodowanie za lot?",
+    excerpt: "Sprawdź ile czasu zajmuje wypłata odszkodowania od linii lotniczych. 2-12 miesięcy? Poznaj rzeczywiste terminy i jak je przyspieszyć.",
+    date: "2025-02-25",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "linia-nie-odpowiada-na-reklamacje-co-robic",
+    title: "Co zrobić gdy linia lotnicza nie odpowiada na reklamację?",
+    excerpt: "Linia lotnicza ignoruje Twoją reklamację? Sprawdź 3 skuteczne metody wymuszenia odpowiedzi i wypłaty odszkodowania.",
+    date: "2025-02-25",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "odszkodowanie-2-godzinne-opoznienie",
+    title: "Czy mam prawo do odszkodowania za 2-godzinne opóźnienie?",
+    excerpt: "2 godziny opóźnienia to za mało na odszkodowanie 250-600 €, ale przysługują Ci inne prawa: posiłki, napoje, komunikacja. Sprawdź co Ci się należy.",
+    date: "2025-02-25",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "amber"
+  },
+  {
+    slug: "jak-dlugo-na-reklamacje-opozniony-lot",
+    title: "Jak długo mam na złożenie reklamacji za opóźniony lot?",
+    excerpt: "Sprawdź dokładne terminy przedawnienia roszczeń lotniczych w Polsce. 3 lata czy 6? Kiedy liczyć termin? Kompletny przewodnik.",
+    date: "2025-02-25",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "green"
+  },
+  {
+    slug: "nadzwyczajne-okolicznosci-lotnictwo-co-to",
+    title: "Co to są nadzwyczajne okoliczności w lotnictwie?",
+    excerpt: "Linia powołuje się na nadzwyczajne okoliczności? Sprawdź co to naprawdę oznacza i kiedy to tylko wymówka aby nie płacić odszkodowania.",
+    date: "2025-02-25",
+    readTime: "6 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "red"
+  },
+  {
+    slug: "we261-poza-ue-czy-obowiazuje",
+    title: "Czy rozporządzenie WE 261 obowiązuje poza UE?",
+    excerpt: "Lot do Turcji, Egiptu, USA opóźniony? Sprawdź kiedy WE 261/2004 obowiązuje na lotach poza Unią Europejską i kiedy masz prawo do odszkodowania.",
+    date: "2025-02-25",
+    readTime: "5 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "blue"
+  },
+  {
+    slug: "reklamacja-lot-sprzed-3-lat",
+    title: "Czy mogę reklamować lot sprzed 3 lat?",
+    excerpt: "TAK! Masz 3 lata (lub 6 w niektórych przypadkach) na złożenie reklamacji za opóźniony lub odwołany lot. Sprawdź dokładne terminy i procedury.",
+    date: "2025-02-25",
+    readTime: "4 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "green"
+  },
+  {
+    slug: "ile-trwa-rozpatrzenie-reklamacji",
+    title: "Ile trwa rozpatrzenie reklamacji przez linię lotniczą?",
+    excerpt: "Sprawdź jak długo linia lotnicza ma na odpowiedź na reklamację o odszkodowanie za opóźniony lub odwołany lot.",
+    date: "2025-02-25",
+    readTime: "6 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    slug: "claimwinger-airhelp-flightright-porownanie",
+    title: "ClaimWinger vs AirHelp vs Flightright – porównanie 2026",
+    excerpt: "Niezależne porównanie firm odszkodowawczych. Sprawdź kto oferuje najlepsze warunki, prowizje i skuteczność w 2026 roku.",
+    date: "2025-02-25",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "indigo"
   }
 ];
 

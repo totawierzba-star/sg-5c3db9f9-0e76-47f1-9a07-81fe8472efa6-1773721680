@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { ArrowRight, Shield, TrendingUp, CheckCircle, XCircle, Award, DollarSign, Clock } from "lucide-react";
+import { ArrowRight, Shield, TrendingUp, CheckCircle, XCircle, Award, DollarSign, Clock, AlertCircle } from "lucide-react";
 
 export default function ClaimWingerAirHelpFlightrightPorownanie() {
   return (
