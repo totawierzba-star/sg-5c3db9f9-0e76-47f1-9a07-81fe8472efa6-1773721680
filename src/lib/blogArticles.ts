@@ -613,6 +613,26 @@ export const blogArticles: BlogArticle[] = [
     category: "Ryanair",
     featured: true,
     color: "red"
+  },
+  {
+    slug: "ryanair-voucher-zamiast-gotowki-wymusic",
+    title: "Ryanair voucher zamiast gotówki — jak wymusić wypłatę pieniędzy? [2026]",
+    excerpt: "Ryanair oferuje Ci voucher zamiast pieniędzy za opóźniony lot? Sprawdź jak odmówić i wymusić wypłatę gotówki 250-600 €. Szczegółowy przewodnik prawny.",
+    date: "2025-02-26",
+    readTime: "9 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "ryanair-odwolanie-14-dni-przed-lotem",
+    title: "Ryanair odwołanie 14 dni przed lotem — jakie masz opcje? [2026]",
+    excerpt: "Ryanair odwołał Twój lot 14 dni (lub wcześniej) przed odlotem? Sprawdź czy należy się odszkodowanie i jakie masz opcje (zwrot, przekierowanie).",
+    date: "2025-02-26",
+    readTime: "9 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
   }
 ];
 
