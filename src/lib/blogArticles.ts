@@ -573,6 +573,26 @@ export const blogArticles: BlogArticle[] = [
     category: "Prawo lotnicze",
     featured: true,
     color: "indigo"
+  },
+  {
+    slug: "ryanair-usterka-techniczna-zakwestionowac-odmowe",
+    title: "Ryanair usterka techniczna — jak zakwestionować odmowę? [2026]",
+    excerpt: "Ryanair odmówił wypłaty, powołując się na usterkę techniczną? Dowiedz się, jak skutecznie zakwestionować odmowę i wygrać sprawę o 250-600 €.",
+    date: "2025-02-26",
+    readTime: "8 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "ryanair-strajk-odszkodowanie-kiedy",
+    title: "Ryanair strajk — kiedy należy się odszkodowanie? [2026]",
+    excerpt: "Strajk załogi Ryanair odwołał Twój lot? Sprawdź, kiedy przysługuje odszkodowanie (strajk Ryanair vs ATC), a kiedy linia legalnie odmówi wypłaty.",
+    date: "2025-02-26",
+    readTime: "7 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
   }
 ];
 
