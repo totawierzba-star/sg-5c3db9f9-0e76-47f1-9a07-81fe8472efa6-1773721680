@@ -666,13 +666,33 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: "pozew-sadowy-ryanair-drobne-roszczenia",
-    title: "Pozew sądowy Ryanair — europejskie postępowanie drobne roszczenia",
+    title: "Pozew sądowy Ryanair — europejskie postępowanie w sprawie drobnych roszczeń",
     excerpt: "Jak pozwać Ryanair przez europejskie postępowanie w sprawie drobnych roszczeń? Przewodnik krok po kroku.",
     date: "2025-02-25",
     readTime: "11 min",
     category: "Prawo lotnicze",
     featured: true,
     color: "indigo"
+  },
+  {
+    slug: "wizz-air-odwolany-lot-polska-prawa",
+    title: "Wizz Air odwołany lot z Polski — prawa pasażera krok po kroku [2026]",
+    excerpt: "Wizz Air odwołał Twój lot? Sprawdź dokładnie jakie masz prawa (250-600 € odszkodowania + zwrot/przekierowanie), terminy i jak skutecznie złożyć reklamację.",
+    date: "2026-02-27",
+    readTime: "9 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "wizz-air-usterka-techniczna-nadzwyczajna",
+    title: "Wizz Air usterka techniczna — czy to nadzwyczajna okoliczność? [2026]",
+    excerpt: "Wizz Air odmówił wypłaty, powołując się na usterkę techniczną? 81% takich odmów jest niezgodnych z prawem. Sprawdź kiedy faktycznie należy się odszkodowanie.",
+    date: "2026-02-27",
+    readTime: "8 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
   }
 ];
 
