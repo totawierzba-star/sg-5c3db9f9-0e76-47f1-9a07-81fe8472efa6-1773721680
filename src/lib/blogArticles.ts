@@ -593,6 +593,26 @@ export const blogArticles: BlogArticle[] = [
     category: "Ryanair",
     featured: true,
     color: "red"
+  },
+  {
+    slug: "ryanair-overbooking-odmowa-polska",
+    title: "Ryanair overbooking — odmowa wejścia na pokład z Polski [2026]",
+    excerpt: "Ryanair odmówił Ci wejścia na pokład z powodu overbookingu? Należy Ci się natychmiastowe odszkodowanie 250-600 € + zwrot/przekierowanie.",
+    date: "2025-02-26",
+    readTime: "8 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "ryanair-missed-connection-wlasna-przesiadka",
+    title: "Ryanair missed connection — odpowiedzialność przy własnej przesiadce [2026]",
+    excerpt: "Straciłeś przesiadkę przez opóźnienie Ryanair? Sprawdź kiedy należy się odszkodowanie 250-600 € (jednolita rezerwacja vs osobne bilety) i kto płaci.",
+    date: "2025-02-26",
+    readTime: "10 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
   }
 ];
 
