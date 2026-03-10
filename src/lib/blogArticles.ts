@@ -693,6 +693,26 @@ export const blogArticles: BlogArticle[] = [
     category: "Wizz Air",
     featured: true,
     color: "purple"
+  },
+  {
+    slug: "wizz-air-overbooking-odmowa",
+    title: "Wizz Air overbooking — odmowa wejścia na pokład [2026]",
+    excerpt: "Wizz Air odmówił Ci wejścia na pokład z powodu overbookingu? Należy Ci się natychmiastowe odszkodowanie 250-600 € + zwrot/przekierowanie. Sprawdź procedury.",
+    date: "2026-02-27",
+    readTime: "8 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "wizz-air-voucher-zamiast-gotowki",
+    title: "Wizz Air voucher zamiast gotówki — jak wymusić wypłatę pieniędzy? [2026]",
+    excerpt: "Wizz Air oferuje Ci voucher zamiast pieniędzy za opóźniony lot? Sprawdź jak odmówić i wymusić wypłatę gotówki 250-600 €. 87% skuteczności.",
+    date: "2026-02-27",
+    readTime: "10 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
   }
 ];
 
