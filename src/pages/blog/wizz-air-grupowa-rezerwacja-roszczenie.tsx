@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, Euro, Clock, Users, CheckCircle, XCircle, FileText } from "lucide-react";
+import { ArrowRight, AlertTriangle, Euro, Clock, Users, CheckCircle, XCircle, FileText, Calculator } from "lucide-react";
 
 export default function WizzAirGrupowaRezerwacjaRoszczenie() {
   return (

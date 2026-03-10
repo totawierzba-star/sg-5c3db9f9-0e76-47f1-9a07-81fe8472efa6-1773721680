@@ -713,6 +713,46 @@ export const blogArticles: BlogArticle[] = [
     category: "Wizz Air",
     featured: true,
     color: "purple"
+  },
+  {
+    slug: "wizz-air-multipass-odszkodowanie",
+    title: "Wizz Air Multipass — czy subskrypcja wpływa na odszkodowanie? [2026]",
+    excerpt: "Leciałeś z Wizz Air Multipass i lot się opóźnił? Sprawdź czy subskrypcja wpływa na prawo do odszkodowania 250-600 €. Kompletny przewodnik prawny.",
+    date: "2026-02-27",
+    readTime: "9 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "wizz-air-katowice-opoznienia-reklamacja",
+    title: "Wizz Air Katowice — najczęstsze opóźnienia i jak reklamować [2026]",
+    excerpt: "Twój lot Wizz Air z Katowic jest opóźniony? Sprawdź najczęstsze problemy na trasach z KTW i jak uzyskać odszkodowanie 250-600 €. Przewodnik reklamacyjny.",
+    date: "2026-02-27",
+    readTime: "9 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "wizz-air-grupowa-rezerwacja-roszczenie",
+    title: "Wizz Air grupowa rezerwacja — zbiorowe roszczenie odszkodowawcze [2026]",
+    excerpt: "Leciałeś Wizz Air w grupie (rodzina, wycieczka, firma)? Sprawdź jak złożyć zbiorowe roszczenie o odszkodowanie 250-600 € i czy każdy pasażer dostaje pełną kwotę.",
+    date: "2026-02-27",
+    readTime: "9 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "pozew-sadowy-wizz-air-polska",
+    title: "Pozew sądowy Wizz Air Polska — jak skutecznie wyegzekwować odszkodowanie? [2026]",
+    excerpt: "Wizz Air ignoruje Twoją reklamację? Sprawdź jak złożyć pozew sądowy przez europejskie postępowanie w sprawie drobnych roszczeń i wygrać sprawę o 250-600 €.",
+    date: "2026-02-27",
+    readTime: "11 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "indigo"
   }
 ];
 
