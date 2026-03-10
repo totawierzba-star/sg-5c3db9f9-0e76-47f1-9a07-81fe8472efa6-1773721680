@@ -633,6 +633,46 @@ export const blogArticles: BlogArticle[] = [
     category: "Ryanair",
     featured: true,
     color: "red"
+  },
+  {
+    slug: "ryanair-odwolanie-14-dni-przed-lotem",
+    title: "Ryanair odwołanie 14 dni przed lotem — jakie masz opcje?",
+    excerpt: "Co zrobić gdy Ryanair odwołuje lot na 2 tygodnie przed wylotem? Sprawdź opcje zwrotu i alternatywnego lotu.",
+    date: "2025-02-25",
+    readTime: "8 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "ryanair-modlin-chopin-procedury-reklamacyjne",
+    title: "Ryanair Modlin vs Chopin — różnice w procedurach reklamacyjnych",
+    excerpt: "Czy lotnisko startu wpływa na procedurę reklamacyjną? Poznaj różnice między Modlinem a Chopinem.",
+    date: "2025-02-25",
+    readTime: "9 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "ryanair-opoznienie-najgorsze-trasy-polska",
+    title: "Ryanair opóźnienie — najgorsze trasy z Polski 2026",
+    excerpt: "Ranking tras Ryanair z największą liczbą opóźnień. Sprawdź które połączenia są najbardziej problematyczne.",
+    date: "2025-02-25",
+    readTime: "10 min",
+    category: "Ryanair",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "pozew-sadowy-ryanair-drobne-roszczenia",
+    title: "Pozew sądowy Ryanair — europejskie postępowanie drobne roszczenia",
+    excerpt: "Jak pozwać Ryanair przez europejskie postępowanie w sprawie drobnych roszczeń? Przewodnik krok po kroku.",
+    date: "2025-02-25",
+    readTime: "11 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "indigo"
   }
 ];
 
