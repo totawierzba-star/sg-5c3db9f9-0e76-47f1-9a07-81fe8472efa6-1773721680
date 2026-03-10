@@ -67,7 +67,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-300 font-bold">✓</span>
-                    <span>Opóźnienie pierwszego lotu Ryanair >3h na miejscu docelowym</span>
+                    <span>Opóźnienie pierwszego lotu Ryanair &gt;3h na miejscu docelowym</span>
                   </li>
                 </ul>
                 <div className="mt-4 p-3 bg-white/10 rounded-lg">
@@ -139,7 +139,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
-                <span>Zapłacić <strong>250-600 € odszkodowania</strong> (jeśli dojedziesz >3h później)</span>
+                <span>Zapłacić <strong>250-600 € odszkodowania</strong> (jeśli dojedziesz &gt;3h później)</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
@@ -219,7 +219,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
                 <ol className="space-y-3 text-gray-700 list-decimal list-inside">
                   <li><strong>Jednolita rezerwacja</strong> (1 kod PNR dla wszystkich lotów)</li>
                   <li><strong>Pierwszy lot Ryanair opóźniony</strong> (to Ryanair ponosi winę)</li>
-                  <li><strong>Dotarcie na miejsce docelowe >3h później</strong> niż planowano</li>
+                  <li><strong>Dotarcie na miejsce docelowe &gt;3h później</strong> niż planowano</li>
                   <li><strong>Brak nadzwyczajnych okoliczności</strong> (np. nie strajk ATC)</li>
                 </ol>
                 <p className="text-sm text-gray-600 mt-4 italic">
@@ -235,7 +235,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
                   <p><strong>Problem:</strong> Lot Gdańsk–Dublin opóźniony 2h → stracona przesiadka do Bostonu</p>
                   <p><strong>Efekt:</strong> Dotarcie do Bostonu 8h później (następny lot następnego dnia)</p>
                   <p className="font-bold text-green-700 mt-3">
-                    ✓ <strong>Należy się 600 € odszkodowania</strong> (dystans >3500 km, opóźnienie >3h na miejscu docelowym)
+                    ✓ <strong>Należy się 600 € odszkodowania</strong> (dystans &gt;3500 km, opóźnienie &gt;3h na miejscu docelowym)
                   </p>
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span><strong>Opóźnienie <3h na miejscu docelowym</strong> (mimo straconej przesiadki)</span>
+                    <span><strong>Opóźnienie &lt;3h na miejscu docelowym</strong> (mimo straconej przesiadki)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
@@ -404,7 +404,7 @@ export default function RyanairMissedConnectionWlasnaPrzesiadka() {
                   • Do 1500 km: <strong>250 €</strong><br />
                   • 1500-3500 km: <strong>400 €</strong><br />
                   • Powyżej 3500 km: <strong>600 €</strong><br />
-                  <em>Warunek: dotarcie na miejsce docelowe >3h później niż planowano.</em>
+                  <em>Warunek: dotarcie na miejsce docelowe &gt;3h później niż planowano.</em>
                 </p>
               </details>
 
