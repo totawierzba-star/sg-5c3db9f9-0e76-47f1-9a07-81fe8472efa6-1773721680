@@ -746,11 +746,131 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: "pozew-sadowy-wizz-air-polska",
-    title: "Pozew sądowy Wizz Air Polska — jak skutecznie wyegzekwować odszkodowanie? [2026]",
-    excerpt: "Wizz Air ignoruje Twoją reklamację? Sprawdź jak złożyć pozew sądowy przez europejskie postępowanie w sprawie drobnych roszczeń i wygrać sprawę o 250-600 €.",
-    date: "2026-02-27",
+    title: "Pozew sądowy Wizz Air Polska — jak skutecznie wyegzekwować?",
+    excerpt: "Kompletny przewodnik europejskiego postępowania w sprawie drobnych roszczeń przeciwko Wizz Air. Jak samemu pozwać linię lotniczą online?",
+    date: "2026-03-10",
+    readTime: "12 min",
+    category: "Wizz Air",
+    featured: true,
+    color: "purple"
+  },
+  {
+    slug: "eurowings-odszkodowanie-polscy-pasazerowie",
+    title: "Eurowings odszkodowanie dla polskich pasażerów — przewodnik 2026",
+    excerpt: "Sprawdź, kiedy Eurowings musi wypłacić odszkodowanie do 600 € za opóźniony lub odwołany lot. Kompletny przewodnik prawny dla polskich pasażerów.",
+    date: "2026-03-10",
+    readTime: "8 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "swiss-air-odszkodowanie-polska",
+    title: "Swiss Air odszkodowanie z Polski — kiedy należy się €600?",
+    excerpt: "Kompletny przewodnik: jak uzyskać 250-600 € odszkodowania od Swiss International Air Lines za opóźniony lub odwołany lot z/do Polski.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "austrian-airlines-odszkodowanie-polska",
+    title: "Austrian Airlines odszkodowanie z Polski — kiedy należy się €600?",
+    excerpt: "Kompletny przewodnik: jak uzyskać 250-600 € odszkodowania od Austrian Airlines za opóźniony lub odwołany lot z/do Polski.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "british-airways-odszkodowanie-polska",
+    title: "British Airways odszkodowanie z Polski — kiedy należy się €600?",
+    excerpt: "Kompletny przewodnik: jak uzyskać 250-600 € odszkodowania od British Airways za opóźniony lub odwołany lot z/do Polski.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "klm-odszkodowanie-polska",
+    title: "KLM odszkodowanie z Polski — kiedy należy się €600?",
+    excerpt: "Kompletny przewodnik: jak uzyskać 250-600 € odszkodowania od KLM za opóźniony lub odwołany lot z/do Polski.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "air-france-odszkodowanie-polska",
+    title: "Air France odszkodowanie z Polski — kiedy należy się €600?",
+    excerpt: "Kompletny przewodnik: jak uzyskać 250-600 € odszkodowania od Air France za opóźniony lub odwołany lot z/do Polski.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "turkish-airlines-odszkodowanie-polska-we261",
+    title: "Turkish Airlines odszkodowanie z Polski — kiedy stosuje się WE 261/2004?",
+    excerpt: "Sprawdź, kiedy Turkish Airlines musi wypłacić odszkodowanie do 600 € za lot z Polski. Przewodnik WE 261 dla połączeń przez Stambuł.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "emirates-opoznienie-warszawa-we261",
+    title: "Emirates opóźnienie z Warszawy — czy WE 261/2004 obowiązuje?",
+    excerpt: "Sprawdź, kiedy Emirates musi wypłacić odszkodowanie za lot z Warszawy. Przewodnik WE 261 dla połączeń przez Dubaj.",
+    date: "2026-03-10",
+    readTime: "8 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "qatar-airways-odwolanie-polska",
+    title: "Qatar Airways odwołanie z Polski — prawa pasażera i odszkodowanie do 600 €",
+    excerpt: "Sprawdź, kiedy Qatar Airways musi wypłacić odszkodowanie za odwołany lot z Polski. Przewodnik WE 261 dla połączeń przez Doha.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    slug: "smartwings-odszkodowanie-czarter-we261",
+    title: "Smartwings odszkodowanie — czarter wakacyjny a WE 261/2004 (2026)",
+    excerpt: "Sprawdź, czy czarter wakacyjny Smartwings podlega WE 261. Przewodnik odszkodowań za loty czarterowe 250-600 € z Polski.",
+    date: "2026-03-10",
+    readTime: "10 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "teal"
+  },
+  {
+    slug: "jet2-odszkodowanie-polska",
+    title: "Jet2 odszkodowanie dla polskich pasażerów — przewodnik 2026",
+    excerpt: "Sprawdź jak uzyskać 250-600 € odszkodowania od Jet2 za opóźniony lub odwołany lot z Polski. Przewodnik WE 261/UK261 po Brexicie.",
+    date: "2026-03-10",
+    readTime: "9 min",
+    category: "Linie lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "wizz-air-vs-ryanair-odmowy-porownanie",
+    title: "Wizz Air vs Ryanair — które linie częściej odmawiają odszkodowania?",
+    excerpt: "Niezależne porównanie Wizz Air i Ryanair: statystyki odmów, skuteczność reklamacji, czas wypłaty. Która linia szybciej płaci? [2026]",
+    date: "2026-03-10",
     readTime: "11 min",
-    category: "Prawo lotnicze",
+    category: "Porównania",
     featured: true,
     color: "indigo"
   }

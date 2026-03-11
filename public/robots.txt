@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://problemlot.com/sitemap.xml
+Sitemap: https://problemlot.pl/sitemap.xml
