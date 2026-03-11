@@ -970,6 +970,176 @@ export const blogArticles: BlogArticle[] = [
     category: "Lotniska",
     featured: false,
   },
+  {
+    title: "Overbooking — odmowa wejścia na pokład i odszkodowanie do €600",
+    slug: "overbooking-odmowa-wejscia-odszkodowanie",
+    excerpt: "Linia lotnicza odmówiła Ci wejścia na pokład z powodu overbookingu? Sprawdź, ile odszkodowania Ci przysługuje i jak je uzyskać.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    title: "Downgrade — przeniesienie do niższej klasy i zwrot do 75%",
+    slug: "downgrade-nizszej-klasy-zwrot-75-procent",
+    excerpt: "Kupiłeś bilet w klasie biznes, a poleciałeś ekonomiczną? Sprawdź, jak odzyskać 30-75% wartości biletu za downgrade.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Lot czarterowy a WE 261 — czy wakacje all-inclusive są chronione?",
+    slug: "lot-czarterowy-we261-wakacje-all-inclusive",
+    excerpt: "Wakacyjny lot czarterowy opóźniony? Sprawdź, czy rozporządzenie WE 261 chroni loty all-inclusive i jak uzyskać 250-600 € odszkodowania.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    title: "Bilet przez OTA (Kiwi, Booking, eSky) — czy wpływa na odszkodowanie?",
+    slug: "bilet-ota-kiwi-booking-esky-odszkodowanie",
+    excerpt: "Kupiłeś bilet LOT przez Kiwi, eSky lub Booking? Sprawdź, czy to wpływa na Twoje prawo do odszkodowania 250-600 € i jak je odzyskać.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "teal"
+  },
+  {
+    title: "Upadła linia lotnicza — co z odszkodowaniem?",
+    slug: "upadla-linia-lotnicza-odszkodowanie",
+    excerpt: "Linia lotnicza zbankrutowała? Sprawdź, jak odzyskać pieniądze za bilet i czy możesz dochodzić odszkodowania WE 261 po upadłości.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "red"
+  },
+  {
+    title: "Opóźnienie nocne — hotel i transport: kto płaci?",
+    slug: "opoznienie-nocne-hotel-transport-kto-placi",
+    excerpt: "Twój lot opóźniony na noc? Sprawdź, co Ci przysługuje: hotel, posiłki, transport + 250-600 € odszkodowania. Linia musi zapłacić!",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "blue"
+  },
+  {
+    title: "Grupowa rezerwacja — zbiorowe roszczenie krok po kroku",
+    slug: "grupowa-rezerwacja-zbiorowe-roszczenie",
+    excerpt: "Leciałeś w grupie i lot się opóźnił? Sprawdź, jak złożyć zbiorowe roszczenie o odszkodowanie 250-600 € dla całej grupy.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: false,
+    color: "green"
+  },
+  {
+    title: "Warszawa–Londyn opóźnienie — odszkodowanie za najpopularniejszą trasę",
+    slug: "warszawa-londyn-opoznienie-odszkodowanie",
+    excerpt: "Twój lot Warszawa–Londyn opóźniony >3h? Należy Ci się 250 € odszkodowania. Sprawdź jak je uzyskać od LOT, Ryanair, Wizz Air.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Trasy lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    title: "Warszawa–Barcelona opóźnienie — jak uzyskać odszkodowanie?",
+    slug: "warszawa-barcelona-opoznienie-odszkodowanie",
+    excerpt: "Lot Warszawa–Barcelona opóźniony >3h? Sprawdź jak uzyskać 400 € odszkodowania od LOT, Ryanair, Vueling.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    title: "Warszawa–Amsterdam opóźnienie — odszkodowanie krok po kroku",
+    slug: "warszawa-amsterdam-opoznienie-odszkodowanie",
+    excerpt: "Trasa Warszawa–Amsterdam opóźniona >3h? Należy Ci się 250 € odszkodowania. Sprawdź procedury dla LOT i KLM.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: true,
+    color: "orange"
+  },
+  {
+    title: "Warszawa–Paryż opóźnienie — prawa pasażera i odszkodowanie",
+    slug: "warszawa-paryz-opoznienie-odszkodowanie",
+    excerpt: "Lot Warszawa–Paryż opóźniony >3h? Sprawdź jak uzyskać 250 € odszkodowania od LOT i Air France.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Warszawa–Dublin opóźnienie — odszkodowanie LOT i Ryanair",
+    slug: "warszawa-dublin-opoznienie-odszkodowanie",
+    excerpt: "Trasa WAW–DUB opóźniona >3h? Należy Ci się 250 € odszkodowania. Sprawdź różnice LOT vs Ryanair.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "green"
+  },
+  {
+    title: "Kraków–Londyn opóźnienie — odszkodowanie Ryanair i easyJet",
+    slug: "krakow-londyn-opoznienie-odszkodowanie",
+    excerpt: "Lot Kraków–Londyn opóźniony >3h? Sprawdź jak uzyskać 400 € odszkodowania od Ryanair i easyJet.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "blue"
+  },
+  {
+    title: "Kraków–Dublin opóźnienie — odszkodowanie za lot do Irlandii",
+    slug: "krakow-dublin-opoznienie-odszkodowanie",
+    excerpt: "Trasa KRK–DUB opóźniona >3h? Należy Ci się 400 € odszkodowania od Ryanair. Sprawdź procedury.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "green"
+  },
+  {
+    title: "Gdańsk–Londyn opóźnienie — odszkodowanie Ryanair",
+    slug: "gdansk-londyn-opoznienie-odszkodowanie",
+    excerpt: "Lot GDN–STN opóźniony >3h? Sprawdź jak uzyskać 250 € odszkodowania od Ryanair za trasę Gdańsk–Londyn Stansted.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "blue"
+  },
+  {
+    title: "Wrocław–Londyn opóźnienie — odszkodowanie krok po kroku",
+    slug: "wroclaw-londyn-opoznienie-odszkodowanie",
+    excerpt: "Trasa WRO–LON opóźniona >3h? Należy Ci się 250 € odszkodowania. Sprawdź procedury dla Ryanair i Wizz Air.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "red"
+  },
+  {
+    title: "Katowice–Londyn Luton opóźnienie — odszkodowanie Wizz Air",
+    slug: "katowice-londyn-luton-opoznienie-odszkodowanie",
+    excerpt: "Lot KTW–LTN opóźniony >3h? Sprawdź jak uzyskać 400 € odszkodowania od Wizz Air za trasę Katowice–Londyn Luton.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
 ];
 
 export const getCategoryLabel = (category: BlogArticle["category"]): string => {
