@@ -845,13 +845,6 @@ export const blogArticles: BlogArticle[] = [
     color: "indigo"
   },
   {
-    title: "Wizz Air vs Ryanair – porównanie odmów odszkodowania",
-    slug: "wizz-air-vs-ryanair-odmowy-porownanie",
-    excerpt: "Porównanie strategii odmowy odszkodowań przez Wizz Air i Ryanair. Które linie częściej odmawiają i jak się bronić?",
-    category: "Porównania",
-    featured: true,
-  },
-  {
     title: "Lotnisko Warszawa Modlin – odszkodowanie za odwołany lot",
     slug: "lotnisko-warszawa-modlin-odwolany-lot",
     excerpt: "Twój lot z Modlina został odwołany? Sprawdź, jak dochodzić odszkodowania do 600 € z lotniska Warszawa-Modlin.",
