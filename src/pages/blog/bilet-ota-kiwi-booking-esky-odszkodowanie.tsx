@@ -187,7 +187,7 @@ export default function BiletOTAKiwiBookingEskyOdszkodowanie() {
                     <ul className="space-y-1 text-sm text-slate-700">
                       <li className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4 text-green-600" />
-                        <span><strong>250-600 € odszkodowania</strong> przy opóźnieniu >3h lub odwołaniu</span>
+                        <span><strong>250-600 € odszkodowania</strong> przy opóźnieniu &gt;3h lub odwołaniu</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4 text-green-600" />

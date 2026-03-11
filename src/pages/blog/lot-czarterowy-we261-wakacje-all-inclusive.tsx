@@ -54,7 +54,7 @@ export default function LotCzarterowyWE261WakacjeAllInclusive() {
                   <strong>TAK</strong> — loty czarterowe są w pełni chronione przez Rozporządzenie WE 261/2004. 
                   Nie ma znaczenia, czy kupiłeś samodzielnie bilet, czy pakiet all-inclusive w biurze podróży. 
                   <strong>Za odszkodowanie odpowiada linia lotnicza</strong>, nie tour operator. 
-                  Przysługuje Ci 250-600 € przy opóźnieniu >3h lub odwołaniu.
+                  Przysługuje Ci 250-600 € przy opóźnieniu &gt;3h lub odwołaniu.
                 </p>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function LotCzarterowyWE261WakacjeAllInclusive() {
                 <ul className="space-y-2 text-sm text-blue-800 mb-4">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
-                    <span><strong>Opóźnienie</strong> lotu >3h</span>
+                    <span><strong>Opóźnienie</strong> lotu &gt;3h</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -459,7 +459,7 @@ export default function LotCzarterowyWE261WakacjeAllInclusive() {
                 </h3>
                 <p className="text-slate-700">
                   <strong>Tak.</strong> Nie ma znaczenia, jak kupiłeś lot — odszkodowanie przysługuje zawsze, 
-                  gdy spełnione są warunki WE 261/2004 (opóźnienie >3h, odwołanie bez powiadomienia 14 dni wcześniej). 
+                  gdy spełnione są warunki WE 261/2004 (opóźnienie &gt;3h, odwołanie bez powiadomienia 14 dni wcześniej). 
                   Reklamację składasz do linii lotniczej, nie do Rainbow/TUI/Itaki.
                 </p>
               </div>
