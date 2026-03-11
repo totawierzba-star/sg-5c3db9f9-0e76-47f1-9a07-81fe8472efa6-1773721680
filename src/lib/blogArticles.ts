@@ -589,7 +589,7 @@ export const blogArticles: BlogArticle[] = [
     title: "Ryanair overbooking — odmowa wejścia na pokład z Polski [2026]",
     excerpt: "Ryanair odmówił Ci wejścia na pokład z powodu overbookingu? Należy Ci się natychmiastowe odszkodowanie 250-600 € + zwrot/przekierowanie.",
     date: "2025-02-26",
-    readTime: "8 min",
+    readTime: "9 min",
     category: "Ryanair",
     featured: true,
     color: "red"
@@ -1103,7 +1103,7 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Kraków–Dublin opóźnienie — odszkodowanie za lot do Irlandii",
     slug: "krakow-dublin-opoznienie-odszkodowanie",
-    excerpt: "Trasa KRK–DUB opóźniona >3h? Należy Ci się 400 € odszkodowania od Ryanair. Sprawdź procedury.",
+    excerpt: "Straciłeś przesiadkę przez opóźnienie Ryanair? Sprawdź kiedy należy się 250-600 € i jak udowodnić jednolitą rezerwację.",
     date: "2026-03-11",
     readTime: "7 min",
     category: "Trasy lotnicze",
@@ -1133,9 +1133,39 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Katowice–Londyn Luton opóźnienie — odszkodowanie Wizz Air",
     slug: "katowice-londyn-luton-opoznienie-odszkodowanie",
-    excerpt: "Lot KTW–LTN opóźniony >3h? Sprawdź jak uzyskać 400 € odszkodowania od Wizz Air za trasę Katowice–Londyn Luton.",
+    excerpt: "Opóźniony lot Katowice–Londyn Luton? Sprawdź, ile odszkodowania możesz otrzymać od Wizz Air za trasę KTW–LTN.",
     date: "2026-03-11",
     readTime: "7 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Norwegia opóźnienie — odszkodowanie za loty do Skandynawii",
+    slug: "polska-norwegia-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot z Polski do Norwegii? Oslo, Bergen, Stavanger — sprawdź swoje prawa i kwotę odszkodowania (250 €).",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Niemcy opóźnienie — Lufthansa, Eurowings, Ryanair",
+    slug: "polska-niemcy-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot z Polski do Niemiec? Berlin, Frankfurt, Monachium — jak uzyskać odszkodowanie 250 € za trasę PL–DE.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Włochy opóźnienie — Ryanair, Wizz Air, LOT odszkodowanie",
+    slug: "polska-wlochy-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot z Polski do Włoch? Rzym, Mediolan, Wenecja — sprawdź, jak uzyskać odszkodowanie 250–400 € za trasę PL–IT.",
+    date: "2026-03-11",
+    readTime: "8 min",
     category: "Trasy lotnicze",
     featured: false,
     color: "purple"

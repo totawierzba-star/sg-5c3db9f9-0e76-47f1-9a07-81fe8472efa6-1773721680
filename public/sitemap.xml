@@ -82,7 +82,7 @@
     <priority>0.9</priority>
   </url>
   
-  <!-- Blog Articles (114 total) -->
+  <!-- Blog Articles (117 total) -->
   <url>
     <loc>https://problemlot.pl/blog/odwolany-lot-historia-pasazera</loc>
     <lastmod>2025-01-15</lastmod>
@@ -811,7 +811,7 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- NEW: Klaster 7 - Sytuacje specjalne (7 articles) -->
+  <!-- Klaster 7: Sytuacje specjalne (7 articles) -->
   <url>
     <loc>https://problemlot.pl/blog/overbooking-odmowa-wejscia-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
@@ -861,7 +861,7 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- NEW: Trasy lotnicze (10 articles) -->
+  <!-- Trasy lotnicze (13 articles) -->
   <url>
     <loc>https://problemlot.pl/blog/warszawa-londyn-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
@@ -927,6 +927,27 @@
   
   <url>
     <loc>https://problemlot.pl/blog/katowice-londyn-luton-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-norwegia-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-niemcy-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-wlochy-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
