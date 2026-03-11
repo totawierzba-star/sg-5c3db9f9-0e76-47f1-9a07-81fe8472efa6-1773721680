@@ -161,7 +161,7 @@ export default function LotniskoWroclawOdwolanyLot() {
             <div className="border-l-4 border-blue-500 pl-4">
               <h3 className="font-bold text-gray-900 mb-2">3. Lufthansa odwołuje loty przez Frankfurt/Monachium</h3>
               <p className="text-gray-700">
-                <strong>Lufthansa obsługuje połączenia z Wrocławia do swoich hubów (Frankfurt, Monachium).</strong> Przy odwołaniu lotu z przesiadką, odszkodowanie przysługuje <strong>za całą trasę</strong>, jeśli nie dotarłeś do celu z opóźnieniem >3h.
+                <strong>Lufthansa obsługuje połączenia z Wrocławia do swoich hubów (Frankfurt, Monachium).</strong> Przy odwołaniu lotu z przesiadką, odszkodowanie przysługuje <strong>za całą trasę</strong>, jeśli nie dotarłeś do celu z opóźnieniem &gt;3h.
               </p>
               <p className="text-gray-700 mt-2">
                 <Link href="/blog/lufthansa-kompenzace-reklamace" className="text-blue-600 hover:underline">
@@ -369,7 +369,7 @@ export default function LotniskoWroclawOdwolanyLot() {
                 Lufthansa odwołał lot z Wrocławia przez Frankfurt. Czy przysługuje odszkodowanie?
               </summary>
               <p className="text-gray-700 mt-3">
-                <strong>Tak!</strong> Przy lotach z przesiadką odszkodowanie przysługuje <strong>za całą trasę</strong>, jeśli nie dotarłeś do celu końcowego lub dotarłeś z opóźnieniem >3h. Wrocław-Frankfurt to tylko pierwszy etap - liczą się dystanse do celu końcowego.
+                <strong>Tak!</strong> Przy lotach z przesiadką odszkodowanie przysługuje <strong>za całą trasę</strong>, jeśli nie dotarłeś do celu końcowego lub dotarłeś z opóźnieniem &gt;3h. Wrocław-Frankfurt to tylko pierwszy etap - liczą się dystanse do celu końcowego.
               </p>
             </details>
           </div>
