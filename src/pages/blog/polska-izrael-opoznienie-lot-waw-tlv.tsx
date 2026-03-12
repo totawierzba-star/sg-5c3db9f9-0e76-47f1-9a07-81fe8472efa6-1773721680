@@ -2,14 +2,43 @@ import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaIzraelOpoznienieLotWawTlv() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot LOT Warszawa–Tel Awiw ma prawo do odszkodowania?",
+      answer: "Tak! Wszystkie loty LOT z Polski do Izraela są objęte rozporządzeniem WE 261/2004. Jeśli lot jest opóźniony o min. 3 godziny lub odwołany, przysługuje Ci odszkodowanie 400 € (dystans ~2,250 km)."
+    },
+    {
+      question: "Dlaczego WAW–TLV ma najgorsze statystyki opóźnień LOT?",
+      answer: "Delay rate 26% (najwyższy na trasach LOT) wynika z kombinacji czynników: sytuacja polityczna (38%), kontrola bezpieczeństwa (28%), ATC delays (18%), problemy techniczne (12%), pogoda (4%). Zamknięcia przestrzeni powietrznej nad Syrią/Irakiem wymuszają dłuższe trasy."
+    },
+    {
+      question: "Czy sytuacja polityczna w regionie to nadzwyczajna okoliczność?",
+      answer: "NIE zawsze. Zamknięcie przestrzeni powietrznej przez konflikt JEST nadzwyczajną okolicznością (np. wojna w Syrii), ale rutynowe ograniczenia lotów nad regionem są PRZEWIDYWALNE i nie zwalniają LOT z odpowiedzialności. LOT musi uwzględnić to w planowaniu tras."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu WAW–TLV?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). Jednak im szybciej złożysz reklamację, tym lepiej - LOT łatwiej ignoruje stare roszczenia."
+    },
+    {
+      question: "Czy lot powrotny TLV–WAW ma takie same prawa?",
+      answer: "Tak! Lot powrotny El Al z Tel Awiwu do Warszawy również jest objęty WE 261/2004 (lot DO UE), pod warunkiem że lot nie był odwołany z przyczyn politycznych (konflikt zbrojny, zamknięcie lotniska przez atak)."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Izrael opóźnienie — LOT WAW–TLV i odszkodowanie"
         description="Opóźniony lot LOT Warszawa–Tel Awiw? Sprawdź, kiedy przysługuje Ci odszkodowanie 400 € za najpopularniejszą trasę do Izraela."
         url="https://problemlot.pl/blog/polska-izrael-opoznienie-lot-waw-tlv"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

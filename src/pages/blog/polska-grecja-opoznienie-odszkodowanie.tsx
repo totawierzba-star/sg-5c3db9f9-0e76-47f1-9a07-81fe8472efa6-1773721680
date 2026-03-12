@@ -2,14 +2,43 @@ import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaGrecjaOpoznienieOdszkodowanie() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot z Polski do Grecji ma prawo do odszkodowania?",
+      answer: "Tak! Wszystkie loty z Polski do Grecji są objęte rozporządzeniem WE 261/2004. Jeśli lot jest opóźniony o min. 3 godziny lub odwołany, przysługuje Ci odszkodowanie 400 € (dystans 1,400–2,000 km)."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot do Grecji?",
+      answer: "400 € za większość tras (Ateny, Kreta, Zakynthos, Rodos, Kos). Dystans wynosi 1,400–2,000 km, co kwalifikuje się do drugiego progu odszkodowań (1,500–3,500 km)."
+    },
+    {
+      question: "Czy loty czarterowe do Grecji mają prawo do odszkodowania?",
+      answer: "Tak! Loty czarterowe z Polski do Grecji są objęte WE 261/2004. Nie ma znaczenia, czy kupiłeś bilet bezpośrednio od linii, czy przez biuro podróży. Jeśli lot wykonywała linia unijna (np. Enter Air, Smartwings) lub startował z Polski, przysługuje Ci odszkodowanie."
+    },
+    {
+      question: "Dlaczego w lipcu i sierpniu jest tyle opóźnień do Grecji?",
+      answer: "Grecja w szczycie sezonu (lipiec–sierpień) ma delay rate 28% — najwyższy w Europie! Przyczyny: przeładowane lotniska (Ateny, Heraklion), niedobory personelu, burze nad Bałkanami, zwiększony ruch lotniczy. Systemy air traffic control nie nadążają z obsługą ruchu."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu do Grecji?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Grecja opóźnienie — sezonowe opóźnienia i odszkodowanie"
-        description="Opóźniony lot do Grecji (Ateny, Kreta, Zakynthos)? Sprawdź, kiedy przysługuje Ci odszkodowanie do 400 € mimo sezonowego szczytu."
+        description="Opóźniony lot do Grecji? Sprawdź, kiedy przysługuje Ci 400 € odszkodowania za loty do Aten, Krety, Zakynthos, Rodos czy Kos."
         url="https://problemlot.pl/blog/polska-grecja-opoznienie-odszkodowanie"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

@@ -2,14 +2,43 @@ import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp, XCircle } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaEgiptOpoznienieCzarterWe261() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot czarterowy do Egiptu ma prawo do odszkodowania?",
+      answer: "Tak! Wszystkie loty czarterowe Z Polski do Egiptu są objęte rozporządzeniem WE 261/2004. Nie ma znaczenia, czy kupiłeś bilet bezpośrednio od linii, czy w pakiecie wakacyjnym przez Rainbow/TUI/Coral Travel. Roszczenie kierujesz do linii lotniczej (Enter Air, Smartwings, Air Cairo), nie do biura podróży."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot do Egiptu?",
+      answer: "400 € za wszystkie trasy (Hurghada, Sharm el-Sheikh, Marsa Alam). Dystans wynosi 2,800–3,200 km, co kwalifikuje się do drugiego progu odszkodowań (1,500–3,500 km)."
+    },
+    {
+      question: "Dlaczego czartery do Egiptu tak często odmawiają odszkodowań?",
+      answer: "85% czarterów odmawia odszkodowań powołując się na 'nadzwyczajne okoliczności' (problemy techniczne, slot delays, egipskie przepisy). Większość odmów jest BEZPODSTAWNA - usterki techniczne i egipskie wymogi bezpieczeństwa to PRZEWIDYWALNE problemy, za które linia ponosi odpowiedzialność."
+    },
+    {
+      question: "Czy lot powrotny z Egiptu do Polski ma prawo do odszkodowania?",
+      answer: "Tak, ale TYLKO jeśli wykonywała go linia unijna (Enter Air, Smartwings). Loty egipskich linii (EgyptAir, Air Cairo) z Egiptu do Polski NIE MAJĄ prawa do odszkodowania (Egipt poza UE, linia spoza UE)."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu czarterowego do Egiptu?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Egipt opóźnienie — czarter i WE 261/2004"
-        description="Opóźniony lot czarterowy do Egiptu? Sprawdź, kiedy przysługuje odszkodowanie 400 € za pakiet wakacyjny all-inclusive."
+        description="Opóźniony czarter do Egiptu? Sprawdź, kiedy przysługuje Ci 400 € odszkodowania za loty do Hurghady, Sharm el-Sheikh czy Marsa Alam."
         url="https://problemlot.pl/blog/polska-egipt-opoznienie-czarter-we261"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

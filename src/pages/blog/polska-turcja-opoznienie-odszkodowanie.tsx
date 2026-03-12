@@ -1,15 +1,44 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp, XCircle } from "lucide-react";
+import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, MapPin, XCircle, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaTurcjaOpoznienieOdszkodowanie() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot z Polski do Turcji ma prawo do odszkodowania?",
+      answer: "Tak, ale TYLKO lot Z Polski do Turcji (wylot z UE). Turcja jest poza UE, więc lot powrotny Turkish Airlines z Turcji do Polski NIE MA prawa do odszkodowania. Natomiast lot z Polski (LOT, Ryanair, Wizz Air, czartery) jest objęty WE 261/2004."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot do Turcji?",
+      answer: "400 € za większość tras (Istanbul, Antalya, Bodrum). Dystans wynosi 1,600–1,800 km, co kwalifikuje się do drugiego progu odszkodowań (1,500–3,500 km)."
+    },
+    {
+      question: "Czy lot czarterowy do Turcji ma prawo do odszkodowania?",
+      answer: "Tak! Loty czarterowe z Polski do Turcji są objęte WE 261/2004. Nie ma znaczenia, czy kupiłeś bilet bezpośrednio od linii, czy przez biuro podróży all-inclusive. Roszczenie kierujesz do linii lotniczej (Enter Air, Corendon), nie do biura podróży."
+    },
+    {
+      question: "Czy Turkish Airlines musi zapłacić odszkodowanie za lot z Warszawy?",
+      answer: "Tak! Jeśli Turkish Airlines wykonuje lot Z Polski do Turcji i jest opóźniony ≥3h, musi zapłacić 400 € odszkodowania. Nie ma znaczenia, że to linia turecka - liczy się kierunek lotu (wylot z UE)."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu do Turcji?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Turcja opóźnienie — Turkish Airlines i loty czarterowe"
-        description="Opóźniony lot do Turcji? Sprawdź, kiedy przysługuje odszkodowanie 400 € za Turkish Airlines, LOT i loty czarterowe."
+        description="Opóźniony lot do Turcji? Sprawdź, kiedy przysługuje Ci 400 € odszkodowania za loty do Stambułu, Antalyi czy Bodrum."
         url="https://problemlot.pl/blog/polska-turcja-opoznienie-odszkodowanie"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

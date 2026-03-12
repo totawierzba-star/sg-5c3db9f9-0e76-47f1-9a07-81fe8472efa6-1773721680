@@ -1,15 +1,44 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp, XCircle } from "lucide-react";
+import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, XCircle, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaDubajOpoznienieEmiratesWe261() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot Emirates z Polski do Dubaju ma prawo do odszkodowania?",
+      answer: "Tak! Lot Z Polski do Dubaju (wylot z UE) jest objęty rozporządzeniem WE 261/2004, niezależnie od przewoźnika (Emirates, Flydubai, LOT). Jeśli lot jest opóźniony ≥3h, przysługuje Ci 400 € odszkodowania."
+    },
+    {
+      question: "Czy lot powrotny Emirates z Dubaju do Polski ma prawo do odszkodowania?",
+      answer: "NIE! Dubaj jest poza UE, a Emirates to linia spoza UE. Lot powrotny z Dubaju do Polski NIE JEST objęty WE 261/2004. Odszkodowanie przysługuje TYLKO za lot Z Polski do Dubaju."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot Warszawa–Dubaj?",
+      answer: "400 € (dystans ~4,200 km). Mimo że dystans przekracza 3,500 km, WE 261/2004 przewiduje odszkodowanie 400 € dla lotów poza UE w zakresie 1,500–3,500 km (art. 7 ust. 2b). Maksymalne 600 € dotyczy tylko lotów >3,500 km wewnątrz UE."
+    },
+    {
+      question: "Czy Flydubai musi zapłacić odszkodowanie za lot z Warszawy?",
+      answer: "Tak! Jeśli Flydubai wykonuje lot Z Polski do Dubaju i jest opóźniony ≥3h, musi zapłacić 400 € odszkodowania. Nie ma znaczenia, że to linia z UAE - liczy się kierunek lotu (wylot z UE)."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu do Dubaju?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Dubaj opóźnienie — Emirates i granice WE 261"
-        description="Opóźniony lot do Dubaju (Emirates, LOT, Flydubai)? Sprawdź, kiedy przysługuje odszkodowanie 400 € i kiedy WE 261 NIE obowiązuje."
+        description="Opóźniony lot do Dubaju? Sprawdź, kiedy przysługuje Ci 400 € odszkodowania za loty Emirates/Flydubai z Polski do UAE."
         url="https://problemlot.pl/blog/polska-dubaj-opoznienie-emirates-we261"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

@@ -1,15 +1,44 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, MapPin } from "lucide-react";
+import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, MapPin, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaHiszpaniaOpoznienieOdszkodowanie() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot z Polski do Hiszpanii ma prawo do odszkodowania?",
+      answer: "Tak! Wszystkie loty z Polski do Hiszpanii są objęte rozporządzeniem WE 261/2004. Jeśli lot jest opóźniony o min. 3 godziny lub odwołany, przysługuje Ci odszkodowanie 400 € (dystans 1,800–2,300 km)."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot do Hiszpanii?",
+      answer: "400 € za wszystkie trasy (Barcelona, Madryt, Alicante, Malaga, Sewilla). Dystans wynosi 1,800–2,300 km, co kwalifikuje się do drugiego progu odszkodowań (1,500–3,500 km)."
+    },
+    {
+      question: "Czy Ryanair często odmawia odszkodowań za loty do Hiszpanii?",
+      answer: "Tak, Ryanair odmawia w ~68% przypadków, najczęściej powołując się na 'nadzwyczajne okoliczności' (usterki techniczne, pogoda, problemy air traffic control). Większość odmów jest BEZPODSTAWNA i można je skutecznie zakwestionować."
+    },
+    {
+      question: "Czy lot czarterowy do Hiszpanii ma prawo do odszkodowania?",
+      answer: "Tak! Loty czarterowe z Polski do Hiszpanii są objęte WE 261/2004. Nie ma znaczenia, czy kupiłeś bilet bezpośrednio od linii, czy przez biuro podróży all-inclusive."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu do Hiszpanii?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–Hiszpania opóźnienie — Ryanair, Vueling, LOT"
-        description="Opóźniony lot do Hiszpanii (Barcelona, Madryt, Alicante)? Sprawdź, kiedy Ryanair, Vueling i LOT muszą wypłacić odszkodowanie do 400 €."
+        description="Opóźniony lot do Hiszpanii? Sprawdź, kiedy przysługuje Ci 400 € odszkodowania za loty do Barcelony, Madrytu, Alicante czy Malagi."
         url="https://problemlot.pl/blog/polska-hiszpania-opoznienie-odszkodowanie"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">

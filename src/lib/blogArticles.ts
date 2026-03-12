@@ -892,7 +892,7 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Lotnisko Warszawa Chopin – odszkodowanie za odwołany lot",
     slug: "lotnisko-warszawa-chopin-odwolany-lot",
-    excerpt: "Lot z Warszawy został odwołany? Poznaj procedury reklamacyjne dla lotniska Chopin i dochodzenie odszkodowania.",
+    excerpt: "Lot z Warszawy został odwołany? Poznaj swoje prawa i procedury reklamacyjne na lotnisku w Warszawie.",
     date: "2026-03-11",
     readTime: "9 min",
     category: "Lotniska",
@@ -910,7 +910,7 @@ export const blogArticles: BlogArticle[] = [
   {
     title: "Lotnisko Kraków-Balice – odszkodowanie za odwołany lot",
     slug: "lotnisko-krakow-balice-odwolany-lot",
-    excerpt: "Lot z Balic został odwołany? Poznaj swoje prawa i procedury reklamacyjne na lotnisku w Krakowie.",
+    excerpt: "Lot z Balic został odwołany? Poznaj swoje prawa i procedury reklamacyjne dla lotniska w Krakowie.",
     date: "2026-03-11",
     readTime: "8 min",
     category: "Lotniska",
@@ -1161,11 +1161,81 @@ export const blogArticles: BlogArticle[] = [
     color: "purple"
   },
   {
-    title: "Polska–Włochy opóźnienie — Ryanair, Wizz Air, LOT odszkodowanie",
+    title: "Polska–Włochy opóźnienie — Ryanair, Wizz Air, LOT",
     slug: "polska-wlochy-opoznienie-odszkodowanie",
-    excerpt: "Opóźniony lot z Polski do Włoch? Rzym, Mediolan, Wenecja — sprawdź, jak uzyskać odszkodowanie 250–400 € za trasę PL–IT.",
-    date: "2026-03-11",
-    readTime: "8 min",
+    excerpt: "Opóźniony lot do Włoch (Rzym, Mediolan, Wenecja)? Sprawdź, kiedy Ryanair i Wizz Air muszą wypłacić odszkodowanie 250–400 €.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Grecja opóźnienie — sezonowe opóźnienia i odszkodowanie",
+    slug: "polska-grecja-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot do Grecji (Ateny, Kreta, Zakynthos)? Alert: lipiec–sierpień delay rate 28%! Sprawdź prawo do odszkodowania 400 €.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Hiszpania opóźnienie — Ryanair, Vueling, LOT",
+    slug: "polska-hiszpania-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot do Hiszpanii (Barcelona, Madryt, Alicante)? Sprawdź, kiedy przysługuje odszkodowanie 400 € (Ryanair dominuje 60% ruchu).",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–USA opóźnienie — LOT i €600 za transatlantyk",
+    slug: "polska-usa-opoznienie-lot-600-euro",
+    excerpt: "Opóźniony lot LOT do USA (JFK, Chicago, Newark)? Sprawdź prawo do MAKSYMALNEGO odszkodowania 600 € za loty >3,500 km.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Polska–Izrael opóźnienie — LOT WAW–TLV i odszkodowanie",
+    slug: "polska-izrael-opoznienie-lot-waw-tlv",
+    excerpt: "Opóźniony LOT Warszawa–Tel Awiw? Alert: WAW–TLV = najczęściej opóźniana trasa LOT (delay rate 26%)! Sprawdź prawo do 400 €.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Turcja opóźnienie — Turkish Airlines i granice WE 261",
+    slug: "polska-turcja-opoznienie-odszkodowanie",
+    excerpt: "Opóźniony lot do Turcji (Antalya, Istanbul)? KRYTYCZNE: Turcja POZA UE — tylko lot Z Polski ma prawo do odszkodowania 400 €.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Egipt opóźnienie — czarter i WE 261/2004",
+    slug: "polska-egipt-opoznienie-czarter-we261",
+    excerpt: "Opóźniony czarter do Egiptu (Hurghada, Sharm el-Sheikh)? PROBLEM: 85% czarterów odmawia bezpodstawnie! Sprawdź jak wygrać 400 €.",
+    date: "2026-03-12",
+    readTime: "10 min",
+    category: "Trasy lotnicze",
+    featured: false,
+    color: "purple"
+  },
+  {
+    title: "Polska–Dubaj opóźnienie — Emirates i granice WE 261",
+    slug: "polska-dubaj-opoznienie-emirates-we261",
+    excerpt: "Opóźniony lot do Dubaju (Emirates, LOT, Flydubai)? KRYTYCZNE: Dubaj POZA UE — lot powrotny Emirates/Flydubai NIE MA PRAWA do 400 €!",
+    date: "2026-03-12",
+    readTime: "10 min",
     category: "Trasy lotnicze",
     featured: false,
     color: "purple"

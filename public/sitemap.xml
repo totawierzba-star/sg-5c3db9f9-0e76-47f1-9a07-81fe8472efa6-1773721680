@@ -4,72 +4,70 @@
   <!-- Main Pages -->
   <url>
     <loc>https://problemlot.pl/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/opozniony-lot</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/odwolany-lot</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/ile-mozesz-dostac</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   
-  <!-- Airline-Specific Pages -->
   <url>
     <loc>https://problemlot.pl/opozniony-lot-ryanair</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/opozniony-lot-wizzair</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/opozniony-lot-lot</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/opozniony-lot-lufthansa</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- City-Specific Pages -->
   <url>
     <loc>https://problemlot.pl/opozniony-lot-warszawa</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/opozniony-lot-krakow</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -77,19 +75,12 @@
   <!-- Blog Index -->
   <url>
     <loc>https://problemlot.pl/blog</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Blog Articles (117 total) -->
-  <url>
-    <loc>https://problemlot.pl/blog/odwolany-lot-historia-pasazera</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
+  <!-- Blog Articles -->
   <url>
     <loc>https://problemlot.pl/blog/odszkodowanie-lot-polish-airlines</loc>
     <lastmod>2025-01-10</lastmod>
@@ -115,21 +106,21 @@
     <loc>https://problemlot.pl/blog/lot-odmowil-odszkodowania</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/ryanair-odmowil-odszkodowania</loc>
     <lastmod>2025-01-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/prawa-pasazera-ryanair</loc>
     <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -143,28 +134,28 @@
     <loc>https://problemlot.pl/blog/wizz-air-odmowil-odszkodowania</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/odszkodowanie-lufthansa-polska</loc>
     <lastmod>2025-01-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/odszkodowanie-easyjet-polska</loc>
     <lastmod>2025-01-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/enter-air-odszkodowanie-czarter</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -178,7 +169,7 @@
     <loc>https://problemlot.pl/blog/przedawnienie-roszczen-lotniczych</loc>
     <lastmod>2025-01-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -192,7 +183,7 @@
     <loc>https://problemlot.pl/blog/najczestsze-bledy-reklamacja</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -213,77 +204,84 @@
     <loc>https://problemlot.pl/blog/lotnisko-modlin-odszkodowanie</loc>
     <lastmod>2025-01-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lotnisko-katowice-odszkodowanie</loc>
     <lastmod>2025-02-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/odwolany-lot-historia-pasazera</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lotnisko-gdansk-odszkodowanie</loc>
     <lastmod>2025-02-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lotnisko-wroclaw-odszkodowanie</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-waw-jfk-opoznienie-600-euro</loc>
     <lastmod>2025-02-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-waw-ord-chicago-odszkodowanie</loc>
     <lastmod>2025-02-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-waw-tlv-najczesciej-opozniana-trasa</loc>
     <lastmod>2025-02-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-waw-nrt-tokio-odszkodowanie</loc>
     <lastmod>2025-02-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-waw-yyz-toronto-odszkodowanie</loc>
     <lastmod>2025-02-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-usterka-techniczna-nadzwyczajna-okolicznosc</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-strajk-kiedy-odszkodowanie</loc>
     <lastmod>2025-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -360,28 +358,28 @@
     <loc>https://problemlot.pl/blog/zgubiony-zniszczony-bagaz-lotniczy-odszkodowanie</loc>
     <lastmod>2025-02-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/odszkodowanie-za-lot-dziecko-niemowle-infant</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/loty-wielka-brytania-brexit-uk261-odszkodowanie</loc>
     <lastmod>2025-02-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/loty-poza-ue-turcja-egipt-odszkodowanie-eu261</loc>
     <lastmod>2025-02-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -423,7 +421,7 @@
     <loc>https://problemlot.pl/blog/odszkodowanie-2-godzinne-opoznienie</loc>
     <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -444,49 +442,49 @@
     <loc>https://problemlot.pl/blog/we261-poza-ue-czy-obowiazuje</loc>
     <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/reklamacja-lot-sprzed-3-lat</loc>
     <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/ile-trwa-rozpatrzenie-reklamacji</loc>
     <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/claimwinger-airhelp-flightright-porownanie</loc>
     <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/ryanair-usterka-techniczna-zakwestionowac-odmowe</loc>
     <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/ryanair-strajk-odszkodowanie-kiedy</loc>
     <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/ryanair-overbooking-odmowa-polska</loc>
     <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -500,7 +498,7 @@
     <loc>https://problemlot.pl/blog/ryanair-voucher-zamiast-gotowki-wymusic</loc>
     <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -535,14 +533,14 @@
     <loc>https://problemlot.pl/blog/wizz-air-odwolany-lot-polska-prawa</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/wizz-air-usterka-techniczna-nadzwyczajna</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -556,7 +554,7 @@
     <loc>https://problemlot.pl/blog/wizz-air-voucher-zamiast-gotowki</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -640,7 +638,7 @@
     <loc>https://problemlot.pl/blog/emirates-opoznienie-warszawa-we261</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -668,7 +666,7 @@
     <loc>https://problemlot.pl/blog/wizz-air-vs-ryanair-odmowy-porownanie</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -759,14 +757,14 @@
     <loc>https://problemlot.pl/blog/lotnisko-lodz-lublinek-opozniony-lot</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lotnisko-lodz-lublinek-odwolany-lot</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -801,43 +799,42 @@
     <loc>https://problemlot.pl/blog/lotnisko-lublin-opozniony-lot</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lotnisko-zielona-gora-babimost-opozniony-lot</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   
-  <!-- Klaster 7: Sytuacje specjalne (7 articles) -->
   <url>
     <loc>https://problemlot.pl/blog/overbooking-odmowa-wejscia-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/downgrade-nizszej-klasy-zwrot-75-procent</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/lot-czarterowy-we261-wakacje-all-inclusive</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/bilet-ota-kiwi-booking-esky-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -861,7 +858,6 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Trasy lotnicze (13 articles) -->
   <url>
     <loc>https://problemlot.pl/blog/warszawa-londyn-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
@@ -873,21 +869,21 @@
     <loc>https://problemlot.pl/blog/warszawa-barcelona-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/warszawa-amsterdam-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://problemlot.pl/blog/warszawa-paryz-opoznienie-odszkodowanie</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
@@ -948,7 +944,56 @@
   
   <url>
     <loc>https://problemlot.pl/blog/polska-wlochy-opoznienie-odszkodowanie</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-grecja-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-hiszpania-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-usa-opoznienie-lot-600-euro</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-izrael-opoznienie-lot-waw-tlv</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-turcja-opoznienie-odszkodowanie</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-egipt-opoznienie-czarter-we261</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://problemlot.pl/blog/polska-dubaj-opoznienie-emirates-we261</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

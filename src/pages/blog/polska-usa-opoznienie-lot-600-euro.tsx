@@ -2,14 +2,43 @@ import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Clock, AlertTriangle, FileText, Euro, Plane, CheckCircle2, Calendar, TrendingUp } from "lucide-react";
+import { generateFAQSchema } from "@/lib/schemaGenerator";
 
 export default function PolskaUsaOpoznienieLot600Euro() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Czy lot z Polski do USA ma prawo do odszkodowania?",
+      answer: "Tak! Wszystkie loty z Polski do USA są objęte rozporządzeniem WE 261/2004. Jeśli lot jest opóźniony o min. 3 godziny lub odwołany, przysługuje Ci maksymalne odszkodowanie 600 € (dystans >3,500 km)."
+    },
+    {
+      question: "Ile wynosi odszkodowanie za opóźniony lot do USA?",
+      answer: "600 € - maksymalna kwota odszkodowania w UE! Dystans Polska–USA wynosi 6,500–9,300 km (>3,500 km), co kwalifikuje się do najwyższego progu odszkodowań."
+    },
+    {
+      question: "Czy LOT często odmawia odszkodowań za loty transatlantyckie?",
+      answer: "Tak, LOT odmawia w ~55% przypadków, powołując się na 'nadzwyczajne okoliczności' (problemy techniczne, air traffic control, pogoda). Większość odmów jest BEZPODSTAWNA - usterki techniczne to odpowiedzialność linii."
+    },
+    {
+      question: "Jak długo mam czas na reklamację lotu do USA?",
+      answer: "W Polsce: 3 lata od daty lotu (art. 118 Kodeksu cywilnego). To oznacza, że jeśli lot był opóźniony w 2023 roku, możesz złożyć reklamację do końca 2026 roku."
+    },
+    {
+      question: "Czy lot powrotny z USA do Polski ma prawo do odszkodowania?",
+      answer: "Tak, ale TYLKO jeśli wykonywała go linia unijna (LOT). Loty LOT z JFK/ORD/EWR do Warszawy są objęte WE 261/2004. Loty amerykańskich linii (United, Delta, American) z USA do Europy NIE MAJĄ prawa do odszkodowania."
+    }
+  ]);
+
   return (
     <Layout>
       <SEO
         title="Polska–USA opóźnienie — LOT i €600 za transatlantyk"
-        description="Opóźniony lot LOT do USA (Nowy Jork, Chicago, Toronto)? Sprawdź, kiedy przysługuje Ci maksymalne odszkodowanie 600 €."
+        description="Opóźniony lot LOT do USA? Sprawdź, kiedy przysługuje Ci maksymalne odszkodowanie 600 € za loty do Nowego Jorku, Chicago czy Toronto."
         url="https://problemlot.pl/blog/polska-usa-opoznienie-lot-600-euro"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
