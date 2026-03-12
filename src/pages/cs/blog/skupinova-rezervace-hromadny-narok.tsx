@@ -29,18 +29,19 @@ export default function SkupinovaRezervaceHromadnyNarok() {
   ]);
 
   const articleSchema = generateArticleSchema({
-    headline: "Skupinová rezervace — jak uplatnit hromadný nárok?",
+    title: "Skupinová rezervace — jak uplatnit hromadný nárok?",
     description: "Zjistěte, jak podat společnou reklamaci za celou skupinu a získat kompenzaci až 600 € per osobu za zpoždění nebo zrušení letu podle ES 261/2004.",
+    url: "https://problemlot.pl/cs/blog/skupinova-rezervace-hromadny-narok",
+    publishDate: "2025-01-13",
+    modifiedDate: "2025-01-13",
     author: "ClaimWinger Legal Team",
-    datePublished: "2025-01-13",
-    dateModified: "2025-01-13",
-    image: "https://problemlot.pl/og-image.png"
+    imageUrl: "https://problemlot.pl/og-image.png"
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Domů", url: "https://problemlot.pl/cs" },
     { name: "Blog", url: "https://problemlot.pl/cs/blog" },
-    { name: "Skupinová rezervace" }
+    { name: "Skupinová rezervace", url: "https://problemlot.pl/cs/blog/skupinova-rezervace-hromadny-narok" }
   ]);
 
   return (
@@ -362,7 +363,7 @@ export default function SkupinovaRezervaceHromadnyNarok() {
               
               <div className="prose prose-lg max-w-none text-slate-700">
                 <p className="mb-4">
-                  Skupinové nároky mají specifické nároky — pokud uděláte chybu, aerolinka může odmítnout celý nárok. Zde jsou nejčastější chyby a jak se jim vyhnout:
+                  Skupinové nároky mají specifické nároky — pokud uděláte chybu, aerolinka může odmítat celý nárok. Zde jsou nejčastější chyby a jak se jim vyhnout:
                 </p>
 
                 <div className="space-y-4">

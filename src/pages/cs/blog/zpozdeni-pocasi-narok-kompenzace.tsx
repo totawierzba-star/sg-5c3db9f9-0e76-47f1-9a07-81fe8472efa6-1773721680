@@ -29,18 +29,19 @@ export default function ZpozdeniPocasiNarokKompenzace() {
   ]);
 
   const articleSchema = generateArticleSchema({
-    headline: "Zpoždění kvůli počasí — kdy máte nárok na kompenzaci?",
+    title: "Zpoždění kvůli počasí — kdy máte nárok na kompenzaci?",
     description: "Zjistěte, kdy špatné počasí osvobozuje aerolinie od povinnosti vyplatit kompenzaci a kdy ne. Právní analýza mimořádných okolností podle ES 261/2004.",
+    url: "https://problemlot.pl/cs/blog/zpozdeni-pocasi-narok-kompenzace",
+    publishDate: "2025-01-12",
+    modifiedDate: "2025-01-12",
     author: "ClaimWinger Legal Team",
-    datePublished: "2025-01-12",
-    dateModified: "2025-01-12",
-    image: "https://problemlot.pl/og-image.png"
+    imageUrl: "https://problemlot.pl/og-image.png"
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Domů", url: "https://problemlot.pl/cs" },
     { name: "Blog", url: "https://problemlot.pl/cs/blog" },
-    { name: "Zpoždění kvůli počasí" }
+    { name: "Zpoždění kvůli počasí", url: "https://problemlot.pl/cs/blog/zpozdeni-pocasi-narok-kompenzace" }
   ]);
 
   return (
@@ -164,7 +165,7 @@ export default function ZpozdeniPocasiNarokKompenzace() {
               
               <div className="prose prose-lg max-w-none text-slate-700">
                 <p className="mb-4">
-                  Podle <strong>článku 5 odst. 3 nařízení ES 261/2004</strong> je aerolinka osvobozena od povinnosti vyplatit kompenzaci, pokud prokáže, že zrušení nebo zpoždění bylo způsobeno <strong>mimořádnými okolnostmi</strong>, kterým nemohla zabránit, i kdyby přijala všechna přiměřená opatření.
+                  Podle <strong>článku 5 odst. 3 nařízení ES 261/2004</strong> je aerolinka osvobozena od povinnosti vyplatit kompenzaci, pokud prokáže, že zrušení nebo zpoždění bylo způsobeno <strong>mimořádnými okolnostmi</strong> kterým nemohla zabránit, i kdyby přijala všechna přiměřená opatření.
                 </p>
 
                 <p className="mb-4">

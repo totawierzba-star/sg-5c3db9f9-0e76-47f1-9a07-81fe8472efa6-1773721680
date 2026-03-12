@@ -29,18 +29,19 @@ export default function CharterovyLetKompenzacePrava() {
   ]);
 
   const articleSchema = generateArticleSchema({
-    headline: "Charterový let a kompenzace — stejná práva jako u linek?",
+    title: "Charterový let a kompenzace — stejná práva jako u linek?",
     description: "Zjistěte, zda máte nárok na kompenzaci za zpoždění nebo zrušení charterového letu. Práva cestujících podle ES 261/2004 platí i pro chartry.",
+    url: "https://problemlot.pl/cs/blog/charterovy-let-kompenzace-prava",
+    publishDate: "2025-01-13",
+    modifiedDate: "2025-01-13",
     author: "ClaimWinger Legal Team",
-    datePublished: "2025-01-13",
-    dateModified: "2025-01-13",
-    image: "https://problemlot.pl/og-image.png"
+    imageUrl: "https://problemlot.pl/og-image.png"
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Domů", url: "https://problemlot.pl/cs" },
     { name: "Blog", url: "https://problemlot.pl/cs/blog" },
-    { name: "Charterový let a kompenzace" }
+    { name: "Charterový let a kompenzace", url: "https://problemlot.pl/cs/blog/charterovy-let-kompenzace-prava" }
   ]);
 
   return (

@@ -18,6 +18,90 @@ export interface BlogArticleCs {
 
 export const blogArticlesCs: BlogArticleCs[] = [
   {
+    id: "zpozdeni-pocasi-narok-kompenzace",
+    title: "Zpoždění kvůli počasí — kdy máte nárok na kompenzaci?",
+    slug: "/cs/blog/zpozdeni-pocasi-narok-kompenzace",
+    excerpt: "Zjistěte, kdy špatné počasí NENÍ mimořádná okolnost a můžete získat kompenzaci €250-600 i při zpoždění kvůli počasí.",
+    category: "situations",
+    wordCount: 3100,
+    readTime: 13,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "ota-letenka-kiwi-expedia-narok-kompenzace",
+    title: "Letenka přes OTA (Booking, Kiwi, Expedia) — ovlivní to nárok?",
+    slug: "/cs/blog/ota-letenka-kiwi-expedia-narok-kompenzace",
+    excerpt: "Koupili jste letenku přes Kiwi.com, Booking nebo Expedia? Zjistěte, zda máte stejná práva na kompenzaci €250-600 jako při nákupu přímo.",
+    category: "situations",
+    wordCount: 2900,
+    readTime: 12,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "charterovy-let-kompenzace-prava",
+    title: "Charterový let a kompenzace — stejná práva jako u linek?",
+    slug: "/cs/blog/charterovy-let-kompenzace-prava",
+    excerpt: "Máte nárok na kompenzaci €250-600 i při charterovém letu? Zjistěte kdy platí ES 261/2004 pro zájezdy a chartery.",
+    category: "situations",
+    wordCount: 2950,
+    readTime: 12,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "skupinova-rezervace-hromadny-narok",
+    title: "Skupinová rezervace — jak uplatnit hromadný nárok?",
+    slug: "/cs/blog/skupinova-rezervace-hromadny-narok",
+    excerpt: "Cestovali jste skupinově a let byl zpožděný? Zjistěte, jak efektivně uplatnit hromadný nárok na kompenzaci pro všechny členy.",
+    category: "situations",
+    wordCount: 3200,
+    readTime: 14,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "let-zrusen-den-pred-odletem-moznosti",
+    title: "Let zrušen den před odletem — jaké jsou vaše možnosti?",
+    slug: "/cs/blog/let-zrusen-den-pred-odletem-moznosti",
+    excerpt: "Aerolinka zrušila váš let v poslední chvíli? Zjistěte, na co máte nárok: kompenzace €250-600, vrácení peněz nebo náhradní let.",
+    category: "situations",
+    wordCount: 2650,
+    readTime: 11,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "nocni-zpozdeni-hotel-co-uhradi-aerolinka",
+    title: "Noční zpoždění a náklady na hotel — co uhradí aerolinka?",
+    slug: "/cs/blog/nocni-zpozdeni-hotel-co-uhradi-aerolinka",
+    excerpt: "Zpoždění přes noc a potřebujete hotel? Zjistěte, co musí aerolinka uhradit: ubytování, transport, jídlo + kompenzace €250-600.",
+    category: "situations",
+    wordCount: 2400,
+    readTime: 10,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
+    id: "downgrade-prerazeni-nizsi-trida-nahrada",
+    title: "Downgrade — přeřazení do nižší třídy a náhrada škody",
+    slug: "/cs/blog/downgrade-prerazeni-nizsi-trida-nahrada",
+    excerpt: "Aerolinka vás přeřadila z business do economy? Máte právo na vrácení 30-75% ceny letenky podle ES 261/2004.",
+    category: "situations",
+    wordCount: 2100,
+    readTime: 9,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-orange-50 dark:bg-orange-950"
+  },
+  {
     id: "lufthansa-kompenzace-reklamace",
     title: "Lufthansa Kompenzace【2026】Jak získat až €600 za zpoždění",
     slug: "/cs/blog/lufthansa-kompenzace-reklamace",
