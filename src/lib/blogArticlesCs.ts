@@ -858,6 +858,90 @@ export const blogArticlesCs: BlogArticleCs[] = [
     wordCount: 4800,
     readTime: 10,
     featured: false
+  },
+  {
+    id: "reklamace-ucl-urad-civilni-letectvi",
+    title: "Jak podat reklamaci u ÚCL (Úřad pro civilní letectví)?",
+    slug: "/cs/blog/reklamace-ucl-urad-civilni-letectvi",
+    excerpt: "Kompletní průvodce podáním stížnosti u Úřadu pro civilní letectví. Kdy se obrátit na ÚCL, jak správně vyplnit formulář a co očekávat.",
+    category: "legal",
+    wordCount: 3200,
+    readTime: 13,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "coi-stiznosti-aerolinky-kdy-jak",
+    title: "ČOI a stížnosti na aerolinky — kdy a jak se obrátit?",
+    slug: "/cs/blog/coi-stiznosti-aerolinky-kdy-jak",
+    excerpt: "Jak podat stížnost na aerolinu u České obchodní inspekce. Kdy je ČOI vhodnější než ÚCL, postup podání a co očekávat.",
+    category: "legal",
+    wordCount: 3500,
+    readTime: 12,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "adr-mimosoudni-reseni-sporu-aerolinka",
+    title: "ADR a mimosoudní řešení sporů s aerolinkou v ČR",
+    slug: "/cs/blog/adr-mimosoudni-reseni-sporu-aerolinka",
+    excerpt: "Kompletní průvodce ADR procesem pro spory s aerolinkami v České republice. Rychlejší a levnější než soud — zjistěte jak postupovat.",
+    category: "legal",
+    wordCount: 4100,
+    readTime: 12,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "evropsky-formular-drobnych-naroku-pouziti",
+    title: "Evropský formulář drobných nároků — jak ho použít?",
+    slug: "/cs/blog/evropsky-formular-drobnych-naroku-pouziti",
+    excerpt: "Kompletní průvodce formulářem A pro žaloby do €5000. Krok za krokem jak podat nárok na kompenzaci bez advokáta.",
+    category: "legal",
+    wordCount: 4700,
+    readTime: 14,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "advokat-vs-claim-company-co-se-vyplati",
+    title: "Advokát vs. claim company — co se vyplatí při vymáhání kompenzace?",
+    slug: "/cs/blog/advokat-vs-claim-company-co-se-vyplati",
+    excerpt: "Srovnání všech možností vymáhání kompenzace: vlastní reklamace, advokát, claim company nebo soud. Zjistěte, která cesta je nejlepší pro váš případ.",
+    category: "legal",
+    wordCount: 4800,
+    readTime: 15,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "claimwinger-airhelp-flightright-srovnani",
+    title: "ClaimWinger vs AirHelp vs Flightright — srovnání claim companies",
+    slug: "/cs/blog/claimwinger-airhelp-flightright-srovnani",
+    excerpt: "Detailní srovnání top 3 claim companies v ČR: provize, rychlost vyřízení, úspěšnost a skryté poplatky. Zjistěte, která se nejvíce vyplatí.",
+    category: "legal",
+    wordCount: 4500,
+    readTime: 14,
+    publishDate: "2026-03-12",
+    featured: true,
+    color: "bg-blue-50 dark:bg-blue-950"
+  },
+  {
+    id: "sami-vs-claim-company-kdy-podat-sam",
+    title: "Sami vs. claim company — kdy se vyplatí podat reklamaci sám?",
+    slug: "/cs/blog/sami-vs-claim-company-kdy-podat-sam",
+    excerpt: "Kdy se vyplatí reklamovat kompenzaci sami a kdy využít claim company? Kalkulačka úspor, srovnání časové náročnosti a praktické tipy.",
+    category: "legal",
+    wordCount: 4200,
+    readTime: 13,
+    publishDate: "2026-03-12",
+    featured: false,
+    color: "bg-blue-50 dark:bg-blue-950"
   }
 ];
 
