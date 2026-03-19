@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "milano-parigi-ritardo-risarcimento",
+    title: "Volo Milano–Parigi in Ritardo: €250 di Risarcimento — Guida Completa 2026",
+    excerpt: "Volo Milano–Parigi in ritardo di 3 ore? Guida completa per MXP/LIN/BGY→CDG/ORY: importi, Air France, easyJet, Ryanair e procedura di reclamo.",
+    date: "2026-03-19",
+    readTime: "9 min",
+    category: "Rotte",
+    featured: false,
+    color: "purple"
+  },
+  {
     slug: "roma-londra-ritardo-risarcimento",
     title: "Volo Roma–Londra in Ritardo: €250 di Risarcimento — Guida Completa 2026",
     excerpt: "Volo Roma–Londra in ritardo di 3 ore? Scopri quanto spetta (€250), quali compagnie operano la rotta (Ryanair, BA, easyJet, ITA) e come richiedere il risarcimento.",
