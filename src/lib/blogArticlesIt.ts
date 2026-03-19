@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "iberia-risarcimento",
+    title: "Iberia Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]",
+    excerpt: "Volo Iberia in ritardo o cancellato? Guida completa: differenza Iberia/Iberia Express/Vueling, coincidenza persa a Madrid, importi e procedura reclamo.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "norwegian-risarcimento",
     title: "Norwegian Risarcimento Voli: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo Norwegian in ritardo o cancellato? Guida completa: importi, procedura reclamo e cosa fare quando Norwegian non risponde per mesi.",
