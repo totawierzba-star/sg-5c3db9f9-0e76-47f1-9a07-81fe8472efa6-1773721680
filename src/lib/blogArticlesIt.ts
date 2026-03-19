@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-londra-risarcimento",
+    title: "Aeroporto Londra: Risarcimento Voli 2026 — LHR, LGW, STN, LCY, LTN",
+    excerpt: "Volo in ritardo da Londra? Post-Brexit: CE 261 per vettori UE, UK261 per vettori britannici. Guida ai 5 aeroporti londinesi e ai tuoi diritti.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "pegasus-airlines-risarcimento",
     title: "Pegasus Airlines: Risarcimento Voli 2026 — CE 261/2004 guida completa",
     excerpt: "Volo Pegasus in ritardo o cancellato? CE 261/2004 per voli da aeroporti UE, €400 per rotte Italia–Istanbul, ENAC vs DGCA turca.",
