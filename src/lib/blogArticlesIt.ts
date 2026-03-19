@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "finnair-risarcimento",
+    title: "Finnair: Risarcimento Voli 2026 — fino a €600 per coincidenze Asia",
+    excerpt: "Volo Finnair in ritardo o cancellato? CE 261/2004, €400–€600, hub Helsinki, Tokyo/Seoul/Pechino, Oneworld, Traficom e ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "sas-scandinavian-airlines-risarcimento",
     title: "SAS Scandinavian Airlines: Risarcimento Voli 2026 — fino a €600",
     excerpt: "Volo SAS in ritardo o cancellato? CE 261/2004, €400–€600, SAS Connect, hub CPH/ARN, neve vs straordinario, ENAC e autorità scandinave.",
