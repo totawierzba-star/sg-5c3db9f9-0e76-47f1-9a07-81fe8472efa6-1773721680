@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "vueling-risarcimento",
+    title: "Vueling Risarcimento: Guida Completa 2026 — Fino a €600 per Ritardi e Cancellazioni",
+    excerpt: "Volo Vueling in ritardo o cancellato? Guida completa: importi, differenza con Iberia, rifiuti ingiustificati e procedura passo-passo per ottenere fino a €600.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "amber"
+  },
+  {
     slug: "iberia-risarcimento",
     title: "Iberia Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]",
     excerpt: "Volo Iberia in ritardo o cancellato? Guida completa: differenza Iberia/Iberia Express/Vueling, coincidenza persa a Madrid, importi e procedura reclamo.",
