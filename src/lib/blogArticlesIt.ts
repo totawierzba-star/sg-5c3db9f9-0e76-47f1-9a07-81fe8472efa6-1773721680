@@ -11,6 +11,36 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "air-france-risarcimento",
+    title: "Air France Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]",
+    excerpt: "Volo Air France in ritardo o cancellato? Guida completa: importi CE 261/2004, procedura reclamo, differenza Air France vs KLM e cosa fare se rifiutano.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "blue"
+  },
+  {
+    slug: "lufthansa-risarcimento-voli",
+    title: "Lufthansa Risarcimento Voli: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo Lufthansa in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento secondo CE 261/2004. Procedura, documenti, tempi di risposta e cosa fare se rifiutano.",
+    date: "2026-03-19",
+    readTime: "11 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "orange"
+  },
+  {
+    slug: "da-quante-ore-ritardo-diritto-risarcimento",
+    title: "Da Quante Ore di Ritardo Hai Diritto al Risarcimento? [Guida 2026]",
+    excerpt: "La risposta rapida: 3 ore. Ma ci sono dettagli fondamentali sul calcolo, gli importi e le eccezioni. Scopri tutto su €250, €400 e €600 secondo CE 261/2004.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Guide Pratiche",
+    featured: true,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-napoli-capodichino-risarcimento",
     title: "Aeroporto di Napoli Capodichino: Risarcimenti per Ritardi e Cancellazioni",
     excerpt: "Guida completa ai diritti dei passeggeri e alle procedure di risarcimento per voli in ritardo o cancellati dall'Aeroporto di Napoli Capodichino.",
