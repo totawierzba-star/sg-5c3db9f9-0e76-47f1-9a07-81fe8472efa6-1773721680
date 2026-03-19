@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "sas-scandinavian-airlines-risarcimento",
+    title: "SAS Scandinavian Airlines: Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo SAS in ritardo o cancellato? CE 261/2004, €400–€600, SAS Connect, hub CPH/ARN, neve vs straordinario, ENAC e autorità scandinave.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-genova-cristoforo-colombo-risarcimento",
     title: "Aeroporto Genova Cristoforo Colombo (GOA): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo a Genova GOA? CE 261/2004, pista sul mare, vento tramontana, porto e traghetti, procedura ENAC.",
