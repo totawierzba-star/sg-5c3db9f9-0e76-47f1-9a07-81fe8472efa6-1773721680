@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "transavia-risarcimento",
+    title: "Transavia: Risarcimento Voli 2026 — CE 261/2004 guida completa",
+    excerpt: "Volo Transavia in ritardo o cancellato? CE 261/2004, €250, Transavia France TO vs Netherlands HV, gruppo Air France-KLM, ENAC e DGAC.",
+    date: "2026-03-19",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "finnair-risarcimento",
     title: "Finnair: Risarcimento Voli 2026 — fino a €600 per coincidenze Asia",
     excerpt: "Volo Finnair in ritardo o cancellato? CE 261/2004, €400–€600, hub Helsinki, Tokyo/Seoul/Pechino, Oneworld, Traficom e ENAC.",
