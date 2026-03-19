@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "austrian-airlines-risarcimento",
+    title: "Austrian Airlines Risarcimento: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo Austrian Airlines in ritardo o cancellato? CE 261/2004, coincidenza persa a Vienna, codeshare OS/LH, procedura APF/Austro Control/ENAC.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "red"
+  },
+  {
     slug: "swiss-risarcimento",
     title: "SWISS Risarcimento: Guida Completa 2026 — CE 261 e Voli da Italia e Svizzera",
     excerpt: "Volo SWISS in ritardo o cancellato? CE 261/2004 applicabile anche da ZRH, importi, coincidenza persa a Zurigo e procedura BAZL/ENAC.",
