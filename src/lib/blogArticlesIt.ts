@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-bologna-guglielmo-marconi-risarcimento",
+    title: "Aeroporto Bologna Guglielmo Marconi (BLQ): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato a Bologna BLQ? Guida completa: importi CE 261, Ryanair/easyJet/ITA, procedure ENAC e diritti passeggeri.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "aeroporto-venezia-marco-polo-risarcimento",
     title: "Aeroporto Venezia Marco Polo (VCE): Risarcimento Voli Ritardati e Cancellati 2026",
     excerpt: "Volo in ritardo o cancellato a Venezia VCE? Guida completa: importi CE 261, compagnie, TSF vs VCE, crociera persa e procedura ENAC.",
