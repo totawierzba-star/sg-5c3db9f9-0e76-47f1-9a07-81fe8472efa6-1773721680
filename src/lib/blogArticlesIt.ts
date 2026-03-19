@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "klm-risarcimento",
+    title: "KLM Risarcimento: Guida Completa per Ritardi e Cancellazioni [2026]",
+    excerpt: "Volo KLM in ritardo o coincidenza persa a Schiphol? Scopri come ottenere fino a €600 di risarcimento. Procedura, documenti e tempi di risposta.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "blue"
+  },
+  {
     slug: "air-france-risarcimento",
     title: "Air France Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]",
     excerpt: "Volo Air France in ritardo o cancellato? Guida completa: importi CE 261/2004, procedura reclamo, differenza Air France vs KLM e cosa fare se rifiutano.",
