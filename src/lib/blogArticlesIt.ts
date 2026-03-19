@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "eurowings-risarcimento",
+    title: "Eurowings Risarcimento: Guida Completa 2026 — Fino a €600 per Ritardi e Cancellazioni",
+    excerpt: "Volo Eurowings in ritardo o cancellato? Guida completa: CE 261, gruppo Lufthansa, codeshare EW vs LH, Eurowings Discover, procedura e LBA/ENAC.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "purple"
+  },
+  {
     slug: "aeroporto-torino-caselle-risarcimento",
     title: "Aeroporto Torino Caselle (TRN): Risarcimento Voli Ritardati e Cancellati 2026",
     excerpt: "Volo in ritardo o cancellato a Torino Caselle (TRN)? Guida completa ai tuoi diritti CE 261/2004: importi, compagnie, meteo alpino e procedura ENAC.",
