@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "tap-air-portugal-risarcimento",
+    title: "TAP Air Portugal Risarcimento: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo TAP in ritardo o cancellato? CE 261/2004, hub Lisbona per Brasile/Africa, importi €400/€600, tempi di risposta e procedura ANAC/ENAC.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "austrian-airlines-risarcimento",
     title: "Austrian Airlines Risarcimento: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo Austrian Airlines in ritardo o cancellato? CE 261/2004, coincidenza persa a Vienna, codeshare OS/LH, procedura APF/Austro Control/ENAC.",
