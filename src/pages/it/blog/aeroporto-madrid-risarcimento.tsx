@@ -114,7 +114,7 @@ export default function AeroportoMadridRisarcimento() {
                 <div><strong>Posizione:</strong> ~12 km dal centro di Madrid</div>
                 <div><strong>Terminal:</strong> T1, T2, T3, T4, T4S (hub Iberia)</div>
                 <div><strong>Vettore principale:</strong> Iberia (IB) + Iberia Express + Vueling</div>
-                <div><strong>Autorità CE 261:</strong> AESA (Agencia Estatal de Seguridad Aérea)</td></div>
+                <div><strong>Autorità CE 261:</strong> AESA (Agencia Estatal de Seguridad Aérea)</div>
               </div>
             </div>
           </div>
