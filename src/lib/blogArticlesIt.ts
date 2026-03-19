@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-amsterdam-risarcimento",
+    title: "Aeroporto Amsterdam Schiphol (AMS): Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo in ritardo ad Amsterdam AMS? CE 261/2004, €250–€600, hub KLM, nebbia non straordinaria, coincidenze intercontinentali, ILT vs ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-barcellona-risarcimento",
     title: "Aeroporto Barcellona El Prat (BCN): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo a Barcellona BCN? CE 261/2004, €250–€400, hub Vueling, BCN vs Girona GRO vs Reus REU, AESA vs ENAC.",
