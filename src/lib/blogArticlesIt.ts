@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "roma-madrid-volo-cancellato",
+    title: "Volo Roma–Madrid Cancellato: €400 di Risarcimento — Guida Completa 2026",
+    excerpt: "Volo Roma–Madrid cancellato? Guida completa: €400 CE 261/2004, diritti immediati in aeroporto, procedura Iberia/Ryanair/easyJet/Vueling e escalation ENAC/AESA.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Rotte",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "milano-parigi-ritardo-risarcimento",
     title: "Volo Milano–Parigi in Ritardo: €250 di Risarcimento — Guida Completa 2026",
     excerpt: "Volo Milano–Parigi in ritardo di 3 ore? Guida completa per MXP/LIN/BGY→CDG/ORY: importi, Air France, easyJet, Ryanair e procedura di reclamo.",
