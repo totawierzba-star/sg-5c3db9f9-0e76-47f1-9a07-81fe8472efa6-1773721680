@@ -175,7 +175,7 @@ export default function AeroportoTorinoRisarcimento() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-5">
-              <h3 className="font-bold text="gray-900 mb-3 flex items-center gap-2">
+              <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <span className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full">AZ</span>
                 ITA Airways
               </h3>
