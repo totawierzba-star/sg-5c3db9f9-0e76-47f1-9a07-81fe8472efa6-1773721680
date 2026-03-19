@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "norwegian-risarcimento",
+    title: "Norwegian Risarcimento Voli: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo Norwegian in ritardo o cancellato? Guida completa: importi, procedura reclamo e cosa fare quando Norwegian non risponde per mesi.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "red"
+  },
+  {
     slug: "turkish-airlines-risarcimento",
     title: "Turkish Airlines Risarcimento: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo TK in ritardo? Il CE 261/2004 si applica solo ai voli da aeroporti UE. Guida completa: quando spetta, quanto ottieni e come fare reclamo in italiano.",
