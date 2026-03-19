@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-verona-villafranca-risarcimento",
+    title: "Aeroporto Verona Villafranca (VRN): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato a Verona VRN? CE 261/2004, importi, VRN vs VBS Brescia, Arena di Verona charter e procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "amber"
+  },
+  {
     slug: "aeroporto-bari-karol-wojtyla-risarcimento",
     title: "Aeroporto Bari Karol Wojtyla (BRI): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato a Bari BRI? CE 261/2004, importi, Ryanair/ITA/easyJet, BRI vs BDS, voli Balcani e procedura ENAC.",
