@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "turkish-airlines-risarcimento",
+    title: "Turkish Airlines Risarcimento: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo TK in ritardo? Il CE 261/2004 si applica solo ai voli da aeroporti UE. Guida completa: quando spetta, quanto ottieni e come fare reclamo in italiano.",
+    date: "2026-03-19",
+    readTime: "11 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "red"
+  },
+  {
     slug: "british-airways-risarcimento",
     title: "British Airways Risarcimento: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo BA in ritardo o cancellato? Guida completa: Brexit, CE 261 vs UK261, importi in euro e sterline, procedura reclamo e barriera linguistica risolta.",
