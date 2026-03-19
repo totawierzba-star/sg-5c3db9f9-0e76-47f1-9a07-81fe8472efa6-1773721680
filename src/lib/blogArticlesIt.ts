@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-parigi-risarcimento",
+    title: "Aeroporto Parigi: Risarcimento Voli 2026 — CDG, Orly ORY, Beauvais BVA",
+    excerpt: "Volo in ritardo a Parigi? CE 261/2004, €250–€600, hub Air France CDG, differenze tra CDG/ORY/BVA, coincidenze intercontinentali, DGAC vs ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-londra-risarcimento",
     title: "Aeroporto Londra: Risarcimento Voli 2026 — LHR, LGW, STN, LCY, LTN",
     excerpt: "Volo in ritardo da Londra? Post-Brexit: CE 261 per vettori UE, UK261 per vettori britannici. Guida ai 5 aeroporti londinesi e ai tuoi diritti.",
