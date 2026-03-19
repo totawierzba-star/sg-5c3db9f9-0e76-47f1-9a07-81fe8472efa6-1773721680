@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "brussels-airlines-risarcimento",
+    title: "Brussels Airlines: Risarcimento Voli 2026 — CE 261/2004 guida completa",
+    excerpt: "Volo Brussels Airlines in ritardo o cancellato? CE 261/2004, €250–€600, hub Bruxelles BRU, rotte Africa subsahariana, codeshare Lufthansa Group, DGNB vs ENAC.",
+    date: "2026-03-19",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "air-europa-risarcimento",
     title: "Air Europa: Risarcimento Voli 2026 — CE 261/2004 guida completa",
     excerpt: "Volo Air Europa in ritardo o cancellato? CE 261/2004, €250–€600, hub Madrid MAD, rotte Sudamerica, codeshare IAG, AESA vs ENAC.",
