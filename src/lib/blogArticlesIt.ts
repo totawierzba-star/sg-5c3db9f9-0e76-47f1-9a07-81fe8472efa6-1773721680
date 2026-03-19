@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "condor-risarcimento",
+    title: "Condor: Risarcimento Voli 2026 — CE 261/2004 guida completa",
+    excerpt: "Volo Condor in ritardo o cancellato? CE 261/2004, €250–€600, voli charter verso Caraibi e Africa, hub Francoforte FRA, LBA vs ENAC.",
+    date: "2026-03-19",
+    readTime: "6 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "lot-polish-airlines-risarcimento",
     title: "LOT Polish Airlines: Risarcimento Voli 2026 — CE 261/2004 guida completa",
     excerpt: "Volo LOT in ritardo o cancellato? CE 261/2004, €250–€600, hub Varsavia WAW, rotte Asia e Nord America, neve non straordinaria, ULC vs ENAC.",
