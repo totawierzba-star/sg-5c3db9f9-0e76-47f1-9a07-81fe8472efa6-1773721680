@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "roma-londra-ritardo-risarcimento",
+    title: "Volo Roma–Londra in Ritardo: €250 di Risarcimento — Guida Completa 2026",
+    excerpt: "Volo Roma–Londra in ritardo di 3 ore? Scopri quanto spetta (€250), quali compagnie operano la rotta (Ryanair, BA, easyJet, ITA) e come richiedere il risarcimento.",
+    date: "2026-03-19",
+    readTime: "10 min",
+    category: "Rotte",
+    featured: true,
+    color: "purple"
+  },
+  {
     slug: "vueling-risarcimento",
     title: "Vueling Risarcimento: Guida Completa 2026 — Fino a €600 per Ritardi e Cancellazioni",
     excerpt: "Volo Vueling in ritardo o cancellato? Guida completa: importi, differenza con Iberia, rifiuti ingiustificati e procedura passo-passo per ottenere fino a €600.",
