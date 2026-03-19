@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-catania-fontanarossa-risarcimento",
+    title: "Aeroporto Catania Fontanarossa (CTA): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato a Catania CTA? CE 261/2004, eruzione Etna e NOTAM, Ryanair/easyJet/ITA, importi €250–€400, procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "9 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "tap-air-portugal-risarcimento",
     title: "TAP Air Portugal Risarcimento: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo TAP in ritardo o cancellato? CE 261/2004, hub Lisbona per Brasile/Africa, importi €400/€600, tempi di risposta e procedura ANAC/ENAC.",
