@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-dubai-risarcimento",
+    title: "Aeroporto Dubai DXB: Risarcimento Voli 2026 — CE 261/2004 e diritti passeggeri",
+    excerpt: "Volo in ritardo a Dubai? CE 261 solo per voli da aeroporti UE. Emirates, DXB vs DWC, coincidenze via Dubai verso Asia e Australia, ENAC vs GCAA.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Hub Intercontinentali",
+    featured: false,
+    color: "amber"
+  },
+  {
     slug: "aeroporto-parigi-risarcimento",
     title: "Aeroporto Parigi: Risarcimento Voli 2026 — CDG, Orly ORY, Beauvais BVA",
     excerpt: "Volo in ritardo a Parigi? CE 261/2004, €250–€600, hub Air France CDG, differenze tra CDG/ORY/BVA, coincidenze intercontinentali, DGAC vs ENAC.",
