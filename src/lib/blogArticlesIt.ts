@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-bari-karol-wojtyla-risarcimento",
+    title: "Aeroporto Bari Karol Wojtyla (BRI): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato a Bari BRI? CE 261/2004, importi, Ryanair/ITA/easyJet, BRI vs BDS, voli Balcani e procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "purple"
+  },
+  {
     slug: "aeroporto-pisa-galileo-galilei-risarcimento",
     title: "Aeroporto Pisa Galileo Galilei (PSA): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato a Pisa PSA? Importi CE 261, base Ryanair, PSA come alternativa di Firenze, procedura ENAC.",
