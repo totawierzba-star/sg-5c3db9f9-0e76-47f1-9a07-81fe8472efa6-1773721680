@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-milano-linate-ritardi",
+    title: "Aeroporto Milano Linate (LIN): Ritardi, Cancellazioni e Risarcimenti 2026",
+    excerpt: "Volo in ritardo o cancellato a Milano Linate (LIN)? Scopri i tuoi diritti CE 261/2004, quali compagnie operano, gli importi e come presentare reclamo.",
+    date: "2026-03-19",
+    readTime: "9 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "roma-madrid-volo-cancellato",
     title: "Volo Roma–Madrid Cancellato: €400 di Risarcimento — Guida Completa 2026",
     excerpt: "Volo Roma–Madrid cancellato? Guida completa: €400 CE 261/2004, diritti immediati in aeroporto, procedura Iberia/Ryanair/easyJet/Vueling e escalation ENAC/AESA.",
