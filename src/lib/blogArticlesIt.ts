@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "pegasus-airlines-risarcimento",
+    title: "Pegasus Airlines: Risarcimento Voli 2026 — CE 261/2004 guida completa",
+    excerpt: "Volo Pegasus in ritardo o cancellato? CE 261/2004 per voli da aeroporti UE, €400 per rotte Italia–Istanbul, ENAC vs DGCA turca.",
+    date: "2026-03-19",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "purple"
+  },
+  {
     slug: "condor-risarcimento",
     title: "Condor: Risarcimento Voli 2026 — CE 261/2004 guida completa",
     excerpt: "Volo Condor in ritardo o cancellato? CE 261/2004, €250–€600, voli charter verso Caraibi e Africa, hub Francoforte FRA, LBA vs ENAC.",
