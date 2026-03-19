@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "volotea-risarcimento",
+    title: "Volotea: Risarcimento Voli 2026 — CE 261/2004 guida completa",
+    excerpt: "Volo Volotea in ritardo o cancellato? CE 261/2004, €250–€400, aeroporti secondari italiani, tempi di risposta lunghi, ENAC e AESA.",
+    date: "2026-03-19",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-francoforte-risarcimento",
     title: "Aeroporto Francoforte FRA: Risarcimento Voli 2026 — fino a €600",
     excerpt: "Volo in ritardo a Francoforte FRA? CE 261/2004, €250–€600, hub Lufthansa, T1 vs T2, FRA vs Hahn HHN, coincidenze intercontinentali, LBA vs ENAC.",
