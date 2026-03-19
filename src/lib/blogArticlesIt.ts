@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-genova-cristoforo-colombo-risarcimento",
+    title: "Aeroporto Genova Cristoforo Colombo (GOA): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo a Genova GOA? CE 261/2004, pista sul mare, vento tramontana, porto e traghetti, procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "aeroporto-verona-villafranca-risarcimento",
     title: "Aeroporto Verona Villafranca (VRN): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato a Verona VRN? CE 261/2004, importi, VRN vs VBS Brescia, Arena di Verona charter e procedura ENAC.",
