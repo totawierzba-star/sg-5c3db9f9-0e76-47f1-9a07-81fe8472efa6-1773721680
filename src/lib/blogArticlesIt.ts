@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-venezia-marco-polo-risarcimento",
+    title: "Aeroporto Venezia Marco Polo (VCE): Risarcimento Voli Ritardati e Cancellati 2026",
+    excerpt: "Volo in ritardo o cancellato a Venezia VCE? Guida completa: importi CE 261, compagnie, TSF vs VCE, crociera persa e procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "9 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "aeroporto-milano-linate-ritardi",
     title: "Aeroporto Milano Linate (LIN): Ritardi, Cancellazioni e Risarcimenti 2026",
     excerpt: "Volo in ritardo o cancellato a Milano Linate (LIN)? Scopri i tuoi diritti CE 261/2004, quali compagnie operano, gli importi e come presentare reclamo.",
