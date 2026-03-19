@@ -1,5 +1,5 @@
-import LayoutIt from "../../../components/LayoutIt";
-import SEO from "../../../components/SEO";
+import { LayoutIt } from "../../../components/LayoutIt";
+import { SEO } from "../../../components/SEO";
 import Link from "next/link";
 import { ArrowRight, Clock, Euro, CheckCircle2, AlertTriangle, Plane, FileText, Info } from "lucide-react";
 
