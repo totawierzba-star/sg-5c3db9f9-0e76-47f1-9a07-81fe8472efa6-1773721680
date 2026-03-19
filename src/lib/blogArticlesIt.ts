@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-torino-caselle-risarcimento",
+    title: "Aeroporto Torino Caselle (TRN): Risarcimento Voli Ritardati e Cancellati 2026",
+    excerpt: "Volo in ritardo o cancellato a Torino Caselle (TRN)? Guida completa ai tuoi diritti CE 261/2004: importi, compagnie, meteo alpino e procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "aeroporto-bologna-guglielmo-marconi-risarcimento",
     title: "Aeroporto Bologna Guglielmo Marconi (BLQ): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato a Bologna BLQ? Guida completa: importi CE 261, Ryanair/easyJet/ITA, procedure ENAC e diritti passeggeri.",
