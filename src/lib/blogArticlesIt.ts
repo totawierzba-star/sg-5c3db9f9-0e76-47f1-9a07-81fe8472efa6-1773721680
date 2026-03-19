@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-pisa-galileo-galilei-risarcimento",
+    title: "Aeroporto Pisa Galileo Galilei (PSA): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato a Pisa PSA? Importi CE 261, base Ryanair, PSA come alternativa di Firenze, procedura ENAC.",
+    date: "2026-03-19",
+    readTime: "8 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-palermo-falcone-borsellino-risarcimento",
     title: "Aeroporto Palermo Falcone Borsellino (PMO): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato a Palermo PMO? Importi CE 261, Ryanair/ITA/easyJet, confronto PMO vs CTA, procedura ENAC.",
