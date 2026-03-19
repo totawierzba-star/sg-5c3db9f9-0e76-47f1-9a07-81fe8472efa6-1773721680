@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "british-airways-risarcimento",
+    title: "British Airways Risarcimento: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo BA in ritardo o cancellato? Guida completa: Brexit, CE 261 vs UK261, importi in euro e sterline, procedura reclamo e barriera linguistica risolta.",
+    date: "2026-03-19",
+    readTime: "11 min",
+    category: "Compagnie Aeree",
+    featured: true,
+    color: "blue"
+  },
+  {
     slug: "klm-risarcimento",
     title: "KLM Risarcimento: Guida Completa per Ritardi e Cancellazioni [2026]",
     excerpt: "Volo KLM in ritardo o coincidenza persa a Schiphol? Scopri come ottenere fino a €600 di risarcimento. Procedura, documenti e tempi di risposta.",
