@@ -1225,7 +1225,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "polska-egipt-opoznienie-czarter-we261",
     excerpt: "Opóźniony czarter do Egiptu (Hurghada, Sharm el-Sheikh)? PROBLEM: 85% czarterów odmawia bezpodstawnie! Sprawdź jak wygrać 400 €.",
     date: "2026-03-12",
-    readTime: "10 min",
+    readTime: "9 min",
     category: "Trasy lotnicze",
     featured: false,
     color: "purple"
@@ -1240,6 +1240,180 @@ export const blogArticles: BlogArticle[] = [
     featured: false,
     color: "purple"
   },
+  
+  // Artykuły z klastra K1 - Podróże służbowe
+  {
+    title: "Overbooking na locie służbowym — prawa pracownika i pracodawcy",
+    slug: "overbooking-lot-sluzbowy-pracy",
+    excerpt: "Overbooking podczas podróży służbowej? Sprawdź prawa pracownika i obowiązki pracodawcy. Kto płaci za hotel, przesiadki i odszkodowanie?",
+    date: "2026-03-10",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    title: "Odwołany lot służbowy — jak odzyskać koszty hotelu i przesiadki",
+    slug: "odwolany-lot-sluzbowy-koszty-hotel-przesiadki",
+    excerpt: "Lot służbowy odwołany? Sprawdź, jak odzyskać koszty hotelu, transportu i posiłków. Obowiązki pracodawcy i prawa pracownika.",
+    date: "2026-03-10",
+    readTime: "11 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "green"
+  },
+  {
+    title: "EC 261/2004 a loty służbowe — co obejmuje rozporządzenie",
+    slug: "ec-261-2004-loty-sluzbowe-rozporzadzenie",
+    excerpt: "Jak rozporządzenie WE 261/2004 dotyczy podróży służbowych? Prawa pracownika, obowiązki pracodawcy i procedury roszczeń.",
+    date: "2026-03-11",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Lot służbowy opóźniony o ponad 3 godziny — krok po kroku",
+    slug: "lot-sluzbowy-opozniony-3-godziny-kroki",
+    excerpt: "Opóźnienie lotu służbowego >3h? Sprawdź, co robić krok po kroku: odszkodowanie, opieka, koszty i procedury firmowe.",
+    date: "2026-03-11",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "orange"
+  },
+  {
+    title: "Zgubiony bagaż w podróży służbowej — odszkodowanie i procedura",
+    slug: "zgubiony-bagaz-podroz-sluzbowa-odszkodowanie-procedura",
+    excerpt: "Bagaż zagubiony w podróży służbowej? Sprawdź, jak odzyskać odszkodowanie, procedury linii lotniczych i obowiązki pracodawcy.",
+    date: "2026-03-11",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    title: "Opóźnienie lotu a spotkanie biznesowe — koszty konsekwencji",
+    slug: "opoznienie-lotu-spotkanie-biznesowe-koszty-konsekwencje",
+    excerpt: "Opóźnienie lotu spowodowało przegapione spotkanie? Sprawdź, jak odzyskać koszty i kto ponosi odpowiedzialność.",
+    date: "2026-03-12",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "teal"
+  },
+  {
+    title: "Lot służbowy odwołany w ostatniej chwili — co zrobić",
+    slug: "lot-sluzbowy-odwolany-ostatnia-chwila-co-zrobic",
+    excerpt: "Lot odwołany w ostatniej chwili? Sprawdź, co robić: alternatywne połączenia, hotel, odszkodowanie i koszty firmowe.",
+    date: "2026-03-12",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "indigo"
+  },
+  {
+    title: "Bilet służbowy kupiony przez firmę — kto składa reklamację",
+    slug: "bilet-sluzbowy-firma-reklamacja-kto-sklada",
+    excerpt: "Bilet służbowy kupiony przez firmę — kto składa reklamację? Pracownik czy pracodawca? Sprawdź procedury i prawa.",
+    date: "2026-03-12",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "yellow"
+  },
+  
+  // Artykuły z klastra K2 - Travel Policy
+  {
+    title: "Jak napisać politykę podróży służbowych dla firmy",
+    slug: "jak-napisac-polityke-podrozy-sluzbowych-firmy",
+    excerpt: "Kompletny przewodnik po tworzeniu polityki podróży służbowych. Struktura dokumentu, kluczowe zapisy, najlepsze praktyki i wzory.",
+    date: "2026-03-13",
+    readTime: "12 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "blue"
+  },
+  {
+    title: "Travel policy — co musi zawierać regulamin firmowy",
+    slug: "travel-policy-regulamin-firmowy-elementy",
+    excerpt: "Niezbędne elementy travel policy: procedury, limity, odpowiedzialności. Sprawdź, czego nie może zabraknąć w regulaminie podróży służbowych.",
+    date: "2026-03-13",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "green"
+  },
+  {
+    title: "Limity klasy biletów w podróży służbowej — jak ustalić",
+    slug: "limity-klasy-biletow-podroz-sluzbowa-jak-ustalic",
+    excerpt: "Jak ustalić limity klas biletów w firmie? Economy, Premium, Business — zasady, wyjątki, koszty i polityka rezerwacji.",
+    date: "2026-03-14",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "purple"
+  },
+  {
+    title: "Self-booking tool vs agencja travel — co wybrać dla firmy",
+    slug: "self-booking-tool-vs-agencja-travel-porownanie-firmy",
+    excerpt: "Self-booking czy agencja? Porównanie kosztów, kontroli, wygody. Które rozwiązanie lepsze dla małej, średniej i dużej firmy?",
+    date: "2026-03-14",
+    readTime: "11 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "orange"
+  },
+  {
+    title: "Zarządzanie wydatkami na loty służbowe — narzędzia i systemy",
+    slug: "zarzadzanie-wydatkami-loty-sluzbowe-narzedzia-systemy",
+    excerpt: "Najlepsze systemy do zarządzania wydatkami na podróże służbowe. TMS, karty firmowe, automatyzacja raportowania.",
+    date: "2026-03-15",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "teal"
+  },
+  {
+    title: "Duty of care — obowiązek pracodawcy wobec podróżującego pracownika",
+    slug: "duty-of-care-obowiazek-pracodawcy-podrozujacy-pracownik",
+    excerpt: "Obowiązek opieki nad podróżującymi pracownikami. Bezpieczeństwo, ubezpieczenie, procedury kryzysowe,Tracking i komunikacja.",
+    date: "2026-03-15",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "red"
+  },
+  {
+    title: "Polityka zrównoważonych podróży służbowych — jak wdrożyć",
+    slug: "polityka-zrownowazonych-podrozy-sluzbowych-jak-wdrozyc",
+    excerpt: "Zrównoważone podróże służbowe: redukcja śladu węglowego, zielone transport, polityka kompensacji CO2, wirtualne spotkania.",
+    date: "2026-03-16",
+    readTime: "11 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "green"
+  },
+  {
+    title: "Podróże służbowe a work-life balance — polityka przedłużania wyjazdów",
+    slug: "podroze-sluzbowe-work-life-balance-polityka-przedluzania-wyjazdow",
+    excerpt: "Jak stworzyć politykę work-life balance w podróżach służbowych? Zasady przedłużania wyjazdów, limity dni, procedury zatwierdzania i rozliczania kosztów.",
+    date: "2026-03-20",
+    readTime: "12 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "green"
+  },
+  {
+    title: "KPI podróży służbowych — jak mierzyć efektywność travel policy",
+    slug: "kpi-podrozy-sluzbowe-jak-mierzyc-efektywnosc-travel-policy",
+    excerpt: "Jak mierzyć efektywność polityki podróży służbowych? Kluczowe wskaźniki KPI: koszty, satysfakcja, compliance, oszczędności i ROI.",
+    date: "2026-03-20",
+    readTime: "10 min",
+    category: "Prawo lotnicze",
+    featured: true,
+    color: "blue"
+  }
 ];
 
 export const getCategoryLabel = (category: BlogArticle["category"]): string => {
