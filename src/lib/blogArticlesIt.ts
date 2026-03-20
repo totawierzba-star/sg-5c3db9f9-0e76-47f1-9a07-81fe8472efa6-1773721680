@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-cagliari-risarcimento",
+    title: "Aeroporto Cagliari CAG: Risarcimento Voli Ritardati e Cancellati 2026",
+    excerpt: "Volo in ritardo a Cagliari CAG? CE 261/2004, €250–€400, Ryanair/easyJet/Volotea/ITA, alta stagione estiva non è circostanza straordinaria, procedura ENAC.",
+    date: "2026-03-20",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aer-lingus-risarcimento",
     title: "Aer Lingus Risarcimento: Guida Completa 2026 — Fino a €600",
     excerpt: "Volo Aer Lingus in ritardo? Hub Dublino con pre-clearance USA, €400–€600, coincidenze New York/Boston/Chicago, CAR vs ENAC.",
