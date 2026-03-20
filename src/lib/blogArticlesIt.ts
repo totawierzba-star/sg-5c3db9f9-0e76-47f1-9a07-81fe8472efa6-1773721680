@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-reggio-calabria-risarcimento",
+    title: "Aeroporto Reggio Calabria REG: Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo da Reggio Calabria REG? CE 261/2004, €250, ITA Airways, Volotea, rotte nazionali. REG vs SUF, pista corta. Guida ENAC 2026.",
+    date: "2026-03-22",
+    readTime: "6 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "purple",
+  },
+  {
+    slug: "aeroporto-trapani-risarcimento",
+    title: "Aeroporto Trapani TPS (Birgi): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato da Trapani TPS? CE 261/2004, fino a €400, Ryanair dominante. TPS vs PMO vs CTA, Scirocco non è straordinario. ENAC.",
+    date: "2026-03-22",
+    readTime: "6 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue",
+  },
+  {
     slug: "aeroporto-lamezia-terme-risarcimento",
     title: "Aeroporto Lamezia Terme SUF: Risarcimento Voli 2026",
     excerpt: "Volo in ritardo a Lamezia Terme SUF? CE 261/2004, fino a €400, Ryanair, easyJet, ITA, Volotea. SUF vs REG vs CRV. Guida ENAC Calabria 2026.",
