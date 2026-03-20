@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-munich-risarcimento",
+    title: "Aeroporto Monaco MUC: Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo in ritardo a Monaco MUC? CE 261/2004, €250–€600, hub Lufthansa, T2 Satellite, nebbia non straordinaria, MUC vs Memmingen FMM, LBA vs ENAC.",
+    date: "2026-03-20",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "aeroporto-istanbul-risarcimento",
     title: "Aeroporto Istanbul: Risarcimento Voli 2026 — IST, SAW e CE 261/2004",
     excerpt: "Volo in ritardo a Istanbul IST o SAW? CE 261 solo per voli da aeroporti UE. Turkish Airlines, Pegasus, hub di transito per Asia e Africa, SHGM vs ENAC.",
