@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-genova-risarcimento",
+    title: "Aeroporto Genova GOA (Cristoforo Colombo): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo da Genova GOA? CE 261/2004, fino a €400. Pista sul mare, nebbia ligure non straordinaria, easyJet/Ryanair/ITA. Guida ENAC 2026.",
+    date: "2026-03-23",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue",
+  },
+  {
+    slug: "aeroporto-venezia-risarcimento",
+    title: "Aeroporto Venezia VCE (Marco Polo): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo da Venezia VCE? CE 261/2004, fino a €600. easyJet, ITA, Volotea. VCE vs Treviso TSF. Acqua alta non è straordinaria. Guida ENAC.",
+    date: "2026-03-23",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue",
+  },
+  {
     slug: "roma-londra-volo-ritardo-risarcimento",
     title: "Volo Roma–Londra Cancellato o in Ritardo: Risarcimento CE 261 2026",
     excerpt: "British Airways, Ryanair, ITA, easyJet da FCO/CIA: €250–€400 CE 261/2004. Post-Brexit: tutela garantita da Roma. 5 aeroporti Londra, ENAC. Guida 2026.",
