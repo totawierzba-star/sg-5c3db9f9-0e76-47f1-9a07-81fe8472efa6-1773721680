@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-lamezia-terme-risarcimento",
+    title: "Aeroporto Lamezia Terme SUF: Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo a Lamezia Terme SUF? CE 261/2004, fino a €400, Ryanair, easyJet, ITA, Volotea. SUF vs REG vs CRV. Guida ENAC Calabria 2026.",
+    date: "2026-03-22",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "orange",
+  },
+  {
+    slug: "aeroporto-pescara-risarcimento",
+    title: "Aeroporto Pescara PSR (D'Abruzzo): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato da Pescara PSR? CE 261/2004, fino a €400, Ryanair dominante, voli stagionali Abruzzo. Procedura ENAC completa.",
+    date: "2026-03-22",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green",
+  },
+  {
     slug: "aeroporto-ancona-risarcimento",
     title: "Aeroporto Ancona AOI (Falconara): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo o cancellato da Ancona AOI? CE 261/2004, fino a €400, Ryanair, Wizz Air, rotte verso Est Europa. Procedura ENAC completa.",
