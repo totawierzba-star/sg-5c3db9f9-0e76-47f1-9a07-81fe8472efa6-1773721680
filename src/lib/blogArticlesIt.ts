@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-vienna-risarcimento",
+    title: "Aeroporto Vienna VIE: Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo in ritardo a Vienna VIE? CE 261/2004, €250–€600, hub Austrian Airlines, codeshare Lufthansa Group, neve non straordinaria, APF vs ENAC.",
+    date: "2026-03-20",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "red"
+  },
+  {
     slug: "aeroporto-munich-risarcimento",
     title: "Aeroporto Monaco MUC: Risarcimento Voli 2026 — fino a €600",
     excerpt: "Volo in ritardo a Monaco MUC? CE 261/2004, €250–€600, hub Lufthansa, T2 Satellite, nebbia non straordinaria, MUC vs Memmingen FMM, LBA vs ENAC.",
