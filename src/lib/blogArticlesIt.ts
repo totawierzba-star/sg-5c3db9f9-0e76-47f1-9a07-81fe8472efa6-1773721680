@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "roma-istanbul-volo-cancellato",
+    title: "Volo Roma–Istanbul Cancellato o in Ritardo: Risarcimento CE 261",
+    excerpt: "Volo Roma FCO/CIA–Istanbul IST/SAW cancellato o in ritardo? Turkish Airlines, Pegasus, ITA Airways: fino a €400 con CE 261/2004. Guida completa 2026.",
+    date: "2026-03-21",
+    readTime: "8 min",
+    category: "Rotte",
+    featured: false,
+    color: "purple",
+  },
+  {
     slug: "aeroporto-brindisi-risarcimento",
     title: "Aeroporto Brindisi BDS (Salento): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo a Brindisi BDS? CE 261/2004, €250–€400, Ryanair/easyJet/Volotea, alta stagione Salento, BDS vs BRI, procedura ENAC.",
