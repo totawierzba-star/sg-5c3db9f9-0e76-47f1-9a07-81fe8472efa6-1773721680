@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-bruxelles-risarcimento",
+    title: "Aeroporto Bruxelles BRU: Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo in ritardo a Bruxelles BRU? CE 261/2004, €250–€600, hub Brussels Airlines, BRU vs Charleroi CRL (Ryanair), connessioni Africa, DGTA vs ENAC.",
+    date: "2026-03-20",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "blue"
+  },
+  {
     slug: "aeroporto-zurigo-risarcimento",
     title: "Aeroporto Zurigo ZRH: Risarcimento Voli 2026 — CE 261 applicabile dalla Svizzera",
     excerpt: "Volo in ritardo a Zurigo ZRH? CE 261 si applica dalla Svizzera grazie all'accordo bilaterale UE-CH. Hub Swiss LX, €250–€600, BAZL vs ENAC.",
