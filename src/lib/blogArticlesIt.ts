@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "roma-londra-volo-ritardo-risarcimento",
+    title: "Volo Roma–Londra Cancellato o in Ritardo: Risarcimento CE 261 2026",
+    excerpt: "British Airways, Ryanair, ITA, easyJet da FCO/CIA: €250–€400 CE 261/2004. Post-Brexit: tutela garantita da Roma. 5 aeroporti Londra, ENAC. Guida 2026.",
+    date: "2026-03-23",
+    readTime: "8 min",
+    category: "Rotte",
+    featured: false,
+    color: "red",
+  },
+  {
     slug: "volotea-risarcimento",
     title: "Volotea Risarcimento: Come Ottenere €250–€400 con CE 261 2026",
     excerpt: "Volo Volotea in ritardo o cancellato? CE 261/2004, €250–€400. Rotte regionali italiane, isole, procedura reclamo ENAC. Guida completa 2026.",
