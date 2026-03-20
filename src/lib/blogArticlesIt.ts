@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "milano-barcellona-volo-ritardo-risarcimento",
+    title: "Volo Milano–Barcellona Cancellato o in Ritardo: €250 di Risarcimento",
+    excerpt: "Vueling, easyJet, Ryanair, ITA da MXP/BGY/LIN: €250 CE 261/2004 per ritardi oltre 3 ore o cancellazioni. Girona GRO vs BCN. Guida 2026.",
+    date: "2026-03-21",
+    readTime: "7 min",
+    category: "Rotte",
+    featured: false,
+    color: "orange",
+  },
+  {
+    slug: "roma-berlino-volo-ritardo-risarcimento",
+    title: "Volo Roma–Berlino Cancellato o in Ritardo: Risarcimento CE 261 2026",
+    excerpt: "Ryanair, Lufthansa, ITA, easyJet da FCO/CIA: €250 CE 261/2004 per ritardi oltre 3 ore. BER unico aeroporto Berlino. Guida ENAC completa 2026.",
+    date: "2026-03-21",
+    readTime: "7 min",
+    category: "Rotte",
+    featured: false,
+    color: "blue",
+  },
+  {
     slug: "roma-istanbul-volo-cancellato",
     title: "Volo Roma–Istanbul Cancellato o in Ritardo: Risarcimento CE 261",
     excerpt: "Volo Roma FCO/CIA–Istanbul IST/SAW cancellato o in ritardo? Turkish Airlines, Pegasus, ITA Airways: fino a €400 con CE 261/2004. Guida completa 2026.",
