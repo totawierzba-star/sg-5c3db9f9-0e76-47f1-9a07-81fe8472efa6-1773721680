@@ -1,7 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star, User, Building2, CreditCard } from "lucide-react";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star, User, Building2, CreditCard, Clock, AlertCircle, DollarSign } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
