@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "volotea-risarcimento",
+    title: "Volotea Risarcimento: Come Ottenere €250–€400 con CE 261 2026",
+    excerpt: "Volo Volotea in ritardo o cancellato? CE 261/2004, €250–€400. Rotte regionali italiane, isole, procedura reclamo ENAC. Guida completa 2026.",
+    date: "2026-03-23",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "blue",
+  },
+  {
+    slug: "wizz-air-risarcimento",
+    title: "Wizz Air Risarcimento: Come Ottenere €250–€600 con CE 261 2026",
+    excerpt: "Volo Wizz Air in ritardo o cancellato? CE 261/2004. W6 vs Wizz Air Abu Dhabi 5W: differenza cruciale. Wizz Credit vs denaro. Guida ENAC 2026.",
+    date: "2026-03-23",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "purple",
+  },
+  {
     slug: "milano-new-york-volo-ritardo-risarcimento",
     title: "Volo Milano–New York Cancellato o in Ritardo: €600 di Risarcimento 2026",
     excerpt: "Delta, United, ITA Airways, American Airlines da MXP: €600 CE 261/2004 per ritardi oltre 3 ore. CE 261 si applica anche a vettori USA. Guida ENAC 2026.",
