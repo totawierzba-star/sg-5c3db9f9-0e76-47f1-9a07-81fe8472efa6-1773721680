@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-lisbona-risarcimento",
+    title: "Aeroporto Lisbona LIS: Risarcimento Voli 2026 — fino a €600",
+    excerpt: "Volo in ritardo a Lisbona LIS? CE 261/2004, €400–€600, hub TAP, connessioni Brasile e Africa lusofona, TAP lenta a rispondere, ANAC vs ENAC.",
+    date: "2026-03-20",
+    readTime: "8 min",
+    category: "Hub Europei",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "aeroporto-bruxelles-risarcimento",
     title: "Aeroporto Bruxelles BRU: Risarcimento Voli 2026 — fino a €600",
     excerpt: "Volo in ritardo a Bruxelles BRU? CE 261/2004, €250–€600, hub Brussels Airlines, BRU vs Charleroi CRL (Ryanair), connessioni Africa, DGTA vs ENAC.",
