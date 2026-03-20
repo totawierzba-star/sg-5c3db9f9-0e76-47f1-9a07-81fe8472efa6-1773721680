@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "milano-new-york-volo-ritardo-risarcimento",
+    title: "Volo Milano–New York Cancellato o in Ritardo: €600 di Risarcimento 2026",
+    excerpt: "Delta, United, ITA Airways, American Airlines da MXP: €600 CE 261/2004 per ritardi oltre 3 ore. CE 261 si applica anche a vettori USA. Guida ENAC 2026.",
+    date: "2026-03-22",
+    readTime: "8 min",
+    category: "Rotte",
+    featured: false,
+    color: "blue",
+  },
+  {
     slug: "aeroporto-reggio-calabria-risarcimento",
     title: "Aeroporto Reggio Calabria REG: Risarcimento Voli 2026",
     excerpt: "Volo in ritardo da Reggio Calabria REG? CE 261/2004, €250, ITA Airways, Volotea, rotte nazionali. REG vs SUF, pista corta. Guida ENAC 2026.",
