@@ -75,7 +75,7 @@ export default function SasRisarcimento() {
       <SEO
         title="SAS Scandinavian Airlines: Risarcimento Voli 2026 — fino a €600"
         description="Volo SAS in ritardo o cancellato? Guida CE 261/2004: €400–€600, SAS Connect, hub Copenaghen/Stoccolma, neve vs straordinario, ENAC."
-        canonical="https://claimwinger.com/it/blog/sas-scandinavian-airlines-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/sas-scandinavian-airlines-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

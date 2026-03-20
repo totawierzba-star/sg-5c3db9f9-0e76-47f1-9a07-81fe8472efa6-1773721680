@@ -9,7 +9,7 @@ export default function LotpiskoModlinOdszkodowanie() {
       <SEO
         title="Lotnisko Warszawa Modlin — odszkodowanie za opóźniony lot [2025]"
         description="Twój lot z lotniska Modlin jest opóźniony? Sprawdź jak uzyskać do 600 € odszkodowania. Specyfika WMI i prawa pasażera."
-        canonical="https://lotproblem.pl/blog/lotnisko-modlin-odszkodowanie"
+        canonicalUrl="https://lotproblem.pl/blog/lotnisko-modlin-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

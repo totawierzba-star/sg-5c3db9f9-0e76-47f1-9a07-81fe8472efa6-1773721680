@@ -8,7 +8,7 @@ export default function SASTeknikskFeilEkstraordinaerOmstendighet() {
       <SEO
         title="SAS teknisk feil — ekstraordinær omstendighet eller ikke? [EU-dom]"
         description="SAS hevder teknisk feil er ekstraordinært? ULOVLIG ifølge EU-domstolen. Lær hvorfor du fortsatt har rett til 250-600 € erstatning."
-        canonical="https://problemlot.pl/no/blog/sas-teknisk-feil-ekstraordinaer-omstendighet"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-teknisk-feil-ekstraordinaer-omstendighet"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

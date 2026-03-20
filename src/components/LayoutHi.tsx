@@ -9,7 +9,7 @@ interface LayoutHiProps {
 
 export function LayoutHi({ children }: LayoutHiProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
@@ -90,7 +90,7 @@ export function LayoutHi({ children }: LayoutHiProps) {
 
               {/* Theme Toggle */}
               <button
-                onClick={toggleTheme}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 aria-label="Toggle theme"
               >
@@ -111,7 +111,7 @@ export function LayoutHi({ children }: LayoutHiProps) {
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-2">
               <button
-                onClick={toggleTheme}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-2 text-gray-700 dark:text-gray-300"
                 aria-label="Toggle theme"
               >

@@ -8,7 +8,7 @@ export default function AllInclusiveKansellertFlyErstatning() {
       <SEO
         title="All-inclusive-ferie med kansellert fly — hvem krever du erstatning fra?"
         description="All-inclusive pakkereise med kansellert fly? Finn ut hvordan du krever både EU261-erstatning fra flyselskap og prisavslag fra reisearrangør."
-        canonical="https://problemlot.pl/no/blog/all-inclusive-kansellert-fly-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/all-inclusive-kansellert-fly-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

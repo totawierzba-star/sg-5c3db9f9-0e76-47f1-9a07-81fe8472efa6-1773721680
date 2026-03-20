@@ -8,7 +8,7 @@ export default function SASForsinketFlyNorgeErstatning() {
       <SEO
         title="Erstatning for forsinket SAS-fly fra Norge — komplett guide 2025"
         description="Alt om SAS-forsinkelser fra norske flyplasser: 250-600 € erstatning, EU261-rettigheter, hvordan søke, og hva du gjør hvis SAS nekter. Gratis hjelp fra ClaimWinger."
-        canonical="https://problemlot.pl/no/blog/sas-forsinket-fly-norge-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-forsinket-fly-norge-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

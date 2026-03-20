@@ -8,7 +8,7 @@ export default function SASNektetErstatningMetoder() {
       <SEO
         title="SAS nektet erstatning — effektive metoder for å få betalt [2025]"
         description="SAS avviste kravet ditt? Lær 5 effektive metoder for å tvinge SAS til å betale 250-600 € erstatning. Juridisk guide med ClaimWinger."
-        canonical="https://problemlot.pl/no/blog/sas-nektet-erstatning-metoder"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-nektet-erstatning-metoder"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

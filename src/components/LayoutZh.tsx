@@ -9,7 +9,7 @@ interface LayoutZhProps {
 
 export function LayoutZh({ children }: LayoutZhProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
@@ -191,7 +191,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
 
               {/* Theme Toggle */}
               <button
-                onClick={toggleTheme}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 aria-label="切换主题"
               >
@@ -212,7 +212,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 md:hidden">
               <button
-                onClick={toggleTheme}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-2 text-gray-700 dark:text-gray-300"
                 aria-label="切换主题"
               >

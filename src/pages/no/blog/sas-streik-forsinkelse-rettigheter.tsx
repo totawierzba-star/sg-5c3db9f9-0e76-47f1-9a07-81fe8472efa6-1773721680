@@ -8,7 +8,7 @@ export default function SASStreikForsinkelseRettigheter() {
       <SEO
         title="SAS streik og forsinkelse — dine rettigheter i henhold til EU261"
         description="SAS hevder streik er ekstraordinært? Lær forskjellen mellom SAS-streik (du får erstatning) og ATC-streik (ekstraordinært). Komplett guide."
-        canonical="https://problemlot.pl/no/blog/sas-streik-forsinkelse-rettigheter"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-streik-forsinkelse-rettigheter"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

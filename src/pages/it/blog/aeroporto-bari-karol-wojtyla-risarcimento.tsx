@@ -75,7 +75,7 @@ export default function AeroportoBarisRisarcimento() {
       <SEO
         title="Aeroporto Bari Karol Wojtyla (BRI): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Bari BRI? Guida completa: CE 261/2004, importi, Ryanair/ITA/easyJet, BRI vs BDS, voli Balcani e procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-bari-karol-wojtyla-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-bari-karol-wojtyla-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

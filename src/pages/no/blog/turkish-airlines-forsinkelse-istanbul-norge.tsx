@@ -8,7 +8,7 @@ export default function TurkishAirlinesForsinkelseIstanbulNorge() {
       <SEO
         title="Turkish Airlines forsinkelse via Istanbul — erstatning for norske passasjerer"
         description="Forsinket Turkish Airlines-fly fra Oslo? Få 250-600 € erstatning. VIKTIG: Returfly fra Istanbul er IKKE dekket av EU261."
-        canonical="https://problemlot.pl/no/blog/turkish-airlines-forsinkelse-istanbul-norge"
+        canonicalUrl="https://problemlot.pl/no/blog/turkish-airlines-forsinkelse-istanbul-norge"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -62,7 +62,7 @@ export default function AeroportoReggioCalabriasarcimento() {
 
   return (
     <LayoutIt>
-      <SEO title={title} description={description} canonical={`https://claimwinger.com/it/blog/${slug}`} />
+      <SEO title={title} description={description} canonicalUrl={`https://claimwinger.com/it/blog/${slug}`} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

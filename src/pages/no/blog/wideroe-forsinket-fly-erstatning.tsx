@@ -8,7 +8,7 @@ export default function WideRoeForsinketFlyErstatning() {
       <SEO
         title="Erstatning for forsinket Widerøe-fly — komplett guide for norske reisende"
         description="Widerøe-flyet ditt er forsinket? Få 250-600 € i erstatning under EU261/EØS-avtalen. Komplett guide til dine rettigheter på innenriks- og utenriksflyvninger."
-        canonical="https://problemlot.pl/no/blog/wideroe-forsinket-fly-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/wideroe-forsinket-fly-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

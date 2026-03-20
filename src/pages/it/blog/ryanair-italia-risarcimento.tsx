@@ -21,7 +21,7 @@ export default function RyanairItaliaRisarcimento() {
       <SEO 
         title="Ryanair Italia risarcimento — ritardi e cancellazioni 2025"
         description="Guida completa su come ottenere risarcimento da Ryanair per voli in ritardo o cancellati in Italia. Procedure, importi fino a 600 € e diritti passeggeri CE 261/2004."
-        canonical="https://lotproblem.pl/it/blog/ryanair-italia-risarcimento"
+        canonicalUrl="https://lotproblem.pl/it/blog/ryanair-italia-risarcimento"
       />
 
       <article className="bg-white">

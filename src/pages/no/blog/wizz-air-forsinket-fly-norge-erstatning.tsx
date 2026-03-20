@@ -8,7 +8,7 @@ export default function WizzAirForsinketFlyNorgeErstatning() {
       <SEO
         title="Erstatning for forsinket Wizz Air-fly fra Norge — komplett guide"
         description="Wizz Air-flyet ditt er forsinket? Få 250-600 € i erstatning under EU261/EØS-avtalen. Komplett guide til dine rettigheter fra norske lufthavner."
-        canonical="https://problemlot.pl/no/blog/wizz-air-forsinket-fly-norge-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/wizz-air-forsinket-fly-norge-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

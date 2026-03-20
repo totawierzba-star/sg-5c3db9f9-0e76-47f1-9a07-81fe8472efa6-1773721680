@@ -8,7 +8,7 @@ export default function WideRoeKansellertFlyErstatning() {
       <SEO
         title="Widerøe kansellerte flyet — hvordan krever du erstatning?"
         description="Widerøe kansellerte flyet ditt? Få 250-600 € erstatning + full refusjon under EU261/EØS-avtalen. Lær hvordan du krever pengene når Widerøe kansellerer."
-        canonical="https://problemlot.pl/no/blog/wideroe-kansellert-fly-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/wideroe-kansellert-fly-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function AeroportoPalermoRisarcimento() {
       <SEO
         title="Aeroporto Palermo Falcone Borsellino (PMO): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Palermo PMO? Guida completa: importi CE 261/2004, Ryanair/ITA/easyJet, confronto con CTA, procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-palermo-falcone-borsellino-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-palermo-falcone-borsellino-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

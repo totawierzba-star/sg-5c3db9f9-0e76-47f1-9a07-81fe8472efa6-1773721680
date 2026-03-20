@@ -8,7 +8,7 @@ export default function EmiratesForsinkelseNorgeEU261() {
       <SEO
         title="Emirates forsinkelse på fly fra Norge — når gjelder EU261?"
         description="Forsinket Emirates-fly fra Oslo? EU261 gjelder kun på avganger fra Norge, IKKE returfly fra Dubai. Komplett guide til dine rettigheter."
-        canonical="https://problemlot.pl/no/blog/emirates-forsinkelse-norge-eu261"
+        canonicalUrl="https://problemlot.pl/no/blog/emirates-forsinkelse-norge-eu261"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

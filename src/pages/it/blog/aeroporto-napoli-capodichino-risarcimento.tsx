@@ -73,7 +73,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
         title="Aeroporto Napoli Capodichino: Risarcimento Voli in Ritardo e Cancellati | Guida 2026"
         description="Volo in ritardo o cancellato da Napoli Capodichino? Scopri come ottenere fino a 600€ di risarcimento. Guida completa ai tuoi diritti e procedura passo-passo."
         url="https://lotproblem.pl/it/blog/aeroporto-napoli-capodichino-risarcimento"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       <article className="max-w-4xl mx-auto px-4 py-8">

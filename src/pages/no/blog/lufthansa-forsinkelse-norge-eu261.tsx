@@ -8,7 +8,7 @@ export default function LufthansaForsinkelseNorgeEu261() {
       <SEO
         title="Lufthansa forsinkelse fra Norge — hvordan fungerer EU261 på Gardermoen-avganger?"
         description="Lufthansa-flyet ditt er forsinket fra Oslo? Få 250-600 € i erstatning under EU261/EØS-avtalen. Komplett guide til dine rettigheter."
-        canonical="https://problemlot.pl/no/blog/lufthansa-forsinkelse-norge-eu261"
+        canonicalUrl="https://problemlot.pl/no/blog/lufthansa-forsinkelse-norge-eu261"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

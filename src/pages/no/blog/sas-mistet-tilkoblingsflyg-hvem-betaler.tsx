@@ -8,7 +8,7 @@ export default function SASMistetTilkoblingsflyHvemBetaler() {
       <SEO
         title="Mistet tilkoblingsflyg på grunn av SAS — hvem betaler erstatningen?"
         description="Mistet du tilkoblingsflyget på grunn av SAS-forsinkelse? Lær om ansvar, erstatning og hvordan ClaimWinger kan hjelpe deg få 250-600 €."
-        canonical="https://problemlot.pl/no/blog/sas-mistet-tilkoblingsflyg-hvem-betaler"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-mistet-tilkoblingsflyg-hvem-betaler"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

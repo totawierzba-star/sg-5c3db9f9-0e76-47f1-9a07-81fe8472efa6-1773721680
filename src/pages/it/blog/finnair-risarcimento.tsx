@@ -75,7 +75,7 @@ export default function FinnairRisarcimento() {
       <SEO
         title="Finnair: Risarcimento Voli 2026 — fino a €600 per coincidenze Asia"
         description="Volo Finnair in ritardo o cancellato? CE 261/2004, €400–€600, hub Helsinki per Asia (Tokyo, Seoul, Pechino), Oneworld, Traficom e ENAC."
-        canonical="https://claimwinger.com/it/blog/finnair-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/finnair-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

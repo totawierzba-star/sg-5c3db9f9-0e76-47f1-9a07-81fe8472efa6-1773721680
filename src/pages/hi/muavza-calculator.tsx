@@ -40,7 +40,7 @@ export default function CompensationCalculatorHi() {
       <SEO
         title="मुआवज़ा कैलकुलेटर – अपनी फ्लाइट के लिए ₹52,000 तक चेक करें"
         description="मुफ्त में जांचें कि आपको अपनी देरी या रद्द उड़ान के लिए कितना पैसा मिलना चाहिए। बस अपनी उड़ान का विवरण दर्ज करें और तुरंत परिणाम देखें।"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       {/* Hero Section */}

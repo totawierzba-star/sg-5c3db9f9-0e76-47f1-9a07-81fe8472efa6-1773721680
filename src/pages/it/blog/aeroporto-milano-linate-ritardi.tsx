@@ -75,7 +75,7 @@ export default function AeroportoMilanoLinateRitardi() {
       <SEO
         title="Aeroporto Milano Linate (LIN): Ritardi, Cancellazioni e Risarcimenti 2026"
         description="Volo in ritardo o cancellato a Milano Linate (LIN)? Scopri i tuoi diritti CE 261/2004, quali compagnie operano, gli importi e come presentare reclamo."
-        canonical="https://claimwinger.com/it/blog/aeroporto-milano-linate-ritardi"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-milano-linate-ritardi"
       />
       <script
         type="application/ld+json"

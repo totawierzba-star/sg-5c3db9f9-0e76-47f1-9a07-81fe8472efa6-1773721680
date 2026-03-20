@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider as NextThemesProvider, useTheme as useNextTheme } from "next-themes";
+import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import * as React from "react";
 
 export function ThemeProvider({
@@ -10,17 +10,4 @@ export function ThemeProvider({
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }
 
-export function useTheme() {
-  const { theme, setTheme, systemTheme } = useNextTheme();
-  
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
-  return {
-    theme,
-    setTheme,
-    systemTheme,
-    toggleTheme,
-  };
-}
+export { useTheme };

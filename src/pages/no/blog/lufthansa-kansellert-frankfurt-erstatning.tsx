@@ -8,7 +8,7 @@ export default function LufthansaKansellertFrankfurtErstatning() {
       <SEO
         title="Lufthansa kansellerte flyet via Frankfurt — erstatning for norske reisende"
         description="Lufthansa kansellerte flyet ditt via Frankfurt? Få 250-600 € + full refusjon. Komplett guide til erstatning for norske passasjerer."
-        canonical="https://problemlot.pl/no/blog/lufthansa-kansellert-frankfurt-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/lufthansa-kansellert-frankfurt-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

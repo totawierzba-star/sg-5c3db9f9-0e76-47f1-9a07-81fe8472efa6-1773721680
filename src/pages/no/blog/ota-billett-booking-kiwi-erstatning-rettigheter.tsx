@@ -8,7 +8,7 @@ export default function OTABillettBookingKiwiErstatningRettigheter() {
       <SEO
         title="Billett kjøpt via OTA (Booking, Kiwi, Expedia) — påvirker det retten til erstatning?"
         description="Kjøpte billetten gjennom Booking.com, Kiwi.com eller Expedia? EU261-retten gjelder fortsatt — slik krever du erstatning direkte fra flyselskapet."
-        canonical="https://problemlot.pl/no/blog/ota-billett-booking-kiwi-erstatning-rettigheter"
+        canonicalUrl="https://problemlot.pl/no/blog/ota-billett-booking-kiwi-erstatning-rettigheter"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

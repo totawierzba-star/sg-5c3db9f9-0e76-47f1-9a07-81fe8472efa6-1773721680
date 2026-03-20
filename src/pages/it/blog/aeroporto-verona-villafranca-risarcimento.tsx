@@ -75,7 +75,7 @@ export default function AeroportoVeronaRisarcimento() {
       <SEO
         title="Aeroporto Verona Villafranca (VRN): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Verona VRN? Guida completa: importi CE 261, VRN vs VBS Brescia, voli charter Arena di Verona, procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-verona-villafranca-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-verona-villafranca-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

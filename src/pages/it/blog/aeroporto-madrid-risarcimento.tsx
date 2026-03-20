@@ -75,7 +75,7 @@ export default function AeroportoMadridRisarcimento() {
       <SEO
         title="Aeroporto Madrid Barajas (MAD): Risarcimento Voli 2026 — fino a €600"
         description="Volo in ritardo o cancellato a Madrid MAD? CE 261/2004, €250–€600, hub Sud America Iberia, 4 terminal, AESA vs ENAC, procedura passo per passo."
-        canonical="https://claimwinger.com/it/blog/aeroporto-madrid-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-madrid-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

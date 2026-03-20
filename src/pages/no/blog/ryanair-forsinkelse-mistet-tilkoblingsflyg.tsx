@@ -8,7 +8,7 @@ export default function RyanairForsinkelseMistetTilkoblingsflyg() {
       <SEO
         title="Ryanair forsinkelse og mistet tilkoblingsflyg — hvem er ansvarlig?"
         description="Mistet du tilkoblingsflyg på grunn av Ryanair-forsinkelse? Lær når Ryanair må betale 250-600 € erstatning for hele reisen."
-        canonical="https://problemlot.pl/no/blog/ryanair-forsinkelse-mistet-tilkoblingsflyg"
+        canonicalUrl="https://problemlot.pl/no/blog/ryanair-forsinkelse-mistet-tilkoblingsflyg"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function TransaviaRisarcimento() {
       <SEO
         title="Transavia: Risarcimento Voli 2026 — CE 261/2004 guida completa"
         description="Volo Transavia in ritardo o cancellato? CE 261/2004, €250, Transavia France TO vs Netherlands HV, gruppo Air France-KLM, ENAC e DGAC."
-        canonical="https://claimwinger.com/it/blog/transavia-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/transavia-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

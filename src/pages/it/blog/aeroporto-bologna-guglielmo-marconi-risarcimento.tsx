@@ -75,7 +75,7 @@ export default function AeroportoBolognaRisarcimento() {
       <SEO
         title="Aeroporto Bologna Guglielmo Marconi (BLQ): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Bologna BLQ? Guida completa: importi CE 261, compagnie Ryanair/easyJet/ITA, procedure ENAC e diritti passeggeri."
-        canonical="https://claimwinger.com/it/blog/aeroporto-bologna-guglielmo-marconi-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-bologna-guglielmo-marconi-risarcimento"
       />
       <script
         type="application/ld+json"

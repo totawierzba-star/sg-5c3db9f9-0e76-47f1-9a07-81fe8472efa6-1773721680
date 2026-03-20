@@ -75,7 +75,7 @@ export default function AeroportoFrancoforteRisarcimento() {
       <SEO
         title="Aeroporto Francoforte FRA: Risarcimento Voli 2026 — fino a €600"
         description="Volo in ritardo a Francoforte FRA? CE 261/2004, €250–€600, hub Lufthansa, T1 vs T2, FRA vs Hahn HHN, coincidenze intercontinentali, LBA vs ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-francoforte-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-francoforte-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

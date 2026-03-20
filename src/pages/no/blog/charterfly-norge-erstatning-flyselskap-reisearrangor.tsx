@@ -8,7 +8,7 @@ export default function CharterflygNorgeErstatningFlyselskapReisearrangor() {
       <SEO
         title="Erstatning for charterfly fra Norge — flyselskap eller reisearrangør?"
         description="Charterflyg til Syden forsinket eller kansellert? Finn ut hvem du skal kreve erstatning fra — flyselskapet eller reisearrangøren."
-        canonical="https://problemlot.pl/no/blog/charterfly-norge-erstatning-flyselskap-reisearrangor"
+        canonicalUrl="https://problemlot.pl/no/blog/charterfly-norge-erstatning-flyselskap-reisearrangor"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function SwissRisarcimento() {
       <SEO
         title="SWISS Risarcimento: Guida Completa 2026 — CE 261 e Voli da Italia e Svizzera"
         description="Volo SWISS in ritardo o cancellato? Guida completa: CE 261/2004 applicabile anche da ZRH, importi, coincidenza persa a Zurigo, procedura BAZL/ENAC."
-        canonical="https://claimwinger.com/it/blog/swiss-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/swiss-risarcimento"
       />
       <script
         type="application/ld+json"

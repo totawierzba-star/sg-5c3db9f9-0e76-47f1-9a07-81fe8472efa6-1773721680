@@ -75,7 +75,7 @@ export default function AeroportoBarcellonaRisarcimento() {
       <SEO
         title="Aeroporto Barcellona El Prat (BCN): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Barcellona BCN? CE 261/2004, €250–€400, hub Vueling, BCN vs Girona GRO vs Reus REU, AESA vs ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-barcellona-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-barcellona-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

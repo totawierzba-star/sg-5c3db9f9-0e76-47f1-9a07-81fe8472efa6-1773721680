@@ -75,7 +75,7 @@ export default function AeroportoPisaRisarcimento() {
       <SEO
         title="Aeroporto Pisa Galileo Galilei (PSA): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Pisa PSA? Guida completa: importi CE 261, base Ryanair, PSA come aeroporto di Firenze, procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-pisa-galileo-galilei-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-pisa-galileo-galilei-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

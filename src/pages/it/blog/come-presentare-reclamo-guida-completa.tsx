@@ -106,7 +106,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
         title="Come Presentare Reclamo Volo in Ritardo o Cancellato: Guida Completa 2026 [Passo-Passo]"
         description="Guida definitiva per presentare un reclamo efficace e ottenere fino a 600€ di risarcimento per voli in ritardo o cancellati. Modelli, documenti e procedura completa."
         url="https://lotproblem.pl/it/blog/come-presentare-reclamo-guida-completa"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       <article className="max-w-4xl mx-auto px-4 py-8">

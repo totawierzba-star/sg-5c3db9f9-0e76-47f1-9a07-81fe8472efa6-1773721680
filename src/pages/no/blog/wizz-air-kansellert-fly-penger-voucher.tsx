@@ -8,7 +8,7 @@ export default function WizzAirKansellertFlyPengerVoucher() {
       <SEO
         title="Wizz Air kansellerte flyet — hvordan får du penger i stedet for voucher?"
         description="Wizz Air tilbyr voucher i stedet for kontanter? Lær hvordan du nekter og krever 250-600 € + full refusjon i henhold til EU261."
-        canonical="https://problemlot.pl/no/blog/wizz-air-kansellert-fly-penger-voucher"
+        canonicalUrl="https://problemlot.pl/no/blog/wizz-air-kansellert-fly-penger-voucher"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

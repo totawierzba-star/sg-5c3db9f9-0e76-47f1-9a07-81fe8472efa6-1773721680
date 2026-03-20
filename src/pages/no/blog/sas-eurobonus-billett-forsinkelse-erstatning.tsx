@@ -8,7 +8,7 @@ export default function SASEuroBonusBillettForsinkelseErstatning() {
       <SEO
         title="SAS EuroBonus-billett og forsinkelse — kan du fortsatt kreve erstatning?"
         description="Fikk du gratis SAS-fly med EuroBonus-poeng? Du har fortsatt rett til 250-600 € erstatning ved forsinkelse eller kansellering. Lær hvordan du krever pengene."
-        canonical="https://problemlot.pl/no/blog/sas-eurobonus-billett-forsinkelse-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-eurobonus-billett-forsinkelse-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function VoloteaRisarcimento() {
       <SEO
         title="Volotea: Risarcimento Voli 2026 — CE 261/2004 guida completa"
         description="Volo Volotea in ritardo o cancellato? CE 261/2004, €250–€400, aeroporti secondari italiani, tempi di risposta lunghi, ENAC e AESA."
-        canonical="https://claimwinger.com/it/blog/volotea-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/volotea-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

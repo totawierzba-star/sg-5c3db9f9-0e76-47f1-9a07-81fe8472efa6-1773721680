@@ -25,7 +25,7 @@ export default function WizzAirItaliaRisarcimento() {
       <SEO 
         title="Wizz Air Italia risarcimento — ritardi e cancellazioni 2025"
         description="Guida completa su come ottenere risarcimento da Wizz Air per voli in ritardo o cancellati in Italia. Procedure, importi fino a 600 € e diritti passeggeri CE 261/2004."
-        canonical="https://lotproblem.pl/it/blog/wizz-air-italia-risarcimento"
+        canonicalUrl="https://lotproblem.pl/it/blog/wizz-air-italia-risarcimento"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-purple-50 to-white">

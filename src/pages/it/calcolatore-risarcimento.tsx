@@ -18,7 +18,7 @@ export default function CalcolatoreRisarcimentoIt() {
         title="Calcolatore risarcimento volo — 250 €, 400 €, 600 € [2026]"
         description="Calcola quanto puoi ricevere per il tuo volo in ritardo o cancellato. Risarcimento fino a 600 € secondo il Regolamento CE 261/2004."
         url="https://lotproblem.pl/it/calcolatore-risarcimento"
-        canonical="https://lotproblem.pl/it/calcolatore-risarcimento"
+        canonicalUrl="https://lotproblem.pl/it/calcolatore-risarcimento"
       />
 
       {/* Hero Section */}

@@ -75,7 +75,7 @@ export default function AeroportoAmsterdamRisarcimento() {
       <SEO
         title="Aeroporto Amsterdam Schiphol (AMS): Risarcimento Voli 2026 — fino a €600"
         description="Volo in ritardo ad Amsterdam AMS? CE 261/2004, €250–€600, hub KLM, nebbia non è straordinaria, coincidenze intercontinentali, ILT vs ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-amsterdam-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-amsterdam-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

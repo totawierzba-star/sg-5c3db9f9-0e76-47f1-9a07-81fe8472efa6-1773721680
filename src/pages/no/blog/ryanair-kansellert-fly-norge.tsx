@@ -8,7 +8,7 @@ export default function RyanairKansellertFlyNorge() {
       <SEO
         title="Ryanair kansellerte flyet fra Norge — hvordan søker du?"
         description="Ryanair kansellerte flyet ditt fra Torp eller Gardermoen? Få 250-600 € erstatning + full refusjon. Komplett guide til dine rettigheter."
-        canonical="https://problemlot.pl/no/blog/ryanair-kansellert-fly-norge"
+        canonicalUrl="https://problemlot.pl/no/blog/ryanair-kansellert-fly-norge"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function EurowingsRisarcimento() {
       <SEO
         title="Eurowings Risarcimento: Guida Completa 2026 — Fino a €600 per Ritardi e Cancellazioni"
         description="Volo Eurowings in ritardo o cancellato? Guida completa: CE 261/2004, gruppo Lufthansa, codeshare EW vs LH, Eurowings Discover, procedura reclamo e LBA/ENAC."
-        canonical="https://claimwinger.com/it/blog/eurowings-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/eurowings-risarcimento"
       />
       <script
         type="application/ld+json"

@@ -8,7 +8,7 @@ export default function RyanairNektetErstatningTvingeBetaling() {
       <SEO
         title="Ryanair nektet erstatning — slik tvinger du frem betaling"
         description="Ryanair avviste kravet ditt? Lær de 3 eskaleringsmetodene som tvinger Ryanair til å betale din EU261-erstatning (250-600 €)."
-        canonical="https://problemlot.pl/no/blog/ryanair-nektet-erstatning-tvinge-betaling"
+        canonicalUrl="https://problemlot.pl/no/blog/ryanair-nektet-erstatning-tvinge-betaling"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

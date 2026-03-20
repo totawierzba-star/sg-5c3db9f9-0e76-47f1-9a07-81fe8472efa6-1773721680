@@ -65,7 +65,7 @@ export default function DgcaVsEu261Comparison() {
         title="DGCA बनाम EU 261/2004 – भारत और यूरोप के हवाई यात्री अधिकारों की तुलना [2026]"
         description="भारतीय DGCA और यूरोपीय EU 261/2004 के बीच अंतर जानें। देरी और रद्दीकरण के लिए आपको कहाँ अधिक पैसा मिलेगा? पूर्ण तुलना गाइड।"
         image="/images/dgca-vs-eu261.jpg"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       <article className="max-w-4xl mx-auto px-4 py-8">

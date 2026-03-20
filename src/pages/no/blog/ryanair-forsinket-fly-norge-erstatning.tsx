@@ -8,7 +8,7 @@ export default function RyanairForsinketFlyNorgeErstatning() {
       <SEO
         title="Erstatning for forsinket Ryanair-fly fra Norge — komplett guide"
         description="Forsinket med Ryanair fra Torp eller Gardermoen? Få opptil 600 € i kompensasjon etter EU261. Lær hvordan du søker og tvinger Ryanair til å betale."
-        canonical="https://problemlot.pl/no/blog/ryanair-forsinket-fly-norge-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/ryanair-forsinket-fly-norge-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

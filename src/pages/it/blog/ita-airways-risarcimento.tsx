@@ -26,7 +26,7 @@ export default function ITAAirwaysRisarcimento() {
       <SEO 
         title="ITA Airways risarcimento — diritti passeggeri e procedure 2026"
         description="Tutto quello che devi sapere sui tuoi diritti con ITA Airways (ex Alitalia). Come ottenere risarcimento fino a 600 € per ritardi e cancellazioni secondo CE 261/2004."
-        canonical="https://lotproblem.pl/it/blog/ita-airways-risarcimento"
+        canonicalUrl="https://lotproblem.pl/it/blog/ita-airways-risarcimento"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white">

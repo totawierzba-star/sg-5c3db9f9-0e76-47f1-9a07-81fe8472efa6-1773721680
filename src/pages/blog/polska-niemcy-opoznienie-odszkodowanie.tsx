@@ -9,7 +9,7 @@ export default function PolskaNiemcyOpoznienieOdszkodowanie() {
       <SEO
         title="Polska–Niemcy opóźnienie — Lufthansa, Eurowings, Ryanair odszkodowanie"
         description="Sprawdź, jak uzyskać odszkodowanie za opóźniony lot z Polski do Niemiec. Berlin, Frankfurt, Monachium — nawet 250 € rekompensaty."
-        canonical="https://problemlot.pl/blog/polska-niemcy-opoznienie-odszkodowanie"
+        canonicalUrl="https://problemlot.pl/blog/polska-niemcy-opoznienie-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

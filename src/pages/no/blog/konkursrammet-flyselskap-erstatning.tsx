@@ -8,7 +8,7 @@ export default function KonkursrammetFlyselskapErstatning() {
       <SEO
         title="Konkursrammet flyselskap — hva skjer med erstatningen din?"
         description="Flyselskapet gikk konkurs før du fikk erstatningen? Komplett guide til hvordan du krever EU261-erstatning fra konkursbooet eller garantifond."
-        canonical="https://problemlot.pl/no/blog/konkursrammet-flyselskap-erstatning"
+        canonicalUrl="https://problemlot.pl/no/blog/konkursrammet-flyselskap-erstatning"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

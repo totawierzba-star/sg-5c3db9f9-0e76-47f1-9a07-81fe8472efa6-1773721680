@@ -9,7 +9,7 @@ export default function PolskaNorwegiaOpoznienieOdszkodowanie() {
       <SEO
         title="Polska–Norwegia opóźnienie — odszkodowanie za loty do Skandynawii"
         description="Sprawdź, jak uzyskać odszkodowanie za opóźniony lot z Polski do Norwegii. Oslo, Bergen, Stavanger — nawet 400 € rekompensaty."
-        canonical="https://problemlot.pl/blog/polska-norwegia-opoznienie-odszkodowanie"
+        canonicalUrl="https://problemlot.pl/blog/polska-norwegia-opoznienie-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

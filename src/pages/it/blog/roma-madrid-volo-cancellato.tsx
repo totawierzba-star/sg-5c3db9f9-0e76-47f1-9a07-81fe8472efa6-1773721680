@@ -75,7 +75,7 @@ export default function RomaMadridVoloCancellato() {
       <SEO
         title="Volo Roma–Madrid Cancellato: €400 di Risarcimento — Guida Completa 2026"
         description="Volo Roma–Madrid cancellato? Guida completa: €400 CE 261/2004, diritti immediati in aeroporto, procedura Iberia/Ryanair/easyJet/Vueling e escalation ENAC/AESA."
-        canonical="https://claimwinger.com/it/blog/roma-madrid-volo-cancellato"
+        canonicalUrl="https://claimwinger.com/it/blog/roma-madrid-volo-cancellato"
       />
       <script
         type="application/ld+json"

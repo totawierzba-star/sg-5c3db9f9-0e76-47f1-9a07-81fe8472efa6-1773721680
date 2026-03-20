@@ -11,7 +11,7 @@ export default function FlightCompensationAmount() {
       <SEO 
         title="उड़ान में देरी या रद्दीकरण: मुझे कितना मुआवज़ा मिल सकता है? [2026]"
         description="जानें कि देरी या रद्द उड़ान के लिए आपको कितना मुआवज़ा मिल सकता है। €250 से €600 (₹22,000-₹52,000) तक। मुफ्त कैलकुलेटर + विशेषज्ञ सलाह।"
-        canonical="https://lotproblem.pl/hi/blog/flight-delay-cancellation-compensation-amount"
+        canonicalUrl="https://lotproblem.pl/hi/blog/flight-delay-cancellation-compensation-amount"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

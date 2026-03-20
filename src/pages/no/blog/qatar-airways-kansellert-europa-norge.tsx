@@ -8,7 +8,7 @@ export default function QatarAirwaysKansellertEuropaNorge() {
       <SEO
         title="Qatar Airways kansellert fly fra Europa — norske reisendes rettigheter"
         description="Qatar Airways kansellerte flyet ditt fra Oslo eller EU? Få 250-600 € erstatning. VIKTIG: Returfly fra Doha er IKKE dekket av EU261."
-        canonical="https://problemlot.pl/no/blog/qatar-airways-kansellert-europa-norge"
+        canonicalUrl="https://problemlot.pl/no/blog/qatar-airways-kansellert-europa-norge"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

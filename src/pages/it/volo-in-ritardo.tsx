@@ -21,7 +21,7 @@ export default function VoloInRitardoIt() {
         title="Volo in ritardo — cosa fare e quanto risarcimento? [2026]"
         description="Scopri cosa fare quando il volo è in ritardo e quando hai diritto al risarcimento fino a 600 €. Guida completa ai diritti dei passeggeri."
         url="https://lotproblem.pl/it/volo-in-ritardo"
-        canonical="https://lotproblem.pl/it/volo-in-ritardo"
+        canonicalUrl="https://lotproblem.pl/it/volo-in-ritardo"
       />
 
       {/* Hero Section */}

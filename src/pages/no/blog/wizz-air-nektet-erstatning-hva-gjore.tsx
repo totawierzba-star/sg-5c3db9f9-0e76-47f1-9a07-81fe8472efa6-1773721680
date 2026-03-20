@@ -8,7 +8,7 @@ export default function WizzAirNektetErstatningHvaGjore() {
       <SEO
         title="Wizz Air nektet erstatning — hva gjør du videre?"
         description="Wizz Air avviste kravet ditt? Lær de 3 eskaleringsmetodene som tvinger Wizz Air til å betale din EU261-erstatning (250-600 €)."
-        canonical="https://problemlot.pl/no/blog/wizz-air-nektet-erstatning-hva-gjore"
+        canonicalUrl="https://problemlot.pl/no/blog/wizz-air-nektet-erstatning-hva-gjore"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

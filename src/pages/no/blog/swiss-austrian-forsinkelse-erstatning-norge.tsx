@@ -8,7 +8,7 @@ export default function SwissAustrianForsinkelseErstatningNorge() {
       <SEO
         title="Swiss Air og Austrian Airlines forsinkelse — erstatning for norske passasjerer"
         description="Forsinket Swiss eller Austrian Airlines-fly fra Norge? Få 250-600 € i erstatning under EU261/EØS-avtalen. Komplett guide til dine rettigheter."
-        canonical="https://problemlot.pl/no/blog/swiss-austrian-forsinkelse-erstatning-norge"
+        canonicalUrl="https://problemlot.pl/no/blog/swiss-austrian-forsinkelse-erstatning-norge"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

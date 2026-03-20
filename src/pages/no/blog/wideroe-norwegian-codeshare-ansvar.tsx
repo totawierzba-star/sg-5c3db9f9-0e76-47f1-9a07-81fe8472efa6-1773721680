@@ -8,7 +8,7 @@ export default function WideRoeNorwegianCodeshareAnsvar() {
       <SEO
         title="Widerøe og Norwegian codeshare — hvem er ansvarlig ved forsinkelse?"
         description="Booket du med Norwegian, men fløy med Widerøe? Lær hvilket selskap som må betale din EU261-erstatning ved forsinkelse eller kansellering."
-        canonical="https://problemlot.pl/no/blog/wideroe-norwegian-codeshare-ansvar"
+        canonicalUrl="https://problemlot.pl/no/blog/wideroe-norwegian-codeshare-ansvar"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

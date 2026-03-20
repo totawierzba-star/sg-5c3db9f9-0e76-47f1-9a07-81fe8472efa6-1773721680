@@ -75,7 +75,7 @@ export default function AeroportoVeneziaMarcoPoloRisarcimento() {
       <SEO
         title="Aeroporto Venezia Marco Polo (VCE): Risarcimento Voli Ritardati e Cancellati 2026"
         description="Volo in ritardo o cancellato a Venezia VCE? Guida completa: importi CE 261, compagnie, TSF vs VCE, crociera persa e procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-venezia-marco-polo-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-venezia-marco-polo-risarcimento"
       />
       <script
         type="application/ld+json"

@@ -75,7 +75,7 @@ export default function AustrianAirlinesRisarcimento() {
       <SEO
         title="Austrian Airlines Risarcimento: Guida Completa 2026 — Fino a €600"
         description="Volo Austrian Airlines in ritardo o cancellato? Guida completa: CE 261/2004, coincidenza persa a Vienna, codeshare OS/LH, procedura e Austro Control/ENAC."
-        canonical="https://claimwinger.com/it/blog/austrian-airlines-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/austrian-airlines-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

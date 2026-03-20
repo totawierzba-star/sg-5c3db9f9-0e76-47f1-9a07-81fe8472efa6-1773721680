@@ -75,7 +75,7 @@ export default function TapAirPortugalRisarcimento() {
       <SEO
         title="TAP Air Portugal Risarcimento: Guida Completa 2026 — Fino a €600"
         description="Volo TAP in ritardo o cancellato? CE 261/2004, hub Lisbona per Brasile/Africa, importi, tempi di risposta TAP e procedura ANAC/ENAC."
-        canonical="https://claimwinger.com/it/blog/tap-air-portugal-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/tap-air-portugal-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

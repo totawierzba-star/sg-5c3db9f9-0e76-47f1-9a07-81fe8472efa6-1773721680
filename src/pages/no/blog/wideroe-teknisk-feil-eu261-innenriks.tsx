@@ -8,7 +8,7 @@ export default function WideRoeTekniskFeilEU261Innenriks() {
       <SEO
         title="Widerøe teknisk feil og forsinkelse — gjelder EU261 på innenriksruter?"
         description="Widerøe avviste kravet ditt på grunn av teknisk feil? Teknisk feil er IKKE ekstraordinært. Lær hvordan du får 250 € erstatning på innenriksflyvninger."
-        canonical="https://problemlot.pl/no/blog/wideroe-teknisk-feil-eu261-innenriks"
+        canonicalUrl="https://problemlot.pl/no/blog/wideroe-teknisk-feil-eu261-innenriks"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -29,9 +29,6 @@ function getTurboRules() {
 
 const nextConfig = {
   reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   experimental: {
     turbo: {
       rules: getTurboRules(),

@@ -8,7 +8,7 @@ export default function GruppebestillingFellesErstatningskrav() {
       <SEO
         title="Gruppebestilling og felles erstatningskrav — hvordan går det til?"
         description="Reiste dere som gruppe og flyet ble forsinket? Slik krever alle passasjerer erstatning sammen — komplett guide til gruppekrav under EU261."
-        canonical="https://problemlot.pl/no/blog/gruppebestilling-felles-erstatningskrav"
+        canonicalUrl="https://problemlot.pl/no/blog/gruppebestilling-felles-erstatningskrav"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

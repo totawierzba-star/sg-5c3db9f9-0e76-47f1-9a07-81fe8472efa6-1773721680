@@ -8,7 +8,7 @@ export default function MistetTilkoblingsflygFrankfurtWien() {
       <SEO
         title="Mistet tilkoblingsflyg i Frankfurt eller Wien — hvem betaler erstatningen?"
         description="Mistet tilkoblingsflyg i Frankfurt, München eller Wien? Få 250-600 € erstatning når første fly er forsinket. Komplett guide for norske passasjerer."
-        canonical="https://problemlot.pl/no/blog/mistet-tilkoblingsflyg-frankfurt-wien"
+        canonicalUrl="https://problemlot.pl/no/blog/mistet-tilkoblingsflyg-frankfurt-wien"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

@@ -75,7 +75,7 @@ export default function AeroportoGenovaRisarcimento() {
       <SEO
         title="Aeroporto Genova Cristoforo Colombo (GOA): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Genova GOA? Guida completa: importi CE 261, pista sul mare, vento tramontana, porto e procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-genova-cristoforo-colombo-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-genova-cristoforo-colombo-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

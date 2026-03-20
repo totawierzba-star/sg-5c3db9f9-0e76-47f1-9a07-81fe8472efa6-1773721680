@@ -32,7 +32,7 @@ export default function HomeHi() {
       <SEO
         title="फ्लाइट में देरी या रद्दीकरण? ₹52,000 तक का मुआवजा (EU 261)"
         description="क्या आपकी फ्लाइट लेट या कैंसिल हुई थी? जानें कि एयर इंडिया, लुफ्थांसा और अन्य से €600 (₹52,000) तक का रिफंड और मुआवजा कैसे प्राप्त करें।"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       {/* Hero Section */}

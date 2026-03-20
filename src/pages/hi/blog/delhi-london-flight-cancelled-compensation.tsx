@@ -11,7 +11,7 @@ export default function DelhiLondonFlightCancelledCompensation() {
       <SEO 
         title="दिल्ली–लंदन उड़ान रद्द — €600 मुआवज़े के लिए पूरी प्रक्रिया [2026]"
         description="दिल्ली-लंदन उड़ान रद्द होने पर €600 (₹52,000) मुआवज़ा कैसे प्राप्त करें। Air India, British Airways और Vistara के लिए विस्तृत गाइड। समय सीमा, दस्तावेज़ और विशेषज्ञ टिप्स।"
-        canonical="https://lotproblem.pl/hi/blog/delhi-london-flight-cancelled-compensation"
+        canonicalUrl="https://lotproblem.pl/hi/blog/delhi-london-flight-cancelled-compensation"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

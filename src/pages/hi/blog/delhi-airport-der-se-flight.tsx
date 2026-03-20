@@ -64,7 +64,7 @@ export default function DelhiAirportDerSeFlight() {
         title="दिल्ली एयरपोर्ट से देर से Flight – अपने अधिकार और मुआवज़ा जानें"
         description="दिल्ली एयरपोर्ट (DEL/IGI) से उड़ान में देरी? जानें यूरोपीय एयरलाइंस से €600 तक मुआवज़ा कैसे प्राप्त करें।"
         url="https://lotproblem.pl/hi/blog/delhi-airport-der-se-flight"
-        schema={JSON.stringify(schemaData)}
+       
       />
 
       {/* Hero Section */}

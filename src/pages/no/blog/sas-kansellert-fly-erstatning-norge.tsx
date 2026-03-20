@@ -8,7 +8,7 @@ export default function SASKansellertFlyErstatningNorge() {
       <SEO
         title="SAS kansellerte flyet — hvordan krever du erstatning? [Guide 2025]"
         description="Komplett guide til erstatning når SAS kansellerer flyet ditt fra Norge. Få 250-600 € + full refusjon. Lær hvordan ClaimWinger kan hjelpe deg."
-        canonical="https://problemlot.pl/no/blog/sas-kansellert-fly-erstatning-norge"
+        canonicalUrl="https://problemlot.pl/no/blog/sas-kansellert-fly-erstatning-norge"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         <header className="mb-8">

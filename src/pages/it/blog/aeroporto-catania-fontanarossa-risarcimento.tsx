@@ -75,7 +75,7 @@ export default function AeroportoCataniaRisarcimento() {
       <SEO
         title="Aeroporto Catania Fontanarossa (CTA): Risarcimento Voli 2026"
         description="Volo in ritardo o cancellato a Catania CTA? Guida completa: CE 261/2004, eruzione Etna e circostanze straordinarie, Ryanair/easyJet/ITA, procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-catania-fontanarossa-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-catania-fontanarossa-risarcimento"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

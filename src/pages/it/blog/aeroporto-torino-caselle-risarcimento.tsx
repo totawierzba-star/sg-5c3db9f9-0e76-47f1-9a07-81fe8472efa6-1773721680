@@ -75,7 +75,7 @@ export default function AeroportoTorinoRisarcimento() {
       <SEO
         title="Aeroporto Torino Caselle (TRN): Risarcimento Voli Ritardati e Cancellati 2026"
         description="Volo in ritardo o cancellato a Torino Caselle (TRN)? Guida completa ai tuoi diritti CE 261/2004: importi, compagnie, meteo alpino e procedura ENAC."
-        canonical="https://claimwinger.com/it/blog/aeroporto-torino-caselle-risarcimento"
+        canonicalUrl="https://claimwinger.com/it/blog/aeroporto-torino-caselle-risarcimento"
       />
       <script
         type="application/ld+json"

@@ -9,7 +9,7 @@ export default function LotniskoWroclawOdszkodowanie() {
       <SEO
         title="Lotnisko Wrocław Strachowice — odszkodowanie za opóźniony lot [2025]"
         description="Twój lot z Wrocławia jest opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Ryanair, Wizz Air, LOT - kompletny przewodnik."
-        canonical="https://lotproblem.pl/blog/lotnisko-wroclaw-odszkodowanie"
+        canonicalUrl="https://lotproblem.pl/blog/lotnisko-wroclaw-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
