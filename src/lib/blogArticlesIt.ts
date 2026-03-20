@@ -11,6 +11,26 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-ancona-risarcimento",
+    title: "Aeroporto Ancona AOI (Falconara): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato da Ancona AOI? CE 261/2004, fino a €400, Ryanair, Wizz Air, rotte verso Est Europa. Procedura ENAC completa.",
+    date: "2026-03-22",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "blue",
+  },
+  {
+    slug: "aeroporto-alghero-risarcimento",
+    title: "Aeroporto Alghero AHO (Fertilia): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo o cancellato da Alghero AHO? CE 261/2004, fino a €400, Ryanair dominante, stagionalità estiva, AHO vs OLB vs CAG. Guida ENAC.",
+    date: "2026-03-22",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "green",
+  },
+  {
     slug: "milano-barcellona-volo-ritardo-risarcimento",
     title: "Volo Milano–Barcellona Cancellato o in Ritardo: €250 di Risarcimento",
     excerpt: "Vueling, easyJet, Ryanair, ITA da MXP/BGY/LIN: €250 CE 261/2004 per ritardi oltre 3 ore o cancellazioni. Girona GRO vs BCN. Guida 2026.",
