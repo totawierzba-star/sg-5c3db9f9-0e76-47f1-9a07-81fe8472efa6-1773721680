@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-istanbul-risarcimento",
+    title: "Aeroporto Istanbul: Risarcimento Voli 2026 — IST, SAW e CE 261/2004",
+    excerpt: "Volo in ritardo a Istanbul IST o SAW? CE 261 solo per voli da aeroporti UE. Turkish Airlines, Pegasus, hub di transito per Asia e Africa, SHGM vs ENAC.",
+    date: "2026-03-20",
+    readTime: "8 min",
+    category: "Hub Intercontinentali",
+    featured: false,
+    color: "red"
+  },
+  {
     slug: "aeroporto-dubai-risarcimento",
     title: "Aeroporto Dubai DXB: Risarcimento Voli 2026 — CE 261/2004 e diritti passeggeri",
     excerpt: "Volo in ritardo a Dubai? CE 261 solo per voli da aeroporti UE. Emirates, DXB vs DWC, coincidenze via Dubai verso Asia e Australia, ENAC vs GCAA.",
