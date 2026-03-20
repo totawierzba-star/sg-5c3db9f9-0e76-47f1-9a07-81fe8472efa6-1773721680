@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aer-lingus-risarcimento",
+    title: "Aer Lingus Risarcimento: Guida Completa 2026 — Fino a €600",
+    excerpt: "Volo Aer Lingus in ritardo? Hub Dublino con pre-clearance USA, €400–€600, coincidenze New York/Boston/Chicago, CAR vs ENAC.",
+    date: "2026-03-20",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "green"
+  },
+  {
     slug: "iberia-express-risarcimento",
     title: "Iberia Express Risarcimento: Guida Completa 2026 — Fino a €400",
     excerpt: "Volo Iberia Express (I2) in ritardo? Diversa da Iberia IB e Vueling VY: come identificare il vettore operativo IAG, €250–€400, AESA vs ENAC.",
