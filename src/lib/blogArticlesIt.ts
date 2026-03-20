@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "aeroporto-brindisi-risarcimento",
+    title: "Aeroporto Brindisi BDS (Salento): Risarcimento Voli 2026",
+    excerpt: "Volo in ritardo a Brindisi BDS? CE 261/2004, €250–€400, Ryanair/easyJet/Volotea, alta stagione Salento, BDS vs BRI, procedura ENAC.",
+    date: "2026-03-20",
+    readTime: "7 min",
+    category: "Aeroporti",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "aeroporto-olbia-risarcimento",
     title: "Aeroporto Olbia Costa Smeralda (OLB): Risarcimento Voli 2026",
     excerpt: "Volo in ritardo a Olbia OLB? CE 261/2004, €250–€400, alta stagione Costa Smeralda, Ryanair/easyJet/Volotea, Maestrale non straordinario, procedura ENAC.",
