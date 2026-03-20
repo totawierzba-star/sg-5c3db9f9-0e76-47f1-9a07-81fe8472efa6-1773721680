@@ -11,6 +11,16 @@ export interface BlogArticle {
 
 export const blogArticlesIt: BlogArticle[] = [
   {
+    slug: "iberia-express-risarcimento",
+    title: "Iberia Express Risarcimento: Guida Completa 2026 — Fino a €400",
+    excerpt: "Volo Iberia Express (I2) in ritardo? Diversa da Iberia IB e Vueling VY: come identificare il vettore operativo IAG, €250–€400, AESA vs ENAC.",
+    date: "2026-03-20",
+    readTime: "7 min",
+    category: "Compagnie Aeree",
+    featured: false,
+    color: "orange"
+  },
+  {
     slug: "aeroporto-lisbona-risarcimento",
     title: "Aeroporto Lisbona LIS: Risarcimento Voli 2026 — fino a €600",
     excerpt: "Volo in ritardo a Lisbona LIS? CE 261/2004, €400–€600, hub TAP, connessioni Brasile e Africa lusofona, TAP lenta a rispondere, ANAC vs ENAC.",
