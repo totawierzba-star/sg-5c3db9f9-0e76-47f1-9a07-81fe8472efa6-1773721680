@@ -126,7 +126,7 @@ export default function AeroportoVeneziaMarcoPoloRisarcimento() {
                 <div><strong>Codice ICAO:</strong> LIPZ</div>
                 <div><strong>Posizione:</strong> Tessera, 13 km da Venezia</div>
                 <div><strong>Gestore:</strong> SAVE S.p.A.</div>
-                <div><strong>Tipo voli:</strong> Europei, intercontinentali, charter</td>
+                <div><strong>Tipo voli:</strong> Europei, intercontinentali, charter</div>
                 <div><strong>Aeroporto alternativo:</strong> Treviso TSF (~30 km)</div>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function AeroportoVeneziaMarcoPoloRisarcimento() {
               </p>
             </div>
             <a
-              href="https://claimwinger.com/it/volo-in-ritardo?utm_source=blog&utm_medium=cta1&utm_campaign=venezia-vce"
+              href="https://claimwinger.com/it/volo-in-ritardo?utm_source=blog&amp;utm_medium=cta1&amp;utm_campaign=venezia-vce"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 bg-white text-green-700 font-bold px-6 py-3 rounded-xl hover:bg-green-50 transition-colors flex items-center gap-2"
@@ -457,7 +457,7 @@ export default function AeroportoVeneziaMarcoPoloRisarcimento() {
               </p>
             </div>
             <a
-              href="https://claimwinger.com/it?utm_source=blog&utm_medium=cta2&utm_campaign=venezia-vce"
+              href="https://claimwinger.com/it?utm_source=blog&amp;utm_medium=cta2&amp;utm_campaign=venezia-vce"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 bg-white text-blue-700 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors flex items-center gap-2"

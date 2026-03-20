@@ -130,7 +130,7 @@ export default function BrusselsAirlinesRisarcimento() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
             <p className="text-blue-800 text-sm font-medium flex items-start gap-2">
               <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>Per i passeggeri italiani, la rotta tipica è <strong>Roma/Milano → Bruxelles BRU → Africa</strong>. Tutti questi voli >3.500 km qualificano per €600 di risarcimento in caso di ritardo ≥3h.</span>
+              <span>Per i passeggeri italiani, la rotta tipica è <strong>Roma/Milano → Bruxelles BRU → Africa</strong>. Tutti questi voli &gt;3.500 km qualificano per €600 di risarcimento in caso di ritardo ≥3h.</span>
             </p>
           </div>
         </section>
