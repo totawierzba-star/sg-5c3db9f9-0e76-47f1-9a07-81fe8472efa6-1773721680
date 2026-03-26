@@ -252,4 +252,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: false,
     color: "amber",
   },
+  {
+    id: "21",
+    title: "Does EU261 Apply to Flights Outside the EU?",
+    slug: "eu261-flights-outside-eu-apply",
+    category: "regulation",
+    wordCount: 2800,
+    readTime: "10 min read",
+    excerpt: "EU261 covers all departures from EU airports and EU-carrier arrivals into the EU. Non-EU airlines flying into Europe from outside the EU are not covered. Full guide with route-by-route examples.",
+    publishDate: "2026-03-26",
+    featured: true,
+    color: "blue",
+  },
 ];
