@@ -312,4 +312,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: false,
     color: "orange",
   },
+  {
+    id: "26",
+    title: "EU261 Complete Guide 2026 — Your Rights for Every Flight Scenario",
+    slug: "eu261-complete-guide-passenger-rights",
+    category: "regulation",
+    wordCount: 4200,
+    readTime: "18 min read",
+    excerpt: "The definitive EU261 guide: compensation amounts, eligibility, care rights, extraordinary circumstances, how to claim, and country-by-country limitation periods. Updated 2026.",
+    publishDate: "2026-03-26",
+    featured: true,
+    color: "blue",
+  },
 ];
