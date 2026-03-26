@@ -9,7 +9,7 @@ export default function ExtraordinaryCircumstancesExplained() {
       <SEO
         title="特殊情况解释【2026】Extraordinary Circumstances - When Airlines Can Refuse Compensation"
         description="航空公司说'特殊情况'拒绝赔偿？了解真相！60%案例中航司在撒谎。详解合法vs虚假借口、技术故障真相、如何挑战拒绝、真实案例分析。"
-        url="https://lotproblem.pl/zh/blog/extraordinary-circumstances-explained"
+        url="https://problemlot.com/zh/blog/extraordinary-circumstances-explained"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

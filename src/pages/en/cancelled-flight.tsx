@@ -18,7 +18,7 @@ export default function CancelledFlightEn() {
       <SEO
         title="Flight Cancelled? Claim Up to €600 Compensation + Full Refund | EU261"
         description="Your flight was cancelled? Get up to €600 compensation PLUS full ticket refund under EU261. Check your rights and file a claim in 2 minutes."
-        url="https://lotproblem.pl/en/cancelled-flight"
+        url="https://problemlot.com/en/cancelled-flight"
       />
 
       {/* Hero Section */}

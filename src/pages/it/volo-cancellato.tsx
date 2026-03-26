@@ -20,8 +20,8 @@ export default function VoloCancellatoIt() {
       <SEO
         title="Volo cancellato — diritti passeggeri e risarcimento [2026]"
         description="Il tuo volo è stato cancellato? Scopri i tuoi diritti e come ottenere fino a 600 € di risarcimento secondo il Regolamento CE 261/2004."
-        url="https://lotproblem.pl/it/volo-cancellato"
-        canonicalUrl="https://lotproblem.pl/it/volo-cancellato"
+        url="https://problemlot.com/it/volo-cancellato"
+        canonicalUrl="https://problemlot.com/it/volo-cancellato"
       />
 
       {/* Hero Section */}

@@ -9,7 +9,7 @@ export default function PragueAirportDelayedFlight() {
       <SEO
         title="Letiště Praha zpožděný let – kompenzace a práva cestujících 2026"
         description="Zpožděný let z letiště Praha-Ruzyně? Kompletní průvodce kompenzací až 600 € podle EU 261. Terminál 1 vs 2, nejčastější problémy."
-        url="https://lotproblem.pl/cs/blog/letiste-praha-zpozdeny-let"
+        url="https://problemlot.com/cs/blog/letiste-praha-zpozdeny-let"
       />
 
       {/* Breadcrumb */}

@@ -7,7 +7,7 @@ export default function LotCodeshareWithLufthansa() {
       <SEO
         title="LOT codeshare z Lufthansą — kto płaci odszkodowanie za opóźniony lot?"
         description="Twój lot LOT miał kod Lufthansy (LH)? Sprawdź kto odpowiada za odszkodowanie €250-600 przy codeshare i jak złożyć skuteczną reklamację."
-        url="https://lotproblem.pl/blog/lot-codeshare-lufthansa-kto-placi"
+        url="https://problemlot.com/blog/lot-codeshare-lufthansa-kto-placi"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -9,7 +9,7 @@ export default function Ritardo3OreRegolaRisarcimento() {
       <SEO
         title="Ritardo di 3 Ore: La Regola del Risarcimento Volo Spiegata [2026]"
         description="Scopri quando scatta il diritto al risarcimento per ritardi superiori a 3 ore. Guida completa con calcoli, eccezioni e procedure per ottenere fino a 600€."
-        url="https://lotproblem.pl/it/blog/ritardo-3-ore-regola-risarcimento"
+        url="https://problemlot.com/it/blog/ritardo-3-ore-regola-risarcimento"
       />
 
       <script
@@ -29,14 +29,14 @@ export default function Ritardo3OreRegolaRisarcimento() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",
             "dateModified": "2026-03-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/ritardo-3-ore-regola-risarcimento"
+              "@id": "https://problemlot.com/it/blog/ritardo-3-ore-regola-risarcimento"
             }
           })
         }}

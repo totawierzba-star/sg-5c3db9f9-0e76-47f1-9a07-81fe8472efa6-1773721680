@@ -11,7 +11,7 @@ export default function SasStockholmNewYorkPage() {
       <SEO
         title="Ersättning för SAS Stockholm–New York (JFK/EWR) — hur får du 600 €?"
         description="Försenad på flyget till New York med SAS? Långdistansflyg ger högst ersättning. Se hur du kräver 600 euro per person."
-        url="https://lotproblem.pl/sv/blog/sas-stockholm-new-york-ersattning"
+        url="https://problemlot.com/sv/blog/sas-stockholm-new-york-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

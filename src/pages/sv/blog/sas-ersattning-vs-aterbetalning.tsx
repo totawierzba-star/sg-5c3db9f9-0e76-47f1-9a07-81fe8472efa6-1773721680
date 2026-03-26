@@ -11,7 +11,7 @@ export default function SasRefundVsCompensationPage() {
       <SEO
         title="Ersättning vs. Återbetalning hos SAS — Vad är skillnaden?"
         description="Blandar du ihop återbetalning av biljetten med EU-ersättning? Läs vår guide om när du har rätt till båda från SAS. Upp till 600 € extra."
-        url="https://lotproblem.pl/sv/blog/sas-ersattning-vs-aterbetalning"
+        url="https://problemlot.com/sv/blog/sas-ersattning-vs-aterbetalning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

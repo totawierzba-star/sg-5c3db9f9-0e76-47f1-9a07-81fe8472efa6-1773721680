@@ -9,7 +9,7 @@ export default function StavkyLeteckychSpolecnosti() {
       <SEO 
         title="Stávka letecké společnosti - máte nárok na kompenzaci?"
         description="Váš let byl zrušen nebo zpožděn kvůli stávce? Zjistěte, kdy vám přísluší kompenzace podle EU 261/2004."
-        url="https://lotproblem.pl/cs/blog/stavky-leteckych-spolecnosti"
+        url="https://problemlot.com/cs/blog/stavky-leteckych-spolecnosti"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -330,7 +330,7 @@ export default function StavkyLeteckychSpolecnosti() {
                 "name": "LotProblem.pl"
               },
               "datePublished": "2026-02-24",
-              "image": "https://lotproblem.pl/og-image.png"
+              "image": "https://problemlot.com/og-image.png"
             })
           }}
         />

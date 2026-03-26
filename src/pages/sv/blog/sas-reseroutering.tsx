@@ -8,7 +8,7 @@ export default function SasReserouteringPage() {
       <SEO
         title="SAS reseroutering — dina rättigheter vid ombokning 2026"
         description="SAS bokade om dig till annat flyg? Få 250-600 € ersättning om reserouteringen innebär betydande försening. Guide för svenska resenärer."
-        url="https://lotproblem.pl/sv/blog/sas-reseroutering"
+        url="https://problemlot.com/sv/blog/sas-reseroutering"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

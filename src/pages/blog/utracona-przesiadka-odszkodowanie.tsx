@@ -8,7 +8,7 @@ export default function MissedConnectionGuide() {
       <SEO
         title="Utracona przesiadka (Missed Connection) — kiedy przysługuje odszkodowanie?"
         description="Spóźniłeś się na lot łączony przez opóźnienie pierwszego lotu? Sprawdź, kiedy przysługuje Ci od 250 do 600 euro odszkodowania za utraconą przesiadkę."
-        url="https://lotproblem.pl/blog/utracona-przesiadka-odszkodowanie"
+        url="https://problemlot.com/blog/utracona-przesiadka-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

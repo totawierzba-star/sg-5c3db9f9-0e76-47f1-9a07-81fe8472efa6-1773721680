@@ -20,7 +20,7 @@ export default function AkoDlhoTrvaOdskodnenieLOT() {
       <SEO
         title="Koľko Trvá Vyplatenie Odškodnenia od LOT? [Aktuálne časy 2026]"
         description="Čakáte na peniaze od LOT Polish Airlines? Zistite, ako dlho to trvá, prečo meškajú a ako urýchliť proces vyplatenia odškodnenia."
-        url="https://lotproblem.pl/sk/blog/ako-dlho-trva-odskodnenie-lot"
+        url="https://problemlot.com/sk/blog/ako-dlho-trva-odskodnenie-lot"
       />
 
       {/* Article Schema */}
@@ -32,7 +32,7 @@ export default function AkoDlhoTrvaOdskodnenieLOT() {
             "@type": "Article",
             "headline": "Koľko Trvá Vyplatenie Odškodnenia od LOT Polish Airlines?",
             "description": "Analýza časov vyplácania odškodnení od LOT a tipy na urýchlenie procesu.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -42,7 +42,7 @@ export default function AkoDlhoTrvaOdskodnenieLOT() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

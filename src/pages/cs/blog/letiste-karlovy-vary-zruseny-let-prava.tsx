@@ -9,7 +9,7 @@ export default function LetisteKarlovyVaryZrusenyLet() {
       <SEO
         title="Letiště Karlovy Vary: Zrušený let — vaše práva 2026"
         description="Byl váš let z Karlových Varů zrušen? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z KLV."
-        url="https://lotproblem.pl/cs/blog/letiste-karlovy-vary-zruseny-let-prava"
+        url="https://problemlot.com/cs/blog/letiste-karlovy-vary-zruseny-let-prava"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

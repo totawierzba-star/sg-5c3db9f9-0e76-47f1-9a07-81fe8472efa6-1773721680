@@ -9,8 +9,8 @@ export default function LetisteOstravaKompenzace() {
       <SEO
         title="Letiště Ostrava (OSR): Zpožděný let a kompenzace 2026"
         description="Měli jste zpoždění z letiště v Ostravě? Zjistěte, jak získat až 600 € odškodnění za zpožděný nebo zrušený let."
-        url="https://lotproblem.pl/cs/blog/letiste-ostrava-kompenzace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/letiste-ostrava-kompenzace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -179,11 +179,11 @@ export default function LetisteOstravaKompenzace() {
             "author": { "@type": "Organization", "name": "LotProblem.pl" },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" }
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" }
             }
           })
         }}

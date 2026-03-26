@@ -9,8 +9,8 @@ export default function JakeDokumentySiPonechat() {
       <SEO 
         title="Jaké dokumenty si ponechat při zpožděném letu - kompletní checklist"
         description="Zjistěte, které dokumenty jsou klíčové pro získání kompenzace. Boarding pass, účtenky, fotky a další důkazy."
-        url="https://lotproblem.pl/cs/blog/jake-dokumenty-si-ponechat"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/jake-dokumenty-si-ponechat"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

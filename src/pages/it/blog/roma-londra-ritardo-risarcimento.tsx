@@ -17,7 +17,7 @@ export default function RomaLondraRitardoRisarcimento() {
       <SEO
         title="Roma–Londra Volo in Ritardo: Risarcimento Fino a €250 — Guida 2026"
         description="Volo Roma Fiumicino–Londra in ritardo di 3 ore o più? Scopri quanto spetta (€250), quali compagnie operano la rotta e come richiedere il risarcimento CE 261/2004."
-        url="https://lotproblem.pl/it/blog/roma-londra-ritardo-risarcimento"
+        url="https://problemlot.com/it/blog/roma-londra-ritardo-risarcimento"
       />
 
       <script
@@ -32,13 +32,13 @@ export default function RomaLondraRitardoRisarcimento() {
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" },
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/roma-londra-ritardo-risarcimento",
+              "@id": "https://problemlot.com/it/blog/roma-londra-ritardo-risarcimento",
             },
           }),
         }}

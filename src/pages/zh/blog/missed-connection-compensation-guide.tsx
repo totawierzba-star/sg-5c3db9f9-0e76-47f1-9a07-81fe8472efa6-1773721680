@@ -9,7 +9,7 @@ export default function MissedConnectionGuide() {
       <SEO
         title="错过转机赔偿指南【2026】Missed Connection Compensation - Claim €600"
         description="第一程只延误40分钟却导致错过转机？您可能获得€600赔偿！详解联程机票权益、转机延误计算规则、食宿安排及索赔流程。北京/上海经欧洲转机乘客必读。"
-        url="https://lotproblem.pl/zh/blog/missed-connection-compensation-guide"
+        url="https://problemlot.com/zh/blog/missed-connection-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

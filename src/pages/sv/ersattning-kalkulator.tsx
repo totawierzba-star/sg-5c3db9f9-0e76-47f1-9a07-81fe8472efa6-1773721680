@@ -11,7 +11,7 @@ export default function CompensationCalculatorSv() {
       <SEO
         title="Ersättningskalkylator — hur mycket kan du få? (250€, 400€, 600€)"
         description="Räkna ut din ersättning för försenat eller inställt flyg på 30 sekunder. Gratis kalkylator enligt EU 261/2004."
-        url="https://lotproblem.pl/sv/ersattning-kalkulator"
+        url="https://problemlot.com/sv/ersattning-kalkulator"
       />
 
       <div className="max-w-4xl mx-auto px-4 py-12">

@@ -9,8 +9,8 @@ export default function JakZlozycWniosekOdszkodowanie() {
       <SEO
         title="Jak złożyć wniosek o odszkodowanie lotnicze? [Przewodnik krok po kroku 2025]"
         description="Kompletny przewodnik: jak złożyć wniosek o odszkodowanie za opóźniony lub odwołany lot. 6 kroków + szablony dokumentów."
-        image="https://lotproblem.pl/og-image.png"
-        url="https://lotproblem.pl/blog/jak-zlozyc-wniosek-odszkodowanie"
+        image="https://problemlot.com/og-image.png"
+        url="https://problemlot.com/blog/jak-zlozyc-wniosek-odszkodowanie"
       />
 
       <script
@@ -21,7 +21,7 @@ export default function JakZlozycWniosekOdszkodowanie() {
             "@type": "HowTo",
             "name": "Jak złożyć wniosek o odszkodowanie lotnicze",
             "description": "Przewodnik krok po kroku jak złożyć wniosek o odszkodowanie za opóźniony lub odwołany lot",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "totalTime": "PT30M",
             "estimatedCost": {
               "@type": "MonetaryAmount",
@@ -34,42 +34,42 @@ export default function JakZlozycWniosekOdszkodowanie() {
                 "position": 1,
                 "name": "Zbierz dokumenty",
                 "text": "Karta pokładowa, potwierdzenie rezerwacji, dokumentacja opóźnienia",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               },
               {
                 "@type": "HowToStep",
                 "position": 2,
                 "name": "Ustal wysokość odszkodowania",
                 "text": "250-600 EUR w zależności od odległości lotu",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               },
               {
                 "@type": "HowToStep",
                 "position": 3,
                 "name": "Napisz wniosek do linii",
                 "text": "Formalny wniosek z danymi lotu i pasażera",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               },
               {
                 "@type": "HowToStep",
                 "position": 4,
                 "name": "Wyślij wniosek",
                 "text": "Email lub formularz na stronie linii lotniczej",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               },
               {
                 "@type": "HowToStep",
                 "position": 5,
                 "name": "Czekaj na odpowiedź",
                 "text": "Linia ma 6-8 tygodni na odpowiedź",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               },
               {
                 "@type": "HowToStep",
                 "position": 6,
                 "name": "Eskaluj jeśli trzeba",
                 "text": "ULC, firma odszkodowawcza lub sąd",
-                "image": "https://lotproblem.pl/og-image.png"
+                "image": "https://problemlot.com/og-image.png"
               }
             ],
             "mainEntity": {

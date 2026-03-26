@@ -9,8 +9,8 @@ export default function JakZvysitSanceNaUspech() {
       <SEO 
         title="Jak zvýšit šance na úspěch při reklamaci zpožděného letu"
         description="Zjistěte osvědčené strategie a tipy, jak maximalizovat své šance na získání kompenzace za zpožděný let."
-        url="https://lotproblem.pl/cs/blog/jak-zvysit-sance-na-uspech"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/jak-zvysit-sance-na-uspech"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

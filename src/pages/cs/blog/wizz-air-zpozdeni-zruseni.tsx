@@ -9,8 +9,8 @@ export default function WizzAirZpozdeniZruseni() {
       <SEO 
         title="Wizz Air kompenzace za zpoždění a zrušení letu – Průvodce 2026"
         description="Kompletní průvodce reklamací u Wizz Air. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let."
-        url="https://lotproblem.pl/cs/blog/wizz-air-zpozdeni-zruseni"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/wizz-air-zpozdeni-zruseni"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -511,16 +511,16 @@ u.
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/cs/blog/wizz-air-zpozdeni-zruseni"
+              "@id": "https://problemlot.com/cs/blog/wizz-air-zpozdeni-zruseni"
             },
-            "image": "https://lotproblem.pl/og-image.png"
+            "image": "https://problemlot.com/og-image.png"
           })
         }}
       />

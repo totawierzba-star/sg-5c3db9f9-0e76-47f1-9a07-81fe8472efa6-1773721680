@@ -11,7 +11,7 @@ export default function SasDocumentsPage() {
       <SEO
         title="Vilka dokument behöver du för att kräva ersättning från SAS? — checklista"
         description="Saknar du bevis? Se vår lista över dokument du måste spara för att få ersättning från SAS. Boardingkort, kvitton och intyg."
-        url="https://lotproblem.pl/sv/blog/vilka-dokument-kravs-sas"
+        url="https://problemlot.com/sv/blog/vilka-dokument-kravs-sas"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -9,7 +9,7 @@ export default function CsCompensationCalculator() {
       <SEO
         title="Kalkulačka kompenzace za zpožděný let | Spočítejte nárok"
         description="Zjistěte, kolik můžete získat za zpožděný nebo zrušený let. Kalkulačka kompenzace podle EU 261 - 250 €, 400 € nebo 600 €."
-        url="https://lotproblem.pl/cs/kompenzace-kalkulacka"
+        url="https://problemlot.com/cs/kompenzace-kalkulacka"
       />
 
       {/* Hero Section */}

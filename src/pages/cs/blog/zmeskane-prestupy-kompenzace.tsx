@@ -9,7 +9,7 @@ export default function ZmeskanePrestupyKompenzace() {
       <SEO 
         title="Zmeškané přestupy – nárok na kompenzaci podle EU 261/2004"
         description="Zmeškal jste přestup kvůli zpoždění? Zjistěte, kdy máte nárok na až 600 € kompenzace za zmeškaný spoj."
-        url="https://lotproblem.pl/cs/blog/zmeskane-prestupy-kompenzace"
+        url="https://problemlot.com/cs/blog/zmeskane-prestupy-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -292,7 +292,7 @@ export default function ZmeskanePrestupyKompenzace() {
                 "name": "LotProblem.pl"
               },
               "datePublished": "2026-02-23",
-              "image": "https://lotproblem.pl/og-image.png"
+              "image": "https://problemlot.com/og-image.png"
             })
           }}
         />

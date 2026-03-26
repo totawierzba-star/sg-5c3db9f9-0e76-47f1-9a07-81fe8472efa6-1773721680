@@ -7,7 +7,7 @@ export default function LotBiletOTA() {
       <SEO
         title="LOT bilet przez OTA (eSky, Kiwi, Booking) — czy wpływa na odszkodowanie 2026?"
         description="Kupiłeś bilet LOT przez eSky, Kiwi.com lub Booking.com? Sprawdź czy przysługuje Ci odszkodowanie €250-600 za opóźniony/odwołany lot pomimo zakupu przez pośrednika."
-        url="https://lotproblem.pl/blog/lot-bilet-ota-esky-kiwi-odszkodowanie"
+        url="https://problemlot.com/blog/lot-bilet-ota-esky-kiwi-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

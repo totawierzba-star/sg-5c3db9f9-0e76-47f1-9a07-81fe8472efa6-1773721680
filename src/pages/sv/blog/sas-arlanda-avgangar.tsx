@@ -11,7 +11,7 @@ export default function SasArlandaPage() {
       <SEO
         title="SAS Arlanda-avgångar — de mest försenade rutterna och vad du kan göra"
         description="Flyger du från Arlanda med SAS? Vissa rutter är mer drabbade än andra. Se statistiken och dina rättigheter vid förseningar från Stockholm."
-        url="https://lotproblem.pl/sv/blog/sas-arlanda-avgangar"
+        url="https://problemlot.com/sv/blog/sas-arlanda-avgangar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

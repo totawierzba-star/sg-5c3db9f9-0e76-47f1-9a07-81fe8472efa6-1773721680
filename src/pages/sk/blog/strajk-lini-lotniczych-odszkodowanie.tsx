@@ -9,7 +9,7 @@ export default function StrajkKompenzaciaSk() {
       <SEO
         title="Štrajk leteckých spoločností a kompenzácia – Vaše práva v 2024/2025"
         description="Zrušený let kvôli štrajku? Zistite, kedy vám patrí kompenzácia až 600 € a ako ju získať. Aktuálne informácie pre rok 2024/2025."
-        url="https://lotproblem.pl/sk/blog/strajk-lini-lotniczych-odszkodowanie"
+        url="https://problemlot.com/sk/blog/strajk-lini-lotniczych-odszkodowanie"
       />
 
       <article className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-gray-900">

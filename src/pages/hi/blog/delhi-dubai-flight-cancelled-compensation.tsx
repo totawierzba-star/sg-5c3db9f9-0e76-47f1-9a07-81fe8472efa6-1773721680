@@ -9,7 +9,7 @@ export default function DelhiDubaiFlightCancelledCompensation() {
       <SEO
         title="दिल्ली–दुबई उड़ान रद्द – UAE और भारत में मुआवज़े के नियम [2026]"
         description="दिल्ली-दुबई रूट पर रद्दीकरण के लिए मुआवज़ा। Emirates, Air India Express, और IndiGo के लिए विशिष्ट नीतियां। UAE GCAA बनाम भारतीय DGCA नियम। वास्तविक केस स्टडीज़।"
-        url="https://lotproblem.pl/hi/blog/delhi-dubai-flight-cancelled-compensation"
+        url="https://problemlot.com/hi/blog/delhi-dubai-flight-cancelled-compensation"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-12">

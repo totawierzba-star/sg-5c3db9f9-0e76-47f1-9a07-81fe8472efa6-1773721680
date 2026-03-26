@@ -11,7 +11,7 @@ export default function SasDelay3HoursPage() {
       <SEO
         title="SAS försenat mer än 3 timmar — dina rättigheter steg för steg"
         description="Har ditt SAS-flyg landat mer än 3 timmar för sent? Läs vår guide om hur du säkrar upp till 600 € i ersättning. Steg-för-steg instruktioner."
-        url="https://lotproblem.pl/sv/blog/sas-forsenat-mer-an-3-timmar"
+        url="https://problemlot.com/sv/blog/sas-forsenat-mer-an-3-timmar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

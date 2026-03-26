@@ -11,7 +11,7 @@ export default function ExtraordinaryCircumstancesPage() {
       <SEO
         title="Extraordinära omständigheter — när slipper flygbolaget betala?"
         description="Skyller flygbolaget på vädret eller tekniskt fel? Lär dig vad som verkligen räknas som extraordinära omständigheter enligt EU-domstolen."
-        url="https://lotproblem.pl/sv/blog/extraordinara-omstandigheter-sverige"
+        url="https://problemlot.com/sv/blog/extraordinara-omstandigheter-sverige"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

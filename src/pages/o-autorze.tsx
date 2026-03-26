@@ -12,7 +12,7 @@ export default function OAutorze() {
         "name": "Piotr Wierzba",
         "jobTitle": "Założyciel ClaimWinger",
         "description": "Przedsiębiorca i specjalista ds. marketingu cyfrowego, twórca platformy ClaimWinger pomagającej pasażerom w dochodzeniu odszkodowań lotniczych",
-        "url": "https://bizneslot.info/o-autorze",
+        "url": "https://problemlot.com/o-autorze",
         "sameAs": [
           "https://www.linkedin.com/in/piotr-wierzba/",
           "https://piotrwierzba.online"
@@ -35,16 +35,16 @@ export default function OAutorze() {
         "dateModified": "2026-01-09",
         "publisher": {
           "@type": "Organization",
-          "name": "bizneslot.info",
+          "name": "problemlot.com",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://bizneslot.info/og-image.png"
+            "url": "https://problemlot.com/og-image.png"
           }
         },
         "description": "Historia powstania ClaimWinger i misja ułatwienia pasażerom dochodzenia odszkodowań za opóźnione i odwołane loty",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://bizneslot.info/o-autorze"
+          "@id": "https://problemlot.com/o-autorze"
         }
       },
       {
@@ -54,13 +54,13 @@ export default function OAutorze() {
             "@type": "ListItem",
             "position": 1,
             "name": "Strona główna",
-            "item": "https://bizneslot.info"
+            "item": "https://problemlot.com"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "O autorze",
-            "item": "https://bizneslot.info/o-autorze"
+            "item": "https://problemlot.com/o-autorze"
           }
         ]
       }
@@ -70,9 +70,9 @@ export default function OAutorze() {
   return (
     <>
       <SEO
-        title="Dlaczego stworzyłem ClaimWinger? – Piotr Wierzba | bizneslot.info"
+        title="Dlaczego stworzyłem ClaimWinger? – Piotr Wierzba | problemlot.com"
         description="Historia powstania ClaimWinger od założyciela Piotra Wierzby. Odkryj, dlaczego powstała platforma ułatwiająca pasażerom dochodzenie odszkodowań lotniczych."
-        url="https://bizneslot.info/o-autorze"
+        url="https://problemlot.com/o-autorze"
       />
       
       <script
@@ -393,7 +393,7 @@ export default function OAutorze() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  <span className="text-sm font-bold text-blue-700">problemlot.com</span>
                   BizneLot.info
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
@@ -441,7 +441,7 @@ export default function OAutorze() {
             
             <div className="border-t border-slate-200 dark:border-slate-800 pt-8">
               <p className="text-center text-slate-600 dark:text-slate-400 text-sm">
-                © 2026 bizneslot.info – Portal edukacyjny o prawach pasażerów w podróżach służbowych.
+                © 2026 problemlot.com – Portal edukacyjny o prawach pasażerów w podróżach służbowych.
               </p>
             </div>
           </div>

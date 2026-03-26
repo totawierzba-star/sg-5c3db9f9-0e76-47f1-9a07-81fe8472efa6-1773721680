@@ -11,7 +11,7 @@ export default function PackageTravelPage() {
       <SEO
         title="Paketreselagen + Flygersättning = Dubbel kompensation?"
         description="Blev charterresan förstörd? Du kan ha rätt till både prisavdrag enligt Paketreselagen OCH flygersättning enligt EU261. Läs hur."
-        url="https://lotproblem.pl/sv/blog/paketreselagen-flygersattning"
+        url="https://problemlot.com/sv/blog/paketreselagen-flygersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

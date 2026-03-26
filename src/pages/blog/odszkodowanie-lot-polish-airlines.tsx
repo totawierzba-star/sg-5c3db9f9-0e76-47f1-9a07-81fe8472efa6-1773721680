@@ -64,7 +64,7 @@ export default function LOTCompensationGuide() {
     "@type": "Article",
     "headline": "Odszkodowanie za opóźniony lot LOT Polish Airlines — kompletny przewodnik 2025",
     "description": "Kompleksowy przewodnik po odszkodowaniach LOT. Sprawdź ile możesz otrzymać (250€-600€), jak złożyć wniosek i co zrobić gdy LOT odmawia wypłaty.",
-    "image": "https://lotproblem.pl/og-image.png",
+    "image": "https://problemlot.com/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "LotProblem.pl"
@@ -74,7 +74,7 @@ export default function LOTCompensationGuide() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-02-27",
@@ -86,7 +86,7 @@ export default function LOTCompensationGuide() {
       <SEO
         title="Odszkodowanie LOT Polish Airlines 2025 — ile dostanę za opóźniony lot? [250€-600€]"
         description="LOT odmawia 73% roszczeń! Sprawdź ile możesz dostać (250€-600€), jak skutecznie złożyć wniosek i co zrobić gdy LOT nie płaci. Potwierdzone case studies."
-        url="https://lotproblem.pl/blog/odszkodowanie-lot-polish-airlines"
+        url="https://problemlot.com/blog/odszkodowanie-lot-polish-airlines"
       />
       
       <script

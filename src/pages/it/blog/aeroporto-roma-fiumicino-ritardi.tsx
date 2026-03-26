@@ -22,7 +22,7 @@ export default function AeroportoRomaFiumicinoRitardi() {
       <SEO 
         title="Aeroporto Roma Fiumicino ritardi e cancellazioni — Guida Risarcimento"
         description="Volo in ritardo o cancellato a Roma Fiumicino (FCO)? Scopri i tuoi diritti e come ottenere fino a 600 € di risarcimento secondo il Regolamento CE 261/2004."
-        canonicalUrl="https://lotproblem.pl/it/blog/aeroporto-roma-fiumicino-ritardi"
+        canonicalUrl="https://problemlot.com/it/blog/aeroporto-roma-fiumicino-ritardi"
       />
 
       <article className="bg-white">

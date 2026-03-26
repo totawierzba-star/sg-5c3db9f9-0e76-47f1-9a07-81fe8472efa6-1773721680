@@ -11,7 +11,7 @@ export default function CharterCompensationPage() {
       <SEO
         title="TUI, Ving, Apollo — ersättning för försenat charterflyg"
         description="Blev charterresan försenad? EU-regler gäller även för TUI, Sunclass (Ving) och Novair (Apollo). Få upp till 600 € per person."
-        url="https://lotproblem.pl/sv/blog/tui-ving-apollo-charter-ersattning"
+        url="https://problemlot.com/sv/blog/tui-ving-apollo-charter-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

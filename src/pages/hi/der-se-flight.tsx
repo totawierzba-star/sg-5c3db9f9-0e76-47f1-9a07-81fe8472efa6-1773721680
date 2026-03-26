@@ -9,7 +9,7 @@ export default function HindiDelayedFlight() {
       <SEO
         title="विलंबित उड़ान – €600 तक का मुआवजा | EU 261/2004 अधिकार"
         description="क्या आपकी उड़ान 3+ घंटे विलंबित हुई? EU 261/2004 के तहत €600 तक का मुआवजा पाने के अपने अधिकार के बारे में जानें।"
-        url="https://lotproblem.pl/hi/der-se-flight"
+        url="https://problemlot.com/hi/der-se-flight"
       />
 
       {/* Hero Section */}

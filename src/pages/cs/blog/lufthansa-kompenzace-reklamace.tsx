@@ -9,7 +9,7 @@ export default function LufthansaKompenzaceReklamace() {
       <SEO
         title="Lufthansa Kompenzace a Reklamace【2026】Jak získat až €600"
         description="Lufthansa odmítá 89% českých reklamací! Naučte se 7 triků, jak úspěšně získat €250-600 za zpoždění nebo zrušený let. Praktický průvodce s case studies."
-        url="https://lotproblem.pl/cs/blog/lufthansa-kompenzace-reklamace"
+        url="https://problemlot.com/cs/blog/lufthansa-kompenzace-reklamace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -75,7 +75,7 @@ export default function PrzedawnienieRoszczenLotniczych() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/logo.png"
+        "url": "https://problemlot.com/logo.png"
       }
     },
     "datePublished": "2025-01-26",
@@ -87,7 +87,7 @@ export default function PrzedawnienieRoszczenLotniczych() {
       <SEO
         title="Przedawnienie roszczeń lotniczych 2025 — Ile czasu na odszkodowanie?"
         description="Sprawdź kiedy przedawniają się roszczenia lotnicze w Polsce. 3 lata czy 6? WE 261 vs Montreal Convention. Kompletny przewodnik."
-        url="https://lotproblem.pl/blog/przedawnienie-roszczen-lotniczych"
+        url="https://problemlot.com/blog/przedawnienie-roszczen-lotniczych"
       />
       <script
         type="application/ld+json"

@@ -9,7 +9,7 @@ export default function CanadaAPPRIndianPassengers() {
       <SEO
         title="Canada के Air Passenger Protection Regulations (APPR) – भारतीय यात्रियों के लिए [2026]"
         description="कनाडा के हवाई यात्री सुरक्षा नियमों (APPR) का विस्तृत विवरण। देरी और रद्दीकरण के लिए CAD 1,000 (₹60,000) तक का मुआवज़ा। भारतीय छात्रों और प्रवासियों के लिए गाइड।"
-        url="https://lotproblem.pl/hi/blog/canada-appr-indian-passengers"
+        url="https://problemlot.com/hi/blog/canada-appr-indian-passengers"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-red-50 to-white py-12">

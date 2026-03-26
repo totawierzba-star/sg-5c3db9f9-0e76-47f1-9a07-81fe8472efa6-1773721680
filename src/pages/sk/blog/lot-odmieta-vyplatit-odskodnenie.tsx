@@ -20,7 +20,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
       <SEO
         title="LOT Odmieta Vyplatiť Odškodnenie – Čo Robiť Ďalej? [Riešenia 2026]"
         description="LOT zamietol vašu žiadosť o odškodnenie? ✓ Pozrite si 5 krokov ako bojovať ✓ Najčastejšie výhovorky LOT ✓ Ako ich prelomiť ✓ 98% úspešnosť s ClaimWinger"
-        url="https://lotproblem.pl/sk/blog/lot-odmieta-vyplatit-odskodnenie"
+        url="https://problemlot.com/sk/blog/lot-odmieta-vyplatit-odskodnenie"
       />
 
       {/* Article Schema */}
@@ -32,7 +32,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
             "@type": "Article",
             "headline": "LOT Odmieta Vyplatiť Odškodnenie – Čo Robiť Ďalej?",
             "description": "Kompletný sprievodca riešením situácie, keď LOT Polish Airlines zamietne vašu žiadosť o odškodnenie.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -42,7 +42,7 @@ export default function LOTOdmietaVyplatitOdskodnenie() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

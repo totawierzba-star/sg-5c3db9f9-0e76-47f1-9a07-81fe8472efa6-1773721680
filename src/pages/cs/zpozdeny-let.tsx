@@ -9,7 +9,7 @@ export default function CsDelayedFlight() {
       <SEO
         title="Zpožděný let – kompenzace až 600 € | EU 261/2004"
         description="Zpožděný let z Prahy? Zjistěte, kdy máte nárok na kompenzaci až 600 € podle EU 261. Zkontrolujte své práva zdarma."
-        url="https://lotproblem.pl/cs/zpozdeny-let"
+        url="https://problemlot.com/cs/zpozdeny-let"
       />
 
       {/* Hero Section */}

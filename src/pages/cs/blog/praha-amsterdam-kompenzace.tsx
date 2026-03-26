@@ -9,7 +9,7 @@ export default function PrahaAmsterdamKompenzace() {
       <SEO
         title="Praha–Amsterdam: Nejčastější zpoždění a jak na kompenzaci"
         description="Zpožděný nebo zrušený let Praha–Amsterdam? Získejte až 250 € kompenzace. Průvodce právy pasažérů na klíčové evropské trase."
-        url="https://lotproblem.pl/cs/blog/praha-amsterdam-kompenzace"
+        url="https://problemlot.com/cs/blog/praha-amsterdam-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

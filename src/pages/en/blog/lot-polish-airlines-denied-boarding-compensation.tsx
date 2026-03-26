@@ -118,7 +118,7 @@ export default function LOTDeniedBoardingCompensation() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -130,7 +130,7 @@ export default function LOTDeniedBoardingCompensation() {
       <SEO
         title="LOT Polish Airlines Denied Boarding Compensation: Get €600 for Overbooking | EU261 2025"
         description="LOT denied you boarding? Claim up to €600 compensation under EU261. Expert guide on overbooking rights, volunteer vs involuntary denial, and how to fight back when they refuse."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-denied-boarding-compensation"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-denied-boarding-compensation"
       />
 
       <script

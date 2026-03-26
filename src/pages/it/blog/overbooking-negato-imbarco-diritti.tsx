@@ -9,7 +9,7 @@ export default function OverbookingNegatoImbarcoDiritti() {
       <SEO
         title="Overbooking e Negato Imbarco: Tutti i Tuoi Diritti e Come Ottenere Fino a 600€"
         description="Ti hanno negato l'imbarco per overbooking? Scopri i tuoi diritti secondo CE 261/2004 e come ottenere il risarcimento che ti spetta."
-        url="https://lotproblem.pl/it/blog/overbooking-negato-imbarco-diritti"
+        url="https://problemlot.com/it/blog/overbooking-negato-imbarco-diritti"
       />
 
       <script
@@ -29,14 +29,14 @@ export default function OverbookingNegatoImbarcoDiritti() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",
             "dateModified": "2026-03-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/overbooking-negato-imbarco-diritti"
+              "@id": "https://problemlot.com/it/blog/overbooking-negato-imbarco-diritti"
             }
           })
         }}

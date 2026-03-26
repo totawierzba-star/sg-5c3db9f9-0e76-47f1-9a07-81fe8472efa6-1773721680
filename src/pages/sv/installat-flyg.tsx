@@ -16,7 +16,7 @@ export default function SvCancelledFlight() {
       <SEO
         title="Ersättning för Inställt Flyg | Dina Rättigheter & Återbetalning"
         description="Blev ditt flyg inställt? Du kan ha rätt till både återbetalning och upp till 600 € i ersättning. Läs om dina rättigheter här."
-        url="https://lotproblem.pl/sv/installat-flyg"
+        url="https://problemlot.com/sv/installat-flyg"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

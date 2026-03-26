@@ -11,7 +11,7 @@ export default function SasTechnicalIssuePage() {
       <SEO
         title="SAS tekniskt fel och försening — är det en extraordinär omständighet?"
         description="Skyller SAS på tekniskt fel? Läs varför detta nästan aldrig är en giltig ursäkt för att neka ersättning. Vi förklarar reglerna."
-        url="https://lotproblem.pl/sv/blog/sas-tekniskt-fel-ersattning"
+        url="https://problemlot.com/sv/blog/sas-tekniskt-fel-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

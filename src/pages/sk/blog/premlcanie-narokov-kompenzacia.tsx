@@ -9,7 +9,7 @@ export default function PremlcanieNarokovKompenzacia() {
       <SEO
         title="Premlčanie nárokov na kompenzáciu za let – koľko máte času?"
         description="Máte len 3 roky na podanie reklamácie za opóźnený alebo zrušený let. Zistite, ako sa počíta lehota a prečo konať hneď."
-        url="https://lotproblem.pl/sk/blog/premlcanie-narokov-kompenzacia"
+        url="https://problemlot.com/sk/blog/premlcanie-narokov-kompenzacia"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Hero Section */}

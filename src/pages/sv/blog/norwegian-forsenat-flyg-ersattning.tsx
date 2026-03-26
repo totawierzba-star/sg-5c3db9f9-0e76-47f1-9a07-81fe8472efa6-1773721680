@@ -11,7 +11,7 @@ export default function NorwegianDelayPage() {
       <SEO
         title="Norwegian försenat flyg — ersättning och dina rättigheter (2025)"
         description="Var ditt Norwegian-flyg försenat? Du kan ha rätt till 600 € i ersättning. Läs vår guide om hur du kräver pengar från Norwegian Air."
-        url="https://lotproblem.pl/sv/blog/norwegian-forsenat-flyg-ersattning"
+        url="https://problemlot.com/sv/blog/norwegian-forsenat-flyg-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

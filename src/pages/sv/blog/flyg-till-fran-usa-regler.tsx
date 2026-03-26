@@ -11,7 +11,7 @@ export default function USFlightsPage() {
       <SEO
         title="Flyg till/från USA — när gäller EU-reglerna för ersättning?"
         description="Flyger du till USA? EU-reglerna gäller inte alltid. Lär dig skillnaden mellan SAS, United och Delta och när du har rätt till 600 €."
-        url="https://lotproblem.pl/sv/blog/flyg-till-fran-usa-regler"
+        url="https://problemlot.com/sv/blog/flyg-till-fran-usa-regler"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

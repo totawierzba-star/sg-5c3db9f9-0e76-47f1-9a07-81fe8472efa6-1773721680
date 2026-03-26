@@ -9,8 +9,8 @@ export default function FinnairCompensationGuide() {
       <SEO 
         title="🇫🇮芬兰航空Finnair延误/取消索赔攻略【2026】€250-€600赔偿"
         description="芬兰航空延误或取消？完整索赔指南：EU261权益、赔偿金额、联系方式、常见问题。3分钟了解如何获得最高€600赔偿💰"
-        url="https://lotproblem.pl/zh/blog/finnair-compensation-guide"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/finnair-compensation-guide"
+        image="https://problemlot.com/og-image.png"
       />
 
       <script

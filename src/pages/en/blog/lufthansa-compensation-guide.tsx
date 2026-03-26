@@ -10,7 +10,7 @@ export default function LufthansaCompensationGuide() {
       <SEO
         title="Lufthansa Compensation Guide 2025: Delays, Cancellations & Claims"
         description="Complete guide to claiming Lufthansa compensation. Learn how to navigate Europe's largest airline group's claim process for delays and cancellations."
-        url="https://lotproblem.pl/en/blog/lufthansa-compensation-guide"
+        url="https://problemlot.com/en/blog/lufthansa-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -11,7 +11,7 @@ export default function SasStockholmTokyoPage() {
       <SEO
         title="Ersättning för SAS Stockholm–Tokyo (Haneda) — maximalt anspråk på 600 €"
         description="SAS flyg till Tokyo försenat eller inställt? Långdistans till Asien ger högsta ersättningen. Läs om dina rättigheter här."
-        url="https://lotproblem.pl/sv/blog/sas-stockholm-tokyo-ersattning"
+        url="https://problemlot.com/sv/blog/sas-stockholm-tokyo-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

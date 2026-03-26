@@ -18,7 +18,7 @@ export default function VuelingRisarcimento() {
       <SEO
         title="Vueling Risarcimento: Guida Completa 2026 — Fino a €600 per Ritardi e Cancellazioni"
         description="Volo Vueling in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento CE 261/2004. Procedura, documenti e cosa fare se Vueling non risponde."
-        url="https://lotproblem.pl/it/blog/vueling-risarcimento"
+        url="https://problemlot.com/it/blog/vueling-risarcimento"
       />
 
       <script
@@ -33,13 +33,13 @@ export default function VuelingRisarcimento() {
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" },
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/vueling-risarcimento",
+              "@id": "https://problemlot.com/it/blog/vueling-risarcimento",
             },
           }),
         }}

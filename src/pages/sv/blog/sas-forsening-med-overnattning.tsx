@@ -11,7 +11,7 @@ export default function SasOvernightDelayPage() {
       <SEO
         title="SAS försening med övernattning — hotell, måltider och kontantersättning"
         description="Måste du stanna över natten p.g.a. SAS-försening? Du har rätt till gratis hotell, transport och mat. Läs vad som gäller."
-        url="https://lotproblem.pl/sv/blog/sas-forsening-med-overnattning"
+        url="https://problemlot.com/sv/blog/sas-forsening-med-overnattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

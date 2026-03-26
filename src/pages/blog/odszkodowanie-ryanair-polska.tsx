@@ -64,7 +64,7 @@ export default function RyanairCompensationGuide() {
     "@type": "Article",
     "headline": "Odszkodowanie za opóźniony lot Ryanair z Polski — kompletny poradnik 2025",
     "description": "Kompleksowy przewodnik po odszkodowaniach Ryanair. Poznaj swoje prawa, sprawdź ile możesz dostać (250€-600€) i jak skutecznie odzyskać pieniądze gdy Ryanair odmawia.",
-    "image": "https://lotproblem.pl/og-image.png",
+    "image": "https://problemlot.com/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "LotProblem.pl"
@@ -74,7 +74,7 @@ export default function RyanairCompensationGuide() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-02-27",
@@ -86,7 +86,7 @@ export default function RyanairCompensationGuide() {
       <SEO
         title="Odszkodowanie Ryanair 2025 — ile za opóźniony lot z Polski? [250€-600€]"
         description="Ryanair odmawia 65% roszczeń! Sprawdź ile możesz dostać za opóźniony lot (250€-600€), jak złożyć skuteczny wniosek i co zrobić gdy Ryanair nie płaci."
-        url="https://lotproblem.pl/blog/odszkodowanie-ryanair-polska"
+        url="https://problemlot.com/blog/odszkodowanie-ryanair-polska"
       />
       
       <script

@@ -75,7 +75,7 @@ export default function EnterAirOdszkodowanieCzarter() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/logo.png"
+        "url": "https://problemlot.com/logo.png"
       }
     },
     "datePublished": "2025-01-23",
@@ -87,7 +87,7 @@ export default function EnterAirOdszkodowanieCzarter() {
       <SEO
         title="Enter Air Odszkodowanie 2025 — Czarter a Prawa Pasażera [68% skuteczności]"
         description="Sprawdź jak uzyskać 250-600 € odszkodowania za lot czarterowy Enter Air. TAK, czarter też podlega WE 261/2004! Przewodnik."
-        url="https://lotproblem.pl/blog/enter-air-odszkodowanie-czarter"
+        url="https://problemlot.com/blog/enter-air-odszkodowanie-czarter"
       />
       <script
         type="application/ld+json"

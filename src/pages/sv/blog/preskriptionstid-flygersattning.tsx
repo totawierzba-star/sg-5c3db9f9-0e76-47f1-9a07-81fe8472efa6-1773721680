@@ -11,7 +11,7 @@ export default function StatuteOfLimitationsPage() {
       <SEO
         title="10 år på dig att kräva ersättning! — Preskriptionstid i Sverige"
         description="Visste du att du kan kräva ersättning för flygförseningar 10 år tillbaka i tiden i Sverige? Läs om den generösa preskriptionstiden."
-        url="https://lotproblem.pl/sv/blog/preskriptionstid-flygersattning"
+        url="https://problemlot.com/sv/blog/preskriptionstid-flygersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

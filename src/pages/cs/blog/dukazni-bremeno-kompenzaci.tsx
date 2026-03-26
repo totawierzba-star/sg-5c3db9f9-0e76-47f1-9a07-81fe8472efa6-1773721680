@@ -9,8 +9,8 @@ export default function DukazniBemenoKompenzaci() {
       <SEO 
         title="Důkazní břemeno u kompenzací za zpožděný let - kdo musí dokazovat?"
         description="Zjistěte, kdo nese důkazní břemeno při reklamaci za zpožděný nebo zrušený let. Komplexní průvodce pro cestující."
-        url="https://lotproblem.pl/cs/blog/dukazni-bremeno-kompenzaci"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/dukazni-bremeno-kompenzaci"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

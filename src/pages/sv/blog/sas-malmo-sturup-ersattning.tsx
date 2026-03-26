@@ -11,7 +11,7 @@ export default function SasMalmoPage() {
       <SEO
         title="Ersättning för SAS Malmö–[destination] — guide för Sturup-resenärer"
         description="Flyger du från Malmö Airport (Sturup) med SAS? Förseningar till Stockholm eller Arlanda kan ge rätt till ersättning. Läs mer här."
-        url="https://lotproblem.pl/sv/blog/sas-malmo-sturup-ersattning"
+        url="https://problemlot.com/sv/blog/sas-malmo-sturup-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

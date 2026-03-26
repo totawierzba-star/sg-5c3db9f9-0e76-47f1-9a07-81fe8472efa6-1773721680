@@ -9,7 +9,7 @@ export default function OdszkodownieWizzAir() {
       <SEO
         title="Odszkodowanie Wizz Air z Polski 2025 — kompletny przewodnik [250€-600€]"
         description="Sprawdź jak uzyskać 250-600 € odszkodowania od Wizz Air za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 91% skuteczności."
-        url="https://lotproblem.pl/blog/odszkodowanie-wizz-air-polska"
+        url="https://problemlot.com/blog/odszkodowanie-wizz-air-polska"
       />
 
       <script
@@ -89,7 +89,7 @@ export default function OdszkodownieWizzAir() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2025-01-20",

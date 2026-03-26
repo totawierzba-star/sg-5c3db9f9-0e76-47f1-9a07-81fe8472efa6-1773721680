@@ -21,7 +21,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
       <SEO
         title="Maximálna Výška Odškodnenia za Let LOT – 250 €, 400 € alebo 600 €?"
         description="Koľko peňazí vám patrí od LOT? Kalkulátor odškodnenia ✓ Výška podľa vzdialenosti ✓ Príklady tras LOT ✓ Overenie nároku zadarmo"
-        url="https://lotproblem.pl/sk/blog/maximalna-vyska-odskodnenia-lot"
+        url="https://problemlot.com/sk/blog/maximalna-vyska-odskodnenia-lot"
       />
 
       {/* Article Schema */}
@@ -33,7 +33,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
             "@type": "Article",
             "headline": "Maximálna Výška Odškodnenia za Let LOT – 250 €, 400 € alebo 600 €?",
             "description": "Kompletný sprievodca výškou odškodnenia od LOT Polish Airlines podľa vzdialenosti letu.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -43,7 +43,7 @@ export default function MaximalnaVyskaOdskodneniaLOT() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

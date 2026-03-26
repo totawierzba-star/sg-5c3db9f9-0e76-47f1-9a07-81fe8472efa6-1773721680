@@ -9,8 +9,8 @@ export default function KLMCompensationGuide() {
       <SEO 
         title="🇳🇱荷航KLM延误/取消索赔【2026完整版】€250-€600+转机保护"
         description="KLM延误或取消？完整索赔指南：EU261权益、赔偿金额、阿姆斯特丹转机特殊规则。5分钟了解如何获得最高€600赔偿💰"
-        url="https://lotproblem.pl/zh/blog/klm-compensation-guide"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/klm-compensation-guide"
+        image="https://problemlot.com/og-image.png"
       />
 
       <script

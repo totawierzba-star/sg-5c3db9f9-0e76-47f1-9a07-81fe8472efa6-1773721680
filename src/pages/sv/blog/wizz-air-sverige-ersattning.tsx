@@ -11,7 +11,7 @@ export default function WizzAirSwedenPage() {
       <SEO
         title="Wizz Air i Sverige — ersättning för försenat och inställt flyg"
         description="Flyger du med Wizz Air från Skavsta eller Malmö? Se dina rättigheter vid förseningar. Vi hjälper dig att få upp till 600 €."
-        url="https://lotproblem.pl/sv/blog/wizz-air-sverige-ersattning"
+        url="https://problemlot.com/sv/blog/wizz-air-sverige-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

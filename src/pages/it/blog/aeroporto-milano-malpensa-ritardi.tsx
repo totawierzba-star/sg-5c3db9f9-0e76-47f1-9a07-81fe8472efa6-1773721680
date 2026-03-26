@@ -10,7 +10,7 @@ export default function AeroportoMilanoMalpensaRitardi() {
       <SEO
         title="Aeroporto Milano Malpensa: ritardi, cancellazioni e risarcimenti"
         description="Volo in ritardo o cancellato a Milano Malpensa (MXP)? Scopri i tuoi diritti e come ottenere fino a 600 € di risarcimento secondo il Regolamento CE 261/2004."
-        url="https://lotproblem.pl/it/blog/aeroporto-milano-malpensa-ritardi"
+        url="https://problemlot.com/it/blog/aeroporto-milano-malpensa-ritardi"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">

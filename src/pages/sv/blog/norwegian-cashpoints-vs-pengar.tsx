@@ -11,7 +11,7 @@ export default function NorwegianCashPointsPage() {
       <SEO
         title="Norwegian CashPoints eller pengar? Acceptera aldrig poäng för försening!"
         description="Erbjuder Norwegian CashPoints som ersättning? Varning! Det är ofta en dålig affär. Läs varför du alltid ska kräva kontanter enligt lag."
-        url="https://lotproblem.pl/sv/blog/norwegian-cashpoints-vs-pengar"
+        url="https://problemlot.com/sv/blog/norwegian-cashpoints-vs-pengar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

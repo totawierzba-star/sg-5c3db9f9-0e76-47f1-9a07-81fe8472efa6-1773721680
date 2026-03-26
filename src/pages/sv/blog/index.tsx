@@ -17,7 +17,7 @@ export default function SvBlogIndex() {
       <SEO
         title="Flygrättigheter Blogg & Guider | LotProblem.pl"
         description="Läs våra expertguider om ersättning för försenade och inställda flyg. Tips, råd och nyheter för svenska resenärer."
-        url="https://lotproblem.pl/sv/blog"
+        url="https://problemlot.com/sv/blog"
       />
 
       <div className="container mx-auto px-4 py-12">

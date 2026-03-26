@@ -9,7 +9,7 @@ export default function ThreeHourDelayRule() {
       <SEO
         title="3hodinové pravidlo zpoždění - kdy máte nárok na €600? | LotProblem.cz"
         description="Kompletní průvodce 3hodinovým pravidlem EU 261/2004. Jak správně měřit zpoždění, hraniczne případy a kalkulátor kompenzace."
-        url="https://lotproblem.pl/cs/blog/3hodinove-pravidlo-zpozdeni"
+        url="https://problemlot.com/cs/blog/3hodinove-pravidlo-zpozdeni"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-8">

@@ -75,7 +75,7 @@ export default function OdszkodowanieLufthansaPolska() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/logo.png"
+        "url": "https://problemlot.com/logo.png"
       }
     },
     "datePublished": "2025-01-25",
@@ -87,7 +87,7 @@ export default function OdszkodowanieLufthansaPolska() {
       <SEO
         title="Odszkodowanie Lufthansa 2025 — 250-600 € za opóźniony lot [83% skuteczności]"
         description="Sprawdź jak uzyskać 250-600 € odszkodowania od Lufthansa za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 83% skuteczności."
-        url="https://lotproblem.pl/blog/odszkodowanie-lufthansa-polska"
+        url="https://problemlot.com/blog/odszkodowanie-lufthansa-polska"
       />
       <script
         type="application/ld+json"

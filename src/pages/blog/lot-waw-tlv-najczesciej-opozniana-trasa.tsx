@@ -7,7 +7,7 @@ export default function LotWawTlvNajczesciejOpozniana() {
       <SEO
         title="LOT WAW–TLV Tel Awiw: Najczęściej opóźniana trasa i €400-600 odszkodowania 2026"
         description="Trasa Warszawa–Tel Awiw LOT to jedna z najczęściej opóźnianych. Sprawdź jak uzyskać 400-600 € odszkodowania za opóźnienie powyżej 3h."
-        url="https://lotproblem.pl/blog/lot-waw-tlv-najczesciej-opozniana-trasa"
+        url="https://problemlot.com/blog/lot-waw-tlv-najczesciej-opozniana-trasa"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

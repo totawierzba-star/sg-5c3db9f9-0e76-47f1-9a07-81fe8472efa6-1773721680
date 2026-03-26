@@ -9,7 +9,7 @@ export default function SmartwingsMeskanieKompenzacia() {
       <SEO
         title="Smartwings a meškanie letu – ako získať kompenzáciu? | LotProblem.pl"
         description="Meškal váš let na dovolenku so Smartwings? Nežiadajte cestovku! Zistite, ako získať až 600 € od Smartwings za pokazený začiatok dovolenky."
-        url="https://lotproblem.pl/sk/blog/smartwings-meskanie-kompenzacia"
+        url="https://problemlot.com/sk/blog/smartwings-meskanie-kompenzacia"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

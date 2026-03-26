@@ -7,7 +7,7 @@ export default function LotB2BBusinessCompensation() {
       <SEO
         title="LOT B2B — odszkodowanie za lot służbowy 250-600 € (kto dostaje pieniądze?)"
         description="Leciałeś LOT w delegacji służbowej i lot był opóźniony/odwołany? Sprawdź kto ma prawo do odszkodowania 250-600 € — pracownik czy pracodawca i jak je uzyskać."
-        url="https://lotproblem.pl/blog/lot-b2b-odszkodowanie-lot-sluzbowy"
+        url="https://problemlot.com/blog/lot-b2b-odszkodowanie-lot-sluzbowy"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

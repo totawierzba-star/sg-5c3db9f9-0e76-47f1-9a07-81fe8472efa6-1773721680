@@ -11,7 +11,7 @@ export default function SasCharterPage() {
       <SEO
         title="Ersättning för SAS på charterliknande semesterleder (Thailand, Kanarieöarna) — regler"
         description="Flyger du charter med SAS? Samma EU-regler gäller! Se hur du får upp till 600 € vid försening till solen."
-        url="https://lotproblem.pl/sv/blog/sas-charter-thailand-kanarieoarna"
+        url="https://problemlot.com/sv/blog/sas-charter-thailand-kanarieoarna"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

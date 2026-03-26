@@ -11,7 +11,7 @@ export default function BusinessTravelPage() {
       <SEO
         title="Affärsresa och försenat flyg — vem får ersättningen (du eller företaget)?"
         description="Företaget betalade biljetten, men flyget var försenat. Vem ska ha de 600 €? Lagen är tydlig: Det är passagerarens pengar. Läs varför."
-        url="https://lotproblem.pl/sv/blog/affarsresa-vem-far-pengarna"
+        url="https://problemlot.com/sv/blog/affarsresa-vem-far-pengarna"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

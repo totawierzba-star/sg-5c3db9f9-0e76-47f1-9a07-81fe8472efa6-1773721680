@@ -9,7 +9,7 @@ export default function LetisteOstravaZrusenyLet() {
       <SEO
         title="Letiště Ostrava (OSR): Zrušený let — vaše práva 2026"
         description="Byl váš let z Ostravy zrušen? Zjistěte, jak získat kompenzaci až 600 € podle EU261. Průvodce právy pasažérů z letiště Leoše Janáčka."
-        url="https://lotproblem.pl/cs/blog/letiste-ostrava-zruseny-let-prava"
+        url="https://problemlot.com/cs/blog/letiste-ostrava-zruseny-let-prava"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

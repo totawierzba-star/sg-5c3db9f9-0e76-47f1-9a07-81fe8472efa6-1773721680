@@ -11,7 +11,7 @@ export default function SasClaimProcessPage() {
       <SEO
         title="Hur ansöker du om ersättning från SAS steg för steg? — guide"
         description="Vill du kräva ersättning från SAS själv? Här är vår kompletta guide med steg-för-steg instruktioner för att lyckas med din reklamation."
-        url="https://lotproblem.pl/sv/blog/hur-ansoka-ersattning-sas-steg-for-steg"
+        url="https://problemlot.com/sv/blog/hur-ansoka-ersattning-sas-steg-for-steg"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

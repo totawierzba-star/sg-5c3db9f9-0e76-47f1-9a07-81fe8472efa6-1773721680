@@ -18,7 +18,7 @@ export default function LufthansaRisarcimentoVoli() {
       <SEO
         title="Lufthansa Risarcimento Voli: Guida Completa 2026 — Fino a €600"
         description="Volo Lufthansa in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento secondo CE 261/2004. Procedura passo-passo, modelli e tempi di risposta."
-        url="https://lotproblem.pl/it/blog/lufthansa-risarcimento-voli"
+        url="https://problemlot.com/it/blog/lufthansa-risarcimento-voli"
       />
 
       {/* Schema Article */}
@@ -37,7 +37,7 @@ export default function LufthansaRisarcimentoVoli() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png",
+                "url": "https://problemlot.com/og-image.png",
               },
             },
             "datePublished": "2026-03-19",
@@ -45,7 +45,7 @@ export default function LufthansaRisarcimentoVoli() {
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id":
-                "https://lotproblem.pl/it/blog/lufthansa-risarcimento-voli",
+                "https://problemlot.com/it/blog/lufthansa-risarcimento-voli",
             },
           }),
         }}

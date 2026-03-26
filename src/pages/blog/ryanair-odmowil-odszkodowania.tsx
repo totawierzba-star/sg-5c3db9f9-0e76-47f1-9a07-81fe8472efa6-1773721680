@@ -9,7 +9,7 @@ export default function RyanairOdmowilOdszkodowania() {
       <SEO
         title="Ryanair odmówił odszkodowania — jak skutecznie walczyć? [Przewodnik 2025]"
         description="Nie rezygnuj! 87% skuteczności odzyskania odszkodowania od Ryanair. Sprawdzone metody, najczęstsze powody odmowy i jak je skutecznie kwestionować."
-        url="https://lotproblem.pl/blog/ryanair-odmowil-odszkodowania"
+        url="https://problemlot.com/blog/ryanair-odmowil-odszkodowania"
       />
 
       <script
@@ -89,7 +89,7 @@ export default function RyanairOdmowilOdszkodowania() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2025-01-18",

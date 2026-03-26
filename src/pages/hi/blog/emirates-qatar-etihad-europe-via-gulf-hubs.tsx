@@ -9,7 +9,7 @@ export default function EmiratesQatarEtihadEuropeViaGulfHubs() {
       <SEO
         title="Emirates, Qatar Airways और Etihad के माध्यम से यूरोप – खाड़ी हब पर अधिकार [2026]"
         description="दुबई, दोहा और अबू धाबी के माध्यम से यूरोप यात्रा करते समय देरी या रद्दीकरण के लिए मुआवज़े के अधिकार। EC 261/2004 और UAE/Qatar कानून की तुलना। कनेक्शन छूटने पर €600 तक।"
-        url="https://lotproblem.pl/hi/blog/emirates-qatar-etihad-europe-via-gulf-hubs"
+        url="https://problemlot.com/hi/blog/emirates-qatar-etihad-europe-via-gulf-hubs"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-teal-50 to-white py-12">

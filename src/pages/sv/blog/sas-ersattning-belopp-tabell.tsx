@@ -11,7 +11,7 @@ export default function SasAmountsPage() {
       <SEO
         title="Hur mycket ersättning från SAS? Tabell 250€, 400€, 600€"
         description="Osäker på hur mycket du kan få? Se vår enkla tabell över ersättningsnivåer för SAS-flyg beroende på distans. Upp till 600 euro per person."
-        url="https://lotproblem.pl/sv/blog/sas-ersattning-belopp-tabell"
+        url="https://problemlot.com/sv/blog/sas-ersattning-belopp-tabell"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

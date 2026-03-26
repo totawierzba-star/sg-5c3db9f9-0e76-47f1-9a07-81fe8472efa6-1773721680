@@ -9,7 +9,7 @@ export default function CsHomepage() {
       <SEO
         title="Zpožděný nebo zrušený let – zkontrolujte kompenzaci až 600 €"
         description="Máte problém s letem? Zjistěte, zda máte nárok na kompenzaci až 600 € za zpožděný nebo zrušený let."
-        url="https://lotproblem.pl/cs"
+        url="https://problemlot.com/cs"
       />
 
       {/* Hero Section */}

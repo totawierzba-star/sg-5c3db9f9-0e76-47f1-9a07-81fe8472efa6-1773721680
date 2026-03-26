@@ -11,7 +11,7 @@ export default function ChildCompensationPage() {
       <SEO
         title="Ersättning för barn och spädbarn — har de rätt till 600 €?"
         description="Reser du med barn? Även spädbarn (infants) kan ha rätt till full ersättning vid försenat flyg. Läs om villkoren här."
-        url="https://lotproblem.pl/sv/blog/barn-spadbarn-ersattning"
+        url="https://problemlot.com/sv/blog/barn-spadbarn-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

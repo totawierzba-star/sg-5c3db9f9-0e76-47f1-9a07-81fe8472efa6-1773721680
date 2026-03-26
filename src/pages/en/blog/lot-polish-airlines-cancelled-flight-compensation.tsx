@@ -117,7 +117,7 @@ export default function LOTCancelledFlightCompensation() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -129,7 +129,7 @@ export default function LOTCancelledFlightCompensation() {
       <SEO
         title="LOT Polish Airlines Cancelled Flight Compensation: Claim Up to €600 | EU261 Guide 2025"
         description="LOT cancelled your flight? Get up to €600 compensation under EU261. Expert guide on eligibility, amounts, claim process, and what to do when they refuse to pay."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-cancelled-flight-compensation"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-cancelled-flight-compensation"
       />
 
       <script

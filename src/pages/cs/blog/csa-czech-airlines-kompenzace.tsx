@@ -9,8 +9,8 @@ export default function CsaCzechAirlinesKompenzace() {
       <SEO
         title="ČSA (Czech Airlines) kompenzace za zpoždění a zrušení letu 2026"
         description="Máte zpožděný nebo zrušený let s ČSA? Zjistěte, jak získat kompenzaci až 600 € podle nařízení EU 261/2004. Návod krok za krokem."
-        url="https://lotproblem.pl/cs/blog/csa-czech-airlines-kompenzace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/csa-czech-airlines-kompenzace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -176,11 +176,11 @@ export default function CsaCzechAirlinesKompenzace() {
             "author": { "@type": "Organization", "name": "LotProblem.pl" },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" }
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" }
             }
           })
         }}

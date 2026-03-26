@@ -11,7 +11,7 @@ export default function BrommaAirportPage() {
       <SEO
         title="Bromma Flygplats (BMA) — ersättning för försenat flyg"
         description="Försenad från Stockholm Bromma? Oavsett om du flög med BRA eller Brussels Airlines kan du ha rätt till ersättning. Läs mer här."
-        url="https://lotproblem.pl/sv/blog/bromma-flygplats-ersattning"
+        url="https://problemlot.com/sv/blog/bromma-flygplats-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

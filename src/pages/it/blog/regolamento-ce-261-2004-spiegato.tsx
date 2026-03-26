@@ -11,7 +11,7 @@ export default function RegolamentoCE261() {
       <SEO
         title="Regolamento CE 261/2004 spiegato — Guida completa 2026"
         description="Tutto quello che devi sapere sul Regolamento europeo 261/2004: diritti passeggeri, compensazioni fino a 600€ e quando si applicano."
-        url="https://lotproblem.pl/it/blog/regolamento-ce-261-2004-spiegato"
+        url="https://problemlot.com/it/blog/regolamento-ce-261-2004-spiegato"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-purple-50 to-white py-12">

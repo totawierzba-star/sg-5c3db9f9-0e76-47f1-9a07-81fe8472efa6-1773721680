@@ -9,7 +9,7 @@ export default function ZmeskanyPrestupKompenzacia() {
       <SEO
         title="Zmeškaný prestup – kedy máte nárok na kompenzáciu? | LotProblem.pl"
         description="Prvý let oneskorený, zmeškali ste nadväzujúci? Zistite, kedy vám patrí až 600 € kompenzácie za zmeškaný prestup a ako ju získať."
-        url="https://lotproblem.pl/sk/blog/zmeskany-prestup-kompenzacia"
+        url="https://problemlot.com/sk/blog/zmeskany-prestup-kompenzacia"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

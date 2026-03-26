@@ -7,7 +7,7 @@ export default function LotUsterkaTechniczna() {
       <SEO
         title="LOT Usterka techniczna: Nadzwyczajna okoliczność czy nie? 2026"
         description="Czy awaria techniczna samolotu LOT zwalnia z wypłaty odszkodowania? Sprawdź kiedy usterka to nadzwyczajna okoliczność, a kiedy LOT musi zapłacić €250-600."
-        url="https://lotproblem.pl/blog/lot-usterka-techniczna-nadzwyczajna-okolicznosc"
+        url="https://problemlot.com/blog/lot-usterka-techniczna-nadzwyczajna-okolicznosc"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

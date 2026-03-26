@@ -22,37 +22,37 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://bizneslot.info/#organization",
-        "name": "bizneslot.info",
-        "url": "https://bizneslot.info",
+        "@id": "https://problemlot.com/#organization",
+        "name": "problemlot.com",
+        "url": "https://problemlot.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://bizneslot.info/og-image.png"
+          "url": "https://problemlot.com/og-image.png"
         },
-        "description": "Portal edukacyjny o prawach pasażerów w podróżach służbowych",
+        "description": "Portal o prawach pasażerów lotniczych — odszkodowania EU261 i UK261",
         "sameAs": []
       },
       {
         "@type": "WebSite",
-        "@id": "https://bizneslot.info/#website",
-        "url": "https://bizneslot.info",
-        "name": "bizneslot.info",
-        "description": "Prawa pasażerów w podróżach służbowych",
+        "@id": "https://problemlot.com/#website",
+        "url": "https://problemlot.com",
+        "name": "problemlot.com",
+        "description": "Prawa pasażerów lotniczych — odszkodowania EU261",
         "publisher": {
-          "@id": "https://bizneslot.info/#organization"
+          "@id": "https://problemlot.com/#organization"
         },
         "inLanguage": "pl-PL"
       },
       {
         "@type": "WebPage",
-        "@id": "https://bizneslot.info/#webpage",
-        "url": "https://bizneslot.info",
-        "name": "bizneslot.info – Prawa pasażerów w podróżach służbowych",
+        "@id": "https://problemlot.com/#webpage",
+        "url": "https://problemlot.com",
+        "name": "problemlot.com – Prawa pasażerów lotniczych — odszkodowania EU261",
         "isPartOf": {
-          "@id": "https://bizneslot.info/#website"
+          "@id": "https://problemlot.com/#website"
         },
         "about": {
-          "@id": "https://bizneslot.info/#organization"
+          "@id": "https://problemlot.com/#organization"
         },
         "description": "Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany.",
         "inLanguage": "pl-PL"
@@ -63,9 +63,9 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="bizneslot.info – Prawa pasażerów w podróżach służbowych"
+        title="problemlot.com – Prawa pasażerów lotniczych — odszkodowania EU261"
         description="Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany."
-        url="https://bizneslot.info"
+        url="https://problemlot.com"
       />
       <script
         type="application/ld+json"
@@ -82,7 +82,7 @@ export default function Home() {
                 Portal ekspercki dla podróżujących służbowo
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight animate-fade-in-up">
-                Twoje prawa w podróżach służbowych
+                Twoje prawa jako pasażer — EU261 i UK261
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
                 Kompleksowy przewodnik po prawach pasażera w delegacjach. Dowiedz się, co Ci przysługuje, 
@@ -397,8 +397,8 @@ export default function Home() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-8 w-auto" />
-                  BiznesLot.info
+                  <span className="text-lg font-bold text-blue-700">problemlot.com</span>
+                  problemlot.com
                 </h3>
               </div>
               
@@ -458,7 +458,7 @@ export default function Home() {
             </div>
             
             <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
-              <p>© 2026 bizneslot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
+              <p>© 2026 problemlot.com. Portal o prawach pasażerów lotniczych — odszkodowania EU261 i UK261.</p>
             </div>
           </div>
         </footer>

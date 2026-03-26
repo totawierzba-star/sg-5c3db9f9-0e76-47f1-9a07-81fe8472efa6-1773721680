@@ -9,7 +9,7 @@ export default function RozdilKompenzaceRefundace() {
       <SEO
         title="Rozdíl mezi kompenzací a vrácením peněz - co vám náleží?【2026】"
         description="95% lidí neví rozdíl! Zjistěte kdy můžete dostat OBOJÍ (€600 kompenzace + vrácení letenky). Kompletní průvodce s praktickými příklady a pasti aerolinek."
-        url="https://lotproblem.pl/cs/blog/rozdil-kompenzace-refundace"
+        url="https://problemlot.com/cs/blog/rozdil-kompenzace-refundace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

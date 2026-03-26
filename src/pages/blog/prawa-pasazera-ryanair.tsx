@@ -9,7 +9,7 @@ export default function PrawaRyanair() {
       <SEO
         title="Prawa Pasażera Ryanair 2025 — WE 261/2004 [Kompletny Przewodnik]"
         description="Poznaj wszystkie prawa pasażera Ryanair: odszkodowania 250€-600€, prawo do opieki, zwroty kosztów, hotel. Kompletny przewodnik WE 261/2004."
-        url="https://lotproblem.pl/blog/prawa-pasazera-ryanair"
+        url="https://problemlot.com/blog/prawa-pasazera-ryanair"
       />
 
       <script
@@ -89,7 +89,7 @@ export default function PrawaRyanair() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2025-01-19",

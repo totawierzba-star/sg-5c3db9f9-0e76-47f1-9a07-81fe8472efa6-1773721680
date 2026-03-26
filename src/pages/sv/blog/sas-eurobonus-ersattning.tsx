@@ -11,7 +11,7 @@ export default function SasEurobonusPage() {
       <SEO
         title="SAS EuroBonus-biljett och försening — kan du fortfarande kräva ersättning?"
         description="Betalade du resan med EuroBonus-poäng? Du har ändå rätt till kontantersättning vid försening. Låt inte SAS lura dig."
-        url="https://lotproblem.pl/sv/blog/sas-eurobonus-ersattning"
+        url="https://problemlot.com/sv/blog/sas-eurobonus-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

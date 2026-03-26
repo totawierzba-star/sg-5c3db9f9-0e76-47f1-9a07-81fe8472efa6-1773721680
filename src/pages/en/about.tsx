@@ -7,8 +7,8 @@ export default function AboutEN() {
   return (
     <>
       <SEO
-        title="About the Author - BiznesLot Expert"
-        description="Learn about the BiznesLot.info author - an expert in business travel, passenger rights, and airline compensation with years of experience in the aviation industry."
+        title="About the Author - problemlot.com Expert"
+        description="Learn about the problemlot.com author - an expert in business travel, passenger rights, and airline compensation with years of experience in the aviation industry."
         url="https://bizneslot.pl/en/about"
       />
 
@@ -29,7 +29,7 @@ export default function AboutEN() {
               </h1>
               
               <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Expert in business travel, passenger rights, and airline compensation. Creator of BiznesLot.info and ClaimWinger.com.
+                Expert in business travel, passenger rights, and airline compensation. Creator of problemlot.com and ClaimWinger.com.
               </p>
             </div>
           </div>
@@ -68,10 +68,10 @@ export default function AboutEN() {
                 </p>
               </div>
 
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">Why BiznesLot.info?</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">Why problemlot.com?</h2>
               
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                I created <strong>BiznesLot.info</strong> because I noticed a significant gap in information about passenger 
+                I created <strong>problemlot.com</strong> because I noticed a significant gap in information about passenger 
                 rights specifically in the context of business travel. Most portals focus on leisure travelers, while business 
                 trips have their own unique aspects:
               </p>
@@ -149,10 +149,10 @@ export default function AboutEN() {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">What Sets BiznesLot.info Apart?</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">What Sets problemlot.com Apart?</h2>
               
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                BiznesLot.info is <strong>the first Polish portal</strong> entirely dedicated to passenger rights in the 
+                problemlot.com is <strong>the first Polish portal</strong> entirely dedicated to passenger rights in the 
                 business travel context. Here you'll find:
               </p>
 
@@ -186,7 +186,7 @@ export default function AboutEN() {
               <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white rounded-2xl p-8 my-12">
                 <h3 className="text-2xl font-bold mb-4">Want to Learn More?</h3>
                 <p className="text-slate-200 mb-6 text-lg">
-                  Explore articles on BiznesLot.info and discover what rights you have as a business traveler. 
+                  Explore articles on problemlot.com and discover what rights you have as a business traveler. 
                   Knowledge is power - especially when claiming what's rightfully yours.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">

@@ -9,7 +9,7 @@ export default function MimoriadneOkolnostiKompenzacia() {
       <SEO
         title="Mimoriadne okolnosti – kedy aerolínka nemusí platiť kompenzáciu?"
         description="Zistite, kedy sú mimoriadne okolnosti skutočné a kedy len výhovorka aerolíniek. Praktický sprievodca s judikatúrou EÚ a reálnymi prípadmi."
-        url="https://lotproblem.pl/sk/blog/mimoriadne-okolnosti-kompenzacia"
+        url="https://problemlot.com/sk/blog/mimoriadne-okolnosti-kompenzacia"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Hero Section */}

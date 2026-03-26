@@ -9,7 +9,7 @@ export default function PrahaLondynKompenzace() {
       <SEO
         title="Praha–Londýn: Nejčastější trasa a kompenzace za zpoždění 2026"
         description="Zpožděný nebo zrušený let Praha–Londýn? Získejte až 250 € kompenzace. Průvodce právy pasažérů na nejfrekventovanější trase z ČR do UK."
-        url="https://lotproblem.pl/cs/blog/praha-londyn-trasa-kompenzace"
+        url="https://problemlot.com/cs/blog/praha-londyn-trasa-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

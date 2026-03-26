@@ -17,7 +17,7 @@ export default function SasDelayedFlight() {
       <SEO
         title="Ersättning för försenat SAS-flyg | Komplett Guide 2025"
         description="Var ditt SAS-flyg försenat? Läs vår kompletta guide om hur du får upp till 600 € i ersättning från SAS. Regler, belopp och steg-för-steg instruktioner."
-        url="https://lotproblem.pl/sv/blog/sas-forsenat-flyg-ersattning"
+        url="https://problemlot.com/sv/blog/sas-forsenat-flyg-ersattning"
         image="/images/sas-delayed-guide.png"
       />
 

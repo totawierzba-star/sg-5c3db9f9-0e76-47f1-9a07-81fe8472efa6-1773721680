@@ -7,7 +7,7 @@ export default function LotZmianaRozkladu() {
       <SEO
         title="LOT zmiana rozkładu lotu: Prawa pasażera i odszkodowanie 2026"
         description="LOT zmienił godzinę lub datę lotu bez Twojej zgody? Sprawdź swoje prawa, kiedy przysługuje odszkodowanie €250-600 i jak skutecznie je wyegzekwować."
-        url="https://lotproblem.pl/blog/lot-zmiana-rozkladu-prawa-pasazera"
+        url="https://problemlot.com/blog/lot-zmiana-rozkladu-prawa-pasazera"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

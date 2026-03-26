@@ -22,7 +22,7 @@ export default function LOTOneskorenyLetOdskodnenie() {
       <SEO
         title="Odškodnenie za oneskorený let LOT Polish Airlines – Kompletný sprievodca 2026"
         description="LOT Polish Airlines oneskorenie letu? Získajte až 600 € odškodnenie! Kompletný sprievodca právami slovenských cestujúcich podľa EU261. ✓ Bez rizika ✓ 98% úspešnosť"
-        url="https://lotproblem.pl/sk/blog/lot-oneskoreny-let-odskodnenie"
+        url="https://problemlot.com/sk/blog/lot-oneskoreny-let-odskodnenie"
       />
 
       {/* Article Schema */}
@@ -34,7 +34,7 @@ export default function LOTOneskorenyLetOdskodnenie() {
             "@type": "Article",
             "headline": "Odškodnenie za oneskorený let LOT Polish Airlines – Kompletný sprievodca 2026",
             "description": "Ako získať až 600 € odškodnenie od LOT za oneskorený let. Kompletný sprievodca právami slovenských cestujúcich.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -44,7 +44,7 @@ export default function LOTOneskorenyLetOdskodnenie() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

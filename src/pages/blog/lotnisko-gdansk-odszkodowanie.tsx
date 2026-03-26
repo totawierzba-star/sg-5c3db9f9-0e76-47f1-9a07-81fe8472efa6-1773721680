@@ -9,7 +9,7 @@ export default function LotniskoGdanskOdszkodowanie() {
       <SEO
         title="Lotnisko Gdańsk Rębiechowo — odszkodowanie za opóźniony lot [2025]"
         description="Twój lot z Gdańska jest opóźniony lub odwołany? Sprawdź jak uzyskać 250-600 € odszkodowania. Wizz Air, Ryanair, LOT - kompletny przewodnik."
-        canonicalUrl="https://lotproblem.pl/blog/lotnisko-gdansk-odszkodowanie"
+        canonicalUrl="https://problemlot.com/blog/lotnisko-gdansk-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

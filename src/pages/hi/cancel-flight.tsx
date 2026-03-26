@@ -9,7 +9,7 @@ export default function HindiCancelledFlight() {
       <SEO
         title="रद्द की गई उड़ान – €600 + पूर्ण रिफंड | EU 261/2004 अधिकार"
         description="क्या आपकी उड़ान रद्द कर दी गई? EU 261/2004 के तहत मुआवजा + पूर्ण टिकट रिफंड दोनों पाएं।"
-        url="https://lotproblem.pl/hi/cancel-flight"
+        url="https://problemlot.com/hi/cancel-flight"
       />
 
       {/* Hero Section */}

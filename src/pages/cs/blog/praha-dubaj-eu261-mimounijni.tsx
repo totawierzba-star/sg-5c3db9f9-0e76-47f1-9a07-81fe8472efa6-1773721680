@@ -9,7 +9,7 @@ export default function PrahaDubajEU261() {
       <SEO
         title="Praha–Dubaj: Kdy platí EU261 na mimounijních dopravcích?"
         description="Let Praha–Dubaj zpožděný nebo zrušený? Zjistěte, kdy máte nárok na kompenzaci až 600 € při letu s Emirates nebo FlyDubai podle EU261."
-        url="https://lotproblem.pl/cs/blog/praha-dubaj-eu261-mimounijni"
+        url="https://problemlot.com/cs/blog/praha-dubaj-eu261-mimounijni"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

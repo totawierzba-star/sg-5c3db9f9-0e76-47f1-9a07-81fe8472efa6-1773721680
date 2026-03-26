@@ -11,7 +11,7 @@ export default function EU261SwedenPage() {
       <SEO
         title="EU 261/2004 i Sverige — dina rättigheter som flygpassagerare"
         description="Vad innebär EU-förordning 261/2004 för dig? Läs vår guide om den lag som ger dig rätt till upp till 600 € vid flygkaos."
-        url="https://lotproblem.pl/sv/blog/eu261-regler-sverige"
+        url="https://problemlot.com/sv/blog/eu261-regler-sverige"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

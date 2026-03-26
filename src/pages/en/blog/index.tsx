@@ -32,7 +32,7 @@ export default function BlogIndexEn() {
       <SEO
         title="Flight Compensation Blog: Expert Guides & Passenger Rights | LOT Problem"
         description="Expert guides on flight delay compensation, passenger rights under EU261, and how to claim up to €600 from airlines. Learn from real cases and practical advice."
-        url="https://lotproblem.pl/en/blog"
+        url="https://problemlot.com/en/blog"
       />
 
       {/* Hero Section */}

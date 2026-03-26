@@ -11,7 +11,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
         "@type": "Article",
         "headline": "Come Presentare Reclamo per Volo in Ritardo o Cancellato: Guida Completa 2026",
         "description": "Guida passo-passo completa per presentare un reclamo efficace alla compagnia aerea e ottenere fino a 600€ di risarcimento per ritardi e cancellazioni.",
-        "image": "https://lotproblem.pl/og-image.png",
+        "image": "https://problemlot.com/og-image.png",
         "datePublished": "2026-03-05",
         "dateModified": "2026-03-05",
         "author": {
@@ -23,7 +23,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
           "name": "LotProblem.pl",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://lotproblem.pl/og-image.png"
+            "url": "https://problemlot.com/og-image.png"
           }
         }
       },
@@ -105,7 +105,7 @@ export default function ComePresentareReclamoGuidaCompleta() {
       <SEO
         title="Come Presentare Reclamo Volo in Ritardo o Cancellato: Guida Completa 2026 [Passo-Passo]"
         description="Guida definitiva per presentare un reclamo efficace e ottenere fino a 600€ di risarcimento per voli in ritardo o cancellati. Modelli, documenti e procedura completa."
-        url="https://lotproblem.pl/it/blog/come-presentare-reclamo-guida-completa"
+        url="https://problemlot.com/it/blog/come-presentare-reclamo-guida-completa"
        
       />
 

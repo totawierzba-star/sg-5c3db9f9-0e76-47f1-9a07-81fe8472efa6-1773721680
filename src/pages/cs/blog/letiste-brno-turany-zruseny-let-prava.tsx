@@ -9,7 +9,7 @@ export default function LetisteBrnoZrusenyLet() {
       <SEO
         title="Letiště Brno-Tuřany: Zrušený let — vaše práva 2026"
         description="Byl váš let z Brno-Tuřany zrušen? Zjistěte, jak získat kompenzaci až 600 € podle EU261. Průvodce právy pasažérů + kontakty na pomoc."
-        url="https://lotproblem.pl/cs/blog/letiste-brno-turany-zruseny-let-prava"
+        url="https://problemlot.com/cs/blog/letiste-brno-turany-zruseny-let-prava"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

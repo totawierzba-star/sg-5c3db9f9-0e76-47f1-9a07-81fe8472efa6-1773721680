@@ -9,7 +9,7 @@ export default function ScioperoCompagniaVsATCDifferenze() {
       <SEO
         title="Sciopero Compagnia Aerea vs Sciopero ATC: Chi Paga il Risarcimento?"
         description="Scopri le differenze cruciali tra sciopero del personale della compagnia e sciopero dei controllori di volo. Quando hai diritto al risarcimento?"
-        url="https://lotproblem.pl/it/blog/sciopero-compagnia-vs-atc-differenze"
+        url="https://problemlot.com/it/blog/sciopero-compagnia-vs-atc-differenze"
       />
 
       <script
@@ -29,14 +29,14 @@ export default function ScioperoCompagniaVsATCDifferenze() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",
             "dateModified": "2026-03-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/sciopero-compagnia-vs-atc-differenze"
+              "@id": "https://problemlot.com/it/blog/sciopero-compagnia-vs-atc-differenze"
             }
           })
         }}

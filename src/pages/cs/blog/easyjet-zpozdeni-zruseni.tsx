@@ -9,8 +9,8 @@ export default function EasyJetKompenzace() {
       <SEO 
         title="easyJet kompenzace za zpoždění a zrušení letu – Průvodce 2026"
         description="Kompletní průvodce reklamací u easyJet. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let easyJet."
-        url="https://lotproblem.pl/cs/blog/easyjet-zpozdeni-zruseni"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/easyjet-zpozdeni-zruseni"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

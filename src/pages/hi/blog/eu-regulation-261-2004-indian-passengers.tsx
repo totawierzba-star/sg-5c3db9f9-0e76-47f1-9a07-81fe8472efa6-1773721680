@@ -11,7 +11,7 @@ export default function EURegulation261IndianPassengers() {
       <SEO 
         title="यूरोपीय संघ विनियमन EC 261/2004 — भारतीय यात्रियों के लिए संपूर्ण मार्गदर्शिका 2026"
         description="EU की उड़ानों पर भारतीय यात्रियों के अधिकारों का विस्तृत मार्गदर्शिका। EC 261/2004 के तहत ₹20,000-₹50,000 मुआवज़ा कैसे प्राप्त करें। विशेषज्ञ सलाह और व्यावहारिक उदाहरण।"
-        canonicalUrl="https://lotproblem.pl/hi/blog/eu-regulation-261-2004-indian-passengers"
+        canonicalUrl="https://problemlot.com/hi/blog/eu-regulation-261-2004-indian-passengers"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

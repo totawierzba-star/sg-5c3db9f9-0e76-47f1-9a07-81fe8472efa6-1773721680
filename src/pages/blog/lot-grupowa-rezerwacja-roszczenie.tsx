@@ -7,7 +7,7 @@ export default function LotGroupBookingClaim() {
       <SEO
         title="LOT grupowa rezerwacja — zbiorowe roszczenie odszkodowawcze 250-600 €"
         description="Leciałeś LOT w grupie (rodzina, wycieczka, firma)? Sprawdź jak złożyć zbiorowe roszczenie o odszkodowanie 250-600 € i czy każdy pasażer dostaje pełną kwotę."
-        url="https://lotproblem.pl/blog/lot-grupowa-rezerwacja-roszczenie"
+        url="https://problemlot.com/blog/lot-grupowa-rezerwacja-roszczenie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

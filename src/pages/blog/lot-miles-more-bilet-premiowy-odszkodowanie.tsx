@@ -7,7 +7,7 @@ export default function LotMilesMoreBiletPremiowy() {
       <SEO
         title="LOT Miles & More — bilet premiowy a odszkodowanie za opóźniony lot 2026"
         description="Używasz punktów Miles & More na loty LOT? Sprawdź czy przysługuje Ci odszkodowanie €250-600 za opóźniony lub odwołany lot premiowy."
-        url="https://lotproblem.pl/blog/lot-miles-more-bilet-premiowy-odszkodowanie"
+        url="https://problemlot.com/blog/lot-miles-more-bilet-premiowy-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -7,7 +7,7 @@ export default function LotWawOrdChicago() {
       <SEO
         title="LOT WAW–ORD Chicago: Odszkodowanie €600 za opóźnienie 2026"
         description="Lot LOT z Warszawy do Chicago opóźniony? Sprawdź jak uzyskać 600 € odszkodowania za transatlantycki lot. Prawa pasażera WE 261/2004."
-        url="https://lotproblem.pl/blog/lot-waw-ord-chicago-odszkodowanie"
+        url="https://problemlot.com/blog/lot-waw-ord-chicago-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

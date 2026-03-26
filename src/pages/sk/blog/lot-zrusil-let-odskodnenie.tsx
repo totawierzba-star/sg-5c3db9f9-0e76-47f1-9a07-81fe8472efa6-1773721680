@@ -21,7 +21,7 @@ export default function LOTZrusilLetOdskodnenie() {
       <SEO
         title="LOT Zrušil Let – Ako Získať Odškodnenie až 600 € Krok za Krokom?"
         description="LOT zrušil váš let? Získajte až 600 € odškodnenie! ✓ Kompletný postup ✓ Vzory žiadostí ✓ Bez rizika ✓ 98% úspešnosť. Kliknite a zistite svoje práva!"
-        url="https://lotproblem.pl/sk/blog/lot-zrusil-let-odskodnenie"
+        url="https://problemlot.com/sk/blog/lot-zrusil-let-odskodnenie"
       />
 
       {/* Article Schema */}
@@ -33,7 +33,7 @@ export default function LOTZrusilLetOdskodnenie() {
             "@type": "Article",
             "headline": "LOT Zrušil Let – Ako Získať Odškodnenie až 600 € Krok za Krokom?",
             "description": "Kompletný sprievodca získaním odškodnenia od LOT Polish Airlines pri zrušenom lete.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -43,7 +43,7 @@ export default function LOTZrusilLetOdskodnenie() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

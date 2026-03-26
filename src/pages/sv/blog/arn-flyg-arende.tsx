@@ -11,7 +11,7 @@ export default function ArnPage() {
       <SEO
         title="ARN och flygersättning — varför det inte alltid räcker"
         description="Funderar du på att anmäla flygbolaget till ARN? Läs om processen, väntetiderna och varför flygbolagen ibland struntar i besluten."
-        url="https://lotproblem.pl/sv/blog/arn-flyg-arende"
+        url="https://problemlot.com/sv/blog/arn-flyg-arende"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -11,7 +11,7 @@ export default function SasStockholmLondonPage() {
       <SEO
         title="Ersättning för SAS Stockholm–London — UK261 eller EU261 efter Brexit?"
         description="Flyger du till London med SAS? Brexit har rört till det, men dina rättigheter är starka. Läs om skillnaden mellan EU261 och UK261."
-        url="https://lotproblem.pl/sv/blog/sas-stockholm-london-ersattning"
+        url="https://problemlot.com/sv/blog/sas-stockholm-london-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

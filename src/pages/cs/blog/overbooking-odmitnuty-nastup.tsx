@@ -9,7 +9,7 @@ export default function OverbookingOdmitnutyNastup() {
       <SEO 
         title="Overbooking - odmítnutí nástupu na palubu | Kompenzace až 600 €"
         description="Aerolinka vám odmítla nástup kvůli přeplněnému letu? Zjistěte, jaká vám přísluší kompenzace až 600 € podle EU 261/2004."
-        url="https://lotproblem.pl/cs/blog/overbooking-odmitnuty-nastup"
+        url="https://problemlot.com/cs/blog/overbooking-odmitnuty-nastup"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -333,7 +333,7 @@ export default function OverbookingOdmitnutyNastup() {
                 "name": "LotProblem.pl"
               },
               "datePublished": "2026-02-24",
-              "image": "https://lotproblem.pl/og-image.png"
+              "image": "https://problemlot.com/og-image.png"
             })
           }}
         />

@@ -9,7 +9,7 @@ export default function NarizeniES2612004Article() {
       <SEO
         title="Nařízení ES 261/2004 – práva cestujících při zpoždění letu"
         description="Zjistěte, jak nařízení ES 261/2004 chrání vaše práva při zpožděných a zrušených letech. Až 600 € kompenzace – zjistěte, kdy máte nárok."
-        url="https://lotproblem.pl/cs/blog/narizeni-es-261-2004"
+        url="https://problemlot.com/cs/blog/narizeni-es-261-2004"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -782,7 +782,7 @@ export default function NarizeniES2612004Article() {
             "@type": "Article",
             "headline": "Co je nařízení ES 261/2004 a jak chrání cestující v EU",
             "description": "Komplexní průvodce nařízením ES 261/2004, které chrání práva leteckých cestujících v EU. Zjistěte, kdy máte nárok na kompenzaci až 600 €.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -792,14 +792,14 @@ export default function NarizeniES2612004Article() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/cs/blog/narizeni-es-261-2004"
+              "@id": "https://problemlot.com/cs/blog/narizeni-es-261-2004"
             }
           })
         }}

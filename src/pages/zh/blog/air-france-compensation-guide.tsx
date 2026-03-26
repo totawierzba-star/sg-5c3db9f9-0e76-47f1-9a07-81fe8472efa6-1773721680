@@ -22,8 +22,8 @@ export default function AirFranceCompensationGuide() {
       <SEO
         title="法国航空延误/取消赔偿完整指南 2026 | 中国乘客权利 €600"
         description="法国航空航班延误或取消？中国乘客如何获得 €250-€600 欧盟赔偿。巴黎-北京/上海/广州航线完整指南 + 专业索赔服务。"
-        url="https://lotproblem.pl/zh/blog/air-france-compensation-guide"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/air-france-compensation-guide"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
@@ -1649,7 +1649,7 @@ export default function AirFranceCompensationGuide() {
                 "@type": "Article",
                 "headline": "法国航空延误或取消航班赔偿完整指南 2026",
                 "description": "中国乘客如何获得 €250-€600 欧盟赔偿。巴黎-北京/上海/广州航线权利详解，包含实际案例和专业索赔服务。",
-                "image": "https://lotproblem.pl/og-image.png",
+                "image": "https://problemlot.com/og-image.png",
                 "author": {
                   "@type": "Organization",
                   "name": "LotProblem.pl"
@@ -1659,14 +1659,14 @@ export default function AirFranceCompensationGuide() {
                   "name": "LotProblem.pl",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://lotproblem.pl/og-image.png"
+                    "url": "https://problemlot.com/og-image.png"
                   }
                 },
                 "datePublished": "2026-02-01",
                 "dateModified": "2026-02-01",
                 "mainEntityOfPage": {
                   "@type": "WebPage",
-                  "@id": "https://lotproblem.pl/zh/blog/air-france-compensation-guide"
+                  "@id": "https://problemlot.com/zh/blog/air-france-compensation-guide"
                 },
                 "articleBody": "法国航空是欧洲最大的航空公司之一，为中国乘客提供巴黎-北京、上海、广州等多条直飞航线。作为欧盟航空公司，法航受 EU 261/2004 法规完全保护。本指南详细解释中国护照持有者如何获得 €250-€600 欧盟赔偿，包含真实案例、常见拒赔策略应对方法以及 ClaimWinger 专业索赔服务介绍。"
               },

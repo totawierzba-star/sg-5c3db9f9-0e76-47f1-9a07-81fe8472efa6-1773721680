@@ -9,7 +9,7 @@ export default function DelhiAirportCancelledFlight() {
       <SEO
         title="दिल्ली हवाई अड्डा रद्द उड़ान – मुआवजा + रिफंड गाइड 2026 | €600"
         description="इंदिरा गांधी अंतर्राष्ट्रीय हवाई अड्डे से रद्द की गई उड़ान के लिए €600 मुआवजा + पूर्ण रिफंड कैसे प्राप्त करें। आपके अधिकार, प्रक्रिया और सफल दावे के लिए टिप्स।"
-        url="https://lotproblem.pl/hi/blog/delhi-airport-cancel-flight"
+        url="https://problemlot.com/hi/blog/delhi-airport-cancel-flight"
       />
 
       {/* Hero Section */}

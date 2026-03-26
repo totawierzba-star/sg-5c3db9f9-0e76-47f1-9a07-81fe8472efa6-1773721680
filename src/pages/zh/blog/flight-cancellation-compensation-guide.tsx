@@ -9,8 +9,8 @@ export default function FlightCancellationCompensationGuide() {
       <SEO
         title="航班取消如何索赔？取消vs延误赔偿规则对比【2026】EU261完整指南"
         description="航班取消与延误有何不同？了解EU 261/2004取消航班赔偿规则、14天通知规则、再安排权利。中国乘客必读完整指南。"
-        url="https://lotproblem.pl/zh/blog/flight-cancellation-compensation-guide"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/flight-cancellation-compensation-guide"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

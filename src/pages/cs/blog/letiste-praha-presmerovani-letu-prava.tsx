@@ -9,7 +9,7 @@ export default function LetistePrahaPresmerovaniLetu() {
       <SEO
         title="Letiště Václava Havla: Přesměrování letu — vaše práva 2026"
         description="Aerolinka vás přesměrovala na jiný let z Prahy? Získejte 250-600 € kompenzace pokud přesměrování znamená významné zpoždění. Průvodce právy pasažérů."
-        url="https://lotproblem.pl/cs/blog/letiste-praha-presmerovani-letu-prava"
+        url="https://problemlot.com/cs/blog/letiste-praha-presmerovani-letu-prava"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

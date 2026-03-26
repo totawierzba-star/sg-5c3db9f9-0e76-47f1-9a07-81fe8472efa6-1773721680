@@ -23,7 +23,7 @@ export default function HomeIt() {
       <SEO
         title="Volo in ritardo o cancellato? Verifica il tuo risarcimento fino a 600 €"
         description="Hai problemi con il volo? Verifica se hai diritto fino a 600 € di risarcimento per volo in ritardo o cancellato secondo il Regolamento CE 261/2004."
-        url="https://lotproblem.pl/it"
+        url="https://problemlot.com/it"
       />
 
       {/* Hero Section */}

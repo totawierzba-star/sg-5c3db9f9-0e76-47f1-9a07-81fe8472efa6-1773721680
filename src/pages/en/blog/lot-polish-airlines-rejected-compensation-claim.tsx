@@ -100,7 +100,7 @@ export default function LOTRejectedClaim() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -112,7 +112,7 @@ export default function LOTRejectedClaim() {
       <SEO
         title="LOT Polish Airlines Rejected My Claim: What to Do Next? | Appeal Guide 2025"
         description="LOT rejected your compensation claim? Don't give up. Learn how to challenge fake 'extraordinary circumstances,' appeal the decision, and get your money."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-rejected-compensation-claim"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-rejected-compensation-claim"
       />
 
       <script

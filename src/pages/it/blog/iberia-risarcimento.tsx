@@ -17,7 +17,7 @@ export default function IberiaRisarcimento() {
       <SEO
         title="Iberia Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]"
         description="Volo Iberia in ritardo o cancellato? Guida completa al risarcimento CE 261/2004: importi, procedura reclamo passo-passo, Iberia vs Vueling e tempi di risposta."
-        url="https://lotproblem.pl/it/blog/iberia-risarcimento"
+        url="https://problemlot.com/it/blog/iberia-risarcimento"
       />
 
       <script
@@ -32,13 +32,13 @@ export default function IberiaRisarcimento() {
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" },
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/iberia-risarcimento",
+              "@id": "https://problemlot.com/it/blog/iberia-risarcimento",
             },
           }),
         }}

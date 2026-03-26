@@ -8,7 +8,7 @@ export default function AirportDelayGuide() {
       <SEO
         title="Co zrobić na lotnisku gdy lot jest opóźniony? Prawa pasażera"
         description="Twój lot jest opóźniony lub odwołany? Sprawdź, co musisz zrobić jeszcze na lotnisku (posiłki, hotel, zaświadczenia), aby zapewnić sobie prawo do odszkodowania."
-        url="https://lotproblem.pl/blog/co-zrobic-na-lotnisku-opoznienie"
+        url="https://problemlot.com/blog/co-zrobic-na-lotnisku-opoznienie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

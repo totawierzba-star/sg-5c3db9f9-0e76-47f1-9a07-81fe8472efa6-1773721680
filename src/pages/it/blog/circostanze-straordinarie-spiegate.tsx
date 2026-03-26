@@ -9,7 +9,7 @@ export default function CircostanzeStraordinarieSpiegate() {
       <SEO
         title="Circostanze Straordinarie: Quando NON Spetta il Risarcimento Volo"
         description="Scopri cosa sono le circostanze straordinarie secondo il Regolamento CE 261/2004 e quando la compagnia aerea può rifiutare legalmente il risarcimento."
-        url="https://lotproblem.pl/it/blog/circostanze-straordinarie-spiegate"
+        url="https://problemlot.com/it/blog/circostanze-straordinarie-spiegate"
       />
 
       <script
@@ -29,14 +29,14 @@ export default function CircostanzeStraordinarieSpiegate() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",
             "dateModified": "2026-03-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/circostanze-straordinarie-spiegate"
+              "@id": "https://problemlot.com/it/blog/circostanze-straordinarie-spiegate"
             }
           })
         }}

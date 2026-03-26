@@ -9,8 +9,8 @@ export default function LetisteKarlovyVaryKompenzace() {
       <SEO 
         title="Letiště Karlovy Vary (KLV) - práva pasažérů a kompenzace 2026"
         description="Měli jste problémy s letem z letiště Karlovy Vary? Zjistěte, jak získat až 600 € odškodnění za zpožděný nebo zrušený let."
-        url="https://lotproblem.pl/cs/blog/letiste-karlovy-vary-kompenzace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/letiste-karlovy-vary-kompenzace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

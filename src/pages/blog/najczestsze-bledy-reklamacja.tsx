@@ -9,8 +9,8 @@ export default function NajczestszeBledyReklamacja() {
       <SEO
         title="7 najczęstszych błędów przy reklamacji lotu [Uniknij ich w 2025]"
         description="Poznaj 7 krytycznych błędów przez które tracisz odszkodowanie 250-600 €. Praktyczny przewodnik jak ich uniknąć."
-        image="https://lotproblem.pl/og-image.png"
-        url="https://lotproblem.pl/blog/najczestsze-bledy-reklamacja"
+        image="https://problemlot.com/og-image.png"
+        url="https://problemlot.com/blog/najczestsze-bledy-reklamacja"
       />
 
       <script
@@ -21,7 +21,7 @@ export default function NajczestszeBledyReklamacja() {
             "@type": "Article",
             "headline": "7 najczęstszych błędów przy reklamacji lotu",
             "description": "Przewodnik pokazujący typowe błędy przez które pasażerowie tracą odszkodowanie i jak ich uniknąć",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "datePublished": "2025-01-29",
             "dateModified": "2025-01-29",
             "author": {
@@ -33,7 +33,7 @@ export default function NajczestszeBledyReklamacja() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "mainEntity": {

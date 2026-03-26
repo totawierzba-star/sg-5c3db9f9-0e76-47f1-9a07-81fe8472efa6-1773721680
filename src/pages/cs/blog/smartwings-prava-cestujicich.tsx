@@ -9,7 +9,7 @@ export default function SmartwingsPravaCestujicich() {
       <SEO
         title="Smartwings kompenzace za zpoždění a zrušení letu – Průvodce 2026"
         description="Jak reklamovat zpožděný nebo zrušený let u Smartwings? Zjistěte své práva, postupy a získejte až 600 € kompenzace."
-        url="https://lotproblem.pl/cs/blog/smartwings-prava-cestujicich"
+        url="https://problemlot.com/cs/blog/smartwings-prava-cestujicich"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -463,14 +463,14 @@ export default function SmartwingsPravaCestujicich() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/cs/blog/smartwings-prava-cestujicich"
+              "@id": "https://problemlot.com/cs/blog/smartwings-prava-cestujicich"
             },
-            "image": "https://lotproblem.pl/og-image.png"
+            "image": "https://problemlot.com/og-image.png"
           })
         }}
       />

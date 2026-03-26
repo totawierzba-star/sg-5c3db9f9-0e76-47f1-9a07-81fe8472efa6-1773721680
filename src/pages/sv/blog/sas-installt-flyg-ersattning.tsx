@@ -17,7 +17,7 @@ export default function SasCancelledFlight() {
       <SEO
         title="SAS ställde in flyget | Hur får du upp till 600 € i ersättning?"
         description="Blev ditt SAS-flyg inställt? Läs om dina rättigheter till ombokning, återbetalning och kompensation upp till 600 €. Guide för drabbade passagerare."
-        url="https://lotproblem.pl/sv/blog/sas-installt-flyg-ersattning"
+        url="https://problemlot.com/sv/blog/sas-installt-flyg-ersattning"
         image="/images/sas-cancelled-guide.png"
       />
 

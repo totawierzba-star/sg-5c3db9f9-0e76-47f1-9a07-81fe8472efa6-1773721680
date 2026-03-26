@@ -8,7 +8,7 @@ export default function BritishAirwaysCompensationGuide() {
       <SEO
         title="英国航空延误/取消赔偿指南 2026 | 中国乘客 UK261 权利 £520"
         description="英国航空航班延误或取消？中国乘客如何获得 £220-£520 UK261 赔偿。伦敦-北京/上海/成都航线完整指南 + 专业索赔服务。"
-        url="https://lotproblem.pl/zh/blog/british-airways-compensation-guide"
+        url="https://problemlot.com/zh/blog/british-airways-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -1832,7 +1832,7 @@ export default function BritishAirwaysCompensationGuide() {
             "@type": "Article",
             "headline": "英国航空延误或取消航班赔偿完整指南 2026",
             "description": "中国乘客如何获得 £220-£520 UK261 赔偿",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -1842,14 +1842,14 @@ export default function BritishAirwaysCompensationGuide() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-02-01",
             "dateModified": "2026-02-01",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/zh/blog/british-airways-compensation-guide"
+              "@id": "https://problemlot.com/zh/blog/british-airways-compensation-guide"
             }
           })
         }}

@@ -11,7 +11,7 @@ export default function NorthSwedenWinterPage() {
       <SEO
         title="Flygförseningar i norra Sverige (Luleå, Umeå, Kiruna) — vinterregler"
         description="Försenad p.g.a. snö eller avisning? Det räknas inte alltid som 'extraordinära omständigheter'. Se när du kan få ersättning för vinterkaos."
-        url="https://lotproblem.pl/sv/blog/norra-sverige-flyg-vinter"
+        url="https://problemlot.com/sv/blog/norra-sverige-flyg-vinter"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

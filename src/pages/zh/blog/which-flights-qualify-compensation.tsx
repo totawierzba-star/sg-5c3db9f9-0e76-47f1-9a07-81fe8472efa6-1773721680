@@ -64,8 +64,8 @@ export default function WhichFlightsQualifyCompensation() {
       <SEO 
         title="哪些航班有资格申请EU261赔偿？2026完整判断指南 | 欧洲出发vs欧洲航司"
         description="【2026最新】搞不清哪些航班能索赔？从欧洲出发vs欧洲航空公司详细对比！中国乘客必读，附真实案例+快速判断表✈️"
-        url="https://lotproblem.pl/zh/blog/which-flights-qualify-compensation"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/which-flights-qualify-compensation"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

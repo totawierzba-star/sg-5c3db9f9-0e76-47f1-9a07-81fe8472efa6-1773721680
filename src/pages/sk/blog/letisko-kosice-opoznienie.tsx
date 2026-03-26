@@ -9,7 +9,7 @@ export default function LetiskoKosiceOpoznienie() {
       <SEO
         title="Letisko Košice (KSC) – čo robiť pri meškaní letu? | LotProblem.pl"
         description="Zmeškal vám let z Košíc? Zistite, ako získať až 600 € kompenzácie. Kompletný sprievodca právami pasažérov na druhom najväčšom letisku Slovenska."
-        url="https://lotproblem.pl/sk/blog/letisko-kosice-opoznienie"
+        url="https://problemlot.com/sk/blog/letisko-kosice-opoznienie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -17,7 +17,7 @@ export default function AirFranceRisarcimento() {
       <SEO
         title="Air France Risarcimento: Come Ottenere Fino a €600 per Ritardi e Cancellazioni [2026]"
         description="Volo Air France in ritardo o cancellato? Guida completa al risarcimento CE 261/2004: importi, procedura di reclamo, documenti e tempi di risposta."
-        url="https://lotproblem.pl/it/blog/air-france-risarcimento"
+        url="https://problemlot.com/it/blog/air-france-risarcimento"
       />
 
       {/* Schema Article */}
@@ -36,14 +36,14 @@ export default function AirFranceRisarcimento() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png",
+                "url": "https://problemlot.com/og-image.png",
               },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/air-france-risarcimento",
+              "@id": "https://problemlot.com/it/blog/air-france-risarcimento",
             },
           }),
         }}

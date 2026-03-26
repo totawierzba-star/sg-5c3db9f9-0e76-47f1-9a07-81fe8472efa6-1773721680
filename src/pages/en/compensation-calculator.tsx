@@ -18,7 +18,7 @@ export default function CompensationCalculatorEn() {
       <SEO
         title="Flight Compensation Calculator: Check Your €250-€600 Claim | Free Tool"
         description="Calculate your flight compensation amount instantly. Find out if you can claim €250, €400, or €600 for delayed or cancelled flights under EU261."
-        url="https://lotproblem.pl/en/compensation-calculator"
+        url="https://problemlot.com/en/compensation-calculator"
       />
 
       {/* Hero Section */}

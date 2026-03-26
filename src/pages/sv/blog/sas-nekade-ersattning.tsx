@@ -17,7 +17,7 @@ export default function SasDeniedCompensation() {
       <SEO
         title="SAS nekade ersättning — vad gör du härnäst? | Guide"
         description="Har SAS nekat din ersättning? Ge inte upp! Många avslag är felaktiga. Läs vår guide om hur du överklagar och vinner mot SAS."
-        url="https://lotproblem.pl/sv/blog/sas-nekade-ersattning"
+        url="https://problemlot.com/sv/blog/sas-nekade-ersattning"
         image="/images/sas-denied-guide.png"
       />
 

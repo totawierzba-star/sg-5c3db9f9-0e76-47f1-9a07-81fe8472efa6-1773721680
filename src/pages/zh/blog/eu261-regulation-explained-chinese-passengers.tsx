@@ -64,8 +64,8 @@ export default function EU261RegulationExplainedChinesePassengers() {
       <SEO 
         title="EU261法规详解2026 | 中国乘客欧洲航班赔偿完整指南 - 最高€600"
         description="【2026最新】EU 261/2004法规全解读！中国乘客如何获得欧洲航班延误/取消赔偿？哪些航班受保护？申请流程+成功案例+常见问题✈️"
-        url="https://lotproblem.pl/zh/blog/eu261-regulation-explained-chinese-passengers"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/eu261-regulation-explained-chinese-passengers"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

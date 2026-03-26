@@ -11,7 +11,7 @@ export default function SasTimelinePage() {
       <SEO
         title="Hur lång tid tar ersättning från SAS? (Uppdaterad 2025)"
         description="Väntar du på pengar från SAS? Läs om aktuella väntetider för utbetalning av ersättning 2025 och vad du kan göra för att snabba på processen."
-        url="https://lotproblem.pl/sv/blog/sas-utbetalningstid-ersattning"
+        url="https://problemlot.com/sv/blog/sas-utbetalningstid-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

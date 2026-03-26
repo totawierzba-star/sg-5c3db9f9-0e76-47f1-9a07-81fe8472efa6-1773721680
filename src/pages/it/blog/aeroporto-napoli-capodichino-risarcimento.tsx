@@ -11,7 +11,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
         "@type": "Article",
         "headline": "Aeroporto di Napoli Capodichino: Risarcimenti per Ritardi e Cancellazioni",
         "description": "Guida completa ai diritti dei passeggeri e alle procedure di risarcimento per voli in ritardo o cancellati dall'Aeroporto di Napoli Capodichino.",
-        "image": "https://lotproblem.pl/og-image.png",
+        "image": "https://problemlot.com/og-image.png",
         "datePublished": "2026-03-05",
         "dateModified": "2026-03-05",
         "author": {
@@ -23,7 +23,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
           "name": "LotProblem.pl",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://lotproblem.pl/og-image.png"
+            "url": "https://problemlot.com/og-image.png"
           }
         }
       },
@@ -72,7 +72,7 @@ export default function AeroportoNapoliCapodichinoRisarcimento() {
       <SEO
         title="Aeroporto Napoli Capodichino: Risarcimento Voli in Ritardo e Cancellati | Guida 2026"
         description="Volo in ritardo o cancellato da Napoli Capodichino? Scopri come ottenere fino a 600€ di risarcimento. Guida completa ai tuoi diritti e procedura passo-passo."
-        url="https://lotproblem.pl/it/blog/aeroporto-napoli-capodichino-risarcimento"
+        url="https://problemlot.com/it/blog/aeroporto-napoli-capodichino-risarcimento"
        
       />
 

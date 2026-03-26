@@ -16,7 +16,7 @@ export default function SvDelayedFlight() {
       <SEO
         title="Ersättning för Försenat Flyg | Regler & Rättigheter 2025"
         description="Få ersättning för försenat flyg. Lär dig dina rättigheter enligt EU-förordning 261/2004. Upp till 600 € kompensation."
-        url="https://lotproblem.pl/sv/forsenat-flyg"
+        url="https://problemlot.com/sv/forsenat-flyg"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

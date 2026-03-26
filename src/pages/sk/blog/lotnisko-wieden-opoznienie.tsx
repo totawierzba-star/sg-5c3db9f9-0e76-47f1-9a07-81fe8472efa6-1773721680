@@ -9,8 +9,8 @@ export default function LetiskoWiedenOpoznienieSk() {
       <SEO
         title="Letisko Viedeň (Schwechat) – čo robiť pri meškaní letu? Sprievodca pre Slovákov"
         description="Letíte z Viedne? Zistite, aké práva máte pri meškaní alebo zrušení letu na letisku Schwechat. Kompenzácia až 600 € pre slovenských cestujúcich."
-        url="https://lotproblem.pl/sk/blog/lotnisko-wieden-opoznienie"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/sk/blog/lotnisko-wieden-opoznienie"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 py-12">

@@ -10,7 +10,7 @@ export default function BritishAirwaysCompensationGuide() {
       <SEO
         title="British Airways Compensation Guide 2025: Delays & Cancellations"
         description="Complete guide to claiming British Airways compensation. Navigate BA's claim process for flight delays and cancellations with expert tips."
-        url="https://lotproblem.pl/en/blog/british-airways-compensation-guide"
+        url="https://problemlot.com/en/blog/british-airways-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -10,10 +10,10 @@ export interface SEOProps {
   canonicalUrl?: string;
 }
 
-const defaultTitle = "bizneslot.info - Prawa pasażerów w podróżach służbowych";
+const defaultTitle = "problemlot.com - Prawa pasażerów w podróżach służbowych";
 const defaultDescription = "Ekspertowy portal o prawach pasażerów lotniczych w delegacjach i podróżach służbowych. Dowiedz się, kiedy przysługuje Ci odszkodowanie za lot firmowy.";
-const defaultImage = "https://bizneslot.info/og-image.png";
-const siteUrl = "https://bizneslot.info";
+const defaultImage = "https://problemlot.com/og-image.png";
+const siteUrl = "https://problemlot.com";
 
 export const SEOElements = ({
   title = defaultTitle,
@@ -36,7 +36,7 @@ export const SEOElements = ({
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
     <meta property="og:url" content={url} />
-    <meta property="og:site_name" content="bizneslot.info" />
+    <meta property="og:site_name" content="problemlot.com" />
     <meta property="og:locale" content="pl_PL" />
     
     {/* Twitter Card */}
@@ -47,7 +47,7 @@ export const SEOElements = ({
     
     {/* Additional SEO */}
     <meta name="language" content="Polish" />
-    <meta name="author" content="bizneslot.info" />
+    <meta name="author" content="problemlot.com" />
   </>
 );
 

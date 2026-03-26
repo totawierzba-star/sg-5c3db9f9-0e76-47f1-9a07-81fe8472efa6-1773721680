@@ -10,7 +10,7 @@ export default function SwissCompensationGuide() {
       <SEO
         title="Swiss International Air Lines Compensation Guide 2025"
         description="Complete guide to claiming SWISS compensation for flight delays and cancellations. Navigate the Swiss airline's claim process."
-        url="https://lotproblem.pl/en/blog/swiss-compensation-guide"
+        url="https://problemlot.com/en/blog/swiss-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

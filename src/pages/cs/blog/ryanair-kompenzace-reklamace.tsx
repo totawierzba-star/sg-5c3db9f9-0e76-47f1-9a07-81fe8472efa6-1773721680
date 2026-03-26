@@ -9,8 +9,8 @@ export default function RyanairKompenzaceReklamace() {
       <SEO 
         title="Ryanair kompenzace za zpoždění a zrušení letu - Jak na reklamaci"
         description="Komplexní průvodce kompenzací u Ryanairu. Zjistěte, jak správně reklamovat zpoždění nebo zrušení letu a získat až 600 € kompenzace."
-        url="https://lotproblem.pl/cs/blog/ryanair-kompenzace-reklamace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/ryanair-kompenzace-reklamace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -541,16 +541,16 @@ export default function RyanairKompenzaceReklamace() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/cs/blog/ryanair-kompenzace-reklamace"
+              "@id": "https://problemlot.com/cs/blog/ryanair-kompenzace-reklamace"
             },
-            "image": "https://lotproblem.pl/og-image.png"
+            "image": "https://problemlot.com/og-image.png"
           })
         }}
       />

@@ -75,7 +75,7 @@ export default function OdszkodowanieEasyJetPolska() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/logo.png"
+        "url": "https://problemlot.com/logo.png"
       }
     },
     "datePublished": "2025-01-22",
@@ -87,7 +87,7 @@ export default function OdszkodowanieEasyJetPolska() {
       <SEO
         title="Odszkodowanie easyJet 2025 — 250-600 € za opóźniony lot [79% skuteczności]"
         description="Sprawdź jak uzyskać 250-600 € odszkodowania od easyJet za opóźniony lub odwołany lot. Procedury, stawki, prawa pasażera. 79% skuteczności."
-        url="https://lotproblem.pl/blog/odszkodowanie-easyjet-polska"
+        url="https://problemlot.com/blog/odszkodowanie-easyjet-polska"
       />
       <script
         type="application/ld+json"

@@ -9,7 +9,7 @@ export default function DelhiTorontoFlightCancelledCompensation() {
       <SEO
         title="दिल्ली–टोरंटो उड़ान रद्द – कनाडाई APPR और EU नियम [2026]"
         description="Air Canada और Air India की रद्दीकरण नीतियों की तुलना। APPR के तहत CAD 1,000 (₹60,000) तक मुआवज़ा। यूरोप कनेक्शन (Lufthansa/British Airways) के फायदे।"
-        url="https://lotproblem.pl/hi/blog/delhi-toronto-flight-cancelled-compensation"
+        url="https://problemlot.com/hi/blog/delhi-toronto-flight-cancelled-compensation"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-red-50 to-white py-12">

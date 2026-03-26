@@ -47,7 +47,7 @@ export default function BlogIt() {
       <SEO
         title="Blog: Diritti dei Passeggeri e Risarcimenti Voli - LotProblem.pl"
         description="Scopri tutto sui tuoi diritti come passeggero aereo: guide complete su risarcimenti, regolamento CE 261/2004, compagnie aeree e aeroporti italiani."
-        url="https://lotproblem.pl/it/blog"
+        url="https://problemlot.com/it/blog"
       />
 
       {/* Hero Section */}

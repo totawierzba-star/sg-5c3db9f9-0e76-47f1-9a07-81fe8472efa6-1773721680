@@ -9,7 +9,7 @@ export default function VoloITARomaNewYorkRitardi() {
       <SEO
         title="Volo ITA Airways Roma-New York in Ritardo: Risarcimento fino a 600€"
         description="Il tuo volo ITA Airways da Roma Fiumicino a New York JFK ha subito ritardo o cancellazione? Scopri come ottenere il risarcimento che ti spetta."
-        url="https://lotproblem.pl/it/blog/volo-ita-roma-new-york-ritardi"
+        url="https://problemlot.com/it/blog/volo-ita-roma-new-york-ritardi"
       />
 
       <script
@@ -29,14 +29,14 @@ export default function VoloITARomaNewYorkRitardi() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",
             "dateModified": "2026-03-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/volo-ita-roma-new-york-ritardi"
+              "@id": "https://problemlot.com/it/blog/volo-ita-roma-new-york-ritardi"
             }
           })
         }}

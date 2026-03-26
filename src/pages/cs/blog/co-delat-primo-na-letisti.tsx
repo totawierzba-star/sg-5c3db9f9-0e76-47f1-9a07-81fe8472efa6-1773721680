@@ -9,8 +9,8 @@ export default function CoDelatPrimoNaLetisti() {
       <SEO 
         title="Co dělat přímo na letišti při zpožděném letu - praktický průvodce"
         description="Detailní návod, co dělat přímo na letišti když máte zpoždění nebo zrušení letu. Dokumentace, fotky, formuláře."
-        url="https://lotproblem.pl/cs/blog/co-delat-primo-na-letisti"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/co-delat-primo-na-letisti"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

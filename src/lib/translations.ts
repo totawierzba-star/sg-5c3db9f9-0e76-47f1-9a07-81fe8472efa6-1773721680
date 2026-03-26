@@ -71,7 +71,7 @@ export interface Translations {
 export const translations: Record<Locale, Translations> = {
   pl: {
     common: {
-      siteName: "BiznesLot.info",
+      siteName: "problemlot.com",
       siteDescription: "Portal o prawach pasażerów lotniczych w podróżach służbowych",
       readMore: "Czytaj więcej",
       learnMore: "Dowiedz się więcej",
@@ -110,7 +110,7 @@ export const translations: Record<Locale, Translations> = {
         description: "Podróże służbowe to nie tylko wyzwania logistyczne, ale także prawne. Poznaj swoje uprawnienia i dowiedz się, jak skutecznie dochodzić swoich praw w przypadku problemów z lotami.",
       },
       features: {
-        title: "Co znajdziesz na BiznesLot.info?",
+        title: "Co znajdziesz na problemlot.com?",
         feature1: {
           title: "Pracodawca a odszkodowanie",
           description: "Dowiedz się, kto ma prawo do odszkodowania za lot służbowy i jak prawidłowo rozliczyć rekompensatę z pracodawcą.",
@@ -138,7 +138,7 @@ export const translations: Record<Locale, Translations> = {
   },
   en: {
     common: {
-      siteName: "BusinessFlight.info",
+      siteName: "problemlot.com",
       siteDescription: "Portal about passenger rights in business travel",
       readMore: "Read more",
       learnMore: "Learn more",
@@ -177,7 +177,7 @@ export const translations: Record<Locale, Translations> = {
         description: "Business travel brings not only logistical challenges but also legal ones. Learn about your entitlements and how to effectively claim your rights in case of flight issues.",
       },
       features: {
-        title: "What you'll find on BusinessFlight.info?",
+        title: "What you'll find on problemlot.com?",
         feature1: {
           title: "Employer & Compensation",
           description: "Learn who is entitled to compensation for a business flight and how to properly settle the reimbursement with your employer.",

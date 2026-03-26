@@ -11,7 +11,7 @@ export default function NorwegianCancelledPage() {
       <SEO
         title="Norwegian inställt flyg — ersättning och återbetalning"
         description="Ställde Norwegian in ditt flyg? Du har rätt till ombokning, återbetalning OCH upp till 600 € i kompensation. Läs guiden."
-        url="https://lotproblem.pl/sv/blog/norwegian-installt-flyg-ersattning"
+        url="https://problemlot.com/sv/blog/norwegian-installt-flyg-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

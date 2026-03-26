@@ -10,7 +10,7 @@ export default function EasyJetCompensationGuide() {
       <SEO
         title="EasyJet Compensation Guide 2025: Flight Delays & Cancellations"
         description="Complete guide to claiming EasyJet compensation for delays and cancellations. Learn the process, timelines, and how to maximize your claim success."
-        url="https://lotproblem.pl/en/blog/easyjet-compensation-guide"
+        url="https://problemlot.com/en/blog/easyjet-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

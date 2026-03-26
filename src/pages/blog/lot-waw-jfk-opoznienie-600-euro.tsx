@@ -7,7 +7,7 @@ export default function LotWawJfkOpoznienie() {
       <SEO
         title="LOT WAW–JFK Nowy Jork: Opóźnienie i €600 odszkodowania 2026"
         description="Lot LOT Polish Airlines z Warszawy do Nowego Jorku opóźniony? Sprawdź jak uzyskać 600 € odszkodowania za transatlantyk. Twoje prawa pasażera."
-        url="https://lotproblem.pl/blog/lot-waw-jfk-opoznienie-600-euro"
+        url="https://problemlot.com/blog/lot-waw-jfk-opoznienie-600-euro"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

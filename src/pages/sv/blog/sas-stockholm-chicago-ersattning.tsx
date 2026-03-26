@@ -11,7 +11,7 @@ export default function SasStockholmChicagoPage() {
       <SEO
         title="Ersättning för SAS Stockholm–Chicago (ORD) — transatlantisk guide"
         description="Flygförsening till Chicago med SAS? Du kan ha rätt till 600 € i ersättning. Läs vår guide om dina rättigheter på USA-flygningar."
-        url="https://lotproblem.pl/sv/blog/sas-stockholm-chicago-ersattning"
+        url="https://problemlot.com/sv/blog/sas-stockholm-chicago-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -9,8 +9,8 @@ export default function BritishAirwaysKompenzace() {
       <SEO 
         title="British Airways kompenzace za zpoždění a zrušení letu 2026"
         description="Kompletní průvodce reklamací u British Airways. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let BA."
-        url="https://lotproblem.pl/cs/blog/british-airways-kompenzace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/british-airways-kompenzace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

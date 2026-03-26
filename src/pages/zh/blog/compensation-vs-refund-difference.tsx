@@ -9,7 +9,7 @@ export default function CompensationVsRefundDifference() {
       <SEO
         title="航班补偿vs退款【完整区别】Compensation vs Refund Difference Explained"
         description="航班补偿(€250-€600)和机票退款是两回事！详解何时可以同时获得、航司陷阱、实际案例、如何正确索赔双重赔偿。"
-        url="https://lotproblem.pl/zh/blog/compensation-vs-refund-difference"
+        url="https://problemlot.com/zh/blog/compensation-vs-refund-difference"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

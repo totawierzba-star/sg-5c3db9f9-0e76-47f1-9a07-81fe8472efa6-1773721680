@@ -12,7 +12,7 @@ export default function BlogIndexZh() {
       <SEO
         title="航班延误索赔博客【中文】EU 261权利、案例分析、专家建议"
         description="深入了解航班延误/取消赔偿：EU 261法规详解、航司索赔指南、中国公民权利、实际案例分析、专家建议。已发布28篇深度文章。"
-        url="https://lotproblem.pl/zh/blog"
+        url="https://problemlot.com/zh/blog"
       />
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-12">

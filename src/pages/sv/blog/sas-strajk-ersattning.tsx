@@ -11,7 +11,7 @@ export default function SasStrikePage() {
       <SEO
         title="SAS strejk och flygförsening — kan du fortfarande kräva ersättning?"
         description="Påverkas din resa av en SAS-strejk? Det är stor skillnad på pilotstrejk och flygledarstrejk. Se när du har rätt till ersättning."
-        url="https://lotproblem.pl/sv/blog/sas-strajk-ersattning"
+        url="https://problemlot.com/sv/blog/sas-strajk-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

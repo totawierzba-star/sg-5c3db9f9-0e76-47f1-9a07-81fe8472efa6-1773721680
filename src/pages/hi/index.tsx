@@ -10,17 +10,17 @@ export default function HomeHi() {
       {
         "@type": "Organization",
         "name": "LotProblem India",
-        "url": "https://lotproblem.pl/hi",
-        "logo": "https://lotproblem.pl/images/logo.png",
+        "url": "https://problemlot.com/hi",
+        "logo": "https://problemlot.com/images/logo.png",
         "sameAs": ["https://claimwinger.com"]
       },
       {
         "@type": "WebSite",
         "name": "LotProblem India - Flight Compensation Guide",
-        "url": "https://lotproblem.pl/hi",
+        "url": "https://problemlot.com/hi",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://lotproblem.pl/hi/search?q={search_term_string}",
+          "target": "https://problemlot.com/hi/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }

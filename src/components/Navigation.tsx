@@ -13,16 +13,14 @@ export function Navigation() {
   const getLocalizedPath = (path: string) => {
     if (locale === "en") {
       const pathMap: Record<string, string> = {
-        "/odszkodowanie-lot-sluzbowy": "/en/business-flight-compensation",
-        "/anulowany-lot-delegacja": "/en/cancelled-business-trip",
-        "/opozniony-lot-delegacja": "/en/delayed-business-trip",
-        "/bilet-firmowy-prawa": "/en/business-ticket-rights",
-        "/pracodawca-a-odszkodowanie": "/en/employer-compensation",
-        "/artykuly": "/en/articles",
+        "/opozniony-lot": "/en/delayed-flight",
+        "/odwolany-lot": "/en/cancelled-flight",
+        "/ile-mozesz-dostac": "/en/compensation-calculator",
+        "/blog": "/en/blog",
         "/o-autorze": "/en/about",
         "/": "/en"
       };
-      return pathMap[path] || path;
+      return pathMap[path] || `/en${path}`;
     }
     return path;
   };
@@ -32,7 +30,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href={locale === "en" ? "/en" : "/"} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-8 w-auto" />
+            <span className="text-lg font-bold text-blue-700">problemlot.com</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-0.5">
@@ -43,37 +41,25 @@ export function Navigation() {
               {t.nav.home}
             </Link>
             <Link
-              href={getLocalizedPath("/odszkodowanie-lot-sluzbowy")}
-              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
-            >
-              {t.nav.compensation}
-            </Link>
-            <Link
-              href={getLocalizedPath("/anulowany-lot-delegacja")}
-              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
-            >
-              {t.nav.cancelledFlight}
-            </Link>
-            <Link
-              href={getLocalizedPath("/opozniony-lot-delegacja")}
+              href={getLocalizedPath("/opozniony-lot")}
               className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.delayedFlight}
             </Link>
             <Link
-              href={getLocalizedPath("/bilet-firmowy-prawa")}
+              href={getLocalizedPath("/odwolany-lot")}
               className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
-              {t.nav.businessTicket}
+              {t.nav.cancelledFlight}
             </Link>
             <Link
-              href={getLocalizedPath("/pracodawca-a-odszkodowanie")}
+              href={getLocalizedPath("/ile-mozesz-dostac")}
               className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
-              {t.nav.employerCompensation}
+              {t.nav.compensation}
             </Link>
             <Link
-              href={getLocalizedPath("/artykuly")}
+              href={getLocalizedPath("/blog")}
               className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.articles}

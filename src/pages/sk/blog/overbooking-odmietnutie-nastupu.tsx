@@ -9,7 +9,7 @@ export default function OverbookingOdmietnutieNastupu() {
       <SEO
         title="Overbooking – odmietnutie nástupu na palubu a vaše práva (kompenzácia na letisku!)"
         description="Aerolínka vám odmietla nástup na palubu? Poznajte svoje práva! Okamžitá kompenzácia až 600 € priamo na letisku. Dobrovoľné vs nedobrovoľné odmietnutie."
-        url="https://lotproblem.pl/sk/blog/overbooking-odmietnutie-nastupu"
+        url="https://problemlot.com/sk/blog/overbooking-odmietnutie-nastupu"
       />
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Hero Section */}

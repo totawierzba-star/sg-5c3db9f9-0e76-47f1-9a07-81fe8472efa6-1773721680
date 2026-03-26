@@ -56,7 +56,7 @@ export default function EuropeToChinaFlightDelayRights() {
       <SEO 
         title="🇪🇺→🇨🇳从欧洲飞往中国航班延误索赔【2026】€600赔偿权利详解"
         description="法兰克福/巴黎/阿姆斯特丹飞北京/上海航班延误？中国乘客完整赔偿指南💰EU 261保护所有欧洲出发航班⏱️3分钟了解您的权利"
-        image="https://lotproblem.pl/og-image.png"
+        image="https://problemlot.com/og-image.png"
       />
       <script
         type="application/ld+json"

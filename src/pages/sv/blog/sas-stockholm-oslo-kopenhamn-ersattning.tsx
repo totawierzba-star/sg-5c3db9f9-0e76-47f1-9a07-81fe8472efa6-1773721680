@@ -11,7 +11,7 @@ export default function SasScandinaviaPage() {
       <SEO
         title="Ersättning för SAS Stockholm–Oslo eller Stockholm–Köpenhamn — inrikes Skandinavien"
         description="Pendlare i Skandinavien drabbas ofta av SAS-förseningar. Se dina rättigheter på rutterna mellan de nordiska huvudstäderna."
-        url="https://lotproblem.pl/sv/blog/sas-stockholm-oslo-kopenhamn-ersattning"
+        url="https://problemlot.com/sv/blog/sas-stockholm-oslo-kopenhamn-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

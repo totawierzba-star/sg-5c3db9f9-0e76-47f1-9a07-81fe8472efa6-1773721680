@@ -10,7 +10,7 @@ export default function KLMCompensationGuide() {
       <SEO
         title="KLM Compensation Guide 2025: Flight Delays & Cancellations"
         description="Complete guide to claiming KLM compensation for delays and cancellations. Navigate the Dutch airline's claim process successfully."
-        url="https://lotproblem.pl/en/blog/klm-compensation-guide"
+        url="https://problemlot.com/en/blog/klm-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

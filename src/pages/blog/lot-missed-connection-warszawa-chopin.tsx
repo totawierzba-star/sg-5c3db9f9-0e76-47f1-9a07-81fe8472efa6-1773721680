@@ -7,7 +7,7 @@ export default function LotMissedConnection() {
       <SEO
         title="LOT Missed Connection Warszawa Chopin: Kto odpowiada? 2026"
         description="Przegapiłeś przesiadkę na Chopinie przez opóźniony lot LOT? Sprawdź kiedy LOT musi wypłacić €250-600 odszkodowania za utraconą przesiadkę i jak skutecznie je wyegzekwować."
-        url="https://lotproblem.pl/blog/lot-missed-connection-warszawa-chopin"
+        url="https://problemlot.com/blog/lot-missed-connection-warszawa-chopin"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

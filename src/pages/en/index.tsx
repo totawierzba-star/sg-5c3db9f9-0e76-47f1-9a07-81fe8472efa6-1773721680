@@ -7,9 +7,9 @@ export default function HomeEN() {
   return (
     <>
       <SEO
-        title="BiznesLot - Business Flight Rights & Compensation"
-        description="Expert in business flight rights and compensation. Learn your rights for business trips, work travel, and corporate flight compensation."
-        url="https://bizneslot.pl/en"
+        title="problemlot.com — EU261 Flight Compensation Guide"
+        description="Expert guides on EU261 flight compensation. Learn your rights for delayed and cancelled flights — claim up to €600."
+        url="https://problemlot.com/en"
       />
 
       <div className="min-h-screen">
@@ -21,11 +21,11 @@ export default function HomeEN() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-[#FF6B35]/10 border border-[#FF6B35]/20 rounded-full px-6 py-2 mb-8">
                 <Award className="w-5 h-5 text-[#FF6B35]" />
-                <span className="text-sm font-medium">Expert in Business Flight Rights</span>
+                <span className="text-sm font-medium">EU261 & UK261 Passenger Rights Expert</span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Business Flight<br />
+                Flight Compensation<br />
                 <span className="text-[#FF6B35]">Rights & Compensation</span>
               </h1>
               
@@ -70,7 +70,7 @@ export default function HomeEN() {
                 Key Topics
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Comprehensive guides on business flight rights and compensation
+                Comprehensive EU261 guides on passenger rights and flight compensation
               </p>
             </div>
 
@@ -100,7 +100,7 @@ export default function HomeEN() {
                     <Shield className="w-7 h-7 text-[#FF6B35]" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-[#FF6B35] transition-colors">
-                    Business Flight Compensation
+                    EU261 Flight Compensation
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-4">
                     Comprehensive guide on compensation for business flights. Who is entitled and how to effectively claim it?
@@ -132,13 +132,13 @@ export default function HomeEN() {
           </div>
         </section>
 
-        {/* Why BiznesLot Section */}
+        {/* Why problemlot.com Section */}
         <section className="py-20 bg-gradient-to-br from-slate-50 to-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                  Why BiznesLot?
+                  Why problemlot.com?
                 </h2>
                 <p className="text-lg text-slate-600">
                   Specialized knowledge on business flight rights

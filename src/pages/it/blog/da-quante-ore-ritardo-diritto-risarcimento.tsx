@@ -9,7 +9,7 @@ export default function DaQuanteOreRitardoDirittoRisarcimento() {
       <SEO
         title="Da Quante Ore di Ritardo Hai Diritto al Risarcimento? [Guida 2026]"
         description="Scopri da quante ore di ritardo scatta il diritto al risarcimento volo: €250, €400 o €600 secondo il Regolamento CE 261/2004. Risposta immediata + procedura."
-        url="https://lotproblem.pl/it/blog/da-quante-ore-ritardo-diritto-risarcimento"
+        url="https://problemlot.com/it/blog/da-quante-ore-ritardo-diritto-risarcimento"
       />
 
       {/* Schema Article */}
@@ -30,14 +30,14 @@ export default function DaQuanteOreRitardoDirittoRisarcimento() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/da-quante-ore-ritardo-diritto-risarcimento"
+              "@id": "https://problemlot.com/it/blog/da-quante-ore-ritardo-diritto-risarcimento"
             },
             "about": {
               "@type": "Thing",

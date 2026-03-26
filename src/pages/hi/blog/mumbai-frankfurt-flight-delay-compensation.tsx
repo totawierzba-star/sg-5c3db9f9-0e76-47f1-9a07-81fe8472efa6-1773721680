@@ -11,7 +11,7 @@ export default function MumbaiFrankfurtFlightDelayCompensation() {
       <SEO 
         title="मुंबई–फ्रैंकफर्ट उड़ान में देरी — €600 मुआवज़ा गाइड [2026]"
         description="मुंबई-फ्रैंकफर्ट रूट पर देरी के लिए €600 (₹52,000) मुआवज़ा। Lufthansa, Air India और Vistara के लिए विशेष सलाह। कनेक्शन छूटने पर दोगुना मुआवज़ा।"
-        canonicalUrl="https://lotproblem.pl/hi/blog/mumbai-frankfurt-flight-delay-compensation"
+        canonicalUrl="https://problemlot.com/hi/blog/mumbai-frankfurt-flight-delay-compensation"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

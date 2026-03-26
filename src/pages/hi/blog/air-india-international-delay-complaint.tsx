@@ -19,7 +19,7 @@ export default function AirIndiaInternationalDelayComplaint() {
           "name": "LotProblem.pl",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://lotproblem.pl/og-image.png"
+            "url": "https://problemlot.com/og-image.png"
           }
         },
         "datePublished": "2026-02-22",
@@ -63,7 +63,7 @@ export default function AirIndiaInternationalDelayComplaint() {
       <SEO
         title="Air India की अंतरराष्ट्रीय उड़ानों में देरी – शिकायत कैसे दर्ज करें? [2026 गाइड]"
         description="Air India की देरी के लिए DGCA और EC 261/2004 के तहत शिकायत दर्ज करें। €600 (₹52,000) तक मुआवज़ा। Tata के बाद नई नीतियां + टेम्पलेट + विशेषज्ञ सलाह।"
-        url="https://lotproblem.pl/hi/blog/air-india-international-delay-complaint"
+        url="https://problemlot.com/hi/blog/air-india-international-delay-complaint"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">

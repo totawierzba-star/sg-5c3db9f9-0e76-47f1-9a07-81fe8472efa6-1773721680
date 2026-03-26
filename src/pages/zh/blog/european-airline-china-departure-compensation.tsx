@@ -9,7 +9,7 @@ export default function EuropeanAirlineChinaDepartureCompensation() {
       <SEO
         title="欧洲航司从中国出发航班补偿【2026】Europe Airlines China Departure Compensation"
         description="汉莎、法航等欧洲航司从北京、上海出发航班延误有赔偿吗？详解EU 261对China→Europe航线的适用规则、实际案例、索赔流程。最高€600。"
-        url="https://lotproblem.pl/zh/blog/european-airline-china-departure-compensation"
+        url="https://problemlot.com/zh/blog/european-airline-china-departure-compensation"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

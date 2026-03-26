@@ -20,7 +20,7 @@ export default function LOTPoukazOdskodnenieVoucher() {
       <SEO
         title="LOT Ponúka Poukaz (Voucher) Namiesto Odškodnenia – Musíte Ho Prijať?"
         description="LOT vám ponúkol voucher namiesto peňazí? Pozor! Zistite, prečo je hotovosť lepšia a ako odmietnuť voucher. ✓ Vaše práva ✓ Ako získať peniaze na účet"
-        url="https://lotproblem.pl/sk/blog/lot-poukaz-odskodnenie-voucher"
+        url="https://problemlot.com/sk/blog/lot-poukaz-odskodnenie-voucher"
       />
 
       {/* Article Schema */}
@@ -32,7 +32,7 @@ export default function LOTPoukazOdskodnenieVoucher() {
             "@type": "Article",
             "headline": "LOT Ponúka Poukaz (Voucher) Namiesto Odškodnenia – Musíte Ho Prijať?",
             "description": "Prečo by ste nemali prijať voucher od LOT Polish Airlines a ako trvať na hotovostnom odškodnení.",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -42,7 +42,7 @@ export default function LOTPoukazOdskodnenieVoucher() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-03-05",

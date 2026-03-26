@@ -20,7 +20,7 @@ export default function HindiBlogIndex() {
       <SEO
         title="उड़ान मुआवजा Blog – विलंबित और रद्द उड़ान गाइड"
         description="विलंबित या रद्द की गई उड़ान के लिए मुआवजा प्राप्त करने के बारे में विस्तृत गाइड। EU 261/2004, हवाई अड्डे की जानकारी और यात्री अधिकार।"
-        url="https://lotproblem.pl/hi/blog"
+        url="https://problemlot.com/hi/blog"
       />
 
       {/* Hero Section */}

@@ -18,7 +18,7 @@ export default function BritishAirwaysRisarcimento() {
       <SEO
         title="British Airways Risarcimento: Guida Completa 2026 — Fino a €600"
         description="Volo British Airways in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento. Procedura, Brexit e diritti dei passeggeri italiani spiegati."
-        url="https://lotproblem.pl/it/blog/british-airways-risarcimento"
+        url="https://problemlot.com/it/blog/british-airways-risarcimento"
       />
 
       {/* Schema Article */}
@@ -37,7 +37,7 @@ export default function BritishAirwaysRisarcimento() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png",
+                "url": "https://problemlot.com/og-image.png",
               },
             },
             "datePublished": "2026-03-19",
@@ -45,7 +45,7 @@ export default function BritishAirwaysRisarcimento() {
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id":
-                "https://lotproblem.pl/it/blog/british-airways-risarcimento",
+                "https://problemlot.com/it/blog/british-airways-risarcimento",
             },
           }),
         }}

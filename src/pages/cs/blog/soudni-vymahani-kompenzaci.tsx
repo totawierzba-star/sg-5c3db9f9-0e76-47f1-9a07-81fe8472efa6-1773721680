@@ -9,8 +9,8 @@ export default function SoudniVymahaniKompenzaci() {
       <SEO 
         title="Soudní vymáhání kompenzace za zpožděný let - kdy se vyplatí žaloba?"
         description="Kdy se vyplatí soudit s aerolinkou? Průvodce soudním vymáháním, evropské drobné nároky a náklady řízení."
-        url="https://lotproblem.pl/cs/blog/soudni-vymahani-kompenzaci"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/soudni-vymahani-kompenzaci"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -11,7 +11,7 @@ export default function SasComplaintLetterPage() {
       <SEO
         title="Hur skriver du ett effektivt klagomålsbrev till SAS? — mall och råd"
         description="Vill du skriva till SAS själv? Använd vår beprövade mall för reklamation av flygförsening. Juridiskt korrekt språk som ger resultat."
-        url="https://lotproblem.pl/sv/blog/klagomalsbrev-sas-mall"
+        url="https://problemlot.com/sv/blog/klagomalsbrev-sas-mall"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

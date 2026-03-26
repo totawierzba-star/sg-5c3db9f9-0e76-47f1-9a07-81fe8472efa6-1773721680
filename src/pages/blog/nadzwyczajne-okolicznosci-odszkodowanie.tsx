@@ -75,7 +75,7 @@ export default function NadzwyczajneOkolicznosciOdszkodowanie() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/logo.png"
+        "url": "https://problemlot.com/logo.png"
       }
     },
     "datePublished": "2025-01-24",
@@ -87,7 +87,7 @@ export default function NadzwyczajneOkolicznosciOdszkodowanie() {
       <SEO
         title="Nadzwyczajne okoliczności 2025 — Kiedy linie NIE płacą? [Przewodnik prawny]"
         description="Co to są nadzwyczajne okoliczności? Kiedy linie mogą odmówić odszkodowania? Kompletny przewodnik + orzecznictwo TSUE."
-        url="https://lotproblem.pl/blog/nadzwyczajne-okolicznosci-odszkodowanie"
+        url="https://problemlot.com/blog/nadzwyczajne-okolicznosci-odszkodowanie"
       />
       <script
         type="application/ld+json"

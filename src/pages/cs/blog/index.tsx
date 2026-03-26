@@ -27,7 +27,7 @@ export default function CsBlogIndex() {
       <SEO
         title="Blog - Průvodce kompenzacemi za lety | LotProblem.cz"
         description="Podrobné průvodce kompenzacemi za zpožděné a zrušené lety z českých letišť. EU261 práva cestujících."
-        url="https://lotproblem.pl/cs/blog"
+        url="https://problemlot.com/cs/blog"
       />
 
       {/* Hero Section */}

@@ -64,7 +64,7 @@ export default function LOTDeniedCompensation() {
     "@type": "Article",
     "headline": "LOT odmówił odszkodowania — co zrobić dalej? [Przewodnik 2025]",
     "description": "LOT odmówił wypłaty odszkodowania? Nie rezygnuj! Poznaj sprawdzone metody jak skutecznie odzyskać swoje pieniądze (91% skuteczności). Szczegółowy plan działania krok po kroku.",
-    "image": "https://lotproblem.pl/og-image.png",
+    "image": "https://problemlot.com/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "LotProblem.pl"
@@ -74,7 +74,7 @@ export default function LOTDeniedCompensation() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-02-27",
@@ -86,7 +86,7 @@ export default function LOTDeniedCompensation() {
       <SEO
         title="LOT odmówił odszkodowania — co zrobić? [91% skuteczności odzyskania]"
         description="LOT odmówił wypłaty? Nie rezygnuj! Poznaj sprawdzone metody odzyskania odszkodowania (91% skuteczności). Szczegółowy plan krok po kroku + najczęstsze powody odmowy."
-        url="https://lotproblem.pl/blog/lot-odmowil-odszkodowania"
+        url="https://problemlot.com/blog/lot-odmowil-odszkodowania"
       />
       
       <script

@@ -7,7 +7,7 @@ export default function LotDowngrade() {
       <SEO
         title="LOT downgrade — przeniesienie do niższej klasy i zwrot pieniędzy 2026"
         description="LOT przeniósł Cię z Business do Economy bez Twojej zgody? Sprawdź swoje prawa do zwrotu 30-75% ceny biletu i jak skutecznie wyegzekwować rekompensatę."
-        url="https://lotproblem.pl/blog/lot-downgrade-nizszej-klasy-zwrot"
+        url="https://problemlot.com/blog/lot-downgrade-nizszej-klasy-zwrot"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

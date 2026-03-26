@@ -11,7 +11,7 @@ export default function EasyJetItaliaRisarcimento() {
       <SEO
         title="easyJet Italia risarcimento — ritardi e cancellazioni 2026"
         description="Guida completa su come ottenere risarcimento da easyJet per voli in ritardo o cancellati in Italia. Procedure, importi fino a 600 € e diritti passeggeri CE 261/2004."
-        url="https://lotproblem.pl/it/blog/easyjet-italia-risarcimento"
+        url="https://problemlot.com/it/blog/easyjet-italia-risarcimento"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">

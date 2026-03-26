@@ -10,7 +10,7 @@ export default function AeroportoBergamoRisarcimento() {
       <SEO
         title="Aeroporto Bergamo Orio al Serio: guida al risarcimento voli"
         description="Problemi con il volo a Bergamo (BGY)? Guida completa ai diritti passeggeri e procedure per ottenere compensazione fino a 600 € per ritardi e cancellazioni."
-        url="https://lotproblem.pl/it/blog/aeroporto-bergamo-orio-al-serio-risarcimento"
+        url="https://problemlot.com/it/blog/aeroporto-bergamo-orio-al-serio-risarcimento"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-green-50 to-white py-12">

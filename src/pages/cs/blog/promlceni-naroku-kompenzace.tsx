@@ -9,7 +9,7 @@ export default function PromlceniNarokuKompenzace() {
       <SEO 
         title="Promlčení nároků na kompenzaci za zpožděný let - kolik máte času?"
         description="Zjistěte, jak dlouho máte na uplatnění nároku na kompenzaci za zpožděný nebo zrušený let podle právní úpravy v ČR."
-        url="https://lotproblem.pl/cs/blog/promlceni-naroku-kompenzace"
+        url="https://problemlot.com/cs/blog/promlceni-naroku-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -324,7 +324,7 @@ export default function PromlceniNarokuKompenzace() {
                 "name": "LotProblem.pl"
               },
               "datePublished": "2026-02-24",
-              "image": "https://lotproblem.pl/og-image.png"
+              "image": "https://problemlot.com/og-image.png"
             })
           }}
         />

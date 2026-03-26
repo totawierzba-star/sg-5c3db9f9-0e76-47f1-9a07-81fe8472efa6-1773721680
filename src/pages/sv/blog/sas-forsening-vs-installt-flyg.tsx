@@ -11,7 +11,7 @@ export default function SasDelayVsCancellationPage() {
       <SEO
         title="SAS Försening vs. Inställt flyg — Vad är skillnaden för ersättning?"
         description="Reglerna skiljer sig åt beroende på om ditt SAS-flyg var försenat eller inställt. Vi reder ut begreppen och visar hur du maximerar din ersättning."
-        url="https://lotproblem.pl/sv/blog/sas-forsening-vs-installt-flyg"
+        url="https://problemlot.com/sv/blog/sas-forsening-vs-installt-flyg"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

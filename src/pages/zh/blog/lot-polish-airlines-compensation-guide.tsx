@@ -23,7 +23,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
       <SEO
         title="LOT 波兰航空延误或取消赔偿指南 2026 | 华沙-北京航班权利"
         description="LOT 波兰航空航班延误或取消？了解中国乘客如何获得 €250-€600 欧盟赔偿。华沙直飞及转机航班完整指南。"
-        url="https://lotproblem.pl/zh/blog/lot-polish-airlines-compensation-guide"
+        url="https://problemlot.com/zh/blog/lot-polish-airlines-compensation-guide"
       />
 
       {/* Article Schema */}
@@ -35,7 +35,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
             "@type": "Article",
             "headline": "LOT 波兰航空延误或取消航班赔偿指南 2026",
             "description": "中国乘客如何获得 LOT 波兰航空 €250-€600 欧盟赔偿的完整指南",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -45,7 +45,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-01-30",

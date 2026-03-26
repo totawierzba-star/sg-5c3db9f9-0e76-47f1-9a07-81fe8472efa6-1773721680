@@ -7,7 +7,7 @@ export default function LotOverbookingOdmowa() {
       <SEO
         title="LOT Overbooking: Odmowa wejścia na pokład — €250-600 odszkodowania 2026"
         description="LOT odmówiło wejścia na pokład z powodu overbookingu? Sprawdź swoje prawa, ile wynosi odszkodowanie (€250-600) i jak skutecznie je wyegzekwować w 2026."
-        url="https://lotproblem.pl/blog/lot-overbooking-odmowa-wejscia"
+        url="https://problemlot.com/blog/lot-overbooking-odmowa-wejscia"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

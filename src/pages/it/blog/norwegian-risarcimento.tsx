@@ -18,7 +18,7 @@ export default function NorwegianRisarcimento() {
       <SEO
         title="Norwegian Risarcimento Voli: Guida Completa 2026 — Fino a €600"
         description="Volo Norwegian in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento CE 261/2004. Procedura reclamo, documenti e cosa fare se Norwegian rifiuta."
-        url="https://lotproblem.pl/it/blog/norwegian-risarcimento"
+        url="https://problemlot.com/it/blog/norwegian-risarcimento"
       />
 
       <script
@@ -33,13 +33,13 @@ export default function NorwegianRisarcimento() {
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" },
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/norwegian-risarcimento",
+              "@id": "https://problemlot.com/it/blog/norwegian-risarcimento",
             },
           }),
         }}

@@ -11,7 +11,7 @@ export default function LufthansaSwedenPage() {
       <SEO
         title="Lufthansa försenat flyg från Sverige — missad anslutning"
         description="Flyger du med Lufthansa från Arlanda eller Landvetter? Missade du bytet i Frankfurt/München? Se hur du får 600 € i ersättning."
-        url="https://lotproblem.pl/sv/blog/lufthansa-sverige-ersattning"
+        url="https://problemlot.com/sv/blog/lufthansa-sverige-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

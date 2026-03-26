@@ -9,7 +9,7 @@ export default function PragueAirportCancelledFlight() {
       <SEO
         title="Letiště Praha zrušený let – kompenzace a práva cestujících 2026"
         description="Zrušený let z letiště Praha-Ruzyně? Kompletní průvodce kompenzací až 600 € + vrácení peněz podle EU 261. Co dělat když aerolinka zruší let?"
-        url="https://lotproblem.pl/cs/blog/letiste-praha-zruseny-let"
+        url="https://problemlot.com/cs/blog/letiste-praha-zruseny-let"
       />
 
       {/* Breadcrumb */}

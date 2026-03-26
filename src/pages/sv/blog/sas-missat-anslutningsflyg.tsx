@@ -11,7 +11,7 @@ export default function SasMissedConnectionPage() {
       <SEO
         title="Missat anslutningsflyg på grund av SAS-försening — dina rättigheter"
         description="Missade du ditt nästa flyg för att SAS var sena? Du kan ha rätt till upp till 600 €. Läs om reglerna för anslutningsflyg."
-        url="https://lotproblem.pl/sv/blog/sas-missat-anslutningsflyg"
+        url="https://problemlot.com/sv/blog/sas-missat-anslutningsflyg"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

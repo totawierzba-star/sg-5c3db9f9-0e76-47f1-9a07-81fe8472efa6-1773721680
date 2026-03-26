@@ -9,8 +9,8 @@ export default function CasteChybyPriReklamaci() {
       <SEO 
         title="Časté chyby při reklamaci zpožděného letu - jak se jich vyhnout"
         description="Zjistěte nejčastější chyby při reklamaci kompenzace a jak se jim vyhnout. Zvyšte své šance na úspěch."
-        url="https://lotproblem.pl/cs/blog/caste-chyby-pri-reklamaci"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/caste-chyby-pri-reklamaci"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

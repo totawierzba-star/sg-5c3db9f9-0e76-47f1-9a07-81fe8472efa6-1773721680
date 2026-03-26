@@ -9,7 +9,7 @@ export default function MilanoParigRitardoRisarcimento() {
       <SEO
         title="Volo Milano–Parigi in Ritardo: Risarcimento Fino a €250 — Guida 2026"
         description="Volo Milano–Parigi in ritardo di 3 ore o più? Scopri quanto spetta (€250), quali compagnie operano la rotta MXP/LIN/BGY→CDG/ORY e come richiedere il risarcimento."
-        url="https://lotproblem.pl/it/blog/milano-parigi-ritardo-risarcimento"
+        url="https://problemlot.com/it/blog/milano-parigi-ritardo-risarcimento"
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -18,10 +18,10 @@ export default function MilanoParigRitardoRisarcimento() {
         "headline": "Volo Milano–Parigi in Ritardo: Risarcimento e Diritti dei Passeggeri 2026",
         "description": "Guida completa al risarcimento per voli Milano–Parigi in ritardo o cancellati. Importi, compagnie e procedura CE 261/2004.",
         "author": { "@type": "Organization", "name": "LotProblem.pl" },
-        "publisher": { "@type": "Organization", "name": "LotProblem.pl", "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" } },
+        "publisher": { "@type": "Organization", "name": "LotProblem.pl", "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" } },
         "datePublished": "2026-03-19",
         "dateModified": "2026-03-19",
-        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://lotproblem.pl/it/blog/milano-parigi-ritardo-risarcimento" }
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://problemlot.com/it/blog/milano-parigi-ritardo-risarcimento" }
       }) }} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

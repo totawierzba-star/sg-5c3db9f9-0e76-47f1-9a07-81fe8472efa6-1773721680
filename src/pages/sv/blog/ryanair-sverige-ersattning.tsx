@@ -11,7 +11,7 @@ export default function RyanairSwedenPage() {
       <SEO
         title="Ryanair i Sverige — ersättning för försenat och inställt flyg"
         description="Flyger du med Ryanair från Arlanda eller Landvetter? Se dina rättigheter vid förseningar. Vi hjälper dig att få upp till 600 €."
-        url="https://lotproblem.pl/sv/blog/ryanair-sverige-ersattning"
+        url="https://problemlot.com/sv/blog/ryanair-sverige-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

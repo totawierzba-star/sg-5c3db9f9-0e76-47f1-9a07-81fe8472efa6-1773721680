@@ -10,7 +10,7 @@ export default function AirFranceCompensationGuide() {
       <SEO
         title="Air France Compensation Guide 2025: Delays & Cancellations"
         description="Complete guide to claiming Air France compensation. Learn the process, timelines, and how to maximize your claim success."
-        url="https://lotproblem.pl/en/blog/air-france-compensation-guide"
+        url="https://problemlot.com/en/blog/air-france-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

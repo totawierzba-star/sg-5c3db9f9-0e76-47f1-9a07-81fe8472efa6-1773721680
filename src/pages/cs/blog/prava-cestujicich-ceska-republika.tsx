@@ -9,7 +9,7 @@ export default function PravaCestujicichCeskaRepublika() {
       <SEO
         title="Práva cestujících v ČR – co dělat při zpoždění letu z Prahy"
         description="Kompletní průvodce právy leteckých cestujících v České republice. ÚCL, ČOI, kompenzace až 600 € – zjistěte, jak postupovat."
-        url="https://lotproblem.pl/cs/blog/prava-cestujicich-ceska-republika"
+        url="https://problemlot.com/cs/blog/prava-cestujicich-ceska-republika"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -872,7 +872,7 @@ export default function PravaCestujicichCeskaRepublika() {
             "dateModified": "2026-02-23",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/cs/blog/prava-cestujicich-ceska-republika"
+              "@id": "https://problemlot.com/cs/blog/prava-cestujicich-ceska-republika"
             }
           })
         }}

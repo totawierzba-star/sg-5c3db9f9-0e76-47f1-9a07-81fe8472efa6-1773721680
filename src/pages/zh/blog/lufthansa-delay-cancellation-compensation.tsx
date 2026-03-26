@@ -20,7 +20,7 @@ export default function LufthansaCompensationGuide() {
             "@type": "Article",
             "headline": "汉莎航空Lufthansa延误/取消索赔攻略【2026】",
             "description": "汉莎航空航班延误或取消时，中国护照持有者如何获得 €250-€600 欧盟赔偿的完整指南。",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "author": {
               "@type": "Organization",
               "name": "LotProblem.pl"
@@ -30,7 +30,7 @@ export default function LufthansaCompensationGuide() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2026-02-25",

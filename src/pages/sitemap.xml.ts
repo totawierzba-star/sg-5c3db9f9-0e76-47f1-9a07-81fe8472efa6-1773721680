@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next';
 
-const EXTERNAL_DATA_URL = 'https://bizneslot.info';
+const EXTERNAL_DATA_URL = 'https://problemlot.com';
 
 function generateSiteMap(pages: { url: string; priority: string; changefreq: string }[]) {
   return `<?xml version="1.0" encoding="UTF-8"?>

@@ -10,7 +10,7 @@ export default function WizzAirCompensationGuide() {
       <SEO
         title="Wizz Air Compensation Guide 2025: How to Claim €250-€600"
         description="Complete guide to claiming Wizz Air compensation for delays, cancellations, and denied boarding. Learn the process and avoid common rejection tactics."
-        url="https://lotproblem.pl/en/blog/wizz-air-compensation-guide"
+        url="https://problemlot.com/en/blog/wizz-air-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

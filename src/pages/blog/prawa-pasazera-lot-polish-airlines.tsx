@@ -64,7 +64,7 @@ export default function LOTPassengerRights() {
     "@type": "Article",
     "headline": "Prawa pasażera LOT Polish Airlines — kompletny przewodnik po WE 261/2004",
     "description": "Poznaj wszystkie prawa pasażera LOT: odszkodowania, opieka na lotnisku, zwroty, alternatywny transport. Dowiedz się co gwarantuje WE 261/2004 i jak egzekwować swoje prawa.",
-    "image": "https://lotproblem.pl/og-image.png",
+    "image": "https://problemlot.com/og-image.png",
     "author": {
       "@type": "Organization",
       "name": "LotProblem.pl"
@@ -74,7 +74,7 @@ export default function LOTPassengerRights() {
       "name": "LotProblem.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-02-27",
@@ -86,7 +86,7 @@ export default function LOTPassengerRights() {
       <SEO
         title="Prawa Pasażera LOT Polish Airlines 2025 — WE 261/2004 [Kompletny Przewodnik]"
         description="Wszystkie prawa pasażera LOT: odszkodowania 250€-600€, opieka na lotnisku, zwroty, hotel. Poznaj WE 261/2004 i skutecznie egzekwuj swoje prawa!"
-        url="https://lotproblem.pl/blog/prawa-pasazera-lot-polish-airlines"
+        url="https://problemlot.com/blog/prawa-pasazera-lot-polish-airlines"
       />
       
       <script

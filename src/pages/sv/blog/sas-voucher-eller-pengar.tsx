@@ -11,7 +11,7 @@ export default function SasVoucherPage() {
       <SEO
         title="SAS Voucher eller Pengar? Du måste inte acceptera tillgodokvitto"
         description="Erbjuder SAS en voucher istället för kontant ersättning? Läs varför du bör tacka nej och kräva riktiga pengar enligt EU-lag. Guide 2025."
-        url="https://lotproblem.pl/sv/blog/sas-voucher-eller-pengar"
+        url="https://problemlot.com/sv/blog/sas-voucher-eller-pengar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

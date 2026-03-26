@@ -9,8 +9,8 @@ export default function TurkishAirlinesKompenzace() {
       <SEO 
         title="Turkish Airlines kompenzace za zpoždění a zrušení letu 2026"
         description="Kompletní průvodce reklamací u Turkish Airlines. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let THY."
-        url="https://lotproblem.pl/cs/blog/turkish-airlines-kompenzace"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/turkish-airlines-kompenzace"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

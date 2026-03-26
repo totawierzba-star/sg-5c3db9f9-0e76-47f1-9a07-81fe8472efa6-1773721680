@@ -100,7 +100,7 @@ export default function LOTVoucherVsCash() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -112,7 +112,7 @@ export default function LOTVoucherVsCash() {
       <SEO
         title="LOT Voucher vs Cash Compensation: Do I Have to Accept It? | EU261 Guide"
         description="LOT offered a travel voucher instead of cash? You can refuse! Learn why cash is better, how to reject the voucher, and get your full compensation via bank transfer."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-voucher-vs-cash"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-voucher-vs-cash"
       />
 
       <script

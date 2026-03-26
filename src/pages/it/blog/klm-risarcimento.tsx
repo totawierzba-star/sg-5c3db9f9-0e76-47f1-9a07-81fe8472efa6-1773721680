@@ -17,7 +17,7 @@ export default function KlmRisarcimento() {
       <SEO
         title="KLM Risarcimento: Guida Completa per Ritardi e Cancellazioni [2026]"
         description="Volo KLM in ritardo o cancellato? Scopri come ottenere fino a €600 di risarcimento. Procedura di reclamo, documenti necessari e tempi di risposta KLM."
-        url="https://lotproblem.pl/it/blog/klm-risarcimento"
+        url="https://problemlot.com/it/blog/klm-risarcimento"
       />
 
       {/* Schema Article */}
@@ -33,13 +33,13 @@ export default function KlmRisarcimento() {
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" },
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/klm-risarcimento",
+              "@id": "https://problemlot.com/it/blog/klm-risarcimento",
             },
           }),
         }}

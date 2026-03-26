@@ -9,8 +9,8 @@ export default function LetisteBrnoZpozdeni() {
       <SEO
         title="Letiště Brno-Tuřany (BRQ): Zpožděný let a kompenzace 2026"
         description="Měli jste zpoždění z letiště Brno (BRQ)? Zjistěte, jak získat až 600 € odškodnění. Smartwings, Ryanair a další lety z Brna."
-        url="https://lotproblem.pl/cs/blog/letiste-brno-zpozdeni"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/letiste-brno-zpozdeni"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
@@ -161,11 +161,11 @@ export default function LetisteBrnoZpozdeni() {
             "author": { "@type": "Organization", "name": "LotProblem.pl" },
             "datePublished": "2026-02-23",
             "dateModified": "2026-02-23",
-            "image": "https://lotproblem.pl/og-image.png",
+            "image": "https://problemlot.com/og-image.png",
             "publisher": {
               "@type": "Organization",
               "name": "LotProblem.pl",
-              "logo": { "@type": "ImageObject", "url": "https://lotproblem.pl/og-image.png" }
+              "logo": { "@type": "ImageObject", "url": "https://problemlot.com/og-image.png" }
             }
           })
         }}

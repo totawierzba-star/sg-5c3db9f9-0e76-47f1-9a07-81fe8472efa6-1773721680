@@ -18,7 +18,7 @@ export default function DelayedFlightEn() {
       <SEO
         title="Flight Delayed 3+ Hours? Claim Up to €600 Compensation | EU261 Rights"
         description="Your flight is delayed? Check if you're entitled to €250-€600 compensation under EU Regulation 261/2004. Free claim check and expert support."
-        url="https://lotproblem.pl/en/delayed-flight"
+        url="https://problemlot.com/en/delayed-flight"
       />
 
       {/* Hero Section */}

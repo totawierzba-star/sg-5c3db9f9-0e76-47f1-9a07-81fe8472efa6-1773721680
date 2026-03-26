@@ -11,7 +11,7 @@ export default function DeniedBoardingPage() {
       <SEO
         title="Nekad ombordstigning (överbokning) — dina rättigheter och ersättning"
         description="Blev du nekad att gå ombord för att flyget var fullt? Överbokning ger dig rätt till omedelbar ersättning upp till 600 €. Läs mer."
-        url="https://lotproblem.pl/sv/blog/nekad-ombordstigning-overbokning"
+        url="https://problemlot.com/sv/blog/nekad-ombordstigning-overbokning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

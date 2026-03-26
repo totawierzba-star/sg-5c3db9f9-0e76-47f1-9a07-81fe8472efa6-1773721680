@@ -9,7 +9,7 @@ export default function MimoradneOkolnostiVysvetleny() {
       <SEO
         title="Mimořádné okolnosti vysvětleny【2026】Kdy aerolinka může odmítnout kompenzaci?"
         description="60% aerolinek lže o mimořádných okolnostech! Zjistěte pravdu o technických závadách, počasí a stávkách. Kompletní průvodce jak zpochybnit odmítnutí a získat €250-€600."
-        url="https://lotproblem.pl/cs/blog/mimoradne-okolnosti-vysvetleny"
+        url="https://problemlot.com/cs/blog/mimoradne-okolnosti-vysvetleny"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

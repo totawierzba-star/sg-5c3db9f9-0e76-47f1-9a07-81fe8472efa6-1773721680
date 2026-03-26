@@ -11,7 +11,7 @@ export default function SasCodesharePage() {
       <SEO
         title="SAS codeshare med Lufthansa eller United — vem betalar ersättningen?"
         description="Köpte du biljett av SAS men flög med Lufthansa eller United? Se vem du ska kräva ersättning av vid försening (Operating Carrier)."
-        url="https://lotproblem.pl/sv/blog/sas-codeshare-lufthansa-united"
+        url="https://problemlot.com/sv/blog/sas-codeshare-lufthansa-united"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

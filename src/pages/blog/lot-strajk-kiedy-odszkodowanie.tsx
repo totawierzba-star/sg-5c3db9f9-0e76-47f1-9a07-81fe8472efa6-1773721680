@@ -7,7 +7,7 @@ export default function LotStrajkOdszkodowanie() {
       <SEO
         title="LOT Strajk: Kiedy należy się odszkodowanie do 600 €? 2026"
         description="Czy strajk LOT zwalnia z odszkodowania? Sprawdź kiedy strajk to nadzwyczajna okoliczność, a kiedy LOT musi zapłacić €250-600 za opóźniony/odwołany lot."
-        url="https://lotproblem.pl/blog/lot-strajk-kiedy-odszkodowanie"
+        url="https://problemlot.com/blog/lot-strajk-kiedy-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

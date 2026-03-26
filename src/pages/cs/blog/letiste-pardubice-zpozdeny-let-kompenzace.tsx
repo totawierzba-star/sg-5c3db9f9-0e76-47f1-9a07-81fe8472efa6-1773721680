@@ -9,7 +9,7 @@ export default function LetistePardubiceZpozdenyLet() {
       <SEO
         title="Letiště Pardubice: Zpožděný let a kompenzace 2026"
         description="Měli jste zpoždění z letiště Pardubice? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z PED."
-        url="https://lotproblem.pl/cs/blog/letiste-pardubice-zpozdeny-let-kompenzace"
+        url="https://problemlot.com/cs/blog/letiste-pardubice-zpozdeny-let-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

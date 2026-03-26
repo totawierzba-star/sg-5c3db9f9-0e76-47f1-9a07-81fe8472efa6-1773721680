@@ -25,6 +25,9 @@ export function MobileNav({
   const t = getTranslations(locale);
   const basePath = locale === "en" ? "/en" : "";
 
+  const localizedRoute = (plPath: string, enPath: string) =>
+    locale === "en" ? enPath : plPath;
+
   // Determine if controlled or uncontrolled
   const isControlled = externalIsOpen !== undefined;
   const isOpen = isControlled ? externalIsOpen : internalIsOpen;
@@ -61,10 +64,7 @@ export function MobileNav({
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-slate-700">
             <div className="flex items-center gap-3">
-              <img src="/bizneslotlogotyp.png" alt="Logo" className="h-8 w-auto" />
-              <h2 className="text-xl font-bold text-white">
-                {locale === "en" ? "BusinessFlight.info" : "BiznesLot.info"}
-              </h2>
+              <h2 className="text-xl font-bold text-white">problemlot.com</h2>
             </div>
             <button
               onClick={handleClose}
@@ -78,7 +78,7 @@ export function MobileNav({
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={`${basePath}/`}
+                  href={locale === "en" ? "/en" : "/"}
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath === "/" ? "bg-slate-800" : ""}`}
                   onClick={handleClose}
                 >
@@ -88,28 +88,8 @@ export function MobileNav({
               </li>
               <li>
                 <Link
-                  href={`${basePath}/pracodawca-a-odszkodowanie`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("pracodawca") ? "bg-slate-800" : ""}`}
-                  onClick={handleClose}
-                >
-                  <Shield className="h-5 w-5" />
-                  {t.nav.employerCompensation}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`${basePath}/anulowany-lot-delegacja`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("anulowany") ? "bg-slate-800" : ""}`}
-                  onClick={handleClose}
-                >
-                  <Plane className="h-5 w-5" />
-                  {t.nav.canceledFlight}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`${basePath}/opozniony-lot-delegacja`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("opozniony") ? "bg-slate-800" : ""}`}
+                  href={localizedRoute("/opozniony-lot", "/en/delayed-flight")}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("opozniony") || currentPath?.includes("delayed") ? "bg-slate-800" : ""}`}
                   onClick={handleClose}
                 >
                   <Plane className="h-5 w-5" />
@@ -118,18 +98,28 @@ export function MobileNav({
               </li>
               <li>
                 <Link
-                  href={`${basePath}/bilet-firmowy-prawa`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("bilet") ? "bg-slate-800" : ""}`}
+                  href={localizedRoute("/odwolany-lot", "/en/cancelled-flight")}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("odwolany") || currentPath?.includes("cancelled") ? "bg-slate-800" : ""}`}
                   onClick={handleClose}
                 >
-                  <FileText className="h-5 w-5" />
-                  {t.nav.ticketRights}
+                  <Plane className="h-5 w-5" />
+                  {t.nav.cancelledFlight}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={`${basePath}/artykuly`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("artykuly") ? "bg-slate-800" : ""}`}
+                  href={localizedRoute("/ile-mozesz-dostac", "/en/compensation-calculator")}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("ile-mozesz") || currentPath?.includes("calculator") ? "bg-slate-800" : ""}`}
+                  onClick={handleClose}
+                >
+                  <Shield className="h-5 w-5" />
+                  {t.nav.compensation}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={localizedRoute("/blog", "/en/blog")}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("blog") ? "bg-slate-800" : ""}`}
                   onClick={handleClose}
                 >
                   <FileText className="h-5 w-5" />
@@ -138,8 +128,8 @@ export function MobileNav({
               </li>
               <li>
                 <Link
-                  href={`${basePath}/o-autorze`}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("autor") ? "bg-slate-800" : ""}`}
+                  href={localizedRoute("/o-autorze", "/en/about")}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-slate-800 transition-colors ${currentPath?.includes("autor") || currentPath?.includes("about") ? "bg-slate-800" : ""}`}
                   onClick={handleClose}
                 >
                   <User className="h-5 w-5" />

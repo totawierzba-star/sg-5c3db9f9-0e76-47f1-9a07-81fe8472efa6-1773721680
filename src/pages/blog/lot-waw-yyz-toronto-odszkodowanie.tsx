@@ -7,7 +7,7 @@ export default function LotWawYyzToronto() {
       <SEO
         title="LOT WAW–YYZ Toronto: Odszkodowanie €600 za opóźnienie 2026"
         description="Lot LOT z Warszawy do Toronto opóźniony? Sprawdź jak uzyskać 600 € odszkodowania za transatlantycki lot. Prawa pasażera WE 261/2004."
-        url="https://lotproblem.pl/blog/lot-waw-yyz-toronto-odszkodowanie"
+        url="https://problemlot.com/blog/lot-waw-yyz-toronto-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

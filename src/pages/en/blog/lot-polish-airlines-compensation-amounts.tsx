@@ -117,7 +117,7 @@ export default function LOTCompensationAmounts() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -129,7 +129,7 @@ export default function LOTCompensationAmounts() {
       <SEO
         title="LOT Polish Airlines Compensation: How Much Can You Claim? €250, €400, €600 | EU261 Guide 2025"
         description="Complete breakdown of LOT compensation amounts: €250 for short flights, €400 for medium, €600 for long-haul. Learn exactly how much you can claim under EU261 for delays and cancellations."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-compensation-amounts"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-compensation-amounts"
       />
 
       <script

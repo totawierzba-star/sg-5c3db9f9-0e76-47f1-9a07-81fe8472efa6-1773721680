@@ -9,8 +9,8 @@ export default function EU261CompleteGuideProtectedFlights() {
       <SEO 
         title="欧盟航班延误赔偿完整指南——哪些航班受EU 261/2004保护？"
         description="详细解读EU 261/2004法规，了解哪些航班有资格申请赔偿，中国乘客如何获得最高600欧元赔偿。"
-        url="https://lotproblem.pl/zh/blog/eu261-complete-guide-protected-flights"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/zh/blog/eu261-complete-guide-protected-flights"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

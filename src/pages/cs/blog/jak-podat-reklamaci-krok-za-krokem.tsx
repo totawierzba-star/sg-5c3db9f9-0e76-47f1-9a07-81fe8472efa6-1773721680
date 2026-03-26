@@ -9,8 +9,8 @@ export default function JakPodatReklamaciKrokZaKrokem() {
       <SEO 
         title="Jak podat reklamaci za zpožděný let krok za krokem - průvodce 2026"
         description="Detailní návod, jak správně podat reklamaci za zpožděný nebo zrušený let. Šablony, termíny, dokumenty a časté chyby."
-        url="https://lotproblem.pl/cs/blog/jak-podat-reklamaci-krok-za-krokem"
-        image="https://lotproblem.pl/og-image.png"
+        url="https://problemlot.com/cs/blog/jak-podat-reklamaci-krok-za-krokem"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -9,7 +9,7 @@ export default function LetistePardubiceZrusenyLet() {
       <SEO
         title="Letiště Pardubice: Zrušený let — vaše práva 2026"
         description="Byl váš let z Pardubic zrušen? Zjistěte, jak získat až 600 € kompenzace podle EU261. Průvodce právy pasažérů z letiště PED."
-        url="https://lotproblem.pl/cs/blog/letiste-pardubice-zruseny-let-prava"
+        url="https://problemlot.com/cs/blog/letiste-pardubice-zruseny-let-prava"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

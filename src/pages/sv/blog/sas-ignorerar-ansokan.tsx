@@ -11,7 +11,7 @@ export default function SasIgnoresClaimPage() {
       <SEO
         title="SAS ignorerar min ansökan — vad gör du efter 30, 60 och 90 dagar?"
         description="Har SAS inte svarat på din reklamation? Tystnad är en taktik. Lär dig hur du eskalerar ärendet när flygbolaget leker döda fisken."
-        url="https://lotproblem.pl/sv/blog/sas-ignorerar-ansokan"
+        url="https://problemlot.com/sv/blog/sas-ignorerar-ansokan"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

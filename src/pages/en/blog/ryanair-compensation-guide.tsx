@@ -10,7 +10,7 @@ export default function RyanairCompensationGuide() {
       <SEO
         title="Ryanair Compensation Guide 2025: Delays, Cancellations & Claims"
         description="Complete guide to claiming Ryanair compensation. Learn how to handle delays, cancellations, and denied boarding with Europe's largest low-cost carrier."
-        url="https://lotproblem.pl/en/blog/ryanair-compensation-guide"
+        url="https://problemlot.com/en/blog/ryanair-compensation-guide"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

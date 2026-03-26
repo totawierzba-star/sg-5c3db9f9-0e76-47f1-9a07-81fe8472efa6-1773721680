@@ -11,7 +11,7 @@ export default function SasGoteborgPage() {
       <SEO
         title="Ersättning för SAS Göteborg–Köpenhamn–[destination] — rättigheter vid byte"
         description="Flyger du från Landvetter med byte i Köpenhamn? Missad anslutning är vanligt. Se dina rättigheter och hur du får ersättning."
-        url="https://lotproblem.pl/sv/blog/sas-goteborg-landvetter-ersattning"
+        url="https://problemlot.com/sv/blog/sas-goteborg-landvetter-ersattning"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

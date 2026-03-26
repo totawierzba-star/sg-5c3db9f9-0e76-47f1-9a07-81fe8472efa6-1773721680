@@ -11,7 +11,7 @@ export default function SasHighSeasonPage() {
       <SEO
         title="SAS försening i högsäsong — statistik och hur du kräver ersättning"
         description="Flyger du med SAS på sommaren eller julen? Risken för förseningar ökar. Se hur du får ersättning trots högt tryck."
-        url="https://lotproblem.pl/sv/blog/sas-forsening-i-hogsasong"
+        url="https://problemlot.com/sv/blog/sas-forsening-i-hogsasong"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

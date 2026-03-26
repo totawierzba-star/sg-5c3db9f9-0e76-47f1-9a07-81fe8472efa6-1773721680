@@ -9,7 +9,7 @@ export default function WizzAirOdmowil() {
       <SEO
         title="Wizz Air odmówił odszkodowania — co zrobić? [76% pasażerów wygrywa]"
         description="Wizz Air odmówił wypłaty? 76% pasażerów którzy walczą ostatecznie wygrywa. Sprawdzone metody + najczęstsze powody odmowy Wizz Air."
-        url="https://lotproblem.pl/blog/wizz-air-odmowil-odszkodowania"
+        url="https://problemlot.com/blog/wizz-air-odmowil-odszkodowania"
       />
 
       <script
@@ -89,7 +89,7 @@ export default function WizzAirOdmowil() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png"
+                "url": "https://problemlot.com/og-image.png"
               }
             },
             "datePublished": "2025-01-21",

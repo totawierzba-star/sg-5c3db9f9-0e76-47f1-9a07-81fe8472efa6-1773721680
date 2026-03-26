@@ -9,7 +9,7 @@ export default function AustrianAirlinesKompenzace() {
       <SEO 
         title="Austrian Airlines kompenzace za zpoždění a zrušení letu 2026"
         description="Kompletní průvodce reklamací u Austrian Airlines. Zjistěte, jak získat až 600 € kompenzace za zpožděný nebo zrušený let."
-        image="https://lotproblem.pl/og-image.png"
+        image="https://problemlot.com/og-image.png"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

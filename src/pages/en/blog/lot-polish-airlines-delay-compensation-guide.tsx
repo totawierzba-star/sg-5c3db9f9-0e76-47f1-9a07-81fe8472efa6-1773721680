@@ -117,7 +117,7 @@ export default function LOTDelayCompensationGuide() {
       "name": "LOT Problem",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://lotproblem.pl/og-image.png"
+        "url": "https://problemlot.com/og-image.png"
       }
     },
     "datePublished": "2025-03-05",
@@ -129,7 +129,7 @@ export default function LOTDelayCompensationGuide() {
       <SEO
         title="LOT Polish Airlines Delay Compensation: Claim Up to €600 | Complete Guide 2025"
         description="Get up to €600 for LOT Polish Airlines flight delays over 3 hours. Expert guide on EU261 rights, claim process, and how to maximize your compensation."
-        url="https://lotproblem.pl/en/blog/lot-polish-airlines-delay-compensation-guide"
+        url="https://problemlot.com/en/blog/lot-polish-airlines-delay-compensation-guide"
       />
 
       <script

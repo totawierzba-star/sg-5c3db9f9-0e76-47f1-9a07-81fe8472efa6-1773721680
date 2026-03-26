@@ -11,7 +11,7 @@ export default function SasCancelled14DaysPage() {
       <SEO
         title="SAS ställde in flyget mindre än 14 dagar före avgång — ersättning"
         description="Fick du veta att ditt SAS-flyg ställts in mindre än 14 dagar före resan? Du har rätt till upp till 600 €. Läs om reglerna här."
-        url="https://lotproblem.pl/sv/blog/sas-installt-flyg-14-dagar"
+        url="https://problemlot.com/sv/blog/sas-installt-flyg-14-dagar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

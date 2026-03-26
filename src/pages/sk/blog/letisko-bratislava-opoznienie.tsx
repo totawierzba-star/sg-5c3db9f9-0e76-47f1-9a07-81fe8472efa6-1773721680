@@ -9,7 +9,7 @@ export default function LetiskoBratislavaOpoznienie() {
       <SEO
         title="Letisko Bratislava (BTS) – čo robiť pri meškaní letu? | LotProblem.pl"
         description="Zmeškal vám let z Bratislavy? Zistite, ako získať až 600 € kompenzácie. Kompletný sprievodca právami pasažérov na letisku M. R. Štefánika."
-        url="https://lotproblem.pl/sk/blog/letisko-bratislava-opoznienie"
+        url="https://problemlot.com/sk/blog/letisko-bratislava-opoznienie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

@@ -9,7 +9,7 @@ export default function PrahaBarcelonaKompenzace() {
       <SEO
         title="Praha–Barcelona: Kompenzace za zpoždění a zrušení 2026"
         description="Zpožděný nebo zrušený let Praha–Barcelona? Získejte až 250 € kompenzace. Průvodce právy pasažérů na oblíbené trase do Španělska."
-        url="https://lotproblem.pl/cs/blog/praha-barcelona-kompenzace"
+        url="https://problemlot.com/cs/blog/praha-barcelona-kompenzace"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

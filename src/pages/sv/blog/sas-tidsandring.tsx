@@ -11,7 +11,7 @@ export default function SasScheduleChangePage() {
       <SEO
         title="SAS tidsändring utan förvarning — när har du rätt till ersättning?"
         description="Ändrade SAS tiden för ditt flyg? Om det skedde mindre än 14 dagar före avgång kan det räknas som inställt flyg med rätt till 600 €."
-        url="https://lotproblem.pl/sv/blog/sas-tidsandring"
+        url="https://problemlot.com/sv/blog/sas-tidsandring"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

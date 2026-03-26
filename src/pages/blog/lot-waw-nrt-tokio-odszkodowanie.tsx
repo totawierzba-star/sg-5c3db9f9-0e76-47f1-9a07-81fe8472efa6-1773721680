@@ -7,7 +7,7 @@ export default function LotWawNrtTokio() {
       <SEO
         title="LOT WAW–NRT Tokio: Odszkodowanie €600 za lot długodystansowy 2026"
         description="Lot LOT z Warszawy do Tokio opóźniony? Sprawdź jak uzyskać 600 € odszkodowania za długodystansowy lot. Twoje prawa pasażera WE 261/2004."
-        url="https://lotproblem.pl/blog/lot-waw-nrt-tokio-odszkodowanie"
+        url="https://problemlot.com/blog/lot-waw-nrt-tokio-odszkodowanie"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

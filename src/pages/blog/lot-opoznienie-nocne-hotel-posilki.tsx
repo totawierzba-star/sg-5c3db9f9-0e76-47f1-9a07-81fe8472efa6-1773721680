@@ -7,7 +7,7 @@ export default function LotOpoznienieNocne() {
       <SEO
         title="LOT opóźnienie nocne — hotel, posiłki, transport 2026"
         description="LOT opóźnił lot i musisz czekać całą noc? Sprawdź swoje prawa do bezpłatnego hotelu, posiłków, transportu i odszkodowania €250-600."
-        url="https://lotproblem.pl/blog/lot-opoznienie-nocne-hotel-posilki"
+        url="https://problemlot.com/blog/lot-opoznienie-nocne-hotel-posilki"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">

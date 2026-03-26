@@ -18,7 +18,7 @@ export default function TurkishAirlinesRisarcimento() {
       <SEO
         title="Turkish Airlines Risarcimento: Guida Completa 2026 — Fino a €600"
         description="Volo Turkish Airlines in ritardo o cancellato? Scopri quando spetta il risarcimento CE 261/2004, quanto puoi ottenere e come fare reclamo passo per passo."
-        url="https://lotproblem.pl/it/blog/turkish-airlines-risarcimento"
+        url="https://problemlot.com/it/blog/turkish-airlines-risarcimento"
       />
 
       {/* Schema Article */}
@@ -37,14 +37,14 @@ export default function TurkishAirlinesRisarcimento() {
               "name": "LotProblem.pl",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lotproblem.pl/og-image.png",
+                "url": "https://problemlot.com/og-image.png",
               },
             },
             "datePublished": "2026-03-19",
             "dateModified": "2026-03-19",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://lotproblem.pl/it/blog/turkish-airlines-risarcimento",
+              "@id": "https://problemlot.com/it/blog/turkish-airlines-risarcimento",
             },
           }),
         }}

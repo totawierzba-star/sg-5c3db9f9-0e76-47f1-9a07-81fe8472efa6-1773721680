@@ -9,7 +9,7 @@ export default function LufthansaBritishAirwaysAirFranceComparison() {
       <SEO
         title="Lufthansa, British Airways और Air France – मुआवज़ा नीति की तुलना [2026]"
         description="भारत से यूरोप के लिए शीर्ष 3 एयरलाइनों की विस्तृत तुलना। मुआवज़ा दरें, शिकायत प्रतिक्रिया समय, और कौन सबसे तेज़ भुगतान करता है। EC 261/2004 compliance रेटिंग।"
-        url="https://lotproblem.pl/hi/blog/lufthansa-british-airways-air-france-comparison"
+        url="https://problemlot.com/hi/blog/lufthansa-british-airways-air-france-comparison"
       />
 
       <article className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">

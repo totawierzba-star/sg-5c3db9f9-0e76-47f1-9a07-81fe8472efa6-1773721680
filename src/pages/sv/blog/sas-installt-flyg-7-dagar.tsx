@@ -11,7 +11,7 @@ export default function SasCancelled7DaysPage() {
       <SEO
         title="SAS ställde in flyget mindre än 7 dagar före avgång — dina rättigheter"
         description="Inställt flyg sista veckan? Om SAS meddelar dig mindre än 7 dagar före avresa är kraven för ersättning mycket stränga. Se vad som gäller."
-        url="https://lotproblem.pl/sv/blog/sas-installt-flyg-7-dagar"
+        url="https://problemlot.com/sv/blog/sas-installt-flyg-7-dagar"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-12">
