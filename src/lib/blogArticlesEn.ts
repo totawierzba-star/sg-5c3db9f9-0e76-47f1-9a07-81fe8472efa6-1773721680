@@ -240,4 +240,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: true,
     color: "purple",
   },
+  {
+    id: "20",
+    title: "Do I Get Compensation for a 2-Hour Delay?",
+    slug: "compensation-2-hour-delay-eu261",
+    category: "guide",
+    wordCount: 2500,
+    readTime: "9 min read",
+    excerpt: "A 2-hour delay does not trigger EU261 cash compensation — the threshold is 3 hours at arrival. But you do have rights. Learn what you're owed and when a short delay can still lead to a full claim.",
+    publishDate: "2026-03-26",
+    featured: false,
+    color: "amber",
+  },
 ];
