@@ -264,4 +264,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: true,
     color: "blue",
   },
+  {
+    id: "22",
+    title: "Can I Claim EU261 for a Flight 3 Years Ago?",
+    slug: "eu261-claim-flight-3-years-ago",
+    category: "regulation",
+    wordCount: 2800,
+    readTime: "10 min read",
+    excerpt: "EU261 has no uniform limitation period — Poland gives you just 1 year, Germany 3 years, France 5 years, UK 6 years. Check your country's deadline before your claim expires.",
+    publishDate: "2026-03-26",
+    featured: false,
+    color: "orange",
+  },
 ];
