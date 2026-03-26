@@ -1,510 +1,313 @@
 import { SEO } from "@/components/SEO";
-import Link from "next/link";
-import { Scale, FileText, CheckCircle2, ArrowRight, Plane, Shield, ExternalLink, Clock, Euro } from "lucide-react";
+import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import { CheckCircle2, Clock, XCircle, Plane, Shield, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://problemlot.com/#organization",
-        "name": "problemlot.com",
-        "url": "https://problemlot.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://problemlot.com/og-image.png"
-        },
-        "description": "Portal o odszkodowaniach za opóźnione i odwołane loty — EU261/2004"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://problemlot.com/#website",
-        "url": "https://problemlot.com",
-        "name": "problemlot.com",
-        "description": "Odszkodowania za opóźnione i odwołane loty — do 600 € na pasażera",
-        "publisher": {
-          "@id": "https://problemlot.com/#organization"
-        },
-        "inLanguage": "pl-PL"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://problemlot.com/#webpage",
-        "url": "https://problemlot.com",
-        "name": "Odszkodowanie za opóźniony lub odwołany lot — do 600 € | problemlot.com",
-        "isPartOf": {
-          "@id": "https://problemlot.com/#website"
-        },
-        "description": "Masz problem z lotem? Dowiedz się, ile odszkodowania możesz dostać za opóźniony lub odwołany lot na podstawie rozporządzenia EU261/2004.",
-        "inLanguage": "pl-PL"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Ile wynosi odszkodowanie za opóźniony lot?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Odszkodowanie za opóźniony lot wynosi od 250 € do 600 € na pasażera, zależnie od długości trasy: 250 € do 1500 km, 400 € od 1500 do 3500 km, 600 € powyżej 3500 km."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Kiedy przysługuje odszkodowanie za lot?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Odszkodowanie przysługuje, gdy lot był opóźniony o ponad 3 godziny lub został odwołany z mniej niż 14-dniowym wyprzedzeniem, a linia lotnicza nie jest w stanie udowodnić nadzwyczajnych okoliczności."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Jak długo można ubiegać się o odszkodowanie za lot?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "W Polsce masz 3 lata na złożenie roszczenia. W niektórych krajach UE okres przedawnienia wynosi do 6 lat — liczy się prawo kraju, w którym linia ma siedzibę lub z którego lotniska startowałeś."
-            }
-          }
-        ]
-      }
-    ]
-  };
-
   return (
-    <>
+    <Layout>
       <SEO
-        title="Odszkodowanie za opóźniony lub odwołany lot — do 600 € | problemlot.com"
-        description="Masz problem z lotem? Sprawdź, czy należy Ci się odszkodowanie do 600 € na podstawie EU261/2004. Bezpłatna weryfikacja, bez ryzyka."
+        title="Opóźniony lub odwołany lot – sprawdź odszkodowanie do 600 €"
+        description="Masz problem z lotem? Sprawdź, czy przysługuje Ci nawet 600 € odszkodowania za opóźniony lub odwołany lot."
         url="https://problemlot.com"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
 
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Hero Section */}
-        <section className="py-20 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-full text-sm text-blue-700 mb-6">
-                <Shield className="h-4 w-4" />
-                Rozporządzenie EU261/2004 — Twoja ochrona jako pasażera
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                Masz problem z lotem?<br />
-                <span className="text-blue-600">Możesz dostać do 600 €</span>
-              </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Opóźniony lub odwołany lot? Rozporządzenie EU261/2004 daje Ci prawo do odszkodowania
-                od 250 € do 600 € na pasażera — niezależnie od ceny biletu.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="text-lg bg-blue-600 hover:bg-blue-700 shadow-lg"
-                  onClick={() => {
-                    if (typeof window !== "undefined" && window.dataLayer) {
-                      window.dataLayer.push({
-                        event: "outbound_cta_click",
-                        cta_text: "Sprawdź odszkodowanie za darmo",
-                        destination: "claimwinger.com",
-                        position: "hero_primary",
-                        page_path: "/"
-                      });
-                    }
-                  }}
-                >
-                  <a
-                    href="https://claimwinger.com/pl?utm_source=problemlot.com&utm_medium=homepage&utm_campaign=hero&utm_content=cta_primary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Sprawdź odszkodowanie za darmo
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="text-lg border-2 border-slate-300 hover:border-blue-600 hover:text-blue-600"
-                >
-                  <Link href="/ile-mozesz-dostac">
-                    Ile mogę dostać?
-                  </Link>
-                </Button>
-              </div>
+      <section className="bg-gradient-to-br from-primary/10 via-background to-primary/5 py-20 md:py-28">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary">
+              ✈️ Odszkodowanie do 600 € za 15 minut
             </div>
-          </div>
-        </section>
-
-        {/* Compensation amounts */}
-        <section className="py-16 px-4 bg-blue-600 text-white">
-          <div className="container mx-auto max-w-5xl">
-            <h2 className="text-2xl font-bold text-center mb-10 text-blue-100">
-              Wysokość odszkodowania — EU261/2004
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="bg-blue-700/50 rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">250 €</div>
-                <div className="text-blue-200 text-sm mb-3">na pasażera</div>
-                <div className="text-white font-medium">Loty do 1 500 km</div>
-                <div className="text-blue-200 text-sm mt-1">np. Warszawa–Berlin, Kraków–Londyn</div>
-              </div>
-              <div className="bg-blue-700/50 rounded-xl p-6 ring-2 ring-white/30">
-                <div className="text-4xl font-bold mb-2">400 €</div>
-                <div className="text-blue-200 text-sm mb-3">na pasażera</div>
-                <div className="text-white font-medium">Loty 1 500–3 500 km</div>
-                <div className="text-blue-200 text-sm mt-1">np. Warszawa–Tel Aviv, Kraków–Kair</div>
-              </div>
-              <div className="bg-blue-700/50 rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">600 €</div>
-                <div className="text-blue-200 text-sm mb-3">na pasażera</div>
-                <div className="text-white font-medium">Loty powyżej 3 500 km</div>
-                <div className="text-blue-200 text-sm mt-1">np. Warszawa–Nowy Jork, –Toronto</div>
-              </div>
+            <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-balance leading-tight">
+              Masz problem z lotem? <br className="hidden md:block" />
+              Możesz dostać do <span className="text-primary">600 €</span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 text-balance max-w-3xl mx-auto">
+              Opóźniony, odwołany lub utracona przesiadka? Sprawdź swoje prawa i uzyskaj odszkodowanie bez wysiłku. Płacisz tylko w przypadku sukcesu.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg h-14 px-8 shadow-lg hover:shadow-xl transition-shadow">
+                <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
+                  Sprawdź odszkodowanie za darmo
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="text-lg h-14 px-8">
+                <Link href="/ile-mozesz-dostac">Ile mogę dostać?</Link>
+              </Button>
             </div>
-            <p className="text-center text-blue-200 text-sm mt-8">
-              Odszkodowanie przysługuje przy opóźnieniu &gt;3h, odwołaniu lotu lub odmowie przyjęcia na pokład.
+            <p className="text-sm text-muted-foreground mt-6">
+              ⚡ Sprawdzenie zajmuje 2 minuty • 💰 Bez kosztów początkowych
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Key Benefits */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                Co musisz wiedzieć o EU261
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-slate-200">
-                <CardHeader>
-                  <CheckCircle2 className="h-10 w-10 text-green-600 mb-4" />
-                  <CardTitle className="text-xl">Opóźnienie ponad 3 godziny</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600">
-                    Jeśli dotarłeś do celu z opóźnieniem powyżej 3 godzin — niezależnie od powodu podróży —
-                    przysługuje Ci odszkodowanie pieniężne.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-slate-200">
-                <CardHeader>
-                  <Plane className="h-10 w-10 text-blue-600 mb-4" />
-                  <CardTitle className="text-xl">Odwołanie z mniej niż 14 dni</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600">
-                    Linia musiała poinformować Cię o odwołaniu co najmniej 14 dni wcześniej.
-                    Jeśli tego nie zrobiła, odszkodowanie Ci przysługuje.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-slate-200">
-                <CardHeader>
-                  <Scale className="h-10 w-10 text-purple-600 mb-4" />
-                  <CardTitle className="text-xl">Niezależnie od ceny biletu</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600">
-                    Odszkodowanie z EU261 jest stałą kwotą — nie zależy od tego, ile zapłaciłeś za bilet
-                    ani czy bilet kupił pracodawca.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-display font-bold text-3xl md:text-4xl mb-4">
+              Kiedy przysługuje Ci odszkodowanie?
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Zgodnie z rozporządzeniem UE 261/2004 masz prawo do kompensaty w następujących sytuacjach
+            </p>
           </div>
-        </section>
 
-        {/* Main Topics */}
-        <section className="py-20 px-4 bg-slate-50">
-          <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="bg-primary/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                <Clock className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="font-display font-bold text-xl mb-3">Opóźniony lot</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Lot dotarł z opóźnieniem powyżej 3 godzin do miejsca docelowego.
+              </p>
+              <Link href="/opozniony-lot" className="text-primary text-sm font-medium mt-4 inline-block hover:underline">
+                Dowiedz się więcej →
+              </Link>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="bg-destructive/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                <XCircle className="h-7 w-7 text-destructive" />
+              </div>
+              <h3 className="font-display font-bold text-xl mb-3">Odwołany lot</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Linia lotnicza odwołała Twój lot bez odpowiedniego wcześniejszego powiadomienia.
+              </p>
+              <Link href="/opozniony-lot" className="text-primary text-sm font-medium mt-4 inline-block hover:underline">
+                Sprawdź szczegóły →
+              </Link>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1 border-2">
+              <div className="bg-warning/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                <Plane className="h-7 w-7 text-warning" />
+              </div>
+              <h3 className="font-display font-bold text-xl mb-3">Utracona przesiadka</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Przegapiłeś lot łączący z powodu opóźnienia poprzedniego rejsu.
+              </p>
+              <Link href="/opozniony-lot" className="text-primary text-sm font-medium mt-4 inline-block hover:underline">
+                Poznaj prawa →
+              </Link>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-br from-primary/5 to-primary/10 py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                Najważniejsze informacje
+              <h2 className="font-display font-bold text-3xl md:text-4xl mb-4">
+                Ile możesz otrzymać odszkodowania?
               </h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Wszystko, co musisz wiedzieć o odszkodowaniach za problemy z lotami
+              <p className="text-muted-foreground text-lg">
+                Kwota zależy od odległości lotu – sprawdź swoją kategorię
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/opozniony-lot" className="group">
-                <Card className="border-slate-200 hover:border-blue-400 transition-all hover:shadow-lg h-full">
-                  <CardHeader>
-                    <CardTitle className="text-2xl group-hover:text-blue-600 transition-colors flex items-start justify-between">
-                      Opóźniony lot
-                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      Kiedy opóźnienie daje prawo do odszkodowania? Ile możesz dostać i jak szybko
-                      linia lotnicza musi zapłacić?
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
-
-              <Link href="/odwolany-lot" className="group">
-                <Card className="border-slate-200 hover:border-blue-400 transition-all hover:shadow-lg h-full">
-                  <CardHeader>
-                    <CardTitle className="text-2xl group-hover:text-blue-600 transition-colors flex items-start justify-between">
-                      Odwołany lot
-                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      Co robić, gdy lot zostaje anulowany? Jakie masz prawa do zwrotu, zmiany trasy
-                      i odszkodowania pieniężnego?
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
-
-              <Link href="/ile-mozesz-dostac" className="group">
-                <Card className="border-slate-200 hover:border-blue-400 transition-all hover:shadow-lg h-full">
-                  <CardHeader>
-                    <CardTitle className="text-2xl group-hover:text-blue-600 transition-colors flex items-start justify-between">
-                      Ile możesz dostać?
-                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      Kalkulator odszkodowania EU261. Sprawdź konkretną kwotę na podstawie długości
-                      swojej trasy i rodzaju zakłócenia.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
-
-              <Link href="/blog" className="group">
-                <Card className="border-slate-200 hover:border-blue-400 transition-all hover:shadow-lg h-full">
-                  <CardHeader>
-                    <CardTitle className="text-2xl group-hover:text-blue-600 transition-colors flex items-start justify-between">
-                      Artykuły i poradniki
-                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      Szczegółowe przewodniki po odszkodowaniach dla konkretnych linii lotniczych,
-                      tras i sytuacji pasażerskich.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 px-4">
-          <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">
-              Najczęstsze pytania
-            </h2>
-            <div className="space-y-6">
-              <div className="border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                  Ile wynosi odszkodowanie za opóźniony lot?
-                </h3>
-                <p className="text-slate-600">
-                  250 € za loty do 1 500 km, 400 € za loty między 1 500 a 3 500 km,
-                  600 € za loty powyżej 3 500 km. Kwota jest stała — nie zależy od ceny biletu.
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="p-8 text-center border-2 hover:border-primary transition-colors bg-white">
+                <div className="text-5xl font-bold text-primary mb-3">250 €</div>
+                <p className="font-semibold text-lg mb-2">Loty krótkie</p>
+                <p className="text-sm text-muted-foreground mb-4">Do 1500 km</p>
+                <p className="text-xs text-muted-foreground">
+                  np. Warszawa → Barcelona
                 </p>
-              </div>
-              <div className="border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                  Kiedy przysługuje odszkodowanie za lot?
-                </h3>
-                <p className="text-slate-600">
-                  Gdy przybyłeś do celu z opóźnieniem powyżej 3 godzin, lot został odwołany
-                  z mniej niż 14-dniowym wyprzedzeniem lub odmówiono Ci wejścia na pokład.
-                  Linia nie musi płacić tylko przy nadzwyczajnych okolicznościach (np. strajk kontrolerów, ekstremalna pogoda).
-                </p>
-              </div>
-              <div className="border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                  Jak długo można ubiegać się o odszkodowanie za lot?
-                </h3>
-                <p className="text-slate-600">
-                  W Polsce masz 3 lata na złożenie roszczenia. W Wielkiej Brytanii (UK261) — 6 lat.
-                  Liczy się rok od daty lotu — im szybciej złożysz wniosek, tym lepiej.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+              </Card>
 
-        {/* CTA Section */}
-        <section className="py-20 px-4 bg-slate-900 text-white">
-          <div className="container mx-auto max-w-4xl text-center">
-            <Euro className="h-12 w-12 text-blue-400 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Sprawdź, czy należy Ci się odszkodowanie
-            </h2>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Weryfikacja jest bezpłatna i zajmuje 2 minuty. Płacisz tylko wtedy,
-              gdy odszkodowanie zostanie wypłacone — 30% prowizji od odzyskanej kwoty.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="text-lg bg-blue-600 hover:bg-blue-500"
-              onClick={() => {
-                if (typeof window !== "undefined" && window.dataLayer) {
-                  window.dataLayer.push({
-                    event: "outbound_cta_click",
-                    cta_text: "Sprawdź odszkodowanie za darmo",
-                    destination: "claimwinger.com",
-                    position: "cta_section",
-                    page_path: "/"
-                  });
-                }
-              }}
-            >
-              <a
-                href="https://claimwinger.com/pl?utm_source=problemlot.com&utm_medium=homepage&utm_campaign=cta_section&utm_content=cta_bottom"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sprawdź odszkodowanie za darmo
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <p className="text-sm text-slate-400 mt-4">
-              Obsługiwane przez ClaimWinger — licencjonowany podmiot dochodzenia roszczeń
-            </p>
-          </div>
-        </section>
-
-        {/* Sister site */}
-        <section className="py-16 px-4 bg-slate-50">
-          <div className="container mx-auto max-w-3xl text-center">
-            <h2 className="text-xl font-semibold text-slate-700 mb-6">Sprawdź również</h2>
-            <div className="bg-white rounded-xl shadow p-6 border border-slate-200 inline-block text-left max-w-md">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-50 rounded-lg">
-                  <Scale className="w-5 h-5 text-blue-600" />
+              <Card className="p-8 text-center border-4 border-primary relative overflow-hidden bg-white shadow-xl">
+                <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1">
+                  NAJPOPULARNIEJSZE
                 </div>
+                <div className="text-5xl font-bold text-primary mb-3">400 €</div>
+                <p className="font-semibold text-lg mb-2">Loty średnie</p>
+                <p className="text-sm text-muted-foreground mb-4">1500-3500 km</p>
+                <p className="text-xs text-muted-foreground">
+                  np. Warszawa → Lizbona
+                </p>
+              </Card>
+
+              <Card className="p-8 text-center border-2 hover:border-primary transition-colors bg-white">
+                <div className="text-5xl font-bold text-primary mb-3">600 €</div>
+                <p className="font-semibold text-lg mb-2">Loty dalekie</p>
+                <p className="text-sm text-muted-foreground mb-4">Powyżej 3500 km</p>
+                <p className="text-xs text-muted-foreground">
+                  np. Warszawa → Nowy Jork
+                </p>
+              </Card>
+            </div>
+
+            <div className="text-center mt-10">
+              <Button size="lg" asChild className="shadow-lg">
+                <Link href="/ile-mozesz-dostac">Oblicz dokładną kwotę dla Twojego lotu</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-display font-bold text-3xl md:text-4xl mb-4">
+              Najpopularniejsze linie lotnicze
+            </h2>
+            <p className="text-muted-foreground text-lg">Sprawdź swoje prawa dla konkretnego przewoźnika</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {[
+              { name: "Ryanair", href: "/opozniony-lot-ryanair", color: "from-blue-500/10 to-blue-600/10" },
+              { name: "Wizzair", href: "/opozniony-lot-wizzair", color: "from-purple-500/10 to-pink-600/10" },
+              { name: "LOT", href: "/opozniony-lot-lot", color: "from-blue-600/10 to-blue-700/10" },
+              { name: "Lufthansa", href: "/opozniony-lot-lufthansa", color: "from-yellow-500/10 to-yellow-600/10" },
+            ].map((airline) => (
+              <Link key={airline.name} href={airline.href}>
+                <Card className={`p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer border-2 hover:border-primary bg-gradient-to-br ${airline.color}`}>
+                  <Plane className="h-8 w-8 mx-auto mb-3 text-primary" />
+                  <h3 className="font-display font-bold text-lg mb-1">{airline.name}</h3>
+                  <p className="text-sm text-muted-foreground">Sprawdź prawa →</p>
+                </Card>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <p className="text-sm text-muted-foreground mb-4">Sprawdź również loty z konkretnych miast:</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/opozniony-lot-warszawa">
+                <Button variant="outline" size="sm">Warszawa</Button>
+              </Link>
+              <Link href="/opozniony-lot-krakow">
+                <Button variant="outline" size="sm">Kraków</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-display font-bold text-3xl md:text-4xl mb-4">Jak to działa?</h2>
+              <p className="text-muted-foreground text-lg">Prosty proces w 3 krokach</p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex gap-6 items-start">
+                <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-lg">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-display font-bold text-xl mb-2">Sprawdź uprawnienia</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Wprowadź szczegóły swojego lotu i błyskawicznie sprawdź, czy przysługuje Ci odszkodowanie. Weryfikacja zajmuje tylko 2 minuty.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-lg">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-display font-bold text-xl mb-2">Złóż wniosek</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Nasi eksperci przejmują sprawę w całości. Zajmujemy się całą dokumentacją, negocjacjami z linią lotniczą i ewentualnymi procedurami sądowymi.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-lg">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-display font-bold text-xl mb-2">Otrzymaj pieniądze</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Płacisz tylko w przypadku sukcesu – brak ukrytych opłat. Gdy wygramy Twoją sprawę, otrzymujesz odszkodowanie bezpośrednio na swoje konto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Button size="lg" asChild className="shadow-lg">
+                <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
+                  Zacznij teraz – to nic nie kosztuje
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-display font-bold text-3xl md:text-4xl mb-8">
+              Dlaczego warto skorzystać z pomocy?
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6 text-left mt-10">
+              <Card className="p-6 flex gap-4 border-2 hover:border-primary transition-colors">
+                <Shield className="h-8 w-8 text-primary flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-slate-900 mb-1">Wise-Flight.info</h3>
-                  <p className="text-sm text-slate-500 mb-3">
-                    Angielskojęzyczny portal o prawach pasażerów EU261 i UK261 — przewodniki
-                    dla lotów z Europy i spoza UE.
-                  </p>
-                  <a
-                    href="https://wise-flight.info?utm_source=problemlot.com&utm_medium=homepage&utm_campaign=sister_site"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-blue-600 hover:underline text-sm font-medium"
-                    onClick={() => {
-                      if (typeof window !== "undefined" && window.dataLayer) {
-                        window.dataLayer.push({
-                          event: "outbound_cta_click",
-                          cta_text: "Wise-Flight.info",
-                          destination: "wise-flight.info",
-                          position: "sister_site",
-                          page_path: "/"
-                        });
-                      }
-                    }}
-                  >
-                    Odwiedź wise-flight.info
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
+                  <h3 className="font-semibold text-lg mb-2">Bez ryzyka finansowego</h3>
+                  <p className="text-sm text-muted-foreground">Płacisz tylko w przypadku wygranej sprawy. Zero ukrytych kosztów.</p>
                 </div>
-              </div>
+              </Card>
+
+              <Card className="p-6 flex gap-4 border-2 hover:border-primary transition-colors">
+                <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Doświadczeni eksperci</h3>
+                  <p className="text-sm text-muted-foreground">Zespół prawników specjalizujących się w prawie lotniczym.</p>
+                </div>
+              </Card>
+
+              <Card className="p-6 flex gap-4 border-2 hover:border-primary transition-colors">
+                <Zap className="h-8 w-8 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Szybki proces</h3>
+                  <p className="text-sm text-muted-foreground">Średni czas realizacji to 8-12 tygodni od złożenia wniosku.</p>
+                </div>
+              </Card>
+
+              <Card className="p-6 flex gap-4 border-2 hover:border-primary transition-colors">
+                <CheckCircle2 className="h-8 w-8 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">Wysokie wskaźniki sukcesu</h3>
+                  <p className="text-sm text-muted-foreground">Profesjonalna obsługa i skuteczne dochodzenie roszczeń.</p>
+                </div>
+              </Card>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Footer */}
-        <footer className="bg-slate-900 text-white py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="font-bold text-lg mb-4 text-white">problemlot.com</h3>
-                <p className="text-sm text-slate-400">
-                  Portal edukacyjny o odszkodowaniach za opóźnione i odwołane loty na podstawie EU261/2004.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-slate-300 mb-4">Odszkodowania</h3>
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/opozniony-lot" className="text-sm text-slate-400 hover:text-white transition-colors">
-                      Opóźniony lot
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/odwolany-lot" className="text-sm text-slate-400 hover:text-white transition-colors">
-                      Odwołany lot
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/ile-mozesz-dostac" className="text-sm text-slate-400 hover:text-white transition-colors">
-                      Ile możesz dostać?
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-slate-300 mb-4">Więcej</h3>
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/blog" className="text-sm text-slate-400 hover:text-white transition-colors">
-                      Blog i artykuły
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/o-autorze" className="text-sm text-slate-400 hover:text-white transition-colors">
-                      O autorze
-                    </Link>
-                  </li>
-                  <li>
-                    <a
-                      href="https://wise-flight.info"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-slate-400 hover:text-white transition-colors"
-                    >
-                      Wise-Flight.info (EN)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-slate-300 mb-4">Sprawdź odszkodowanie</h3>
-                <p className="text-sm text-slate-400 mb-3">
-                  Bezpłatna weryfikacja przez ClaimWinger — licencjonowany podmiot.
-                </p>
-                <Button asChild variant="outline" size="sm">
-                  <a
-                    href="https://claimwinger.com/pl?utm_source=problemlot.com&utm_medium=homepage&utm_campaign=footer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ClaimWinger.com
-                  </a>
-                </Button>
-              </div>
-            </div>
-
-            <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
-              <p>© 2026 problemlot.com — Twój przewodnik po odszkodowaniach lotniczych EU261/2004.</p>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </>
+      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-16 md:py-24">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-display font-bold text-3xl md:text-5xl mb-6">
+            Gotowy, żeby odzyskać swoje pieniądze?
+          </h2>
+          <p className="text-lg md:text-xl mb-10 opacity-90 max-w-2xl mx-auto leading-relaxed">
+            Sprawdzenie uprawnień zajmuje tylko 2 minuty. Nie czekaj – możesz stracić prawo do odszkodowania po 3 latach od daty lotu.
+          </p>
+          <Button size="lg" variant="secondary" asChild className="h-14 px-10 text-lg shadow-2xl hover:shadow-xl">
+            <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
+              Sprawdź darmowo swoje odszkodowanie
+            </a>
+          </Button>
+          <p className="text-sm mt-6 opacity-75">✈️ Działa dla lotów z ostatnich 3 lat • 🌍 Wszystkie linie lotnicze</p>
+        </div>
+      </section>
+    </Layout>
   );
 }

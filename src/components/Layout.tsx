@@ -3,12 +3,14 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { ThemeSwitch } from "./ThemeSwitch";
 import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/contexts/ThemeProvider";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
 
   return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -304,5 +306,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </footer>
     </div>
+    </ThemeProvider>
   );
 }
