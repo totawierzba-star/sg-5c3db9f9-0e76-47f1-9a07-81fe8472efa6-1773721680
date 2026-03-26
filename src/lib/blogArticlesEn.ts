@@ -276,4 +276,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: false,
     color: "orange",
   },
+  {
+    id: "23",
+    title: "What Happens If the Airline Goes Bankrupt?",
+    slug: "airline-bankrupt-eu261-compensation",
+    category: "guide",
+    wordCount: 3000,
+    readTime: "11 min read",
+    excerpt: "Airline bankruptcy makes EU261 claims uncollectable in practice. Your real recovery routes are ATOL (UK), credit card chargeback, and travel insurance. Full guide.",
+    publishDate: "2026-03-26",
+    featured: false,
+    color: "red",
+  },
 ];
