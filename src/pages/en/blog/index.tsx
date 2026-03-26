@@ -14,9 +14,9 @@ export default function BlogIndexEn() {
   const categories = [
     { id: "all", label: "All Articles" },
     { id: "airline", label: "Airlines" },
-    { id: "airport", label: "Airports" },
     { id: "regulation", label: "Regulations" },
     { id: "guide", label: "Guides" },
+    { id: "airport", label: "Airports" },
     { id: "situation", label: "Situations" },
   ];
 
@@ -118,9 +118,14 @@ export default function BlogIndexEn() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-              {selectedCategory === "all" ? "All Articles" : `${categories.find(c => c.id === selectedCategory)?.label} Articles`}
-            </h2>
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                {selectedCategory === "all" ? "All Articles" : `${categories.find(c => c.id === selectedCategory)?.label} Articles`}
+              </h2>
+              <span className="text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-full">
+                {filteredArticles.length} {filteredArticles.length === 1 ? "article" : "articles"}
+              </span>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
               {filteredArticles.map((article) => (
                 <Card
