@@ -216,4 +216,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: true,
     color: "purple",
   },
+  {
+    id: "18",
+    title: "What Counts as a Flight Delay Under EU261?",
+    slug: "what-counts-flight-delay-eu261",
+    category: "regulation",
+    wordCount: 2700,
+    readTime: "10 min read",
+    excerpt: "EU261 compensation triggers at 3+ hours arrival delay — not departure delay. Learn exactly how delay is measured, which scenarios qualify, and when extraordinary circumstances apply.",
+    publishDate: "2026-03-26",
+    featured: true,
+    color: "blue",
+  },
 ];
