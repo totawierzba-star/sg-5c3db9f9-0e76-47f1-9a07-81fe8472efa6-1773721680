@@ -228,4 +228,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: true,
     color: "blue",
   },
+  {
+    id: "19",
+    title: "What Are Extraordinary Circumstances Under EU261?",
+    slug: "extraordinary-circumstances-eu261-definition",
+    category: "regulation",
+    wordCount: 2900,
+    readTime: "10 min read",
+    excerpt: "Extraordinary circumstances exempt airlines from EU261 compensation — but only when proven. Learn what qualifies, what doesn't, and how to challenge a wrongful airline rejection.",
+    publishDate: "2026-03-26",
+    featured: true,
+    color: "purple",
+  },
 ];
