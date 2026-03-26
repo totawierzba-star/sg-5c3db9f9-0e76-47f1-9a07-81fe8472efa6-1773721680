@@ -300,4 +300,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: false,
     color: "purple",
   },
+  {
+    id: "25",
+    title: "Does EU261 Apply to Charter Flights?",
+    slug: "eu261-charter-flights-apply",
+    category: "regulation",
+    wordCount: 2900,
+    readTime: "10 min read",
+    excerpt: "EU261 fully applies to charter flights — no exceptions. Delayed on a TUI, Jet2, or Condor charter? You're entitled to up to €600. Full guide including package holiday rights.",
+    publishDate: "2026-03-26",
+    featured: false,
+    color: "orange",
+  },
 ];
