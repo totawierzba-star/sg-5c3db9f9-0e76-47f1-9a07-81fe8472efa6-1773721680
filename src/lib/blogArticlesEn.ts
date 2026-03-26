@@ -288,4 +288,16 @@ export const blogArticlesEn: BlogArticle[] = [
     featured: false,
     color: "red",
   },
+  {
+    id: "24",
+    title: "Do I Have to Accept a Voucher Instead of Cash? EU261 Rights",
+    slug: "voucher-instead-cash-eu261-rights",
+    category: "regulation",
+    wordCount: 2900,
+    readTime: "11 min read",
+    excerpt: "EU261 entitles you to cash — not vouchers. Airlines cannot force vouchers as a substitute for statutory compensation. Learn how to demand what you're legally owed.",
+    publishDate: "2026-03-26",
+    featured: false,
+    color: "purple",
+  },
 ];
