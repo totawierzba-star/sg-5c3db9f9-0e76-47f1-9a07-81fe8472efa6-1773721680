@@ -1,13 +1,10 @@
 import { cn } from "@/lib/utils";
 import { Html, Head, Main, NextScript } from "next/document";
-import { SEOElements } from "@/components/SEO";
 
 export default function Document() {
   return (
     <Html lang="pl">
       <Head>
-        <SEOElements />
-        
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

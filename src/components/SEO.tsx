@@ -10,8 +10,9 @@ export interface SEOProps {
   canonicalUrl?: string;
 }
 
-const defaultTitle = "problemlot.com - Prawa pasażerów w podróżach służbowych";
-const defaultDescription = "Ekspertowy portal o prawach pasażerów lotniczych w delegacjach i podróżach służbowych. Dowiedz się, kiedy przysługuje Ci odszkodowanie za lot firmowy.";
+const defaultTitle = "problemlot.com - Odszkodowanie za opóźniony i odwołany lot";
+const defaultDescription =
+  "Praktyczny serwis o prawach pasażerów lotniczych, odszkodowaniach za opóźnione i odwołane loty oraz zasadach EU261 i UK261.";
 const defaultImage = "https://problemlot.com/og-image.png";
 const siteUrl = "https://problemlot.com";
 

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import { Plane, Globe } from "lucide-react";
+
 import { ThemeSwitch } from "./ThemeSwitch";
-import { Button } from "@/components/ui/button";
-import { Plane, Scale, Clock, AlertCircle, Globe } from "lucide-react";
 
 interface LayoutEnProps {
   children: ReactNode;
@@ -11,8 +11,7 @@ interface LayoutEnProps {
 export function LayoutEn({ children }: LayoutEnProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Header */}
-      <header className="border-b border-gray-200 dark:border-gray-800 sticky top-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm z-50">
+      <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/95">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/en" className="flex items-center gap-2">
@@ -22,160 +21,174 @@ export function LayoutEn({ children }: LayoutEnProps) {
               </span>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="hidden items-center gap-6 md:flex">
               <Link
                 href="/en/delayed-flight"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
                 Delayed Flight
               </Link>
               <Link
                 href="/en/cancelled-flight"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
                 Cancelled Flight
               </Link>
               <Link
                 href="/en/compensation-calculator"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
                 Calculator
               </Link>
               <Link
                 href="/en/blog"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
                 Blog
               </Link>
 
-              {/* Language Selector */}
-              <div className="relative group z-50">
-                <button className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <div className="relative z-50 group">
+                <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
                   <Globe className="h-5 w-5" />
                   <span className="hidden lg:inline">EN</span>
                 </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-700">
+                <div className="invisible absolute right-0 mt-2 w-48 rounded-md border border-gray-100 bg-white py-1 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100 dark:border-gray-700 dark:bg-gray-800">
                   <Link
                     href="/"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇵🇱 Polski
+                    Polish
                   </Link>
                   <Link
                     href="/cs"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇨🇿 Čeština
+                    Czech
                   </Link>
                   <Link
                     href="/sk"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇸🇰 Slovenčina
+                    Slovak
                   </Link>
                   <Link
                     href="/it"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇮🇹 Italiano
+                    Italian
                   </Link>
                   <Link
                     href="/zh"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇨🇳 中文
+                    Chinese
                   </Link>
                   <Link
                     href="/hi"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   >
-                    🇮🇳 हिन्दी
+                    Hindi
+                  </Link>
+                  <Link
+                    href="/sv"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                  >
+                    Swedish
+                  </Link>
+                  <Link
+                    href="/no"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                  >
+                    Norwegian
                   </Link>
                   <Link
                     href="/en"
-                    className="block px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 dark:bg-blue-900/20"
+                    className="block bg-blue-50 px-4 py-2 text-sm font-bold text-blue-600 dark:bg-blue-900/20"
                   >
-                    🇬🇧 English
+                    English
                   </Link>
-                  <Link href="/it" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                    <span className="mr-2">🇮🇹</span> Italiano
-                  </Link>
-                  <Link href="/sv" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                    <span className="mr-2">🇸🇪</span> Svenska
-                  </Link>
-                  <Link href="/no" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇳🇴 Norsk</Link>
                 </div>
               </div>
 
               <ThemeSwitch />
             </nav>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="flex items-center gap-2 md:hidden">
               <ThemeSwitch />
             </div>
           </div>
 
-          {/* Mobile Navigation */}
-          <nav className="md:hidden mt-4 flex flex-col gap-2">
+          <nav className="mt-4 flex flex-col gap-2 md:hidden">
             <Link
               href="/en/delayed-flight"
-              className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2"
+              className="py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
             >
               Delayed Flight
             </Link>
             <Link
               href="/en/cancelled-flight"
-              className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2"
+              className="py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
             >
               Cancelled Flight
             </Link>
             <Link
               href="/en/compensation-calculator"
-              className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2"
+              className="py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
             >
               Calculator
             </Link>
             <Link
               href="/en/blog"
-              className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2"
+              className="py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
             >
               Blog
             </Link>
             <div className="flex gap-4">
-              <Link href="/" className="text-xl">🇵🇱</Link>
-              <Link href="/cs" className="text-xl">🇨🇿</Link>
-              <Link href="/sk" className="text-xl">🇸🇰</Link>
-              <Link href="/zh" className="text-xl">🇨🇳</Link>
-              <Link href="/hi" className="text-xl">🇮🇳</Link>
-              <Link href="/it" className="text-xl">🇮🇹</Link>
-              <Link href="/sv" className="text-xl">🇸🇪</Link>
-              <Link href="/no" className="text-xl">🇳🇴</Link>
+              <Link href="/" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                PL
+              </Link>
+              <Link href="/cs" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                CS
+              </Link>
+              <Link href="/sk" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                SK
+              </Link>
+              <Link href="/zh" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                ZH
+              </Link>
+              <Link href="/hi" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                HI
+              </Link>
+              <Link href="/it" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                IT
+              </Link>
+              <Link href="/sv" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                SV
+              </Link>
+              <Link href="/no" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                NO
+              </Link>
             </div>
           </nav>
         </div>
       </header>
 
-      {/* Main Content */}
       <main>{children}</main>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-20">
+      <footer className="mt-20 border-t border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-4 gap-8">
-            {/* About */}
+          <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <h3 className="font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="mb-4 font-bold text-gray-900 dark:text-white">
                 FlightProblem.com
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Get up to €600 compensation for delayed or cancelled flights. Free legal support and expert guidance.
+                Get up to EUR600 compensation for delayed or cancelled flights. Free legal support and expert guidance.
               </p>
             </div>
 
-            {/* Flight Issues */}
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+              <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                 Flight Issues
               </h4>
               <ul className="space-y-2 text-sm">
@@ -206,9 +219,8 @@ export function LayoutEn({ children }: LayoutEnProps) {
               </ul>
             </div>
 
-            {/* Resources */}
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+              <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                 Resources
               </h4>
               <ul className="space-y-2 text-sm">
@@ -217,7 +229,7 @@ export function LayoutEn({ children }: LayoutEnProps) {
                     href="/en/blog"
                     className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
                   >
-                    Blog & Guides
+                    Blog and Guides
                   </Link>
                 </li>
                 <li>
@@ -233,9 +245,8 @@ export function LayoutEn({ children }: LayoutEnProps) {
               </ul>
             </div>
 
-            {/* Legal */}
             <div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+              <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                 Legal
               </h4>
               <ul className="space-y-2 text-sm">
@@ -253,7 +264,7 @@ export function LayoutEn({ children }: LayoutEnProps) {
             </div>
           </div>
 
-          <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+          <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400">
             <p>
               © {new Date().getFullYear()} FlightProblem.com - Flight delay and cancellation compensation claims
             </p>

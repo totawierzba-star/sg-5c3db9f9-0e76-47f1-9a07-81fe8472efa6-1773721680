@@ -1,35 +1,46 @@
-import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Plane, Award, Users, TrendingUp, CheckCircle, ArrowRight, Briefcase, Globe } from "lucide-react";
+import {
+  Plane,
+  Award,
+  Users,
+  TrendingUp,
+  CheckCircle,
+  ArrowRight,
+  Briefcase,
+  Globe,
+} from "lucide-react";
+
+import { LayoutEn } from "@/components/LayoutEn";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 
 export default function AboutEN() {
   return (
-    <>
+    <LayoutEn>
       <SEO
         title="About the Author - problemlot.com Expert"
-        description="Learn about the problemlot.com author - an expert in business travel, passenger rights, and airline compensation with years of experience in the aviation industry."
-        url="https://bizneslot.pl/en/about"
+        description="Learn about the problemlot.com author - an expert in passenger rights and airline compensation with years of experience analyzing flight disruption cases."
+        url="https://problemlot.com/en/about"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2djZoLTZ2LTZoNnptLTEyIDBoNnY2aC02di02em0yNCAxMnY2aC02di02aDZ6bS0xMiAwaDZ2NmgtNnYtNnptLTEyIDBoNnY2aC02di02em0yNCAxMnY2aC02di02aDZ6bS0xMiAwaDZ2NmgtNnYtNnptLTEyIDBoNnY2aC02di02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 bg-[#FF6B35]/10 border border-[#FF6B35]/20 rounded-full px-6 py-2 mb-8">
-                <Award className="w-5 h-5 text-[#FF6B35]" />
-                <span className="text-sm font-medium">Business Travel Expert</span>
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 text-white">
+          <div className="absolute inset-0 opacity-30 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2djZoLTZ2LTZoNnptLTEyIDBoNnY2aC02di02em0yNCAxMnY2aC02di02aDZ6bS0xMiAwaDZ2NmgtNnYtNnptLTEyIDBoNnY2aC02di02em0yNCAxMnY2aC02di02aDZ6bS0xMiAwaDZ2NmgtNnYtNnptLTEyIDBoNnY2aC02di02eiIvPjwvZz48L2c+PC9zdmc+')]"></div>
+
+          <div className="container relative z-10 mx-auto px-4">
+            <div className="mx-auto max-w-4xl text-center">
+              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#FF6B35]/20 bg-[#FF6B35]/10 px-6 py-2">
+                <Award className="h-5 w-5 text-[#FF6B35]" />
+                <span className="text-sm font-medium">Passenger Rights Expert</span>
               </div>
-              
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+
+              <h1 className="mb-6 text-4xl font-bold leading-tight md:text-6xl">
                 About the Author
               </h1>
-              
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Expert in business travel, passenger rights, and airline compensation. Creator of problemlot.com and ClaimWinger.com.
+
+              <p className="mx-auto max-w-3xl text-xl leading-relaxed text-slate-300">
+                Expert in passenger rights, flight disruption cases and airline compensation. Creator of
+                problemlot.com and ClaimWinger.com.
               </p>
             </div>
           </div>
@@ -37,169 +48,136 @@ export default function AboutEN() {
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
         </section>
 
-        {/* Main Content */}
-        <section className="py-20 px-4">
+        <section className="px-4 py-20">
           <div className="container mx-auto max-w-4xl">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Who Am I?</h2>
-              
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                I'm an expert specializing in <strong>passenger rights</strong> and <strong>airline compensation</strong>, 
-                with particular focus on <strong>business travel</strong>. For years, I've been helping travelers understand 
-                their rights and effectively claim compensation for flight disruptions.
+              <h2 className="mb-6 text-3xl font-bold text-slate-900">Who Am I?</h2>
+
+              <p className="mb-6 text-lg leading-relaxed text-slate-700">
+                I work on passenger rights, airline compensation and disruption analysis. Over the years,
+                I have reviewed a large number of delayed-flight and cancelled-flight scenarios, following
+                both the practical side of claims and the legal framework behind them.
               </p>
 
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                My experience stems from years of work in the aviation industry, analyzing thousands of compensation cases, 
-                and closely following changes in EU regulations (particularly EU 261/2004). I've witnessed how many business 
-                travelers are unaware of their rights during corporate trips.
+              <p className="mb-6 text-lg leading-relaxed text-slate-700">
+                My focus is on turning complex EU261 and UK261 rules into clear guidance that passengers can
+                actually use. That includes eligibility, extraordinary circumstances, compensation amounts,
+                evidence collection and the steps to take when an airline refuses to pay.
               </p>
 
-              <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 my-12 border-l-4 border-[#FF6B35]">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                  <Briefcase className="w-7 h-7 text-[#FF6B35]" />
+              <div className="my-12 rounded-2xl border-l-4 border-[#FF6B35] bg-gradient-to-br from-blue-50 to-slate-50 p-8">
+                <h3 className="mb-4 flex items-center gap-3 text-2xl font-bold text-slate-900">
+                  <Briefcase className="h-7 w-7 text-[#FF6B35]" />
                   My Mission
                 </h3>
-                <p className="text-lg text-slate-700 leading-relaxed">
-                  My goal is to educate business travelers about their rights and show them that compensation for 
-                  delayed or cancelled flights belongs to the passenger - not the employer who purchased the ticket. 
-                  Many employees mistakenly believe they're not entitled to compensation because the company paid for 
-                  their flight.
+                <p className="text-lg leading-relaxed text-slate-700">
+                  The goal of problemlot.com is simple: make passenger-rights content clear, practical and
+                  immediately useful. Most travelers do not need jargon. They need a direct answer to whether
+                  their flight qualifies, what they can claim and what to do next.
                 </p>
               </div>
 
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">Why problemlot.com?</h2>
-              
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                I created <strong>problemlot.com</strong> because I noticed a significant gap in information about passenger 
-                rights specifically in the context of business travel. Most portals focus on leisure travelers, while business 
-                trips have their own unique aspects:
+              <h2 className="mb-6 mt-12 text-3xl font-bold text-slate-900">Why problemlot.com?</h2>
+
+              <p className="mb-6 text-lg leading-relaxed text-slate-700">
+                I created <strong>problemlot.com</strong> to build a focused resource on passenger rights that
+                combines legal clarity with real-world flight scenarios. Instead of generic travel advice, the
+                site is built around disruption cases passengers actually search for.
               </p>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="mb-8 space-y-4">
                 <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">Relationship between employee, employer, and airline</span>
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#FF6B35]" />
+                  <span className="text-lg text-slate-700">Direct answers on delays, cancellations and missed connections</span>
                 </li>
                 <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">Company travel policies and internal regulations</span>
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#FF6B35]" />
+                  <span className="text-lg text-slate-700">Practical guides for evidence, timing and escalation</span>
                 </li>
                 <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">Proper expense documentation in HR and accounting</span>
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#FF6B35]" />
+                  <span className="text-lg text-slate-700">Airline-specific and route-specific content where standard advice is not enough</span>
                 </li>
                 <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">Rights to reimbursement of additional costs incurred during disruptions</span>
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#FF6B35]" />
+                  <span className="text-lg text-slate-700">Content designed to be readable first and legally useful second</span>
                 </li>
               </ul>
 
-              <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 my-12 border border-slate-200">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
-                  <Globe className="w-7 h-7 text-[#FF6B35]" />
+              <div className="my-12 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8">
+                <h3 className="mb-4 flex items-center gap-3 text-2xl font-bold text-slate-900">
+                  <Globe className="h-7 w-7 text-[#FF6B35]" />
                   ClaimWinger.com
                 </h3>
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I'm also the creator of <strong>ClaimWinger.com</strong> - a platform helping passengers effectively 
-                  claim compensation for flight disruptions. ClaimWinger handles the entire claims process, from documentation 
-                  review to negotiations with airlines and court proceedings if necessary.
+                <p className="mb-6 text-lg leading-relaxed text-slate-700">
+                  I am also behind <strong>ClaimWinger.com</strong>, a platform that helps passengers assess
+                  and pursue flight-disruption claims. The goal there is operational: make it easier to move
+                  from eligibility questions to an actual compensation process.
                 </p>
                 <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
                   <a href="https://claimwinger.com/en" target="_blank" rel="noopener noreferrer">
                     Visit ClaimWinger.com
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
               </div>
 
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">My Expertise</h2>
-              
-              <div className="grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                  <Plane className="w-10 h-10 text-[#FF6B35] mb-4" />
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Aviation Law</h3>
+              <h2 className="mb-6 mt-12 text-3xl font-bold text-slate-900">My Expertise</h2>
+
+              <div className="my-8 grid gap-6 md:grid-cols-2">
+                <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-md">
+                  <Plane className="mb-4 h-10 w-10 text-[#FF6B35]" />
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">Passenger Rights Law</h3>
                   <p className="text-slate-700">
-                    Deep knowledge of EU 261/2004 regulation and passenger rights in various flight disruption scenarios.
+                    Deep familiarity with EU261, UK261 and the practical questions passengers face after disruption.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                  <Users className="w-10 h-10 text-[#FF6B35] mb-4" />
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Business Travel</h3>
+                <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-md">
+                  <Users className="mb-4 h-10 w-10 text-[#FF6B35]" />
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">Claims Strategy</h3>
                   <p className="text-slate-700">
-                    Specialization in corporate travel - employee-employer relationships, company policies, expense accounting.
+                    Focus on what actually helps passengers win: timing, documentation and the quality of the claim.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                  <TrendingUp className="w-10 h-10 text-[#FF6B35] mb-4" />
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Airline Industry</h3>
+                <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-md">
+                  <TrendingUp className="mb-4 h-10 w-10 text-[#FF6B35]" />
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">Airline Patterns</h3>
                   <p className="text-slate-700">
-                    Years of experience analyzing airline operations, disruption causes, and effective claims strategies.
+                    Ongoing analysis of common refusal patterns, airline-specific behaviors and route-specific edge cases.
                   </p>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md border border-slate-200">
-                  <Award className="w-10 h-10 text-[#FF6B35] mb-4" />
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">Practical Education</h3>
+                <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-md">
+                  <Award className="mb-4 h-10 w-10 text-[#FF6B35]" />
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">Practical Education</h3>
                   <p className="text-slate-700">
-                    Ability to translate complex legal regulations into practical, easy-to-understand advice for travelers.
+                    Turning difficult legal rules into content that is direct, readable and useful under stress.
                   </p>
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">What Sets problemlot.com Apart?</h2>
-              
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                problemlot.com is <strong>the first Polish portal</strong> entirely dedicated to passenger rights in the 
-                business travel context. Here you'll find:
-              </p>
-
-              <ul className="space-y-4 mb-8">
-                <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">
-                    <strong>Specialized knowledge</strong> - focus on business flights and corporate policies
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">
-                    <strong>Current information</strong> - regularly updated based on legal changes and case law
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">
-                    <strong>Practical guides</strong> - step-by-step instructions for specific situations
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-[#FF6B35] flex-shrink-0 mt-1" />
-                  <span className="text-lg text-slate-700">
-                    <strong>Real examples</strong> - based on thousands of analyzed compensation cases
-                  </span>
-                </li>
-              </ul>
-
-              <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white rounded-2xl p-8 my-12">
-                <h3 className="text-2xl font-bold mb-4">Want to Learn More?</h3>
-                <p className="text-slate-200 mb-6 text-lg">
-                  Explore articles on problemlot.com and discover what rights you have as a business traveler. 
-                  Knowledge is power - especially when claiming what's rightfully yours.
+              <div className="my-12 rounded-2xl bg-gradient-to-r from-slate-800 to-slate-700 p-8 text-white">
+                <h3 className="mb-4 text-2xl font-bold">Want to Learn More?</h3>
+                <p className="mb-6 text-lg text-slate-200">
+                  Start with the English homepage, the calculator or the main EU261 guide and move from there
+                  into airline-specific or route-specific articles.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col gap-4 sm:flex-row">
                   <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
                     <Link href="/en">
                       Homepage
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                      <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/5 hover:bg-white/10 text-white">
-                    <Link href="/en/business-flight-compensation">
-                      Check Your Rights
-                    </Link>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-white/30 bg-white/5 text-white hover:bg-white/10"
+                  >
+                    <Link href="/en/compensation-calculator">Check Your Rights</Link>
                   </Button>
                 </div>
               </div>
@@ -207,6 +185,6 @@ export default function AboutEN() {
           </div>
         </section>
       </div>
-    </>
+    </LayoutEn>
   );
 }
