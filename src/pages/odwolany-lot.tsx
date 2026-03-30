@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import Link from "next/link";
 import { CheckCircle2, AlertCircle, Clock, Euro } from "lucide-react";
 
@@ -26,14 +27,7 @@ export default function OdwolanyLotPage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               Sprawdź swoje prawa i dowiedz się, kiedy możesz otrzymać nawet <span className="font-bold text-blue-600 dark:text-blue-400">600 €</span> rekompensaty za odwołany lot.
             </p>
-            <a
-              href="https://claimwinger.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
-            >
-              Sprawdź swoje odszkodowanie
-            </a>
+            <ClaimWingerHeroEmbed className="mt-8" />
           </div>
         </section>
 

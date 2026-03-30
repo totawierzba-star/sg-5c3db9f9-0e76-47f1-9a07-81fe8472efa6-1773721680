@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, AlertCircle, Euro, FileText, Scale } from "lucide-react";
@@ -23,11 +24,7 @@ export default function OpoznionyLot() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Jeśli Twój lot był opóźniony o więcej niż 3 godziny, masz prawo do odszkodowania nawet do 600 € zgodnie z rozporządzeniem UE 261/2004.
             </p>
-            <Button size="lg" asChild>
-              <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
-                Sprawdź swoje odszkodowanie
-              </a>
-            </Button>
+            <ClaimWingerHeroEmbed className="mt-8" />
           </div>
         </div>
       </section>

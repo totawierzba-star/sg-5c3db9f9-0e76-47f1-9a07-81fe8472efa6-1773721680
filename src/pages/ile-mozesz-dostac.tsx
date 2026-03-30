@@ -1,4 +1,5 @@
 import { SEO } from "@/components/SEO";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -23,11 +24,7 @@ export default function IleMozeszDostac() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Wysokość odszkodowania zależy od odległości lotu i długości opóźnienia. Sprawdź dokładnie, ile Ci przysługuje.
             </p>
-            <Button size="lg" asChild>
-              <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
-                Oblicz swoją kwotę odszkodowania
-              </a>
-            </Button>
+            <ClaimWingerHeroEmbed className="mt-8" />
           </div>
         </div>
       </section>
