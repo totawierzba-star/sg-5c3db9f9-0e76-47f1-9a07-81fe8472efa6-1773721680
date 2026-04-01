@@ -6,7 +6,7 @@ import { Menu, X, Plane, Shield, FileText, User } from "lucide-react";
 import { getTranslations } from "@/lib/translations";
 import { type Locale } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { MobileLanguageList } from "@/components/LanguageMenu";
 
 interface MobileNavProps {
   isOpen?: boolean;
@@ -23,7 +23,6 @@ export function MobileNav({
 }: MobileNavProps) {
   const [internalIsOpen, setInternalIsOpen] = useState(false);
   const t = getTranslations(locale);
-  const basePath = locale === "en" ? "/en" : "";
 
   const localizedRoute = (plPath: string, enPath: string) =>
     locale === "en" ? enPath : plPath;
@@ -140,11 +139,14 @@ export function MobileNav({
           </nav>
 
           <div className="p-6 border-t border-slate-700 space-y-4">
-             {/* Language Switcher inside Mobile Menu if needed */}
-             <div className="flex justify-between items-center text-white">
-                <span className="text-sm">Język / Language:</span>
-                <LanguageSwitcher />
-             </div>
+            <MobileLanguageList
+              currentLocale={locale === "en" ? "en" : "pl"}
+              title="Język / Language"
+              onNavigate={handleClose}
+              titleClassName="text-sm text-slate-400"
+              itemClassName="block rounded-lg px-3 py-2 text-sm text-slate-200 transition-colors hover:bg-slate-800"
+              activeItemClassName="block rounded-lg bg-slate-800 px-3 py-2 text-sm font-semibold text-white"
+            />
             <p className="text-sm text-slate-400 text-center">
               {t.footer.tagline}
             </p>

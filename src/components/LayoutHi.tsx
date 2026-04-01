@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ReactNode, useState } from "react";
-import { Menu, X, ChevronDown, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeProvider";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutHiProps {
   children: ReactNode;
@@ -54,39 +55,10 @@ export function LayoutHi({ children }: LayoutHiProps) {
                 Blog
               </Link>
 
-              {/* Language Switcher */}
-              <div className="relative group">
-                <button className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  <span>🇮🇳 हिन्दी</span>
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                  <Link href="/" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg">
-                    🇵🇱 Polski
-                  </Link>
-                  <Link href="/zh" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                    🇨🇳 中文
-                  </Link>
-                  <Link href="/cs" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                    🇨🇿 Čeština
-                  </Link>
-                  <Link href="/hi" className="block px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-b-lg">
-                    🇮🇳 हिन्दी
-                  </Link>
-                  <Link href="/sk" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    🇸🇰 Slovenčina
-                  </Link>
-                  <Link href="/it" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    🇮🇹 Italiano
-                  </Link>
-                  <Link href="/en" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                    🇬🇧 English
-                  </Link>
-                  <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg">
-                    🇸🇪 Svenska
-                  </Link>
-                </div>
-              </div>
+              <DesktopLanguageDropdown
+                currentLocale="hi"
+                buttonClassName="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              />
 
               {/* Theme Toggle */}
               <button
@@ -163,58 +135,13 @@ export function LayoutHi({ children }: LayoutHiProps) {
                   Blog
                 </Link>
 
-                {/* Language Switcher Mobile */}
-                <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
-                  <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
-                    भाषा चुनें
-                  </div>
-                  <div className="flex flex-col space-y-2">
-                    <Link
-                      href="/"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇵🇱 Polski
-                    </Link>
-                    <Link
-                      href="/zh"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇨🇳 中文
-                    </Link>
-                    <Link
-                      href="/cs"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇨🇿 Čeština
-                    </Link>
-                    <Link
-                      href="/hi"
-                      className="text-blue-600 dark:text-blue-400 font-medium"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇮🇳 हिन्दी
-                    </Link>
-                    <Link
-                      href="/sk"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      🇸🇰 Slovenčina
-                    </Link>
-                    <Link href="/it" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇮🇹</span> Italiano
-                    </Link>
-                    <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇸🇪</span> Svenska
-                    </Link>
-                    <Link href="/no" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇳🇴</span> Norsk
-                    </Link>
-                  </div>
-                </div>
+                <MobileLanguageList
+                  currentLocale="hi"
+                  title="भाषा चुनें"
+                  onNavigate={() => setMobileMenuOpen(false)}
+                  itemClassName="block rounded-md px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                  activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-medium text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                />
 
                 <a
                   href="https://claimwinger.com"

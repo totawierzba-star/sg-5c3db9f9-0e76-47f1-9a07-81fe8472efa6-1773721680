@@ -1,14 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { Plane, Menu, X, Globe, ChevronDown, Facebook, Twitter, Instagram } from "lucide-react";
+import { Plane, Menu, X, Facebook, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { ThemeSwitch } from "./ThemeSwitch";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,7 +11,6 @@ interface LayoutProps {
 
 export function LayoutSv({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col font-sans transition-colors duration-300">
@@ -45,48 +39,10 @@ export function LayoutSv({ children }: LayoutProps) {
               Blogg
             </Link>
             
-            {/* Language Switcher */}
-            <div className="relative">
-              <button 
-                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                className="flex items-center space-x-1 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                <Globe className="h-5 w-5" />
-                <span className="hidden sm:inline">SV</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
-              
-              {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 z-50">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    <Link href="/" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇵🇱</span> Polski
-                    </Link>
-                    <Link href="/en" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇬🇧</span> English
-                    </Link>
-                    <Link href="/cs" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇨🇿</span> Čeština
-                    </Link>
-                    <Link href="/sk" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇸🇰</span> Slovenčina
-                    </Link>
-                    <Link href="/zh" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇨🇳</span> 中文
-                    </Link>
-                    <Link href="/hi" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇮🇳</span> हिन्दी
-                    </Link>
-                    <Link href="/it" className="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700" role="menuitem">
-                      <span className="mr-2">🇮🇹</span> Italiano
-                    </Link>
-                    <Link href="/sv" className="flex items-center w-full px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-400" role="menuitem">
-                      <span className="mr-2">🇸🇪</span> Svenska
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
+            <DesktopLanguageDropdown
+              currentLocale="sv"
+              buttonClassName="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            />
 
             <ThemeSwitch />
               
@@ -143,20 +99,14 @@ export function LayoutSv({ children }: LayoutProps) {
               >
                 Blogg
               </Link>
-              <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
-                <span className="block text-sm text-gray-500 mb-3">Språk / Language</span>
-                <div className="flex flex-wrap gap-4">
-                  <Link href="/" className="text-2xl hover:scale-110 transition-transform">🇵🇱</Link>
-                  <Link href="/en" className="text-2xl hover:scale-110 transition-transform">🇬🇧</Link>
-                  <Link href="/cs" className="text-2xl hover:scale-110 transition-transform">🇨🇿</Link>
-                  <Link href="/sk" className="text-2xl hover:scale-110 transition-transform">🇸🇰</Link>
-                  <Link href="/zh" className="text-2xl hover:scale-110 transition-transform">🇨🇳</Link>
-                  <Link href="/hi" className="text-2xl hover:scale-110 transition-transform">🇮🇳</Link>
-                  <Link href="/it" className="text-2xl hover:scale-110 transition-transform">🇮🇹</Link>
-                  <Link href="/sv" className="text-2xl opacity-50 cursor-default">🇸🇪</Link>
-                  <Link href="/no" className="text-2xl">🇳🇴</Link>
-                </div>
-              </div>
+              <MobileLanguageList
+                currentLocale="sv"
+                title="Språk"
+                onNavigate={() => setIsMenuOpen(false)}
+                wrapperClassName="mt-4 border-t border-gray-100 pt-4 dark:border-gray-800"
+                itemClassName="block rounded-md px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+                activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+              />
             </nav>
           </div>
         )}

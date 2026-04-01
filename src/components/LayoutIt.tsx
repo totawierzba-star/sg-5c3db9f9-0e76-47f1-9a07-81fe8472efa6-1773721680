@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Plane, Menu, X, Facebook, Twitter, Linkedin, Mail, Phone } from "lucide-react";
 import { useState } from "react";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutItProps {
   children: React.ReactNode;
@@ -9,7 +10,6 @@ interface LayoutItProps {
 
 export function LayoutIt({ children }: LayoutItProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 to-white">
@@ -54,75 +54,13 @@ export function LayoutIt({ children }: LayoutItProps) {
                 Guide
               </Link>
               
-              {/* Desktop Language Selector */}
-              <div className="relative">
-                <button
-                  onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-                  className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                  aria-label="Seleziona lingua"
-                >
-                  <span>🇮🇹 IT</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {languageMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                    <Link 
-                      href="/" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇵🇱 Polski
-                    </Link>
-                    <Link 
-                      href="/zh" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇨🇳 中文
-                    </Link>
-                    <Link 
-                      href="/cs" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇨🇿 Čeština
-                    </Link>
-                    <Link 
-                      href="/hi" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇮🇳 हिन्दी
-                    </Link>
-                    <Link 
-                      href="/sk" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇸🇰 Slovenčina
-                    </Link>
-                    <Link 
-                      href="/it" 
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 bg-blue-50 font-medium"
-                      onClick={() => setLanguageMenuOpen(false)}
-                    >
-                      🇮🇹 Italiano
-                    </Link>
-                    <Link href="/en" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                      🇬🇧 English
-                    </Link>
-                    <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                      🇸🇪 Svenska
-                    </Link>
-                    <Link href="/no" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                      🇲🇴 Norsk
-                    </Link>
-                  </div>
-                )}
-              </div>
+              <DesktopLanguageDropdown
+                currentLocale="it"
+                buttonClassName="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                menuClassName="w-48 rounded-lg border border-gray-200 py-2 shadow-lg"
+                itemClassName="block rounded-md px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-600"
+                activeItemClassName="block rounded-md bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600"
+              />
 
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <a 
@@ -181,60 +119,14 @@ export function LayoutIt({ children }: LayoutItProps) {
                 Guide
               </Link>
 
-              {/* Mobile Language Selector */}
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-gray-500 mb-2">Seleziona lingua</p>
-                <div className="space-y-2">
-                  <Link 
-                    href="/" 
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇵🇱 Polski
-                  </Link>
-                  <Link 
-                    href="/zh" 
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇨🇳 中文
-                  </Link>
-                  <Link 
-                    href="/cs" 
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇨🇿 Čeština
-                  </Link>
-                  <Link 
-                    href="/hi" 
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇮🇳 हिन्दी
-                  </Link>
-                  <Link 
-                    href="/sk" 
-                    className="block text-gray-700 hover:text-blue-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇸🇰 Slovenčina
-                  </Link>
-                  <Link 
-                    href="/it" 
-                    className="block text-blue-600 font-medium"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇮🇹 Italiano
-                  </Link>
-                  <Link href="/sv" className="block text-gray-700 dark:text-gray-300 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
-                    🇸🇪 Svenska
-                  </Link>
-                  <Link href="/no" className="block text-gray-700 dark:text-gray-300 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
-                    🇲🇴 Norsk
-                  </Link>
-                </div>
-              </div>
+              <MobileLanguageList
+                currentLocale="it"
+                title="Seleziona lingua"
+                onNavigate={() => setMobileMenuOpen(false)}
+                wrapperClassName="pt-4 border-t border-gray-200"
+                itemClassName="block rounded-md px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-600"
+                activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-medium text-blue-600"
+              />
 
               <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                 <a 

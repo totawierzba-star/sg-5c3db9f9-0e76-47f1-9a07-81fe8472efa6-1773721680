@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { ReactNode } from "react";
-import { Plane, Globe } from "lucide-react";
+import { Plane } from "lucide-react";
 
 import { ThemeSwitch } from "./ThemeSwitch";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutEnProps {
   children: ReactNode;
@@ -47,68 +48,11 @@ export function LayoutEn({ children }: LayoutEnProps) {
                 Blog
               </Link>
 
-              <div className="relative z-50 group">
-                <button className="flex items-center gap-1 text-gray-600 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                  <Globe className="h-5 w-5" />
-                  <span className="hidden lg:inline">EN</span>
-                </button>
-                <div className="invisible absolute right-0 mt-2 w-48 rounded-md border border-gray-100 bg-white py-1 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100 dark:border-gray-700 dark:bg-gray-800">
-                  <Link
-                    href="/"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Polish
-                  </Link>
-                  <Link
-                    href="/cs"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Czech
-                  </Link>
-                  <Link
-                    href="/sk"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Slovak
-                  </Link>
-                  <Link
-                    href="/it"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Italian
-                  </Link>
-                  <Link
-                    href="/zh"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Chinese
-                  </Link>
-                  <Link
-                    href="/hi"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Hindi
-                  </Link>
-                  <Link
-                    href="/sv"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Swedish
-                  </Link>
-                  <Link
-                    href="/no"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
-                  >
-                    Norwegian
-                  </Link>
-                  <Link
-                    href="/en"
-                    className="block bg-blue-50 px-4 py-2 text-sm font-bold text-blue-600 dark:bg-blue-900/20"
-                  >
-                    English
-                  </Link>
-                </div>
-              </div>
+              <DesktopLanguageDropdown
+                currentLocale="en"
+                buttonClassName="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                menuClassName="w-48 rounded-md border border-gray-100 py-1 shadow-lg dark:border-gray-700"
+              />
 
               <ThemeSwitch />
             </nav>
@@ -143,32 +87,13 @@ export function LayoutEn({ children }: LayoutEnProps) {
             >
               Blog
             </Link>
-            <div className="flex gap-4">
-              <Link href="/" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                PL
-              </Link>
-              <Link href="/cs" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                CS
-              </Link>
-              <Link href="/sk" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                SK
-              </Link>
-              <Link href="/zh" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                ZH
-              </Link>
-              <Link href="/hi" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                HI
-              </Link>
-              <Link href="/it" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                IT
-              </Link>
-              <Link href="/sv" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                SV
-              </Link>
-              <Link href="/no" className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
-                NO
-              </Link>
-            </div>
+            <MobileLanguageList
+              currentLocale="en"
+              title="Language"
+              wrapperClassName="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700"
+              itemClassName="block rounded-md px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400"
+              activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+            />
           </nav>
         </div>
       </header>

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
-import { Button } from "@/components/ui/button";
-import { Plane, Globe, Menu, X } from "lucide-react";
+import { Plane, Menu, X } from "lucide-react";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutNoProps {
   children: ReactNode;
@@ -50,24 +50,10 @@ export function LayoutNo({ children }: LayoutNoProps) {
                 Blogg
               </Link>
 
-              {/* Language Selector */}
-              <div className="relative group z-50">
-                <button className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  <Globe className="h-5 w-5" />
-                  <span className="hidden lg:inline">NO</span>
-                </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-700">
-                  <Link href="/" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇵🇱 Polski</Link>
-                  <Link href="/cs" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇨🇿 Čeština</Link>
-                  <Link href="/sk" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇸🇰 Slovenčina</Link>
-                  <Link href="/it" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇮🇹 Italiano</Link>
-                  <Link href="/zh" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇨🇳 中文</Link>
-                  <Link href="/hi" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇮🇳 हिन्दी</Link>
-                  <Link href="/en" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇬🇧 English</Link>
-                  <Link href="/sv" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">🇸🇪 Svenska</Link>
-                  <Link href="/no" className="block px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50 dark:bg-blue-900/20">🇳🇴 Norsk</Link>
-                </div>
-              </div>
+              <DesktopLanguageDropdown
+                currentLocale="no"
+                buttonClassName="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              />
 
               <ThemeSwitch />
             </nav>
@@ -91,17 +77,14 @@ export function LayoutNo({ children }: LayoutNoProps) {
               <Link href="/no/innstilt-fly" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2" onClick={() => setMobileMenuOpen(false)}>Innstilt fly</Link>
               <Link href="/no/erstatningskalkulator" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2" onClick={() => setMobileMenuOpen(false)}>Kalkulator</Link>
               <Link href="/no/blog" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2" onClick={() => setMobileMenuOpen(false)}>Blogg</Link>
-              <div className="flex flex-wrap gap-4 mt-2">
-                <Link href="/" className="text-xl">🇵🇱</Link>
-                <Link href="/cs" className="text-xl">🇨🇿</Link>
-                <Link href="/sk" className="text-xl">🇸🇰</Link>
-                <Link href="/zh" className="text-xl">🇨🇳</Link>
-                <Link href="/hi" className="text-xl">🇮🇳</Link>
-                <Link href="/it" className="text-xl">🇮🇹</Link>
-                <Link href="/en" className="text-xl">🇬🇧</Link>
-                <Link href="/sv" className="text-xl">🇸🇪</Link>
-                <Link href="/no" className="text-xl">🇳🇴</Link>
-              </div>
+              <MobileLanguageList
+                currentLocale="no"
+                title="Språk"
+                onNavigate={() => setMobileMenuOpen(false)}
+                wrapperClassName="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700"
+                itemClassName="block rounded-md px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-600 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-blue-400"
+                activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+              />
             </nav>
           )}
         </div>

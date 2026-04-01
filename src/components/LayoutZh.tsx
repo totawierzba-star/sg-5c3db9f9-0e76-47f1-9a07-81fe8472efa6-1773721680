@@ -2,6 +2,7 @@ import { ReactNode, useState } from "react";
 import Link from "next/link";
 import { Menu, X, Sun, Moon, Plane, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeProvider";
+import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
 
 interface LayoutZhProps {
   children: ReactNode;
@@ -134,60 +135,10 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 联系我们
               </a>
 
-              {/* Language Switcher */}
-              <div className="relative group">
-                <button className="flex items-center gap-1 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
-                  🇵🇱 Polski
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <Link href="/" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-t-lg">
-                    🇵🇱 Polski
-                  </Link>
-                  <Link href="/zh" className="block px-4 py-2 text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 font-medium">
-                    🇨🇳 中文
-                  </Link>
-                  <Link href="/cs" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700">
-                    🇨🇿 Čeština
-                  </Link>
-                  <Link
-                    href="/hi"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇮🇳 हिन्दी
-                  </Link>
-                  <Link
-                    href="/sk"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇸🇰 Slovenčina
-                  </Link>
-                  <Link
-                    href="/it"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇮🇹 Italiano
-                  </Link>
-                  <Link
-                    href="/sv"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇸🇪 Svenska
-                  </Link>
-                  <Link
-                    href="/no"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  >
-                    🇲🇴 Norsk
-                  </Link>
-                  <Link
-                    href="/en"
-                    className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg"
-                  >
-                    🇬🇧 English
-                  </Link>
-                </div>
-              </div>
+              <DesktopLanguageDropdown
+                currentLocale="zh"
+                buttonClassName="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
+              />
 
               {/* Theme Toggle */}
               <button
@@ -337,56 +288,13 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 联系我们 (WhatsApp)
               </a>
 
-              {/* Language Switcher Mobile */}
-              <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700">
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">语言</div>
-                <div className="flex flex-col space-y-2">
-                  <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                    🇵🇱 Polski
-                  </Link>
-                  <div className="text-blue-600 dark:text-blue-400 font-medium">
-                    🇨🇳 中文
-                  </div>
-                  <Link href="/cs" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                    🇨🇿 Čeština
-                  </Link>
-                  <Link
-                    href="/hi"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇮🇳 हिन्दी
-                  </Link>
-                  <Link
-                    href="/sk"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇸🇰 Slovenčina
-                  </Link>
-                  <Link
-                    href="/it"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇮🇹 Italiano
-                  </Link>
-                  <Link
-                    href="/sv"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇸🇪 Svenska
-                  </Link>
-                  <Link
-                    href="/no"
-                    className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    🇲🇴 Norsk
-                  </Link>
-                </div>
-              </div>
+                <MobileLanguageList
+                  currentLocale="zh"
+                  title="语言"
+                  onNavigate={() => setMobileMenuOpen(false)}
+                  itemClassName="block rounded-md px-3 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                  activeItemClassName="block rounded-md bg-blue-50 px-3 py-2 text-sm font-medium text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                />
 
               <a
                 href="https://claimwinger.com/delayed-flight"
