@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { createRoot, type Root } from "react-dom/client";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/router";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
@@ -106,12 +106,11 @@ function restoreHiddenBlocks() {
 
 export function ClaimWingerBlogEmbedInjector() {
   const router = useRouter();
-  const rootsRef = useRef<Root[]>([]);
+  const [mountPoint, setMountPoint] = useState<HTMLElement | null>(null);
 
   useEffect(() => {
     const cleanup = () => {
-      rootsRef.current.forEach((root) => root.unmount());
-      rootsRef.current = [];
+      setMountPoint(null);
 
       document
         .querySelectorAll<HTMLElement>(`[${EMBED_ATTR}="true"]`)
@@ -127,34 +126,67 @@ export function ClaimWingerBlogEmbedInjector() {
       return cleanup;
     }
 
-    const timer = window.setTimeout(() => {
+    let cancelled = false;
+    let frameId = 0;
+    let attempts = 0;
+
+    const tryAttachEmbed = () => {
+      if (cancelled) {
+        return;
+      }
+
       const article = document.querySelector<HTMLElement>("article");
       if (!article) {
+        if (attempts < 20) {
+          attempts += 1;
+          frameId = window.requestAnimationFrame(tryAttachEmbed);
+        }
         return;
       }
 
       const container = findFirstCtaContainer(article);
       if (!container) {
+        if (attempts < 20) {
+          attempts += 1;
+          frameId = window.requestAnimationFrame(tryAttachEmbed);
+        }
         return;
       }
 
-      const mountPoint = document.createElement("div");
-      mountPoint.setAttribute(EMBED_ATTR, "true");
-      container.before(mountPoint);
+      const nextSibling = container.previousElementSibling;
+      const existingMountPoint =
+        nextSibling instanceof HTMLElement &&
+        nextSibling.getAttribute(EMBED_ATTR) === "true"
+          ? nextSibling
+          : null;
 
-      const root = createRoot(mountPoint);
-      root.render(<ClaimWingerHeroEmbed className="mb-8" />);
-      rootsRef.current.push(root);
+      const nextMountPoint = existingMountPoint ?? document.createElement("div");
+      nextMountPoint.setAttribute(EMBED_ATTR, "true");
+
+      if (!existingMountPoint) {
+        container.before(nextMountPoint);
+      }
 
       container.hidden = true;
       container.setAttribute(HIDDEN_ATTR, "true");
-    }, 0);
+      setMountPoint(nextMountPoint);
+    };
+
+    frameId = window.requestAnimationFrame(tryAttachEmbed);
 
     return () => {
-      window.clearTimeout(timer);
+      cancelled = true;
+      window.cancelAnimationFrame(frameId);
       cleanup();
     };
   }, [router.asPath]);
 
-  return null;
+  if (!mountPoint) {
+    return null;
+  }
+
+  return createPortal(
+    <ClaimWingerHeroEmbed className="mb-8" />,
+    mountPoint,
+  );
 }
