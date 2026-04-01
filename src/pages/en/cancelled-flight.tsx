@@ -1,5 +1,6 @@
 import { LayoutEn } from "@/components/LayoutEn";
 import { SEO } from "@/components/SEO";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
@@ -34,26 +35,13 @@ export default function CancelledFlightEn() {
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
               If your flight was cancelled less than 14 days before departure, you're entitled to up to €600 compensation PLUS full ticket refund under EU Regulation 261/2004.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white"
-              >
-                <a
-                  href="https://claimwinger.com/cancelled-flight?utm_source=flightproblem&utm_medium=en_cancelled&utm_campaign=hero_cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Check My Compensation
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/en/compensation-calculator">
-                  Calculate Amount
-                </Link>
-              </Button>
-            </div>
+            <ClaimWingerHeroEmbed
+              className="mt-8"
+              lang="en"
+              title="ClaimWinger cancelled flight form"
+              loadingLabel="Loading form..."
+              loadingDescription="In a moment you will see the ClaimWinger form to check your cancelled flight case."
+            />
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
               ✓ Free claim check ✓ No win, no fee ✓ Compensation + Refund
             </p>

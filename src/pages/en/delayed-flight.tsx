@@ -1,5 +1,6 @@
 import { LayoutEn } from "@/components/LayoutEn";
 import { SEO } from "@/components/SEO";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
@@ -34,26 +35,13 @@ export default function DelayedFlightEn() {
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
               If your flight is delayed 3+ hours, you may be entitled to up to €600 compensation under EU Regulation 261/2004. Check your rights now.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white"
-              >
-                <a
-                  href="https://claimwinger.com/delayed-flight?utm_source=flightproblem&utm_medium=en_delayed&utm_campaign=hero_cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Check My Compensation
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/en/compensation-calculator">
-                  Calculate Amount
-                </Link>
-              </Button>
-            </div>
+            <ClaimWingerHeroEmbed
+              className="mt-8"
+              lang="en"
+              title="ClaimWinger delayed flight form"
+              loadingLabel="Loading form..."
+              loadingDescription="In a moment you will see the ClaimWinger form to check your delayed flight case."
+            />
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
               ✓ Free claim check ✓ No win, no fee ✓ Up to 6 years back
             </p>

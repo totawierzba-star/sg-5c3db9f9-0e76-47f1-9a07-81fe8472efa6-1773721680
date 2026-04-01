@@ -1,5 +1,6 @@
 import { LayoutEn } from "@/components/LayoutEn";
 import { SEO } from "@/components/SEO";
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
@@ -45,6 +46,13 @@ export default function CompensationCalculatorEn() {
                 Calculate My Compensation →
               </a>
             </Button>
+            <ClaimWingerHeroEmbed
+              className="mt-8"
+              lang="en"
+              title="ClaimWinger compensation form"
+              loadingLabel="Loading form..."
+              loadingDescription="In a moment you will see the ClaimWinger form to calculate and check your claim."
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Plane, Shield, Clock, Award, CheckCircle, ArrowRight } from "lucide-react";
 
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { LayoutEn } from "@/components/LayoutEn";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -57,6 +58,13 @@ export default function HomeEN() {
                   <Link href="/en/blog">Expert Articles</Link>
                 </Button>
               </div>
+              <ClaimWingerHeroEmbed
+                className="mx-auto mt-8 max-w-4xl"
+                lang="en"
+                title="ClaimWinger form"
+                loadingLabel="Loading form..."
+                loadingDescription="In a moment you will see the ClaimWinger form to check your case."
+              />
             </div>
           </div>
 
