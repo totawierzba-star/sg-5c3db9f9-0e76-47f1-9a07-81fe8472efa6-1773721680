@@ -11,6 +11,106 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "turkish-airlines-hotel-voucher-istanbul",
+    title: "Turkish Airlines 在伊斯坦布尔不给酒店怎么办？",
+    excerpt:
+      "Turkish Airlines 在 IST 延误、取消或错过转机后，如果不给 hotel voucher 怎么办？本文讲清过夜安置、餐饮和票据保留重点。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "过夜安置",
+    featured: true,
+  },
+  {
+    slug: "bodrum-diverted-to-izmir-guide",
+    title: "原本飞博德鲁姆却降落伊兹密尔，怎么办？",
+    excerpt:
+      "飞博德鲁姆 BJV 却被改降到伊兹密尔后，航空公司必须安排什么？本文讲清大巴、出租车、最终到达时间和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "改降场景",
+    featured: true,
+  },
+  {
+    slug: "self-transfer-risk-istanbul",
+    title: "在伊斯坦布尔自己分开买票转机，错过下一段怎么办？",
+    excerpt:
+      "自己分开买票在 IST 或 SAW 转机时，一旦错过下一段通常会发生什么？本文讲清 self-transfer、联程票区别、酒店和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "9 分钟",
+    category: "转机风险",
+    featured: true,
+  },
+  {
+    slug: "rhodes-airport-delay-rights",
+    title: "罗得岛机场延误怎么办？RHO 航班赔偿指南",
+    excerpt:
+      "在罗得岛机场 RHO 遇到航班延误、取消、机场混乱或改到次日，什么时候还能拿 EU261？本文讲清岛屿机场、罢工和照护边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "santorini-airport-delay-rights",
+    title: "圣托里尼机场延误怎么办？JTR 航班赔偿指南",
+    excerpt:
+      "在圣托里尼机场 JTR 遇到航班延误、取消或大风导致混乱时，什么时候还能拿 EU261？本文讲清天气理由、岛屿航线和过夜安置边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "istanbul-airport-delay-rights",
+    title: "伊斯坦布尔机场 IST 航班延误怎么办？乘客权利指南",
+    excerpt:
+      "在伊斯坦布尔机场 IST 遇到 Turkish Airlines 或其他航班延误、取消、错过联程后，什么时候受 EU261 保护，什么时候不受？本文讲清终点延误、过夜和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "9 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "istanbul-overnight-delay-hotel-guide",
+    title: "伊斯坦布尔延误过夜，酒店该谁出？IST / SAW 指南",
+    excerpt:
+      "在伊斯坦布尔因延误或取消被迫过夜，航空公司必须提供酒店吗？本文讲清 IST / SAW 的酒店、餐饮、交通与赔偿边界。",
+    date: "2026-04-06",
+    readTime: "9 分钟",
+    category: "过夜安置",
+    featured: true,
+  },
+  {
+    slug: "sabiha-gokcen-delay-rights",
+    title: "萨比哈机场 SAW 航班延误怎么办？乘客权利指南",
+    excerpt:
+      "在伊斯坦布尔萨比哈机场 SAW 遇到 Pegasus 或其他航班延误、过夜和错过转机后，什么时候受 EU261 保护，什么时候不受？本文讲清现场处理与赔偿边界。",
+    date: "2026-04-06",
+    readTime: "9 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "sports-equipment-damaged-charter-flight",
+    title: "包机托运风筝板、高尔夫包损坏怎么办？运动装备索赔指南",
+    excerpt:
+      "风筝板、冲浪板、高尔夫球包在包机或度假航班中损坏后，除了 EU261 之外还能追什么？本文讲清行李损失与蒙特利尔公约边界。",
+    date: "2026-04-06",
+    readTime: "10 分钟",
+    category: "行李损失",
+    featured: true,
+  },
+  {
+    slug: "missed-cruise-due-to-delayed-flight",
+    title: "航班延误错过邮轮登船怎么办？Cruise 高价值索赔指南",
+    excerpt:
+      "因为航班延误错过邮轮登船，损失可能远超 €600。本文讲清 EU261、联程结构、后续损失与邮轮行程中哪些能追、哪些不能。",
+    date: "2026-04-06",
+    readTime: "11 分钟",
+    category: "高价值案件",
+    featured: true,
+  },
+  {
     slug: "diverted-flight-greece-turkey-guide",
     title: "航班改降别的机场怎么办？希腊和土耳其 diverted flight 指南",
     excerpt:
