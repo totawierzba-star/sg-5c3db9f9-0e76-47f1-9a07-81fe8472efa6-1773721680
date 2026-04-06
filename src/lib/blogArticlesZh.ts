@@ -11,6 +11,16 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "eu261-turkey-flights-compensation",
+    title: "土耳其航班也能拿 EU261 赔偿吗？一文看懂飞土耳其的欧盟航班规则",
+    excerpt:
+      "飞土耳其、从土耳其飞回欧盟、或者经伊斯坦布尔转机时，什么时候能拿 €600，什么时候完全不受 EU261 保护？这篇文章专门讲清楚欧盟-土耳其航线的边界。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "法规指南",
+    featured: true,
+  },
+  {
     slug: "shanghai-pudong-delayed-flight-compensation",
     title: "上海浦东机场航班延误赔偿指南【2026】飞欧洲如何判断能否拿到 €600",
     excerpt:
