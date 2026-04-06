@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
+import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 import Link from "next/link";
 import { AlertCircle, Euro, CheckCircle2 } from "lucide-react";
 
@@ -26,14 +27,12 @@ export default function ZhCancelledFlightPage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               查看您的权利并了解何时可以因取消的航班获得高达 <span className="font-bold text-blue-600 dark:text-blue-400">600 €</span> 的赔偿。
             </p>
-            <a
-              href="https://claimwinger.com/cancelled-flight"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
-            >
-              检查我的赔偿
-            </a>
+            <ClaimWingerZhSection
+              className="mt-8 text-left"
+              badge="取消航班索赔入口"
+              title="航班被取消了？先用中文表单快速判断"
+              description="如果航空公司临时取消航班、改签到很晚或没有提前足够天数通知，您可能不仅有退款权，还有现金赔偿权。"
+            />
           </div>
         </section>
 
@@ -152,7 +151,7 @@ export default function ZhCancelledFlightPage() {
                 检查您是否有权因取消的航班获得赔偿
               </p>
               <a
-                href="https://claimwinger.com/cancelled-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"

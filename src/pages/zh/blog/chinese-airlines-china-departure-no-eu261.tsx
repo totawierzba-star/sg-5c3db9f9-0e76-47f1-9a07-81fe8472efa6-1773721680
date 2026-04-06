@@ -522,7 +522,7 @@ export default function ChineseAirlinesChinaDepartureNoEU261() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=chinese-airlines-china-departure"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"

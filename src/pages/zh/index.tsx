@@ -1,9 +1,13 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
+import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 import Link from "next/link";
-import { CheckCircle2, Clock, AlertCircle, Euro, Plane } from "lucide-react";
+import { ArrowRight, AlertCircle, BookOpen, Clock, Euro, Plane } from "lucide-react";
+import { blogArticlesZhSorted } from "@/lib/blogArticlesZh";
 
 export default function ZhHomePage() {
+  const latestArticles = blogArticlesZhSorted.slice(0, 3);
+
   return (
     <LayoutZh>
       <SEO
@@ -26,17 +30,12 @@ export default function ZhHomePage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               根据欧盟法规 261/2004，乘客在航班延误、取消或超额预订的情况下有权获得赔偿。检查您的权利并立即获得应得的补偿。
             </p>
-            <a
-              href="https://claimwinger.com/delayed-flight"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
-            >
-              检查我的赔偿 →
-            </a>
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-              无风险 – 只在成功获得赔偿后付款
-            </p>
+            <ClaimWingerZhSection
+              className="mt-8 text-left"
+              badge="ClaimWinger 中文航班索赔"
+              title="先免费检查，再决定是否提交索赔"
+              description="如果您的航班延误、取消或转机失败，直接通过 ClaimWinger 中文表单提交会更快。系统会先帮您判断资格，随后再进入正式索赔流程。"
+            />
           </div>
         </section>
 
@@ -161,6 +160,60 @@ export default function ZhHomePage() {
           </div>
         </section>
 
+        <section className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                  <BookOpen className="h-4 w-4" />
+                  中文博客
+                </div>
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                  最新中文指南
+                </h2>
+                <p className="mt-3 max-w-2xl text-gray-600 dark:text-gray-300">
+                  我们持续补充中国乘客最常遇到的欧洲航班延误、取消和转机问题，方便您快速判断是否值得索赔。
+                </p>
+              </div>
+
+              <Link
+                href="/zh/blog"
+                className="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                查看全部文章
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              {latestArticles.map((article) => (
+                <Link
+                  key={article.slug}
+                  href={`/zh/blog/${article.slug}`}
+                  className="group rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl dark:bg-gray-800"
+                >
+                  <div className="mb-3 text-sm font-medium text-blue-600 dark:text-blue-400">
+                    {article.category}
+                  </div>
+                  <h3 className="mb-3 text-xl font-bold text-gray-900 transition group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
+                    {article.title}
+                  </h3>
+                  <p className="mb-5 line-clamp-3 text-sm leading-7 text-gray-600 dark:text-gray-300">
+                    {article.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                    <span>{article.date}</span>
+                    <span className="inline-flex items-center gap-1 font-medium text-blue-600 dark:text-blue-400">
+                      阅读
+                      <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 rounded-xl shadow-xl p-8 text-center text-white">
@@ -171,7 +224,7 @@ export default function ZhHomePage() {
               检查您是否有权因航班延误或取消获得赔偿
             </p>
             <a
-              href="https://claimwinger.com/delayed-flight"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"

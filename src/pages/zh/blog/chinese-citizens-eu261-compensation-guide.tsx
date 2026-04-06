@@ -689,7 +689,7 @@ export default function ChineseCitizensEU261Guide() {
             </div>
 
             <a
-              href="https://claimwinger.com/delayed-flight"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
@@ -969,7 +969,7 @@ export default function ChineseCitizensEU261Guide() {
               持中国护照的您也享有完整的欧盟航班赔偿权利。
             </p>
             <a
-              href="https://claimwinger.com/delayed-flight"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-blue-600 px-10 py-5 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors shadow-lg"

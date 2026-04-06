@@ -157,7 +157,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               让法律团队为您挑战航司的虚假借口。
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_extraordinary"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
@@ -389,7 +389,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               完全<strong>无风险</strong> - 只有成功才收费。
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_extraordinary_cta2"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors"
@@ -546,7 +546,7 @@ export default function ExtraordinaryCircumstancesExplained() {
               让专业团队为您挑战不公正的拒绝 - 完全无风险！
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_extraordinary_final"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-xl hover:bg-blue-50 transition-colors shadow-lg"

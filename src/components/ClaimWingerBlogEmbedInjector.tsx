@@ -3,13 +3,37 @@ import { createPortal } from "react-dom";
 import { useRouter } from "next/router";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
 const HIDDEN_ATTR = "data-claimwinger-blog-embed-hidden";
 
-function isPolishBlogArticle(path: string) {
-  return /^\/blog\/[^/?#]+$/.test(path);
-}
+type BlogEmbedConfig = {
+  isMatch: (path: string) => boolean;
+  claimLinkSelector: string;
+  fallbackMode?: "after-header";
+  render: () => JSX.Element;
+};
+
+const BLOG_EMBED_CONFIGS: BlogEmbedConfig[] = [
+  {
+    isMatch: (path) => /^\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com"]',
+    render: () => <ClaimWingerHeroEmbed className="mb-8" />,
+  },
+  {
+    isMatch: (path) => /^\/zh\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com"]',
+    fallbackMode: "after-header",
+    render: () => (
+      <ClaimWingerZhSection
+        className="mb-8"
+        title="立即开始中文索赔检查"
+        description="如果您已经读到这里，通常已经具备初步判断条件。直接填写 ClaimWinger 表单，比手动整理材料和反复联系航空公司更快。"
+      />
+    ),
+  },
+];
 
 function scoreCandidate(element: HTMLElement, article: HTMLElement) {
   if (!["DIV", "SECTION"].includes(element.tagName)) {
@@ -28,12 +52,12 @@ function scoreCandidate(element: HTMLElement, article: HTMLElement) {
   }
 
   const textLength = (element.textContent || "").trim().length;
-  if (textLength === 0 || textLength > 1600) {
+  if (textLength === 0 || textLength > 2400) {
     return -1;
   }
 
   const linkCount = element.querySelectorAll("a[href]").length;
-  if (linkCount === 0 || linkCount > 6) {
+  if (linkCount === 0 || linkCount > 8) {
     return -1;
   }
 
@@ -51,11 +75,11 @@ function scoreCandidate(element: HTMLElement, article: HTMLElement) {
     score += 1;
   }
 
-  if (textLength < 900) {
+  if (textLength < 1200) {
     score += 2;
   }
 
-  if (linkCount <= 3) {
+  if (linkCount <= 4) {
     score += 2;
   }
 
@@ -66,11 +90,9 @@ function scoreCandidate(element: HTMLElement, article: HTMLElement) {
   return score;
 }
 
-function findFirstCtaContainer(article: HTMLElement) {
+function findFirstCtaContainer(article: HTMLElement, claimLinkSelector: string) {
   const claimLinks = Array.from(
-    article.querySelectorAll<HTMLAnchorElement>(
-      'a[href^="https://claimwinger.com/pl"]',
-    ),
+    article.querySelectorAll<HTMLAnchorElement>(claimLinkSelector),
   );
 
   for (const link of claimLinks) {
@@ -97,6 +119,26 @@ function findFirstCtaContainer(article: HTMLElement) {
   return null;
 }
 
+function findFallbackMountPoint(article: HTMLElement, fallbackMode?: "after-header") {
+  if (fallbackMode !== "after-header") {
+    return null;
+  }
+
+  const header = article.querySelector("header");
+  if (header?.parentElement instanceof HTMLElement) {
+    return header.nextElementSibling instanceof HTMLElement
+      ? header.nextElementSibling
+      : null;
+  }
+
+  const firstSection = article.querySelector("section");
+  if (firstSection instanceof HTMLElement) {
+    return firstSection;
+  }
+
+  return null;
+}
+
 function restoreHiddenBlocks() {
   document.querySelectorAll<HTMLElement>(`[${HIDDEN_ATTR}="true"]`).forEach((el) => {
     el.hidden = false;
@@ -107,10 +149,12 @@ function restoreHiddenBlocks() {
 export function ClaimWingerBlogEmbedInjector() {
   const router = useRouter();
   const [mountPoint, setMountPoint] = useState<HTMLElement | null>(null);
+  const [config, setConfig] = useState<BlogEmbedConfig | null>(null);
 
   useEffect(() => {
     const cleanup = () => {
       setMountPoint(null);
+      setConfig(null);
 
       document
         .querySelectorAll<HTMLElement>(`[${EMBED_ATTR}="true"]`)
@@ -122,7 +166,8 @@ export function ClaimWingerBlogEmbedInjector() {
     cleanup();
 
     const path = router.asPath.split(/[?#]/)[0];
-    if (!isPolishBlogArticle(path)) {
+    const matchedConfig = BLOG_EMBED_CONFIGS.find((entry) => entry.isMatch(path));
+    if (!matchedConfig) {
       return cleanup;
     }
 
@@ -144,8 +189,12 @@ export function ClaimWingerBlogEmbedInjector() {
         return;
       }
 
-      const container = findFirstCtaContainer(article);
-      if (!container) {
+      const container = findFirstCtaContainer(article, matchedConfig.claimLinkSelector);
+      const fallbackMountTarget = container
+        ? null
+        : findFallbackMountPoint(article, matchedConfig.fallbackMode);
+
+      if (!container && !fallbackMountTarget) {
         if (attempts < 20) {
           attempts += 1;
           frameId = window.requestAnimationFrame(tryAttachEmbed);
@@ -153,22 +202,31 @@ export function ClaimWingerBlogEmbedInjector() {
         return;
       }
 
-      const nextSibling = container.previousElementSibling;
+      const insertionTarget = container ?? fallbackMountTarget;
+      if (!insertionTarget) {
+        return;
+      }
+
+      const previousSibling = insertionTarget.previousElementSibling;
       const existingMountPoint =
-        nextSibling instanceof HTMLElement &&
-        nextSibling.getAttribute(EMBED_ATTR) === "true"
-          ? nextSibling
+        previousSibling instanceof HTMLElement &&
+        previousSibling.getAttribute(EMBED_ATTR) === "true"
+          ? previousSibling
           : null;
 
       const nextMountPoint = existingMountPoint ?? document.createElement("div");
       nextMountPoint.setAttribute(EMBED_ATTR, "true");
 
       if (!existingMountPoint) {
-        container.before(nextMountPoint);
+        insertionTarget.before(nextMountPoint);
       }
 
-      container.hidden = true;
-      container.setAttribute(HIDDEN_ATTR, "true");
+      if (container) {
+        container.hidden = true;
+        container.setAttribute(HIDDEN_ATTR, "true");
+      }
+
+      setConfig(matchedConfig);
       setMountPoint(nextMountPoint);
     };
 
@@ -181,12 +239,9 @@ export function ClaimWingerBlogEmbedInjector() {
     };
   }, [router.asPath]);
 
-  if (!mountPoint) {
+  if (!mountPoint || !config) {
     return null;
   }
 
-  return createPortal(
-    <ClaimWingerHeroEmbed className="mb-8" />,
-    mountPoint,
-  );
+  return createPortal(config.render(), mountPoint);
 }

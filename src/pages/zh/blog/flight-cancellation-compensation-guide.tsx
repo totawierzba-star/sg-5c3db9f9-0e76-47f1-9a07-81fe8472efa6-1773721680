@@ -48,7 +48,7 @@ export default function FlightCancellationCompensationGuide() {
                 无论是提前取消还是当天取消，您可能有权获得€250-€600赔偿 + 全额退款。ClaimWinger帮您快速索赔。
               </p>
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_cancellation_guide_top"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -309,7 +309,7 @@ export default function FlightCancellationCompensationGuide() {
                 </div>
               </div>
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_cancellation_guide_middle"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -656,7 +656,7 @@ export default function FlightCancellationCompensationGuide() {
                 </div>
               </div>
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_cancellation_guide_bottom"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 className="inline-flex items-center gap-3 bg-white text-blue-600 px-10 py-5 rounded-lg font-bold text-xl hover:bg-blue-50 transition-colors shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"

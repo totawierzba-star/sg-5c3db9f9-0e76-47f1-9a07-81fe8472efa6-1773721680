@@ -334,7 +334,7 @@ export default function EuropeanAirlineChinaDepartureCompensation() {
               仍可获得<strong>最高€600（约¥4,800）</strong>赔偿
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_european_airline_china_departure"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
@@ -717,7 +717,7 @@ export default function EuropeanAirlineChinaDepartureCompensation() {
               仅需<strong>2分钟</strong>检查您的航班资格！
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_european_airline_china_cta2"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors"
@@ -965,7 +965,7 @@ export default function EuropeanAirlineChinaDepartureCompensation() {
               仅需<strong>30秒</strong>检查资格！
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_european_airline_china_final"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-50 transition-colors"

@@ -149,7 +149,7 @@ export default function BritishAirwaysCompensationGuide() {
             ✓ 无风险 ✓ 只需 2 分钟 ✓ 无需信用卡
           </p>
           <a
-            href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=british-airways-guide-zh&utm_content=cta-1"
+            href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -643,7 +643,7 @@ export default function BritishAirwaysCompensationGuide() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=british-airways-guide-zh&utm_content=cta-2-check"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-purple-600 font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-center"
@@ -651,7 +651,7 @@ export default function BritishAirwaysCompensationGuide() {
               免费检查我的航班
             </a>
             <a
-              href="https://claimwinger.com/how-it-works?utm_source=lotproblem&utm_medium=blog&utm_campaign=british-airways-guide-zh&utm_content=cta-2-how"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-purple-600 transition-all duration-200 text-center"
@@ -1034,7 +1034,7 @@ export default function BritishAirwaysCompensationGuide() {
                     访问 ClaimWinger 网站，输入航班信息（航班号、日期、延误/取消时间）。我们的智能系统将立即告诉您是否符合索赔条件以及预估赔偿金额。
                   </p>
                   <a
-                    href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=british-airways-guide-zh&utm_content=step-1"
+                    href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -1741,7 +1741,7 @@ export default function BritishAirwaysCompensationGuide() {
           </div>
 
           <a
-            href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=british-airways-guide-zh&utm_content=cta-final"
+            href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-blue-600 font-bold text-lg px-10 py-5 rounded-xl hover:bg-blue-50 transition-all duration-200 shadow-2xl hover:shadow-3xl transform hover:scale-105 mb-4"

@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
+import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 import Link from "next/link";
 import { Clock, Euro, CheckCircle2 } from "lucide-react";
 
@@ -26,14 +27,12 @@ export default function ZhDelayedFlightPage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               查看您的权利并了解何时可以因航班延误获得高达 <span className="font-bold text-blue-600 dark:text-blue-400">600 €</span> 的赔偿。
             </p>
-            <a
-              href="https://claimwinger.com/delayed-flight"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg hover:shadow-xl"
-            >
-              检查我的赔偿
-            </a>
+            <ClaimWingerZhSection
+              className="mt-8 text-left"
+              badge="延误航班快速索赔"
+              title="航班延误超过 3 小时？现在就检查是否符合赔偿条件"
+              description="填写航班号、日期和路线后，ClaimWinger 会帮助您判断是否可能获得 €250、€400 或 €600 赔偿，并接手后续流程。"
+            />
           </div>
         </section>
 
@@ -152,7 +151,7 @@ export default function ZhDelayedFlightPage() {
                 检查您是否有权因航班延误获得赔偿
               </p>
               <a
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"

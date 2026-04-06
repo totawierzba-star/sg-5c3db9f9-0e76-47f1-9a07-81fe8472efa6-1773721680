@@ -51,7 +51,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     AI 概览 - 快速理解您的权利
                   </h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    <strong>从北京首都国际机场（PEK）出发的航班被取消？</strong> 如果您的航班受 <strong>EU261 或 UK261</strong> 保护（即从欧盟/英国出发，或由欧盟/英国航空公司执飞并到达欧盟/英国），您可能有权获得 <strong>€250–€600</strong> 的赔偿。关键条件：(1) 航空公司未提前 ≥14 天通知；(2) 取消原因非&quot;特殊情况&quot;（如极端天气、战争）；(3) 您持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>，但转机至欧盟/英国时可能适用。本指南逐条解释何时可以、何时不能索赔，以及如何通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger 专业服务</a> 快速获得赔偿（无前期费用，只在成功后收费）。
+                    <strong>从北京首都国际机场（PEK）出发的航班被取消？</strong> 如果您的航班受 <strong>EU261 或 UK261</strong> 保护（即从欧盟/英国出发，或由欧盟/英国航空公司执飞并到达欧盟/英国），您可能有权获得 <strong>€250–€600</strong> 的赔偿。关键条件：(1) 航空公司未提前 ≥14 天通知；(2) 取消原因非&quot;特殊情况&quot;（如极端天气、战争）；(3) 您持有确认订座。<strong>重要：从中国出发由中国航司执飞的航班通常不受 EU261 保护</strong>，但转机至欧盟/英国时可能适用。本指南逐条解释何时可以、何时不能索赔，以及如何通过 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger 专业服务</a> 快速获得赔偿（无前期费用，只在成功后收费）。
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     <strong>案例：</strong>张女士预订了 <strong>汉莎航空 LH720</strong>（北京 PEK → 法兰克福 FRA），起飞前 6 小时接到取消通知。汉莎以&quot;机组调度问题&quot;为由取消。
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
-                    <strong>结果：</strong>通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，张女士在 8 周内获得 <strong>€600 赔偿</strong>（航程 &gt; 3,500 km），因为：(1) 航班受 EU261 保护（欧盟航司到达欧盟）；(2) 未提前 14 天通知；(3) 非特殊情况。
+                    <strong>结果：</strong>通过 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a>，张女士在 8 周内获得 <strong>€600 赔偿</strong>（航程 &gt; 3,500 km），因为：(1) 航班受 EU261 保护（欧盟航司到达欧盟）；(2) 未提前 14 天通知；(3) 非特殊情况。
                   </p>
                 </div>
               </section>
@@ -180,7 +180,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                         <li>您在欧盟/英国转机且转机段被取消（该段受保护）</li>
                       </ul>
                       <p className="text-gray-700 dark:text-gray-300 mt-3">
-                        如不确定是否适用，<a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">免费检查您的航班资格</a>（30 秒）。
+                        如不确定是否适用，<a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">免费检查您的航班资格</a>（30 秒）。
                       </p>
                     </div>
                   </div>
@@ -295,7 +295,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                  航空公司经常以&quot;特殊情况&quot;为由拒绝赔偿，或要求您填写复杂的表格。<a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a> 是专业的航空乘客权利服务平台，为您处理整个索赔流程 — <strong>无前期费用，只在成功后收取服务费</strong>。
+                  航空公司经常以&quot;特殊情况&quot;为由拒绝赔偿，或要求您填写复杂的表格。<a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold">ClaimWinger</a> 是专业的航空乘客权利服务平台，为您处理整个索赔流程 — <strong>无前期费用，只在成功后收取服务费</strong>。
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -356,7 +356,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                     立即检查您是否有权获得最高 €600 赔偿
                   </p>
                   <a
-                    href="https://claimwinger.com/cancelled-flight"
+                    href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"
@@ -426,7 +426,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
 
                 <div className="mt-8 text-center">
                   <a
-                    href="https://claimwinger.com/cancelled-flight"
+                    href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors shadow-lg"
@@ -448,7 +448,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q1: 我乘坐国航从北京飞往伦敦，航班被取消。我能获得赔偿吗？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      <strong>通常不能。</strong>国航（CA）是中国航司，从中国出发到英国的航班通常不受 EU261/UK261 保护。但如果您在欧盟/英国有转机段（如法兰克福 → 伦敦）且该段被取消，转机段可能受保护。建议通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger 免费检查</a>。
+                      <strong>通常不能。</strong>国航（CA）是中国航司，从中国出发到英国的航班通常不受 EU261/UK261 保护。但如果您在欧盟/英国有转机段（如法兰克福 → 伦敦）且该段被取消，转机段可能受保护。建议通过 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger 免费检查</a>。
                     </p>
                   </details>
 
@@ -457,7 +457,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                       Q2: 汉莎航空以&quot;天气原因&quot;拒绝赔偿，但当时北京天气正常。我该怎么办？
                     </summary>
                     <p className="mt-4 text-gray-700 dark:text-gray-300 pl-4 border-l-2 border-blue-600">
-                      要求汉莎提供证据（如气象局报告、空管通知）。若无法提供，您可以通过 <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</a> 提起正式索赔。我们的法律团队会审查证据并代表您与航空公司交涉。
+                      要求汉莎提供证据（如气象局报告、空管通知）。若无法提供，您可以通过 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline">ClaimWinger</a> 提起正式索赔。我们的法律团队会审查证据并代表您与航空公司交涉。
                     </p>
                   </details>
 
@@ -548,7 +548,7 @@ export default function BeijingCapitalCancelledFlightCompensation() {
                   数百万乘客不知道自己有权获得赔偿。检查您的航班，3 分钟可能为您赢得 €600。
                 </p>
                 <a
-                  href="https://claimwinger.com/cancelled-flight"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-blue-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105"

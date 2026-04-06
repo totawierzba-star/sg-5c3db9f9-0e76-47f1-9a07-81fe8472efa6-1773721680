@@ -43,7 +43,7 @@ export default function HowManyHoursDelayCompensation() {
                 使用我们的免费计算器，30秒内了解您可以获得€250-€600的赔偿金额
               </p>
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_top"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
@@ -289,7 +289,7 @@ export default function HowManyHoursDelayCompensation() {
                 使用ClaimWinger的免费计算器，输入您的航班信息，我们会自动计算延误时间和赔偿金额
               </p>
               <a
-                href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_mid"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 bg-white text-green-600 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors shadow-lg"
@@ -582,7 +582,7 @@ export default function HowManyHoursDelayCompensation() {
               立即检查您的赔偿权利 — 免费、快速、无风险
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_hours_delay_bottom"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-4 bg-white text-blue-600 rounded-lg font-bold text-xl hover:bg-blue-50 transition-colors shadow-xl"

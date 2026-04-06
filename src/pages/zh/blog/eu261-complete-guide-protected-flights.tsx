@@ -48,7 +48,7 @@ export default function EU261CompleteGuideProtectedFlights() {
               使用ClaimWinger免费检查您的航班资格——<strong>2分钟即可完成</strong>
             </p>
             <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-md hover:shadow-xl no-underline"
@@ -339,7 +339,7 @@ export default function EU261CompleteGuideProtectedFlights() {
                 </li>
               </ul>
               <a 
-                href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors no-underline"
@@ -407,7 +407,7 @@ export default function EU261CompleteGuideProtectedFlights() {
               立即检查您的航班是否符合赔偿条件——最高可获得600欧元
             </p>
             <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl no-underline"

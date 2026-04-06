@@ -229,7 +229,7 @@ export default function MissedConnectionGuide() {
             ClaimWinger专业团队帮您处理复杂的联程机票索赔。
           </p>
           <a 
-            href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog_missed_connection&utm_campaign=zh_content"
+            href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-transform transform hover:scale-105"

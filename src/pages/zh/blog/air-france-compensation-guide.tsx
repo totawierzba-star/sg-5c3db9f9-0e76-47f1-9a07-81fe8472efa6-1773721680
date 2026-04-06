@@ -155,7 +155,7 @@ export default function AirFranceCompensationGuide() {
                 </p>
               </div>
               <a
-                href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=cta-1"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg whitespace-nowrap"
@@ -709,7 +709,7 @@ export default function AirFranceCompensationGuide() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=cta-2"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center"
@@ -717,7 +717,7 @@ export default function AirFranceCompensationGuide() {
                   免费检查我的航班 →
                 </a>
                 <a
-                  href="https://claimwinger.com/how-it-works?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=cta-2-secondary"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all text-center"
@@ -1052,7 +1052,7 @@ export default function AirFranceCompensationGuide() {
                     访问 ClaimWinger 网站，输入您的航班信息（航班号、日期、延误/取消情况）。系统将立即告诉您是否符合索赔条件以及预估赔偿金额。
                   </p>
                   <a
-                    href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=step-1"
+                    href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-semibold"
@@ -1533,7 +1533,7 @@ export default function AirFranceCompensationGuide() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://claimwinger.com/check-claim?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=final-cta"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-lg font-bold text-lg transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-3"
@@ -1625,7 +1625,7 @@ export default function AirFranceCompensationGuide() {
                 </Link>
                 <span>•</span>
                 <a
-                  href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=air-france-guide-zh&utm_content=footer"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Menu, X, Sun, Moon, Plane, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeProvider";
 import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
+import { featuredBlogArticlesZh } from "@/lib/blogArticlesZh";
 
 interface LayoutZhProps {
   children: ReactNode;
@@ -11,6 +12,7 @@ interface LayoutZhProps {
 export function LayoutZh({ children }: LayoutZhProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const menuArticles = featuredBlogArticlesZh.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
@@ -47,7 +49,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
                   博客
                   <ChevronDown className="h-4 w-4" />
                 </button>
-                <div className="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="absolute left-0 mt-2 w-80 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                   <div className="py-1">
                     <Link
                       href="/zh/blog"
@@ -55,66 +57,15 @@ export function LayoutZh({ children }: LayoutZhProps) {
                     >
                       📚 查看所有指南
                     </Link>
-                    <Link
-                      href="/zh/blog/eu261-uk261-passenger-rights"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      EU261/UK261 赔偿指南
-                    </Link>
-                    <Link
-                      href="/zh/blog/beijing-capital-delayed-flight-compensation"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      北京首都机场延误
-                    </Link>
-                    <Link
-                      href="/zh/blog/beijing-capital-cancelled-flight-compensation"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      北京首都机场取消
-                    </Link>
-                    <Link
-                      href="/zh/blog/chinese-citizens-eu261-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      中国公民完整指南
-                    </Link>
-                    <Link
-                      href="/zh/blog/lufthansa-delay-cancellation-compensation"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      汉莎航空赔偿指南
-                    </Link>
-                    <Link
-                      href="/zh/blog/lot-polish-airlines-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      LOT 波兰航空赔偿
-                    </Link>
-                    <Link
-                      href="/zh/blog/air-france-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      法国航空赔偿指南
-                    </Link>
-                    <Link
-                      href="/zh/blog/british-airways-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      英国航空赔偿指南
-                    </Link>
-                    <Link
-                      href="/zh/blog/klm-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      荷兰皇家航空赔偿
-                    </Link>
-                    <Link
-                      href="/zh/blog/finnair-compensation-guide"
-                      className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      芬兰航空赔偿指南
-                    </Link>
+                    {menuArticles.map((article) => (
+                      <Link
+                        key={article.slug}
+                        href={`/zh/blog/${article.slug}`}
+                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      >
+                        {article.title}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -151,7 +102,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
 
               {/* CTA Button */}
               <a
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
@@ -205,69 +156,16 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 >
                   📚 浏览完整博客
                 </Link>
-                <Link
-                  href="/zh/blog/eu261-uk261-passenger-rights"
-                  className="block py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md px-3"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  EU261/UK261 赔偿指南
-                </Link>
-                <Link
-                  href="/zh/blog/beijing-capital-delayed-flight-compensation"
-                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  北京首都机场延误
-                </Link>
-                <Link
-                  href="/zh/blog/chinese-citizens-eu261-compensation-guide"
-                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  中国公民完整指南
-                </Link>
-                <Link
-                  href="/zh/blog/lufthansa-delay-cancellation-compensation"
-                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  汉莎航空赔偿指南
-                </Link>
-                <Link
-                  href="/zh/blog/lot-polish-airlines-compensation-guide"
-                  className="block px-4 py-3 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  LOT 波兰航空赔偿
-                </Link>
-                <Link
-                  href="/zh/blog/air-france-compensation-guide"
-                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  法国航空赔偿指南
-                </Link>
-                <Link
-                  href="/zh/blog/british-airways-compensation-guide"
-                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  英国航空赔偿指南
-                </Link>
-                <Link
-                  href="/zh/blog/klm-compensation-guide"
-                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  荷兰皇家航空赔偿
-                </Link>
-                <Link
-                  href="/zh/blog/finnair-compensation-guide"
-                  className="block px-4 py-2 text-base text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border-l-4 border-transparent hover:border-blue-500"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  芬兰航空赔偿指南
-                </Link>
+                {menuArticles.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/zh/blog/${article.slug}`}
+                    className="block rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {article.title}
+                  </Link>
+                ))}
               </div>
               <Link
                 href="/zh/compensation-calculator"
@@ -297,7 +195,7 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 />
 
               <a
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"
@@ -357,12 +255,12 @@ export function LayoutZh({ children }: LayoutZhProps) {
               <h3 className="text-white font-semibold mb-4">资源</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/zh/blog/eu261-uk261-passenger-rights" className="text-sm hover:text-blue-400 transition-colors">
+                  <Link href="/zh/blog" className="text-sm hover:text-blue-400 transition-colors">
                     博客
                   </Link>
                 </li>
                 <li>
-                  <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-blue-400 transition-colors">
+                  <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-blue-400 transition-colors">
                     提交索赔
                   </a>
                 </li>

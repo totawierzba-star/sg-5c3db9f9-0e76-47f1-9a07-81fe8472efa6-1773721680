@@ -181,7 +181,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
                 免费检查您是否有权获得 €250-€600 赔偿 - 只需 2 分钟
               </p>
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <a href="https://claimwinger.com/delayed-flight?utm_source=lotproblem&utm_medium=blog&utm_campaign=lot_guide" target="_blank" rel="noopener noreferrer">
+                <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer">
                   免费检查我的航班 <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
@@ -691,7 +691,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
                 </div>
               </div>
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                <a href="https://claimwinger.com/?utm_source=lotproblem&utm_medium=blog&utm_campaign=lot_guide_mid" target="_blank" rel="noopener noreferrer">
+                <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer">
                   免费检查我的航班 <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
@@ -1065,7 +1065,7 @@ export default function LOTPolishAirlinesCompensationGuide() {
               </div>
               <div className="text-center">
                 <Link
-                  href="https://claimwinger.com/zh?utm_source=blog&utm_medium=article&utm_campaign=lot_polish_china"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   className="inline-flex items-center justify-center bg-white text-green-600 hover:bg-green-50 px-8 py-6 text-lg font-semibold transition-colors"
                 >
                   立即查询

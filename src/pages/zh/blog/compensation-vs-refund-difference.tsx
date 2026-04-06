@@ -233,7 +233,7 @@ export default function CompensationVsRefundDifference() {
               输入航班信息，我们会告诉你能获得<strong>补偿 + 退款</strong>的总金额
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_compensation_vs_refund_cta1"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors"
@@ -525,7 +525,7 @@ export default function CompensationVsRefundDifference() {
               ClaimWinger专门处理<strong>补偿(€600)</strong>，您自己处理退款。两者同时进行，效率最高！
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_compensation_vs_refund_cta2"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors"
@@ -918,7 +918,7 @@ export default function CompensationVsRefundDifference() {
               ClaimWinger帮你索赔补偿，你自己处理退款。<strong>两者同时进行，最大化回报！</strong>
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_compensation_vs_refund_cta3"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-50 transition-colors"
@@ -1353,7 +1353,7 @@ export default function CompensationVsRefundDifference() {
                   <div className="flex-1">
                     <h4 className="font-bold text-slate-900 mb-2">访问ClaimWinger（2分钟）</h4>
                     <ul className="list-disc list-inside text-slate-700 space-y-1">
-                      <li>访问 <a href="https://claimwinger.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">claimwinger.com</a></li>
+                      <li>访问 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">claimwinger.com</a></li>
                       <li>输入航班信息：航班号、日期、出发地、目的地</li>
                       <li>系统自动计算你的权利（€250/€400/€600）</li>
                     </ul>
@@ -1810,7 +1810,7 @@ export default function CompensationVsRefundDifference() {
               现在你知道了：<strong>补偿 ≠ 退款 ≠ 抵用券</strong>。在许多情况下，你有权同时获得多项！让ClaimWinger帮你最大化回报。
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_compensation_vs_refund_final"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors"

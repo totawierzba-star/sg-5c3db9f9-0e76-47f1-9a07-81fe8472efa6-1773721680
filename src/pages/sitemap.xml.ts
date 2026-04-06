@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
 
 const EXTERNAL_DATA_URL = 'https://problemlot.com';
 
@@ -85,10 +86,23 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/en/blog/swiss-compensation-guide', priority: '0.7', changefreq: 'monthly' },
     { url: '/en/blog/voucher-instead-cash-eu261-rights', priority: '0.7', changefreq: 'monthly' },
     { url: '/en/blog/what-counts-flight-delay-eu261', priority: '0.8', changefreq: 'monthly' },
-    { url: '/en/blog/wizz-air-compensation-guide', priority: '0.7', changefreq: 'monthly' }
+    { url: '/en/blog/wizz-air-compensation-guide', priority: '0.7', changefreq: 'monthly' },
+
+    // --- CHINESE MAIN ---
+    { url: '/zh', priority: '1.0', changefreq: 'daily' },
+    { url: '/zh/delayed-flight', priority: '0.9', changefreq: 'weekly' },
+    { url: '/zh/cancelled-flight', priority: '0.9', changefreq: 'weekly' },
+    { url: '/zh/compensation-calculator', priority: '0.9', changefreq: 'weekly' },
+    { url: '/zh/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
-  const sitemap = generateSiteMap(pages);
+  const zhBlogPages = blogArticlesZhSorted.map((article) => ({
+    url: `/zh/blog/${article.slug}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  }));
+
+  const sitemap = generateSiteMap([...pages, ...zhBlogPages]);
 
   res.setHeader('Content-Type', 'text/xml');
   res.write(sitemap);

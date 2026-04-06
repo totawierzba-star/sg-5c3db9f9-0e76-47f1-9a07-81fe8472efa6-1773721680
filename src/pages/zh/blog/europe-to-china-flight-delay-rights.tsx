@@ -95,7 +95,7 @@ export default function EuropeToChinaFlightDelayRights() {
               您的航班从法兰克福、巴黎、阿姆斯特丹、慕尼黑或其他欧洲城市飞往北京、上海、广州或成都时延误了吗？只需2分钟即可提交索赔申请！
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_europe_china_delay"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
@@ -349,7 +349,7 @@ export default function EuropeToChinaFlightDelayRights() {
                 许多航空公司会声称延误是由"特殊情况"造成的，即使实际上并非如此。例如，他们可能会说"技术故障"是不可预见的，但实际上常规维护问题<strong>不属于特殊情况</strong>。
               </p>
               <p className="text-orange-800 text-sm leading-relaxed">
-                <strong>建议：</strong>不要轻易接受航空公司的解释。通过<a href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_europe_china_delay" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ClaimWinger</a>等专业平台评估您的案件，他们有丰富的经验识别航空公司的不合理拒绝。
+                <strong>建议：</strong>不要轻易接受航空公司的解释。通过<a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ClaimWinger</a>等专业平台评估您的案件，他们有丰富的经验识别航空公司的不合理拒绝。
               </p>
             </div>
           </section>
@@ -368,7 +368,7 @@ export default function EuropeToChinaFlightDelayRights() {
                     <div className="bg-blue-100 text-blue-700 rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">访问ClaimWinger网站</h4>
-                      <p className="text-sm text-gray-600">打开 <a href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_europe_china_delay" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">claimwinger.com</a>，点击"提交索赔"按钮</p>
+                      <p className="text-sm text-gray-600">打开 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">claimwinger.com</a>，点击"提交索赔"按钮</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -513,7 +513,7 @@ export default function EuropeToChinaFlightDelayRights() {
               不要错过您应得的赔偿！从欧洲飞往中国的航班延误超过3小时？您有权获得最高€600的赔偿。
             </p>
             <a
-              href="https://claimwinger.com?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_europe_china_delay_bottom"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"

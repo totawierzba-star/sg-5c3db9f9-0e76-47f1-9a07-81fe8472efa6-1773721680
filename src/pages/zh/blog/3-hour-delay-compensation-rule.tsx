@@ -458,7 +458,7 @@ export default function ThreeHourDelayRule() {
               <span className="font-bold text-yellow-900 flex-shrink-0">4.</span>
               <div>
                 <strong>使用专业索赔服务：</strong><br/>
-                对于临界情况（2h 45min - 3h 15min），<Link href="https://claimwinger.com" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业服务能够：
+                对于临界情况（2h 45min - 3h 15min），<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业服务能够：
                 <ul className="list-disc list-inside mt-1 ml-4 space-y-1">
                   <li>从航空公司系统获取精确到达时间</li>
                   <li>交叉验证多个数据源</li>
@@ -643,7 +643,7 @@ export default function ThreeHourDelayRule() {
             <li><strong>航空公司延误证明</strong>（最有力的直接证据）</li>
           </ol>
           <p className="text-green-800 text-sm mt-3 leading-relaxed">
-            如果你有以上3样，<Link href="https://claimwinger.com" className="text-green-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>的成功率接近100%。其他证据作为补充，能增强索赔的可信度。
+            如果你有以上3样，<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-green-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>的成功率接近100%。其他证据作为补充，能增强索赔的可信度。
           </p>
         </div>
 
@@ -755,7 +755,7 @@ export default function ThreeHourDelayRule() {
                     </ul>
                   </li>
                   <li><strong>要求官方记录：</strong>航空公司内部系统有准确的gate arrival time，要求提供</li>
-                  <li><strong>专业协助：</strong><Link href="https://claimwinger.com" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>可以通过法律渠道获取航空公司系统数据</li>
+                  <li><strong>专业协助：</strong><Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>可以通过法律渠道获取航空公司系统数据</li>
                 </ul>
               </div>
             </div>
@@ -772,7 +772,7 @@ export default function ThreeHourDelayRule() {
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm text-blue-800 ml-2">
             <li><strong>第一次拒绝：</strong>回复正式信函，引用相关判例和证据</li>
-            <li><strong>第二次拒绝：</strong>考虑使用<Link href="https://claimwinger.com" className="text-blue-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业服务（成功率98%，无风险）</li>
+            <li><strong>第二次拒绝：</strong>考虑使用<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业服务（成功率98%，无风险）</li>
             <li><strong>航空公司坚持拒绝：</strong>ClaimWinger会代表你走法律程序（成本由他们承担）</li>
           </ul>
         </div>
@@ -811,7 +811,7 @@ export default function ThreeHourDelayRule() {
             <h3 className="font-bold text-orange-900 mb-2">❌ 错误 #4：延迟提交索赔</h3>
             <p className="text-sm text-orange-800 leading-relaxed">
               <strong>问题：</strong>虽然索赔时效通常为2-6年（各国不同），但拖延会导致：证据丢失、记忆模糊、航空公司更容易拒绝。<br/>
-              <strong>解决：</strong>建议在<strong>航班后30天内</strong>提交索赔，越快越好。使用<Link href="https://claimwinger.com" className="text-orange-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>可在2分钟内在线提交。
+              <strong>解决：</strong>建议在<strong>航班后30天内</strong>提交索赔，越快越好。使用<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-orange-700 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>可在2分钟内在线提交。
             </p>
           </div>
 
@@ -832,7 +832,7 @@ export default function ThreeHourDelayRule() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://claimwinger.com?utm_source=problemlot&utm_medium=blog&utm_campaign=3hour_rule_cta1"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-md inline-flex items-center gap-2"
@@ -871,7 +871,7 @@ export default function ThreeHourDelayRule() {
               <strong className="text-orange-700">⚠️ 这是复杂情况。</strong>EU 261的延误时间以<strong>舱门打开</strong>为准，所以如果最终舱门打开时间比计划到达时间晚≥3小时，<strong>技术上你有权获赔</strong>。但航空公司可能辩称：
               <ul className="list-disc list-inside mt-2 space-y-1 ml-2">
                 <li>"飞机准点到达，登机口延误是机场责任"</li>
-                <li>这种情况下，建议咨询<Link href="https://claimwinger.com" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>专业评估，因为判例法仍在演变中。</li>
+                <li>这种情况下，建议咨询<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>专业评估，因为判例法仍在演变中。</li>
               </ul>
               <strong className="text-slate-900 mt-2 block">关键：</strong>如果延误原因是<strong>航空公司可控</strong>（如：他们自己的前序航班延误占用了登机口），则应该获赔。
             </div>
@@ -913,7 +913,7 @@ export default function ThreeHourDelayRule() {
                   </ul>
                 </li>
               </ul>
-              <strong className="text-slate-900 mt-2 block">建议：</strong>罢工情况复杂，建议通过<Link href="https://claimwinger.com" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>进行专业评估（免费检查资格）。
+              <strong className="text-slate-900 mt-2 block">建议：</strong>罢工情况复杂，建议通过<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>进行专业评估（免费检查资格）。
             </div>
           </details>
 
@@ -974,7 +974,7 @@ export default function ThreeHourDelayRule() {
               输入航班信息，我们的AI系统立即告诉你是否符合€250-600赔偿条件。完全免费，无需注册。
             </p>
             <a
-              href="https://claimwinger.com?utm_source=problemlot&utm_medium=blog&utm_campaign=3hour_rule_cta2"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-colors shadow-md inline-flex items-center gap-2"
@@ -990,7 +990,7 @@ export default function ThreeHourDelayRule() {
 
         <div className="border-t border-slate-200 pt-8 mt-12">
           <p className="text-sm text-slate-600 leading-relaxed">
-            <strong className="text-slate-900">法律声明：</strong>本文提供的信息仅供教育参考，不构成法律建议。EU 261/2004的具体应用可能因个案情况和司法管辖区而异。如需专业法律意见，建议咨询持牌航空法律师或使用<Link href="https://claimwinger.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业航空乘客权利服务。本文最后更新于2026年2月。
+            <strong className="text-slate-900">法律声明：</strong>本文提供的信息仅供教育参考，不构成法律建议。EU 261/2004的具体应用可能因个案情况和司法管辖区而异。如需专业法律意见，建议咨询持牌航空法律师或使用<Link href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ClaimWinger</Link>等专业航空乘客权利服务。本文最后更新于2026年2月。
           </p>
         </div>
 

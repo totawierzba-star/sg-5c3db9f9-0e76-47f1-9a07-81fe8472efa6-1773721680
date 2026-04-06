@@ -510,7 +510,7 @@ export default function LufthansaCompensationGuide() {
                 航空法规复杂，每种情况都不同。如果您不确定是否有资格获得赔偿，<strong>免费检查您的航班</strong> - 只需 3 分钟！
               </p>
               <a
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -595,7 +595,7 @@ export default function LufthansaCompensationGuide() {
               </ul>
               <div className="mt-6">
                 <a
-                  href="https://claimwinger.com/delayed-flight"
+                  href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
@@ -624,7 +624,7 @@ export default function LufthansaCompensationGuide() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">免费检查您的航班</h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    访问 <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">ClaimWinger</a>，
+                    访问 <a href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">ClaimWinger</a>，
                     输入您的航班信息（航班号、日期）。系统会立即告诉您是否有资格获得赔偿以及金额。<strong>完全免费，无需注册。</strong>
                   </p>
                 </div>
@@ -698,7 +698,7 @@ export default function LufthansaCompensationGuide() {
               这些是证明延误/取消的关键证据，会加快索赔流程。
             </p>
             <a
-              href="https://claimwinger.com/delayed-flight"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -846,7 +846,7 @@ export default function LufthansaCompensationGuide() {
           </p>
           <div className="text-center">
             <Link
-              href="https://claimwinger.com/zh?utm_source=blog&utm_medium=article&utm_campaign=lufthansa_china"
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
               className="inline-flex items-center justify-center bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
             >
               立即查询

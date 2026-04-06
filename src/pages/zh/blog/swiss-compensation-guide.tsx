@@ -62,7 +62,7 @@ export default function SwissCompensationGuide() {
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold"
             >
               <a 
-                href="https://claimwinger.com?utm_source=problemlot&utm_medium=blog&utm_campaign=swiss-guide-top"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -472,7 +472,7 @@ export default function SwissCompensationGuide() {
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold"
             >
               <a 
-                href="https://claimwinger.com?utm_source=problemlot&utm_medium=blog&utm_campaign=swiss-guide-middle"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -800,7 +800,7 @@ export default function SwissCompensationGuide() {
               className="bg-white text-blue-600 hover:bg-blue-50 font-semibold text-lg px-8 py-6"
             >
               <a 
-                href="https://claimwinger.com?utm_source=problemlot&utm_medium=blog&utm_campaign=swiss-guide-bottom"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -103,7 +103,7 @@ export default function WhichFlightsQualifyCompensation() {
               使用ClaimWinger免费检查工具——<strong>30秒即可知道结果</strong>
             </p>
             <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-md hover:shadow-xl no-underline"
@@ -420,7 +420,7 @@ export default function WhichFlightsQualifyCompensation() {
               </div>
 
               <a 
-                href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-700 transition-colors no-underline"
@@ -508,7 +508,7 @@ export default function WhichFlightsQualifyCompensation() {
               使用ClaimWinger免费检查工具，30秒即可知道答案
             </p>
             <a 
-              href="https://claimwinger.com/zh?utm_source=lotproblem&utm_medium=blog&utm_campaign=zh_content" 
+              href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl no-underline"

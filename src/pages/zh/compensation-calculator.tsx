@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { LayoutZh } from "@/components/LayoutZh";
+import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 import { Euro } from "lucide-react";
 
 export default function ZhCompensationCalculatorPage() {
@@ -25,6 +26,12 @@ export default function ZhCompensationCalculatorPage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               根据欧盟法规 261/2004，赔偿金额取决于航班距离。查看您可以获得多少。
             </p>
+            <ClaimWingerZhSection
+              className="mt-8 text-left"
+              badge="免费赔偿资格检查"
+              title="知道赔偿区间后，下一步就是检查您的具体航班"
+              description="表格中的 €250、€400、€600 只是基础区间。是否真的可以领取，还取决于航线、承运人、延误时长和取消原因。"
+            />
           </div>
         </section>
 
@@ -106,7 +113,7 @@ export default function ZhCompensationCalculatorPage() {
                 看看您是否有权获得赔偿
               </p>
               <a
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/zh?utm_source=problemlot&utm_medium=zh_content&utm_campaign=claim_entry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg"
