@@ -11,6 +11,16 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "turkey-shy-pass-passenger-rights",
+    title: "SHY-PASS 是什么？土耳其航班延误取消赔偿全指南",
+    excerpt:
+      "EU261 不适用时，土耳其的 SHY-YOLCU 规则常常才是真正决定能否索赔的关键。本文讲清楚 Turkish Airlines、Pegasus、包机和土耳其国内航班的赔偿边界。",
+    date: "2026-04-06",
+    readTime: "13 分钟",
+    category: "法规指南",
+    featured: true,
+  },
+  {
     slug: "eu261-turkey-flights-compensation",
     title: "土耳其航班也能拿 EU261 赔偿吗？一文看懂飞土耳其的欧盟航班规则",
     excerpt:
