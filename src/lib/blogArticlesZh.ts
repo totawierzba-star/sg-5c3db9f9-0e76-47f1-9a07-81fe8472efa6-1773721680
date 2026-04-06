@@ -11,6 +11,46 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "corendon-airlines-compensation-guide",
+    title: "Corendon Airlines 延误、取消、改点怎么索赔？",
+    excerpt:
+      "Corendon 飞土耳其、希腊和度假岛屿时，若发生延误、取消或大幅改点，什么时候受 EU261 保护，什么时候不受？本文专门讲清改时、返程与包机边界。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
+    slug: "sunexpress-delay-cancellation-compensation",
+    title: "SunExpress 延误或取消怎么办？度假航班索赔指南",
+    excerpt:
+      "SunExpress 航班在安塔利亚、达拉曼、伊兹密尔等航线延误或取消后，什么时候还能拿 EU261，什么时候要改看土耳其规则？本文专门讲清返程与度假损失边界。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
+    slug: "pegasus-airlines-delay-cancellation-guide",
+    title: "Pegasus Airlines 延误、取消、转机失败怎么索赔？",
+    excerpt:
+      "Pegasus 在伊斯坦布尔 SAW 延误、取消或错过转机后，什么时候能拿 EU261，什么时候只能走土耳其规则？本文专门讲清常见场景和索赔边界。",
+    date: "2026-04-06",
+    readTime: "13 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
+    slug: "all-inclusive-delayed-flight-hotel-loss",
+    title: "All Inclusive 套餐遇上航班延误：少住一晚酒店谁赔？",
+    excerpt:
+      "航班延误后丢掉第一晚酒店、接送和度假时间，到底该找航空公司还是旅行社？这篇文章专门讲清航班赔偿与套餐缩水损失的责任边界。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "度假套餐",
+    featured: true,
+  },
+  {
     slug: "charter-vs-scheduled-flight-compensation",
     title: "包机延误了该找旅行社还是航空公司？一文看懂赔偿责任",
     excerpt:
