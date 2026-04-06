@@ -11,6 +11,56 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "diverted-flight-greece-turkey-guide",
+    title: "航班改降别的机场怎么办？希腊和土耳其 diverted flight 指南",
+    excerpt:
+      "原本飞博德鲁姆却降落伊兹密尔，原本飞希腊岛屿却改到别的城市，这种 diverted flight 能赔吗？本文讲清替代交通、最终到达时间和 EU261 边界。",
+    date: "2026-04-06",
+    readTime: "10 分钟",
+    category: "特殊场景",
+    featured: true,
+  },
+  {
+    slug: "holiday-flight-overbooking-guide",
+    title: "度假航班超售被拒载怎么办？Overbooking 赔偿指南",
+    excerpt:
+      "在暑期包机、返程航班或度假机场遇到 overbooking 被拒绝登机，什么时候能拿标准赔偿？本文讲清自愿放弃座位、强制拒载和改签权利。",
+    date: "2026-04-06",
+    readTime: "10 分钟",
+    category: "拒载赔偿",
+    featured: true,
+  },
+  {
+    slug: "athens-cancelled-flight-rerouting-guide",
+    title: "雅典航班取消后，怎么逼航空公司安排替代航班？",
+    excerpt:
+      "在雅典 ATH 遇到航班取消后，航空公司必须怎样改签、提供酒店和餐饮？本文专门讲清 rerouting 权利、退款与替代航班的区别。",
+    date: "2026-04-06",
+    readTime: "10 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "heraklion-rhodes-strike-compensation",
+    title: "伊拉克利翁和罗得岛机场混乱：罢工时还能索赔吗？",
+    excerpt:
+      "在 HER 或 RHO 遇到航班取消、延误、机场混乱或空管罢工时，什么时候还能拿 EU261，什么时候很难？本文讲清罢工、天气和航司责任边界。",
+    date: "2026-04-06",
+    readTime: "10 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "dalaman-bodrum-cancelled-flight-rights",
+    title: "达拉曼和博德鲁姆航班取消怎么办？返程酒店与赔偿指南",
+    excerpt:
+      "在达拉曼 DLM 或博德鲁姆 BJV 返欧时航班取消、改到次日或被迫滞留，什么时候受 EU261 保护，什么时候不受？本文讲清酒店、返程改签和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "11 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
     slug: "smartwings-island-flight-compensation",
     title: "Smartwings 飞希腊和度假岛屿延误怎么办？赔偿指南",
     excerpt:
