@@ -11,6 +11,16 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "charter-vs-scheduled-flight-compensation",
+    title: "包机延误了该找旅行社还是航空公司？一文看懂赔偿责任",
+    excerpt:
+      "包机、旅游航班和 All Inclusive 套餐延误后，谁该赔？这篇文章专门讲清实际承运人、旅行社责任、EU261 适用边界，以及什么时候根本不受欧洲法规保护。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "包机权益",
+    featured: true,
+  },
+  {
     slug: "turkey-shy-pass-passenger-rights",
     title: "SHY-PASS 是什么？土耳其航班延误取消赔偿全指南",
     excerpt:
