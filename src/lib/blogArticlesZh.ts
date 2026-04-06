@@ -11,6 +11,56 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "smartwings-island-flight-compensation",
+    title: "Smartwings 飞希腊和度假岛屿延误怎么办？赔偿指南",
+    excerpt:
+      "Smartwings 包机或度假航班飞希腊、土耳其和南欧岛屿时发生延误、取消或改点，什么时候能拿 EU261？本文专门讲清中东欧出发、返程和包机责任边界。",
+    date: "2026-04-06",
+    readTime: "11 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
+    slug: "aegean-airlines-island-flight-compensation",
+    title: "Aegean Airlines 飞希腊群岛延误怎么办？赔偿指南",
+    excerpt:
+      "Aegean Airlines 飞雅典、圣托里尼、罗得岛、克里特等航线延误或取消后，什么时候能拿 EU261？本文专门讲清岛屿航线、转机、天气借口和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "11 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
+    slug: "antalya-charter-delay-guide",
+    title: "安塔利亚机场包机延误怎么办？终端滞留赔偿指南",
+    excerpt:
+      "在安塔利亚 AYT 等包机、返欧航班或旅游航班时发生长时间延误，什么时候受 EU261 保护，什么时候不受？本文专门讲清机场现场、酒店餐饮和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "11 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "istanbul-missed-connection-compensation",
+    title: "在伊斯坦布尔错过转机怎么办？IST / SAW 赔偿指南",
+    excerpt:
+      "在伊斯坦布尔机场 IST 或 SAW 错过下一程后，什么时候能拿 EU261，什么时候不能？本文专门讲清联程票、单独出票、酒店安置和 Turkish Airlines / Pegasus 的责任边界。",
+    date: "2026-04-06",
+    readTime: "12 分钟",
+    category: "转机权益",
+    featured: true,
+  },
+  {
+    slug: "turkish-airlines-transit-compensation-guide",
+    title: "Turkish Airlines 转机延误、取消、错过联程怎么索赔？",
+    excerpt:
+      "经伊斯坦布尔 IST 搭乘 Turkish Airlines 转机时，什么时候能拿 EU261，什么时候只能走土耳其规则？本文专门讲清欧盟出发联程、返欧和错过转机的赔偿边界。",
+    date: "2026-04-06",
+    readTime: "13 分钟",
+    category: "航空公司指南",
+    featured: true,
+  },
+  {
     slug: "corendon-airlines-compensation-guide",
     title: "Corendon Airlines 延误、取消、改点怎么索赔？",
     excerpt:
