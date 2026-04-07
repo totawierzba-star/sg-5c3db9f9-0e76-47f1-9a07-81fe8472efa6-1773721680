@@ -5,6 +5,10 @@ export default function Document() {
   return (
     <Html lang="pl">
       <Head>
+        <meta
+          name="google-site-verification"
+          content="DPV_dIXtVkWNE_tb-yvnEz2pTSn_JUs4WgVzj2jTKsE"
+        />
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
