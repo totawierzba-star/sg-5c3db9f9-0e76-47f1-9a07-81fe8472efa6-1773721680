@@ -10,6 +10,66 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "milyen-dokumentumok-kellenek-a-karteriteshez",
+    title: "Milyen dokumentumok kellenek a karteriteshez? Teljes magyar checklista",
+    excerpt:
+      "Magyar checklista a sikeres igenyhez: boarding pass, PNR, screenshot, blokk, email, atfoglalasi adatok es minden, amit erdemes megorizni keses vagy torles utan.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "Gyakorlati teendok",
+    featured: true,
+  },
+  {
+    slug: "mit-tegyel-ha-torlik-a-jaratodat",
+    title: "Mit tegyel, ha torlik a jaratodat? Azonnali lepesek refundhoz, atfoglalashoz es karteriteshez",
+    excerpt:
+      "Magyar gyakorlati utmutato torolt jarathoz: mit kerj azonnal a legitarsasagtol, hogyan valassz refund vagy atfoglalas kozott, es mit dokumentalj a kesobbi igenyhez.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Gyakorlati teendok",
+    featured: true,
+  },
+  {
+    slug: "mit-tegyel-azonnal-ha-kesik-a-jaratod",
+    title: "Mit tegyel azonnal, ha kesik a jaratod? Repuloteri teendok lepesrol lepesre",
+    excerpt:
+      "Gyakorlati magyar utmutato arra az esetre, amikor mar a repuloteren vagy: mit dokumentalj, mit kerj a legitarsasagtol, mit ne hagyj ki, es hogyan erositsd a kesobbi igenyt.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "Gyakorlati teendok",
+    featured: true,
+  },
+  {
+    slug: "keses-vs-torles-vs-tulfoglalas-kulonbsegek",
+    title: "Keses vs torles vs tulfoglalas: mi a kulonbseg es mikor mi jar?",
+    excerpt:
+      "Magyar utmutato a harom legfontosabb utasjogi helyzethez: miben mas a keses, a torles es a tulfoglalas, es mikor valtozik emiatt a karteritesi vagy atfoglalasi jog.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "EU261 alapok",
+    featured: true,
+  },
+  {
+    slug: "mennyit-fizetnek-a-legitarsasagok-250-400-600-euro",
+    title: "Mennyit fizetnek a legitarsasagok? 250, 400 vagy 600 euro magyarazata",
+    excerpt:
+      "Magyar utmutato a karteritesi savokhoz: mikor johet szoba 250, 400 vagy 600 euro, mitol fugg az osszeg, es miert nem eleg csak a keses hosszat nezni.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "EU261 alapok",
+    featured: true,
+  },
+  {
+    slug: "eu-n-kivuli-jaratok-mikor-ervenyes-az-eu261",
+    title: "EU-n kivuli jaratok: mikor ervenyes az EU261 es mikor nem?",
+    excerpt:
+      "Magyar utmutato a harmadik orszagokbol indulo vagy oda tarto jaratokhoz: mikor ved az EU261, mikor donto az EU-s legifuvarozo, es hol csuszik felre a legtobb utas elemzese.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "EU261 alapok",
+    featured: true,
+  },
+  {
     slug: "mely-jaratokra-vonatkozik-az-eu261",
     title: "Mely jaratokra vonatkozik az EU261? EU-bol indulo, EU-ba erkezo es atszallasos utak",
     excerpt:
