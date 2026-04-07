@@ -4,6 +4,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock3,
+  FileText,
   Hourglass,
   Mail,
   Wallet,
