@@ -10,6 +10,36 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "eurowings-karterites",
+    title: "Eurowings kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató Eurowings járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "swiss-karterites",
+    title: "SWISS kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató SWISS járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "austrian-airlines-karterites",
+    title: "Austrian Airlines kártérítés – késés, törlés, EU261",
+    excerpt:
+      "Magyar útmutató Austrian Airlines járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
     slug: "lot-polish-airlines-karterites",
     title: "LOT Polish Airlines kártérítés – késés, törlés, EU261",
     excerpt:
