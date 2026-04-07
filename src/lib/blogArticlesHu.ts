@@ -10,6 +10,106 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "kerhetek-karteritest-regi-jaratra",
+    title: "Kérhetek kártérítést régi járatra? Mikor nem késő még",
+    excerpt:
+      "Magyar útmutató régi járatokhoz: mikor lehet még kártérítést kérni, milyen bizonyítékok segítenek, és mikor válik túl gyengévé vagy túl késővé az ügy.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "mi-van-ha-vouchert-fogadtam-el",
+    title: "Mi van, ha voucher-t fogadtam el? Elveszik a kártérítés joga?",
+    excerpt:
+      "Magyar útmutató arról, mit jelent a voucher elfogadása késés vagy törlés után, és mikor maradhat még nyitva a pénzbeli igény vagy más utasjog.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "kerhetek-karteritest-beszallokartya-nelkul",
+    title: "Kérhetek kártérítést beszállókártya nélkül? Mit fogadnak el helyette",
+    excerpt:
+      "Magyar útmutató arról, lehet-e kártérítést kérni boarding pass nélkül, milyen dokumentumok pótolhatják a beszállókártyát, és mikor válik gyengébbé a bizonyítás.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "mennyi-karterites-jar-3-oras-kesesert",
+    title: "Mennyi kártérítés jár 3 órás késésért? 250€, 400€ vagy 600€",
+    excerpt:
+      "Magyar útmutató a leggyakoribb pénzkérdéshez: mennyi járhat 3 órás késésért, mitől függ a 250 / 400 / 600 eurós sáv, és mikor nem elég önmagában a háromórás csúszás.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "hany-ora-keses-utan-jar-karterites",
+    title: "Hany ora keses utan jar karterites? A 3 oras szabaly magyarul",
+    excerpt:
+      "Rovid, konkret magyar utmutato a leggyakoribb kerdeshez: pontosan hany ora keses utan johet szoba penzbeli karterites, es miert nem mindig az indulasi csuszas a donto.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "hogyan-mukodik-a-karterites-folyamata",
+    title: "Hogyan mukodik a karterites folyamata? Lepesrol lepesre az igenytol a kifizetesig",
+    excerpt:
+      "Magyar attekintes a teljes folyamathoz: jogosultsag ellenorzese, dokumentumok, igenybeadas, legitarsasagi valasz, eszkalacio es vegso kifizetes vagy elutasitas.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Eljaras es hataridok",
+    featured: true,
+  },
+  {
+    slug: "mikor-nem-jar-karterites-alapok",
+    title: "Mikor NEM jar karterites? Alaphelyzetek, amikor az igeny elbukhat",
+    excerpt:
+      "Magyar utmutato a legfontosabb kizaro vagy gyengito helyzetekrol: mikor nem ervenyes az EU261, mikor lehet valos a rendkivuli korulmeny, es mikor nem az utas javara all a tenyallas.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "EU261 alapok",
+    featured: true,
+  },
+  {
+    slug: "mely-legitarsasagok-kotelesek-fizetni",
+    title: "Mely legitarsasagok kotelesek fizetni? EU-s es nem EU-s cegek szabalyai",
+    excerpt:
+      "Magyar utmutato ahhoz, mely legitarsasagoknal johet szoba karterites: mikor eleg az EU-bol valo indulás, mikor szamit a tenyleges uzemelteto, es miert nem eleg csak a brandet nezni.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "EU261 alapok",
+    featured: true,
+  },
+  {
+    slug: "meddig-lehet-visszamenoleg-igenyelni",
+    title: "Meddig lehet visszamenoleg igenyelni? Elavulasi idok es regi jaratok",
+    excerpt:
+      "Magyar utmutato a regi jaratokra: meddig lehet utolag karteritest kerni, mitol fugg az idohatar, es miert erdemes minel hamarabb lepni akkor is, ha meg nem jart le a lehetoseg.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "Eljaras es hataridok",
+    featured: true,
+  },
+  {
+    slug: "mennyi-ido-alatt-fizetik-ki-a-karteritest",
+    title: "Mennyi ido alatt fizetik ki a karteritest? Mire szamits az igeny beadasa utan",
+    excerpt:
+      "Magyar utmutato a kifizetesi idokhoz: mennyi ideig valaszolhat a legitarsasag, mi lassitja a folyamatot, es mikor erdemes eszkalalni a keslekedo ugyet.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "Eljaras es hataridok",
+    featured: true,
+  },
+  {
     slug: "milyen-dokumentumok-kellenek-a-karteriteshez",
     title: "Milyen dokumentumok kellenek a karteriteshez? Teljes magyar checklista",
     excerpt:
