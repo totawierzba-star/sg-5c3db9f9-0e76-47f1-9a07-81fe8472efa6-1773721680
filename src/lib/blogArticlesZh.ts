@@ -11,6 +11,526 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "delayed-baggage-after-arrival-guide",
+    title: "飞机到了但行李没到，能索赔吗？延误行李指南",
+    excerpt:
+      "航班已到达，但托运行李很晚才到、没有上同一班飞机或完全丢失怎么办？本文讲清 delayed baggage、Montreal Convention、EU261 与费用追偿边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "行李争议",
+    featured: true,
+  },
+  {
+    slug: "landed-but-stuck-on-plane-arrival-time-guide",
+    title: "飞机落地了却迟迟不能下机，延误怎么算？Arrival Time 指南",
+    excerpt:
+      "航班已落地，但因为停机位、摆渡车、廊桥或机场调度迟迟不能下机，延误时间怎么算？本文讲清 landed but stuck on plane、arrival time 与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "airline-rerouted-without-consent-guide",
+    title: "航司没问我就改到别的航班，合法吗？Rerouting 指南",
+    excerpt:
+      "航空公司未经明确同意就把你改到别的日期、别的航班或更长转机路线，怎么办？本文讲清 rerouting、consent、refund 与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "改签边界",
+    featured: true,
+  },
+  {
+    slug: "family-separated-seats-flight-rights-guide",
+    title: "一家人被分开坐怎么办？儿童与家人座位分离指南",
+    excerpt:
+      "值机后被分开座、儿童没和家长坐一起、预选座被改掉怎么办？本文讲清 family seating、seat reassignment、refund 与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "座位争议",
+    featured: true,
+  },
+  {
+    slug: "flight-upgrade-passenger-rights-guide",
+    title: "被免费升舱了，还会影响赔偿吗？航班 Upgrade 权利指南",
+    excerpt:
+      "被航空公司免费升舱到更高舱位，会影响退款、赔偿或其他旅客权利吗？本文讲清 flight upgrade、goodwill、EU261 与舱位权利边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "舱位争议",
+    featured: true,
+  },
+  {
+    slug: "flight-downgrade-business-to-economy-guide",
+    title: "买了商务舱却被安排到经济舱？航班降舱赔偿指南",
+    excerpt:
+      "买了商务舱、豪华经济舱或高级舱位，却被安排到更低舱位怎么办？本文讲清 flight downgrade、refund、EU261 和乘客权利边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "舱位争议",
+    featured: true,
+  },
+  {
+    slug: "booking-disappeared-reservation-not-found-guide",
+    title: "机票订单突然消失了怎么办？Reservation Not Found 指南",
+    excerpt:
+      "App 里航班消失、PNR 查不到、订单显示 reservation not found 怎么办？本文讲清 booking disappeared、票务异常、拒载风险与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "票务边界",
+    featured: true,
+  },
+  {
+    slug: "gate-change-airport-queue-missed-flight-guide",
+    title: "登机口变更或排队太久错过航班，算谁的责任？",
+    excerpt:
+      "因为 gate change、安检排队、边检拥堵或机场动线太乱错过航班怎么办？本文讲清 missed flight、gate closure、airport queue 与 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "登机边界",
+    featured: true,
+  },
+  {
+    slug: "online-checkin-failed-airport-desk-guide",
+    title: "网上值机失败怎么办？App 让去机场柜台的风险与赔偿指南",
+    excerpt:
+      "在线值机失败、App 显示“please check in at airport desk”意味着什么？本文讲清 online check-in failed、airport desk、拒载与 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "登机边界",
+    featured: true,
+  },
+  {
+    slug: "name-mismatch-boarding-denied-guide",
+    title: "机票名字写错了怎么办？拼写错误、缺少中间名与拒载指南",
+    excerpt:
+      "机票姓名和护照不完全一致，会被拒绝登机吗？本文讲清 typo、middle name、surname mismatch、denied boarding 与 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "登机边界",
+    featured: true,
+  },
+  {
+    slug: "hidden-city-ticketing-skiplagging-guide",
+    title: "买到更远的票，中途下飞机可以吗？Hidden City / Skiplagging 指南",
+    excerpt:
+      "为了便宜而买到更远目的地的机票，然后中途提前下飞机合法吗？本文讲清 hidden city ticketing、skiplagging、no-show 与 EU261 的边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "票规边界",
+    featured: true,
+  },
+  {
+    slug: "no-show-cancelled-remaining-ticket-guide",
+    title: "没坐第一段，后面机票全被取消了？No-show 规则指南",
+    excerpt:
+      "错过第一段、主动放弃一段，结果后续航班全被取消怎么办？本文讲清 no-show、remaining ticket cancellation、联程结构与 EU261 的边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "票规边界",
+    featured: true,
+  },
+  {
+    slug: "flight-time-change-notification-compensation-guide",
+    title: "航司改了起飞时间，算取消吗？时间变更与赔偿指南",
+    excerpt:
+      "航空公司提前或临时修改起飞时间，只是 schedule change 还是已经接近 cancellation？本文讲清 time change、notification、EU261 和赔偿边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "改签边界",
+    featured: true,
+  },
+  {
+    slug: "ota-travel-agent-airline-responsibility-guide",
+    title: "机票在 OTA 买的，延误后该找谁？航司、平台、代理责任指南",
+    excerpt:
+      "通过 OTA、旅行社或代理买的机票，发生延误、取消、误机后到底该找谁？本文讲清 airline、OTA、travel agent 与 EU261 的责任边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "责任判断",
+    featured: true,
+  },
+  {
+    slug: "wet-lease-subcontracted-flight-compensation-guide",
+    title: "飞机和机组都不是原航司的，延误找谁赔？Wet Lease 指南",
+    excerpt:
+      "订票时是A航司，结果实际飞行的是B航司的飞机和机组。wet lease、subcontracted flight、actual carrier 和 EU261 该怎么判断？",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "责任判断",
+    featured: true,
+  },
+  {
+    slug: "codeshare-operating-carrier-compensation-guide",
+    title: "代码共享航班延误找谁赔？营销航司 vs 实际承运人指南",
+    excerpt:
+      "代码共享航班延误、取消或误机后，到底该找出票航司还是实际执飞航司？本文讲清 codeshare、marketing carrier、operating carrier 与 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "责任判断",
+    featured: true,
+  },
+  {
+    slug: "through-checked-baggage-vs-through-ticket-guide",
+    title: "行李直挂到终点，就一定算联程受保护吗？",
+    excerpt:
+      "行李被直挂到最终目的地，就等于整段行程受 EU261 联程保护吗？本文讲清 through-checked baggage、through ticket 和 separate tickets 的核心区别。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "转机规则",
+    featured: true,
+  },
+  {
+    slug: "open-jaw-mixed-carriers-pnr-guide",
+    title: "Open-jaw、不同航司、不同 PNR，还是一段行程吗？",
+    excerpt:
+      "不同航司、多个 PNR、open-jaw 或 interline 结构下，误机后到底谁负责？本文讲清 mixed carriers、PNR 和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "结构判断",
+    featured: true,
+  },
+  {
+    slug: "minimum-connection-time-guide",
+    title: "最短转机时间是谁定的？MCT 与误机责任指南",
+    excerpt:
+      "联程票转机时间太短，误机后该怪谁？本文讲清 minimum connection time、官方最短转机时间、self-transfer 和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "转机规则",
+    featured: true,
+  },
+  {
+    slug: "self-transfer-separate-tickets-guide",
+    title: "自己分开买票转机，错过下一段怎么办？Self-Transfer 指南",
+    excerpt:
+      "自己分开买票、不同终端或不同机场转机时，错过下一段还能索赔吗？本文讲清 self-transfer、separate tickets 和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "转机风险",
+    featured: true,
+  },
+  {
+    slug: "missed-check-in-gate-closure-guide",
+    title: "错过值机或登机口关闭怎么办？Missed Check-in 指南",
+    excerpt:
+      "因为 missed check-in、gate closed、late to boarding 或 airport queue 错过航班，就一定是乘客自己的责任吗？本文讲清错过值机、登机口关闭和 EU261 的边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "登机边界",
+    featured: true,
+  },
+  {
+    slug: "denied-boarding-document-visa-guide",
+    title: "因证件或签证被拒载怎么办？Denied Boarding 指南",
+    excerpt:
+      "因为 passport、visa、travel document 或 check-in issue 被拒绝登机，就一定能拿赔偿吗？本文讲清证件问题、拒载赔偿和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "拒载边界",
+    featured: true,
+  },
+  {
+    slug: "crew-out-of-hours-duty-time-guide",
+    title: "机组超时就一定免赔吗？Crew Out of Hours 指南",
+    excerpt:
+      "航空公司说因为 crew out of hours、duty time exceeded 或 crew timed out 所以不能赔？本文讲清机组超时、前序延误和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "slot-restriction-airport-congestion-guide",
+    title: "Slot 限制或机场拥堵就一定免赔吗？延误指南",
+    excerpt:
+      "航空公司说因为 slot restriction、airport congestion 或 flow control 所以不能赔？本文讲清 slot 延误、机场拥堵和后续运营混乱之间的 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "runway-closure-airport-infrastructure-guide",
+    title: "跑道关闭就一定免赔吗？Runway Closure 延误与取消指南",
+    excerpt:
+      "航空公司说因为 runway closure、airport infrastructure issue 或 airport operations 所以不能赔？本文讲清跑道关闭、机场故障和后续延误之间的 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "weather-extraordinary-circumstances-guide",
+    title: "天气原因就一定免赔吗？Weather Delay 与 EU261 指南",
+    excerpt:
+      "航空公司说因为 weather、strong winds、fog 或 storm 所以不能赔？本文讲清真正恶劣天气、普通天气借口和后续延误之间的 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "天气争议",
+    featured: true,
+  },
+  {
+    slug: "security-issue-compensation-guide",
+    title: "安全问题就一定免赔吗？Security Issue 延误与取消指南",
+    excerpt:
+      "航空公司说因为 security issue、security alert 或 safety reason 所以不能赔？本文讲清真实安全事件、机场安保决定和后续延误之间的 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "airspace-closure-atc-restriction-guide",
+    title: "空域关闭或 ATC 限制就一定免赔吗？Airspace Closure 指南",
+    excerpt:
+      "航空公司说因为 airspace closure、ATC restriction 或 slot limitation 所以不能赔？本文讲清空域关闭、空管限制和后续延误之间的 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "medical-emergency-diversion-compensation-guide",
+    title: "机上紧急医疗情况就一定免赔吗？Medical Emergency 改降指南",
+    excerpt:
+      "航空公司说因 passenger medical emergency 或 emergency landing 所以不能赔？本文讲清机上急症、备降、后续延误和 EU261 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "bird-strike-compensation-guide",
+    title: "鸟击就一定免赔吗？Bird Strike 延误和取消赔偿指南",
+    excerpt:
+      "航空公司说因为 bird strike 所以不能赔？本文讲清鸟击本身、后续维修、替代航班和连锁延误之间的区别，以及什么时候 EU261 仍值得继续核查。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "crew-shortage-sick-crew-guide",
+    title: "机组生病或人员不足就一定免赔吗？航司常见拒赔理由解析",
+    excerpt:
+      "航空公司说因为 crew sickness、crew shortage 或 operational reasons 所以不能赔？本文讲清机组生病、缺人和排班问题何时仍可能受 EU261 保护。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "strike-extraordinary-circumstances-guide",
+    title: "罢工就一定免赔吗？航司罢工、机场罢工、空管罢工区别",
+    excerpt:
+      "航空公司说因为罢工所以不能赔？本文讲清 airline strike、airport strike、ATC strike 的核心区别，以及什么时候 EU261 仍然保护乘客。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "technical-problem-extraordinary-circumstances-guide",
+    title: "技术故障就一定免赔吗？航空公司最常见借口解析",
+    excerpt:
+      "航空公司说是技术故障、维护问题、零件故障，就一定属于特殊情况吗？本文讲清 ordinary technical problems 和 extraordinary circumstances 的关键边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊情况",
+    featured: true,
+  },
+  {
+    slug: "arrival-time-door-open-guide",
+    title: "到达时间到底怎么算？开门时间 vs 落地时间",
+    excerpt:
+      "EU261 里为什么很多案件更看开门时间而不是轮子着地时间？本文讲清 arrival time、door open、下机时间与 3 小时规则的关系。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "refund-vs-rerouting-choice-guide",
+    title: "退款还是改签到最终目的地？一文看懂怎么选",
+    excerpt:
+      "航班取消、大延误或改到次日后，乘客该选退款还是 rerouting？本文讲清两条权利路径的差别、隐藏代价和最容易选错的场景。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "eu261-flight-eligibility-checklist",
+    title: "怎么快速判断一趟航班是否受 EU261 保护？【检查清单】",
+    excerpt:
+      "不知道自己的航班能不能走 EU261？本文用最实用的 checklist 讲清出发地、承运人、最终目的地、联程票和第三国返欧的核心判断顺序。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "how-to-document-delay-costs-guide",
+    title: "航班延误后，怎么证明酒店、餐饮和出租车费用？",
+    excerpt:
+      "自己垫付了酒店、餐饮、出租车和机场交通后，怎样保留证据最有效？本文讲清票据、截图、书面原因和索赔时最容易缺失的证明。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "取证重点",
+    featured: true,
+  },
+  {
+    slug: "three-hour-arrival-delay-rule-guide",
+    title: "为什么是到达晚点 3 小时，不是起飞晚点 3 小时？",
+    excerpt:
+      "EU261 为什么更看最终到达时间，而不是起飞推迟了多久？本文讲清 3 小时规则、开门时间、转机失败和最容易被误解的到达计算方式。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "cancellation-vs-major-schedule-change-guide",
+    title: "取消航班和大改时是一回事吗？赔偿区别指南",
+    excerpt:
+      "航司把航班提前很多小时、推迟到第二天，算取消还是普通改时？本文讲清 cancellation、major schedule change、退款与改签权利的区别。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "final-destination-delay-rule-guide",
+    title: "什么叫最终目的地？EU261 里最容易被误解的规则",
+    excerpt:
+      "赔偿为什么看最终目的地晚点，而不是第一段晚了多久？本文讲清 final destination、联程票、转机失败和单独出票之间的关键区别。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "赔偿基础",
+    featured: true,
+  },
+  {
+    slug: "actual-carrier-charter-flight-guide",
+    title: "包机里谁才是实际承运人？一文看懂该找谁索赔",
+    excerpt:
+      "旅行社卖的包机、旅游套餐和代码共享里，谁才是真正负责赔偿的实际承运人？本文讲清 actual carrier、售票方与旅行社的责任边界。",
+    date: "2026-04-06",
+    readTime: "9 分钟",
+    category: "责任边界",
+    featured: true,
+  },
+  {
+    slug: "flight-delay-written-reason-guide",
+    title: "航班延误后，为什么一定要拿书面原因？",
+    excerpt:
+      "航空公司口头说是天气、罢工、技术故障，为什么不够？本文讲清为什么书面原因在 EU261 和后续索赔里很关键。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "取证重点",
+    featured: true,
+  },
+  {
+    slug: "airport-taxi-hotel-reimbursement-guide",
+    title: "航班延误后出租车和酒店能报销吗？",
+    excerpt:
+      "因为航班延误、取消或过夜而自付出租车、酒店和机场交通，后面还能追吗？本文讲清合理费用、票据和照护边界。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "费用报销",
+    featured: true,
+  },
+  {
+    slug: "airport-meal-voucher-delay-guide",
+    title: "航班延误后餐饮券该给吗？Meal Voucher 指南",
+    excerpt:
+      "航班延误、取消或过夜时，航空公司什么时候该给餐饮券？如果不给，乘客自己买饭还能报吗？本文讲清 meal voucher 和票据保留重点。",
+    date: "2026-04-06",
+    readTime: "7 分钟",
+    category: "现场照护",
+    featured: true,
+  },
+  {
+    slug: "charter-flight-rebooked-next-day-rights",
+    title: "包机被改到第二天，乘客有哪些权利？",
+    excerpt:
+      "包机或度假航班被改到第二天后，酒店、餐饮、改签和赔偿该怎么判断？本文讲清包机延误、取消和次日重飞时的权利边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "次日改签",
+    featured: true,
+  },
+  {
+    slug: "greek-islands-weather-delay-guide",
+    title: "希腊群岛航班因天气延误，还能索赔吗？",
+    excerpt:
+      "飞圣托里尼、罗得岛、克里特等岛屿时，航空公司说是天气原因就一定免赔吗？本文讲清真正恶劣天气、运营借口和 EU261 边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "天气争议",
+    featured: true,
+  },
+  {
+    slug: "pegasus-saw-self-transfer-guide",
+    title: "Pegasus 在 SAW 自己分开买票转机，错过下一段怎么办？",
+    excerpt:
+      "在萨比哈机场 SAW 用 Pegasus 自己分开买票转机时，错过下一段会怎样？本文讲清联程票区别、重买机票、酒店和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "转机风险",
+    featured: true,
+  },
+  {
+    slug: "antalya-overnight-delay-hotel-guide",
+    title: "安塔利亚延误过夜，酒店该谁出？AYT 指南",
+    excerpt:
+      "在安塔利亚机场 AYT 因延误或取消被迫过夜时，航空公司必须安排酒店吗？本文讲清返程、包机、餐饮和票据保留重点。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "过夜安置",
+    featured: true,
+  },
+  {
+    slug: "athens-strike-delay-rights",
+    title: "雅典机场罢工延误怎么办？ATH 赔偿与改签指南",
+    excerpt:
+      "在雅典 ATH 遇到机场罢工、空管限制、取消或改到次日时，什么时候还能拿 EU261，什么时候很难？本文讲清罢工与照护边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "dalaman-airport-delay-rights",
+    title: "达拉曼机场延误怎么办？DLM 航班赔偿指南",
+    excerpt:
+      "在达拉曼机场 DLM 遇到返欧航班延误、取消、包机混乱或被改到次日时，什么时候受 EU261 保护，什么时候不受？本文讲清返程边界与照护义务。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "bodrum-airport-delay-rights",
+    title: "博德鲁姆机场延误怎么办？BJV 航班赔偿指南",
+    excerpt:
+      "在博德鲁姆机场 BJV 遇到返欧航班延误、取消、过夜或包机混乱时，什么时候还能拿 EU261？本文讲清返程边界、酒店和赔偿路径。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
+    slug: "heraklion-airport-delay-rights",
+    title: "伊拉克利翁机场延误怎么办？HER 航班赔偿指南",
+    excerpt:
+      "在克里特伊拉克利翁机场 HER 遇到航班延误、取消或改到次日，什么时候还能拿 EU261？本文讲清岛屿机场、大风、过夜和赔偿边界。",
+    date: "2026-04-06",
+    readTime: "8 分钟",
+    category: "机场指南",
+    featured: true,
+  },
+  {
     slug: "turkish-airlines-hotel-voucher-istanbul",
     title: "Turkish Airlines 在伊斯坦布尔不给酒店怎么办？",
     excerpt:
