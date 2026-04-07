@@ -10,6 +10,126 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "lot-polish-airlines-karterites",
+    title: "LOT Polish Airlines kártérítés – késés, törlés, EU261",
+    excerpt:
+      "Magyar útmutató LOT Polish Airlines járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "lufthansa-karterites",
+    title: "Lufthansa kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató Lufthansa járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "ryanair-karterites-utmutato",
+    title: "Ryanair kártérítés útmutató – késés, törlés, EU261",
+    excerpt:
+      "Magyar útmutató Ryanair járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "wizz-air-karterites-keses-es-torles-eseten",
+    title: "Wizz Air kártérítés késés és törlés esetén – magyar útmutató",
+    excerpt:
+      "Magyar útmutató Wizz Air járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "megeri-cegen-keresztul-igenyelni",
+    title: "Megéri cégen keresztül igényelni? Mikor van értelme claim companyt választani",
+    excerpt:
+      "Magyar útmutató arról, mikor éri meg közvetítőn keresztül vinni a repülési claimet, és mikor lehet elég az egyszerűbb saját ügyintézés.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "milyen-dokumentumokat-kell-megorizni",
+    title: "Milyen dokumentumokat kell megőrizni? Checklist késés, törlés és claim előtt",
+    excerpt:
+      "Magyar útmutató arról, mit érdemes megőrizni járatprobléma után: foglalási adatok, screenshotok, blokkok és minden más, ami később bizonyíték lehet.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "kell-ugyved-a-karteriteshez",
+    title: "Kell ügyvéd a kártérítéshez? Mikor nem szükséges, és mikor lehet hasznos",
+    excerpt:
+      "Magyar útmutató arról, kell-e ügyvéd repülési kártérítéshez, mikor elég a jó claim-kezelés, és mikor válik már bonyolultabbá az ügy.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "mit-tegyek-ha-elutasitjak-az-igenyt",
+    title: "Mit tegyek, ha elutasítják az igényt?",
+    excerpt:
+      "Magyar útmutató elutasított claimhez: hogyan olvasd az airline indoklását, mikor lehet még erős az ügy, és mikor érdemes továbblépni.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "mit-tegyek-ha-nem-valaszolnak",
+    title: "Mit tegyek, ha a légitársaság nem válaszol?",
+    excerpt:
+      "Magyar útmutató elakadt ügyekhez: mit jelent a válasz hiánya, mikor normális még a várakozás, és mikor kell a puszta türelem helyett továbblépni.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "ki-kapja-a-penzt-utas-vagy-ceg",
+    title: "Ki kapja a pénzt: utas vagy cég? Üzleti út és kártérítés",
+    excerpt:
+      "Magyar útmutató arról, ki lehet a repülési kártérítés jogosultja, ha a jegyet a cég fizette, és miért kell külön kezelni a refundot és a kompenzációt.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "atszallasnal-is-jar-karterites",
+    title: "Átszállásnál is jár kártérítés? Egy foglalás és lekésett csatlakozás",
+    excerpt:
+      "Magyar útmutató a csatlakozásos ügyekhez: mikor járhat pénz lekésett átszállásnál, miért számít az egy foglalás és a végső célállomásra való késés.",
+    date: "2026-04-07",
+    readTime: "9 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
+    slug: "low-cost-jaratoknal-is-jar-penz",
+    title: "Low-cost járatoknál is jár pénz? Wizz Air, Ryanair és más példák",
+    excerpt:
+      "Magyar útmutató arról, hogy a fapados vagy low-cost járatoknál is járhat-e kártérítés, és miért nem a jegy ára vagy a járattípus dönti el az EU261-es jogosultságot.",
+    date: "2026-04-07",
+    readTime: "8 perc",
+    category: "AI / GEO kerdesek",
+    featured: true,
+  },
+  {
     slug: "kerhetek-karteritest-regi-jaratra",
     title: "Kérhetek kártérítést régi járatra? Mikor nem késő még",
     excerpt:
