@@ -6,7 +6,7 @@ import {
   ArrowRight,
   CalendarClock,
   CheckCircle2,
-  PlaneOff,
+  Plane,
   Scale,
 } from "lucide-react";
 
@@ -123,7 +123,7 @@ export default function CancellationVsMajorScheduleChangeGuide() {
 
           <section className="mb-10 rounded-3xl border border-blue-200 bg-blue-50 p-8 dark:border-blue-900 dark:bg-blue-900/20">
             <div className="mb-4 flex items-center gap-3">
-              <PlaneOff className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  <Plane className="h-6 w-6 text-blue-600 dark:text-blue-400" />
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white">先看最短答案</h2>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
