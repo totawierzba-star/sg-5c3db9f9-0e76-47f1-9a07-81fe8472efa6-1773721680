@@ -1,10 +1,13 @@
 import { SEO } from "@/components/SEO";
 import { LayoutHu } from "@/components/LayoutHu";
 import { ClaimWingerHuSection } from "@/components/ClaimWingerHuSection";
+import { blogArticlesHuSorted } from "@/lib/blogArticlesHu";
 import Link from "next/link";
 import { ArrowRight, AlertCircle, Clock, Euro, Plane } from "lucide-react";
 
 export default function HuHomePage() {
+  const latestArticle = blogArticlesHuSorted[0];
+
   return (
     <LayoutHu>
       <SEO
@@ -106,6 +109,50 @@ export default function HuHomePage() {
             </div>
           </div>
         </section>
+
+        {latestArticle ? (
+          <section className="border-t border-gray-200 bg-slate-50 px-4 py-16 dark:border-gray-700 dark:bg-gray-900">
+            <div className="mx-auto max-w-5xl">
+              <div className="mb-8 flex items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                    Legujabb a magyar blogon
+                  </h2>
+                  <p className="mt-2 text-gray-600 dark:text-gray-300">
+                    Lepesrol lepesre magyarazott utasjogi cikkek kesesrol, torlesrol es EU261-rol.
+                  </p>
+                </div>
+                <Link
+                  href="/hu/blog"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700 dark:text-blue-400"
+                >
+                  Osszes cikk
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+
+              <Link
+                href={`/hu/blog/${latestArticle.slug}`}
+                className="block rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl dark:bg-gray-800"
+              >
+                <div className="mb-3 text-sm font-medium text-blue-600 dark:text-blue-400">
+                  {latestArticle.category}
+                </div>
+                <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+                  {latestArticle.title}
+                </h3>
+                <p className="mb-5 max-w-3xl text-gray-600 dark:text-gray-300">
+                  {latestArticle.excerpt}
+                </p>
+                <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                  <span>{latestArticle.date}</span>
+                  <span>•</span>
+                  <span>{latestArticle.readTime}</span>
+                </div>
+              </Link>
+            </div>
+          </section>
+        ) : null}
 
         <section className="bg-white px-4 py-16 dark:bg-gray-800">
           <div className="mx-auto max-w-4xl rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 p-8 text-center text-white shadow-xl dark:from-blue-700 dark:to-blue-800">

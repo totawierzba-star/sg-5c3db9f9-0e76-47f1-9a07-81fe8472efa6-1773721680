@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { useRouter } from "next/router";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerHuSection } from "@/components/ClaimWingerHuSection";
 import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
@@ -30,6 +31,20 @@ const BLOG_EMBED_CONFIGS: BlogEmbedConfig[] = [
         className="mb-8"
         title="立即开始中文索赔检查"
         description="如果您已经读到这里，通常已经具备初步判断条件。直接填写 ClaimWinger 表单，比手动整理材料和反复联系航空公司更快。"
+      />
+    ),
+  },
+  {
+    isMatch: (path) => /^\/hu\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com"]',
+    fallbackMode: "after-header",
+    render: () => (
+      <ClaimWingerHuSection
+        className="mb-8"
+        title="Ellenorizze most, hogy a jarata belefer-e az EU261 szabalyokba"
+        description="Ha a jarat kesett, toroltek vagy atfoglaltak, a ClaimWinger magyar folyamata gyorsan segit eldonteni, hogy jarhat-e karterites vagy visszaterites."
+        ctaHref="https://claimwinger.com/hu"
+        ctaLabel="Magyar igenyellenorzes inditasa"
       />
     ),
   },

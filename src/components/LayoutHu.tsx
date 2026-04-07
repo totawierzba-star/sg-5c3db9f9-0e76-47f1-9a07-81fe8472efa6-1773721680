@@ -45,6 +45,12 @@ export function LayoutHu({ children }: LayoutHuProps) {
               >
                 Kalkulator
               </Link>
+              <Link
+                href="/hu/blog"
+                className="font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+              >
+                Blog
+              </Link>
 
               <DesktopLanguageDropdown
                 currentLocale="hu"
@@ -110,6 +116,13 @@ export function LayoutHu({ children }: LayoutHuProps) {
               >
                 Karteritesi kalkulator
               </Link>
+              <Link
+                href="/hu/blog"
+                className="block py-2 font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
 
               <MobileLanguageList
                 currentLocale="hu"
@@ -166,6 +179,11 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 <li>
                   <Link href="/hu/karteritesi-kalkulator" className="text-sm transition-colors hover:text-blue-400">
                     Karteritesi kalkulator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/hu/blog" className="text-sm transition-colors hover:text-blue-400">
+                    Blog
                   </Link>
                 </li>
               </ul>

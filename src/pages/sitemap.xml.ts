@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
 
 const EXTERNAL_DATA_URL = 'https://problemlot.com';
@@ -100,7 +101,14 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/hu/kesett-jarat', priority: '0.9', changefreq: 'weekly' },
     { url: '/hu/torolt-jarat', priority: '0.9', changefreq: 'weekly' },
     { url: '/hu/karteritesi-kalkulator', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hu/blog', priority: '0.8', changefreq: 'weekly' },
   ];
+
+  const huBlogPages = blogArticlesHuSorted.map((article) => ({
+    url: `/hu/blog/${article.slug}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  }));
 
   const zhBlogPages = blogArticlesZhSorted.map((article) => ({
     url: `/zh/blog/${article.slug}`,
@@ -108,7 +116,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
-  const sitemap = generateSiteMap([...pages, ...zhBlogPages]);
+  const sitemap = generateSiteMap([...pages, ...huBlogPages, ...zhBlogPages]);
 
   res.setHeader('Content-Type', 'text/xml');
   res.write(sitemap);
