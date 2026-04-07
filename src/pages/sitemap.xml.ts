@@ -94,6 +94,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/zh/cancelled-flight', priority: '0.9', changefreq: 'weekly' },
     { url: '/zh/compensation-calculator', priority: '0.9', changefreq: 'weekly' },
     { url: '/zh/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- HUNGARIAN MAIN ---
+    { url: '/hu', priority: '1.0', changefreq: 'daily' },
+    { url: '/hu/kesett-jarat', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hu/torolt-jarat', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hu/karteritesi-kalkulator', priority: '0.9', changefreq: 'weekly' },
   ];
 
   const zhBlogPages = blogArticlesZhSorted.map((article) => ({
