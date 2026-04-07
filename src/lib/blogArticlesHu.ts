@@ -10,6 +10,56 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "iberia-karterites",
+    title: "Iberia kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató Iberia járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "tap-air-portugal-karterites",
+    title: "TAP Air Portugal kártérítés – késés, törlés, EU261",
+    excerpt:
+      "Magyar útmutató TAP Air Portugal járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "british-airways-karterites",
+    title: "British Airways kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató British Airways járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "klm-karterites",
+    title: "KLM kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató KLM járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
+    slug: "air-france-karterites",
+    title: "Air France kártérítés – késés, törlés, EU261 útmutató",
+    excerpt:
+      "Magyar útmutató Air France járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
+    date: "2026-04-07",
+    readTime: "10 perc",
+    category: "Legitarsasag-specifikus",
+    featured: true,
+  },
+  {
     slug: "eurowings-karterites",
     title: "Eurowings kártérítés – késés, törlés, EU261 útmutató",
     excerpt:
