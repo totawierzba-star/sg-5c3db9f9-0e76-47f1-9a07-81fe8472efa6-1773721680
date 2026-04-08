@@ -10,6 +10,106 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "ot-oranal-hosszabb-keses",
+    title: "5 óránál hosszabb késés – mikor lehet erős a claim?",
+    excerpt:
+      "Magyar útmutató az 5 óránál hosszabb késésekhez: hogyan számít a végső érkezés, a teljes időveszteség és a dokumentáció.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "technikai-hiba-mikor-jar-penz",
+    title: "Technikai hiba – mikor jár pénz?",
+    excerpt:
+      "Magyar útmutató a technikai hibák miatti járatproblémákhoz: hogyan számít a végső érkezés, a dokumentáció és a légitársaság magyarázatának valós súlya.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "visszafordulo-repulogep",
+    title: "Visszaforduló repülőgép – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a visszaforduló repülőgépekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "jarat-atiranyitasa",
+    title: "Járat átirányítása – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató az átirányított járatokhoz: hogyan számít a végső célállomás, a transzfer és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "menetrend-valtozas-egyenlo-torles",
+    title: "Menetrend változás = törlés? Mikor számít komolynak?",
+    excerpt:
+      "Magyar útmutató menetrendváltozásokhoz: hogyan számít a végső érkezés, az új útvonal és a gyakorlati időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "repulogep-rotacios-kesese",
+    title: "Repülőgép rotációs késése – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a repülőgép rotációs késéseihez: hogyan számít a végső érkezés, a teljes időveszteség és az operatív magyarázat valós súlya.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "szemelyzethiany-miatti-keses",
+    title: "Személyzethiány miatti késés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a személyzethiány miatti késésekhez: hogyan számít a végső érkezés, a dokumentáció és a légitársaság indoklásának valós súlya.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "eu-n-kivuli-csatlakozas-szabalyok",
+    title: "EU-n kívüli csatlakozás szabályok – mikor számít az EU261?",
+    excerpt:
+      "Magyar útmutató EU-n kívüli csatlakozásokhoz: hogyan számít az egy foglalás, a teljes útvonal és az EU261 hatálya a gyakorlatban.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "elveszett-csatlakozas",
+    title: "Elveszett csatlakozás – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató az elveszett csatlakozásokhoz: hogyan számít az egy foglalás, a végső érkezés és a teljes utazási lánc.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "ejszakai-keses-hotel-es-jogok",
+    title: "Éjszakai késés: hotel és jogok – mi járhat?",
+    excerpt:
+      "Magyar útmutató éjszakai járatkéséshez: hogyan számít a hotel, az indokolt költség, a teljes éjszakai időveszteség és a dokumentáció.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
     slug: "jarat-torlese-indulas-elott-1-nappal",
     title: "Járat törlése indulás előtt 1 nappal – mikor lehet kártérítés?",
     excerpt:
