@@ -10,6 +10,106 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "barcelona-repuloter-kesesek",
+    title: "Barcelona repülőtér késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a barcelonai repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az átfoglalás és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "madrid-repuloter-kesesek",
+    title: "Madrid repülőtér késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a madridi repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "amszterdam-schiphol-kesesek",
+    title: "Amszterdam Schiphol késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a Schiphol repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "parizs-cdg-kesesek",
+    title: "Párizs CDG késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a párizsi CDG repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "london-stansted-kesesek",
+    title: "London Stansted késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a londoni Stansted repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a low-cost útvonal, a szabályi keret és a végső késés.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "london-heathrow-kesesek",
+    title: "London Heathrow késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a londoni Heathrow repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az EU261 vagy UK261 és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-repuloter-jogok",
+    title: "Frankfurt repülőtér jogok – késések és kártérítés",
+    excerpt:
+      "Magyar útmutató a frankfurti repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "munchen-repuloter-kesesek",
+    title: "München repülőtér késések – jogok és teendők",
+    excerpt:
+      "Magyar útmutató a müncheni repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "praga-repuloter-karterites",
+    title: "Prága repülőtér kártérítés – késések és jogok",
+    excerpt:
+      "Magyar útmutató a prágai repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az átfoglalás és a teljes útvonal.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "becs-repuloter-kesesek",
+    title: "Bécs repülőtér késések – jogok és teendők",
+    excerpt:
+      "Magyar útmutató a bécsi repülőtéren felmerülő járatkésésekhez és törlésekhez: hogyan számít a csatlakozás, az átfoglalás és a végső érkezési késés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
     slug: "debrecen-repuloter-jaratkesesek",
     title: "Debrecen repülőtér járatkésések – jogok és teendők",
     excerpt:
