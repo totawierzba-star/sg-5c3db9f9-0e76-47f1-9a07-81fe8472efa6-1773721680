@@ -10,6 +10,106 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "budapest-dubai-torles",
+    title: "Budapest–Dubai törlés – mikor lehet erős kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Dubai közötti törölt járatokhoz: hogyan számít az új útvonal, a teljes veszteség és a jogi keret.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-new-york-keses",
+    title: "Budapest–New York késés – mikor lehet erős kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és New York közötti késő járatokhoz: hogyan számít a new yorki végső érkezés, a long-haul jelleg és a teljes bizonyítás.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-parizs-karterites",
+    title: "Budapest–Párizs kártérítés – mikor lehet erős a claim?",
+    excerpt:
+      "Magyar útmutató a Budapest és Párizs közötti járatokhoz: hogyan számít a párizsi végső érkezés, a teljes időveszteség és a pontos bizonyítás.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-barcelona-keses",
+    title: "Budapest–Barcelona késés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Barcelona közötti késő járatokhoz: hogyan számít a végső érkezés, a teljes időveszteség és a pontos bizonyítás.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-madrid-karterites",
+    title: "Budapest–Madrid kártérítés – mikor lehet erős a claim?",
+    excerpt:
+      "Magyar útmutató a Budapest és Madrid közötti járatokhoz: hogyan számít a madridi végső érkezés, a teljes időveszteség és a pontos dokumentáció.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-berlin-jarat-torles",
+    title: "Budapest–Berlin járat törlés – mikor jár kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Berlin közötti törölt járatokhoz: hogyan számít a felajánlott új útvonal, a teljes időveszteség és a törlés utáni döntés.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-london-jaratkeses-karterites",
+    title: "Budapest–London járatkésés kártérítés – mikor jár?",
+    excerpt:
+      "Magyar útmutató a Budapest és London közötti késő járatokhoz: hogyan számít a londoni végső érkezés, az útvonal és a szabályi keret.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "isztambul-repuloter-kesesek",
+    title: "Isztambul repülőtér késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató az isztambuli repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít az EU261 hatálya, a teljes útvonal és a végső érkezés.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "milano-malpensa-kesesek",
+    title: "Milánó Malpensa késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a milánói Malpensa repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
+    slug: "roma-fiumicino-kesesek",
+    title: "Róma Fiumicino késések – jogok és kártérítés",
+    excerpt:
+      "Magyar útmutató a római Fiumicino repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Repuloteri utmutato",
+    featured: true,
+  },
+  {
     slug: "barcelona-repuloter-kesesek",
     title: "Barcelona repülőtér késések – jogok és kártérítés",
     excerpt:
