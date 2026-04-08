@@ -10,6 +10,106 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "jarat-torlese-indulas-elott-1-nappal",
+    title: "Járat törlése indulás előtt 1 nappal – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató az indulás előtti 1 nappal törölt járatokhoz: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "jarat-torlese-14-napon-belul",
+    title: "Járat törlése 14 napon belül – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a 14 napon belüli járattörlésekhez: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "ryanair-budapest-parizs-torles",
+    title: "Ryanair Budapest–Párizs törlés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Ryanair Budapest és Párizs közötti törölt járataihoz: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "wizz-air-budapest-barcelona-keses",
+    title: "Wizz Air Budapest–Barcelona késés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Wizz Air Budapest és Barcelona közötti késő járataihoz: hogyan számít a végső érkezés, a teljes időveszteség és a pontos dokumentáció.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-london-3-oras-keses-mennyi-jar",
+    title: "Budapest–London 3 órás késés: mennyi jár?",
+    excerpt:
+      "Magyar útmutató a Budapest és London közötti 3 órás késésekhez: hogyan számít a végső érkezés, az útvonal és a lehetséges kompenzáció logikája.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-tel-aviv-keses",
+    title: "Budapest–Tel Aviv késés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Tel Aviv közötti késő járatokhoz: hogyan számít a végső érkezés, a teljes útvonal és a jól dokumentált időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-toronto-karterites",
+    title: "Budapest–Toronto kártérítés – mikor lehet erős a claim?",
+    excerpt:
+      "Magyar útmutató a Budapest és Toronto közötti járatokhoz: hogyan számít a torontói végső érkezés, a long-haul jelleg és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-bangkok-eu-legitarsasaggal",
+    title: "Budapest–Bangkok EU légitársasággal – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Bangkok közötti járatokhoz EU légitársasággal: hogyan számít a végső érkezés, a long-haul jelleg és az EU261 logikája.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-doha-jaratkeses",
+    title: "Budapest–Doha járatkésés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Doha közötti késő járatokhoz: hogyan számít a dohai végső érkezés, a hosszú reláció és a teljes bizonyítás.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
+    slug: "budapest-isztambul-keses",
+    title: "Budapest–Isztambul késés – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a Budapest és Isztambul közötti késő járatokhoz: hogyan számít az EU261 hatálya, a végső érkezés és a teljes útvonal.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Utvonal-specifikus",
+    featured: true,
+  },
+  {
     slug: "budapest-dubai-torles",
     title: "Budapest–Dubai törlés – mikor lehet erős kártérítés?",
     excerpt:
