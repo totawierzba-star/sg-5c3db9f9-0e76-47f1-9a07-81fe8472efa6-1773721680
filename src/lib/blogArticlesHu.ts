@@ -10,6 +10,56 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "checklista-mielott-atadod-az-ugyet-a-claimwingernek",
+    title: "Checklista mielőtt átadod az ügyet a ClaimWingernek",
+    excerpt:
+      "Magyar checklista arról, mit készíts elő, mielőtt átadod a járatkártérítési ügyedet a ClaimWingernek: dokumentumok, idővonal, levelezés és a legfontosabb részletek.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-bizd-szakertore-az-ugyet",
+    title: "Mikor bízd szakértőre az ügyet?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes szakértőre bízni egy elakadt járatkártérítési ügyet, és mikor lehet még ésszerű saját kézben tartani a folyamatot.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-erdemes-kis-erteku-peres-utra-lepni",
+    title: "Mikor érdemes kis értékű peres útra lépni?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes kis értékű peres útra lépni egy elakadt járatkártérítési ügyben, és mikor jobb még más, kevésbé terhelő utat választani.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-erdemes-mediaciot-vagy-bekeltetest-valasztani",
+    title: "Mikor érdemes mediációt vagy békéltetést választani?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes mediációt vagy békéltetést választani elakadt járatkártérítési ügyben, és mikor nem ez a leghasznosabb következő lépés.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "adr-vagy-hatosag-merre-tovabb",
+    title: "ADR vagy hatóság – merre tovább?",
+    excerpt:
+      "Magyar útmutató arról, hogy elakadt járatkártérítési ügyben ADR felé, hatóság felé vagy más irányba érdemes-e továbblépni, és hogyan válaszd ki a következő lépést.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
     slug: "mikor-erdemes-eszkalalni-a-kerelemet",
     title: "Mikor érdemes eszkalálni a kérelmet?",
     excerpt:
