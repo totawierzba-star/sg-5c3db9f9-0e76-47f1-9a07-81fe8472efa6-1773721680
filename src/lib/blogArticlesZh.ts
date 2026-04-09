@@ -11,6 +11,36 @@ export interface BlogArticleZh {
 
 export const blogArticlesZh: BlogArticleZh[] = [
   {
+    slug: "damaged-stroller-car-seat-flight-guide",
+    title: "婴儿车或安全座椅在航班中损坏了怎么办？家庭出行指南",
+    excerpt:
+      "婴儿车、儿童安全座椅在托运、登机口交接或落地后损坏、晚到或找不到怎么办？本文讲清 stroller、car seat、赔偿与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "家庭出行",
+    featured: true,
+  },
+  {
+    slug: "damaged-wheelchair-mobility-aid-flight-guide",
+    title: "轮椅或助行器在航班中损坏了怎么办？Mobility Aid 指南",
+    excerpt:
+      "轮椅、助行器、电动代步设备在托运或落地后损坏、晚到或无法使用怎么办？本文讲清 mobility aid、damaged wheelchair、赔偿与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊协助",
+    featured: true,
+  },
+  {
+    slug: "reduced-mobility-assistance-delay-guide",
+    title: "机场轮椅或特殊协助太晚，导致误机怎么办？PRM 权利指南",
+    excerpt:
+      "已申请轮椅、PRM 或特殊协助，但机场或航司安排太晚导致误机、错过登机或改签到次日怎么办？本文讲清 assistance delay、PRM、refund 与 EU261 边界。",
+    date: "2026-04-07",
+    readTime: "8 分钟",
+    category: "特殊协助",
+    featured: true,
+  },
+  {
     slug: "delayed-baggage-after-arrival-guide",
     title: "飞机到了但行李没到，能索赔吗？延误行李指南",
     excerpt:
