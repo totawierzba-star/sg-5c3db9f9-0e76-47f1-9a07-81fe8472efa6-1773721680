@@ -1,5 +1,6 @@
 import { GetServerSideProps } from 'next';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
+import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
 
 const EXTERNAL_DATA_URL = 'https://problemlot.com';
@@ -102,6 +103,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/hu/torolt-jarat', priority: '0.9', changefreq: 'weekly' },
     { url: '/hu/karteritesi-kalkulator', priority: '0.9', changefreq: 'weekly' },
     { url: '/hu/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- TURKISH MAIN ---
+    { url: '/tr', priority: '1.0', changefreq: 'daily' },
+    { url: '/tr/gecikmis-ucus', priority: '0.9', changefreq: 'weekly' },
+    { url: '/tr/iptal-edilen-ucus', priority: '0.9', changefreq: 'weekly' },
+    { url: '/tr/tazminat-hesaplayici', priority: '0.9', changefreq: 'weekly' },
+    { url: '/tr/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -116,7 +124,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
-  const sitemap = generateSiteMap([...pages, ...huBlogPages, ...zhBlogPages]);
+  const trBlogPages = blogArticlesTrSorted.map((article) => ({
+    url: `/tr/blog/${article.slug}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  }));
+
+  const sitemap = generateSiteMap([...pages, ...huBlogPages, ...zhBlogPages, ...trBlogPages]);
 
   res.setHeader('Content-Type', 'text/xml');
   res.write(sitemap);

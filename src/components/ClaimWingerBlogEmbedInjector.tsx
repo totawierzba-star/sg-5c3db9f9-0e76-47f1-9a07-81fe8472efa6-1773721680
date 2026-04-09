@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { ClaimWingerHuSection } from "@/components/ClaimWingerHuSection";
+import { ClaimWingerTrSection } from "@/components/ClaimWingerTrSection";
 import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
@@ -45,6 +46,21 @@ const BLOG_EMBED_CONFIGS: BlogEmbedConfig[] = [
         description="Ha a jarat kesett, toroltek vagy atfoglaltak, a ClaimWinger magyar folyamata gyorsan segit eldonteni, hogy jarhat-e karterites vagy visszaterites."
         ctaHref="https://claimwinger.com/hu"
         ctaLabel="Magyar igenyellenorzes inditasa"
+      />
+    ),
+  },
+  {
+    isMatch: (path) => /^\/tr\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com"]',
+    fallbackMode: "after-header",
+    render: () => (
+      <ClaimWingerTrSection
+        className="mb-8"
+        title="ClaimWinger ile Turkce uygunluk kontrolune hemen baslayin"
+        description="Bu noktaya kadar geldiyseniz, genelde dosyanin temel sorununu anlamissinizdir. ClaimWinger formu ile dosyanin EU261 acisindan gucunu hizlica kontrol edebilirsiniz."
+        ctaHref="https://claimwinger.com/tr?utm_source=problemlot-tr&utm_medium=embedded_cta&utm_campaign=blog_entry"
+        ctaLabel="ClaimWinger TR kontrolunu ac"
+        placement="tr_blog_embed"
       />
     ),
   },
