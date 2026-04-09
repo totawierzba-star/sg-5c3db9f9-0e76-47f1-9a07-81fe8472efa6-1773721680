@@ -10,6 +10,116 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "airhelp-vs-sajat-igenyles",
+    title: "AirHelp vs saját igénylés – melyik éri meg jobban?",
+    excerpt:
+      "Magyar összehasonlítás: AirHelp vagy saját igénylés? Előnyök, hátrányok, költségek, időráfordítás és mikor lehet jobb köztes megoldás a ClaimWinger.",
+    date: "2026-04-08",
+    readTime: "9 perc",
+    category: "Osszehasonlitas",
+    featured: true,
+  },
+  {
+    slug: "mit-tegyel-ha-az-airline-sablonos-valaszt-kuld",
+    title: "Mit tegyél, ha az airline sablonos választ küld?",
+    excerpt:
+      "Magyar útmutató arról, mit tegyél, ha a légitársaság sablonos választ küld a kártérítési ügyedre: hogyan ismerd fel a gyenge választ, és mikor érdemes továbblépni.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mennyi-ido-alatt-valaszol-a-legitarsasag",
+    title: "Mennyi idő alatt válaszol a légitársaság?",
+    excerpt:
+      "Magyar útmutató arról, mennyi idő alatt válaszol a légitársaság egy kártérítési ügyben, mikor normális még a várakozás, és mikor érdemes továbblépni.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-erdemes-birosaghoz-fordulni",
+    title: "Mikor érdemes bírósághoz fordulni?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes bírósághoz fordulni repülési kártérítés ügyben: hogyan mérd fel a bizonyítékokat, az airline válaszát és az ügy erejét.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-kerj-visszateritest-es-karteritest",
+    title: "Hogyan kérj visszatérítést + kártérítést?",
+    excerpt:
+      "Magyar útmutató a visszatérítés és kártérítés együttes igényléséhez: hogyan különül el a két igény, és mikor lehet mindkettő releváns.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-bizonyitsd-a-kesest",
+    title: "Hogyan bizonyítsd a késést?",
+    excerpt:
+      "Magyar útmutató a járatkésés bizonyításához: hogyan gyűjts dokumentumokat, fényképeket és egy erős idővonalat.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-igenyelj-karteritest-lufthansa-nal",
+    title: "Hogyan igényelj kártérítést Lufthansa-nál?",
+    excerpt:
+      "Magyar útmutató a Lufthansa kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a teljes útvonal alapján.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-igenyelj-karteritest-ryanair-nel",
+    title: "Hogyan igényelj kártérítést Ryanair-nél?",
+    excerpt:
+      "Magyar útmutató a Ryanair kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a gyakorlatban.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-igenyelj-karteritest-wizz-air-nel",
+    title: "Hogyan igényelj kártérítést Wizz Air-nél?",
+    excerpt:
+      "Magyar útmutató a Wizz Air kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a gyakorlatban.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "keses-miatt-lekesett-csatlakozas",
+    title: "Késés miatt lekésett csatlakozás – mikor lehet kártérítés?",
+    excerpt:
+      "Magyar útmutató a késés miatt lekésett csatlakozásokhoz: hogyan számít az egy foglalás, a végső célállomás és a teljes időveszteség.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
+    slug: "tobb-jarat-egy-foglalasban",
+    title: "Több járat egy foglalásban – mikor lehet erős a claim?",
+    excerpt:
+      "Magyar útmutató több járat egy foglalásban esetéhez: hogyan számít az egy foglalás, a végső célállomás és a teljes utazási lánc.",
+    date: "2026-04-08",
+    readTime: "8 perc",
+    category: "Problema-specifikus",
+    featured: true,
+  },
+  {
     slug: "ot-oranal-hosszabb-keses",
     title: "5 óránál hosszabb késés – mikor lehet erős a claim?",
     excerpt:
