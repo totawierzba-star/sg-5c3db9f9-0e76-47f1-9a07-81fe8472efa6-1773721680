@@ -10,6 +10,96 @@ export interface BlogArticleHu {
 
 export const blogArticlesHu: BlogArticleHu[] = [
   {
+    slug: "mikor-erdemes-eszkalalni-a-kerelemet",
+    title: "Mikor érdemes eszkalálni a kérelmet?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes eszkalálni a légitársasági kártérítési kérelmet, milyen jelek mutatják, hogy a follow-up már nem elég, és hogyan készülj a következő lépésre.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-kuldj-follow-upot-a-legitarsasagnak",
+    title: "Mikor küldj follow-upot a légitársaságnak?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes follow-upot küldeni a légitársaságnak, hogyan tedd ezt jól, és mikor nem elég már egy újabb emlékeztető.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-erositsd-meg-a-claimet",
+    title: "Hogyan erősítsd meg a claimedet?",
+    excerpt:
+      "Magyar útmutató arról, hogyan erősítsd meg a járatkártérítési claimedet: dokumentáció, idővonal, végső érkezés és a leggyakoribb gyenge pontok javítása.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "mikor-erdemes-ujra-beadni-a-kerelemet",
+    title: "Mikor érdemes újra beadni a kérelmet?",
+    excerpt:
+      "Magyar útmutató arról, mikor érdemes újra beadni egy elutasított vagy elakadt kártérítési kérelmet, és mikor jobb más irányba továbblépni.",
+    date: "2026-04-09",
+    readTime: "8 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "miert-utasitjak-el-a-kerelmeket",
+    title: "Miért utasítják el a kérelmeket?",
+    excerpt:
+      "Magyar útmutató a légitársasági kártérítési kérelmek elutasításának leggyakoribb okairól: mikor erős az indok, mikor gyenge, és mit jelent ez a claim szempontjából.",
+    date: "2026-04-09",
+    readTime: "9 perc",
+    category: "Procedura",
+    featured: true,
+  },
+  {
+    slug: "hogyan-valassz-szolgaltatot",
+    title: "Hogyan válassz szolgáltatót?",
+    excerpt:
+      "Magyar útmutató: hogyan válassz szolgáltatót járatkártérítési ügyhöz? Mire figyelj a claim partner kiválasztásánál, és mikor lehet jó választás a ClaimWinger.",
+    date: "2026-04-09",
+    readTime: "9 perc",
+    category: "Osszehasonlitas",
+    featured: true,
+  },
+  {
+    slug: "mennyit-kernek-a-karteritesi-cegek",
+    title: "Mennyit kérnek a kártérítési cégek?",
+    excerpt:
+      "Magyar útmutató arról, mennyit kérnek a járatkártérítési cégek: hogyan értsd a jutalékot, mire figyelj a feltételekben, és mikor lehet jobb választás a ClaimWinger.",
+    date: "2026-04-09",
+    readTime: "9 perc",
+    category: "Osszehasonlitas",
+    featured: true,
+  },
+  {
+    slug: "egyedul-vagy-cegen-keresztul",
+    title: "Egyedül vagy cégen keresztül?",
+    excerpt:
+      "Magyar útmutató: egyedül vagy cégen keresztül érdemes járatkártérítést igényelni? Előnyök, hátrányok és mikor lehet jobb választás a ClaimWinger.",
+    date: "2026-04-09",
+    readTime: "9 perc",
+    category: "Osszehasonlitas",
+    featured: true,
+  },
+  {
+    slug: "claimwinger-vs-airhelp-vs-skycop",
+    title: "ClaimWinger vs AirHelp vs Skycop",
+    excerpt:
+      "Magyar összehasonlítás: ClaimWinger vs AirHelp vs Skycop. Melyik lehet jobb a te ügyedhez, ha kártérítési partnert keresel járatkésés vagy törlés után?",
+    date: "2026-04-09",
+    readTime: "9 perc",
+    category: "Osszehasonlitas",
+    featured: true,
+  },
+  {
     slug: "airhelp-vs-sajat-igenyles",
     title: "AirHelp vs saját igénylés – melyik éri meg jobban?",
     excerpt:
