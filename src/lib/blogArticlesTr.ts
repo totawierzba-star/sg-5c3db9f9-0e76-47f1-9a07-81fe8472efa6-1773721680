@@ -10,6 +10,256 @@ export interface BlogArticleTr {
 
 export const blogArticlesTr: BlogArticleTr[] = [
   {
+    slug: "air-france-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Air France ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Air France ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "klm-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "KLM ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "KLM ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "lufthansa-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Lufthansa ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Lufthansa ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ajet-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "AJet ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "AJet ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "sunexpress-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "SunExpress ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "SunExpress ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "easyjet-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "easyJet ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "easyJet ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ryanair-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Ryanair ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Ryanair ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "wizz-air-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Wizz Air ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Wizz Air ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "turkish-airlines-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Turkish Airlines ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Turkish Airlines ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "pegasus-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Pegasus ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Pegasus ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "izmir-berlin-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Izmir-Berlin ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Izmir-Berlin ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ankara-amsterdam-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Ankara-Amsterdam ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Ankara-Amsterdam ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ankara-londra-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Ankara-Londra ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Ankara-Londra ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve UK/EU mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "izmir-amsterdam-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Izmir-Amsterdam ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Izmir-Amsterdam ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bodrum-amsterdam-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Bodrum-Amsterdam ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Bodrum-Amsterdam ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "antalya-londra-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Antalya-Londra ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Antalya-Londra ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve UK/EU mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ankara-berlin-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Ankara-Berlin ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Ankara-Berlin ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "izmir-londra-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Izmir-Londra ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Izmir-Londra ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve UK/EU mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "dalaman-amsterdam-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Dalaman-Amsterdam ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Dalaman-Amsterdam ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bodrum-londra-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Bodrum-Londra ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Bodrum-Londra ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve UK/EU mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ankara-amsterdam-ucusunda-gecikme-olursa-ne-yapilmali",
+    title: "Ankara-Amsterdam ucusunda gecikme olursa ne yapilmali?",
+    excerpt:
+      "Ankara-Amsterdam ucusunda gecikme olursa ne yapilmali? Turk yolcular icin nihai varis, belge duzeni ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "antalya-berlin-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Antalya-Berlin ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Antalya-Berlin ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "izmir-berlin-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Izmir-Berlin ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Izmir-Berlin ucusunda gecikme tazminati ne zaman dogabilir? Turk yolcular icin nihai varis, rota yapisi ve EU261 mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ankara-cikisli-ucusta-eu261-ne-zaman-guclu-olur",
+    title: "Ankara cikisli ucusta EU261 ne zaman guclu olur?",
+    excerpt:
+      "Ankara cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "GEO Rehberi",
+    featured: true,
+  },
+  {
+    slug: "dalaman-cikisli-ucusta-eu261-ne-zaman-guclu-olur",
+    title: "Dalaman cikisli ucusta EU261 ne zaman guclu olur?",
+    excerpt:
+      "Dalaman cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-09",
+    readTime: "8 dk",
+    category: "GEO Rehberi",
+    featured: true,
+  },
+  {
     slug: "bodrum-cikisli-ucusta-eu261-ne-zaman-guclu-olur",
     title: "Bodrum cikisli ucusta EU261 ne zaman guclu olur?",
     excerpt:
