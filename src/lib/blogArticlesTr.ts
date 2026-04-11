@@ -10,6 +10,66 @@ export interface BlogArticleTr {
 
 export const blogArticlesTr: BlogArticleTr[] = [
   {
+    slug: "klm-tazminat",
+    title: "KLM tazminat: ne zaman guclu olur?",
+    excerpt:
+      "KLM tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "air-france-tazminat",
+    title: "Air France tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Air France tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "eurowings-tazminat",
+    title: "Eurowings tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Eurowings tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, point-to-point rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "lufthansa-tazminat",
+    title: "Lufthansa tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Lufthansa tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ajet-tazminat",
+    title: "AJet tazminat: ne zaman guclu olur?",
+    excerpt:
+      "AJet tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "sunexpress-tazminat",
+    title: "SunExpress tazminat: ne zaman guclu olur?",
+    excerpt:
+      "SunExpress tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
     slug: "pegasus-airlines-tazminat",
     title: "Pegasus Airlines tazminat: ne zaman guclu olur?",
     excerpt:
