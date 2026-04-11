@@ -55,8 +55,9 @@ export default function BlogIndexTr() {
                 Gecikme, iptal ve EU261 rehberleri
               </h1>
               <p className="mx-auto mb-8 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                Turk yolcular ve Avrupa diasporasi icin, SEO ve GEO odakli ama dogrudan karar vermeye yardim eden
-                rehberler. Hedef sadece trafik degil, somut olarak bir sonraki adimi netlestirmek.
+                Turk yolcular ve Avrupa diasporasi icin, ucus gecikmesi, iptal, tazminat ve yolcu haklari konusunda
+                sade ve pratik rehberler. Amac, durumu hizla anlamaniza ve bir sonraki adima daha net karar vermenize
+                yardim etmek.
               </p>
 
               <div className="grid gap-4 sm:grid-cols-3">

@@ -118,7 +118,7 @@ export default function TrHomePage() {
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white">TR blogunda yeni</h2>
                   <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    SEO ve GEO odakli, Turk yolcular ile Avrupa diasporasi icin yazilmis EU261 rehberleri.
+                    Turk yolcular ve Avrupa diasporasi icin hazirlanan, EU261, gecikme, iptal ve tazminat odakli yeni rehberler.
                   </p>
                 </div>
                 <Link
