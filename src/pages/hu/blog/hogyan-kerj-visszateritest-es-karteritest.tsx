@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   ArrowRight,
-  BanknoteArrowDown,
   CheckCircle2,
   FileText,
   ReceiptText,
@@ -237,7 +236,7 @@ export default function HogyanKerjVisszateritestEsKarteritest() {
               </p>
             </div>
             <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
-              <BanknoteArrowDown className="mb-4 h-8 w-8 text-blue-600 dark:text-blue-400" />
+              <Wallet className="mb-4 h-8 w-8 text-blue-600 dark:text-blue-400" />
               <h3 className="mb-3 text-xl font-bold text-slate-900 dark:text-white">Karterites</h3>
               <p className="text-slate-700 dark:text-slate-200">
                 Dotyczy prawnego skutku zakłócenia lotu i nie powinno być mieszane z prostym zwrotem ceny.
