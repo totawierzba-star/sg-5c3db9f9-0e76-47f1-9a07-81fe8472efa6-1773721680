@@ -10,6 +10,636 @@ export interface BlogArticleTr {
 
 export const blogArticlesTr: BlogArticleTr[] = [
   {
+    slug: "pegasus-airlines-tazminat",
+    title: "Pegasus Airlines tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Pegasus Airlines tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, baglanti kaybi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "turkish-airlines-tazminat-ab-kalkisli-ucuslar",
+    title: "Turkish Airlines tazminat: AB kalkisli ucuslarda ne zaman guclu olur?",
+    excerpt:
+      "Turkish Airlines tazminat hakki AB kalkisli ucuslarda ne zaman guclu olur? Turk yolcular icin gecikme, iptal, nihai varis ve rota mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "tazminat-sirketi-kullanmak-mantikli-mi",
+    title: "Tazminat sirketi kullanmak mantikli mi?",
+    excerpt:
+      "Tazminat sirketi kullanmak mantikli mi? Turk yolcular icin ne zaman faydali, ne zaman gereksiz olabilecegini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Karar Rehberi",
+    featured: true,
+  },
+  {
+    slug: "hangi-belgeler-gerekli",
+    title: "Ucus tazminati icin hangi belgeler gerekli?",
+    excerpt:
+      "Ucus tazminati icin hangi belgeler gerekli? Turk yolcular icin PNR, boarding pass, e-posta, masraf fisleri ve temel belge setini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Belge Rehberi",
+    featured: true,
+  },
+  {
+    slug: "avukat-gerekli-mi",
+    title: "Ucus tazminati icin avukat gerekli mi?",
+    excerpt:
+      "Ucus tazminati icin avukat gerekli mi? Turk yolcular icin ne zaman gereksiz, ne zaman faydali olabilecegini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Prosedur Rehberi",
+    featured: true,
+  },
+  {
+    slug: "2-3-yil-onceki-ucus-icin-basvuru-yapilabilir-mi",
+    title: "2-3 yil onceki ucus icin basvuru yapilabilir mi?",
+    excerpt:
+      "2-3 yil onceki ucus icin basvuru yapilabilir mi? Turk yolcular icin eski ucus dosyasi, belge durumu ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Eski Ucus Rehberi",
+    featured: true,
+  },
+  {
+    slug: "boarding-kartsiz-tazminat-alinir-mi",
+    title: "Boarding kartsiz tazminat alinir mi?",
+    excerpt:
+      "Boarding kartsiz tazminat alinir mi? Turk yolcular icin PNR, e-posta, uygulama kayitlari ve eksik belgeyle claim kurma mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Belge Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ucus-iptalinde-ne-kadar-para-alinir",
+    title: "Ucus iptalinde ne kadar para alinir?",
+    excerpt:
+      "Ucus iptalinde ne kadar para alinir? Turk yolcular icin iptal tazminati, rota mesafesi, yeni ucus kalitesi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Iptal Tazminati",
+    featured: true,
+  },
+  {
+    slug: "uk261-hangi-ucuslarda-gecerli",
+    title: "UK261 hangi ucuslarda gecerli?",
+    excerpt:
+      "UK261 hangi ucuslarda gecerli? Turk yolcular icin Ingiltere cikisli rotalar, isleten tasiyici ve kapsam mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "UK261 Kapsam Rehberi",
+    featured: true,
+  },
+  {
+    slug: "hangi-havayollari-eu261-kapsaminda-odeme-yapar",
+    title: "Hangi havayollari EU261 kapsaminda odeme yapar?",
+    excerpt:
+      "Hangi havayollari EU261 kapsaminda odeme yapar? Turk yolcular icin marka, isleten tasiyici, kalkis noktasi ve rota mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Kapsam Rehberi",
+    featured: true,
+  },
+  {
+    slug: "kac-yil-geriye-donuk-basvuru-yapilabilir",
+    title: "Kac yil geriye donuk ucus icin basvuru yapilabilir?",
+    excerpt:
+      "Kac yil geriye donuk ucus icin tazminat basvurusu yapilabilir? Turk yolcular icin eski ucuslar, belge bulma ve claim gucunu anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Eski Ucus Rehberi",
+    featured: true,
+  },
+  {
+    slug: "tazminat-ne-kadar-surede-odenir",
+    title: "Ucus tazminati ne kadar surede odenir?",
+    excerpt:
+      "Ucus tazminati ne kadar surede odenir? Turk yolcular icin havayolu cevabi, kabul, odeme asamasi ve tipik bekleme mantigini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Odeme Rehberi",
+    featured: true,
+  },
+  {
+    slug: "tazminat-sureci-nasil-isler",
+    title: "Ucus tazminat sureci nasil isler?",
+    excerpt:
+      "Ucus tazminat sureci nasil isler? Turk yolcular icin ilk basvurudan havayolu cevabina, follow-up ve olasi odemeye kadar adim adim rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Prosedur Rehberi",
+    featured: true,
+  },
+  {
+    slug: "hangi-durumlarda-tazminat-odenmez",
+    title: "Hangi durumlarda ucus tazminati odenmez?",
+    excerpt:
+      "Hangi durumlarda ucus tazminati odenmez? Turk yolcular icin kapsam disi dosyalar, zayif senaryolar ve en sik yanlis varsayimlari anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Kapsam Rehberi",
+    featured: true,
+  },
+  {
+    slug: "250-400-600-euro-tazminat-nasil-hesaplanir",
+    title: "250€, 400€, 600€ tazminat nasil hesaplanir?",
+    excerpt:
+      "250€, 400€ ve 600€ tazminat neye gore hesaplanir? Turk yolcular icin rota mesafesi, nihai varis ve EU261 mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "9 dk",
+    category: "Tazminat Hesabi",
+    featured: true,
+  },
+  {
+    slug: "uk261-nedir-ve-eu261den-farki-nedir",
+    title: "UK261 nedir ve EU261'den farki nedir?",
+    excerpt:
+      "UK261 nedir, EU261'den farki nedir ve Ingiltere–Turkiye rotalarinda hangi haklar dogabilir? Turk yolcular icin net ve pratik rehber.",
+    date: "2026-04-10",
+    readTime: "9 dk",
+    category: "UK261 Temelleri",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-taksi-ve-transfer-masrafi-ne-zaman-geri-istenebilir",
+    title: "Paris-Istanbul ucusunda taksi ve transfer masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Paris-Istanbul ucusunda taksi ve transfer masrafi ne zaman geri istenebilir? Turk yolcular icin makul ulasim, geceleme sonrasi transfer ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-otel-masrafi-ne-zaman-geri-istenebilir",
+    title: "Paris-Istanbul ucusunda otel masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Paris-Istanbul ucusunda otel masrafi ne zaman geri istenebilir? Turk yolcular icin geceleme ihtiyaci, makul otel secimi ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-yeni-bilet-masrafi-ne-zaman-geri-istenebilir",
+    title: "Paris-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Paris-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir? Turk yolcular icin yeni bilet alma karari, makul secim ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-istanbul-ucusunda-yeni-bilet-masrafi-ne-zaman-geri-istenebilir",
+    title: "Amsterdam-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Amsterdam-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir? Turk yolcular icin yeni bilet alma karari, makul secim ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "berlin-istanbul-ucusunda-yeni-bilet-masrafi-ne-zaman-geri-istenebilir",
+    title: "Berlin-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Berlin-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir? Turk yolcular icin yeni bilet alma karari, makul secim ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-istanbul-ucusunda-yeni-bilet-masrafi-ne-zaman-geri-istenebilir",
+    title: "Londra-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Londra-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir? Turk yolcular icin yeni bilet alma karari, makul secim ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-istanbul-ucusunda-yeni-bilet-masrafi-ne-zaman-geri-istenebilir",
+    title: "Viyana-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir?",
+    excerpt:
+      "Viyana-Istanbul ucusunda yeni bilet masrafi ne zaman geri istenebilir? Turk yolcular icin yeni bilet alma karari, makul secim ve belge duzenini anlatan rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Paris-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Paris-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Amsterdam-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Amsterdam-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "berlin-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Berlin-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Berlin-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "barcelona-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Barcelona-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Barcelona-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "madrid-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Madrid-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Madrid-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Londra-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Londra-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-istanbul-ucusunda-hangi-masraflar-geri-istenebilir",
+    title: "Viyana-Istanbul ucusunda hangi masraflar geri istenebilir?",
+    excerpt:
+      "Viyana-Istanbul ucusunda hangi masraflar geri istenebilir? Turk yolcular icin yemek, otel, transfer ve yeni bilet masraflarini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Masraf Rehberi",
+    featured: true,
+  },
+  {
+    slug: "barcelona-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Barcelona-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Barcelona-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "madrid-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Madrid-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Madrid-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Londra-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Londra-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Viyana-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Viyana-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "barcelona-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Barcelona-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Barcelona-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "madrid-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Madrid-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Madrid-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Londra-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Londra-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Viyana-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Viyana-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Paris-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Paris-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Amsterdam-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Amsterdam-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "berlin-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Berlin-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Berlin-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Viyana-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Viyana-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "barcelona-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Barcelona-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Barcelona-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "madrid-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Madrid-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Madrid-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Paris-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Paris-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Amsterdam-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Amsterdam-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "berlin-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Berlin-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Berlin-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-barcelona-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Istanbul-Barcelona ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Istanbul-Barcelona ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-madrid-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Istanbul-Madrid ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Istanbul-Madrid ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-londra-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Istanbul-Londra ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Istanbul-Londra ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-paris-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Istanbul-Paris ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Istanbul-Paris ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-amsterdam-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Istanbul-Amsterdam ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Istanbul-Amsterdam ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-berlin-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Istanbul-Berlin ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Istanbul-Berlin ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "istanbul-viyana-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Istanbul-Viyana ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Istanbul-Viyana ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, rota mantigi ve claim gucunu anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "finnair-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Finnair ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Finnair ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "norwegian-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Norwegian ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Norwegian ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "sas-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "SAS ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "SAS ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "eurowings-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Eurowings ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Eurowings ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "austrian-airlines-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Austrian Airlines ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Austrian Airlines ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "swiss-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "SWISS ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "SWISS ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "iberia-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Iberia ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Iberia ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "tap-air-portugal-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "TAP Air Portugal ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "TAP Air Portugal ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "british-airways-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "British Airways ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "British Airways ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve claim mantigini anlatan net rehber.",
+    date: "2026-04-10",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
     slug: "air-france-ucusunda-iptal-olursa-ne-yapilmali",
     title: "Air France ucusunda iptal olursa ne yapilmali?",
     excerpt:
