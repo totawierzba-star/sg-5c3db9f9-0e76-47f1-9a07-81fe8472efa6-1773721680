@@ -2,9 +2,22 @@ import { cn } from "@/lib/utils";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
+  const faviconVersion = "20260411";
+
   return (
     <Html lang="pl">
       <Head>
+        <meta name="application-name" content="ProblemLot" />
+        <meta name="apple-mobile-web-app-title" content="ProblemLot" />
+        <meta name="theme-color" content="#2563eb" />
+        <meta name="msapplication-TileColor" content="#2563eb" />
+        <meta name="msapplication-config" content={`/browserconfig.xml?v=${faviconVersion}`} />
+        <link rel="icon" href={`/favicon-32x32.png?v=${faviconVersion}`} sizes="32x32" type="image/png" />
+        <link rel="icon" href={`/favicon-16x16.png?v=${faviconVersion}`} sizes="16x16" type="image/png" />
+        <link rel="shortcut icon" href={`/favicon.ico?v=${faviconVersion}`} />
+        <link rel="apple-touch-icon" href={`/apple-touch-icon.png?v=${faviconVersion}`} sizes="180x180" />
+        <link rel="mask-icon" href={`/safari-pinned-tab.svg?v=${faviconVersion}`} color="#2563eb" />
+        <link rel="manifest" href={`/site.webmanifest?v=${faviconVersion}`} />
         <meta
           name="google-site-verification"
           content="DPV_dIXtVkWNE_tb-yvnEz2pTSn_JUs4WgVzj2jTKsE"

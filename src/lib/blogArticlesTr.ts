@@ -10,6 +10,136 @@ export interface BlogArticleTr {
 
 export const blogArticlesTr: BlogArticleTr[] = [
   {
+    slug: "istanbul-havalimani-gecikmeler-ve-haklar",
+    title: "Istanbul Havalimani gecikmeler ve haklar",
+    excerpt:
+      "Istanbul Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261 sinirlari, nihai varis ve pratik adimlari anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "sas-tazminat",
+    title: "SAS tazminat: ne zaman guclu olur?",
+    excerpt:
+      "SAS tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Kopenhag, Stockholm ve Oslo baglantilari ile nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "brussels-airlines-tazminat",
+    title: "Brussels Airlines tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Brussels Airlines tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Bruksel baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "swiss-tazminat",
+    title: "SWISS tazminat: ne zaman guclu olur?",
+    excerpt:
+      "SWISS tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Zurih ve Cenevre baglantilari ile nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "austrian-airlines-tazminat",
+    title: "Austrian Airlines tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Austrian Airlines tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Viyana baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "iberia-tazminat",
+    title: "Iberia tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Iberia tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Madrid ve Barcelona baglantilari ile nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "tap-air-portugal-tazminat",
+    title: "TAP Air Portugal tazminat: ne zaman guclu olur?",
+    excerpt:
+      "TAP Air Portugal tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Lizbon baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "transavia-tazminat",
+    title: "Transavia tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Transavia tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Hollanda cikisli short-haul rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "vueling-tazminat",
+    title: "Vueling tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Vueling tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Ispanya merkezli short-haul rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "easyjet-tazminat",
+    title: "easyJet tazminat: ne zaman guclu olur?",
+    excerpt:
+      "easyJet tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, point-to-point rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "wizz-air-tazminat",
+    title: "Wizz Air tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Wizz Air tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, app bildirimleri ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "ryanair-tazminat",
+    title: "Ryanair tazminat: ne zaman guclu olur?",
+    excerpt:
+      "Ryanair tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, point-to-point rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "british-airways-tazminat",
+    title: "British Airways tazminat: ne zaman guclu olur?",
+    excerpt:
+      "British Airways tazminat hakki ne zaman guclu olur? Turk yolcular icin gecikme, iptal, Heathrow baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
     slug: "klm-tazminat",
     title: "KLM tazminat: ne zaman guclu olur?",
     excerpt:

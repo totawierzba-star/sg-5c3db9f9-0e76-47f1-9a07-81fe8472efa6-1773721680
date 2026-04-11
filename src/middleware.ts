@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.includes("/favicon.ico") ||
-    pathname.match(/\.(png|jpg|jpeg|svg|ico|xml|txt|html)$/)
+    pathname.match(/\.(png|jpg|jpeg|svg|ico|xml|txt|html|webmanifest)$/)
   ) {
     return NextResponse.next();
   }
@@ -30,6 +30,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Match all pathnames except static files and API routes
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.ico|.*\\.xml|.*\\.txt|.*\\.html).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.ico|.*\\.xml|.*\\.txt|.*\\.html|.*\\.webmanifest).*)",
   ],
 };

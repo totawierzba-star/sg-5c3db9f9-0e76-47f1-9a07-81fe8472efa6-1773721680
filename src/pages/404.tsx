@@ -35,7 +35,6 @@ export default function NotFound() {
       <Head>
         <title>{t.title}</title>
         <meta name="description" content="Page not found" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       
       <main className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
