@@ -19,7 +19,7 @@ export function ClaimWingerHeroEmbed({
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
 
   return (
-    <div className={wrapperClassName}>
+    <div className={wrapperClassName} data-claimwinger-embed="true">
       {!isClaimFormLoaded && (
         <div
           aria-live="polite"

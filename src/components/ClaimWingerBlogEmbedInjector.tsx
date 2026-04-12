@@ -9,6 +9,7 @@ import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
 const HIDDEN_ATTR = "data-claimwinger-blog-embed-hidden";
+const EXISTING_EMBED_SELECTOR = '[data-claimwinger-embed="true"]';
 
 type BlogEmbedConfig = {
   isMatch: (path: string) => boolean;
@@ -217,6 +218,10 @@ export function ClaimWingerBlogEmbedInjector() {
           attempts += 1;
           frameId = window.requestAnimationFrame(tryAttachEmbed);
         }
+        return;
+      }
+
+      if (article.querySelector(EXISTING_EMBED_SELECTOR)) {
         return;
       }
 

@@ -29,7 +29,7 @@ export function ClaimWingerTrSection({
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
 
   return (
-    <section className={wrapperClassName}>
+    <section className={wrapperClassName} data-claimwinger-embed="true">
       <div className="mb-6 rounded-3xl border border-red-200 bg-gradient-to-br from-red-50 via-white to-slate-50 p-6 shadow-sm dark:border-red-900 dark:from-red-950/30 dark:via-gray-900 dark:to-gray-900">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
           <Sparkles className="h-4 w-4" />
