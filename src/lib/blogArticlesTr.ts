@@ -10,6 +10,606 @@ export interface BlogArticleTr {
 
 export const blogArticlesTr: BlogArticleTr[] = [
   {
+    slug: "bagajinizi-alan-yolcu-bavulu-kuryeyle-geri-gonderecekse-ne-yapmali",
+    title: "Bagajinizi alan yolcu bavulu kuryeyle geri gonderecekse ne yapmali?",
+    excerpt:
+      "Bagajinizi alan yolcu bavulu kuryeyle geri gonderecekse ne yapmali? Turk yolcular icin wrong pickup, tracking, teslim kaniti ve resmi kayit zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "havayolu-sizi-bagajinizi-alan-yolcuyla-dogrudan-iletisime-gecirmek-isterse-ne-yapmali",
+    title: "Havayolu sizi bagajinizi alan yolcuyla dogrudan iletisime gecirmek isterse ne yapmali?",
+    excerpt:
+      "Havayolu sizi bagajinizi alan yolcuyla dogrudan iletisime gecirmek isterse ne yapmali? Turk yolcular icin wrong pickup, resmi kayit, gizlilik ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "yanlis-valizi-iade-ettikten-sonra-kendi-bagajiniz-hala-yoksa-ne-yapmali",
+    title: "Yanlis valizi iade ettikten sonra kendi bagajiniz hala yoksa ne yapmali?",
+    excerpt:
+      "Yanlis valizi iade ettikten sonra kendi bagajiniz hala yoksa ne yapmali? Turk yolcular icin wrong pickup, PIR kaydi, paralel dosya ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "baska-yolcu-sizin-bagajinizi-iade-ettiginde-icindeki-esyalar-eksikse-ne-yapmali",
+    title: "Baska yolcu sizin bagajinizi iade ettiginde icindeki esyalar eksikse ne yapmali?",
+    excerpt:
+      "Baska yolcu sizin bagajinizi iade ettiginde icindeki esyalar eksikse ne yapmali? Turk yolcular icin wrong pickup zinciri, eksik icerik kaydi ve belge duzenini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "baska-yolcu-sizin-bagajinizi-iade-ettiginde-hasar-varsa-ne-yapmali",
+    title: "Baska yolcu sizin bagajinizi iade ettiginde hasar varsa ne yapmali?",
+    excerpt:
+      "Baska yolcu sizin bagajinizi iade ettiginde hasar varsa ne yapmali? Turk yolcular icin wrong pickup zinciri, teslim zamani, hasar kaydi ve belge duzenini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "yanlis-valizi-actiysan-ne-yapmali",
+    title: "Yanlis valizi actiysan ne yapmali?",
+    excerpt:
+      "Yanlis valizi actiysan ne yapmali? Turk yolcular icin etiket kontrolu, ilk bildirim, wrong pickup ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-bandinda-ayni-model-bavullar-karisinca-ne-yapmali",
+    title: "Bagaj bandinda ayni model bavullar karisinca ne yapmali?",
+    excerpt:
+      "Bagaj bandinda ayni model bavullar karisinca ne yapmali? Turk yolcular icin etiket kontrolu, wrong pickup riski, ilk bildirim ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "baska-yolcu-sizin-bagajinizi-alip-sonra-iade-ederse-ne-olur",
+    title: "Baska yolcu sizin bagajinizi alip sonra iade ederse ne olur?",
+    excerpt:
+      "Baska yolcu sizin bagajinizi alip sonra iade ederse ne olur? Turk yolcular icin teslim zamani, belge zinciri, wrong pickup ve devam eden haklari anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "baska-yolcu-sizin-bagajinizi-alip-havalimanindan-ciktiysa-ne-yapmali",
+    title: "Baska yolcu sizin bagajinizi alip havalimanindan ciktiysa ne yapmali?",
+    excerpt:
+      "Baska yolcu sizin bagajinizi alip havalimanindan ciktiysa ne yapmali? Turk yolcular icin bagaj etiketi, band cikisi, ilk bildirim ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "yanlis-valizi-eve-goturduysen-ne-yapmali",
+    title: "Yanlis valizi eve goturduysen ne yapmali?",
+    excerpt:
+      "Yanlis valizi eve goturduysen ne yapmali? Turk yolcular icin etiket kontrolu, gecikmis bildirim, bagaj ofisi ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "baska-yolcunun-bagaji-size-geldiyse-ne-yapmali",
+    title: "Baska yolcunun bagaji size geldiyse ne yapmali?",
+    excerpt:
+      "Baska yolcunun bagaji size geldiyse ne yapmali? Turk yolcular icin bagaj etiketi, yanlis teslim, havalimaninda ilk adimlar ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-baska-yolcuya-teslim-edildiyse-ne-yapmali",
+    title: "Bagaj baska yolcuya teslim edildiyse ne yapmali?",
+    excerpt:
+      "Bagaj baska yolcuya teslim edildiyse ne yapmali? Turk yolcular icin teslim hatasi, bagaj etiketi, yanlis alici ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-otele-gece-geldi-sabah-yoksa-ne-yapmali",
+    title: "Bagaj otele gece geldi, sabah yoksa ne yapmali?",
+    excerpt:
+      "Bagaj otele gece geldi, sabah yoksa ne yapmali? Turk yolcular icin night shift, resepsiyon devri, teslim saati ve bagaj odasi kontrolunu anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "otel-bagaji-alip-size-haber-vermezse-ne-yapmali",
+    title: "Otel bagaji alip size haber vermezse ne yapmali?",
+    excerpt:
+      "Otel bagaji alip size haber vermezse ne yapmali? Turk yolcular icin resepsiyon kaydi, teslim saati, vardiya degisimi ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-yanlis-hotele-teslim-edildiyse-ne-yapmali",
+    title: "Bagaj yanlis hotele teslim edildiyse ne yapmali?",
+    excerpt:
+      "Bagaj yanlis hotele teslim edildiyse ne yapmali? Turk yolcular icin teslim saati, otel teyidi, yeni yonlendirme ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-tesliminde-guest-name-yanlis-yazildiysa-ne-yapmali",
+    title: "Bagaj tesliminde guest name yanlis yazildiysa ne yapmali?",
+    excerpt:
+      "Bagaj tesliminde guest name yanlis yazildiysa ne yapmali? Turk yolcular icin resepsiyon teyidi, isim uyumsuzlugu, oda bilgisi ve teslim zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "check-out-sonrasi-otele-gelen-bagaj-ne-olur",
+    title: "Check-out sonrasi otele gelen bagaj ne olur?",
+    excerpt:
+      "Check-out sonrasi otele gelen bagaj ne olur? Turk yolcular icin teslim sorumlulugu, yeni adres, resepsiyon notu ve bagaj zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "otel-resepsiyonu-bagaji-kabul-etmiyorsa-ne-yapmali",
+    title: "Otel resepsiyonu bagaji kabul etmiyorsa ne yapmali?",
+    excerpt:
+      "Otel resepsiyonu bagaji kabul etmiyorsa ne yapmali? Turk yolcular icin alternatif teslim noktasi, guest name, telefon teyidi ve yeniden planlamayi anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-teslim-edildi-deniyor-ama-otel-bulamiyorsa-ne-yapmali",
+    title: "Bagaj teslim edildi deniyor ama otel bulamiyorsa ne yapmali?",
+    excerpt:
+      "Bagaj teslim edildi deniyor ama otel bulamiyorsa ne yapmali? Turk yolcular icin resepsiyon kaydi, teslim alani kisi, guest name ve screen zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-otele-teslim-edilecekse-nelere-dikkat-edilmeli",
+    title: "Bagaj otele teslim edilecekse nelere dikkat edilmeli?",
+    excerpt:
+      "Bagaj otele teslim edilecekse nelere dikkat edilmeli? Turk yolcular icin resepsiyon, guest name, check-out zamani ve teslim zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "kurye-bagaji-getirirken-evde-kimse-yoksa-ne-olur",
+    title: "Kurye bagaji getirirken evde kimse yoksa ne olur?",
+    excerpt:
+      "Kurye bagaji getirirken evde kimse yoksa ne olur? Turk yolcular icin teslim denemesi, yeniden planlama, adres teyidi ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-takip-ekraninda-teslimata-cikti-yaziyorsa-ne-anlama-gelir",
+    title: "Bagaj takip ekraninda teslimata cikti yaziyorsa ne anlama gelir?",
+    excerpt:
+      "Bagaj takip ekraninda teslimata cikti yaziyorsa ne anlama gelir? Turk yolcular icin kurye asamasi, adres teyidi, teslim zamani ve screen zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-takip-ekraninda-update-yoksa-ne-anlama-gelir",
+    title: "Bagaj takip ekraninda update yoksa ne anlama gelir?",
+    excerpt:
+      "Bagaj takip ekraninda update yoksa ne anlama gelir? Turk yolcular icin sessiz takip ekrani, screen alma, e-posta zinciri ve bekleme surecini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-takibi-nasil-yapilir",
+    title: "Bagaj takibi nasil yapilir?",
+    excerpt:
+      "Bagaj takibi nasil yapilir? Turk yolcular icin PIR numarasi, takip ekrani, durum yorumlama ve ekran goruntusu zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "geciken-bagaj-ne-zaman-kayip-sayilir",
+    title: "Geciken bagaj ne zaman kayip sayilir?",
+    excerpt:
+      "Geciken bagaj ne zaman kayip sayilir? Turk yolcular icin 21 gun esigi, teslim bekleme mantigi ve kalici kayip dosyasini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "valiz-sonradan-bulunursa-yine-masraf-istenebilir-mi",
+    title: "Valiz sonradan bulunursa yine masraf istenebilir mi?",
+    excerpt:
+      "Valiz sonradan bulunursa yine masraf istenebilir mi? Turk yolcular icin teslim zamani, makul giderler ve fis zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-gecikmesinde-hangi-masraflar-geri-istenebilir",
+    title: "Bagaj gecikmesinde hangi masraflar geri istenebilir?",
+    excerpt:
+      "Bagaj gecikmesinde hangi masraflar geri istenebilir? Turk yolcular icin makul gecici alislar, fis duzeni ve zayif giderleri anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-teslim-edilmeden-havalimanindan-cikilirsa-ne-olur",
+    title: "Bagaj teslim edilmeden havalimanindan cikilirsa ne olur?",
+    excerpt:
+      "Bagaj teslim edilmeden havalimanindan cikilirsa ne olur? Turk yolcular icin PIR, sonradan kayit, belge zinciri ve dosya gucunu anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-etiketi-kaybolursa-ne-olur",
+    title: "Bagaj etiketi kaybolursa ne olur?",
+    excerpt:
+      "Bagaj etiketi kaybolursa ne olur? Turk yolcular icin PIR, boarding pass, PNR ve alternatif belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-icindeki-esyalar-eksik-cikarsa-ne-yapilmali",
+    title: "Bagaj icindeki esyalar eksik cikarsa ne yapilmali?",
+    excerpt:
+      "Bagaj icindeki esyalar eksik cikarsa ne yapilmali? Turk yolcular icin resmi kayit, esya listesi, foto ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-tamamen-kaybolursa-ne-yapilmali",
+    title: "Bagaj tamamen kaybolursa ne yapilmali?",
+    excerpt:
+      "Bagaj tamamen kaybolursa ne yapilmali? Turk yolcular icin PIR, bagaj etiketi, esya listesi ve kalici kayip dosyasini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "hasarli-bagaj-ne-yapilmali",
+    title: "Hasarli bagaj ne yapilmali? Bavul kirik gelirse haklar",
+    excerpt:
+      "Hasarli bagaj ne yapilmali? Turk yolcular icin havalimaninda ilk adimlar, foto cekimi, resmi kayit ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "aktarmada-bagaj-kaybi-ne-yapilmali",
+    title: "Aktarmada bagaj kaybi ne yapilmali?",
+    excerpt:
+      "Aktarmada bagaj kaybi olursa ne yapilmali? Turk yolcular icin son havalimani, PIR, bagaj etiketi ve aktarma zincirinde belge duzenini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "pir-nedir-ve-nasil-yapilir",
+    title: "PIR nedir ve nasil yapilir? Bagaj raporu rehberi",
+    excerpt:
+      "PIR nedir ve nasil yapilir? Turk yolcular icin bagaj raporu, havalimaninda ilk adimlar, rapor numarasi ve belge zincirini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bagaj-gecikmesi-haklari",
+    title: "Bagaj gecikmesi haklari: bavul gec gelirse ne yapilmali?",
+    excerpt:
+      "Bagaj gecikmesi haklari nelerdir? Turk yolcular icin PIR kaydi, gerekli masraflar, belge duzeni ve EU261 ile bagaj haklari farkini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Bagaj Rehberi",
+    featured: true,
+  },
+  {
+    slug: "turkish-airlines-londra-ucus-iptalinde-hangi-haklar-dogar",
+    title: "Turkish Airlines Londra ucus iptalinde hangi haklar dogar?",
+    excerpt:
+      "Turkish Airlines Londra ucus iptalinde hangi haklar dogar? Turk yolcular icin yeni rota, UK261-EU261 mantigi ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Havayolu Rehberi",
+    featured: true,
+  },
+  {
+    slug: "pegasus-berlin-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Pegasus Berlin-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Pegasus Berlin-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, isleten tasiyici ve low-cost rota mantigini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-istanbul-ucusunda-3-saat-gecikme-olursa-ne-kadar-tazminat-dogar",
+    title: "Frankfurt-Istanbul ucusunda 3 saat gecikme olursa ne kadar tazminat dogar?",
+    excerpt:
+      "Frankfurt-Istanbul ucusunda 3 saat gecikmede ne kadar tazminat dogabilir? Turk yolcular icin nihai varis, rota mesafesi ve claim mantigini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-sao-paulo-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Paris-Sao Paulo ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Paris-Sao Paulo ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin long-haul rota, EU kalkis mantigi ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-toronto-ucusunda-tazminat-ne-zaman-dogar",
+    title: "Frankfurt-Toronto ucusunda tazminat ne zaman dogar?",
+    excerpt:
+      "Frankfurt-Toronto ucusunda tazminat ne zaman dogar? Turk yolcular icin long-haul rota, nihai varis ve isleten tasiyici mantigini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-bangkok-ucusunda-eu-havayolu-varsa-tazminat-ne-zaman-dogar",
+    title: "Londra-Bangkok ucusunda EU havayolu varsa tazminat ne zaman dogar?",
+    excerpt:
+      "Londra-Bangkok ucusunda EU havayolu varsa tazminat ne zaman dogar? Turk yolcular icin isleten tasiyici, kalkis mantigi ve Bangkok nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-doha-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Paris-Doha ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Paris-Doha ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin Gulf hub mantigi, nihai varis ve isleten tasiyici etkisini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-dubai-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Amsterdam-Dubai ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Amsterdam-Dubai ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, long-haul mantigi ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-new-york-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Frankfurt-New York ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Frankfurt-New York ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin long-haul rota, nihai varis ve isleten tasiyici mantigini anlatan net rehber.",
+    date: "2026-04-12",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-antalya-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Londra-Antalya ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Londra-Antalya ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-izmir-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Paris-Izmir ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Paris-Izmir ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bruksel-istanbul-ucusunda-iptal-olursa-ne-yapilmali",
+    title: "Bruksel-Istanbul ucusunda iptal olursa ne yapilmali?",
+    excerpt:
+      "Bruksel-Istanbul ucusunda iptal olursa ne yapilmali? Turk yolcular icin yeni rota, nihai varis ve tazminat mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "dusseldorf-ankara-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Dusseldorf-Ankara ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Dusseldorf-Ankara ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, isleten tasiyici ve claim gucunu anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-istanbul-ucusunda-gecikme-tazminati-ne-zaman-dogar",
+    title: "Frankfurt-Istanbul ucusunda gecikme tazminati ne zaman dogar?",
+    excerpt:
+      "Frankfurt-Istanbul ucusunda gecikme tazminati ne zaman dogar? Turk yolcular icin nihai varis, isleten tasiyici ve claim gucunu anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Rota Rehberi",
+    featured: true,
+  },
+  {
+    slug: "viyana-havalimani-gecikmeler",
+    title: "Viyana Havalimani gecikmeler",
+    excerpt:
+      "Viyana Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, Austrian baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-stansted-gecikmeler",
+    title: "Londra Stansted gecikmeler",
+    excerpt:
+      "Londra Stansted'de gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin UK261, EU261, low-cost rotalar ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "londra-heathrow-gecikmeler",
+    title: "Londra Heathrow gecikmeler",
+    excerpt:
+      "Londra Heathrow'da gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin UK261, EU261, British Airways baglantilari ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "paris-cdg-gecikmeler",
+    title: "Paris CDG gecikmeler",
+    excerpt:
+      "Paris CDG'de gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, hub mantigi, Air France baglantilari ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "bruksel-havalimani-gecikmeler",
+    title: "Bruksel Havalimani gecikmeler",
+    excerpt:
+      "Bruksel Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, business rotalar, Brussels Airlines baglantilari ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "amsterdam-schiphol-gecikmeler",
+    title: "Amsterdam Schiphol gecikmeler",
+    excerpt:
+      "Amsterdam Schiphol'de gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, hub mantigi, KLM baglantilari ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "berlin-havalimani-gecikmeler",
+    title: "Berlin Havalimani gecikmeler",
+    excerpt:
+      "Berlin Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, short-haul rotalar, terminal akisi ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "dusseldorf-havalimani-gecikmeler",
+    title: "Dusseldorf Havalimani gecikmeler",
+    excerpt:
+      "Dusseldorf Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, point-to-point rotalar, mixed carriers ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "munih-havalimani-gecikmeler",
+    title: "Munih Havalimani gecikmeler",
+    excerpt:
+      "Munih Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, hub mantigi, T2 Satellite ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "frankfurt-havalimani-gecikmeler",
+    title: "Frankfurt Havalimani gecikmeler",
+    excerpt:
+      "Frankfurt Havalimani'nda gecikme, iptal veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261, hub mantigi, T1/T2 gecisi ve nihai varis etkisini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
+    slug: "sabiha-gokcen-gecikmeler",
+    title: "Sabiha Gokcen gecikmeler",
+    excerpt:
+      "Sabiha Gokcen'de gecikme, geceleme veya kacan baglanti yasarsan hangi haklara odaklanmalisin? Turk yolcular icin EU261 sinirlari, self-transfer riski ve nihai varis mantigini anlatan net rehber.",
+    date: "2026-04-11",
+    readTime: "8 dk",
+    category: "Havalimani Rehberi",
+    featured: true,
+  },
+  {
     slug: "istanbul-havalimani-gecikmeler-ve-haklar",
     title: "Istanbul Havalimani gecikmeler ve haklar",
     excerpt:
