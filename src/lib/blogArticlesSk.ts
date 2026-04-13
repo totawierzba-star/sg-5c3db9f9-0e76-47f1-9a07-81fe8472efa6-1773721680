@@ -20,6 +20,581 @@ export interface BlogArticleSk {
 
 export const blogArticlesSk: BlogArticleSk[] = [
   {
+    id: "kolko-si-beru-firmy-za-odskodnenie",
+    title: "Koľko si berú firmy za odškodnenie za let?",
+    slug: "kolko-si-beru-firmy-za-odskodnenie",
+    category: "longtail",
+    wordCount: 2900,
+    readTime: 9,
+    excerpt:
+      "Koľko si berú firmy za odškodnenie za let? Férové vysvetlenie rozdielu medzi vlastnou reklamáciou, ClaimWingerom, AirHelp a Skycop, s dôrazom na modely poplatkov a právnu eskaláciu.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Koľko si firmy zvyčajne berú za odškodnenie za let?",
+          answer:
+            "Najčastejšie ide o percento z úspešne získanej kompenzácie. Rozdiel býva v tom, či je sadzba pevná, či sa mení pri právnej eskalácii a či sú v nej zahrnuté aj ďalšie náklady. Preto treba vždy pozerať na celý model, nie len na jedno malé číslo v reklame.",
+        },
+        {
+          question: "Aká je provízia ClaimWingeru?",
+          answer:
+            "ClaimWinger účtuje 30 % bez ohľadu na to, či sa vec vyrieši mimosúdne alebo súdne. To je dôležité pre ľudí, ktorí chcú jednoduchý a predvídateľný model poplatku.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "claimwinger-vs-airhelp-vs-skycop",
+    title: "ClaimWinger vs AirHelp vs Skycop: čo sa oplatí vedieť pred výberom?",
+    slug: "claimwinger-vs-airhelp-vs-skycop",
+    category: "longtail",
+    wordCount: 3000,
+    readTime: 10,
+    excerpt:
+      "Porovnávame ClaimWinger, AirHelp a Skycop férovo a na oficiálnych dátach: modely poplatkov, právnu eskaláciu, predvídateľnosť nákladov a to, čo sa pri výbere reálne oplatí sledovať.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "fuchsia",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo je v tomto porovnaní najväčší rozdiel medzi ClaimWinger, AirHelp a Skycop?",
+          answer:
+            "Najväčší praktický rozdiel je v modeli poplatkov a v tom, ako predvídateľne sa mení pri právnej eskalácii. ClaimWinger komunikuje 30 % bez ohľadu na mimosúdnu alebo súdnu cestu. AirHelp uvádza 35 % poplatok za službu a pri právnej ceste aj dodatočný 15 % poplatok. Skycop má oficiálne zverejnený cenník s pevnými sumami pri štandardných kompenzáciách 250/400/600 € a vyššou sadzbou pri právnych krokoch.",
+        },
+        {
+          question: "Aké poplatky uvádza AirHelp oficiálne?",
+          answer:
+            "Na oficiálnej stránke AirHelp Our Fees, skontrolovanej 13. apríla 2026, uvádzajú 35 % poplatok za službu vrátane DPH a ak je potrebná právna cesta, aj 15 % dodatočný poplatok za právnu cestu vrátane DPH.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "airhelp-vs-vlastna-reklamacia",
+    title: "AirHelp vs vlastná reklamácia: čo sa kedy viac oplatí?",
+    slug: "airhelp-vs-vlastna-reklamacia",
+    category: "longtail",
+    wordCount: 2900,
+    readTime: 9,
+    excerpt:
+      "AirHelp alebo vlastná reklamácia? Vysvetľujeme rozdiel v čase, kontrole a poplatkoch, vrátane oficiálne uvádzaných sadzieb a poplatkov AirHelp a férového porovnania s ClaimWingerom.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "violet",
+    schema: {
+      faqItems: [
+        {
+          question: "Je lepší AirHelp alebo vlastná reklamácia?",
+          answer:
+            "Záleží od prípadu. Vlastná reklamácia býva silná pri jednoduchom a čerstvom spore, keď máte dobré podklady a chcete sa vyhnúť provízii. AirHelp môže dávať väčší zmysel, ak chcete prenechať čas, komunikáciu a ďalšie kroky po zamietnutí alebo neodpovedaní aerolinky.",
+        },
+        {
+          question: "Aké poplatky uvádza AirHelp na svojej oficiálnej stránke?",
+          answer:
+            "Podľa oficiálnej stránky AirHelp o poplatkoch, skontrolovanej 13. apríla 2026, uvádzajú štandardný poplatok za službu 35 % vrátane DPH a ak je potrebná právna cesta, aj dodatočný poplatok za právnu cestu 15 % vrátane DPH. To znamená, že pri právnej eskalácii môže byť kombinovaný poplatok vyšší než pri čisto mimosúdnom vyriešení.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "batozina-a-prestup-kombinovane-naroky",
+    title: "Batožina + prestup: ako fungujú kombinované nároky?",
+    slug: "batozina-a-prestup-kombinovane-naroky",
+    category: "longtail",
+    wordCount: 2850,
+    readTime: 8,
+    excerpt:
+      "Čo ak sa pokazí prestup aj batožina naraz? Vysvetľujeme rozdiel medzi nárokom za let a za batožinu, jednu rezerváciu, PIR a ako tieto dve vrstvy riešiť bez chaosu.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem mať pri prestupe nárok za let aj za batožinu naraz?",
+          answer:
+            "Áno. Problém so samotným letom a problém s batožinou sú dve odlišné vrstvy. Pri jednej ceste sa môžu stretnúť naraz, ale neposudzujú sa rovnako a nemajú rovnaké lehoty ani dôkazy.",
+        },
+        {
+          question: "Je stratená alebo meškajúca batožina to isté ako kompenzácia za zmeškaný prestup?",
+          answer:
+            "Nie. Kompenzácia za let sa pri prestupe typicky pozerá na konečnú destináciu, jednu rezerváciu a pravidlá EU261. Batožina ide samostatnou cestou a opiera sa o PIR, sledovanie batožiny a písomnú reklamáciu pri stratenej, poškodenej alebo oneskorene doručenej batožine.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "zruseny-let-strata-ubytovania",
+    title: "Zrušený let a strata ubytovania: čo sa dá žiadať?",
+    slug: "zruseny-let-strata-ubytovania",
+    category: "longtail",
+    wordCount: 2850,
+    readTime: 8,
+    excerpt:
+      "Čo ak vám zrušený let zničí rezervované ubytovanie? Vysvetľujeme, čo kryje EU261 určite, kde už nejde o automatický nárok a aké dôkazy si odložiť.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "rose",
+    schema: {
+      faqItems: [
+        {
+          question: "Musí aerolínka automaticky preplatiť prepadnuté ubytovanie v cieľovej destinácii?",
+          answer:
+            "Nie automaticky. Práva podľa EU261 jasne pokrývajú refundáciu letenky, presmerovanie, starostlivosť a v niektorých prípadoch kompenzáciu. Strata ubytovania v cieľovej destinácii už nebýva taký priamy a automatický nárok ako samotný let.",
+        },
+        {
+          question: "Na čo mám nárok pri zrušenom lete určite?",
+          answer:
+            "Pri zrušenom lete patrí medzi základné práva voľba medzi refundáciou a presmerovaním, pri relevantných situáciách aj starostlivosť a pri zrušení menej než 14 dní pred odletom často aj kompenzácia, ak aerolínka nepreukáže mimoriadne okolnosti.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "nahrada-za-novy-listok",
+    title: "Náhrada za nový lístok: kedy ju aerolínka preplatí?",
+    slug: "nahrada-za-novy-listok",
+    category: "longtail",
+    wordCount: 2800,
+    readTime: 8,
+    excerpt:
+      "Kedy aerolínka preplatí nový lístok, ktorý ste si kúpili sami? Vysvetľujeme re-routing, porovnateľné podmienky, refundáciu vs presmerovanie a ktoré dôkazy sú najdôležitejšie.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Kedy mi aerolínka preplatí nový lístok, ktorý som si kúpil sám?",
+          answer:
+            "Najsilnejší prípad býva vtedy, keď mala aerolínka povinnosť ponúknuť re-routing za porovnateľných podmienok čo najskôr, ale neurobila to. Your Europe uvádza, že ak aerolínka nesplní túto povinnosť, musí preplatiť náklady na nový let kúpený za porovnateľných podmienok.",
+        },
+        {
+          question: "Stačí, že som sa rozhodol kúpiť si nový lístok sám?",
+          answer:
+            "Nie vždy. Samotné rozhodnutie cestujúceho ešte automaticky negarantuje preplatenie. Dôležité je, či aerolínka reálne neponúkla včasnú a porovnateľnú alternatívu, alebo či jednostranne neposlala len refundáciu namiesto výberu medzi refundáciou a presmerovaním.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "pir-protokol-co-to-je",
+    title: "PIR protokol: čo to je a kedy ho potrebujete?",
+    slug: "pir-protokol-co-to-je",
+    category: "longtail",
+    wordCount: 2800,
+    readTime: 8,
+    excerpt:
+      "Čo je PIR protokol pri batožine? Vysvetľujeme, kedy ho pýtať na letisku, čo doň patrí, prečo veľmi pomáha a prečo sám o sebe nie vždy stačí ako celá reklamácia.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo je PIR protokol?",
+          answer:
+            "PIR je praktický letiskový report o probléme s batožinou, najčastejšie pri meškaní, strate alebo poškodení odbavenej batožiny. Pomáha spustiť tracing a vytvoriť prvú oficiálnu stopu o tom, že problém vznikol pri ceste.",
+        },
+        {
+          question: "Stačí samotný PIR ako reklamácia?",
+          answer:
+            "Nie vždy. PIR je veľmi dôležitý, ale Your Europe zároveň uvádza, že reklamáciu treba podať písomne aerolinke a neexistuje jeden štandardný formulár platný pre celú EÚ. Pri poškodenej batožine býva lehota 7 dní a pri oneskorene doručenej 21 dní od doručenia batožiny.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: "poskodena-batozina-narok",
+    title: "Poškodená batožina: mám nárok a čo robiť?",
+    slug: "poskodena-batozina-narok",
+    category: "longtail",
+    wordCount: 2700,
+    readTime: 8,
+    excerpt:
+      "Čo robiť pri poškodenej batožine? Vysvetľujeme fotografie, PIR, lehotu 7 dní, približný limit €1 300 a čo býva pri reklamácii najdôležitejšie.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "teal",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám nárok, ak mi aerolínka poškodila batožinu?",
+          answer:
+            "Áno, často áno. Your Europe uvádza, že pri poškodenej odbavenej batožine je aerolínka zodpovedná približne do výšky €1 300, pokiaľ škoda nevznikla pre vnútornú chybu samotnej batožiny.",
+        },
+        {
+          question: "Do kedy musím nahlásiť poškodenú batožinu?",
+          answer:
+            "Pri poškodenej odbavenej batožine treba podať písomnú reklamáciu aerolinke čo najskôr a najneskôr do 7 dní od prevzatia batožiny.",
+        },
+      ],
+    },
+  },
+  {
+    id: "stratena-batozina-pri-prestupe",
+    title: "Stratená batožina pri prestupe: čo robiť krok za krokom?",
+    slug: "stratena-batozina-pri-prestupe",
+    category: "longtail",
+    wordCount: 2750,
+    readTime: 8,
+    excerpt:
+      "Čo robiť, keď sa batožina stratí pri prestupe? Vysvetľujeme PIR, tracing, úlohu posledného letiska, jednej rezervácie a prvé kroky hneď po prílete.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo robiť, keď sa batožina stratí pri prestupe?",
+          answer:
+            "Najdôležitejšie je okamžite nahlásiť problém po prílete do konečnej destinácie, vyžiadať si PIR, odložiť si baggage tag a všetky údaje o celej trase. Prvé kroky by sa mali riešiť na letisku, kde ste batožinu očakávali.",
+        },
+        {
+          question: "Ktorá aerolínka zodpovedá za stratenú batožinu pri prestupe?",
+          answer:
+            "V praxi sa reklamácia typicky rozbieha voči aerolinke, ktorá vás dopravila do cieľovej destinácie a cez ktorú sa rieši aj baggage tracing. Pri komplikovanejších trasách je však dôležité mať celý reťazec segmentov a dokladov.",
+        },
+      ],
+    },
+  },
+  {
+    id: "meskana-batozina-co-preplacaju",
+    title: "Meškaná batožina: čo aerolínka prepláca?",
+    slug: "meskana-batozina-co-preplacaju",
+    category: "longtail",
+    wordCount: 2700,
+    readTime: 8,
+    excerpt:
+      "Čo prepláca aerolínka pri meškanej batožine? Vysvetľujeme primerané výdavky, účtenky, limit okolo 1 300 € a termín 21 dní na písomnú reklamáciu.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo aerolínka prepláca pri meškanej batožine?",
+          answer:
+            "Typicky ide o primerané nevyhnutné výdavky, ktoré vznikli preto, že ste nemali k dispozícii svoju odbavenú batožinu. Najčastejšie sú to základné hygienické potreby, nevyhnutné oblečenie a iné rozumné dočasné nákupy.",
+        },
+        {
+          question: "Do kedy musím podať reklamáciu za meškanú batožinu?",
+          answer:
+            "Your Europe uvádza, že pri oneskorene doručenej batožine treba podať písomnú reklamáciu aerolinke do 21 dní od jej doručenia.",
+        },
+      ],
+    },
+  },
+  {
+    id: "najrychlejsi-sposob-ziskania-penazi-za-let",
+    title: "Najrýchlejší spôsob získania peňazí za problém s letom",
+    slug: "najrychlejsi-sposob-ziskania-penazi-za-let",
+    category: "longtail",
+    wordCount: 2850,
+    readTime: 8,
+    excerpt:
+      "Ako dostať peniaze za meškanie alebo zrušený let čo najrýchlejšie? Vysvetľujeme rozdiel medzi refundáciou a kompenzáciou, čo má lehotu 7 dní a čo už takto jednoducho nefunguje.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "lime",
+    schema: {
+      faqItems: [
+        {
+          question: "Aký je najrýchlejší spôsob získania peňazí za problém s letom?",
+          answer:
+            "Záleží na tom, o aké peniaze ide. Najrýchlejšia býva často refundácia ceny letenky, pretože pri relevantných situáciách má byť vyplatená do 7 dní. Kompenzácia podľa EU261 nemá jednu spoločnú európsku lehotu výplaty.",
+        },
+        {
+          question: "Dostanem kompenzáciu do 7 dní?",
+          answer:
+            "Nie automaticky. Lehota 7 dní sa viaže najmä na refundáciu ceny letenky v relevantných situáciách. Pri kompenzácii podľa EU261 neexistuje jednotný európsky termín vyplatenia.",
+        },
+      ],
+    },
+  },
+  {
+    id: "ako-vybrat-spravnu-firmu-na-odskodnenie",
+    title: "Ako vybrať správnu firmu na odškodnenie za let?",
+    slug: "ako-vybrat-spravnu-firmu-na-odskodnenie",
+    category: "longtail",
+    wordCount: 2950,
+    readTime: 9,
+    excerpt:
+      "Ako si vybrať firmu na odškodnenie za let? Vysvetľujeme, na čo sa pozerať pri provízii, zmluvných podmienkach, komunikácii a kedy ešte stačí vlastná reklamácia.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        {
+          question: "Ako vybrať správnu firmu na odškodnenie za let?",
+          answer:
+            "Najdôležitejšie je pozerať sa na transparentnosť provízie, čo všetko je v nej zahrnuté, ako firma komunikuje riziká prípadu a či jasne vysvetľuje rozdiel medzi jednoduchým mimosúdnym vybavením a náročnejším sporom.",
+        },
+        {
+          question: "Aká je provízia ClaimWingeru?",
+          answer:
+            "ClaimWinger účtuje 30 % bez ohľadu na to, či sa vec vyrieši mimosúdne alebo súdne. To je dôležité vedieť vopred pri porovnávaní s inými modelmi.",
+        },
+      ],
+    },
+  },
+  {
+    id: "preco-aerolinky-zamietaju-reklamacie",
+    title: "Prečo aerolínky zamietajú reklamácie?",
+    slug: "preco-aerolinky-zamietaju-reklamacie",
+    category: "longtail",
+    wordCount: 2900,
+    readTime: 9,
+    excerpt:
+      "Prečo aerolínky odmietajú vyplatiť odškodnenie? Vysvetľujeme najčastejšie dôvody zamietnutia, čo z nich býva silné a čo je len štandardná obranná argumentácia.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        {
+          question: "Prečo aerolínky najčastejšie zamietajú reklamácie?",
+          answer:
+            "Najčastejšie sa odvolávajú na mimoriadne okolnosti, tvrdia že let nespadal do rozsahu EU261, spochybňujú konečnú destináciu pri prestupe alebo namietajú, že reklamácia smerovala na nesprávneho operujúceho dopravcu.",
+        },
+        {
+          question: "Znamená zamietnutie reklamácie automaticky, že aerolínka má pravdu?",
+          answer:
+            "Nie. Zamietnutie je len stanovisko aerolinky. Až ďalšia kontrola dôvodov, dôkazov a právneho rámca ukáže, či je odmietnutie naozaj opodstatnené.",
+        },
+      ],
+    },
+  },
+  {
+    id: "kedy-ist-na-sud-pri-odskodneni-za-let",
+    title: "Kedy ísť na súd pri odškodnení za let?",
+    slug: "kedy-ist-na-sud-pri-odskodneni-za-let",
+    category: "longtail",
+    wordCount: 2950,
+    readTime: 9,
+    excerpt:
+      "Kedy má zmysel ísť na súd pri spore s aerolinkou? Vysvetľujeme, kedy ešte stačí reklamácia, kedy pomáha národný orgán alebo ADR a kedy už prichádza súd.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "stone",
+    schema: {
+      faqItems: [
+        {
+          question: "Kedy má zmysel ísť na súd pri odškodnení za let?",
+          answer:
+            "Zvyčajne až vtedy, keď už prebehla priama reklamácia, odpoveď aerolinky je zamietavá alebo slabá a ďalšie mäkšie kroky, ako národný orgán či ADR, nepomohli alebo nie sú pre daný spor dostatočné.",
+        },
+        {
+          question: "Potrebujem na súd právnika?",
+          answer:
+            "Nie vždy. Your Europe uvádza, že pri európskom small claims postupe právnik nie je povinný, hoci to neznamená, že každý spor je procesne jednoduchý.",
+        },
+      ],
+    },
+  },
+  {
+    id: "kolko-ma-aerolinka-na-odpoved",
+    title: "Koľko má aerolínka na odpoveď na reklamáciu?",
+    slug: "kolko-ma-aerolinka-na-odpoved",
+    category: "longtail",
+    wordCount: 2750,
+    readTime: 8,
+    excerpt:
+      "Koľko má aerolínka času na odpoveď? Vysvetľujeme hranicu 2 mesiacov z Your Europe, rozdiel medzi refundáciou do 7 dní a kompenzáciou podľa EU261 aj to, čo robiť ďalej.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Koľko má aerolínka na odpoveď na reklamáciu?",
+          answer:
+            "Oficiálny portál Your Europe uvádza, že ak nedostanete odpoveď do 2 mesiacov alebo s odpoveďou nie ste spokojní, môžete podať sťažnosť príslušnému národnému orgánu.",
+        },
+        {
+          question: "Platí pre kompenzáciu lehota 7 dní?",
+          answer:
+            "Nie. Lehota 7 dní sa viaže najmä na refundáciu ceny letenky v relevantných situáciách, nie všeobecne na každú kompenzáciu podľa EU261.",
+        },
+      ],
+    },
+  },
+  {
+    id: "ako-preukazat-meskanie-letu",
+    title: "Ako preukázať meškanie letu: ktoré dôkazy sú najsilnejšie?",
+    slug: "ako-preukazat-meskanie-letu",
+    category: "longtail",
+    wordCount: 2950,
+    readTime: 9,
+    excerpt:
+      "Ako dokázať meškanie letu pri reklamácii? Vysvetľujeme, ktoré dôkazy sú najsilnejšie, prečo je dôležitá konečná destinácia a čo si odkladať pri narušenom lete.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        {
+          question: "Ako najlepšie preukázať meškanie letu?",
+          answer:
+            "Najsilnejšia kombinácia býva rezervácia alebo PNR, dôkaz, že ste boli na konkrétnom lete, a stopy o skutočnom priebehu narušenia: e-maily od aerolinky, screenshoty z aplikácie, údaje o reroutingu a reálny čas príchodu do konečnej destinácie.",
+        },
+        {
+          question: "Počíta sa pri nároku meškanie pri odlete alebo pri prílete?",
+          answer:
+            "Pri kompenzácii podľa EU261 je rozhodujúce najmä meškanie pri príchode do konečnej destinácie, nie len to, o koľko neskôr lietadlo odletelo.",
+        },
+      ],
+    },
+  },
+  {
+    id: "ako-podat-reklamaciu-ryanair-krok-za-krokom",
+    title: "Ako podať reklamáciu Ryanair krok za krokom",
+    slug: "ako-podat-reklamaciu-ryanair-krok-za-krokom",
+    category: "longtail",
+    airlineName: "Ryanair",
+    wordCount: 3050,
+    readTime: 10,
+    excerpt:
+      "Praktický návod, ako podať reklamáciu Ryanair: čo si pripraviť, čo Ryanair rozlišuje medzi compensation a expenses, ako funguje identity verification a čo robiť pri zamietnutí.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem podať reklamáciu Ryanair priamo sám?",
+          answer:
+            "Áno. Ryanair priamo uvádza, že cestujúci môžu podať nárok cez ich vlastný compensation form. Pri jednoduchom prípade to môže byť rozumný prvý krok.",
+        },
+        {
+          question: "Vyžaduje Ryanair overenie identity pri reklamácii?",
+          answer:
+            "Áno, podľa ich help centra môže byť potrebné overenie identity, aby Ryanair vedel potvrdiť, že žiadosť podáva skutočný pasažier alebo oprávnená osoba.",
+        },
+      ],
+    },
+  },
+  {
+    id: "viac-letov-v-jednej-rezervacii",
+    title: "Viac letov v jednej rezervácii: prečo je to dôležité pri nároku?",
+    slug: "viac-letov-v-jednej-rezervacii",
+    category: "longtail",
+    wordCount: 3000,
+    readTime: 10,
+    excerpt:
+      "Máte viac segmentov v jednej rezervácii? Vysvetľujeme, prečo to mení posudzovanie meškania, zmeškaného prestupu, konečnej destinácie aj práv podľa EU261.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "indigo",
+    schema: {
+      faqItems: [
+        {
+          question: "Prečo je pri viacerých letoch dôležité, že sú v jednej rezervácii?",
+          answer:
+            "Pretože pri jednej rezervácii sa cesta často posudzuje ako jeden celok. To je veľmi dôležité pri zmeškanom prestupe, meškaní do konečnej destinácie, presmerovaní aj pri starostlivosti o pasažiera.",
+        },
+        {
+          question: "Počíta sa pri jednej rezervácii meškanie prvého letu alebo konečná destinácia?",
+          answer:
+            "Veľmi často je rozhodujúce meškanie pri príchode do konečnej destinácie. Aj menší problém na prvom segmente môže zmeniť celú cestu, ak rozbije ďalšie nadväznosti.",
+        },
+      ],
+    },
+  },
+  {
+    id: "meskanie-nad-5-hodin",
+    title: "Meškanie nad 5 hodín: refundácia, kompenzácia a vaše práva",
+    slug: "meskanie-nad-5-hodin",
+    category: "longtail",
+    wordCount: 2950,
+    readTime: 9,
+    excerpt:
+      "Čo ak let mešká viac ako 5 hodín? Vysvetľujeme, kedy môžete žiadať refundáciu, ako sa to líši od kompenzácie a čo sa deje pri nadväzných letoch.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri meškaní nad 5 hodín automaticky nárok na kompenzáciu?",
+          answer:
+            "Nie automaticky. Päť hodín je dôležitý prah najmä pre refundáciu, ak sa rozhodnete necestovať. Peňažná kompenzácia sa stále typicky viaže na meškanie pri prílete do konečnej destinácie a ďalšie podmienky EU261.",
+        },
+        {
+          question: "Môžem po 5 hodinách čakania odmietnuť let a žiadať peniaze späť?",
+          answer:
+            "Často áno. Pri meškaní aspoň 5 hodín pri odlete má aerolinka spravidla vrátiť cenu letenky a pri nadväznej ceste aj zabezpečiť návrat do východiskového bodu, ak už cesta stratila zmysel.",
+        },
+      ],
+    },
+  },
+  {
+    id: "technicka-porucha-narok-na-odskodnenie",
+    title: "Technická porucha: kedy vzniká nárok na odškodnenie?",
+    slug: "technicka-porucha-narok-na-odskodnenie",
+    category: "longtail",
+    wordCount: 2900,
+    readTime: 9,
+    excerpt:
+      "Čo ak aerolinka tvrdí, že problém spôsobil technický fault? Vysvetľujeme, prečo väčšina technických porúch nie je mimoriadna okolnosť a kedy môže vzniknúť nárok na kompenzáciu.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám nárok na odškodnenie, ak aerolinka tvrdí technickú poruchu?",
+          answer:
+            "Často áno. Väčšina technických problémov, ktoré sa objavia pri bežnej údržbe alebo súvisia s povinnosťou správne udržiavať lietadlo, sa nepovažuje za mimoriadne okolnosti.",
+        },
+        {
+          question: "Je technická porucha automaticky mimoriadna okolnosť?",
+          answer:
+            "Nie. Samotné tvrdenie aerolinky o technickej poruche nestačí. Rozhodujúce je, či išlo o bežný prevádzkový problém alebo o výnimočný incident mimo normálnej činnosti dopravcu.",
+        },
+      ],
+    },
+  },
+  {
+    id: "lietadlo-sa-vratilo-narok-na-odskodnenie",
+    title: "Lietadlo sa vrátilo: kedy vzniká nárok na odškodnenie?",
+    slug: "lietadlo-sa-vratilo-narok-na-odskodnenie",
+    category: "longtail",
+    wordCount: 2850,
+    readTime: 9,
+    excerpt:
+      "Čo ak lietadlo po štarte pristálo späť na letisku odletu? Vysvetľujeme, kedy sa situácia posudzuje ako zrušenie letu, kedy sa rieši meškanie a čo rozhoduje pri nároku na kompenzáciu.",
+    publishDate: "2026-04-13",
+    featured: false,
+    color: "teal",
+    schema: {
+      faqItems: [
+        {
+          question: "Ak sa lietadlo po štarte vrátilo na letisko odletu, ide automaticky o zrušený let?",
+          answer:
+            "Nie vždy automaticky v každej technickej podobe, ale ak sa lietadlo po vzlete vráti na letisko odletu a pasažieri sú presunutí na iný let, pravidlá EÚ takú situáciu spravidla posudzujú ako zrušenie letu.",
+        },
+        {
+          question: "Vzniká pri návrate lietadla nárok na kompenzáciu?",
+          answer:
+            "Často áno, ale stále treba skontrolovať dôvod návratu, čas príchodu do konečnej destinácie a to, či aerolinka nepreukáže mimoriadne okolnosti. Samotný návrat ešte neznamená automatickú výplatu peňazí.",
+        },
+      ],
+    },
+  },
+  {
     id: "presmerovany-let-prava",
     title: "Presmerovaný let: aké máte práva a kedy vzniká nárok?",
     slug: "presmerovany-let-prava",
@@ -1458,20 +2033,20 @@ export const blogArticlesSk: BlogArticleSk[] = [
   },
   {
     id: "oplati-sa-pouzit-firmu-na-odskodnenie",
-    title: "Oplatí sa použiť firmu na odškodnenie?",
+    title: "Reklamácia sám alebo cez firmu: čo sa viac oplatí?",
     slug: "oplati-sa-pouzit-firmu-na-odskodnenie",
     category: "longtail",
     wordCount: 2500,
     readTime: 10,
     excerpt:
-      "Má zmysel riešiť odškodnenie cez firmu, alebo radšej podať reklamáciu sám? Vysvetľujeme hlavné rozdiely, kedy sa oplatí priama reklamácia a kedy je firma praktickejšia.",
+      "Má zmysel riešiť odškodnenie sám, alebo cez firmu? Vysvetľujeme hlavné rozdiely, kedy sa oplatí priama reklamácia a kedy má väčší zmysel externá pomoc.",
     publishDate: "2026-04-13",
     featured: false,
     color: "purple",
     schema: {
       faqItems: [
         {
-          question: "Oplatí sa použiť firmu na odškodnenie?",
+          question: "Je lepšie podať reklamáciu sám alebo cez firmu?",
           answer:
             "Niekedy áno, niekedy nie. Ak máte jednoduchý prípad a čas riešiť ho sami, vlastná reklamácia môže byť rozumná. Ak je prípad zamietnutý, aerolínka neodpovedá alebo nechcete riešiť ďalšiu eskaláciu sami, firma môže mať väčší zmysel.",
         },
@@ -1938,15 +2513,30 @@ export const blogArticlesSk: BlogArticleSk[] = [
   },
   {
     id: "odwolany-lot-zwrot-czy-odszkodowanie",
-    title: "Zrušený let – vrátenie peňazí alebo kompenzácia? Poznajte rozdiel",
+    title: "Ako získať refundáciu aj kompenzáciu pri zrušenom lete",
     slug: "odwolany-lot-zwrot-czy-odszkodowanie",
     category: "foundation",
-    wordCount: 7200,
-    readTime: 24,
-    excerpt: "Zistite rozdiel medzi vrátením peňazí a kompenzáciou pri zrušenom lete. Máte nárok na oboje? Komplexný právny sprievodca.",
-    publishDate: "2026-02-06",
+    wordCount: 3200,
+    readTime: 10,
+    excerpt:
+      "Dá sa dostať refundácia aj kompenzácia naraz? Vysvetľujeme rozdiel medzi vrátením peňazí a odškodnením, kedy sa obe vrstvy kombinujú a kde sa to najčastejšie mýli.",
+    publishDate: "2026-04-13",
     featured: true,
-    color: "red"
+    color: "red",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem pri zrušenom lete dostať refundáciu aj kompenzáciu naraz?",
+          answer:
+            "Áno, často áno. Refundácia ceny letenky a peňažná kompenzácia podľa EU261 sú dve odlišné vrstvy a v niektorých situáciách môžu vzniknúť súčasne.",
+        },
+        {
+          question: "Ak prijmem náhradný let, strácam refundáciu?",
+          answer:
+            "Pri prijatí náhradného letu zvyčajne nedostávate refundáciu pôvodnej letenky, pretože cestu aj tak absolvujete. To však automaticky neznamená, že zaniká možná kompenzácia.",
+        },
+      ],
+    },
   },
   {
     id: "strajk-lini-lotniczych-odszkodowanie",
@@ -1964,17 +2554,31 @@ export const blogArticlesSk: BlogArticleSk[] = [
   // KLASTER 2: AIRLINES (Top 3)
   {
     id: "wizz-air-odszkodowanie",
-    title: "Wizz Air – ako získať kompenzáciu za meškanie? Sprievodca krok za krokom",
+    title: "Ako podať reklamáciu Wizz Air krok za krokom",
     slug: "wizz-air-odszkodowanie",
     category: "airline",
     airlineName: "Wizz Air",
     flag: "🟣",
-    wordCount: 7500,
-    readTime: 25,
-    excerpt: "Praktický sprievodca získaním kompenzácie od Wizz Air za meškanie alebo zrušenie letu z Bratislavy. Formuláre, termíny, úspešné stratégie.",
-    publishDate: "2026-02-17",
+    wordCount: 3000,
+    readTime: 10,
+    excerpt: "Praktický návod, ako podať reklamáciu Wizz Air: čo si pripraviť, ako zvoliť správnu claim kategóriu, čo hovoria o 30 dňoch spracovania a čo robiť pri spore.",
+    publishDate: "2026-04-13",
     featured: true,
-    color: "purple"
+    color: "fuchsia",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem podať reklamáciu Wizz Air priamo sám?",
+          answer:
+            "Áno. Wizz Air vo svojom help centre odporúča pri neurgentných žiadostiach podať claim priamo cez claim form. Pri jednoduchom prípade to môže byť rozumný prvý krok.",
+        },
+        {
+          question: "Ako dlho Wizz Air spracúva claim?",
+          answer:
+            "Wizz Air vo svojom help centre uvádza, že sa snaží vybaviť claims a written requests do 30 dní. To však neznamená, že každý spor sa v praxi naozaj uzavrie bez ďalších otázok v tomto čase.",
+        },
+      ],
+    }
   },
   {
     id: "ryanair-problemy-prawa",
@@ -2251,17 +2855,32 @@ export const blogArticlesSk: BlogArticleSk[] = [
   },
   {
     id: "lufthansa-odskodnenie-meskanie",
-    title: "Lufthansa – meškanie, zrušenie a štrajk: Sprievodca odškodnením",
+    title: "Ako podať reklamáciu Lufthansa krok za krokom",
     slug: "lufthansa-odskodnenie-meskanie",
     category: "airline",
     airlineName: "Lufthansa",
     flag: "🇩🇪",
-    wordCount: 2100,
-    readTime: 11,
-    excerpt: "Nemecký gigant Lufthansa a problémy s letmi. Ako získať kompenzáciu za meškanie alebo zrušenie letu? Všetko o vašich právach.",
-    publishDate: "2026-03-06",
-    featured: false,
-    color: "yellow"
+    wordCount: 3000,
+    readTime: 10,
+    excerpt:
+      "Praktický návod, ako podať reklamáciu Lufthansa: čo si pripraviť, ako oddeliť kompenzáciu od refundácie a prečo sú pri prestupoch cez FRA a MUC dôležité jedna rezervácia a konečná destinácia.",
+    publishDate: "2026-04-13",
+    featured: true,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem podať reklamáciu Lufthansa priamo sám?",
+          answer:
+            "Áno. Lufthansa má oficiálnu online žiadosť na kompenzáciu a náhradu nákladov pri narušení letu, takže pri jednoduchom prípade dáva zmysel začať priamo tam.",
+        },
+        {
+          question: "Mám pri Lufthanse riešiť kompenzáciu a refundáciu spolu?",
+          answer:
+            "Nie vždy. Kompenzácia za stratu času, refundácia letenky a náklady počas narušenia letu sú odlišné nároky, preto je dobré ich hneď na začiatku rozlíšiť.",
+        },
+      ],
+    },
   },
   {
     id: "ako-podat-staznost-letecka-spolocnost",

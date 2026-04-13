@@ -4,9 +4,9 @@ import {
   CheckCircle2,
   Clock,
   FileText,
-  ListChecks,
-  PlaneTakeoff,
-  ShieldCheck,
+  Rocket,
+  Wallet,
+  Zap,
 } from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
@@ -16,34 +16,35 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/lufthansa-odskodnenie-meskanie";
+const articleUrl =
+  "https://problemlot.com/sk/blog/najrychlejsi-sposob-ziskania-penazi-za-let";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=how_to_claim_lufthansa";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=fastest_way_to_get_money";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=how_to_claim_lufthansa";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=fastest_way_to_get_money";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=how_to_claim_lufthansa";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=fastest_way_to_get_money";
 
 const faqItems = [
   {
-    question: "Môžem podať reklamáciu Lufthansa priamo sám?",
+    question: "Aký je najrýchlejší spôsob získania peňazí za problém s letom?",
     answer:
-      "Áno. Lufthansa má oficiálnu online žiadosť na kompenzáciu a náhradu nákladov pri narušení letu. Pri jednoduchom prípade je rozumné začať priamo tam.",
+      "Záleží na tom, o aké peniaze ide. Najrýchlejšia býva často refundácia ceny letenky, pretože pri relevantných situáciách má byť vyplatená do 7 dní. Kompenzácia podľa EU261 nemá jednu spoločnú európsku lehotu výplaty.",
   },
   {
-    question: "Mám pri Lufthanse riešiť kompenzáciu a refundáciu spolu?",
+    question: "Je vždy najrýchlejšie podať reklamáciu priamo aerolínke?",
     answer:
-      "Nie vždy. Kompenzácia za stratu času, refundácia letenky a náklady počas narušenia letu sú odlišné nároky. Práve ich miešanie býva častým dôvodom chaosu v reklamácii.",
+      "Pri jednoduchom prípade to často dáva zmysel ako prvý krok. Ak však aerolínka neodpovedá, sporí sa o dôvod narušenia alebo nechcete niesť ďalšiu procesnú záťaž sami, rýchlosť už nemusí závisieť len od toho, kto podáva prvý formulár.",
   },
   {
-    question: "Čo ak som letenku kupoval cez agentúru?",
+    question: "Dostanem kompenzáciu do 7 dní?",
     answer:
-      "Lufthansa vo svojich podmienkach uvádza, že pri refundácii letenky kúpenej cez agentúru môže dávať zmysel riešiť vrátenie peňazí cez agentúru. To však nemení logiku samotnej kompenzácie podľa EU261.",
+      "Nie automaticky. Lehota 7 dní sa viaže najmä na refundáciu ceny letenky v relevantných situáciách. Pri kompenzácii podľa EU261 neexistuje jednotný európsky termín vyplatenia.",
   },
   {
-    question: "Má pri Lufthanse veľký význam jedna rezervácia?",
+    question: "Kedy má zmysel siahnuť po firme ako ClaimWinger?",
     answer:
-      "Áno. Pri itinerároch cez Frankfurt alebo Mníchov často rozhoduje jedna rezervácia a meškanie v konečnej destinácii, nie len problém na prvom segmente.",
+      "Najmä vtedy, keď už nejde o čistý a jednoduchý prípad alebo nechcete stráviť čas ďalšou komunikáciou, dopĺňaním podkladov a eskaláciou. ClaimWinger účtuje 30 % bez ohľadu na to, či sa vec rieši mimosúdne alebo súdne.",
   },
 ];
 
@@ -55,12 +56,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function LufthansaHowToClaimSk() {
+export default function NajrychlejsiSposobZiskaniaPenaziZaLetPage() {
   return (
     <LayoutSk>
       <SEO
-        title="Ako podať reklamáciu Lufthansa krok za krokom"
-        description="Praktický návod, ako podať reklamáciu Lufthansa: kam ísť, aké dokumenty pripraviť, čo riešiť pri prestupoch cez Frankfurt a Mníchov a kedy má zmysel ClaimWinger."
+        title="Najrýchlejší spôsob získania peňazí za problém s letom"
+        description="Ako dostať peniaze za meškanie alebo zrušený let čo najrýchlejšie? Vysvetľujeme rozdiel medzi refundáciou a kompenzáciou, čo má lehotu 7 dní a čo už takto jednoducho nefunguje."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -71,9 +72,9 @@ export default function LufthansaHowToClaimSk() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Ako podať reklamáciu Lufthansa krok za krokom",
+            headline: "Najrýchlejší spôsob získania peňazí za problém s letom",
             description:
-              "Praktický sprievodca podaním reklamácie Lufthansa vrátane dokladov, rozdielu medzi kompenzáciou, refundáciou a nákladmi a špecifík prestupov cez nemecké huby.",
+              "Praktický návod, ako dostať peniaze za meškanie alebo zrušený let čo najrýchlejšie, bez zbytočných mýtov o lehotách a type nároku.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -135,7 +136,7 @@ export default function LufthansaHowToClaimSk() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Ako podať reklamáciu Lufthansa krok za krokom",
+                name: "Najrýchlejší spôsob získania peňazí za problém s letom",
                 item: articleUrl,
               },
             ],
@@ -143,7 +144,7 @@ export default function LufthansaHowToClaimSk() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-amber-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-lime-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -154,22 +155,21 @@ export default function LufthansaHowToClaimSk() {
               Blog
             </Link>
             <span>/</span>
-            <span>Ako podať reklamáciu Lufthansa krok za krokom</span>
+            <span>Najrýchlejší spôsob získania peňazí za let</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
-              Praktický návod pre reklamáciu Lufthansa
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-lime-100 px-4 py-2 text-sm font-medium text-lime-700 dark:bg-lime-900/30 dark:text-lime-300">
+              Prakticky o rýchlosti, nie o marketingových skratkách
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Ako podať reklamáciu Lufthansa krok za krokom
+              Najrýchlejší spôsob získania peňazí za problém s letom
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Pri <strong>Lufthanse</strong> býva najväčší chaos v tom, že cestujúci miešajú
-              <strong> kompenzáciu podľa EU261</strong>, <strong>refundáciu letenky</strong> a
-              <strong> náklady počas narušenia letu</strong>. Pri itinerároch cez Frankfurt a
-              Mníchov sa k tomu pridáva ešte otázka <strong>jednej rezervácie</strong> a
-              <strong> konečnej destinácie</strong>.
+              Najrýchlejšia cesta k peniazom závisí hlavne od toho, <strong>o aký typ peňazí ide</strong>.
+              Inak funguje <strong>refundácia ceny letenky</strong>, inak
+              <strong> kompenzácia podľa EU261</strong> a inak náhrada vedľajších výdavkov.
+              Kto to zmieša do jednej otázky, ten si často sám spomalí celý prípad.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -179,34 +179,34 @@ export default function LufthansaHowToClaimSk() {
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
-                <span>Čítanie: 10 minút</span>
+                <span>Čítanie: 8 minút</span>
               </div>
             </div>
           </header>
 
           <section className="mb-10">
-            <Card className="border-amber-200 bg-gradient-to-br from-amber-500 to-yellow-600 p-8 text-slate-950 shadow-xl dark:border-amber-800">
+            <Card className="border-lime-200 bg-gradient-to-br from-lime-500 to-green-600 p-8 text-slate-950 shadow-xl dark:border-lime-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-amber-950">
+              <div className="space-y-3 text-base leading-7 text-lime-950">
                 <p>
-                  <strong>Áno, reklamáciu Lufthansa môžete podať priamo sám.</strong> Lufthansa má
-                  oficiálnu online žiadosť na kompenzáciu a náhradu nákladov pri narušení letu.
+                  Ak ide o <strong>refundáciu letenky</strong>, tá býva často najrýchlejšia, pretože
+                  pri relevantných situáciách má byť vyplatená do <strong>7 dní</strong>.
                 </p>
                 <p>
-                  Najdôležitejšie je správne oddeliť, či riešite <strong>EU261 kompenzáciu</strong>,
-                  <strong> refundáciu</strong> alebo <strong>náklady</strong>. Pri Lufthanse je to
-                  obzvlášť dôležité, lebo veľa sporov vzniká pri prestupoch cez <strong>FRA</strong>
-                  a <strong>MUC</strong>.
+                  Ak ide o <strong>kompenzáciu podľa EU261</strong>, tam jednotná európska lehota
+                  výplaty neexistuje, takže „najrýchlejšia cesta“ znamená skôr minimalizovať chaos,
+                  nesprávny claim a zbytočné procesné kolá.
                 </p>
                 <p>
-                  Ak nechcete riešiť celý proces sami, môžete prípad poslať aj cez{" "}
+                  Ak nechcete riešiť, ktorá cesta je vo vašom prípade najrýchlejšia, môžete prípad
+                  poslať cez{" "}
                   <a
                     href={claimWingerHomeHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_how_to_claim_lufthansa_quick_answer_home",
+                        "sk_fastest_way_to_get_money_quick_answer_home",
                         claimWingerHomeHref
                       )
                     }
@@ -223,63 +223,85 @@ export default function LufthansaHowToClaimSk() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Nechcete riešiť reklamáciu Lufthansa sami?"
-            description="ClaimWinger vie preveriť, či vo vašom prípade ide o kompenzáciu, refundáciu alebo náklady, a môže prevziať ďalší postup aj pri zložitejšom spore o prestup alebo mimoriadne okolnosti."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=how_to_claim_lufthansa"
-            ctaLabel="Preveriť prípad s ClaimWinger"
+            title="Chcete najrýchlejšie zistiť, čo má vo vašom prípade zmysel?"
+            description="ClaimWinger vie pomôcť rýchlo rozlíšiť, či vo vašom prípade ide skôr o refundáciu, kompenzáciu alebo vedľajšie náklady, a tým zabrániť zbytočnému spomaleniu celej veci."
+            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=fastest_way_to_get_money"
+            ctaLabel="Preveriť najrýchlejší ďalší krok"
             loadingLabel="Načítava sa formulár ClaimWinger..."
             loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_how_to_claim_lufthansa_embed"
+            placement="sk_blog_fastest_way_to_get_money_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
-              <ListChecks className="h-8 w-8 text-amber-600" />
-              Krok 1: ujasnite si, čo vlastne reklamujete
+              <Wallet className="h-8 w-8 text-lime-600" />
+              1. Ak chcete peniaze čo najrýchlejšie, najprv si ujasnite typ nároku
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Kompenzácia podľa EU261
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Peňažná kompenzácia za meškanie, zrušenie alebo odmietnutie nástupu, ak sú splnené
-                  podmienky pravidiel EÚ.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Náklady počas narušenia letu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Hotel, jedlo, transfer alebo ďalšie primerané výdavky, ktoré vznikli počas
-                  problému s letom.
-                </p>
-              </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
                   Refundácia
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Vrátenie ceny letenky alebo nevyužitej časti cesty. To nie je to isté ako
-                  kompenzácia za stratu času.
+                  Často najrýchlejšia vrstva, lebo pravidlá EÚ pri relevantných situáciách hovoria o
+                  lehote <strong>7 dní</strong>.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Kompenzácia
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Tu neexistuje jedna spoločná lehota výplaty. Rýchlosť závisí od čistoty prípadu a
+                  reakcie aerolinky.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Náklady
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak žiadate hotel, taxi alebo jedlo, dôležité sú primerané účtenky a čisté
+                  prepojenie na narušenie letu.
                 </p>
               </Card>
             </div>
           </section>
 
           <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 2: pripravte si dokumenty ešte pred formulárom
+            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
+              <Zap className="h-8 w-8 text-lime-600" />
+              2. Najrýchlejšia cesta nie je vždy tá istá
             </h2>
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-4">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri čerstvom, jednoduchom a dobre zdokumentovanom prípade býva rozumné začať
+                  priamo u aerolinky. To je často najkratšia cesta, ak je spor jednoduchý a
+                  aerolínka reaguje normálne.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak sa však prípad začne lámať na mimoriadnych okolnostiach, prestupe, konečnej
+                  destinácii alebo ignorovaní reklamácie, najrýchlejšia cesta už nie je o „jednom
+                  formulári“, ale o tom, kto vie spor udržať bez ďalšieho chaosu.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
+              <Rocket className="h-8 w-8 text-lime-600" />
+              3. Čo zrýchľuje prípad v praxi
+            </h2>
+            <div className="grid gap-4">
               {[
-                "rezerváciu alebo PNR",
-                "boarding pass alebo dôkaz o check-ine",
-                "číslo letu a dátum cesty",
-                "oznámenie o meškaní, zrušení alebo presmerovaní",
-                "skutočný čas príchodu do konečnej destinácie",
-                "účtenky za hotel, jedlo, dopravu alebo ďalšie výdavky",
+                "správne rozlíšenie medzi refundáciou, kompenzáciou a nákladmi",
+                "rezervácia, PNR a čisté dôkazy o lete a výsledku v konečnej destinácii",
+                "správne určenie operujúceho dopravcu",
+                "neposielanie viacerých protichodných alebo chaotických žiadostí",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -292,119 +314,50 @@ export default function LufthansaHowToClaimSk() {
           </section>
 
           <section className="mb-12">
-            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
-              <PlaneTakeoff className="h-8 w-8 text-amber-600" />
-              Krok 3: pri Lufthanse si dajte pozor na prestupy
-            </h2>
-            <div className="grid gap-4">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pri Lufthanse je veľmi častý scenár <strong>Viedeň - Frankfurt - New York</strong>
-                  alebo <strong>Košice - Mníchov - Toronto</strong>. V takom prípade zvyčajne nestačí
-                  pozerať sa len na prvý segment. Dôležité je, či sú lety na <strong>jednej rezervácii</strong>
-                  a aké je meškanie v <strong>konečnej destinácii</strong>.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Práve pri huboch ako <strong>Frankfurt</strong> a <strong>Mníchov</strong> sa často
-                  ukáže, že problém nevyzerá veľký na odlete, ale silný je až po dopade na celý
-                  itinerár. Preto má zmysel evidovať aj čas príchodu na úplný koniec cesty.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
-              <ShieldCheck className="h-8 w-8 text-amber-600" />
-              Krok 4: rozlišujte, čo rieši Lufthansa oficiálne online
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Online žiadosť Lufthansa
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Lufthansa má oficiálnu online žiadosť na <strong>kompenzáciu a náhradu nákladov</strong>
-                  pri narušení letu. To je najlogickejší prvý krok pri bežnom EU261 prípade alebo pri
-                  primeraných výdavkoch počas meškania či zrušenia.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Refundácia letenky
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Refundácia nie je to isté čo kompenzácia. Lufthansa vo svojich podmienkach uvádza,
-                  že pri letenkách kúpených cez <strong>agentúru</strong> môže dávať zmysel riešiť
-                  refundáciu práve cez agentúru.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 5: čo robiť, ak odpoveď nestačí
+              4. Kedy má zmysel použiť firmu, ak chcete šetriť čas
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak Lufthansa prípad zamietne, uložte si celé rozhodnutie, dôkazy o lete, časy
-                  príletu a všetku komunikáciu. Pri prestupových itinerároch býva spor často skôr o
-                  <strong> konečnú destináciu</strong>, <strong>mimoriadne okolnosti</strong> alebo
-                  o to, či ide naozaj o jeden súvislý prípad.
+                  Nie preto, že by firma zázračne menila pravidlá, ale preto, že vám môže ušetriť
+                  čas tam, kde prípad už nie je jednoduchý. To je iný typ „rýchlosti“ než formálna
+                  lehota na refundáciu.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak nechcete ísť ďalej sami, môžete prípad posunúť cez{" "}
-                  <a
-                    href={claimWingerHomeHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() =>
-                      trackClaimClick(
-                        "sk_how_to_claim_lufthansa_inline_home",
-                        claimWingerHomeHref
-                      )
-                    }
-                    className="font-semibold text-blue-600 underline underline-offset-4"
-                  >
-                    ClaimWinger Slovensko
-                  </a>
-                  . ClaimWinger účtuje <strong>30 %</strong> bez ohľadu na to, či sa vec rieši
-                  mimosúdne alebo súdne.
+                  Pri ClaimWingeri je fér vedieť vopred, že provízia je <strong>30 %</strong> bez
+                  ohľadu na to, či sa vec rieši mimosúdne alebo súdne. To vám umožní porovnať
+                  úsporu času so skutočnou cenou služby.
                 </p>
               </Card>
             </div>
           </section>
 
           <section className="mb-12">
-            <Card className="border-amber-200 bg-amber-50 p-8 dark:border-amber-800 dark:bg-amber-950/20">
+            <Card className="border-lime-200 bg-lime-50 p-8 dark:border-lime-800 dark:bg-lime-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Chcete si prípad preveriť hneď?
+                Chcete čo najrýchlejšie zistiť, čo má vo vašom prípade zmysel?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Pri Lufthanse sa často láme spor na tom, či ide o obyčajné meškanie prvého segmentu,
-                zmeškaný prestup alebo plnohodnotný nárok v konečnej destinácii. ClaimWinger vie
-                rýchlo povedať, čo má vo vašom prípade najväčší zmysel riešiť.
+                Ak nechcete strácať čas nesprávnym smerom, ClaimWinger vie rýchlo odfiltrovať, či sa
+                oplatí tlačiť refundáciu, kompenzáciu alebo inú vrstvu nároku.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-amber-600 text-white hover:bg-amber-700">
+                <Button asChild size="lg" className="bg-lime-600 hover:bg-lime-700">
                   <a
                     href={claimWingerHomeHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_how_to_claim_lufthansa_final_cta_home",
+                        "sk_fastest_way_to_get_money_final_cta_home",
                         claimWingerHomeHref
                       )
                     }
                   >
-                    Preveriť prípad s ClaimWinger
+                    Preveriť najrýchlejší krok s ClaimWinger
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -415,12 +368,12 @@ export default function LufthansaHowToClaimSk() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_how_to_claim_lufthansa_final_cta_delay",
+                        "sk_fastest_way_to_get_money_final_cta_delay",
                         delayedFlightHref
                       )
                     }
                   >
-                    Riešim skôr meškanie
+                    Riešim meškajúci let
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
@@ -430,12 +383,12 @@ export default function LufthansaHowToClaimSk() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_how_to_claim_lufthansa_final_cta_cancel",
+                        "sk_fastest_way_to_get_money_final_cta_cancel",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim skôr zrušený let
+                    Riešim zrušený let
                   </a>
                 </Button>
               </div>
@@ -449,13 +402,13 @@ export default function LufthansaHowToClaimSk() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Čo robiť, keď aerolínka neodpovedá?
+                  Ako dlho trvá vyplatenie odškodnenia?
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ďalší krok, ak po podaní reklamácie neprichádza rozumná odpoveď.
+                  Dobrý follow-up, ak chcete odlíšiť rýchlu refundáciu od pomalšej kompenzácie.
                 </p>
                 <Link
-                  href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
+                  href="/sk/blog/ako-dlho-trva-vyplatenie-odskodnenia"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
                   Prejsť na článok
@@ -463,27 +416,27 @@ export default function LufthansaHowToClaimSk() {
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Oplatí sa použiť firmu na odškodnenie?
+                  Ako získať refundáciu aj kompenzáciu
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Užitočné, ak sa rozhodujete medzi vlastným postupom a externou pomocou.
+                  Užitočné, ak sa rozhodujete, ktorú vrstvu nároku riešiť ako prvú.
                 </p>
                 <Link
-                  href="/sk/blog/oplati-sa-pouzit-firmu-na-odskodnenie"
+                  href="/sk/blog/odwolany-lot-zwrot-czy-odszkodowanie"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na porovnanie
+                  Prejsť na článok
                 </Link>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Viac letov v jednej rezervácii
+                  Ako vybrať správnu firmu na odškodnenie
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Dôležité čítanie, ak sa váš spor točí okolo prestupu a konečnej destinácie.
+                  Dôležité, ak „rýchlosť” porovnávate aj s cenou a rozsahom služby.
                 </p>
                 <Link
-                  href="/sk/blog/viac-letov-v-jednej-rezervacii"
+                  href="/sk/blog/ako-vybrat-spravnu-firmu-na-odskodnenie"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
                   Prejsť na článok

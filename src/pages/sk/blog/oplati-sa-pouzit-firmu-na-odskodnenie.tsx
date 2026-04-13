@@ -18,7 +18,7 @@ const claimWingerHomeHref =
 
 const faqItems = [
   {
-    question: "Oplatí sa použiť firmu na odškodnenie?",
+    question: "Je lepšie podať reklamáciu sám alebo cez firmu?",
     answer:
       "Niekedy áno, niekedy nie. Ak máte jednoduchý prípad a čas riešiť ho sami, vlastná reklamácia môže byť rozumná. Ak je prípad zamietnutý, aerolínka neodpovedá alebo nechcete riešiť ďalšiu eskaláciu sami, firma môže mať väčší zmysel.",
   },
@@ -51,8 +51,8 @@ export default function OplatiSaPouzitFirmuNaOdskodneniePage() {
   return (
     <LayoutSk>
       <SEO
-        title="Oplatí sa použiť firmu na odškodnenie? Závisí od zložitosti prípadu a ceny času"
-        description="Má zmysel riešiť odškodnenie cez firmu, alebo radšej podať reklamáciu sám? Vysvetľujeme hlavné rozdiely, kedy sa oplatí priama reklamácia a kedy je firma praktickejšia."
+        title="Reklamácia sám alebo cez firmu: čo sa viac oplatí?"
+        description="Má zmysel riešiť odškodnenie sám, alebo cez firmu? Vysvetľujeme hlavné rozdiely, kedy sa oplatí priama reklamácia a kedy má väčší zmysel externá pomoc."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,7 +63,7 @@ export default function OplatiSaPouzitFirmuNaOdskodneniePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Oplatí sa použiť firmu na odškodnenie?",
+            headline: "Reklamácia sám alebo cez firmu: čo sa viac oplatí?",
             description:
               "Praktické porovnanie vlastnej reklamácie a použitia firmy na odškodnenie pri problémoch s letom.",
             mainEntityOfPage: articleUrl,
@@ -127,7 +127,7 @@ export default function OplatiSaPouzitFirmuNaOdskodneniePage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Oplatí sa použiť firmu na odškodnenie?",
+                name: "Reklamácia sám alebo cez firmu",
                 item: articleUrl,
               },
             ],
@@ -146,7 +146,7 @@ export default function OplatiSaPouzitFirmuNaOdskodneniePage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Oplatí sa použiť firmu na odškodnenie?</span>
+            <span>Reklamácia sám alebo cez firmu</span>
           </div>
 
           <header className="mb-10">
@@ -154,7 +154,7 @@ export default function OplatiSaPouzitFirmuNaOdskodneniePage() {
               Praktické porovnanie priamej reklamácie a externej pomoci
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Oplatí sa použiť firmu na odškodnenie?
+              Reklamácia sám alebo cez firmu: čo sa viac oplatí?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
               Najkratšia odpoveď je: <strong>záleží od prípadu</strong>. Pri jednoduchom a čerstvom
