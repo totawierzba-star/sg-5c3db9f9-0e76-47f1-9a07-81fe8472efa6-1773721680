@@ -8,6 +8,8 @@ export interface SEOProps {
   type?: string;
   noindex?: boolean;
   canonicalUrl?: string;
+  locale?: string;
+  language?: string;
 }
 
 const defaultTitle = "problemlot.com - Odszkodowanie za opóźniony i odwołany lot";
@@ -24,6 +26,8 @@ export const SEOElements = ({
   type = "website",
   noindex = false,
   canonicalUrl,
+  locale = "pl_PL",
+  language = "Polish",
 }: SEOProps = {}) => (
   <>
     <title>{title}</title>
@@ -38,7 +42,7 @@ export const SEOElements = ({
     <meta property="og:image" content={image} />
     <meta property="og:url" content={url} />
     <meta property="og:site_name" content="problemlot.com" />
-    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:locale" content={locale} />
     
     {/* Twitter Card */}
     <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +51,7 @@ export const SEOElements = ({
     <meta name="twitter:image" content={image} />
     
     {/* Additional SEO */}
-    <meta name="language" content="Polish" />
+    <meta name="language" content={language} />
     <meta name="author" content="problemlot.com" />
   </>
 );

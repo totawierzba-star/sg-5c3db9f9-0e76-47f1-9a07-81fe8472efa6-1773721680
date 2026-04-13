@@ -4,6 +4,7 @@ export type SiteLanguageCode =
   | "cs"
   | "sk"
   | "hu"
+  | "el"
   | "tr"
   | "it"
   | "zh"
@@ -25,6 +26,7 @@ export const SITE_LANGUAGES: SiteLanguage[] = [
   { code: "cs", label: "Čeština", shortLabel: "CS", flag: "🇨🇿", href: "/cs" },
   { code: "sk", label: "Slovenčina", shortLabel: "SK", flag: "🇸🇰", href: "/sk" },
   { code: "hu", label: "Magyar", shortLabel: "HU", flag: "🇭🇺", href: "/hu" },
+  { code: "el", label: "Ελληνικά", shortLabel: "EL", flag: "🇬🇷", href: "/el" },
   { code: "tr", label: "Turkce", shortLabel: "TR", flag: "🇹🇷", href: "/tr" },
   { code: "it", label: "Italiano", shortLabel: "IT", flag: "🇮🇹", href: "/it" },
   { code: "zh", label: "中文", shortLabel: "ZH", flag: "🇨🇳", href: "/zh" },

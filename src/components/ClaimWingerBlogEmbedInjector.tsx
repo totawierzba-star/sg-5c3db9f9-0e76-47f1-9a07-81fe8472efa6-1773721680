@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { useRouter } from "next/router";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerElSection } from "@/components/ClaimWingerElSection";
 import { ClaimWingerHuSection } from "@/components/ClaimWingerHuSection";
 import { ClaimWingerTrSection } from "@/components/ClaimWingerTrSection";
 import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
@@ -33,6 +34,21 @@ const BLOG_EMBED_CONFIGS: BlogEmbedConfig[] = [
         className="mb-8"
         title="立即开始中文索赔检查"
         description="如果您已经读到这里，通常已经具备初步判断条件。直接填写 ClaimWinger 表单，比手动整理材料和反复联系航空公司更快。"
+      />
+    ),
+  },
+  {
+    isMatch: (path) => /^\/el\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com"]',
+    fallbackMode: "after-header",
+    render: () => (
+      <ClaimWingerElSection
+        className="mb-8"
+        title="Ελέγξτε άμεσα αν η πτήση σας μπορεί να οδηγήσει σε αποζημίωση"
+        description="Αν διαβάζετε ήδη αυτό το σημείο, συνήθως έχετε το βασικό πλαίσιο της υπόθεσης. Η ελληνική φόρμα του ClaimWinger βοηθά να δείτε γρήγορα αν αξίζει να προχωρήσετε."
+        ctaHref="https://claimwinger.com/el?utm_source=problemlot-el&utm_medium=embedded_cta&utm_campaign=blog_entry"
+        ctaLabel="Άνοιγμα ελέγχου ClaimWinger"
+        placement="el_blog_embed"
       />
     ),
   },
