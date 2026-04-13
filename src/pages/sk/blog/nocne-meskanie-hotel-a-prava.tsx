@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileText } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  FileText,
+  Hotel,
+} from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
 import { LayoutSk } from "@/components/LayoutSk";
@@ -8,34 +14,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zmeskany-prestup-kompenzacia";
+const articleUrl = "https://problemlot.com/sk/blog/nocne-meskanie-hotel-a-prava";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=overnight_delay_hotel_rights";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=overnight_delay_hotel_rights";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=overnight_delay_hotel_rights";
 
 const faqItems = [
   {
-    question: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+    question: "Mám pri nočnom meškaní nárok na hotel?",
     answer:
-      "Áno, často áno, ale hlavne vtedy, keď boli lety v jednej rezervácii, práva EU261 sa na cestu vzťahujú a do konečnej destinácie prídete s meškaním viac než 3 hodiny. Pri dvoch samostatných letenkách býva situácia oveľa slabšia.",
+      "Často áno. Ak nový očakávaný odlet vychádza až na nasledujúci deň, aerolinka má spravidla zabezpečiť hotel a dopravu medzi letiskom a ubytovaním, ak je prenocovanie potrebné.",
   },
   {
-    question: "Je najdôležitejšie, že som zmeškal druhý let?",
+    question: "Platí hotel aj vtedy, keď kompenzácia nevznikne?",
     answer:
-      "Nie. Rozhodujúci je hlavne dopad na príchod do konečnej destinácie. Samotné zmeškanie prestupu bez výrazného finálneho meškania ešte automaticky nezaručuje kompenzáciu.",
+      "Áno. Právo na hotel patrí do starostlivosti o pasažiera a je oddelené od peňažnej kompenzácie. Aj keď kompenzácia nevznikne, starostlivosť môže stále vzniknúť.",
   },
   {
-    question: "Čo ak som mal dva samostatné lístky?",
+    question: "Čo ak mi aerolinka hotel neponúkne?",
     answer:
-      "Pri dvoch oddelených rezerváciách aerolinky zvyčajne nenesú zodpovednosť za to, že ste nestihli ďalší samostatne kúpený let. Práve preto je jedna rezervácia pri zmeškanom prestupe kľúčová.",
+      "Ak aerolinka starostlivosť reálne neposkytne, môžete si ju v primeranom rozsahu zabezpečiť sami a žiadať preplatenie. Dôležité je držať náklady rozumné a odložiť si účtenky.",
   },
   {
-    question: "Koľko môžem dostať za zmeškaný prestup?",
+    question: "Patrí aj transfer medzi letiskom a hotelom?",
     answer:
-      "Ak nárok vznikne, suma sa zvyčajne počíta podľa celkovej vzdialenosti a pravidiel EU261, teda typicky 250 €, 400 € alebo 600 € podľa konkrétneho prípadu.",
+      "Áno, ak je prenocovanie potrebné, pravidlá hovoria aj o doprave medzi letiskom a miestom ubytovania.",
   },
 ];
 
@@ -47,12 +53,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZmeskanyPrestupKompenzaciaPage() {
+export default function NocneMeskanieHotelAPravaPage() {
   return (
     <LayoutSk>
       <SEO
-        title="Môžem žiadať odškodnenie za zmeškaný prestup? Áno, ale jedna rezervácia je kľúčová"
-        description="Zmeškali ste prestup kvôli meškaniu prvého letu? Vysvetľujeme, kedy vzniká nárok na kompenzáciu, prečo rozhoduje jedna rezervácia a prečo sa počíta prílet do konečnej destinácie."
+        title="Nočné meškanie letu: hotel, starostlivosť a práva pasažiera"
+        description="Čo ak sa meškanie letu pretiahne cez noc? Vysvetľujeme, kedy máte nárok na hotel, transfer, jedlo a prečo je právo na starostlivosť oddelené od kompenzácie."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +69,9 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+            headline: "Nočné meškanie letu: hotel, starostlivosť a práva pasažiera",
             description:
-              "Praktické vysvetlenie, kedy môže zmeškaný prestup viesť ku kompenzácii a prečo je rozhodujúca jedna rezervácia a meškanie do konečnej destinácie.",
+              "Praktický sprievodca pre situáciu, keď sa meškanie letu pretiahne cez noc, vrátane hotelu, transferu, jedla a rozdielu medzi starostlivosťou a kompenzáciou.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +133,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+                name: "Nočné meškanie letu",
                 item: articleUrl,
               },
             ],
@@ -135,7 +141,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -146,20 +152,21 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Môžem žiadať odškodnenie za zmeškaný prestup?</span>
+            <span>Nočné meškanie letu</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-              Praktická odpoveď pre zmeškaný prestup
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
+              Edge case content pre overnight delay
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Môžem žiadať odškodnenie za zmeškaný prestup?
+              Nočné meškanie letu: hotel, starostlivosť a práva pasažiera
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: <strong>často áno</strong>, ale iba vtedy, keď ide o jednu
-              rezerváciu, na cestu sa vzťahuje EU261 a do konečnej destinácie prídete s veľkým
-              meškaním. Samotný fakt, že ste nestihli druhé lietadlo, ešte nestačí.
+              Ak sa meškanie letu pretiahne cez noc, najčastejšie sa rieši <strong>hotel</strong>,
+              <strong> transfer</strong>, jedlo a komunikácia s aerolinkou. Práve tu je dôležité
+              rozlíšiť <strong>právo na starostlivosť</strong> od peňažnej <strong>kompenzácie</strong>,
+              pretože nejde o to isté.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -169,25 +176,27 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
-                <span>Čítanie: 10 minút</span>
+                <span>Čítanie: 9 minút</span>
               </div>
             </div>
           </header>
 
           <section className="mb-10">
-            <Card className="border-blue-200 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 text-white shadow-xl dark:border-blue-800">
+            <Card className="border-indigo-200 bg-gradient-to-br from-indigo-600 to-blue-700 p-8 text-white shadow-xl dark:border-indigo-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-blue-50">
+              <div className="space-y-3 text-base leading-7 text-indigo-50">
                 <p>
-                  <strong>Jedna rezervácia</strong> je pri zmeškanom prestupe kľúčová.
+                  <strong>Áno, pri nočnom meškaní často vzniká nárok na hotel.</strong> Ak nový
+                  očakávaný odlet vychádza až na ďalší deň, aerolinka má spravidla zabezpečiť ubytovanie
+                  a dopravu medzi letiskom a hotelom.
                 </p>
                 <p>
-                  Ak boli oba lety kúpené spolu a do konečnej destinácie dorazíte <strong>o viac než 3 hodiny neskôr</strong>,
-                  kompenzácia môže byť reálna.
+                  Toto právo patrí do <strong>starostlivosti o pasažiera</strong> a je oddelené od
+                  peňažnej kompenzácie.
                 </p>
                 <p>
-                  Pri dvoch samostatných letenkách býva pozícia pasažiera oveľa slabšia, pretože
-                  aerolinka zvyčajne nezodpovedá za nadväzujúci samostatný let.
+                  Ak aerolinka starostlivosť neposkytne, môžete mať nárok na preplatenie vlastných,
+                  primeraných nákladov.
                 </p>
               </div>
             </Card>
@@ -195,25 +204,25 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Zmeškali ste prestup a neviete, či ide o reálny nárok?"
-            description="ClaimWinger vie pomôcť overiť, či boli lety v jednej rezervácii, či sa na cestu vzťahuje EU261 a aký bol skutočný dopad na konečný cieľ."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=missed_connection"
-            ctaLabel="Preveriť zmeškaný prestup"
-            loadingLabel="Načítava sa formulár ClaimWinger..."
-            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_missed_connection_embed"
+            title="Riešite nočné meškanie a neviete, čo s hotelom?"
+            description="ClaimWinger vie rýchlo preveriť, či sa vo vašom prípade rieši len starostlivosť, alebo aj peňažná kompenzácia za dlhé meškanie v konečnej destinácii."
+            ctaHref="https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=overnight_delay_hotel_rights"
+            ctaLabel="Preveriť meškajúci let s ClaimWinger"
+            loadingLabel="Načítava sa formulár pre meškajúci let..."
+            loadingDescription="O chvíľu sa zobrazí slovenský formulár ClaimWinger pre meškajúce lety."
+            placement="sk_blog_overnight_delay_hotel_rights_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy nárok najčastejšie vzniká
+              Čo presne patrí do starostlivosti
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "lety boli v jednej rezervácii",
-                "na cestu sa vzťahuje EU261",
-                "do konečnej destinácie dorazíte s meškaním viac než 3 hodiny",
-                "meškanie nespôsobili mimoriadne okolnosti",
+                "jedlo a občerstvenie primerane čakaniu",
+                "hotelové ubytovanie, ak treba prenocovať",
+                "doprava medzi letiskom a hotelom",
+                "možnosť komunikácie, napríklad telefonát alebo e-mail",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -227,108 +236,117 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Čo je pri zmeškanom prestupe najdôležitejšie
-            </h2>
-            <div className="grid gap-4">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Počíta sa konečná destinácia
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Oficiálne pravidlá EÚ pozerajú na meškanie pri príchode do konečného cieľa, nie len
-                  na to, že ste fyzicky nestihli druhý let.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Jedna rezervácia mení celý prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sú lety kúpené spolu, cesta sa posudzuje ako jeden celok. Pri dvoch oddelených
-                  rezerváciách si aerolinky zvyčajne nenesú zodpovednosť za zlyhaný prestup.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Nie každý zmeškaný prestup znamená výplatu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sa do cieľa dostanete bez veľkého meškania alebo ak išlo o mimoriadne okolnosti,
-                  samotný zmeškaný prestup ešte nemusí viesť ku kompenzácii.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Dva typické scenáre
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-green-200 p-6 dark:border-green-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Silnejší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Bratislava → Viedeň → New York v jednej rezervácii. Prvý let mešká, prestup padne
-                  a do New Yorku prídete o 6 hodín neskôr. To je typický prípad, kde sa nárok môže
-                  reálne otvoriť.
-                </p>
-              </Card>
-              <Card className="border-red-200 p-6 dark:border-red-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Slabší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Prvý let a druhý let boli kúpené osobitne alebo ste si skladali self-transfer sami.
-                  Tu býva zodpovednosť aerolinky za zmeškaný ďalší let podstatne slabšia.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Koľko môžete dostať
+              Kedy býva hotel najjasnejší
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Do 1 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">250 €</p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                  1 500–3 500 km alebo dlhší intra-EÚ let
+                <Hotel className="mb-3 h-6 w-6 text-indigo-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Odlet až nasledujúci deň
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Toto je najsilnejší praktický signál, že prenocovanie je potrebné a hotel by mala
+                  riešiť aerolinka.
                 </p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">400 €</p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Nad 3 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">600 €</p>
+                <Clock className="mb-3 h-6 w-6 text-indigo-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Dlhé nočné čakanie
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak ste odkázaní čakať cez noc bez rozumnej možnosti pokračovať v ceste, právo na
+                  starostlivosť býva veľmi dôležité.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <FileText className="mb-3 h-6 w-6 text-indigo-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Jasný dôkaz o novom čase
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Uložte si všetko, čo ukazuje nový odlet, nové boarding passy, e-maily a časy.
+                  Práve to pomáha pri neskoršom preplatení nákladov.
+                </p>
               </Card>
             </div>
           </section>
 
           <section className="mb-12">
-            <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Čo robiť, ak aerolinka hotel neponúkne
+            </h2>
+            <div className="grid gap-4">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  Držte náklady rozumné
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak si musíte hotel zabezpečiť sami, zvoľte primerané riešenie. Pri preplácaní býva
+                  dôležité, aby náklady pôsobili nevyhnutne a rozumne, nie luxusne.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  Odložte si účtenky
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Bez účteniek sa vlastné náklady preukazujú oveľa ťažšie. Uložte si hotel, taxi,
+                  transfer aj primerané jedlo.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  Rozlišujte starostlivosť a kompenzáciu
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  To, že vám patrí hotel, ešte automaticky neznamená, že vám patrí aj peňažná
+                  kompenzácia. Sú to dve rozdielne vrstvy práv.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Kedy sa popri hoteli rieši aj kompenzácia
+            </h2>
+            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
+              <p>
+                Ak sa nočné meškanie zároveň pretaví do <strong>meškania v konečnej destinácii 3 hodiny
+                alebo viac</strong>, môže sa popri starostlivosti otvoriť aj téma peňažnej kompenzácie.
+              </p>
+              <p>
+                To však stále závisí od rozsahu <strong>EU261</strong> a od toho, či aerolinka nevie
+                preukázať <strong>mimoriadne okolnosti</strong>. Práve preto netreba zamieňať hotel
+                s automatickou kompenzáciou.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <Card className="border-indigo-200 bg-indigo-50 p-8 dark:border-indigo-800 dark:bg-indigo-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Neviete, či išlo o jednu rezerváciu alebo o slabší self-transfer prípad?
+                Chcete si nárok preveriť hneď?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv preveriť, či sa na váš prestup pozerá právo ako na jeden celok
-                alebo ako na dva oddelené lety. To často rozhodne viac než samotné prvé meškanie.
+                Pri nočnom meškaní býva najdôležitejšie rýchlo rozlíšiť, čo patrí do starostlivosti
+                a čo môže byť už kompenzácia za dlhé meškanie. ClaimWinger vie preveriť obidve vrstvy.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-700">
                   <a
                     href={delayedFlightHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_missed_connection_final_cta_delay", delayedFlightHref)
+                      trackClaimClick(
+                        "sk_overnight_delay_hotel_rights_final_cta_delay",
+                        delayedFlightHref
+                      )
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť meškajúci let
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -339,12 +357,12 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_missed_connection_final_cta_cancelled",
+                        "sk_overnight_delay_hotel_rights_final_cta_cancelled",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Riešim skôr zrušený let
                   </a>
                 </Button>
               </div>
@@ -358,31 +376,20 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Platí odškodnenie pri prestupe?
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Širší článok o prestupných letoch, jednej rezervácii a konečnej destinácii.
-                </p>
-                <Link
-                  href="/sk/blog/plati-odskodnenie-pri-prestupe"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o prestupe
-                </Link>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prakticky preveriť, či zmeškaný prestup vytvára reálny nárok.
+                  Ak chcete rýchlo preveriť, čo z nočného meškania patrí do starostlivosti a čo už do kompenzácie.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_missed_connection_related_home", claimWingerHomeHref)
+                    trackClaimClick(
+                      "sk_overnight_delay_hotel_rights_related_home",
+                      claimWingerHomeHref
+                    )
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
@@ -391,16 +398,30 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Koľko dostanem za zrušený let?
+                  Ako dlho trvá vyplatenie odškodnenia?
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak zmeškaný prestup vznikol po zmene plánu alebo reroutingu, tu je logika súm.
+                  Ak už riešite, čo sa deje po claimovaní a ako dlho môže trvať celý proces.
                 </p>
                 <Link
-                  href="/sk/blog/kolko-dostanem-za-zruseny-let"
+                  href="/sk/blog/ako-dlho-trva-vyplatenie-odskodnenia"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o sume kompenzácie
+                  Prejsť na článok o výplate
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Čo robiť, keď aerolinka neodpovedá?
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Užitočné, ak po nočnom meškaní alebo vlastných nákladoch dopravca mlčí.
+                </p>
+                <Link
+                  href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na článok o eskalácii
                 </Link>
               </Card>
             </div>

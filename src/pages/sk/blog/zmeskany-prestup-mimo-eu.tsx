@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileText } from "lucide-react";
+import {
+  AlertCircle,
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  FileText,
+  Plane,
+} from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
 import { LayoutSk } from "@/components/LayoutSk";
@@ -8,34 +15,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zmeskany-prestup-kompenzacia";
+const articleUrl = "https://problemlot.com/sk/blog/zmeskany-prestup-mimo-eu";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection_outside_eu";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection_outside_eu";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection_outside_eu";
 
 const faqItems = [
   {
-    question: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+    question: "Môžem žiadať odškodnenie, ak som zmeškal prestup mimo EÚ?",
     answer:
-      "Áno, často áno, ale hlavne vtedy, keď boli lety v jednej rezervácii, práva EU261 sa na cestu vzťahujú a do konečnej destinácie prídete s meškaním viac než 3 hodiny. Pri dvoch samostatných letenkách býva situácia oveľa slabšia.",
+      "Často áno, ale nie vždy. Rozhodujúce je, či bola cesta na jednej rezervácii, odkiaľ let začínal a či sa na celý prípad vzťahuje EU261. Samotný fakt, že prestup bol mimo EÚ, ešte nárok automaticky neruší.",
   },
   {
-    question: "Je najdôležitejšie, že som zmeškal druhý let?",
+    question: "Je najdôležitejšie, že prestup bol mimo EÚ?",
     answer:
-      "Nie. Rozhodujúci je hlavne dopad na príchod do konečnej destinácie. Samotné zmeškanie prestupu bez výrazného finálneho meškania ešte automaticky nezaručuje kompenzáciu.",
+      "Nie. Dôležitejšie býva, či cesta odlietala z EÚ alebo či šlo o prílet do EÚ s európskou aerolinkou. Práve to často rozhoduje viac než samotné miesto prestupu.",
   },
   {
-    question: "Čo ak som mal dva samostatné lístky?",
+    question: "Čo ak som mal jednu rezerváciu, ale druhý úsek operoval non-EU dopravca?",
     answer:
-      "Pri dvoch oddelených rezerváciách aerolinky zvyčajne nenesú zodpovednosť za to, že ste nestihli ďalší samostatne kúpený let. Práve preto je jedna rezervácia pri zmeškanom prestupe kľúčová.",
+      "Tu je potrebné pozerať veľmi presne na smer cesty a na to, ktoré lety sú pre práva relevantné. Pri niektorých itinerároch mimo EÚ sa nepozerá rovnako na každý segment.",
   },
   {
-    question: "Koľko môžem dostať za zmeškaný prestup?",
+    question: "Počíta sa pri zmeškanom prestupe mimo EÚ konečná destinácia?",
     answer:
-      "Ak nárok vznikne, suma sa zvyčajne počíta podľa celkovej vzdialenosti a pravidiel EU261, teda typicky 250 €, 400 € alebo 600 € podľa konkrétneho prípadu.",
+      "Áno. Ak ide o prípad, na ktorý sa pravidlá vzťahujú, rozhodujúci býva dopad na konečnú destináciu, nie len samotné zlyhanie prestupu na medziletisku.",
   },
 ];
 
@@ -47,12 +54,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZmeskanyPrestupKompenzaciaPage() {
+export default function ZmeskanyPrestupMimoEuPage() {
   return (
     <LayoutSk>
       <SEO
-        title="Môžem žiadať odškodnenie za zmeškaný prestup? Áno, ale jedna rezervácia je kľúčová"
-        description="Zmeškali ste prestup kvôli meškaniu prvého letu? Vysvetľujeme, kedy vzniká nárok na kompenzáciu, prečo rozhoduje jedna rezervácia a prečo sa počíta prílet do konečnej destinácie."
+        title="Zmeškaný prestup mimo EÚ: kedy ešte vzniká nárok na odškodnenie?"
+        description="Čo ak zmeškáte prestup mimo EÚ? Vysvetľujeme, kedy môže stále platiť EU261, prečo je rozhodujúca jedna rezervácia, smer cesty a konečná destinácia."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +70,9 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+            headline: "Zmeškaný prestup mimo EÚ: kedy ešte vzniká nárok na odškodnenie?",
             description:
-              "Praktické vysvetlenie, kedy môže zmeškaný prestup viesť ku kompenzácii a prečo je rozhodujúca jedna rezervácia a meškanie do konečnej destinácie.",
+              "Praktický sprievodca pre situáciu, keď pasažier zmešká prestup mimo EÚ, vrátane rozsahu EU261, jednej rezervácie a významu konečnej destinácie.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +134,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+                name: "Zmeškaný prestup mimo EÚ",
                 item: articleUrl,
               },
             ],
@@ -135,7 +142,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-cyan-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -146,20 +153,21 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Môžem žiadať odškodnenie za zmeškaný prestup?</span>
+            <span>Zmeškaný prestup mimo EÚ</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-              Praktická odpoveď pre zmeškaný prestup
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-cyan-100 px-4 py-2 text-sm font-medium text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300">
+              Edge case content pre prestup mimo EÚ
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Môžem žiadať odškodnenie za zmeškaný prestup?
+              Zmeškaný prestup mimo EÚ: kedy ešte vzniká nárok na odškodnenie?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: <strong>často áno</strong>, ale iba vtedy, keď ide o jednu
-              rezerváciu, na cestu sa vzťahuje EU261 a do konečnej destinácie prídete s veľkým
-              meškaním. Samotný fakt, že ste nestihli druhé lietadlo, ešte nestačí.
+              Ak zmeškáte prestup <strong>mimo EÚ</strong>, situácia býva zložitejšia než pri čisto
+              európskej ceste. Samotné miesto prestupu však ešte neznamená, že ste bez nároku.
+              Kľúčové sú <strong>jedna rezervácia</strong>, <strong>smer cesty</strong> a to, či sa
+              na konkrétny itinerár stále vzťahuje <strong>EU261</strong>.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -175,19 +183,20 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           </header>
 
           <section className="mb-10">
-            <Card className="border-blue-200 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 text-white shadow-xl dark:border-blue-800">
+            <Card className="border-cyan-200 bg-gradient-to-br from-cyan-600 to-sky-700 p-8 text-white shadow-xl dark:border-cyan-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-blue-50">
+              <div className="space-y-3 text-base leading-7 text-cyan-50">
                 <p>
-                  <strong>Jedna rezervácia</strong> je pri zmeškanom prestupe kľúčová.
+                  <strong>Áno, niekedy áno.</strong> Zmeškaný prestup mimo EÚ ešte automaticky
+                  nevylučuje nárok.
                 </p>
                 <p>
-                  Ak boli oba lety kúpené spolu a do konečnej destinácie dorazíte <strong>o viac než 3 hodiny neskôr</strong>,
-                  kompenzácia môže byť reálna.
+                  Pri ceste začínajúcej v <strong>EÚ</strong> môže byť postavenie pasažiera stále
+                  veľmi silné, aj keď samotný prestup prebehol mimo Únie.
                 </p>
                 <p>
-                  Pri dvoch samostatných letenkách býva pozícia pasažiera oveľa slabšia, pretože
-                  aerolinka zvyčajne nezodpovedá za nadväzujúci samostatný let.
+                  Pri ceste z <strong>non-EU krajiny do EÚ</strong> už býva kľúčové, či ide o
+                  <strong> EU aerolinku</strong> a ktoré segmenty sa do právnej logiky vlastne rátajú.
                 </p>
               </div>
             </Card>
@@ -195,25 +204,27 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Zmeškali ste prestup a neviete, či ide o reálny nárok?"
-            description="ClaimWinger vie pomôcť overiť, či boli lety v jednej rezervácii, či sa na cestu vzťahuje EU261 a aký bol skutočný dopad na konečný cieľ."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=missed_connection"
+            title="Zmeškali ste prestup mimo EÚ a neviete, či ešte platí EU261?"
+            description="ClaimWinger vie rýchlo preveriť, či je váš prípad stále v rozsahu EU261, alebo či ho oslabuje smer cesty, non-EU segmenty alebo oddelené rezervácie."
+            ctaHref="https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=missed_connection_outside_eu"
             ctaLabel="Preveriť zmeškaný prestup"
-            loadingLabel="Načítava sa formulár ClaimWinger..."
-            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_missed_connection_embed"
+            loadingLabel="Načítava sa formulár pre meškajúci let..."
+            loadingDescription="O chvíľu sa zobrazí slovenský formulár ClaimWinger na preverenie prípadu."
+            placement="sk_blog_missed_connection_outside_eu_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy nárok najčastejšie vzniká
+              Kedy býva pozícia pasažiera najsilnejšia
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
+                "cesta odlietala z EÚ",
                 "lety boli v jednej rezervácii",
-                "na cestu sa vzťahuje EU261",
-                "do konečnej destinácie dorazíte s meškaním viac než 3 hodiny",
-                "meškanie nespôsobili mimoriadne okolnosti",
+                "do konečnej destinácie ste prišli s veľkým meškaním",
+                "prípad neoslabujú mimoriadne okolnosti",
+                "viete ukázať celý itinerár od prvého do posledného segmentu",
+                "je jasné, kto bol operujúci dopravca na rozhodujúcich úsekoch",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -227,124 +238,117 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Čo je pri zmeškanom prestupe najdôležitejšie
+              Tri najčastejšie scenáre
             </h2>
             <div className="grid gap-4">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <Plane className="mb-3 h-6 w-6 text-cyan-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Cesta z EÚ, prestup mimo EÚ, jedna rezervácia
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Toto býva pre pasažiera silnejší variant. Ak cesta začínala v EÚ a zmeškaný prestup
+                  mimo EÚ vás posunul v konečnej destinácii o viac než 3 hodiny, nárok môže byť reálny.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <AlertCircle className="mb-3 h-6 w-6 text-cyan-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Cesta z non-EU krajiny do EÚ
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Tu býva dôležité, či ide o <strong>EU aerolinku</strong>. Nie každý segment mimo EÚ
+                  sa posudzuje rovnako a práve to mení silu prípadu.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <Clock className="mb-3 h-6 w-6 text-cyan-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Samostatné letenky mimo EÚ
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak ste si spojili dva oddelené lístky, prípad býva oveľa slabší. Aerolinka zvyčajne
+                  nezodpovedá za to, že ste nestihli ďalší, samostatne kúpený let.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Čo je pri tomto edge case najdôležitejšie
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Miesto prestupu nie je všetko
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  To, že prestup bol mimo EÚ, ešte samo o sebe nárok neruší. Oveľa dôležitejší je
+                  celkový rámec cesty.
+                </p>
+              </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
                   Počíta sa konečná destinácia
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Oficiálne pravidlá EÚ pozerajú na meškanie pri príchode do konečného cieľa, nie len
-                  na to, že ste fyzicky nestihli druhý let.
+                  Ak sa prípad do EU261 zmestí, kľúčový býva dopad na konečný cieľ, nie len samotné
+                  zlyhanie prestupu na medziletisku.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Jedna rezervácia mení celý prípad
+                  Operujúci dopravca mení výsledok
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sú lety kúpené spolu, cesta sa posudzuje ako jeden celok. Pri dvoch oddelených
-                  rezerváciách si aerolinky zvyčajne nenesú zodpovednosť za zlyhaný prestup.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Nie každý zmeškaný prestup znamená výplatu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sa do cieľa dostanete bez veľkého meškania alebo ak išlo o mimoriadne okolnosti,
-                  samotný zmeškaný prestup ešte nemusí viesť ku kompenzácii.
+                  Pri itinerároch mimo EÚ býva veľmi dôležité, ktorý dopravca let skutočne operoval,
+                  nie len čo bolo napísané na marketingovom kóde.
                 </p>
               </Card>
             </div>
           </section>
 
           <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Dva typické scenáre
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-green-200 p-6 dark:border-green-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Silnejší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Bratislava → Viedeň → New York v jednej rezervácii. Prvý let mešká, prestup padne
-                  a do New Yorku prídete o 6 hodín neskôr. To je typický prípad, kde sa nárok môže
-                  reálne otvoriť.
-                </p>
-              </Card>
-              <Card className="border-red-200 p-6 dark:border-red-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Slabší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Prvý let a druhý let boli kúpené osobitne alebo ste si skladali self-transfer sami.
-                  Tu býva zodpovednosť aerolinky za zmeškaný ďalší let podstatne slabšia.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Koľko môžete dostať
-            </h2>
-            <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Do 1 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">250 €</p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                  1 500–3 500 km alebo dlhší intra-EÚ let
-                </p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">400 €</p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Nad 3 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">600 €</p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
+            <Card className="border-cyan-200 bg-cyan-50 p-8 dark:border-cyan-800 dark:bg-cyan-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Neviete, či išlo o jednu rezerváciu alebo o slabší self-transfer prípad?
+                Chcete si nárok preveriť hneď?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv preveriť, či sa na váš prestup pozerá právo ako na jeden celok
-                alebo ako na dva oddelené lety. To často rozhodne viac než samotné prvé meškanie.
+                Pri zmeškanom prestupe mimo EÚ bývajú rozhodujúce detaily itinerára. ClaimWinger vie
+                rýchlo oddeliť silný prípad s jednou rezerváciou od slabšieho scenára s oddelenými
+                letenkami alebo mimo rozsahu EU261.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button asChild size="lg" className="bg-cyan-600 hover:bg-cyan-700">
                   <a
                     href={delayedFlightHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_missed_connection_final_cta_delay", delayedFlightHref)
+                      trackClaimClick(
+                        "sk_missed_connection_outside_eu_final_cta_delay",
+                        delayedFlightHref
+                      )
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť zmeškaný prestup
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a
-                    href={cancelledFlightHref}
+                    href={claimWingerHomeHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_missed_connection_final_cta_cancelled",
-                        cancelledFlightHref
+                        "sk_missed_connection_outside_eu_final_cta_home",
+                        claimWingerHomeHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Otvoriť ClaimWinger Slovensko
                   </a>
                 </Button>
               </div>
@@ -358,31 +362,20 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Platí odškodnenie pri prestupe?
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Širší článok o prestupných letoch, jednej rezervácii a konečnej destinácii.
-                </p>
-                <Link
-                  href="/sk/blog/plati-odskodnenie-pri-prestupe"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o prestupe
-                </Link>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prakticky preveriť, či zmeškaný prestup vytvára reálny nárok.
+                  Ak chcete rýchlo preveriť konkrétnu trasu, operujúceho dopravcu a rozsah EU261.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_missed_connection_related_home", claimWingerHomeHref)
+                    trackClaimClick(
+                      "sk_missed_connection_outside_eu_related_home",
+                      claimWingerHomeHref
+                    )
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
@@ -391,16 +384,30 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Koľko dostanem za zrušený let?
+                  Môžem žiadať odškodnenie za zmeškaný prestup?
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak zmeškaný prestup vznikol po zmene plánu alebo reroutingu, tu je logika súm.
+                  Ak chcete najprv širší základ a logiku jednej rezervácie bez špecifického fokusu mimo EÚ.
                 </p>
                 <Link
-                  href="/sk/blog/kolko-dostanem-za-zruseny-let"
+                  href="/sk/blog/zmeskany-prestup-kompenzacia"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o sume kompenzácie
+                  Prejsť na všeobecný článok
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Viedeň–Bangkok (EU aerolinka)
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Užitočné, ak riešite long-haul mimo EÚ a rolu európskeho dopravcu na trase.
+                </p>
+                <Link
+                  href="/sk/blog/vieden-bangkok-meskanie-letu-eu-aerolinka"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na long-haul článok
                 </Link>
               </Card>
             </div>

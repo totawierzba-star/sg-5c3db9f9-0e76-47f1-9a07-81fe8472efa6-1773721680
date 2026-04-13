@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileText } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock, Euro, FileText } from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
 import { LayoutSk } from "@/components/LayoutSk";
@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zamietnuta-reklamacia-co-robit";
+const articleUrl = "https://problemlot.com/sk/blog/swiss-odskodnenie";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=swiss_compensation";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=swiss_compensation";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=swiss_compensation";
 
 const faqItems = [
   {
-    question: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+    question: "Mám pri lete SWISS nárok na odškodnenie?",
     answer:
-      "Najprv si odložte celé zamietnutie a zistite, na akom dôvode stojí. Nie každé zamietnutie je automaticky správne. Ak s odpoveďou nesúhlasíte, ďalším krokom býva doplnenie argumentov, sťažnosť na príslušný národný orgán alebo ďalšia eskalácia prípadu.",
+      "Často áno, ak let patrí do rozsahu pravidiel 261/2004, ak ste prišli do konečnej destinácie s meškaním 3 hodiny a viac, ak bol let zrušený za podmienok nariadenia alebo ak iný problém spadá do rozsahu pravidiel. Výška kompenzácie býva typicky 250 €, 400 € alebo 600 € podľa trasy a okolností.",
   },
   {
-    question: "Stačí, že aerolínka napíše „mimoriadne okolnosti“?",
+    question: "Je SWISS aerolinka z EÚ?",
     answer:
-      "Nie. Podľa pravidiel EÚ nestačí len použiť túto frázu. Aerolínka musí vedieť preukázať, že išlo o mimoriadne okolnosti a že sa ich následkom nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení.",
+      "Nie. SWISS je švajčiarsky dopravca. Pravidlá 261/2004 sa však uplatňujú aj na lety do a zo Švajčiarska, takže pri SWISS môže byť ochrana pasažiera stále veľmi silná.",
   },
   {
-    question: "Má zmysel pokračovať aj po zamietnutí?",
+    question: "Koľko môžem dostať od SWISS?",
     answer:
-      "Často áno. Zamietnutie ešte neznamená, že nárok neexistuje. Dôležité je, či je dôvod odmietnutia vecne presný a či zodpovedá pravidlám EU261 aj faktom z konkrétneho letu.",
+      "Pri kratších letoch ide často o 250 €, pri stredných o 400 € a pri dlhých letoch nad 3 500 km často o 600 €, ak sú splnené podmienky pravidiel 261/2004 a nejde o mimoriadne okolnosti.",
   },
   {
-    question: "Kedy môže mať aerolínka naozaj pravdu?",
+    question: "Počíta sa meškanie v odlete alebo v príchode?",
     answer:
-      "Napríklad ak let nespadá pod EU261, omeškanie v cieli nebolo dostatočné, alebo ak aerolínka preukáže skutočné mimoriadne okolnosti. Preto má zmysel najprv posúdiť dôvod odmietnutia, nie reagovať len emóciou.",
+      "Pri kompenzácii sa kľúčovo sleduje meškanie pri príchode do konečnej destinácie, nie len to, o koľko neskôr lietadlo odletelo.",
   },
 ];
 
@@ -47,12 +47,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZamietnutaReklamaciaCoRobitPage() {
+export default function SwissOdskodneniePage() {
   return (
     <LayoutSk>
       <SEO
-        title="Čo robiť, keď aerolínka zamietne reklamáciu? Nie každá zamietavá odpoveď je konečná"
-        description="Dostali ste zamietnutie reklamácie za let? Vysvetľujeme, ako čítať dôvod odmietnutia, kedy môže mať aerolínka pravdu a kedy má zmysel ísť ďalej."
+        title="SWISS odškodnenie: kedy vzniká nárok a čo je dôležité pri letoch do Švajčiarska"
+        description="Meškal vám, zrušili alebo výrazne presunuli let SWISS? Zistite, kedy vzniká nárok na odškodnenie, koľko môžete dostať a prečo je pri SWISS dôležitý švajčiarsky kontext."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +63,9 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+            headline: "SWISS odškodnenie: kedy vzniká nárok a čo je dôležité pri letoch do Švajčiarska",
             description:
-              "Praktický návod, čo robiť po zamietnutí reklamácie, ako čítať dôvod odmietnutia a kedy má zmysel pokračovať ďalej.",
+              "Praktický sprievodca pre cestujúcich pri problémoch s letom SWISS vrátane výšky nároku, pravidiel 261/2004 a významu toho, že ide o švajčiarskeho dopravcu.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +127,7 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+                name: "SWISS odškodnenie",
                 item: articleUrl,
               },
             ],
@@ -146,20 +146,22 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Čo robiť, keď aerolínka zamietne reklamáciu?</span>
+            <span>SWISS odškodnenie</span>
           </div>
 
           <header className="mb-10">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
-              Praktický plán po zamietavej odpovedi
+              Airline content pre SWISS
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Čo robiť, keď aerolínka zamietne reklamáciu?
+              SWISS odškodnenie: kedy vzniká nárok?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: zamietnutie ešte nemusí znamenať koniec. Dôležité je zistiť,
-              <strong> prečo</strong> bola reklamácia odmietnutá, či je dôvod naozaj v súlade s
-              pravidlami EU261 a či má zmysel pokračovať ďalej.
+              Ak ste leteli s <strong>SWISS</strong> a nastal problém, odpoveď býva často priaznivá.
+              Pri meškaní, zrušení alebo inom relevantnom narušení v rozsahu pravidiel
+              <strong> 261/2004</strong> môže vzniknúť nárok na kompenzáciu. Pri SWISS je však dôležité
+              dobre rozumieť tomu, že ide o <strong>švajčiarskeho dopravcu</strong>, nie o aerolinku
+              z členského štátu EÚ.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -179,16 +181,18 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
               <div className="space-y-3 text-base leading-7 text-red-50">
                 <p>
-                  <strong>Nie každé zamietnutie je správne.</strong>
+                  <strong>Áno, často áno.</strong> SWISS nie je dopravca z členského štátu EÚ, ale
+                  oficiálne pravidlá výslovne počítajú s tým, že ochrana sa uplatňuje aj pri letoch
+                  do a zo <strong>Švajčiarska</strong>.
                 </p>
                 <p>
-                  Ak aerolínka tvrdí, že nárok nevznikol, treba najprv pozrieť, či ide o problém
-                  rozsahu EU261, výšky meškania v cieli, typu rezervácie alebo o tvrdené
-                  mimoriadne okolnosti.
+                  Pri kratších letoch býva typicky <strong>250 €</strong>, pri stredných
+                  <strong> 400 €</strong> a pri dlhých letoch nad 3 500 km často
+                  <strong> 600 €</strong>, ak sú splnené podmienky pravidiel a nejde o mimoriadne okolnosti.
                 </p>
                 <p>
-                  Ak s dôvodom nesúhlasíte, ďalšími krokmi môžu byť doplnenie argumentácie,
-                  sťažnosť príslušnému orgánu alebo ďalšia eskalácia prípadu.
+                  Kľúčové je hlavne to, či let patrí do rozsahu 261/2004, aké bolo meškanie pri prílete
+                  do konečnej destinácie a či SWISS naozaj vie preukázať mimoriadne okolnosti.
                 </p>
               </div>
             </Card>
@@ -196,25 +200,86 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Dostali ste zamietavú odpoveď od aerolinky?"
-            description="ClaimWinger vie pomôcť odlíšiť, či je odmietnutie vecne silné, alebo či aerolínka len použila štandardnú zamietaciu formulku bez dostatočného základu."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=rejected_claim"
-            ctaLabel="Preveriť zamietnutú reklamáciu"
+            title="Riešite meškanie alebo zrušenie letu SWISS?"
+            description="ClaimWinger vie rýchlo preveriť, či ide o silný nárok podľa pravidiel 261/2004, alebo o zložitejší prípad, kde bude dôležitý švajčiarsky kontext, operujúci dopravca, jedna rezervácia a výsledok v konečnej destinácii."
+            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=swiss_compensation"
+            ctaLabel="Preveriť nárok s ClaimWinger"
             loadingLabel="Načítava sa formulár ClaimWinger..."
-            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_rejected_claim_embed"
+            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie nároku."
+            placement="sk_blog_swiss_compensation_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 1: čítajte dôvod odmietnutia presne
+              Prečo je pri SWISS dôležité správne čítať švajčiarsky kontext
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Švajčiarsko je výslovne zahrnuté
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Oficiálne zdroje EÚ aj švajčiarskeho úradu hovoria, že pravidlá sa uplatňujú aj na
+                  lety do a zo Švajčiarska. To je pri SWISS kľúčové.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  SWISS nie je aerolinka z EÚ
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  To neznamená, že ochrana je slabá. Znamená to len, že pri SWISS treba byť presný v
+                  tom, prečo sa pravidlá uplatňujú a z akého dôvodu je trasa chránená.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
+              <Euro className="h-8 w-8 text-red-600" />
+              Koľko môžete dostať
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card className="border-green-200 p-6 dark:border-green-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  250 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri kratších letoch, často do 1 500 km, ak sú splnené podmienky pravidiel.
+                </p>
+              </Card>
+              <Card className="border-amber-200 p-6 dark:border-amber-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  400 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri stredných trasách, typicky v rámci širšej európskej a regionálnej siete.
+                </p>
+              </Card>
+              <Card className="border-blue-200 p-6 dark:border-blue-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  600 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri dlhých letoch nad 3 500 km, ak ide o silný prípad bez mimoriadnych okolností.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Kedy býva nárok najsilnejší
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "aerolínka tvrdí, že išlo o mimoriadne okolnosti",
-                "aerolínka tvrdí, že meškanie nebolo dostatočne dlhé",
-                "aerolínka tvrdí, že let nespadá pod EU261",
-                "aerolínka tvrdí, že ste neprišli včas na check-in alebo nástup na palubu",
+                "do konečnej destinácie ste prišli s meškaním aspoň 3 hodiny",
+                "alebo bol let zrušený za podmienok, ktoré zakladajú nárok",
+                "máte rezerváciu, číslo letu a komunikáciu od SWISS",
+                "SWISS nevie presvedčivo doložiť mimoriadne okolnosti",
+                "je jasné, prečo sa na trasu vzťahujú pravidlá 261/2004",
+                "na let ste sa dostavili riadne a včas",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -228,55 +293,34 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              „Mimoriadne okolnosti“ nie sú kúzelné slovo
-            </h2>
-            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
-              <p>
-                Podľa článku 5 ods. 3 nariadenia EU261 nestačí, aby aerolínka len napísala, že išlo
-                o <strong>mimoriadne okolnosti</strong>. Aby sa zbavila povinnosti platiť kompenzáciu,
-                musí vedieť ukázať dve veci:
-              </p>
-              <p>
-                Po prvé, že príčina naozaj spadala do mimoriadnych okolností. Po druhé, že sa následkom
-                tejto udalosti <strong>nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení</strong>.
-              </p>
-              <p>
-                Preto je rozumné pýtať si presnejší dôvod odmietnutia, nie len všeobecnú frázu z
-                automatickej odpovede.
-              </p>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 2: porovnajte zamietnutie s faktami vášho letu
+              Čo pri SWISS najčastejšie komplikuje posúdenie
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri meškaní
+                  Prestup cez Zürich alebo Ženevu
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pozerajte sa na meškanie v <strong>konečnej destinácii</strong>, nie len na odlet z
-                  prvého letiska. Pri prestupe to býva rozhodujúci detail.
+                  Pri SWISS býva veľmi častý scenár, že Zürich alebo Ženeva sú len prestupné body. V
+                  takom prípade môže byť rozhodujúca až konečná destinácia celej rezervácie.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri zrušení
+                  Švajčiarsko nie je EÚ
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Sledujte, kedy vás aerolínka informovala a aký rerouting ponúkla. Samotné slovo
-                  „zrušenie“ ešte nehovorí všetko o vzniku kompenzácie.
+                  Práve tento detail býva najčastejším zdrojom zmätku. Namiesto rýchleho predpokladu
+                  treba presne overiť, ako sa pravidlá uplatnia na konkrétnu trasu.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri prestupe alebo dvoch letenkách
+                  Mimoriadne okolnosti
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Skontrolujte, či išlo o jednu rezerváciu alebo o dva samostatné tikety. To často
-                  mení celý právny obraz prípadu.
+                  Nie každé tvrdenie o počasí, riadení letovej prevádzky alebo bezpečnostnom probléme
+                  automaticky vylučuje nárok. Dôležité je, či ho dopravca vie skutočne preukázať.
                 </p>
               </Card>
             </div>
@@ -284,54 +328,17 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 3: ak s odmietnutím nesúhlasíte, choďte ďalej systematicky
-            </h2>
-            <div className="grid gap-4">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  1. Uložte si celé zamietnutie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Potrebujete mať presný text odpovede, dátum, číslo prípadu a všetky prílohy.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  2. Doplňte argumenty alebo žiadajte spresnenie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je dôvod odmietnutia príliš všeobecný, má zmysel žiadať konkrétnejšie vysvetlenie
-                  alebo doplniť chýbajúce podklady.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  3. Zvážte ďalšiu eskaláciu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je odpoveď nepresvedčivá, ďalším krokom môže byť národný orgán, ADR alebo ďalšia
-                  právna cesta podľa povahy prípadu.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy môže mať aerolínka naozaj pravdu
+              Čo hovoria oficiálne zdroje
             </h2>
             <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
               <p>
-                Férová odpoveď je, že nie každé zamietnutie je len výhovorka. Sú prípady, kde nárok
-                naozaj nemusí vzniknúť.
+                Your Europe výslovne uvádza, že pravidlá sa uplatňujú aj na lety do a zo
+                <strong> Švajčiarska</strong>. Švajčiarsky Federálny úrad pre civilné letectvo zároveň
+                potvrdzuje, že nariadenie 261/2004 platí aj v švajčiarskom kontexte.
               </p>
               <p>
-                Typicky ide o situácie, keď let nespadá pod EU261, meškanie v cieli nedosiahlo potrebný
-                prah, alebo keď aerolínka naozaj preukáže mimoriadne okolnosti v zmysle pravidiel.
-              </p>
-              <p>
-                Práve preto je lepšie nepostaviť celú reakciu len na rozčarovaní z odmietnutia, ale na
-                reálnom posúdení dôvodu.
+                Pri SWISS je preto dôležité nevyhodnocovať prípad len podľa toho, že Švajčiarsko nie
+                je členom EÚ. V praxi môže byť nárok stále veľmi silný.
               </p>
             </div>
           </section>
@@ -339,11 +346,12 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           <section className="mb-12">
             <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Chcete zistiť, či je zamietnutie vecne silné?
+                Chcete si nárok preveriť hneď?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv rozlíšiť, či ide o spor pri meškajúcom lete, zrušenom lete alebo
-                o širší problém s argumentáciou aerolinky. Od toho sa odvíja aj ďalší postup.
+                Pri SWISS má veľký zmysel rýchlo oddeliť silný prípad 250 €, 400 € alebo 600 € od
+                zložitejšej situácie so švajčiarskym kontextom, partnerom, zdieľaným kódom alebo
+                tvrdenými mimoriadnymi okolnosťami.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -352,10 +360,10 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_rejected_claim_final_cta_delay", delayedFlightHref)
+                      trackClaimClick("sk_swiss_compensation_final_cta_delay", delayedFlightHref)
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť meškajúci let
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -366,12 +374,12 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_rejected_claim_final_cta_cancelled",
+                        "sk_swiss_compensation_final_cta_cancelled",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Riešim skôr zrušený let
                   </a>
                 </Button>
               </div>
@@ -385,31 +393,17 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Čo robiť, keď aerolínka neodpovedá
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je problém skôr v tichu aerolinky než v zamietnutí, riešenie býva trochu iné.
-                </p>
-                <Link
-                  href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o neodpovedaní
-                </Link>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prípad preveriť bez toho, aby ste sa spoliehali len na prvé zamietnutie.
+                  Ak chcete prípad preveriť prakticky podľa konkrétnych okolností letu.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_rejected_claim_related_home", claimWingerHomeHref)
+                    trackClaimClick("sk_swiss_compensation_related_home", claimWingerHomeHref)
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
@@ -418,16 +412,30 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Voucher, refundácia a kompenzácia
+                  Môžem žiadať odškodnenie pri prestupe?
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pri odmietnutí sa často miešajú rôzne druhy plnenia, a preto je dobré ich najprv oddeliť.
+                  Ak SWISS bol len časťou jednej cesty a problém sa prejavil ďalej v itinerári.
                 </p>
                 <Link
-                  href="/sk/blog/mozem-ziadat-odskodnenie-ak-som-prijal-voucher"
+                  href="/sk/blog/plati-odskodnenie-pri-prestupe"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o voucheri
+                  Prejsť na článok o prestupe
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Viedeň – Frankfurt meškanie letu
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak riešite užší kontext hubového cestovania v strednej Európe.
+                </p>
+                <Link
+                  href="/sk/blog/vieden-frankfurt-meskanie-letu"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na route článok
                 </Link>
               </Card>
             </div>

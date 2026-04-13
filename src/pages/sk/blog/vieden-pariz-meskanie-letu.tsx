@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileText } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock, Euro, FileText } from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
 import { LayoutSk } from "@/components/LayoutSk";
@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zamietnuta-reklamacia-co-robit";
+const articleUrl = "https://problemlot.com/sk/blog/vieden-pariz-meskanie-letu";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=vienna_paris_delay";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=vienna_paris_delay";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=vienna_paris_delay";
 
 const faqItems = [
   {
-    question: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+    question: "Mám pri lete Viedeň – Paríž nárok na odškodnenie za meškanie?",
     answer:
-      "Najprv si odložte celé zamietnutie a zistite, na akom dôvode stojí. Nie každé zamietnutie je automaticky správne. Ak s odpoveďou nesúhlasíte, ďalším krokom býva doplnenie argumentov, sťažnosť na príslušný národný orgán alebo ďalšia eskalácia prípadu.",
+      "Často áno, ak ste do konečnej destinácie prišli s meškaním 3 hodiny a viac, let patrí do rozsahu EU261 a aerolínka nepreukáže mimoriadne okolnosti. Pri bežnom priamom lete z Viedne do Paríža býva typická kompenzácia 250 €.",
   },
   {
-    question: "Stačí, že aerolínka napíše „mimoriadne okolnosti“?",
+    question: "Koľko môžem dostať pri meškaní na tejto trase?",
     answer:
-      "Nie. Podľa pravidiel EÚ nestačí len použiť túto frázu. Aerolínka musí vedieť preukázať, že išlo o mimoriadne okolnosti a že sa ich následkom nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení.",
+      "Pri samostatnom lete Viedeň – Paríž ide zvyčajne o pásmo do 1 500 km, takže kompenzácia býva 250 €. Ak však Paríž nebol konečný cieľ a šlo o jednu rezerváciu ďalej, rozhodovať môže až konečná destinácia celej cesty.",
   },
   {
-    question: "Má zmysel pokračovať aj po zamietnutí?",
+    question: "Počíta sa meškanie v odlete alebo v príchode?",
     answer:
-      "Často áno. Zamietnutie ešte neznamená, že nárok neexistuje. Dôležité je, či je dôvod odmietnutia vecne presný a či zodpovedá pravidlám EU261 aj faktom z konkrétneho letu.",
+      "Pri kompenzácii sa kľúčovo sleduje meškanie pri príchode do konečnej destinácie, nie len to, o koľko neskôr lietadlo odletelo z Viedne.",
   },
   {
-    question: "Kedy môže mať aerolínka naozaj pravdu?",
+    question: "Čo ak aerolínka tvrdí technický alebo prevádzkový problém?",
     answer:
-      "Napríklad ak let nespadá pod EU261, omeškanie v cieli nebolo dostatočné, alebo ak aerolínka preukáže skutočné mimoriadne okolnosti. Preto má zmysel najprv posúdiť dôvod odmietnutia, nie reagovať len emóciou.",
+      "Nie každý technický alebo prevádzkový problém automaticky znamená mimoriadne okolnosti. Aerolínka musí svoj dôvod vedieť preukázať a nestačí len všeobecné tvrdenie bez podkladov.",
   },
 ];
 
@@ -47,12 +47,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZamietnutaReklamaciaCoRobitPage() {
+export default function ViedenParizMeskanieLetuPage() {
   return (
     <LayoutSk>
       <SEO
-        title="Čo robiť, keď aerolínka zamietne reklamáciu? Nie každá zamietavá odpoveď je konečná"
-        description="Dostali ste zamietnutie reklamácie za let? Vysvetľujeme, ako čítať dôvod odmietnutia, kedy môže mať aerolínka pravdu a kedy má zmysel ísť ďalej."
+        title="Viedeň – Paríž meškanie letu: odškodnenie, výška nároku a čo rozhoduje"
+        description="Meškal vám let z Viedne do Paríža? Zistite, kedy vzniká nárok na odškodnenie, prečo býva na tejto trase často 250 € a prečo rozhoduje meškanie v cieli."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +63,9 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+            headline: "Viedeň – Paríž meškanie letu: odškodnenie, výška nároku a čo rozhoduje",
             description:
-              "Praktický návod, čo robiť po zamietnutí reklamácie, ako čítať dôvod odmietnutia a kedy má zmysel pokračovať ďalej.",
+              "Praktický sprievodca pre cestujúcich pri meškaní letu z Viedne do Paríža vrátane výšky nároku a pravidiel EU261.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +127,7 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+                name: "Viedeň – Paríž meškanie letu",
                 item: articleUrl,
               },
             ],
@@ -135,7 +135,7 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-red-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -146,20 +146,21 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Čo robiť, keď aerolínka zamietne reklamáciu?</span>
+            <span>Viedeň – Paríž meškanie letu</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
-              Praktický plán po zamietavej odpovedi
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-2 text-sm font-medium text-rose-700 dark:bg-rose-900/30 dark:text-rose-300">
+              Route content pre VIE a Paríž
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Čo robiť, keď aerolínka zamietne reklamáciu?
+              Viedeň – Paríž meškanie letu: mám nárok na odškodnenie?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: zamietnutie ešte nemusí znamenať koniec. Dôležité je zistiť,
-              <strong> prečo</strong> bola reklamácia odmietnutá, či je dôvod naozaj v súlade s
-              pravidlami EU261 a či má zmysel pokračovať ďalej.
+              Pri bežnom lete z <strong>Viedne do Paríža</strong> býva odpoveď často priaznivá: ak
+              prídete do cieľa s meškaním aspoň <strong>3 hodiny</strong>, let je v rozsahu
+              <strong> EU261</strong> a aerolínka nepreukáže mimoriadne okolnosti, nárok na
+              kompenzáciu je reálny. Pri tejto trase ide spravidla o pásmo <strong>250 €</strong>.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -169,26 +170,26 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
-                <span>Čítanie: 10 minút</span>
+                <span>Čítanie: 9 minút</span>
               </div>
             </div>
           </header>
 
           <section className="mb-10">
-            <Card className="border-red-200 bg-gradient-to-br from-red-600 to-rose-700 p-8 text-white shadow-xl dark:border-red-800">
+            <Card className="border-rose-200 bg-gradient-to-br from-rose-600 to-pink-700 p-8 text-white shadow-xl dark:border-rose-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-red-50">
+              <div className="space-y-3 text-base leading-7 text-rose-50">
                 <p>
-                  <strong>Nie každé zamietnutie je správne.</strong>
+                  <strong>Áno, často áno.</strong> Let z Viedne do Paríža odlieta aj pristáva v EÚ,
+                  takže ochrana podľa EU261 je pri tejto trase veľmi priamočiara.
                 </p>
                 <p>
-                  Ak aerolínka tvrdí, že nárok nevznikol, treba najprv pozrieť, či ide o problém
-                  rozsahu EU261, výšky meškania v cieli, typu rezervácie alebo o tvrdené
-                  mimoriadne okolnosti.
+                  Pri samostatnom lete na tejto trase býva typická kompenzácia <strong>250 €</strong>,
+                  ak meškanie v cieli dosiahne aspoň 3 hodiny.
                 </p>
                 <p>
-                  Ak s dôvodom nesúhlasíte, ďalšími krokmi môžu byť doplnenie argumentácie,
-                  sťažnosť príslušnému orgánu alebo ďalšia eskalácia prípadu.
+                  Ak však Paríž nebol konečný cieľ, ale len prestup na jednej rezervácii, môže byť
+                  rozhodujúca až konečná destinácia celej cesty.
                 </p>
               </div>
             </Card>
@@ -196,25 +197,80 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Dostali ste zamietavú odpoveď od aerolinky?"
-            description="ClaimWinger vie pomôcť odlíšiť, či je odmietnutie vecne silné, alebo či aerolínka len použila štandardnú zamietaciu formulku bez dostatočného základu."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=rejected_claim"
-            ctaLabel="Preveriť zamietnutú reklamáciu"
+            title="Meškal vám let Viedeň – Paríž?"
+            description="ClaimWinger vie rýchlo preveriť, či ide o jasný nárok podľa EU261, alebo o spornejší prípad, kde bude dôležitý dôvod meškania a sila dokumentov."
+            ctaHref="https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=vienna_paris_delay"
+            ctaLabel="Preveriť nárok za meškajúci let"
             loadingLabel="Načítava sa formulár ClaimWinger..."
-            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_rejected_claim_embed"
+            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie meškajúceho letu."
+            placement="sk_blog_vienna_paris_delay_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 1: čítajte dôvod odmietnutia presne
+              Prečo je táto trasa z pohľadu EU261 jednoduchšia
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Let v rámci EÚ
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Trasa Viedeň – Paríž je vnútroeurópska cesta, takže rozsah pravidiel EU261 tu býva
+                  zvyčajne oveľa menej sporný než pri letoch mimo EÚ alebo do tretích krajín.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Typické pásmo 250 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri bežnom priamom lete Viedeň – Paríž ide typicky o pásmo do 1 500 km, takže pri
+                  splnení podmienok ide najčastejšie o kompenzáciu 250 €.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
+              <Euro className="h-8 w-8 text-rose-600" />
+              Koľko môžete dostať
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Card className="border-green-200 p-6 dark:border-green-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  Priamy let Viedeň – Paríž
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak ste leteli point-to-point a prišli ste do Paríža s meškaním aspoň 3 hodiny,
+                  na tejto trase býva typická kompenzácia <strong>250 €</strong>.
+                </p>
+              </Card>
+              <Card className="border-amber-200 p-6 dark:border-amber-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  Let s prestupom na jednej rezervácii
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak Paríž nebol konečný cieľ a cesta pokračovala ďalej na jednej rezervácii,
+                  rozhodovať môže až vzdialenosť a meškanie v konečnej destinácii celej trasy.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Kedy býva nárok najsilnejší
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "aerolínka tvrdí, že išlo o mimoriadne okolnosti",
-                "aerolínka tvrdí, že meškanie nebolo dostatočne dlhé",
-                "aerolínka tvrdí, že let nespadá pod EU261",
-                "aerolínka tvrdí, že ste neprišli včas na check-in alebo nástup na palubu",
+                "do Paríža ste prišli s meškaním aspoň 3 hodiny",
+                "máte rezerváciu, potvrdenia a správy od aerolinky",
+                "let bol jeden samostatný úsek alebo súčasť jednej rezervácie",
+                "aerolínka nevie presvedčivo doložiť mimoriadne okolnosti",
+                "dôvod meškania vyzerá skôr prevádzkovo než mimoriadne",
+                "na let ste sa dostavili riadne a včas",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -228,55 +284,35 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              „Mimoriadne okolnosti“ nie sú kúzelné slovo
-            </h2>
-            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
-              <p>
-                Podľa článku 5 ods. 3 nariadenia EU261 nestačí, aby aerolínka len napísala, že išlo
-                o <strong>mimoriadne okolnosti</strong>. Aby sa zbavila povinnosti platiť kompenzáciu,
-                musí vedieť ukázať dve veci:
-              </p>
-              <p>
-                Po prvé, že príčina naozaj spadala do mimoriadnych okolností. Po druhé, že sa následkom
-                tejto udalosti <strong>nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení</strong>.
-              </p>
-              <p>
-                Preto je rozumné pýtať si presnejší dôvod odmietnutia, nie len všeobecnú frázu z
-                automatickej odpovede.
-              </p>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 2: porovnajte zamietnutie s faktami vášho letu
+              Čo tento typ prípadu najčastejšie komplikuje
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri meškaní
+                  Mimoriadne okolnosti
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pozerajte sa na meškanie v <strong>konečnej destinácii</strong>, nie len na odlet z
-                  prvého letiska. Pri prestupe to býva rozhodujúci detail.
+                  Ak aerolínka preukáže mimoriadne okolnosti, kompenzácia nemusí vzniknúť. Stále však
+                  môže zostať právo na starostlivosť, presmerovanie alebo refundáciu v iných typoch
+                  problému.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri zrušení
+                  Nesprávny bod merania meškania
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Sledujte, kedy vás aerolínka informovala a aký rerouting ponúkla. Samotné slovo
-                  „zrušenie“ ešte nehovorí všetko o vzniku kompenzácie.
+                  Pri kompenzácii nerozhoduje len meškanie odletu z Viedne. Kľúčovo sa pozerá na
+                  meškanie pri príchode do konečnej destinácie.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri prestupe alebo dvoch letenkách
+                  Oddelené rezervácie
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Skontrolujte, či išlo o jednu rezerváciu alebo o dva samostatné tikety. To často
-                  mení celý právny obraz prípadu.
+                  Ak bol Paríž len prestupný bod a ďalší let ste mali na samostatnej letenke,
+                  situácia býva slabšia než pri jednej spoločnej rezervácii.
                 </p>
               </Card>
             </div>
@@ -284,54 +320,17 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 3: ak s odmietnutím nesúhlasíte, choďte ďalej systematicky
-            </h2>
-            <div className="grid gap-4">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  1. Uložte si celé zamietnutie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Potrebujete mať presný text odpovede, dátum, číslo prípadu a všetky prílohy.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  2. Doplňte argumenty alebo žiadajte spresnenie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je dôvod odmietnutia príliš všeobecný, má zmysel žiadať konkrétnejšie vysvetlenie
-                  alebo doplniť chýbajúce podklady.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  3. Zvážte ďalšiu eskaláciu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je odpoveď nepresvedčivá, ďalším krokom môže byť národný orgán, ADR alebo ďalšia
-                  právna cesta podľa povahy prípadu.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy môže mať aerolínka naozaj pravdu
+              Čo hovoria oficiálne zdroje EÚ
             </h2>
             <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
               <p>
-                Férová odpoveď je, že nie každé zamietnutie je len výhovorka. Sú prípady, kde nárok
-                naozaj nemusí vzniknúť.
+                Oficiálne pravidlá EÚ hovoria, že pri meškaní 3 hodiny a viac v konečnej destinácii
+                môže vzniknúť nárok na kompenzáciu, ak nejde o mimoriadne okolnosti. Pri letoch v
+                rámci EÚ je aplikácia týchto pravidiel spravidla veľmi priamočiara.
               </p>
               <p>
-                Typicky ide o situácie, keď let nespadá pod EU261, meškanie v cieli nedosiahlo potrebný
-                prah, alebo keď aerolínka naozaj preukáže mimoriadne okolnosti v zmysle pravidiel.
-              </p>
-              <p>
-                Práve preto je lepšie nepostaviť celú reakciu len na rozčarovaní z odmietnutia, ale na
-                reálnom posúdení dôvodu.
+                Pri trase Viedeň – Paríž je preto kľúčové najmä to, že ide o let v rámci EÚ, a ďalej
+                to, či išlo o jednoduchý priamy úsek alebo o časť širšej cesty na jednej rezervácii.
               </p>
             </div>
           </section>
@@ -339,11 +338,11 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           <section className="mb-12">
             <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Chcete zistiť, či je zamietnutie vecne silné?
+                Chcete si nárok preveriť hneď?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv rozlíšiť, či ide o spor pri meškajúcom lete, zrušenom lete alebo
-                o širší problém s argumentáciou aerolinky. Od toho sa odvíja aj ďalší postup.
+                Pri tejto trase má veľký zmysel rýchlo oddeliť bežný prípad 250 € od spornejšej
+                situácie s prestupom, zmenou trasy alebo tvrdenými mimoriadnymi okolnosťami.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -352,10 +351,10 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_rejected_claim_final_cta_delay", delayedFlightHref)
+                      trackClaimClick("sk_vienna_paris_delay_final_cta_delay", delayedFlightHref)
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť meškajúci let
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -366,12 +365,12 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_rejected_claim_final_cta_cancelled",
+                        "sk_vienna_paris_delay_final_cta_cancelled",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Riešim skôr zrušený let
                   </a>
                 </Button>
               </div>
@@ -385,16 +384,30 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Čo robiť, keď aerolínka neodpovedá
+                  Koľko dostanem za 3-hodinové meškanie letu?
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je problém skôr v tichu aerolinky než v zamietnutí, riešenie býva trochu iné.
+                  Ak chcete rýchlo pochopiť, ako sa mení výška kompenzácie podľa vzdialenosti.
                 </p>
                 <Link
-                  href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
+                  href="/sk/blog/kolko-dostanem-za-3-hodinove-meskanie-letu"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o neodpovedaní
+                  Prejsť na článok
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Platí odškodnenie pri prestupe?
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak Paríž nebol konečný cieľ a cesta pokračovala ďalej.
+                </p>
+                <Link
+                  href="/sk/blog/plati-odskodnenie-pri-prestupe"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na článok o prestupe
                 </Link>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
@@ -402,33 +415,19 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prípad preveriť bez toho, aby ste sa spoliehali len na prvé zamietnutie.
+                  Ak chcete prípad preveriť prakticky podľa konkrétnych okolností letu.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_rejected_claim_related_home", claimWingerHomeHref)
+                    trackClaimClick("sk_vienna_paris_delay_related_home", claimWingerHomeHref)
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
                   Otvoriť ClaimWinger Slovensko
                 </a>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Voucher, refundácia a kompenzácia
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pri odmietnutí sa často miešajú rôzne druhy plnenia, a preto je dobré ich najprv oddeliť.
-                </p>
-                <Link
-                  href="/sk/blog/mozem-ziadat-odskodnenie-ak-som-prijal-voucher"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o voucheri
-                </Link>
               </Card>
             </div>
           </section>

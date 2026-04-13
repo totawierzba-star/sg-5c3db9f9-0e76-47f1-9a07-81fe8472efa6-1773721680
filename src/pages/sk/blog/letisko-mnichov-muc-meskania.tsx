@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Clock, FileText } from "lucide-react";
+import {
+  AlertCircle,
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  FileText,
+  Plane,
+} from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
 import { LayoutSk } from "@/components/LayoutSk";
@@ -8,34 +15,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zmeskany-prestup-kompenzacia";
+const articleUrl = "https://problemlot.com/sk/blog/letisko-mnichov-muc-meskania";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=munich_airport_delays";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=munich_airport_delays";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=munich_airport_delays";
 
 const faqItems = [
   {
-    question: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+    question: "Mám pri meškaní na letisku Mníchov nárok na odškodnenie?",
     answer:
-      "Áno, často áno, ale hlavne vtedy, keď boli lety v jednej rezervácii, práva EU261 sa na cestu vzťahujú a do konečnej destinácie prídete s meškaním viac než 3 hodiny. Pri dvoch samostatných letenkách býva situácia oveľa slabšia.",
+      "Často áno, ale samotné letisko Mníchov nárok nevytvára. Kľúčové je, či let patrí do rozsahu EU261, aké bolo meškanie v konečnej destinácii a či aerolínka nepreukáže mimoriadne okolnosti.",
   },
   {
-    question: "Je najdôležitejšie, že som zmeškal druhý let?",
+    question: "Koľko môžem dostať pri probléme na letisku MUC?",
     answer:
-      "Nie. Rozhodujúci je hlavne dopad na príchod do konečnej destinácie. Samotné zmeškanie prestupu bez výrazného finálneho meškania ešte automaticky nezaručuje kompenzáciu.",
+      "Ak sa na váš let uplatní EU261, typické pásma bývajú 250 €, 400 € alebo 600 € podľa trasy a okolností. Rozhodujúca je vzdialenosť a výsledok cesty, nie len samotný kód letiska MUC.",
   },
   {
-    question: "Čo ak som mal dva samostatné lístky?",
+    question: "Počíta sa meškanie odletu z Mníchova alebo príchod do cieľa?",
     answer:
-      "Pri dvoch oddelených rezerváciách aerolinky zvyčajne nenesú zodpovednosť za to, že ste nestihli ďalší samostatne kúpený let. Práve preto je jedna rezervácia pri zmeškanom prestupe kľúčová.",
+      "Pri kompenzácii sa kľúčovo sleduje meškanie pri príchode do konečnej destinácie, nie len to, o koľko neskôr lietadlo odletelo z Mníchova.",
   },
   {
-    question: "Koľko môžem dostať za zmeškaný prestup?",
+    question: "Prečo je pri MUC taká dôležitá jedna rezervácia?",
     answer:
-      "Ak nárok vznikne, suma sa zvyčajne počíta podľa celkovej vzdialenosti a pravidiel EU261, teda typicky 250 €, 400 € alebo 600 € podľa konkrétneho prípadu.",
+      "Mníchov je veľký prestupný uzol. Ak bol let z MUC len jedným úsekom celej cesty na jednej rezervácii, rozhodovať môže až výsledok v konečnej destinácii celej trasy.",
   },
 ];
 
@@ -47,12 +54,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZmeskanyPrestupKompenzaciaPage() {
+export default function LetiskoMnichovMucMeskaniaPage() {
   return (
     <LayoutSk>
       <SEO
-        title="Môžem žiadať odškodnenie za zmeškaný prestup? Áno, ale jedna rezervácia je kľúčová"
-        description="Zmeškali ste prestup kvôli meškaniu prvého letu? Vysvetľujeme, kedy vzniká nárok na kompenzáciu, prečo rozhoduje jedna rezervácia a prečo sa počíta prílet do konečnej destinácie."
+        title="Letisko Mníchov (MUC) meškania: práva pasažiera, odškodnenie a čo rozhoduje"
+        description="Meškal vám, zrušili alebo výrazne presunuli let z letiska Mníchov (MUC)? Zistite, kedy vzniká nárok na odškodnenie, čo pri EU261 rozhoduje a prečo je pri MUC kľúčová konečná destinácia."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +70,10 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+            headline:
+              "Letisko Mníchov (MUC) meškania: práva pasažiera, odškodnenie a čo rozhoduje",
             description:
-              "Praktické vysvetlenie, kedy môže zmeškaný prestup viesť ku kompenzácii a prečo je rozhodujúca jedna rezervácia a meškanie do konečnej destinácie.",
+              "Praktický sprievodca pre cestujúcich pri meškaní alebo zrušení letu na letisku Mníchov vrátane významu konečnej destinácie, rozsahu EU261 a špecifík veľkého prestupného uzla.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +135,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+                name: "Letisko Mníchov (MUC) meškania",
                 item: articleUrl,
               },
             ],
@@ -146,20 +154,21 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Môžem žiadať odškodnenie za zmeškaný prestup?</span>
+            <span>Letisko Mníchov (MUC) meškania</span>
           </div>
 
           <header className="mb-10">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-              Praktická odpoveď pre zmeškaný prestup
+              Airport content pre Mníchov Franz Josef Strauss (MUC)
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Môžem žiadať odškodnenie za zmeškaný prestup?
+              Letisko Mníchov (MUC): čo robiť pri meškaní alebo zrušení letu?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: <strong>často áno</strong>, ale iba vtedy, keď ide o jednu
-              rezerváciu, na cestu sa vzťahuje EU261 a do konečnej destinácie prídete s veľkým
-              meškaním. Samotný fakt, že ste nestihli druhé lietadlo, ešte nestačí.
+              Ak riešite problém na <strong>letisku Mníchov (MUC)</strong>, dôležité je nepozerať
+              len na samotné letisko. Pri odškodnení podľa <strong>EU261</strong> rozhoduje hlavne to,
+              aká bola trasa, kto bol operujúci dopravca, aké bolo meškanie v konečnej destinácii a
+              či aerolínka vie preukázať mimoriadne okolnosti.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -175,19 +184,21 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           </header>
 
           <section className="mb-10">
-            <Card className="border-blue-200 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 text-white shadow-xl dark:border-blue-800">
+            <Card className="border-blue-200 bg-gradient-to-br from-blue-600 to-cyan-700 p-8 text-white shadow-xl dark:border-blue-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
               <div className="space-y-3 text-base leading-7 text-blue-50">
                 <p>
-                  <strong>Jedna rezervácia</strong> je pri zmeškanom prestupe kľúčová.
+                  <strong>Áno, často áno.</strong> Ak váš let z Mníchova meškal alebo bol zrušený,
+                  nárok na kompenzáciu môže vzniknúť. Samotné letisko MUC však nestačí. Rozhoduje
+                  najmä to, či let patrí do rozsahu EU261 a aké bolo meškanie v cieli.
                 </p>
                 <p>
-                  Ak boli oba lety kúpené spolu a do konečnej destinácie dorazíte <strong>o viac než 3 hodiny neskôr</strong>,
-                  kompenzácia môže byť reálna.
+                  Typické pásma bývajú <strong>250 €</strong>, <strong>400 €</strong> alebo
+                  <strong> 600 €</strong> podľa trasy a okolností.
                 </p>
                 <p>
-                  Pri dvoch samostatných letenkách býva pozícia pasažiera oveľa slabšia, pretože
-                  aerolinka zvyčajne nezodpovedá za nadväzujúci samostatný let.
+                  Pri letisku Mníchov býva mimoriadne dôležitá hubová logika. Veľká časť problémov
+                  sa netýka len jedného priameho letu, ale celej cesty cez MUC na jednej rezervácii.
                 </p>
               </div>
             </Card>
@@ -195,25 +206,65 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Zmeškali ste prestup a neviete, či ide o reálny nárok?"
-            description="ClaimWinger vie pomôcť overiť, či boli lety v jednej rezervácii, či sa na cestu vzťahuje EU261 a aký bol skutočný dopad na konečný cieľ."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=missed_connection"
-            ctaLabel="Preveriť zmeškaný prestup"
+            title="Riešite meškanie alebo zrušenie letu z Mníchova?"
+            description="ClaimWinger vie rýchlo preveriť, či ide o silný nárok podľa EU261, alebo o citlivejší prípad, kde bude rozhodovať konečná destinácia, operujúci dopravca a dôvod narušenia na MUC."
+            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=munich_airport_delays"
+            ctaLabel="Preveriť nárok s ClaimWinger"
             loadingLabel="Načítava sa formulár ClaimWinger..."
-            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_missed_connection_embed"
+            loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie nároku."
+            placement="sk_blog_munich_airport_delays_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy nárok najčastejšie vzniká
+              Čo je pri MUC najdôležitejšie pochopiť
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <Plane className="mb-3 h-6 w-6 text-blue-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Letisko nie je všetko
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  To, že problém vznikol v Mníchove, ešte samo o sebe neurčuje nárok. Rozhodujúca
+                  je právna logika celej cesty.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <Clock className="mb-3 h-6 w-6 text-blue-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Počíta sa cieľ
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri kompenzácii je kľúčové meškanie v konečnej destinácii, nie len odletová tabuľa
+                  na MUC.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <AlertCircle className="mb-3 h-6 w-6 text-blue-600" />
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Dôvod meškania
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Nie každé tvrdenie o prevádzke letiska alebo riadení letovej prevádzky automaticky
+                  ruší nárok. Dôležité je, čo vie dopravca skutočne preukázať.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Kedy býva nárok z Mníchova najsilnejší
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "lety boli v jednej rezervácii",
-                "na cestu sa vzťahuje EU261",
-                "do konečnej destinácie dorazíte s meškaním viac než 3 hodiny",
-                "meškanie nespôsobili mimoriadne okolnosti",
+                "let patrí do rozsahu EU261",
+                "do konečnej destinácie ste prišli s meškaním aspoň 3 hodiny",
+                "alebo bol let zrušený za podmienok, ktoré zakladajú nárok",
+                "máte rezerváciu, číslo letu a komunikáciu od aerolínky",
+                "je jasné, kto bol operujúci dopravca a čo bola konečná destinácia",
+                "na let ste sa dostavili riadne a včas",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -226,62 +277,36 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Čo je pri zmeškanom prestupe najdôležitejšie
+            <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
+              <Clock className="h-8 w-8 text-blue-600" />
+              Typické scenáre na MUC
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Počíta sa konečná destinácia
+                  Priamy let po Európe
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Oficiálne pravidlá EÚ pozerajú na meškanie pri príchode do konečného cieľa, nie len
-                  na to, že ste fyzicky nestihli druhý let.
+                  Aj z Mníchova sa riešia bežné priame lety. Ak je let v rozsahu EU261 a do cieľa
+                  prídete výrazne neskôr, nárok môže byť silný aj pri jednoduchom itinerári.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Jedna rezervácia mení celý prípad
+                  Veľký prestupný uzol
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sú lety kúpené spolu, cesta sa posudzuje ako jeden celok. Pri dvoch oddelených
-                  rezerváciách si aerolinky zvyčajne nenesú zodpovednosť za zlyhaný prestup.
+                  Pri MUC je veľmi časté, že letisko nie je konečným cieľom, ale len prestupným bodom.
+                  Vtedy často rozhoduje až výsledok celej cesty na jednej rezervácii.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Nie každý zmeškaný prestup znamená výplatu
+                  Lufthansa Group a partneri
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sa do cieľa dostanete bez veľkého meškania alebo ak išlo o mimoriadne okolnosti,
-                  samotný zmeškaný prestup ešte nemusí viesť ku kompenzácii.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Dva typické scenáre
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-green-200 p-6 dark:border-green-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Silnejší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Bratislava → Viedeň → New York v jednej rezervácii. Prvý let mešká, prestup padne
-                  a do New Yorku prídete o 6 hodín neskôr. To je typický prípad, kde sa nárok môže
-                  reálne otvoriť.
-                </p>
-              </Card>
-              <Card className="border-red-200 p-6 dark:border-red-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Slabší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Prvý let a druhý let boli kúpené osobitne alebo ste si skladali self-transfer sami.
-                  Tu býva zodpovednosť aerolinky za zmeškaný ďalší let podstatne slabšia.
+                  Pri Mníchove býva dôležité presne čítať, kto bol skutočne operujúcim dopravcom a či
+                  šlo o jednu rezerváciu v rámci širšej siete alebo o samostatné letenky.
                 </p>
               </Card>
             </div>
@@ -292,19 +317,29 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               Koľko môžete dostať
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Do 1 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">250 €</p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                  1 500–3 500 km alebo dlhší intra-EÚ let
+              <Card className="border-green-200 p-6 dark:border-green-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  250 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri kratších letoch, často do 1 500 km, ak sú splnené podmienky EU261.
                 </p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">400 €</p>
               </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Nad 3 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">600 €</p>
+              <Card className="border-amber-200 p-6 dark:border-amber-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  400 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri stredných trasách, typicky v rámci širšej európskej a regionálnej siete.
+                </p>
+              </Card>
+              <Card className="border-blue-200 p-6 dark:border-blue-800">
+                <h3 className="mb-2 text-xl font-semibold text-slate-900 dark:text-white">
+                  600 €
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri dlhých letoch nad 3 500 km, ak sa na konkrétnu cestu pravidlá uplatnia.
+                </p>
               </Card>
             </div>
           </section>
@@ -312,11 +347,12 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           <section className="mb-12">
             <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Neviete, či išlo o jednu rezerváciu alebo o slabší self-transfer prípad?
+                Chcete si nárok preveriť hneď?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv preveriť, či sa na váš prestup pozerá právo ako na jeden celok
-                alebo ako na dva oddelené lety. To často rozhodne viac než samotné prvé meškanie.
+                Pri letisku Mníchov má veľký zmysel rýchlo oddeliť silný prípad od citlivejšej
+                situácie s prestupom, prevádzkovým problémom, zdieľaným kódom, partnerom alebo
+                tvrdenými mimoriadnymi okolnosťami.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -325,10 +361,13 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_missed_connection_final_cta_delay", delayedFlightHref)
+                      trackClaimClick(
+                        "sk_munich_airport_delays_final_cta_delay",
+                        delayedFlightHref
+                      )
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť meškajúci let
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -339,12 +378,12 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_missed_connection_final_cta_cancelled",
+                        "sk_munich_airport_delays_final_cta_cancelled",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Riešim skôr zrušený let
                   </a>
                 </Button>
               </div>
@@ -358,10 +397,29 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Platí odškodnenie pri prestupe?
+                  ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Širší článok o prestupných letoch, jednej rezervácii a konečnej destinácii.
+                  Ak chcete prípad preveriť prakticky podľa konkrétnych okolností letu.
+                </p>
+                <a
+                  href={claimWingerHomeHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() =>
+                    trackClaimClick("sk_munich_airport_delays_related_home", claimWingerHomeHref)
+                  }
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Otvoriť ClaimWinger Slovensko
+                </a>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Môžem žiadať odškodnenie pri prestupe?
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak Mníchov bol len časťou jednej cesty a problém sa prejavil ďalej.
                 </p>
                 <Link
                   href="/sk/blog/plati-odskodnenie-pri-prestupe"
@@ -372,35 +430,16 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  ClaimWinger Slovensko
+                  Letisko Frankfurt (FRA)
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prakticky preveriť, či zmeškaný prestup vytvára reálny nárok.
-                </p>
-                <a
-                  href={claimWingerHomeHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() =>
-                    trackClaimClick("sk_missed_connection_related_home", claimWingerHomeHref)
-                  }
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Otvoriť ClaimWinger Slovensko
-                </a>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Koľko dostanem za zrušený let?
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak zmeškaný prestup vznikol po zmene plánu alebo reroutingu, tu je logika súm.
+                  Ak porovnávate podobný airport intent pre ďalší veľký nemecký hub.
                 </p>
                 <Link
-                  href="/sk/blog/kolko-dostanem-za-zruseny-let"
+                  href="/sk/blog/letisko-frankfurt-fra-meskania"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o sume kompenzácie
+                  Prejsť na FRA článok
                 </Link>
               </Card>
             </div>

@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zmeskany-prestup-kompenzacia";
+const articleUrl = "https://problemlot.com/sk/blog/potrebujem-pravnika-na-odskodnenie";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=need_lawyer";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=need_lawyer";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=missed_connection";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=need_lawyer";
 
 const faqItems = [
   {
-    question: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+    question: "Potrebujem právnika na odškodnenie za let?",
     answer:
-      "Áno, často áno, ale hlavne vtedy, keď boli lety v jednej rezervácii, práva EU261 sa na cestu vzťahujú a do konečnej destinácie prídete s meškaním viac než 3 hodiny. Pri dvoch samostatných letenkách býva situácia oveľa slabšia.",
+      "Vo väčšine jednoduchých prípadov nie. Reklamáciu môžete podať sami priamo aerolínke. Právnik alebo profesionálne vedenie prípadu začína dávať väčší zmysel pri zamietnutí, neodpovedaní, spore o mimoriadne okolnosti alebo pri ďalšej eskalácii.",
   },
   {
-    question: "Je najdôležitejšie, že som zmeškal druhý let?",
+    question: "Môžem si nárok uplatniť aj bez právnika?",
     answer:
-      "Nie. Rozhodujúci je hlavne dopad na príchod do konečnej destinácie. Samotné zmeškanie prestupu bez výrazného finálneho meškania ešte automaticky nezaručuje kompenzáciu.",
+      "Áno. Oficiálne pravidlá EÚ počítajú s tým, že najprv reklamujete priamo u aerolinky a ak treba, môžete sa obrátiť na národný orgán, ADR alebo súd. Právnik nie je povinnou podmienkou už pri prvom kroku.",
   },
   {
-    question: "Čo ak som mal dva samostatné lístky?",
+    question: "Kedy má právnik alebo agentúra väčší zmysel?",
     answer:
-      "Pri dvoch oddelených rezerváciách aerolinky zvyčajne nenesú zodpovednosť za to, že ste nestihli ďalší samostatne kúpený let. Práve preto je jedna rezervácia pri zmeškanom prestupe kľúčová.",
+      "Najmä vtedy, keď je prípad sporný, aerolínka mlčí, odmieta plniť alebo keď sa vec posúva za bežnú prvú reklamáciu. Vtedy je dôležitý proces, argumentácia a ďalšia eskalácia.",
   },
   {
-    question: "Koľko môžem dostať za zmeškaný prestup?",
+    question: "Je ClaimWinger to isté ako právnik?",
     answer:
-      "Ak nárok vznikne, suma sa zvyčajne počíta podľa celkovej vzdialenosti a pravidiel EU261, teda typicky 250 €, 400 € alebo 600 € podľa konkrétneho prípadu.",
+      "Nie. ClaimWinger je partner na riešenie nárokov za problémy s letmi. Výhodou je, že nemusíte hneď samostatne zháňať advokáta pre prvý krok a pri ClaimWingeri platí 30 % provízia bez ohľadu na to, či sa prípad rieši mimosúdne alebo súdne.",
   },
 ];
 
@@ -47,12 +47,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZmeskanyPrestupKompenzaciaPage() {
+export default function PotrebujemPravnikaNaOdskodneniePage() {
   return (
     <LayoutSk>
       <SEO
-        title="Môžem žiadať odškodnenie za zmeškaný prestup? Áno, ale jedna rezervácia je kľúčová"
-        description="Zmeškali ste prestup kvôli meškaniu prvého letu? Vysvetľujeme, kedy vzniká nárok na kompenzáciu, prečo rozhoduje jedna rezervácia a prečo sa počíta prílet do konečnej destinácie."
+        title="Potrebujem právnika na odškodnenie? Väčšinou nie, ale niekedy to mení výsledok"
+        description="Treba si na odškodnenie za let hneď hľadať právnika? Vysvetľujeme, kedy stačí vlastná reklamácia, kedy má zmysel ClaimWinger a kedy je prípad už spornejší."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +63,9 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+            headline: "Potrebujem právnika na odškodnenie?",
             description:
-              "Praktické vysvetlenie, kedy môže zmeškaný prestup viesť ku kompenzácii a prečo je rozhodujúca jedna rezervácia a meškanie do konečnej destinácie.",
+              "Praktické vysvetlenie, kedy si môžete nárok riešiť sami a kedy má zmysel právnik alebo profesionálne vedenie prípadu.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +127,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Môžem žiadať odškodnenie za zmeškaný prestup?",
+                name: "Potrebujem právnika na odškodnenie?",
                 item: articleUrl,
               },
             ],
@@ -135,7 +135,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -146,20 +146,21 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Môžem žiadať odškodnenie za zmeškaný prestup?</span>
+            <span>Potrebujem právnika na odškodnenie?</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-              Praktická odpoveď pre zmeškaný prestup
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-purple-100 px-4 py-2 text-sm font-medium text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
+              Praktická odpoveď pre vlastnú reklamáciu aj ďalšiu eskaláciu
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Môžem žiadať odškodnenie za zmeškaný prestup?
+              Potrebujem právnika na odškodnenie?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: <strong>často áno</strong>, ale iba vtedy, keď ide o jednu
-              rezerváciu, na cestu sa vzťahuje EU261 a do konečnej destinácie prídete s veľkým
-              meškaním. Samotný fakt, že ste nestihli druhé lietadlo, ešte nestačí.
+              Najkratšia odpoveď je: <strong>väčšinou nie hneď na začiatku</strong>. Prvú reklamáciu voči
+              aerolinke môžete podať sami. Právnik alebo profesionálne vedenie prípadu začína dávať
+              väčší zmysel vtedy, keď je prípad sporný, zamietnutý alebo sa posúva ďalej než len cez
+              jednoduchú reklamáciu.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -175,19 +176,18 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
           </header>
 
           <section className="mb-10">
-            <Card className="border-blue-200 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 text-white shadow-xl dark:border-blue-800">
+            <Card className="border-purple-200 bg-gradient-to-br from-purple-600 to-indigo-700 p-8 text-white shadow-xl dark:border-purple-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-blue-50">
+              <div className="space-y-3 text-base leading-7 text-purple-50">
                 <p>
-                  <strong>Jedna rezervácia</strong> je pri zmeškanom prestupe kľúčová.
+                  <strong>Na prvý krok právnika zvyčajne nepotrebujete.</strong>
                 </p>
                 <p>
-                  Ak boli oba lety kúpené spolu a do konečnej destinácie dorazíte <strong>o viac než 3 hodiny neskôr</strong>,
-                  kompenzácia môže byť reálna.
+                  Podľa oficiálnych pravidiel EÚ sa reklamácia najprv posiela <strong>priamo aerolínke</strong>.
                 </p>
                 <p>
-                  Pri dvoch samostatných letenkách býva pozícia pasažiera oveľa slabšia, pretože
-                  aerolinka zvyčajne nezodpovedá za nadväzujúci samostatný let.
+                  Ak je však prípad zamietnutý, ignorovaný alebo sa posúva na ďalšiu eskaláciu, odborné
+                  vedenie môže mať väčšiu hodnotu než len ďalší vlastný pokus bez stratégie.
                 </p>
               </div>
             </Card>
@@ -195,25 +195,25 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Zmeškali ste prestup a neviete, či ide o reálny nárok?"
-            description="ClaimWinger vie pomôcť overiť, či boli lety v jednej rezervácii, či sa na cestu vzťahuje EU261 a aký bol skutočný dopad na konečný cieľ."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=missed_connection"
-            ctaLabel="Preveriť zmeškaný prestup"
+            title="Neviete, či to ešte zvládnete sami alebo už treba pomoc?"
+            description="ClaimWinger vie pomôcť posúdiť, či ide o jednoduchý prípad vhodný na rýchle preverenie, alebo už o spor, kde sa oplatí riešiť ďalšiu eskaláciu bez toho, aby ste si hneď sami zháňali právnika."
+            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=need_lawyer"
+            ctaLabel="Preveriť, či potrebujem pomoc"
             loadingLabel="Načítava sa formulár ClaimWinger..."
             loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_missed_connection_embed"
+            placement="sk_blog_need_lawyer_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy nárok najčastejšie vzniká
+              Kedy si viete nárok riešiť sami
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "lety boli v jednej rezervácii",
-                "na cestu sa vzťahuje EU261",
-                "do konečnej destinácie dorazíte s meškaním viac než 3 hodiny",
-                "meškanie nespôsobili mimoriadne okolnosti",
+                "máte jasné meškanie alebo zrušenie a dobré dokumenty",
+                "aerolínka ešte vec vôbec neposudzovala alebo ide o prvú reklamáciu",
+                "prípad nie je zložito spojený s prestupmi, dvoma letenkami alebo sporom o dôvod",
+                "chcete najprv skúsiť priamu reklamáciu bez ďalších nákladov alebo provízie",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -227,34 +227,34 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Čo je pri zmeškanom prestupe najdôležitejšie
+              Kedy už pomoc dáva väčší zmysel
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Počíta sa konečná destinácia
+                  Aerolínka neodpovedá alebo zamieta
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Oficiálne pravidlá EÚ pozerajú na meškanie pri príchode do konečného cieľa, nie len
-                  na to, že ste fyzicky nestihli druhý let.
+                  Vtedy už nejde len o napísanie formulára, ale aj o proces, argumentáciu a rozhodnutie,
+                  či posunúť vec ďalej na národný orgán, ADR alebo súdnu cestu.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Jedna rezervácia mení celý prípad
+                  Spor o mimoriadne okolnosti
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sú lety kúpené spolu, cesta sa posudzuje ako jeden celok. Pri dvoch oddelených
-                  rezerváciách si aerolinky zvyčajne nenesú zodpovednosť za zlyhaný prestup.
+                  Ak aerolínka tvrdí, že prípad nespadá do kompenzácie, spor býva viac o dôkazoch a
+                  právnej logike než o samotnom formulári.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Nie každý zmeškaný prestup znamená výplatu
+                  Vec sa posúva ďalej než len na prvú reklamáciu
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak sa do cieľa dostanete bez veľkého meškania alebo ak išlo o mimoriadne okolnosti,
-                  samotný zmeškaný prestup ešte nemusí viesť ku kompenzácii.
+                  Oficiálne zdroje EÚ rátajú aj s národným orgánom, ADR a súdnou cestou. V tejto fáze
+                  už môže byť praktickejšie mať prípad vedený systematicky, nie len improvizovať.
                 </p>
               </Card>
             </div>
@@ -262,61 +262,66 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Dva typické scenáre
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-green-200 p-6 dark:border-green-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Silnejší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Bratislava → Viedeň → New York v jednej rezervácii. Prvý let mešká, prestup padne
-                  a do New Yorku prídete o 6 hodín neskôr. To je typický prípad, kde sa nárok môže
-                  reálne otvoriť.
-                </p>
-              </Card>
-              <Card className="border-red-200 p-6 dark:border-red-800">
-                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
-                  Slabší prípad
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Prvý let a druhý let boli kúpené osobitne alebo ste si skladali self-transfer sami.
-                  Tu býva zodpovednosť aerolinky za zmeškaný ďalší let podstatne slabšia.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Koľko môžete dostať
+              Právnik, ClaimWinger alebo vlastná reklamácia?
             </h2>
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Do 1 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">250 €</p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                  1 500–3 500 km alebo dlhší intra-EÚ let
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  Vlastná reklamácia
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Dobrá voľba na jednoduchý prvý krok, ak máte čas a prípad vyzerá čisto.
                 </p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">400 €</p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Nad 3 500 km</p>
-                <p className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">600 €</p>
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  ClaimWinger
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Praktická voľba, ak nechcete hneď samostatne zháňať právnika a chcete, aby prípad
+                  išiel organizovane ďalej. Pri ClaimWingeri platí <strong>30 % provízia</strong>
+                  bez ohľadu na to, či sa vec rieši mimosúdne alebo súdne.
+                </p>
               </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                  Samostatný právnik
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Môže dávať zmysel pri spornejšej alebo špecifickej veci, ale nie je povinnou vstupenkou
+                  už do prvého kroku reklamácie.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Čo hovoria oficiálne zdroje EÚ
+            </h2>
+            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
+              <p>
+                Portál <strong>Your Europe</strong> vedie pasažiera najprv k tomu, aby reklamoval
+                priamo u aerolinky. Ak to nepomôže, opisuje ďalšie možnosti: <strong>národný orgán</strong>,
+                <strong> ADR</strong> a <strong>súd</strong>, vrátane európskeho konania vo veciach s nízkou hodnotou sporu.
+              </p>
+              <p>
+                To je dôležité aj pre jednoduchú odpoveď na otázku o právnikovi: právo EÚ nehovorí, že
+                si pri odškodnení musíte hneď zabezpečiť advokáta. Skôr ukazuje viacero foriem nápravy,
+                z ktorých právnik je len jedna možnosť.
+              </p>
             </div>
           </section>
 
           <section className="mb-12">
             <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Neviete, či išlo o jednu rezerváciu alebo o slabší self-transfer prípad?
+                Chcete zistiť, či váš prípad ešte zvládnete sami?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv preveriť, či sa na váš prestup pozerá právo ako na jeden celok
-                alebo ako na dva oddelené lety. To často rozhodne viac než samotné prvé meškanie.
+                Najlepšie je najprv odlíšiť, či riešite bežný meškajúci let, zrušený let alebo už spor,
+                kde aerolínka neodpovedá alebo odmieta plniť. Od toho sa odvíja aj to, či právnika
+                vôbec potrebujete.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -325,7 +330,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_missed_connection_final_cta_delay", delayedFlightHref)
+                      trackClaimClick("sk_need_lawyer_final_cta_delay", delayedFlightHref)
                     }
                   >
                     Riešim meškajúci let
@@ -338,10 +343,7 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick(
-                        "sk_missed_connection_final_cta_cancelled",
-                        cancelledFlightHref
-                      )
+                      trackClaimClick("sk_need_lawyer_final_cta_cancelled", cancelledFlightHref)
                     }
                   >
                     Riešim zrušený let
@@ -358,16 +360,30 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Platí odškodnenie pri prestupe?
+                  Čo robiť, keď aerolínka neodpovedá
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Širší článok o prestupných letoch, jednej rezervácii a konečnej destinácii.
+                  Ak sa prípad nehýbe, otázka už často nie je o právnikovi, ale o ďalšom procese.
                 </p>
                 <Link
-                  href="/sk/blog/plati-odskodnenie-pri-prestupe"
+                  href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o prestupe
+                  Prejsť na článok o neodpovedaní
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Zamietnutá reklamácia
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak problém už nie je v podaní reklamácie, ale v tom, že vám prišla zamietavá odpoveď.
+                </p>
+                <Link
+                  href="/sk/blog/zamietnuta-reklamacia-co-robit"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na článok o zamietnutí
                 </Link>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
@@ -375,33 +391,19 @@ export default function ZmeskanyPrestupKompenzaciaPage() {
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prakticky preveriť, či zmeškaný prestup vytvára reálny nárok.
+                  Ak chcete prípad najprv preveriť prakticky a bez samostatného zháňania právnika.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_missed_connection_related_home", claimWingerHomeHref)
+                    trackClaimClick("sk_need_lawyer_related_home", claimWingerHomeHref)
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
                   Otvoriť ClaimWinger Slovensko
                 </a>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Koľko dostanem za zrušený let?
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak zmeškaný prestup vznikol po zmene plánu alebo reroutingu, tu je logika súm.
-                </p>
-                <Link
-                  href="/sk/blog/kolko-dostanem-za-zruseny-let"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o sume kompenzácie
-                </Link>
               </Card>
             </div>
           </section>

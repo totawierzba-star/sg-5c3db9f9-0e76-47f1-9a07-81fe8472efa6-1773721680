@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
-const articleUrl = "https://problemlot.com/sk/blog/zamietnuta-reklamacia-co-robit";
+const articleUrl = "https://problemlot.com/sk/blog/aka-je-sanca-na-uspech-reklamacie";
 const delayedFlightHref =
-  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/meskajuci-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=claim_success_chance";
 const cancelledFlightHref =
-  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk/zruseny-let?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=claim_success_chance";
 const claimWingerHomeHref =
-  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=rejected_claim";
+  "https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=article_link&utm_campaign=claim_success_chance";
 
 const faqItems = [
   {
-    question: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+    question: "Aká je šanca na úspech reklamácie?",
     answer:
-      "Najprv si odložte celé zamietnutie a zistite, na akom dôvode stojí. Nie každé zamietnutie je automaticky správne. Ak s odpoveďou nesúhlasíte, ďalším krokom býva doplnenie argumentov, sťažnosť na príslušný národný orgán alebo ďalšia eskalácia prípadu.",
+      "Neexistuje jedno poctivé percento, ktoré by platilo pre všetky prípady. Šanca býva vyššia vtedy, keď je let jasne v rozsahu EU261, máte dobré dokumenty, meškanie alebo zrušenie sa dá dobre preukázať a aerolínka nepreukáže mimoriadne okolnosti.",
   },
   {
-    question: "Stačí, že aerolínka napíše „mimoriadne okolnosti“?",
+    question: "Kedy býva reklamácia silnejšia?",
     answer:
-      "Nie. Podľa pravidiel EÚ nestačí len použiť túto frázu. Aerolínka musí vedieť preukázať, že išlo o mimoriadne okolnosti a že sa ich následkom nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení.",
+      "Najmä pri meškaní 3 hodiny a viac v cieli, pri zrušení oznámenom neskoro, pri odmietnutí nástupu na palubu alebo pri zmeškanom prestupe v jednej rezervácii. Dôležité je aj to, aby išlo o let, na ktorý sa EU261 vôbec vzťahuje.",
   },
   {
-    question: "Má zmysel pokračovať aj po zamietnutí?",
+    question: "Kedy býva šanca slabšia?",
     answer:
-      "Často áno. Zamietnutie ešte neznamená, že nárok neexistuje. Dôležité je, či je dôvod odmietnutia vecne presný a či zodpovedá pravidlám EU261 aj faktom z konkrétneho letu.",
+      "Najmä ak ide o spor mimo rozsahu EU261, o dve samostatné rezervácie pri prestupe, o slabé dôkazy alebo o situáciu, kde aerolínka vie preukázať mimoriadne okolnosti.",
   },
   {
-    question: "Kedy môže mať aerolínka naozaj pravdu?",
+    question: "Pomôže ClaimWinger aj pri nejasnom prípade?",
     answer:
-      "Napríklad ak let nespadá pod EU261, omeškanie v cieli nebolo dostatočné, alebo ak aerolínka preukáže skutočné mimoriadne okolnosti. Preto má zmysel najprv posúdiť dôvod odmietnutia, nie reagovať len emóciou.",
+      "Áno, ClaimWinger vie pomôcť preveriť, či prípad vyzerá skôr ako jednoduchá priama reklamácia, alebo ako spor, ktorý si vyžiada ďalšie kroky. Provízia ClaimWingeru je 30 % bez ohľadu na to, či sa prípad vyrieši mimosúdne alebo súdne.",
   },
 ];
 
@@ -47,12 +47,12 @@ function trackClaimClick(placement: string, destination: string) {
   });
 }
 
-export default function ZamietnutaReklamaciaCoRobitPage() {
+export default function AkaJeSancaNaUspechReklamaciePage() {
   return (
     <LayoutSk>
       <SEO
-        title="Čo robiť, keď aerolínka zamietne reklamáciu? Nie každá zamietavá odpoveď je konečná"
-        description="Dostali ste zamietnutie reklamácie za let? Vysvetľujeme, ako čítať dôvod odmietnutia, kedy môže mať aerolínka pravdu a kedy má zmysel ísť ďalej."
+        title="Aká je šanca na úspech reklamácie? Záleží od dôkazov, EU261 a dôvodu problému"
+        description="Aká je reálna šanca, že reklamácia za meškajúci alebo zrušený let uspeje? Vysvetľujeme najdôležitejšie faktory: rozsah EU261, dokumenty, mimoriadne okolnosti a reakciu aerolinky."
         url={articleUrl}
         canonicalUrl={articleUrl}
       />
@@ -63,9 +63,9 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+            headline: "Aká je šanca na úspech reklamácie?",
             description:
-              "Praktický návod, čo robiť po zamietnutí reklamácie, ako čítať dôvod odmietnutia a kedy má zmysel pokračovať ďalej.",
+              "Praktický prehľad faktorov, ktoré zvyšujú alebo znižujú šancu na úspešnú reklamáciu pri meškaní alebo zrušení letu.",
             mainEntityOfPage: articleUrl,
             datePublished: "2026-04-13",
             dateModified: "2026-04-13",
@@ -127,7 +127,7 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "Čo robiť, keď aerolínka zamietne reklamáciu?",
+                name: "Aká je šanca na úspech reklamácie?",
                 item: articleUrl,
               },
             ],
@@ -135,7 +135,7 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
         }}
       />
 
-      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-red-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
+      <article className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Link href="/sk" className="hover:text-blue-600">
@@ -146,20 +146,21 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
               Blog
             </Link>
             <span>/</span>
-            <span>Čo robiť, keď aerolínka zamietne reklamáciu?</span>
+            <span>Aká je šanca na úspech reklamácie?</span>
           </div>
 
           <header className="mb-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
-              Praktický plán po zamietavej odpovedi
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">
+              AI odpoveď a praktické hodnotenie sily prípadu
             </div>
             <h1 className="mb-5 text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
-              Čo robiť, keď aerolínka zamietne reklamáciu?
+              Aká je šanca na úspech reklamácie?
             </h1>
             <p className="max-w-3xl text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Najkratšia odpoveď je: zamietnutie ešte nemusí znamenať koniec. Dôležité je zistiť,
-              <strong> prečo</strong> bola reklamácia odmietnutá, či je dôvod naozaj v súlade s
-              pravidlami EU261 a či má zmysel pokračovať ďalej.
+              Najpoctivejšia odpoveď je: <strong>záleží od prípadu</strong>. Neexistuje jedno
+              spoľahlivé percento, ktoré by platilo pre každý meškajúci alebo zrušený let. Šanca na
+              úspech rastie najmä vtedy, keď je prípad jasne v rozsahu <strong>EU261</strong>, máte
+              dobré dôkazy a aerolínka nevie vierohodne preukázať mimoriadne okolnosti.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
@@ -175,20 +176,21 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
           </header>
 
           <section className="mb-10">
-            <Card className="border-red-200 bg-gradient-to-br from-red-600 to-rose-700 p-8 text-white shadow-xl dark:border-red-800">
+            <Card className="border-emerald-200 bg-gradient-to-br from-emerald-600 to-teal-700 p-8 text-white shadow-xl dark:border-emerald-800">
               <h2 className="mb-4 text-2xl font-bold">Krátka odpoveď</h2>
-              <div className="space-y-3 text-base leading-7 text-red-50">
+              <div className="space-y-3 text-base leading-7 text-emerald-50">
                 <p>
-                  <strong>Nie každé zamietnutie je správne.</strong>
+                  <strong>Silnejšia reklamácia</strong> býva tam, kde je let v rozsahu EU261,
+                  meškanie v cieli je aspoň 3 hodiny alebo ide o zrušenie, odmietnutie nástupu či
+                  zmeškaný prestup v jednej rezervácii.
                 </p>
                 <p>
-                  Ak aerolínka tvrdí, že nárok nevznikol, treba najprv pozrieť, či ide o problém
-                  rozsahu EU261, výšky meškania v cieli, typu rezervácie alebo o tvrdené
-                  mimoriadne okolnosti.
+                  <strong>Slabšia reklamácia</strong> býva tam, kde chýbajú dokumenty, ide o dve
+                  oddelené rezervácie alebo aerolínka vie doložiť mimoriadne okolnosti.
                 </p>
                 <p>
-                  Ak s dôvodom nesúhlasíte, ďalšími krokmi môžu byť doplnenie argumentácie,
-                  sťažnosť príslušnému orgánu alebo ďalšia eskalácia prípadu.
+                  Ak si nie ste istí, či váš prípad patrí skôr medzi jednoduché alebo sporné, má
+                  zmysel ho dať rýchlo preveriť ešte pred ďalšou eskaláciou.
                 </p>
               </div>
             </Card>
@@ -196,25 +198,27 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <ClaimWingerSkSection
             className="mb-12"
-            title="Dostali ste zamietavú odpoveď od aerolinky?"
-            description="ClaimWinger vie pomôcť odlíšiť, či je odmietnutie vecne silné, alebo či aerolínka len použila štandardnú zamietaciu formulku bez dostatočného základu."
-            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=rejected_claim"
-            ctaLabel="Preveriť zamietnutú reklamáciu"
+            title="Neviete, či má vaša reklamácia reálnu šancu?"
+            description="ClaimWinger vie pomôcť rýchlo preveriť, či váš prípad vyzerá ako jasný nárok podľa EU261, alebo či pôjde skôr o spor o dôvod meškania, zrušenia alebo prestupu."
+            ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=claim_success_chance"
+            ctaLabel="Preveriť šancu prípadu vo formulári"
             loadingLabel="Načítava sa formulár ClaimWinger..."
             loadingDescription="O chvíľu sa zobrazí slovenský formulár na preverenie prípadu."
-            placement="sk_blog_rejected_claim_embed"
+            placement="sk_blog_claim_success_chance_embed"
           />
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 1: čítajte dôvod odmietnutia presne
+              Čo najviac zvyšuje šancu na úspech
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                "aerolínka tvrdí, že išlo o mimoriadne okolnosti",
-                "aerolínka tvrdí, že meškanie nebolo dostatočne dlhé",
-                "aerolínka tvrdí, že let nespadá pod EU261",
-                "aerolínka tvrdí, že ste neprišli včas na check-in alebo nástup na palubu",
+                "let patrí do rozsahu EU261",
+                "v cieli vzniklo meškanie 3 hodiny a viac",
+                "zrušenie bolo oznámené neskoro",
+                "pri prestupe šlo o jednu rezerváciu",
+                "máte rezerváciu, správy od aerolinky a ďalšie dôkazy",
+                "aerolínka nevie presvedčivo doložiť mimoriadne okolnosti",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
                   <div className="flex items-start gap-3">
@@ -228,55 +232,43 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              „Mimoriadne okolnosti“ nie sú kúzelné slovo
-            </h2>
-            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
-              <p>
-                Podľa článku 5 ods. 3 nariadenia EU261 nestačí, aby aerolínka len napísala, že išlo
-                o <strong>mimoriadne okolnosti</strong>. Aby sa zbavila povinnosti platiť kompenzáciu,
-                musí vedieť ukázať dve veci:
-              </p>
-              <p>
-                Po prvé, že príčina naozaj spadala do mimoriadnych okolností. Po druhé, že sa následkom
-                tejto udalosti <strong>nedalo vyhnúť ani pri prijatí všetkých primeraných opatrení</strong>.
-              </p>
-              <p>
-                Preto je rozumné pýtať si presnejší dôvod odmietnutia, nie len všeobecnú frázu z
-                automatickej odpovede.
-              </p>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 2: porovnajte zamietnutie s faktami vášho letu
+              Čo šancu naopak oslabuje
             </h2>
             <div className="grid gap-4">
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri meškaní
+                  Nejasný rozsah pravidiel
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pozerajte sa na meškanie v <strong>konečnej destinácii</strong>, nie len na odlet z
-                  prvého letiska. Pri prestupe to býva rozhodujúci detail.
+                  Najprv treba vedieť, či sa na let vôbec vzťahuje EU261. Ak let nespadá do európskeho
+                  režimu, úspech reklamácie sa už nebude opierať o tie isté pravidlá.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri zrušení
+                  Slabé alebo rozbité dôkazy
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Sledujte, kedy vás aerolínka informovala a aký rerouting ponúkla. Samotné slovo
-                  „zrušenie“ ešte nehovorí všetko o vzniku kompenzácie.
+                  Rezervácia, oznámenia od aerolinky, potvrdenie času a ďalšie dôkazy pomáhajú. Čím
+                  menej z nich zostane, tým ťažšie sa prípad obhajuje.
                 </p>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
                 <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  Pri prestupe alebo dvoch letenkách
+                  Mimoriadne okolnosti
                 </h3>
                 <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Skontrolujte, či išlo o jednu rezerváciu alebo o dva samostatné tikety. To často
-                  mení celý právny obraz prípadu.
+                  Ak aerolínka vie naozaj preukázať mimoriadne okolnosti, právo na kompenzáciu môže
+                  odpadnúť, aj keď máte stále nárok na starostlivosť, refundáciu alebo presmerovanie.
+                </p>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Dve samostatné rezervácie pri prestupe
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Pri oddelených letenkách býva pozícia cestujúceho často slabšia než pri jednej
+                  spoločnej rezervácii do konečnej destinácie.
                 </p>
               </Card>
             </div>
@@ -284,66 +276,85 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Krok 3: ak s odmietnutím nesúhlasíte, choďte ďalej systematicky
-            </h2>
-            <div className="grid gap-4">
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  1. Uložte si celé zamietnutie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Potrebujete mať presný text odpovede, dátum, číslo prípadu a všetky prílohy.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  2. Doplňte argumenty alebo žiadajte spresnenie
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je dôvod odmietnutia príliš všeobecný, má zmysel žiadať konkrétnejšie vysvetlenie
-                  alebo doplniť chýbajúce podklady.
-                </p>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
-                  3. Zvážte ďalšiu eskaláciu
-                </h3>
-                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je odpoveď nepresvedčivá, ďalším krokom môže byť národný orgán, ADR alebo ďalšia
-                  právna cesta podľa povahy prípadu.
-                </p>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
-              Kedy môže mať aerolínka naozaj pravdu
+              Prečo sa nedá poctivo povedať jedno percento
             </h2>
             <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
               <p>
-                Férová odpoveď je, že nie každé zamietnutie je len výhovorka. Sú prípady, kde nárok
-                naozaj nemusí vzniknúť.
+                Na internete sa často objavujú jednoduché odpovede typu „úspešnosť je 80 %“ alebo
+                „ak máte meškanie nad 3 hodiny, určite vyhráte“. Takéto tvrdenia sú príliš hrubé.
+                Oficiálne zdroje EÚ nevydávajú jednotnú univerzálnu štatistiku, ktorá by poctivo
+                platila pre každý typ letu, každú aerolínku a každú krajinu.
               </p>
               <p>
-                Typicky ide o situácie, keď let nespadá pod EU261, meškanie v cieli nedosiahlo potrebný
-                prah, alebo keď aerolínka naozaj preukáže mimoriadne okolnosti v zmysle pravidiel.
+                O sile reklamácie rozhoduje kombinácia viacerých faktorov naraz: rozsah EU261,
+                dôvod problému, kvalita dôkazov, správanie aerolinky a to, či sa spor zastaví pri
+                prvej reklamácii alebo sa posunie ďalej.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Čo hovoria oficiálne zdroje EÚ
+            </h2>
+            <div className="prose prose-lg max-w-none text-slate-700 dark:prose-invert dark:text-slate-300">
+              <p>
+                Portál <strong>Your Europe</strong> a materiály Európskej komisie ukazujú jasnú
+                kostru: pri meškaní viac než 3 hodiny v cieli, pri zrušení alebo pri zmeškanom
+                prestupe v jednej rezervácii môže vzniknúť nárok na kompenzáciu, ak nejde o
+                mimoriadne okolnosti.
               </p>
               <p>
-                Práve preto je lepšie nepostaviť celú reakciu len na rozčarovaní z odmietnutia, ale na
-                reálnom posúdení dôvodu.
+                Zároveň platí, že ak aerolínka tvrdí mimoriadne okolnosti, musí ich vedieť
+                preukázať. Ak cestujúci nedostane odpoveď do 2 mesiacov alebo nie je spokojný s
+                odpoveďou, spor sa môže posunúť ďalej na národný orgán, ADR alebo súdnu cestu.
               </p>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+              Praktické pravidlo pre rýchle sebahodnotenie
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card className="border-emerald-200 p-6 dark:border-emerald-800">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Skôr silný prípad
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Jasný let pod EU261, dobré dôkazy, 3+ hodiny v cieli alebo zrušenie a bez
+                  presvedčivo preukázaných mimoriadnych okolností.
+                </p>
+              </Card>
+              <Card className="border-amber-200 p-6 dark:border-amber-800">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Skôr hraničný prípad
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Niečo sedí, ale chýbajú dokumenty, dôvod problému je sporný alebo letová situácia
+                  je zložitejšia než vyzerá na prvý pohľad.
+                </p>
+              </Card>
+              <Card className="border-rose-200 p-6 dark:border-rose-800">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">
+                  Skôr slabý prípad
+                </h3>
+                <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Let je mimo rozsahu EU261, ide o dve oddelené rezervácie alebo aerolínka má
+                  silný a doložený argument o mimoriadnych okolnostiach.
+                </p>
+              </Card>
             </div>
           </section>
 
           <section className="mb-12">
             <Card className="border-blue-200 bg-blue-50 p-8 dark:border-blue-800 dark:bg-blue-950/20">
               <h2 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
-                Chcete zistiť, či je zamietnutie vecne silné?
+                Chcete si dať prípad rýchlo preveriť?
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Najlepšie je najprv rozlíšiť, či ide o spor pri meškajúcom lete, zrušenom lete alebo
-                o širší problém s argumentáciou aerolinky. Od toho sa odvíja aj ďalší postup.
+                Najpraktickejšie je oddeliť jasné prípady od tých sporných. To vám pomôže rozhodnúť,
+                či sa oplatí vlastná reklamácia, alebo už riešiť ďalší postup cez partnera.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -352,10 +363,13 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>
-                      trackClaimClick("sk_rejected_claim_final_cta_delay", delayedFlightHref)
+                      trackClaimClick(
+                        "sk_claim_success_chance_final_cta_delay",
+                        delayedFlightHref
+                      )
                     }
                   >
-                    Riešim meškajúci let
+                    Preveriť meškajúci let
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -366,12 +380,12 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                     rel="noopener noreferrer"
                     onClick={() =>
                       trackClaimClick(
-                        "sk_rejected_claim_final_cta_cancelled",
+                        "sk_claim_success_chance_final_cta_cancelled",
                         cancelledFlightHref
                       )
                     }
                   >
-                    Riešim zrušený let
+                    Preveriť zrušený let
                   </a>
                 </Button>
               </div>
@@ -388,13 +402,27 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                   Čo robiť, keď aerolínka neodpovedá
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak je problém skôr v tichu aerolinky než v zamietnutí, riešenie býva trochu iné.
+                  Ak prípad vyzerá silno, ale letecká spoločnosť jednoducho mlčí.
                 </p>
                 <Link
                   href="/sk/blog/co-robit-ked-aerolinka-neodpoveda"
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
-                  Prejsť na článok o neodpovedaní
+                  Prejsť na článok
+                </Link>
+              </Card>
+              <Card className="border-slate-200 p-6 dark:border-slate-700">
+                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
+                  Zamietnutá reklamácia – čo robiť
+                </h3>
+                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Ak chcete vedieť, čo robiť, keď aerolínka tvrdí, že nárok nevznikol.
+                </p>
+                <Link
+                  href="/sk/blog/zamietnuta-reklamacia-co-robit"
+                  className="font-semibold text-blue-600 underline underline-offset-4"
+                >
+                  Prejsť na článok
                 </Link>
               </Card>
               <Card className="border-slate-200 p-6 dark:border-slate-700">
@@ -402,33 +430,19 @@ export default function ZamietnutaReklamaciaCoRobitPage() {
                   ClaimWinger Slovensko
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Ak chcete prípad preveriť bez toho, aby ste sa spoliehali len na prvé zamietnutie.
+                  Ak chcete prípad preveriť prakticky podľa konkrétnych okolností letu.
                 </p>
                 <a
                   href={claimWingerHomeHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
-                    trackClaimClick("sk_rejected_claim_related_home", claimWingerHomeHref)
+                    trackClaimClick("sk_claim_success_chance_related_home", claimWingerHomeHref)
                   }
                   className="font-semibold text-blue-600 underline underline-offset-4"
                 >
                   Otvoriť ClaimWinger Slovensko
                 </a>
-              </Card>
-              <Card className="border-slate-200 p-6 dark:border-slate-700">
-                <h3 className="mb-3 text-lg font-semibold text-slate-900 dark:text-white">
-                  Voucher, refundácia a kompenzácia
-                </h3>
-                <p className="mb-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  Pri odmietnutí sa často miešajú rôzne druhy plnenia, a preto je dobré ich najprv oddeliť.
-                </p>
-                <Link
-                  href="/sk/blog/mozem-ziadat-odskodnenie-ak-som-prijal-voucher"
-                  className="font-semibold text-blue-600 underline underline-offset-4"
-                >
-                  Prejsť na článok o voucheri
-                </Link>
               </Card>
             </div>
           </section>
