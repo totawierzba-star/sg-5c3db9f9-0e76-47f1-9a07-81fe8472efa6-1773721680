@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import { ArrowRight, Plane, Scale, FileText, Clock, AlertTriangle, CheckCircle } from "lucide-react";
@@ -65,9 +66,9 @@ export default function COIStiznostiAerolinkKdyJak() {
           
           {/* Breadcrumb */}
           <nav className="text-sm text-muted-foreground">
-            <a href="/cs" className="hover:text-primary">Domů</a>
+            <Link href="/cs" className="hover:text-primary">Domů</Link>
             <span className="mx-2">/</span>
-            <a href="/cs/blog" className="hover:text-primary">Blog</a>
+            <Link href="/cs/blog" className="hover:text-primary">Blog</Link>
             <span className="mx-2">/</span>
             <span>ČOI a stížnosti na aerolinky</span>
           </nav>
@@ -90,10 +91,10 @@ export default function COIStiznostiAerolinkKdyJak() {
           {/* Intro */}
           <section className="prose prose-lg max-w-none">
             <p className="lead text-lg">
-              Pokud máte problém s aerolinkou a nevíte, zda se obrátit na <a href="/cs/blog/reklamace-ucl-urad-civilni-letectvi" className="text-primary hover:underline">Úřad pro civilní letectví (ÚCL)</a> nebo na <strong>Českou obchodní inspekci (ČOI)</strong>, nejste sami. Oba úřady mají pravomoc vyšetřovat stížnosti spotřebitelů, ale každý z nich má trochu jiné zaměření a kompetence. <strong>ČOI</strong> je obecný orgán ochrany spotřebitele s širokým mandátem — kromě aerolinek dozoruje i e-shopy, cestovní kanceláře, restaurace atd.
+              Pokud máte problém s aerolinkou a nevíte, zda se obrátit na <Link href="/cs/blog/reklamace-ucl-urad-civilni-letectvi" className="text-primary hover:underline">Úřad pro civilní letectví (ÚCL)</Link> nebo na <strong>Českou obchodní inspekci (ČOI)</strong>, nejste sami. Oba úřady mají pravomoc vyšetřovat stížnosti spotřebitelů, ale každý z nich má trochu jiné zaměření a kompetence. <strong>ČOI</strong> je obecný orgán ochrany spotřebitele s širokým mandátem — kromě aerolinek dozoruje i e-shopy, cestovní kanceláře, restaurace atd.
             </p>
             <p>
-              V kontextu letecké dopravy je ČOI užitečná zejména při sporech o <strong>nekalé obchodní praktiky, klamavou reklamu nebo nepřehledné poplatky</strong>. Pro specializované otázky týkající se <a href="/cs/blog/narizeni-es-261-2004" className="text-primary hover:underline">nařízení ES 261/2004</a> (kompenzace za zpoždění/zrušení) je však často vhodnější ÚCL. V tomto článku vysvětlíme, kdy a jak se na ČOI obrátit, jaké dokumenty připravit a co od celého procesu čekat.
+              V kontextu letecké dopravy je ČOI užitečná zejména při sporech o <strong>nekalé obchodní praktiky, klamavou reklamu nebo nepřehledné poplatky</strong>. Pro specializované otázky týkající se <Link href="/cs/blog/narizeni-es-261-2004" className="text-primary hover:underline">nařízení ES 261/2004</Link> (kompenzace za zpoždění/zrušení) je však často vhodnější ÚCL. V tomto článku vysvětlíme, kdy a jak se na ČOI obrátit, jaké dokumenty připravit a co od celého procesu čekat.
             </p>
           </section>
 
@@ -315,8 +316,8 @@ export default function COIStiznostiAerolinkKdyJak() {
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4 mt-2">
                     <li>Pokračovat v komunikaci s aerolinkou (nyní s podporou závěru ČOI)</li>
-                    <li>Využít služeb <a href="/cs/blog/claimwinger-airhelp-flightright-srovnani" className="text-primary hover:underline">claim company</a> (např. ClaimWinger)</li>
-                    <li>Podat <a href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">evropský formulář drobných nároků</a> k soudu</li>
+                    <li>Využít služeb <Link href="/cs/blog/claimwinger-airhelp-flightright-srovnani" className="text-primary hover:underline">claim company</Link> (např. ClaimWinger)</li>
+                    <li>Podat <Link href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">evropský formulář drobných nároků</Link> k soudu</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -332,9 +333,9 @@ export default function COIStiznostiAerolinkKdyJak() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/adr-mimosoudni-reseni-sporu-aerolinka" className="text-primary hover:underline">
+                    <Link href="/cs/blog/adr-mimosoudni-reseni-sporu-aerolinka" className="text-primary hover:underline">
                       ADR (mimosoudní řešení sporů)
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     Rychlejší a levnější než soud — akreditované subjekty ADR mohou zprostředkovat dohodu mezi vámi a aerolinkou.
@@ -344,9 +345,9 @@ export default function COIStiznostiAerolinkKdyJak() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">
+                    <Link href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">
                       Evropský formulář drobných nároků
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     Pro nároky do €5 000 můžete využít zjednodušené soudní řízení bez nutnosti advokáta.
@@ -356,9 +357,9 @@ export default function COIStiznostiAerolinkKdyJak() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/sami-vs-claim-company-kdy-podat-sam" className="text-primary hover:underline">
+                    <Link href="/cs/blog/sami-vs-claim-company-kdy-podat-sam" className="text-primary hover:underline">
                       Claim company (no-win-no-fee)
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     ClaimWinger, AirHelp nebo Flightright vyřídí celý případ za vás — platíte jen v případě úspěchu (obvykle 22-30 % provize).
@@ -368,9 +369,9 @@ export default function COIStiznostiAerolinkKdyJak() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/advokat-vs-claim-company-co-se-vyplati" className="text-primary hover:underline">
+                    <Link href="/cs/blog/advokat-vs-claim-company-co-se-vyplati" className="text-primary hover:underline">
                       Advokát
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     Pro složitější případy nebo spory o vyšší částky může být advokát nejlepší volbou — obvykle dražší než claim company, ale maximální právní zástupnost.

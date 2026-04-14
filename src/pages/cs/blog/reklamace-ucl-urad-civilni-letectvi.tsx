@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import { ArrowRight, Plane, Scale, FileText, Clock, AlertTriangle } from "lucide-react";
@@ -69,9 +70,9 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
           
           {/* Breadcrumb */}
           <nav className="text-sm text-muted-foreground">
-            <a href="/cs" className="hover:text-primary">Domů</a>
+            <Link href="/cs" className="hover:text-primary">Domů</Link>
             <span className="mx-2">/</span>
-            <a href="/cs/blog" className="hover:text-primary">Blog</a>
+            <Link href="/cs/blog" className="hover:text-primary">Blog</Link>
             <span className="mx-2">/</span>
             <span>Reklamace u ÚCL</span>
           </nav>
@@ -94,7 +95,7 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
           {/* Intro */}
           <section className="prose prose-lg max-w-none">
             <p className="lead text-lg">
-              Pokud vám aerolinka po několika týdnech stále neodpovídá na reklamaci nebo bez rozumného vysvětlení odmítá kompenzaci za zpoždění či zrušení letu, může být na místě obrátit se na <strong>Úřad pro civilní letectví (ÚCL)</strong>. ÚCL je český státní úřad, který dohlíží na dodržování předpisů v civilním letectví a vyšetřuje případy porušení práv cestujících podle <a href="/cs/blog/narizeni-es-261-2004" className="text-primary hover:underline">nařízení ES 261/2004</a>.
+              Pokud vám aerolinka po několika týdnech stále neodpovídá na reklamaci nebo bez rozumného vysvětlení odmítá kompenzaci za zpoždění či zrušení letu, může být na místě obrátit se na <strong>Úřad pro civilní letectví (ÚCL)</strong>. ÚCL je český státní úřad, který dohlíží na dodržování předpisů v civilním letectví a vyšetřuje případy porušení práv cestujících podle <Link href="/cs/blog/narizeni-es-261-2004" className="text-primary hover:underline">nařízení ES 261/2004</Link>.
             </p>
             <p>
               Je ale důležité vědět, že <strong>ÚCL kompenzace sám nevypláce</strong> — jeho rolí je kontrolovat chování aerolinek a v případě zjištěného pochybení uložit pokutu nebo doporučit nápravu. Pro samotné získání peněz je stále nutné komunikovat s aerolinkou nebo využít služby claim company. V tomto článku vysvětlíme, kdy a jak se na ÚCL obrátit, jaké dokumenty připravit a co od celého procesu čekat.
@@ -186,7 +187,7 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
               </CardContent>
             </Card>
             <p>
-              <strong>Nevyplatí se</strong> obracet na ÚCL, pokud aerolinka odpověděla rychle a její zdůvodnění je technicky v pořádku (např. opravdu šlo o potvrzenou mimořádnou okolnost). V takovém případě je lepší konzultovat případ s <a href="/cs/blog/advokat-vs-claim-company-co-se-vyplati" className="text-primary hover:underline">claim company</a> nebo přímo zvážit podání <a href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">evropského formuláře drobných nároků</a>.
+              <strong>Nevyplatí se</strong> obracet na ÚCL, pokud aerolinka odpověděla rychle a její zdůvodnění je technicky v pořádku (např. opravdu šlo o potvrzenou mimořádnou okolnost). V takovém případě je lepší konzultovat případ s <Link href="/cs/blog/advokat-vs-claim-company-co-se-vyplati" className="text-primary hover:underline">claim company</Link> nebo přímo zvážit podání <Link href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">evropského formuláře drobných nároků</Link>.
             </p>
           </section>
 
@@ -268,7 +269,7 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
                     <li><strong>Uzavřít případ bez sankce</strong>, pokud nenajde dostatek důkazů</li>
                   </ul>
                   <p className="mt-3">
-                    <strong>Kompenzaci</strong> vám ÚCL nevyplatí — pro získání peněz musíte dál komunikovat s aerolinkou nebo využít <a href="/cs/blog/sami-vs-claim-company-kdy-podat-sam" className="text-primary hover:underline">claim company</a>.
+                    <strong>Kompenzaci</strong> vám ÚCL nevyplatí — pro získání peněz musíte dál komunikovat s aerolinkou nebo využít <Link href="/cs/blog/sami-vs-claim-company-kdy-podat-sam" className="text-primary hover:underline">claim company</Link>.
                   </p>
                 </CardContent>
               </Card>
@@ -284,9 +285,9 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/coi-stiznosti-aerolinky-kdy-jak" className="text-primary hover:underline">
+                    <Link href="/cs/blog/coi-stiznosti-aerolinky-kdy-jak" className="text-primary hover:underline">
                       Česká obchodní inspekce (ČOI)
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     ČOI řeší spory spotřebitelů s obchodníky. Má širší mandát než ÚCL, ale kompenzace také nevypláce přímo.
@@ -296,9 +297,9 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/adr-mimosoudni-reseni-sporu-aerolinka" className="text-primary hover:underline">
+                    <Link href="/cs/blog/adr-mimosoudni-reseni-sporu-aerolinka" className="text-primary hover:underline">
                       ADR (mimosoudní řešení sporů)
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     Akreditované subjekty ADR mohou zprostředkovat dohodu mezi vámi a aerolinkou rychleji než soud.
@@ -308,9 +309,9 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">
+                    <Link href="/cs/blog/evropsky-formular-drobnych-naroku-pouziti" className="text-primary hover:underline">
                       Evropský formulář drobných nároků
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     Pro nároky do €5 000 můžete využít zjednodušené řízení v civilním soudu.
@@ -320,9 +321,9 @@ export default function ReklamaceUCLUradCivilniLetectvi() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold mb-2">
-                    <a href="/cs/blog/claimwinger-airhelp-flightright-srovnani" className="text-primary hover:underline">
+                    <Link href="/cs/blog/claimwinger-airhelp-flightright-srovnani" className="text-primary hover:underline">
                       Claim company (no-win-no-fee)
-                    </a>
+                    </Link>
                   </h3>
                   <p className="text-sm">
                     ClaimWinger, AirHelp nebo Flightright vyřídí celý případ za vás — platíte jen v případě úspěchu (22-30 % provize).
