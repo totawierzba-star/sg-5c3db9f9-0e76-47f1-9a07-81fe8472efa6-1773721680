@@ -6,7 +6,6 @@ import {
   FileText,
   Layers3,
   PlaneLanding,
-  Suitcase,
   Workflow,
 } from "lucide-react";
 
@@ -302,7 +301,7 @@ export default function BatozinaAPrestupKombinovaneNarokyPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
-              <Suitcase className="h-8 w-8 text-cyan-600" />
+              <FileText className="h-8 w-8 text-cyan-600" />
               4. Čo si pripraviť, ak sa pokazili obe vrstvy naraz
             </h2>
             <div className="grid gap-4 md:grid-cols-2">

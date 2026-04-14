@@ -6,7 +6,6 @@ import {
   Clock,
   FileText,
   ShieldAlert,
-  Suitcase,
 } from "lucide-react";
 
 import { ClaimWingerSkSection } from "@/components/ClaimWingerSkSection";
@@ -272,7 +271,7 @@ export default function PoskodenaBatozinaNarokPage() {
 
           <section className="mb-12">
             <h2 className="mb-6 flex items-center gap-3 text-3xl font-bold text-slate-900 dark:text-white">
-              <Suitcase className="h-8 w-8 text-teal-600" />
+              <Clock className="h-8 w-8 text-teal-600" />
               3. Pozor na termín 7 dní
             </h2>
             <div className="grid gap-4">
