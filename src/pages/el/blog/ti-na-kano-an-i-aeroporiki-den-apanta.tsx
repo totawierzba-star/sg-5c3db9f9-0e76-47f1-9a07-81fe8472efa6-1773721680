@@ -2,12 +2,12 @@ import Link from "next/link";
 import {
   AlertCircle,
   ArrowRight,
-  CheckCircle2,
   Clock,
   FileText,
   MailWarning,
   MessageSquareMore,
   ShieldAlert,
+  TimerReset,
 } from "lucide-react";
 
 import { ClaimWingerElSection } from "@/components/ClaimWingerElSection";
