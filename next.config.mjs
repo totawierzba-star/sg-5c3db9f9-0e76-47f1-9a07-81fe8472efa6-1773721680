@@ -128,6 +128,16 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/og-image.png",
+          destination: "/api/og?view=site&v=20260414",
+        },
+      ],
+    };
+  },
   experimental: {
     turbo: {
       rules: getTurboRules(),

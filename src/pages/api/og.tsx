@@ -1,87 +1,352 @@
-import { ImageResponse } from 'next/og';
-import { NextRequest } from 'next/server';
+import { ImageResponse } from "next/og";
+import { NextRequest } from "next/server";
 
 export const config = {
-  runtime: 'edge',
+  runtime: "edge",
 };
+
+const BRAND_NAME = "Problemlot";
+const DEFAULT_TITLE = "EU261, opoznienia i odwolane loty";
+const DEFAULT_DESCRIPTION =
+  "Przewodniki dla pasazerow: opoznienia, odwolania, overbooking i odszkodowanie do 600 EUR.";
+
+function clampText(value: string, maxLength: number) {
+  if (value.length <= maxLength) {
+    return value;
+  }
+
+  return `${value.slice(0, maxLength - 1).trimEnd()}...`;
+}
+
+function buildTitle(searchParams: URLSearchParams) {
+  return clampText(searchParams.get("title") || DEFAULT_TITLE, 92);
+}
+
+function buildDescription(searchParams: URLSearchParams) {
+  return clampText(searchParams.get("desc") || DEFAULT_DESCRIPTION, 150);
+}
 
 export default function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const title = searchParams.get('title') || 'Problemlot.com';
-    const description = searchParams.get('desc') || 'Odszkodowania za opóźnione i odwołane loty';
+    const title = buildTitle(searchParams);
+    const description = buildDescription(searchParams);
 
     return new ImageResponse(
       (
         <div
           style={{
-            height: '100%',
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '#1e40af', // blue-800
-            backgroundImage: 'radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.1) 2%, transparent 0%), radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.1) 2%, transparent 0%)',
-            backgroundSize: '100px 100px',
-            color: 'white',
-            fontFamily: 'sans-serif',
+            height: "100%",
+            width: "100%",
+            display: "flex",
+            padding: "34px",
+            background:
+              "linear-gradient(135deg, #f4efe6 0%, #e8f1f8 55%, #f6f8fb 100%)",
+            color: "#0f172a",
+            fontFamily: "Arial, sans-serif",
           }}
         >
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: 40,
+              display: "flex",
+              width: "100%",
+              height: "100%",
+              borderRadius: "30px",
+              overflow: "hidden",
+              backgroundColor: "#ffffff",
+              border: "1px solid rgba(15, 23, 42, 0.08)",
             }}
           >
-            {/* Plane Icon */}
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ marginRight: 20 }}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                width: "38%",
+                padding: "42px 38px",
+                background:
+                  "linear-gradient(160deg, #0f172a 0%, #12325c 60%, #1768a5 100%)",
+                color: "#f8fafc",
+                position: "relative",
+              }}
             >
-              <path d="M2 12h20" />
-              <path d="M13 2l9 10-9 10" />
-              <path d="M2 12l5-5m0 10l-5-5" />
-            </svg>
-            <span style={{ fontSize: 40, fontWeight: 'bold' }}>Problemlot.com</span>
-          </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "18px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "16px",
+                      height: "16px",
+                      borderRadius: "999px",
+                      backgroundColor: "#f59e0b",
+                    }}
+                  />
+                  {BRAND_NAME}
+                </div>
 
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '0 40px',
-              textAlign: 'center',
-            }}
-          >
-            <div style={{ fontSize: 60, fontWeight: 'bold', marginBottom: 20, lineHeight: 1.2 }}>
-              {title}
-            </div>
-            <div style={{ fontSize: 30, opacity: 0.8, maxWidth: 800 }}>
-              {description}
-            </div>
-          </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "12px",
+                    fontSize: "16px",
+                    opacity: 0.9,
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {["EU261", "UK261", "CLAIMS"].map((label) => (
+                      <div
+                        key={label}
+                        style={{
+                          display: "flex",
+                          padding: "7px 12px",
+                          borderRadius: "999px",
+                          backgroundColor: "rgba(255, 255, 255, 0.14)",
+                          border: "1px solid rgba(255, 255, 255, 0.14)",
+                          fontSize: "14px",
+                          fontWeight: 700,
+                          letterSpacing: "0.05em",
+                        }}
+                      >
+                        {label}
+                      </div>
+                    ))}
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      maxWidth: "300px",
+                      lineHeight: 1.45,
+                    }}
+                  >
+                    Practical passenger-rights guides for delays, cancellations
+                    and missed connections.
+                  </div>
+                </div>
+              </div>
 
-          <div
-            style={{
-              position: 'absolute',
-              bottom: 40,
-              fontSize: 20,
-              opacity: 0.6,
-            }}
-          >
-            Sprawdź swoje odszkodowanie do 600 €
+              <div
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  height: "220px",
+                  borderRadius: "28px",
+                  background:
+                    "linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.05) 100%)",
+                  border: "1px solid rgba(255,255,255,0.14)",
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    left: "-18px",
+                    top: "112px",
+                    width: "290px",
+                    height: "2px",
+                    background:
+                      "linear-gradient(90deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.8) 55%, rgba(255,255,255,0.0) 100%)",
+                    transform: "rotate(-14deg)",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    left: "56px",
+                    top: "84px",
+                    width: "158px",
+                    height: "64px",
+                    borderRadius: "999px",
+                    border: "2px solid rgba(255,255,255,0.78)",
+                    transform: "rotate(-14deg)",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    left: "186px",
+                    top: "70px",
+                    width: "30px",
+                    height: "30px",
+                    borderTop: "2px solid rgba(255,255,255,0.78)",
+                    borderRight: "2px solid rgba(255,255,255,0.78)",
+                    transform: "rotate(31deg)",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    left: "56px",
+                    top: "152px",
+                    width: "72px",
+                    height: "2px",
+                    backgroundColor: "rgba(255,255,255,0.78)",
+                    transform: "rotate(20deg)",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    left: "118px",
+                    top: "136px",
+                    width: "86px",
+                    height: "2px",
+                    backgroundColor: "rgba(255,255,255,0.78)",
+                    transform: "rotate(-32deg)",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    position: "absolute",
+                    right: "24px",
+                    bottom: "24px",
+                    width: "78px",
+                    height: "78px",
+                    borderRadius: "22px",
+                    backgroundColor: "rgba(245, 158, 11, 0.16)",
+                    border: "1px solid rgba(245, 158, 11, 0.28)",
+                  }}
+                />
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                width: "62%",
+                padding: "46px 48px 42px",
+                backgroundColor: "#ffffff",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "22px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    fontSize: "18px",
+                    fontWeight: 700,
+                    color: "#0f172a",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      padding: "7px 12px",
+                      borderRadius: "999px",
+                      backgroundColor: "#eef6ff",
+                      color: "#1768a5",
+                      border: "1px solid #d8e8fb",
+                      letterSpacing: "0.05em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Niestandardowy preview
+                  </div>
+                  <div style={{ opacity: 0.45 }}>problemlot.com</div>
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    fontSize: "54px",
+                    lineHeight: 1.08,
+                    fontWeight: 800,
+                    letterSpacing: "-0.03em",
+                    color: "#0f172a",
+                  }}
+                >
+                  {title}
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    maxWidth: "640px",
+                    fontSize: "26px",
+                    lineHeight: 1.35,
+                    color: "#475569",
+                  }}
+                >
+                  {description}
+                </div>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  paddingTop: "26px",
+                  borderTop: "1px solid #e2e8f0",
+                  fontSize: "22px",
+                  color: "#0f172a",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "24px",
+                  }}
+                >
+                  <div style={{ display: "flex", fontWeight: 700 }}>
+                    Opoznienia
+                  </div>
+                  <div style={{ display: "flex", fontWeight: 700 }}>
+                    Odwolania
+                  </div>
+                  <div style={{ display: "flex", fontWeight: 700 }}>
+                    Odszkodowania
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: 700,
+                    color: "#1768a5",
+                  }}
+                >
+                  Do 600 EUR
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ),
@@ -90,8 +355,8 @@ export default function handler(req: NextRequest) {
         height: 630,
       }
     );
-  } catch (e: any) {
-    return new Response(`Failed to generate the image`, {
+  } catch {
+    return new Response("Failed to generate the image", {
       status: 500,
     });
   }

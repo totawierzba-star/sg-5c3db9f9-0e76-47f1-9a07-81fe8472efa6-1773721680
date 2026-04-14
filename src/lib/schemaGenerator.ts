@@ -47,7 +47,7 @@ export function generateArticleSchema({
   publishDate,
   modifiedDate,
   author = "ProblemLot.pl",
-  imageUrl = "https://problemlot.pl/og-image.png"
+  imageUrl
 }: {
   title: string;
   description: string;
@@ -57,6 +57,26 @@ export function generateArticleSchema({
   author?: string;
   imageUrl?: string;
 }) {
+  let origin = "https://problemlot.com";
+
+  try {
+    origin = new URL(url).origin;
+  } catch {
+    // Keep the production origin fallback for invalid or relative URLs.
+  }
+
+  const fallbackImageUrl = `${origin}/api/og?${new URLSearchParams({
+    title,
+    desc: description,
+    view: "site",
+    v: "20260414",
+  }).toString()}`;
+
+  const resolvedImageUrl =
+    imageUrl && !imageUrl.includes("/og-image.png")
+      ? imageUrl
+      : fallbackImageUrl;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -68,17 +88,17 @@ export function generateArticleSchema({
     "author": {
       "@type": "Organization",
       "name": author,
-      "url": "https://problemlot.pl"
+      "url": origin
     },
     "publisher": {
       "@type": "Organization",
       "name": "ProblemLot.pl",
       "logo": {
         "@type": "ImageObject",
-        "url": imageUrl
+        "url": resolvedImageUrl
       }
     },
-    "image": imageUrl,
+    "image": resolvedImageUrl,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url
