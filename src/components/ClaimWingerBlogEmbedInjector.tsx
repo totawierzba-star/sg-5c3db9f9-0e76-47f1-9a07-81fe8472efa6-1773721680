@@ -6,6 +6,7 @@ import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { ClaimWingerElSection } from "@/components/ClaimWingerElSection";
 import { ClaimWingerHuSection } from "@/components/ClaimWingerHuSection";
 import { ClaimWingerTrSection } from "@/components/ClaimWingerTrSection";
+import { ClaimWingerViSection } from "@/components/ClaimWingerViSection";
 import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
@@ -78,6 +79,19 @@ const BLOG_EMBED_CONFIGS: BlogEmbedConfig[] = [
         ctaHref="https://claimwinger.com/tr?utm_source=problemlot-tr&utm_medium=embedded_cta&utm_campaign=blog_entry"
         ctaLabel="ClaimWinger TR kontrolunu ac"
         placement="tr_blog_embed"
+      />
+    ),
+  },
+  {
+    isMatch: (path) => /^\/vi\/blog\/[^/?#]+$/.test(path),
+    claimLinkSelector: 'a[href*="claimwinger.com/vi"]',
+    fallbackMode: "after-header",
+    render: () => (
+      <ClaimWingerViSection
+        className="mb-8"
+        title="Kiểm tra hồ sơ bay bị chậm hoặc bị hủy bằng tiếng Việt"
+        description="Nếu bạn đã đọc tới phần nội dung này, thường là bạn đã nắm được logic cơ bản của hồ sơ. Form ClaimWinger tiếng Việt giúp kiểm tra nhanh xem vụ việc có đáng tiếp tục hay không."
+        placement="vi_blog_embed"
       />
     ),
   },

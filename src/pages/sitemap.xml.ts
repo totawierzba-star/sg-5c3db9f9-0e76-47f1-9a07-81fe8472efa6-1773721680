@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
+import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
 
 const EXTERNAL_DATA_URL = 'https://problemlot.com';
@@ -110,6 +111,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/tr/iptal-edilen-ucus', priority: '0.9', changefreq: 'weekly' },
     { url: '/tr/tazminat-hesaplayici', priority: '0.9', changefreq: 'weekly' },
     { url: '/tr/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- VIETNAMESE MAIN ---
+    { url: '/vi', priority: '1.0', changefreq: 'daily' },
+    { url: '/vi/chuyen-bay-bi-hoan', priority: '0.9', changefreq: 'weekly' },
+    { url: '/vi/chuyen-bay-bi-huy', priority: '0.9', changefreq: 'weekly' },
+    { url: '/vi/kiem-tra-boi-thuong', priority: '0.9', changefreq: 'weekly' },
+    { url: '/vi/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -130,7 +138,19 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
-  const sitemap = generateSiteMap([...pages, ...huBlogPages, ...zhBlogPages, ...trBlogPages]);
+  const viBlogPages = blogArticlesViSorted.map((article) => ({
+    url: `/vi/blog/${article.slug}`,
+    priority: '0.7',
+    changefreq: 'monthly',
+  }));
+
+  const sitemap = generateSiteMap([
+    ...pages,
+    ...huBlogPages,
+    ...zhBlogPages,
+    ...trBlogPages,
+    ...viBlogPages,
+  ]);
 
   res.setHeader('Content-Type', 'text/xml');
   res.write(sitemap);
