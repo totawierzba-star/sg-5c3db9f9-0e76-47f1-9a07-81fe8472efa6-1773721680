@@ -9,6 +9,14 @@ export interface FAQItem {
   answer: string;
 }
 
+function resolveOrigin(url: string) {
+  try {
+    return new URL(url).origin;
+  } catch {
+    return "https://problemlot.com";
+  }
+}
+
 /**
  * Generates FAQPage JSON-LD schema
  * @param faqs - Array of FAQ items with question and answer
@@ -46,7 +54,7 @@ export function generateArticleSchema({
   url,
   publishDate,
   modifiedDate,
-  author = "ProblemLot.pl",
+  author = "ProblemLot.com",
   imageUrl
 }: {
   title: string;
@@ -57,13 +65,7 @@ export function generateArticleSchema({
   author?: string;
   imageUrl?: string;
 }) {
-  let origin = "https://problemlot.com";
-
-  try {
-    origin = new URL(url).origin;
-  } catch {
-    // Keep the production origin fallback for invalid or relative URLs.
-  }
+  const origin = resolveOrigin(url);
 
   const fallbackImageUrl = `${origin}/api/og?${new URLSearchParams({
     title,
@@ -92,7 +94,7 @@ export function generateArticleSchema({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "ProblemLot.pl",
+      "name": "ProblemLot.com",
       "logo": {
         "@type": "ImageObject",
         "url": resolvedImageUrl
@@ -103,6 +105,67 @@ export function generateArticleSchema({
       "@type": "WebPage",
       "@id": url
     }
+  };
+}
+
+export function generateOrganizationSchema({
+  url = "https://problemlot.com",
+  name = "ProblemLot.com",
+  logoUrl,
+  sameAs = ["https://claimwinger.com"],
+}: {
+  url?: string;
+  name?: string;
+  logoUrl?: string;
+  sameAs?: string[];
+} = {}) {
+  const origin = resolveOrigin(url);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": name,
+    "url": origin,
+    "logo": {
+      "@type": "ImageObject",
+      "url": logoUrl || `${origin}/api/og?title=ProblemLot.com&desc=EU261&view=site&v=20260414`,
+    },
+    "sameAs": sameAs,
+  };
+}
+
+export function generateWebPageSchema({
+  title,
+  description,
+  url,
+  inLanguage,
+  type = "WebPage",
+}: {
+  title: string;
+  description: string;
+  url: string;
+  inLanguage?: string;
+  type?: "WebPage" | "CollectionPage";
+}) {
+  const origin = resolveOrigin(url);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    "name": title,
+    "description": description,
+    "url": url,
+    "inLanguage": inLanguage,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ProblemLot.com",
+      "url": origin,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ProblemLot.com",
+      "url": origin,
+    },
   };
 }
 

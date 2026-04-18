@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 // Supported locales
-const locales = ['pl', 'zh', 'cs', 'hi', 'sk', 'it'] as const;
+const locales = ['pl', 'zh', 'cs', 'hi', 'sk', 'it', 'vi'] as const;
 type Locale = (typeof locales)[number];
 
 // Default locale
@@ -22,9 +22,11 @@ export function middleware(request: NextRequest) {
   // Language detection - only for root path on first visit
   if (pathname === "/" && !request.cookies.get("preferredLanguage")) {
     const acceptLanguage = request.headers.get("accept-language") || "";
+    const normalizedAcceptLanguage = acceptLanguage.toLowerCase();
     
     // Check if browser prefers Chinese
-    const prefersChinese = acceptLanguage.toLowerCase().includes("zh");
+    const prefersChinese = normalizedAcceptLanguage.includes("zh");
+    const prefersVietnamese = normalizedAcceptLanguage.includes("vi");
     
     if (prefersChinese) {
       const url = request.nextUrl.clone();
@@ -33,6 +35,16 @@ export function middleware(request: NextRequest) {
       const response = NextResponse.redirect(url);
       // Set cookie to remember preference
       response.cookies.set("preferredLanguage", "zh", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersVietnamese) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/vi";
+
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "vi", {
         maxAge: 60 * 60 * 24 * 365, // 1 year
         path: "/",
       });
