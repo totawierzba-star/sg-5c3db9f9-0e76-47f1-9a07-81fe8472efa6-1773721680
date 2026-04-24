@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-berlin-meskanie-letu",
+    title: "Bratislava – Berlín meškanie letu: 250 €",
+    slug: "bratislava-berlin-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Meškanie alebo zrušenie letu Bratislava – Berlín (BER)? 250 € EU261 kompenzácia.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "slate",
+    schema: {
+      faqItems: [
+        { question: "Nárok pri BTS – Berlín?", answer: "Áno, 250 € pri meškaní 3+ hod." },
+        { question: "Kto lieta?", answer: "Ryanair obmedzene, alternatívy cez Viedeň alebo Budapešť." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-malaga-meskanie-letu",
     title: "Bratislava – Malaga meškanie letu: 400 €",
     slug: "bratislava-malaga-meskanie-letu",
