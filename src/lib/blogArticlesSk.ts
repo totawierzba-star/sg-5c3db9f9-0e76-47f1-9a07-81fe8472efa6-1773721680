@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "kto-zaplati-odskodnenie-codeshare-lety",
+    title: "Codeshare lety: kto platí odškodnenie za meškanie?",
+    slug: "kto-zaplati-odskodnenie-codeshare-lety",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 9,
+    excerpt:
+      "Kúpili ste let cez jednu aerolinku, ale operovala ho iná? Kto podľa EU261 platí kompenzáciu a ako efektívne reklamovať v prostredí aliancií a wet-lease.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "violet",
+    schema: {
+      faqItems: [
+        {
+          question: "Kto platí pri codeshare lete – marketing alebo operating carrier?",
+          answer:
+            "Podľa EU261 vždy operujúca aerolinka (operating carrier), ktorá let reálne vykonáva – bez ohľadu na to, u ktorej aerolinky ste si lístok kúpili.",
+        },
+        {
+          question: "Ako zistím, ktorá aerolinka let operuje?",
+          answer:
+            "V potvrdení rezervácie pri údaji operated by. Alternatívne z loga na lietadle a uniformy posádky.",
+        },
+        {
+          question: "Čo ak marketing a operating carrier sa prehadzujú prípad?",
+          answer:
+            "V reklamácii uveďte obe aerolinky a udržujte paralelnú korešpondenciu. Pri súdnej ceste žaluje sa len operujúca aerolinka.",
+        },
+        {
+          question: "Platí EU261 pri codeshare lete mimo EÚ?",
+          answer:
+            "Záleží na tom, kto operuje. EÚ aerolinka pri lete z EÚ a pri lete do EÚ – áno. Mimo-EÚ aerolinka pri lete mimo EÚ – nie.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ako-kontaktovat-dopravny-urad-sr-staznost",
     title: "Dopravný úrad SR: ako podať sťažnosť na aerolinku",
     slug: "ako-kontaktovat-dopravny-urad-sr-staznost",
