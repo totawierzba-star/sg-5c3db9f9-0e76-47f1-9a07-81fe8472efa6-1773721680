@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "batozina-uplne-stratena-montrealsky-dohovor",
+    title: "Úplne stratená batožina: Montrealský dohovor 1 600 €",
+    slug: "batozina-uplne-stratena-montrealsky-dohovor",
+    category: "longtail",
+    wordCount: 1300,
+    readTime: 6,
+    excerpt: "Po 21 dňoch bez batožiny sa považuje za stratenú. Montrealský dohovor stanovuje maximum 1 288 SDR (~1 600 €).",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        { question: "Kedy stratená?", answer: "Po 21 dňoch od plánovaného príchodu." },
+        { question: "Koľko dostanem?", answer: "Max 1 288 SDR (~1 600 €) podľa Montrealského dohovoru." },
+      ],
+    },
+  },
+
+  {
     id: "kapacitne-dovody-mimoriadne-okolnosti",
     title: "Kapacitné dôvody a mimoriadne okolnosti (EU261)",
     slug: "kapacitne-dovody-mimoriadne-okolnosti",
