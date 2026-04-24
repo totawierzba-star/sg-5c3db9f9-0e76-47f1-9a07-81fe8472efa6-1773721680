@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "easyjet-odskodnenie",
+    title: "easyJet odškodnenie: kedy vzniká nárok a koľko dostanete",
+    slug: "easyjet-odskodnenie",
+    category: "airline",
+    airlineName: "easyJet",
+    wordCount: 2200,
+    readTime: 9,
+    excerpt:
+      "Sprievodca nárokom na kompenzáciu pri meškaní alebo zrušení letu easyJet podľa EU261 a UK261. Sumy, postup reklamácie a typické mimoriadne okolnosti.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri lete easyJet nárok na odškodnenie podľa EU261?",
+          answer:
+            "Áno. easyJet Europe má rakúsky AOC, takže lety z EÚ letísk plne spadajú do EU261. Pri easyJet UK platí UK261 s ekvivalentnou ochranou.",
+        },
+        {
+          question: "Koľko môžem dostať za meškanie letu easyJet?",
+          answer:
+            "Pri krátkych letoch 250 €, pri stredných 400 €, pri dlhých 600 €. Väčšina siete easyJet spadá do prvých dvoch kategórií.",
+        },
+        {
+          question: "Ako podať reklamáciu easyJet?",
+          answer:
+            "Cez oficiálny EU261 Claim Form na webe easyJet. Odpoveď typicky do 14 – 21 dní, výplata do ďalších 14 dní.",
+        },
+        {
+          question: "Platí EU261 pri lete easyJet z UK do EÚ?",
+          answer:
+            "Pri odlete z UK platí UK261 (takmer identický rámec). Pri odlete z EÚ platí EU261. Sumy sú v oboch prípadoch ekvivalentné.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "kto-zaplati-odskodnenie-codeshare-lety",
     title: "Codeshare lety: kto platí odškodnenie za meškanie?",
     slug: "kto-zaplati-odskodnenie-codeshare-lety",
