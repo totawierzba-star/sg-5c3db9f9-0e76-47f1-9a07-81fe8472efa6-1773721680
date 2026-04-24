@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "brussels-airlines-odskodnenie",
+    title: "Brussels Airlines odškodnenie podľa EU261",
+    slug: "brussels-airlines-odskodnenie",
+    category: "airline",
+    airlineName: "Brussels Airlines",
+    wordCount: 2300,
+    readTime: 8,
+    excerpt:
+      "Brussels Airlines meškal alebo zrušil let? Prehľad nárokov podľa EU261 pri letoch do Afriky, USA aj v rámci Európy. Ako reklamovať a kedy eskalovať.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri Brussels Airlines nárok na odškodnenie?",
+          answer:
+            "Áno. Brussels Airlines (SN) je belgická aerolinka v Lufthansa Group. Lety spadajú pod EU261 pri odlete z EÚ aj pri návrate z tretích krajín.",
+        },
+        {
+          question: "Koľko dostanem za meškanie Brussels Airlines?",
+          answer:
+            "250 € do 1 500 km, 400 € 1 500 – 3 500 km, 600 € nad 3 500 km mimo EÚ. Typická trasa z Bruselu do USA alebo Afriky = 600 €.",
+        },
+        {
+          question: "Ako reklamovať Brussels Airlines?",
+          answer:
+            "Cez formulár Customer relations na brusselsairlines.com. Odpoveď typicky do 28 dní.",
+        },
+        {
+          question: "Sú belgické štrajky mimoriadne okolnosti?",
+          answer:
+            "Štrajky samotnej posádky nie sú mimoriadne okolnosti (ECJ C-195/17). Štrajky ATC a externé štrajky áno. Žiadajte od aerolinky konkrétne dôkazy.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "easyjet-odskodnenie",
     title: "easyJet odškodnenie: kedy vzniká nárok a koľko dostanete",
     slug: "easyjet-odskodnenie",
