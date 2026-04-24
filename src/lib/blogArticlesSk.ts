@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "menej-ako-3-hodiny-meskanie-odskodnenie",
+    title: "Meškanie menej než 3 hodiny: mám nárok na odškodnenie?",
+    slug: "menej-ako-3-hodiny-meskanie-odskodnenie",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 9,
+    excerpt:
+      "Priletel vám let s meškaním pod 3 hodiny? Vysvetľujeme, kedy paušálna kompenzácia nevzniká, kedy áno a aké iné práva máte podľa EU261 a rozsudkov Sturgeon a Germanwings.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "rose",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám nárok na odškodnenie, ak som priletel s menej než 3 hodinami meškania?",
+          answer:
+            "Na paušálnu kompenzáciu 250 / 400 / 600 € podľa EU261 typicky nie. Hranica vychádza z rozsudku C-402/07 (Sturgeon) a platí pre meškanie pri príchode do konečnej destinácie. Ak však let bol zrušený, existujú iné práva – refundácia, presmerovanie, proplácanie výdavkov.",
+        },
+        {
+          question: "Ako sa presne meria 3-hodinová hranica?",
+          answer:
+            "Rozhodujúci je čas, kedy lietadlo otvorí dvere v konečnej destinácii – nie čas dotyku kolies na zemi. Tak to judikoval Súdny dvor EÚ vo veci C-452/13 (Germanwings).",
+        },
+        {
+          question: "Čo ak meškal iba posledný úsek cesty?",
+          answer:
+            "Dôležité je meškanie v konečnej destinácii, nie v jednotlivom úseku. Ak ste mali prestup, ráta sa celkový rozdiel oproti pôvodne plánovanému príletu.",
+        },
+        {
+          question: "Môžem aspoň žiadať kompenzáciu za jedlo a hotel?",
+          answer:
+            "Áno. EU261 hovorí o right to care: pri meškaní od 2 hodín (krátke lety) / 3 hodín (stredné) / 4 hodín (dlhé) musí aerolinka bezplatne zabezpečiť jedlo, nápoje, komunikáciu a v prípade potreby aj ubytovanie s transportom.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "predcasny-odlet-letu-odskodnenie",
     title: "Predčasný odlet letu: máte nárok na odškodnenie 250–600 €?",
     slug: "predcasny-odlet-letu-odskodnenie",
