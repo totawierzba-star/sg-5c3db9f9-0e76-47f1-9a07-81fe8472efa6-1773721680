@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-dublin-dub-meskania",
+    title: "Letisko Dublin (DUB): meškania a odškodnenie EU261",
+    slug: "letisko-dublin-dub-meskania",
+    category: "airport",
+    airportCode: "DUB",
+    airportName: "Dublin Airport",
+    flag: "🇮🇪",
+    wordCount: 1800,
+    readTime: 7,
+    excerpt:
+      "Dublin Airport – hub Ryanair a Aer Lingus, s US Preclearance. Prehľad EU261 nárokov a postupu reklamácie cez írsky IAA.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri DUB nárok?",
+          answer:
+            "Áno, EU261 plne. Sumy 250/400/600 €.",
+        },
+        {
+          question: "Akí dopravcovia z DUB?",
+          answer:
+            "Ryanair (hub), Aer Lingus, Lufthansa, Delta, American, United.",
+        },
+        {
+          question: "Írsky regulátor?",
+          answer:
+            "Irish Aviation Authority (IAA).",
+        },
+        {
+          question: "Čo je US Preclearance v DUB?",
+          answer:
+            "Pasová kontrola USA priamo na DUB – pri prílete do USA idete priamo ako domáci let.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-lisabon-lis-meskania",
     title: "Letisko Lisabon (LIS): meškania a odškodnenie",
     slug: "letisko-lisabon-lis-meskania",
