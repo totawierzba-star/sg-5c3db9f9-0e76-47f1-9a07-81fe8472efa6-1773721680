@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-zurich-zrh-meskania",
+    title: "Letisko Zurich (ZRH): meškania a odškodnenie EU261",
+    slug: "letisko-zurich-zrh-meskania",
+    category: "airport",
+    airportCode: "ZRH",
+    airportName: "Zurich Kloten",
+    flag: "🇨🇭",
+    wordCount: 2000,
+    readTime: 8,
+    excerpt:
+      "Aj keď Švajčiarsko nie je v EÚ, EU261 platí pri lete z/do Zurich vďaka bilaterálnej zmluve. Sumy 250 / 400 / 600 € a FOCA ako NEB.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        {
+          question: "Platí EU261 na ZRH?",
+          answer:
+            "Áno, prostredníctvom bilaterálnej zmluvy Švajčiarsko – EÚ.",
+        },
+        {
+          question: "Koľko dostanem pri lete z ZRH?",
+          answer:
+            "250 / 400 / 600 € podľa vzdialenosti.",
+        },
+        {
+          question: "Kto je švajčiarsky regulátor?",
+          answer:
+            "FOCA (Federal Office of Civil Aviation).",
+        },
+        {
+          question: "Nočný zákaz v ZRH – dopad?",
+          answer:
+            "23:30 – 06:00 zákaz odletov. Meškania po 23:30 často automaticky prechádzajú do rána s povinným hotelom.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-milan-malpensa-mxp-meskania",
     title: "Letisko Miláno Malpensa (MXP): meškania a odškodnenie",
     slug: "letisko-milan-malpensa-mxp-meskania",
