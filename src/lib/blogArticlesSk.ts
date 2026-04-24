@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-malaga-meskanie-letu",
+    title: "Bratislava – Malaga meškanie letu: 400 €",
+    slug: "bratislava-malaga-meskanie-letu",
+    category: "longtail",
+    wordCount: 1300,
+    readTime: 6,
+    excerpt: "Ryanair Bratislava – Malaga meškal? 400 € EU261 kompenzácia. Costa del Sol dovolenka.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        { question: "Nárok pri BTS – Malaga?", answer: "Áno, 400 € pri meškaní 3+ hod." },
+        { question: "Trasa?", answer: "2 100 km nad 1 500 km = 400 €." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-alicante-meskanie-letu",
     title: "Bratislava – Alicante meškanie letu: 400 €",
     slug: "bratislava-alicante-meskanie-letu",
