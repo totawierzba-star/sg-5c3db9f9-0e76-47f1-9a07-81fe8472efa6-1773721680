@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "downgrade-triedy-letu-kompenzacia",
+    title: "Downgrade triedy letu: kompenzácia 30 – 75 %",
+    slug: "downgrade-triedy-letu-kompenzacia",
+    category: "longtail",
+    wordCount: 1500,
+    readTime: 6,
+    excerpt: "Aerolinka vás presunula z business do economy? EU261 článok 10 dáva refundáciu 30/50/75 % ceny lístka.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "purple",
+    schema: {
+      faqItems: [
+        { question: "Čo je downgrade?", answer: "Presun z vyššej triedy do nižšej proti vôli pasažiera." },
+        { question: "Aká kompenzácia?", answer: "30/50/75 % ceny lístka podľa vzdialenosti." },
+      ],
+    },
+  },
+
+  {
     id: "vieden-los-angeles-meskanie-letu",
     title: "Viedeň – Los Angeles meškanie letu: 600 €",
     slug: "vieden-los-angeles-meskanie-letu",
