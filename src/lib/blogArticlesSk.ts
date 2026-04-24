@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "kosice-vieden-meskanie-letu",
+    title: "Košice – Viedeň prestup meškanie: EU261 prehľad",
+    slug: "kosice-vieden-meskanie-letu",
+    category: "longtail",
+    wordCount: 1100,
+    readTime: 5,
+    excerpt: "Košice – Viedeň nemá pravidelné letecké spojenie. Ako EU261 rieši prestupy cez Viedeň pri jednej rezervácii.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "violet",
+    schema: {
+      faqItems: [
+        { question: "Je priamy let KSC – Viedeň?", answer: "Prakticky nie. Typicky pozemná doprava." },
+        { question: "EU261 pri prestupe vo VIE?", answer: "Áno, pri jednej rezervácii podľa konečnej destinácie." },
+      ],
+    },
+  },
+
+  {
     id: "kosice-praha-meskanie-letu",
     title: "Košice – Praha meškanie letu: 250 € EU261",
     slug: "kosice-praha-meskanie-letu",
