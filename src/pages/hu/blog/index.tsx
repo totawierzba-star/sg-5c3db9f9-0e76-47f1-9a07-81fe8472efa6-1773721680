@@ -9,21 +9,22 @@ import {
   blogCategoriesHu,
   featuredBlogArticlesHu,
 } from "@/lib/blogArticlesHu";
+import { cleanHuText, formatHuCategory } from "@/lib/huArticleContent";
 
 export default function BlogIndexHu() {
-  const [selectedCategory, setSelectedCategory] = useState("Osszes cikk");
+  const [selectedCategory, setSelectedCategory] = useState("Összes cikk");
   const [searchQuery, setSearchQuery] = useState("");
 
   const query = searchQuery.trim().toLowerCase();
 
   const filteredArticles = blogArticlesHuSorted.filter((article) => {
     const matchesCategory =
-      selectedCategory === "Osszes cikk" || article.category === selectedCategory;
+      selectedCategory === "Összes cikk" || article.category === selectedCategory;
     const matchesSearch =
       query === "" ||
-      article.title.toLowerCase().includes(query) ||
-      article.excerpt.toLowerCase().includes(query) ||
-      article.category.toLowerCase().includes(query);
+      cleanHuText(article.title).toLowerCase().includes(query) ||
+      cleanHuText(article.excerpt).toLowerCase().includes(query) ||
+      formatHuCategory(article.category).toLowerCase().includes(query);
 
     return matchesCategory && matchesSearch;
   });
@@ -38,8 +39,8 @@ export default function BlogIndexHu() {
   return (
     <LayoutHu>
       <SEO
-        title={`Magyar utasjogi blog | ${totalArticles} cikk EU261, keses, torles es karterites temaban`}
-        description="Magyar nyelvu cikkek az EU261 szabalyairol, jaratkesesrol, torlesrol, karteritesrol es a legfontosabb utasjogi dontesi helyzetekrol."
+        title={`Magyar utasjogi blog | ${totalArticles} cikk EU261, késés, törlés és kártérítés témában`}
+        description="Magyar nyelvű cikkek az EU261 szabályairól, járatkésésről, törlésről, kártérítésről és a legfontosabb utasjogi döntési helyzetekről."
         url="https://problemlot.com/hu/blog"
       />
 
@@ -49,15 +50,15 @@ export default function BlogIndexHu() {
             <div className="text-center">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
                 <BookOpen className="h-4 w-4" />
-                Magyar utasjogi tudasbazis
+                Magyar utasjogi tudásbázis
               </div>
               <h1 className="mb-5 text-4xl font-bold text-slate-900 dark:text-white md:text-5xl">
-                EU261, jaratkeses es karterites magyarul
+                EU261, járatkésés és kártérítés magyarul
               </h1>
               <p className="mx-auto mb-8 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                Lepesrol lepesre magyarazott cikkek a kesett, torolt es atfoglalt jaratokrol.
-                A cel nem csak a forgalom, hanem az, hogy gyorsan el tudja donteni: az on jaratara
-                ervenyes-e az EU261, es van-e ertelme igenyt inditani.
+                Lépésről lépésre magyarázott cikkek a késett, törölt és átfoglalt járatokról.
+                A cél nem csak a forgalom, hanem az, hogy gyorsan el tudja dönteni: az Ön járatára
+                érvényes-e az EU261, és van-e értelme igényt indítani.
               </p>
 
               <div className="grid gap-4 sm:grid-cols-3">
@@ -69,11 +70,11 @@ export default function BlogIndexHu() {
                 </div>
                 <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
                   <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">EU261</div>
-                  <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">kozponti tema</div>
+                  <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">központi téma</div>
                 </div>
                 <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
                   <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">600 EUR</div>
-                  <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">maximalis sav</div>
+                  <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">maximális sáv</div>
                 </div>
               </div>
             </div>
@@ -85,13 +86,13 @@ export default function BlogIndexHu() {
             <div className="rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-slate-900 p-8 text-white shadow-xl">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm">
                 <Sparkles className="h-4 w-4" />
-                Kiemelt olvasnivalo
+                Kiemelt olvasnivaló
               </div>
               <h2 className="mb-3 text-2xl font-bold">
                 Ezekkel a cikkekkel a leggyorsabb elindulni
               </h2>
               <p className="mb-6 max-w-2xl text-blue-100">
-                Ha most talalkozik eloszor a temaval, itt erdemes kezdeni: eloszor a szabalyok, utana a sajat jarat helyzete.
+                Ha most találkozik először a témával, itt érdemes kezdeni: először a szabályok, utána a saját járat helyzete.
               </p>
 
               <div className="space-y-4">
@@ -101,9 +102,9 @@ export default function BlogIndexHu() {
                     href={`/hu/blog/${article.slug}`}
                     className="block rounded-2xl border border-white/10 bg-white/10 p-4 transition hover:bg-white/15"
                   >
-                    <div className="mb-2 text-sm text-blue-100">{article.category}</div>
-                    <h3 className="text-lg font-semibold">{article.title}</h3>
-                    <p className="mt-2 text-sm text-blue-100">{article.excerpt}</p>
+                    <div className="mb-2 text-sm text-blue-100">{formatHuCategory(article.category)}</div>
+                    <h3 className="text-lg font-semibold">{cleanHuText(article.title)}</h3>
+                    <p className="mt-2 text-sm text-blue-100">{cleanHuText(article.excerpt)}</p>
                   </Link>
                 ))}
               </div>
@@ -118,7 +119,7 @@ export default function BlogIndexHu() {
                 <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
                 <input
                   type="text"
-                  placeholder="Kereses: EU261, keses, torles, Wizz Air..."
+                  placeholder="Keresés: EU261, késés, törlés, Wizz Air..."
                   value={searchQuery}
                   onChange={(event) => setSearchQuery(event.target.value)}
                   className="w-full rounded-2xl border border-slate-200 bg-slate-50 py-4 pl-12 pr-4 text-slate-900 outline-none transition focus:border-blue-500 focus:bg-white dark:border-gray-700 dark:bg-gray-900 dark:text-white"
@@ -128,7 +129,7 @@ export default function BlogIndexHu() {
               <div className="flex flex-wrap gap-3">
                 {blogCategoriesHu.map((category) => {
                   const count =
-                    category === "Osszes cikk" ? totalArticles : categoryCounts[category] || 0;
+                    category === "Összes cikk" ? totalArticles : categoryCounts[category] || 0;
 
                   return (
                     <button
@@ -140,7 +141,7 @@ export default function BlogIndexHu() {
                           : "bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-gray-700 dark:text-slate-200 dark:hover:bg-gray-600"
                       }`}
                     >
-                      {category} ({count})
+                      {formatHuCategory(category)} ({count})
                     </button>
                   );
                 })}
@@ -150,17 +151,17 @@ export default function BlogIndexHu() {
 
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-              {selectedCategory === "Osszes cikk" ? "Osszes cikk" : selectedCategory}
+              {selectedCategory === "Összes cikk" ? "Összes cikk" : formatHuCategory(selectedCategory)}
             </h2>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-              {filteredArticles.length} talalat
+              {filteredArticles.length} találat
             </p>
           </div>
 
           {filteredArticles.length === 0 ? (
             <div className="rounded-3xl bg-white px-6 py-16 text-center shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
               <p className="text-lg text-slate-600 dark:text-slate-300">
-                Nincs talalat. Probalja meg az EU261, keses vagy torles kulcsszavakat.
+                Nincs találat. Próbálja meg az EU261, késés vagy törlés kulcsszavakat.
               </p>
             </div>
           ) : (
@@ -174,13 +175,13 @@ export default function BlogIndexHu() {
                   <div className="p-6">
                     <div className="mb-4 flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400">
                       <Tag className="h-4 w-4" />
-                      <span>{article.category}</span>
+                      <span>{formatHuCategory(article.category)}</span>
                     </div>
                     <h3 className="mb-3 text-xl font-bold text-slate-900 transition group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
-                      {article.title}
+                      {cleanHuText(article.title)}
                     </h3>
                     <p className="mb-6 text-sm leading-7 text-slate-600 dark:text-slate-300">
-                      {article.excerpt}
+                      {cleanHuText(article.excerpt)}
                     </p>
                     <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
                       <span className="flex items-center gap-1">
@@ -194,7 +195,7 @@ export default function BlogIndexHu() {
                     </div>
                   </div>
                   <div className="flex items-center justify-between border-t border-slate-100 bg-slate-50 px-6 py-4 text-sm font-semibold text-blue-600 transition group-hover:bg-blue-50 dark:border-gray-700 dark:bg-gray-900 dark:text-blue-400 dark:group-hover:bg-gray-950">
-                    <span>Tovabb a cikkre</span>
+                    <span>Tovább a cikkre</span>
                     <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                   </div>
                 </Link>

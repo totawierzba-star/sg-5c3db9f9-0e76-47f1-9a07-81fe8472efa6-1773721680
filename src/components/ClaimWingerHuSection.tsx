@@ -1,6 +1,7 @@
 import { ShieldCheck, Sparkles, ArrowRight } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
 type ClaimWingerHuSectionProps = {
   className?: string;
@@ -11,17 +12,21 @@ type ClaimWingerHuSectionProps = {
   ctaHref?: string;
   loadingLabel?: string;
   loadingDescription?: string;
+  trackingCampaign?: string;
+  trackingContent?: string;
 };
 
 export function ClaimWingerHuSection({
   className = "",
-  title = "Ellenorizze most, hogy jogosult-e karteritesre",
-  description = "Adja meg a jarat alapadatait, es a ClaimWinger segit gyorsan felmerni, hogy a keses vagy torles utan lehet-e karteritest kerni.",
-  badge = "ClaimWinger magyar igenybejelento",
-  ctaLabel = "Megnyitas a ClaimWingeren",
+  title = "Ellenőrizze most, hogy jogosult-e kártérítésre",
+  description = "Adja meg a járat alapadatait, és a ClaimWinger segít gyorsan felmérni, hogy a késés vagy törlés után lehet-e kártérítést kérni.",
+  badge = "ClaimWinger magyar igénybejelentő",
+  ctaLabel = "Megnyitás a ClaimWingeren",
   ctaHref = "https://claimwinger.com/hu",
-  loadingLabel = "A ClaimWinger urlap betoltese folyamatban...",
-  loadingDescription = "Nehany masodperc mulva megjelenik a magyar igenybejelento urlap.",
+  loadingLabel = "A ClaimWinger űrlap betöltése folyamatban...",
+  loadingDescription = "Néhány másodperc múlva megjelenik a magyar igénybejelentő űrlap.",
+  trackingCampaign = "hu_claim_entry",
+  trackingContent = "hu_embed_cta",
 }: ClaimWingerHuSectionProps) {
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
 
@@ -39,15 +44,15 @@ export function ClaimWingerHuSection({
         <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
             <ShieldCheck className="h-4 w-4 text-green-600 dark:text-green-400" />
-            Ingyenes elozetes ellenorzes
+            Ingyenes előzetes ellenőrzés
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
             <ShieldCheck className="h-4 w-4 text-green-600 dark:text-green-400" />
-            Nincs elore fizetendo dij
+            Nincs előre fizetendő díj
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
             <ShieldCheck className="h-4 w-4 text-green-600 dark:text-green-400" />
-            Magyar nyelvu folyamat
+            Magyar nyelvű folyamat
           </span>
         </div>
         <div className="mt-6">
@@ -55,6 +60,14 @@ export function ClaimWingerHuSection({
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              pushClaimWingerEvent("claimwinger_cta_click", {
+                language: "hu",
+                campaign: trackingCampaign,
+                content: trackingContent,
+                destination: ctaHref,
+              })
+            }
             className="inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
           >
             {ctaLabel}
@@ -66,7 +79,7 @@ export function ClaimWingerHuSection({
       <ClaimWingerHeroEmbed
         className="mb-8"
         lang="hu"
-        title="ClaimWinger magyar urlap"
+        title="ClaimWinger magyar űrlap"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
       />

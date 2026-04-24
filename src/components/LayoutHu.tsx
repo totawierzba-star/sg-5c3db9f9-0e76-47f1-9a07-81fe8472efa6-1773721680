@@ -31,19 +31,19 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 href="/hu/kesett-jarat"
                 className="font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
-                Kesett jarat
+                Késett járat
               </Link>
               <Link
                 href="/hu/torolt-jarat"
                 className="font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
-                Torolt jarat
+                Törölt járat
               </Link>
               <Link
                 href="/hu/karteritesi-kalkulator"
                 className="font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               >
-                Kalkulator
+                Kalkulátor
               </Link>
               <Link
                 href="/hu/blog"
@@ -71,7 +71,7 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 rel="noopener noreferrer"
                 className="rounded-lg bg-blue-600 px-6 py-2 font-semibold text-white transition-colors hover:bg-blue-700"
               >
-                Karterites ellenorzese
+                Kártérítés ellenőrzése
               </a>
             </nav>
 
@@ -100,21 +100,21 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 className="block py-2 font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Kesett jarat
+                Késett járat
               </Link>
               <Link
                 href="/hu/torolt-jarat"
                 className="block py-2 font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Torolt jarat
+                Törölt járat
               </Link>
               <Link
                 href="/hu/karteritesi-kalkulator"
                 className="block py-2 font-medium text-gray-700 transition-colors hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Karteritesi kalkulator
+                Kártérítési kalkulátor
               </Link>
               <Link
                 href="/hu/blog"
@@ -139,7 +139,7 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 className="block rounded-lg bg-blue-600 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-blue-700"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Karterites ellenorzese
+                Kártérítés ellenőrzése
               </a>
             </div>
           )}
@@ -159,7 +159,7 @@ export function LayoutHu({ children }: LayoutHuProps) {
                 <span className="text-xl font-bold text-white">ProblemLot.com</span>
               </div>
               <p className="text-sm text-gray-400">
-                Segitunk az utasoknak kartalanitast igenyelni kesett es torolt jaratok utan.
+                Segítünk az utasoknak kártalanítást igényelni késett és törölt járatok után.
               </p>
             </div>
 
@@ -168,17 +168,17 @@ export function LayoutHu({ children }: LayoutHuProps) {
               <ul className="space-y-2">
                 <li>
                   <Link href="/hu/kesett-jarat" className="text-sm transition-colors hover:text-blue-400">
-                    Kesett jarat
+                    Késett járat
                   </Link>
                 </li>
                 <li>
                   <Link href="/hu/torolt-jarat" className="text-sm transition-colors hover:text-blue-400">
-                    Torolt jarat
+                    Törölt járat
                   </Link>
                 </li>
                 <li>
                   <Link href="/hu/karteritesi-kalkulator" className="text-sm transition-colors hover:text-blue-400">
-                    Karteritesi kalkulator
+                    Kártérítési kalkulátor
                   </Link>
                 </li>
                 <li>
@@ -194,26 +194,26 @@ export function LayoutHu({ children }: LayoutHuProps) {
               <ul className="space-y-2">
                 <li>
                   <a href="https://claimwinger.com/hu" target="_blank" rel="noopener noreferrer" className="text-sm transition-colors hover:text-blue-400">
-                    Fobb oldal
+                    Főbb oldal
                   </a>
                 </li>
                 <li>
                   <a href="https://claimwinger.com/hu/kesett-jarat" target="_blank" rel="noopener noreferrer" className="text-sm transition-colors hover:text-blue-400">
-                    Kesett jarat urlap
+                    Késett járat űrlap
                   </a>
                 </li>
                 <li>
                   <a href="https://claimwinger.com/hu/torolt-jarat" target="_blank" rel="noopener noreferrer" className="text-sm transition-colors hover:text-blue-400">
-                    Torolt jarat urlap
+                    Törölt járat űrlap
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="mb-4 font-semibold text-white">Jogi informacio</h3>
+              <h3 className="mb-4 font-semibold text-white">Jogi információ</h3>
               <p className="text-sm text-gray-400">
-                A tajekoztatas az EU 261/2004 utasjogi rendeleten alapul. Az egyes ugyek jogosultsaga mindig az adott jarat tenyeitol fugg.
+                A tájékoztatás az EU 261/2004 utasjogi rendeleten alapul. Az egyes ügyek jogosultsága mindig az adott járat tényeitől függ.
               </p>
             </div>
           </div>

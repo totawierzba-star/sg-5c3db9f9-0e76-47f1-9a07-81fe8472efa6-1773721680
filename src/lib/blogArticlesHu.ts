@@ -11,12 +11,12 @@ export interface BlogArticleHu {
 export const blogArticlesHu: BlogArticleHu[] = [
   {
     slug: "checklista-mielott-atadod-az-ugyet-a-claimwingernek",
-    title: "Checklista mielőtt átadod az ügyet a ClaimWingernek",
+    title: "Ellenőrző lista mielőtt átadod az ügyet a ClaimWingernek",
     excerpt:
-      "Magyar checklista arról, mit készíts elő, mielőtt átadod a járatkártérítési ügyedet a ClaimWingernek: dokumentumok, idővonal, levelezés és a legfontosabb részletek.",
+      "Magyar ellenőrző lista arról, mit készíts elő, mielőtt átadod a járatkártérítési ügyedet a ClaimWingernek: dokumentumok, idővonal, levelezés és a legfontosabb részletek.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -26,7 +26,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes szakértőre bízni egy elakadt járatkártérítési ügyet, és mikor lehet még ésszerű saját kézben tartani a folyamatot.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes kis értékű peres útra lépni egy elakadt járatkártérítési ügyben, és mikor jobb még más, kevésbé terhelő utat választani.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -46,7 +46,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes mediációt vagy békéltetést választani elakadt járatkártérítési ügyben, és mikor nem ez a leghasznosabb következő lépés.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -56,7 +56,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, hogy elakadt járatkártérítési ügyben ADR felé, hatóság felé vagy más irányba érdemes-e továbblépni, és hogyan válaszd ki a következő lépést.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -66,7 +66,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes eszkalálni a légitársasági kártérítési kérelmet, milyen jelek mutatják, hogy a follow-up már nem elég, és hogyan készülj a következő lépésre.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -76,17 +76,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes follow-upot küldeni a légitársaságnak, hogyan tedd ezt jól, és mikor nem elég már egy újabb emlékeztető.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
     slug: "hogyan-erositsd-meg-a-claimet",
-    title: "Hogyan erősítsd meg a claimedet?",
+    title: "Hogyan erősítsd meg a kártérítési ügyedet?",
     excerpt:
-      "Magyar útmutató arról, hogyan erősítsd meg a járatkártérítési claimedet: dokumentáció, idővonal, végső érkezés és a leggyakoribb gyenge pontok javítása.",
+      "Magyar útmutató arról, hogyan erősítsd meg a járatkártérítési kártérítési ügyedet: dokumentáció, idővonal, végső érkezés és a leggyakoribb gyenge pontok javítása.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -96,27 +96,27 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mikor érdemes újra beadni egy elutasított vagy elakadt kártérítési kérelmet, és mikor jobb más irányba továbblépni.",
     date: "2026-04-09",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
     slug: "miert-utasitjak-el-a-kerelmeket",
     title: "Miért utasítják el a kérelmeket?",
     excerpt:
-      "Magyar útmutató a légitársasági kártérítési kérelmek elutasításának leggyakoribb okairól: mikor erős az indok, mikor gyenge, és mit jelent ez a claim szempontjából.",
+      "Magyar útmutató a légitársasági kártérítési kérelmek elutasításának leggyakoribb okairól: mikor erős az indok, mikor gyenge, és mit jelent ez a kártérítési ügy szempontjából.",
     date: "2026-04-09",
     readTime: "9 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
     slug: "hogyan-valassz-szolgaltatot",
     title: "Hogyan válassz szolgáltatót?",
     excerpt:
-      "Magyar útmutató: hogyan válassz szolgáltatót járatkártérítési ügyhöz? Mire figyelj a claim partner kiválasztásánál, és mikor lehet jó választás a ClaimWinger.",
+      "Magyar útmutató: hogyan válassz szolgáltatót járatkártérítési ügyhöz? Mire figyelj a kártérítési partnert kiválasztásánál, és mikor lehet jó választás a ClaimWinger.",
     date: "2026-04-09",
     readTime: "9 perc",
-    category: "Osszehasonlitas",
+    category: "Összehasonlítás",
     featured: true,
   },
   {
@@ -126,7 +126,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mennyit kérnek a járatkártérítési cégek: hogyan értsd a jutalékot, mire figyelj a feltételekben, és mikor lehet jobb választás a ClaimWinger.",
     date: "2026-04-09",
     readTime: "9 perc",
-    category: "Osszehasonlitas",
+    category: "Összehasonlítás",
     featured: true,
   },
   {
@@ -136,7 +136,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató: egyedül vagy cégen keresztül érdemes járatkártérítést igényelni? Előnyök, hátrányok és mikor lehet jobb választás a ClaimWinger.",
     date: "2026-04-09",
     readTime: "9 perc",
-    category: "Osszehasonlitas",
+    category: "Összehasonlítás",
     featured: true,
   },
   {
@@ -146,7 +146,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar összehasonlítás: ClaimWinger vs AirHelp vs Skycop. Melyik lehet jobb a te ügyedhez, ha kártérítési partnert keresel járatkésés vagy törlés után?",
     date: "2026-04-09",
     readTime: "9 perc",
-    category: "Osszehasonlitas",
+    category: "Összehasonlítás",
     featured: true,
   },
   {
@@ -156,17 +156,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar összehasonlítás: AirHelp vagy saját igénylés? Előnyök, hátrányok, költségek, időráfordítás és mikor lehet jobb köztes megoldás a ClaimWinger.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Osszehasonlitas",
+    category: "Összehasonlítás",
     featured: true,
   },
   {
     slug: "mit-tegyel-ha-az-airline-sablonos-valaszt-kuld",
-    title: "Mit tegyél, ha az airline sablonos választ küld?",
+    title: "Mit tegyél, ha a légitársaság sablonos választ küld?",
     excerpt:
       "Magyar útmutató arról, mit tegyél, ha a légitársaság sablonos választ küld a kártérítési ügyedre: hogyan ismerd fel a gyenge választ, és mikor érdemes továbblépni.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -176,17 +176,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mennyi idő alatt válaszol a légitársaság egy kártérítési ügyben, mikor normális még a várakozás, és mikor érdemes továbblépni.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
     slug: "mikor-erdemes-birosaghoz-fordulni",
     title: "Mikor érdemes bírósághoz fordulni?",
     excerpt:
-      "Magyar útmutató arról, mikor érdemes bírósághoz fordulni repülési kártérítés ügyben: hogyan mérd fel a bizonyítékokat, az airline válaszát és az ügy erejét.",
+      "Magyar útmutató arról, mikor érdemes bírósághoz fordulni repülési kártérítés ügyben: hogyan mérd fel a bizonyítékokat, a légitársaság válaszát és az ügy erejét.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -196,7 +196,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a visszatérítés és kártérítés együttes igényléséhez: hogyan különül el a két igény, és mikor lehet mindkettő releváns.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -206,7 +206,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a járatkésés bizonyításához: hogyan gyűjts dokumentumokat, fényképeket és egy erős idővonalat.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -216,7 +216,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Lufthansa kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a teljes útvonal alapján.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -226,7 +226,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Ryanair kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a gyakorlatban.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -236,7 +236,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Wizz Air kártérítési igényléséhez: hogyan készítsd elő a dokumentumokat, és hogyan építs erős ügyet a gyakorlatban.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Procedura",
+    category: "Eljárás",
     featured: true,
   },
   {
@@ -246,27 +246,27 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a késés miatt lekésett csatlakozásokhoz: hogyan számít az egy foglalás, a végső célállomás és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
     slug: "tobb-jarat-egy-foglalasban",
-    title: "Több járat egy foglalásban – mikor lehet erős a claim?",
+    title: "Több járat egy foglalásban – mikor lehet erős a kártérítési ügy?",
     excerpt:
       "Magyar útmutató több járat egy foglalásban esetéhez: hogyan számít az egy foglalás, a végső célállomás és a teljes utazási lánc.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
     slug: "ot-oranal-hosszabb-keses",
-    title: "5 óránál hosszabb késés – mikor lehet erős a claim?",
+    title: "5 óránál hosszabb késés – mikor lehet erős a kártérítési ügy?",
     excerpt:
       "Magyar útmutató az 5 óránál hosszabb késésekhez: hogyan számít a végső érkezés, a teljes időveszteség és a dokumentáció.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -276,7 +276,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a technikai hibák miatti járatproblémákhoz: hogyan számít a végső érkezés, a dokumentáció és a légitársaság magyarázatának valós súlya.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -286,7 +286,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a visszaforduló repülőgépekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -296,7 +296,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató az átirányított járatokhoz: hogyan számít a végső célállomás, a transzfer és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -306,7 +306,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató menetrendváltozásokhoz: hogyan számít a végső érkezés, az új útvonal és a gyakorlati időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -316,7 +316,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a repülőgép rotációs késéseihez: hogyan számít a végső érkezés, a teljes időveszteség és az operatív magyarázat valós súlya.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -326,7 +326,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a személyzethiány miatti késésekhez: hogyan számít a végső érkezés, a dokumentáció és a légitársaság indoklásának valós súlya.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -336,7 +336,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató EU-n kívüli csatlakozásokhoz: hogyan számít az egy foglalás, a teljes útvonal és az EU261 hatálya a gyakorlatban.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -346,7 +346,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató az elveszett csatlakozásokhoz: hogyan számít az egy foglalás, a végső érkezés és a teljes utazási lánc.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -356,7 +356,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató éjszakai járatkéséshez: hogyan számít a hotel, az indokolt költség, a teljes éjszakai időveszteség és a dokumentáció.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -366,7 +366,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató az indulás előtti 1 nappal törölt járatokhoz: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -376,7 +376,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a 14 napon belüli járattörlésekhez: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Problema-specifikus",
+    category: "Probléma szerinti útmutató",
     featured: true,
   },
   {
@@ -386,7 +386,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Ryanair Budapest és Párizs közötti törölt járataihoz: hogyan számít az új útvonal, a végső érkezés és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -396,7 +396,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Wizz Air Budapest és Barcelona közötti késő járataihoz: hogyan számít a végső érkezés, a teljes időveszteség és a pontos dokumentáció.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -406,7 +406,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és London közötti 3 órás késésekhez: hogyan számít a végső érkezés, az útvonal és a lehetséges kompenzáció logikája.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -416,17 +416,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Tel Aviv közötti késő járatokhoz: hogyan számít a végső érkezés, a teljes útvonal és a jól dokumentált időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
     slug: "budapest-toronto-karterites",
-    title: "Budapest–Toronto kártérítés – mikor lehet erős a claim?",
+    title: "Budapest–Toronto kártérítés – mikor lehet erős a kártérítési ügy?",
     excerpt:
       "Magyar útmutató a Budapest és Toronto közötti járatokhoz: hogyan számít a torontói végső érkezés, a long-haul jelleg és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -436,7 +436,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Bangkok közötti járatokhoz EU légitársasággal: hogyan számít a végső érkezés, a long-haul jelleg és az EU261 logikája.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -446,7 +446,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Doha közötti késő járatokhoz: hogyan számít a dohai végső érkezés, a hosszú reláció és a teljes bizonyítás.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -456,7 +456,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Isztambul közötti késő járatokhoz: hogyan számít az EU261 hatálya, a végső érkezés és a teljes útvonal.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -466,7 +466,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Dubai közötti törölt járatokhoz: hogyan számít az új útvonal, a teljes veszteség és a jogi keret.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -476,17 +476,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és New York közötti késő járatokhoz: hogyan számít a new yorki végső érkezés, a long-haul jelleg és a teljes bizonyítás.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
     slug: "budapest-parizs-karterites",
-    title: "Budapest–Párizs kártérítés – mikor lehet erős a claim?",
+    title: "Budapest–Párizs kártérítés – mikor lehet erős a kártérítési ügy?",
     excerpt:
       "Magyar útmutató a Budapest és Párizs közötti járatokhoz: hogyan számít a párizsi végső érkezés, a teljes időveszteség és a pontos bizonyítás.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -496,17 +496,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Barcelona közötti késő járatokhoz: hogyan számít a végső érkezés, a teljes időveszteség és a pontos bizonyítás.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
     slug: "budapest-madrid-karterites",
-    title: "Budapest–Madrid kártérítés – mikor lehet erős a claim?",
+    title: "Budapest–Madrid kártérítés – mikor lehet erős a kártérítési ügy?",
     excerpt:
       "Magyar útmutató a Budapest és Madrid közötti járatokhoz: hogyan számít a madridi végső érkezés, a teljes időveszteség és a pontos dokumentáció.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -516,7 +516,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és Berlin közötti törölt járatokhoz: hogyan számít a felajánlott új útvonal, a teljes időveszteség és a törlés utáni döntés.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -526,7 +526,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest és London közötti késő járatokhoz: hogyan számít a londoni végső érkezés, az útvonal és a szabályi keret.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Utvonal-specifikus",
+    category: "Útvonal szerinti útmutató",
     featured: true,
   },
   {
@@ -536,7 +536,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató az isztambuli repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít az EU261 hatálya, a teljes útvonal és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -546,7 +546,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a milánói Malpensa repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -556,7 +556,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a római Fiumicino repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az új útvonal és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -566,7 +566,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a barcelonai repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az átfoglalás és a teljes időveszteség.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -576,7 +576,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a madridi repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -586,7 +586,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Schiphol repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -596,7 +596,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a párizsi CDG repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -606,7 +606,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a londoni Stansted repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a low-cost útvonal, a szabályi keret és a végső késés.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -616,7 +616,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a londoni Heathrow repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az EU261 vagy UK261 és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -626,7 +626,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a frankfurti repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -636,7 +636,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a müncheni repülőtéren felmerülő késésekhez és csatlakozási problémákhoz: hogyan számít a teljes útvonal, az átfoglalás és a végső érkezés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -646,7 +646,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a prágai repülőtéren felmerülő késésekhez és törlésekhez: hogyan számít a végső érkezés, az átfoglalás és a teljes útvonal.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -656,17 +656,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a bécsi repülőtéren felmerülő járatkésésekhez és törlésekhez: hogyan számít a csatlakozás, az átfoglalás és a végső érkezési késés.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
     slug: "debrecen-repuloter-jaratkesesek",
     title: "Debrecen repülőtér járatkésések – jogok és teendők",
     excerpt:
-      "Magyar útmutató a debreceni repülőtéren felmerülő járatkésésekhez és törlésekhez: mit dokumentálj, milyen költségek számíthatnak, és mikor lehet erős az EU261-claim.",
+      "Magyar útmutató a debreceni repülőtéren felmerülő járatkésésekhez és törlésekhez: mit dokumentálj, milyen költségek számíthatnak, és mikor lehet erős az EU261-kártérítési ügy.",
     date: "2026-04-08",
     readTime: "8 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -676,7 +676,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a Budapest Liszt Ferenc repülőtéren felmerülő késésekhez és törlésekhez: milyen jogok, költségek és bizonyítékok számítanak igazán.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Repuloteri utmutato",
+    category: "Repülőtéri útmutató",
     featured: true,
   },
   {
@@ -686,7 +686,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Condor járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -696,7 +696,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Vueling járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -706,7 +706,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Volotea járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "9 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -716,7 +716,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Finnair járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -726,7 +726,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató SAS járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -736,7 +736,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Norwegian járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -746,7 +746,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Pegasus Airlines járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -756,7 +756,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Turkish Airlines járatokhoz EU indulás esetén: mikor járhat kártérítés késés vagy törlés után, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-08",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -766,7 +766,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Iberia járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -776,7 +776,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató TAP Air Portugal járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -786,7 +786,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató British Airways járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -796,7 +796,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató KLM járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -806,7 +806,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Air France járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -816,7 +816,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Eurowings járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -826,7 +826,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató SWISS járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -836,7 +836,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Austrian Airlines járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -846,7 +846,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató LOT Polish Airlines járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -856,7 +856,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Lufthansa járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -866,7 +866,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Ryanair járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
@@ -876,47 +876,47 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató Wizz Air járatokhoz: mikor járhat kártérítés késés vagy törlés esetén, és hogyan kell helyesen értelmezni az EU261 szabályait ennél a légitársaságnál.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Legitarsasag-specifikus",
+    category: "Légitársasági útmutató",
     featured: true,
   },
   {
     slug: "megeri-cegen-keresztul-igenyelni",
-    title: "Megéri cégen keresztül igényelni? Mikor van értelme claim companyt választani",
+    title: "Megéri cégen keresztül igényelni? Mikor van értelme kártérítési szolgáltatót választani",
     excerpt:
       "Magyar útmutató arról, mikor éri meg közvetítőn keresztül vinni a repülési claimet, és mikor lehet elég az egyszerűbb saját ügyintézés.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "milyen-dokumentumokat-kell-megorizni",
-    title: "Milyen dokumentumokat kell megőrizni? Checklist késés, törlés és claim előtt",
+    title: "Milyen dokumentumokat kell megőrizni? Checklist késés, törlés és kártérítési ügy előtt",
     excerpt:
       "Magyar útmutató arról, mit érdemes megőrizni járatprobléma után: foglalási adatok, screenshotok, blokkok és minden más, ami később bizonyíték lehet.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "kell-ugyved-a-karteriteshez",
     title: "Kell ügyvéd a kártérítéshez? Mikor nem szükséges, és mikor lehet hasznos",
     excerpt:
-      "Magyar útmutató arról, kell-e ügyvéd repülési kártérítéshez, mikor elég a jó claim-kezelés, és mikor válik már bonyolultabbá az ügy.",
+      "Magyar útmutató arról, kell-e ügyvéd repülési kártérítéshez, mikor elég a jó kártérítési ügy-kezelés, és mikor válik már bonyolultabbá az ügy.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "mit-tegyek-ha-elutasitjak-az-igenyt",
     title: "Mit tegyek, ha elutasítják az igényt?",
     excerpt:
-      "Magyar útmutató elutasított claimhez: hogyan olvasd az airline indoklását, mikor lehet még erős az ügy, és mikor érdemes továbblépni.",
+      "Magyar útmutató elutasított claimhez: hogyan olvasd a légitársaság indoklását, mikor lehet még erős az ügy, és mikor érdemes továbblépni.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -926,7 +926,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató elakadt ügyekhez: mit jelent a válasz hiánya, mikor normális még a várakozás, és mikor kell a puszta türelem helyett továbblépni.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -936,7 +936,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, ki lehet a repülési kártérítés jogosultja, ha a jegyet a cég fizette, és miért kell külön kezelni a refundot és a kompenzációt.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -946,17 +946,17 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a csatlakozásos ügyekhez: mikor járhat pénz lekésett átszállásnál, miért számít az egy foglalás és a végső célállomásra való késés.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "low-cost-jaratoknal-is-jar-penz",
     title: "Low-cost járatoknál is jár pénz? Wizz Air, Ryanair és más példák",
     excerpt:
-      "Magyar útmutató arról, hogy a fapados vagy low-cost járatoknál is járhat-e kártérítés, és miért nem a jegy ára vagy a járattípus dönti el az EU261-es jogosultságot.",
+      "Magyar útmutató arról, hogy a fapados vagy low-cost járatoknál is járhat-e kártérítés, és miért nem a jegy ára vagy a járattípus dönti el az EU261-és jogosultságot.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -966,7 +966,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató régi járatokhoz: mikor lehet még kártérítést kérni, milyen bizonyítékok segítenek, és mikor válik túl gyengévé vagy túl késővé az ügy.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -976,7 +976,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, mit jelent a voucher elfogadása késés vagy törlés után, és mikor maradhat még nyitva a pénzbeli igény vagy más utasjog.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -986,7 +986,7 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató arról, lehet-e kártérítést kérni boarding pass nélkül, milyen dokumentumok pótolhatják a beszállókártyát, és mikor válik gyengébbé a bizonyítás.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
@@ -996,34 +996,34 @@ export const blogArticlesHu: BlogArticleHu[] = [
       "Magyar útmutató a leggyakoribb pénzkérdéshez: mennyi járhat 3 órás késésért, mitől függ a 250 / 400 / 600 eurós sáv, és mikor nem elég önmagában a háromórás csúszás.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "hany-ora-keses-utan-jar-karterites",
-    title: "Hany ora keses utan jar karterites? A 3 oras szabaly magyarul",
+    title: "Hany óra késés után jár kártérítés? A 3 órás szabály magyarul",
     excerpt:
-      "Rovid, konkret magyar utmutato a leggyakoribb kerdeshez: pontosan hany ora keses utan johet szoba penzbeli karterites, es miert nem mindig az indulasi csuszas a donto.",
+      "Rovid, konkret magyar útmutató a leggyakoribb kerdeshez: pontosan hany óra késés után johet szoba pénzbeli kártérítés, és miert nem mindig az indulasi csuszas a döntő.",
     date: "2026-04-07",
     readTime: "8 perc",
-    category: "AI / GEO kerdesek",
+    category: "Gyors válaszok",
     featured: true,
   },
   {
     slug: "hogyan-mukodik-a-karterites-folyamata",
-    title: "Hogyan mukodik a karterites folyamata? Lepesrol lepesre az igenytol a kifizetesig",
+    title: "Hogyan működik a kártérítés folyamata? Lépésről lépésre az igénytől a kifizetésig",
     excerpt:
-      "Magyar attekintes a teljes folyamathoz: jogosultsag ellenorzese, dokumentumok, igenybeadas, legitarsasagi valasz, eszkalacio es vegso kifizetes vagy elutasitas.",
+      "Magyar attekintes a teljes folyamathoz: jogosultsag ellenorzese, dokumentumok, igenybeadas, legitarsasagi valasz, eszkalacio és vegso kifizetés vagy elutasitas.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Eljaras es hataridok",
+    category: "Eljárás és határidők",
     featured: true,
   },
   {
     slug: "mikor-nem-jar-karterites-alapok",
-    title: "Mikor NEM jar karterites? Alaphelyzetek, amikor az igeny elbukhat",
+    title: "Mikor NEM jár kártérítés? Alaphelyzetek, amikor az igény elbukhat",
     excerpt:
-      "Magyar utmutato a legfontosabb kizaro vagy gyengito helyzetekrol: mikor nem ervenyes az EU261, mikor lehet valos a rendkivuli korulmeny, es mikor nem az utas javara all a tenyallas.",
+      "Magyar útmutató a legfontosabb kizaro vagy gyengito helyzetekrol: mikor nem érvényes az EU261, mikor lehet valos a rendkivuli korulmeny, és mikor nem az utas javara all a tenyallas.",
     date: "2026-04-07",
     readTime: "9 perc",
     category: "EU261 alapok",
@@ -1031,9 +1031,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mely-legitarsasagok-kotelesek-fizetni",
-    title: "Mely legitarsasagok kotelesek fizetni? EU-s es nem EU-s cegek szabalyai",
+    title: "Mely légitársaságok kötelesek fizetni? EU-s és nem EU-s cégek szabályai",
     excerpt:
-      "Magyar utmutato ahhoz, mely legitarsasagoknal johet szoba karterites: mikor eleg az EU-bol valo indulás, mikor szamit a tenyleges uzemelteto, es miert nem eleg csak a brandet nezni.",
+      "Magyar útmutató ahhoz, mely legitarsasagoknal johet szoba kártérítés: mikor eleg az EU-ból valo indulás, mikor szamit a tenyleges uzemelteto, és miert nem eleg csak a brandet nezni.",
     date: "2026-04-07",
     readTime: "9 perc",
     category: "EU261 alapok",
@@ -1041,59 +1041,59 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "meddig-lehet-visszamenoleg-igenyelni",
-    title: "Meddig lehet visszamenoleg igenyelni? Elavulasi idok es regi jaratok",
+    title: "Meddig lehet visszamenőleg igényelni? elévülési idők és régi járatok",
     excerpt:
-      "Magyar utmutato a regi jaratokra: meddig lehet utolag karteritest kerni, mitol fugg az idohatar, es miert erdemes minel hamarabb lepni akkor is, ha meg nem jart le a lehetoseg.",
+      "Magyar útmutató a régi járatokra: meddig lehet utolag kártérítést kerni, mitol fugg az idohatar, és miert erdemes minel hamarabb lepni akkor is, ha meg nem jart le a lehetoseg.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "Eljaras es hataridok",
+    category: "Eljárás és határidők",
     featured: true,
   },
   {
     slug: "mennyi-ido-alatt-fizetik-ki-a-karteritest",
-    title: "Mennyi ido alatt fizetik ki a karteritest? Mire szamits az igeny beadasa utan",
+    title: "Mennyi idő alatt fizetik ki a kártérítést? Mire számíts az igény beadása után",
     excerpt:
-      "Magyar utmutato a kifizetesi idokhoz: mennyi ideig valaszolhat a legitarsasag, mi lassitja a folyamatot, es mikor erdemes eszkalalni a keslekedo ugyet.",
+      "Magyar útmutató a kifizetesi idokhoz: mennyi ideig valaszolhat a légitársaság, mi lassitja a folyamatot, és mikor erdemes eszkalalni a keslekedo ugyet.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "Eljaras es hataridok",
+    category: "Eljárás és határidők",
     featured: true,
   },
   {
     slug: "milyen-dokumentumok-kellenek-a-karteriteshez",
-    title: "Milyen dokumentumok kellenek a karteriteshez? Teljes magyar checklista",
+    title: "Milyen dokumentumok kellenek a kártérítéshez? Teljes magyar ellenőrző lista",
     excerpt:
-      "Magyar checklista a sikeres igenyhez: boarding pass, PNR, screenshot, blokk, email, atfoglalasi adatok es minden, amit erdemes megorizni keses vagy torles utan.",
+      "Magyar ellenőrző lista a sikeres igenyhez: boarding pass, PNR, screenshot, blokk, email, atfoglalasi adatok és minden, amit erdemes megorizni késés vagy törlés után.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "Gyakorlati teendok",
+    category: "Gyakorlati teendők",
     featured: true,
   },
   {
     slug: "mit-tegyel-ha-torlik-a-jaratodat",
-    title: "Mit tegyel, ha torlik a jaratodat? Azonnali lepesek refundhoz, atfoglalashoz es karteriteshez",
+    title: "Mit tegyél, ha törlik a járatodat? Azonnali lépések visszatérítéshez, átfoglaláshoz és kártérítéshez",
     excerpt:
-      "Magyar gyakorlati utmutato torolt jarathoz: mit kerj azonnal a legitarsasagtol, hogyan valassz refund vagy atfoglalas kozott, es mit dokumentalj a kesobbi igenyhez.",
+      "Magyar gyakorlati útmutató törölt jarathoz: mit kerj azonnal a legitarsasagtol, hogyan valassz visszatérítés vagy átfoglalás között, és mit dokumentalj a kesobbi igenyhez.",
     date: "2026-04-07",
     readTime: "10 perc",
-    category: "Gyakorlati teendok",
+    category: "Gyakorlati teendők",
     featured: true,
   },
   {
     slug: "mit-tegyel-azonnal-ha-kesik-a-jaratod",
-    title: "Mit tegyel azonnal, ha kesik a jaratod? Repuloteri teendok lepesrol lepesre",
+    title: "Mit tegyél azonnal, ha késik a járatod? repülőtéri teendők Lépésről lépésre",
     excerpt:
-      "Gyakorlati magyar utmutato arra az esetre, amikor mar a repuloteren vagy: mit dokumentalj, mit kerj a legitarsasagtol, mit ne hagyj ki, es hogyan erositsd a kesobbi igenyt.",
+      "Gyakorlati magyar útmutató arra az esetre, amikor mar a repuloteren vagy: mit dokumentalj, mit kerj a legitarsasagtol, mit ne hagyj ki, és hogyan erositsd a kesobbi igényt.",
     date: "2026-04-07",
     readTime: "9 perc",
-    category: "Gyakorlati teendok",
+    category: "Gyakorlati teendők",
     featured: true,
   },
   {
     slug: "keses-vs-torles-vs-tulfoglalas-kulonbsegek",
-    title: "Keses vs torles vs tulfoglalas: mi a kulonbseg es mikor mi jar?",
+    title: "Késés vs törlés vs túlfoglalás: mi a különbség és mikor mi jár?",
     excerpt:
-      "Magyar utmutato a harom legfontosabb utasjogi helyzethez: miben mas a keses, a torles es a tulfoglalas, es mikor valtozik emiatt a karteritesi vagy atfoglalasi jog.",
+      "Magyar útmutató a harom legfontosabb utasjogi helyzethez: miben mas a késés, a törlés és a túlfoglalás, és mikor valtozik emiatt a kártérítési vagy atfoglalasi jog.",
     date: "2026-04-07",
     readTime: "10 perc",
     category: "EU261 alapok",
@@ -1101,9 +1101,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mennyit-fizetnek-a-legitarsasagok-250-400-600-euro",
-    title: "Mennyit fizetnek a legitarsasagok? 250, 400 vagy 600 euro magyarazata",
+    title: "Mennyit fizetnek a légitársaságok? 250, 400 vagy 600 euró magyarázata",
     excerpt:
-      "Magyar utmutato a karteritesi savokhoz: mikor johet szoba 250, 400 vagy 600 euro, mitol fugg az osszeg, es miert nem eleg csak a keses hosszat nezni.",
+      "Magyar útmutató a kártérítési savokhoz: mikor johet szoba 250, 400 vagy 600 euró, mitol fugg az osszeg, és miert nem eleg csak a késés hosszat nezni.",
     date: "2026-04-07",
     readTime: "9 perc",
     category: "EU261 alapok",
@@ -1111,9 +1111,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "eu-n-kivuli-jaratok-mikor-ervenyes-az-eu261",
-    title: "EU-n kivuli jaratok: mikor ervenyes az EU261 es mikor nem?",
+    title: "EU-n kívüli járatok: mikor érvényes az EU261 és mikor nem?",
     excerpt:
-      "Magyar utmutato a harmadik orszagokbol indulo vagy oda tarto jaratokhoz: mikor ved az EU261, mikor donto az EU-s legifuvarozo, es hol csuszik felre a legtobb utas elemzese.",
+      "Magyar útmutató a harmadik orszagokbol induló vagy oda tarto jaratokhoz: mikor ved az EU261, mikor döntő az EU-s légifuvarozó, és hol csuszik felre a legtobb utas elemzese.",
     date: "2026-04-07",
     readTime: "10 perc",
     category: "EU261 alapok",
@@ -1121,9 +1121,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mely-jaratokra-vonatkozik-az-eu261",
-    title: "Mely jaratokra vonatkozik az EU261? EU-bol indulo, EU-ba erkezo es atszallasos utak",
+    title: "Mely járatokra vonatkozik az EU261? EU-ból induló, EU-ba érkező és átszállásos utak",
     excerpt:
-      "Magyar utmutato az EU261 teruleti hatalyarol: mely jaratok esnek bele, mikor szamit az EU-s legifuvarozo, es hogyan valtoztat a helyzeten az atszallas vagy a kulon vasarolt jegy.",
+      "Magyar útmutató az EU261 teruleti hatalyarol: mely járatok esnek bele, mikor szamit az EU-s légifuvarozó, és hogyan valtoztat a helyzeten az átszállás vagy a külön vásárolt jegy.",
     date: "2026-04-07",
     readTime: "10 perc",
     category: "EU261 alapok",
@@ -1131,9 +1131,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mikor-jar-karterites-torolt-jarat-eseten",
-    title: "Mikor jar karterites torolt jarat eseten? 14 napos szabaly, refund vagy atfoglalas",
+    title: "Mikor jár kártérítés törölt járat esetén? 14 napos szabály, visszatérítés vagy átfoglalás",
     excerpt:
-      "Magyar utmutato torolt jaratokhoz: mikor jar penzbeli karterites, hogyan mukodik a 14 napos szabaly, es mikor valaszthat az utas visszaterites es atfoglalas kozott.",
+      "Magyar útmutató törölt jaratokhoz: mikor jár pénzbeli kártérítés, hogyan működik a 14 napos szabály, és mikor valaszthat az utas visszatérítés és átfoglalás között.",
     date: "2026-04-07",
     readTime: "10 perc",
     category: "EU261 alapok",
@@ -1141,9 +1141,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mikor-jar-karterites-keses-eseten",
-    title: "Mikor jar karterites keses eseten? 3 oras szabaly, osszegek es kivetelek",
+    title: "Mikor jár kártérítés késés esetén? 3 órás szabály, összegek és kivételek",
     excerpt:
-      "Mikor eleg a keses ahhoz, hogy penzbeli karterites is felmeruljon? Magyar utmutato a 3 oras erkezesi szabalyrol, a 250/400/600 EUR savokrol es a fo kivetelhelyzetekrol.",
+      "Mikor eleg a késés ahhoz, hogy pénzbeli kártérítés is felmeruljon? Magyar útmutató a 3 órás erkezesi szabalyrol, a 250/400/600 EUR savokrol és a fő kivetelhelyzetekrol.",
     date: "2026-04-07",
     readTime: "10 perc",
     category: "EU261 alapok",
@@ -1151,9 +1151,9 @@ export const blogArticlesHu: BlogArticleHu[] = [
   },
   {
     slug: "mi-az-eu261-rendelet-es-mikor-alkalmazhato",
-    title: "Mi az EU261 rendelet es mikor alkalmazhato? Magyar utasjogi utmutato",
+    title: "Mi az EU261 rendelet és mikor alkalmazható? Magyar utasjogi útmutató",
     excerpt:
-      "Attekintheto magyar utmutato az EU261 szabalyairol: mely jaratokra ervenyes, mikor jar karterites kesesnel vagy torlesnel, es mikor nem terjed ki a vedelem.",
+      "Áttekinthető magyar útmutató az EU261 szabalyairol: mely járatokra érvényes, mikor jár kártérítés kesesnel vagy torlesnel, és mikor nem terjed ki a vedelem.",
     date: "2026-04-07",
     readTime: "9 perc",
     category: "EU261 alapok",
