@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "right-to-care-jedlo-hotel-doprava",
+    title: "Právo na starostlivosť: jedlo, hotel a doprava pri meškaní letu",
+    slug: "right-to-care-jedlo-hotel-doprava",
+    category: "longtail",
+    wordCount: 2700,
+    readTime: 10,
+    excerpt:
+      "Čo vám aerolinka musí bezplatne poskytnúť pri meškaní alebo zrušení letu: jedlo, komunikáciu, hotel a dopravu. Prehľadný sprievodca pravidlom right to care podľa EU261.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo je právo na starostlivosť (right to care) podľa EU261?",
+          answer:
+            "Je to povinnosť aerolinky bezplatne vám poskytnúť jedlo, nápoje, komunikáciu a v prípade potreby ubytovanie s transportom pri meškaní, zrušení alebo odmietnutí nástupu. Právo platí aj pri kratšom meškaní ako 3 hodiny.",
+        },
+        {
+          question: "Od koľkých hodín meškania mám nárok na občerstvenie?",
+          answer:
+            "Pri letoch do 1 500 km od 2 hodín, pri letoch 1 500 – 3 500 km od 3 hodín, pri letoch nad 3 500 km mimo EÚ od 4 hodín.",
+        },
+        {
+          question: "Kedy musí aerolinka zaplatiť hotel?",
+          answer:
+            "Vždy, keď si meškanie alebo zrušenie vyžaduje nocľah. Aerolinka musí uhradiť ubytovanie aj dopravu medzi letiskom a hotelom.",
+        },
+        {
+          question: "Dostanem jedlo a hotel aj pri mimoriadnych okolnostiach?",
+          answer:
+            "Áno. Právo na starostlivosť platí bez ohľadu na príčinu meškania. Aj keď aerolinka nemusí platiť paušálnu kompenzáciu, pitie, jedlo, hotel a dopravu stále hradí.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "menej-ako-3-hodiny-meskanie-odskodnenie",
     title: "Meškanie menej než 3 hodiny: mám nárok na odškodnenie?",
     slug: "menej-ako-3-hodiny-meskanie-odskodnenie",
