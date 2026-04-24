@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-milan-malpensa-mxp-meskania",
+    title: "Letisko Miláno Malpensa (MXP): meškania a odškodnenie",
+    slug: "letisko-milan-malpensa-mxp-meskania",
+    category: "airport",
+    airportCode: "MXP",
+    airportName: "Miláno Malpensa",
+    flag: "🇮🇹",
+    wordCount: 2000,
+    readTime: 8,
+    excerpt:
+      "Sprievodca EU261 nárokom pri meškaní alebo zrušení letu na letisku Miláno Malpensa. Rozdiel MXP/LIN/BGY a tipy na reklamáciu.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri MXP nárok na odškodnenie?",
+          answer:
+            "Áno, ak let spadá pod EU261 a meškanie pri prílete je 3+ hodín.",
+        },
+        {
+          question: "Koľko dostanem pri lete z MXP?",
+          answer:
+            "250 / 400 / 600 € podľa vzdialenosti. MXP je jediné milánske letisko s transatlantikou.",
+        },
+        {
+          question: "Rozdiel MXP vs LIN vs BGY?",
+          answer:
+            "MXP hlavné medzinárodné, LIN menšie mestské, BGY low-cost. Dvakrát overte IATA kód svojho letu.",
+        },
+        {
+          question: "Akí dopravcovia z MXP?",
+          answer:
+            "Ryanair, Wizz Air, easyJet (T2), ITA Airways, Lufthansa, Air France, Turkish, Emirates.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-rim-fiumicino-fco-meskania",
     title: "Letisko Rím Fiumicino (FCO): meškania a odškodnenie",
     slug: "letisko-rim-fiumicino-fco-meskania",
