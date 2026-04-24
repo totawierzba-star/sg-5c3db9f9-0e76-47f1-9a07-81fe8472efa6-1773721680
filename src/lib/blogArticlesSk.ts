@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "airbaltic-odskodnenie",
+    title: "airBaltic odškodnenie podľa EU261",
+    slug: "airbaltic-odskodnenie",
+    category: "airline",
+    airlineName: "airBaltic",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "airBaltic meškal alebo zrušil let cez Rigu? Prehľad nárokov podľa EU261, wet-lease špecifík a typických mimoriadnych okolností v baltickom regióne.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "green",
+    schema: {
+      faqItems: [
+        {
+          question: "airBaltic je EÚ aerolinka?",
+          answer:
+            "Áno. airBaltic (BT) má lotyšský AOC. Lety plne podliehajú EU261 pri odlete z EÚ.",
+        },
+        {
+          question: "Koľko dostanem za meškanie letu airBaltic?",
+          answer:
+            "250 € pri krátkych letoch, 400 € pri letoch nad 1 500 km. airBaltic neoperuje long-haul.",
+        },
+        {
+          question: "airBaltic robí wet-lease – kto platí?",
+          answer:
+            "Pri wet-lease reklamujete airBaltic ako operujúcu aerolinku, aj keď let predávala Lufthansa alebo SAS.",
+        },
+        {
+          question: "Aké mimoriadne okolnosti airBaltic tvrdí?",
+          answer:
+            "Zimné počasie v Pobaltí, uzavretý vzdušný priestor pri východnej hranici EÚ. Žiadajte konkrétne dôkazy.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "aegean-airlines-odskodnenie",
     title: "Aegean Airlines odškodnenie podľa EU261",
     slug: "aegean-airlines-odskodnenie",
