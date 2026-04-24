@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-rim-meskanie-letu",
+    title: "Bratislava – Rím meškanie letu: kompenzácia 250 €",
+    slug: "bratislava-rim-meskanie-letu",
+    category: "longtail",
+    wordCount: 1900,
+    readTime: 7,
+    excerpt:
+      "Meškal alebo zrušili vám let Bratislava – Rím? Prehľad EU261 nárokov pri Ryanair priamom lete aj prestupoch cez Viedeň či Budapešť.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám nárok pri lete Bratislava – Rím?",
+          answer:
+            "Áno, ak meškanie je 3+ hodín alebo zrušenie menej ako 14 dní vopred. Suma 250 € (pod 1 500 km).",
+        },
+        {
+          question: "Akí dopravcovia lietajú Bratislava – Rím?",
+          answer:
+            "Ryanair priamy sezónne, Austrian cez Viedeň, Wizz Air cez Budapešť.",
+        },
+        {
+          question: "Koľko dostanem?",
+          answer:
+            "250 € – trasa má pod 1 500 km.",
+        },
+        {
+          question: "Platí aj pri prestupe?",
+          answer:
+            "Áno, ak je na jednej rezervácii a meškanie pri prílete do Ríma je 3+ hodín.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-kodan-cph-meskania",
     title: "Letisko Kodaň (CPH): meškania a odškodnenie EU261",
     slug: "letisko-kodan-cph-meskania",
