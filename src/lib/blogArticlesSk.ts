@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ako-zvysit-sance-na-uspech-reklamacie",
+    title: "Ako zvýšiť šance na úspech reklamácie letu: 10 krokov",
+    slug: "ako-zvysit-sance-na-uspech-reklamacie",
+    category: "longtail",
+    wordCount: 2800,
+    readTime: 11,
+    excerpt:
+      "Praktický návod v 10 krokoch: od fotografie odletovej tabule cez dôkazovú stratégiu až po eskaláciu. Naučte sa, ako zvýšiť pravdepodobnosť úspešnej reklamácie EU261.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "indigo",
+    schema: {
+      faqItems: [
+        {
+          question: "Čo najviac zvyšuje šance na úspech reklamácie?",
+          answer:
+            "Kompletná dokumentácia, jasné uvedenie právneho základu EU261 a odovzdanie prípadu špecializovanej firme pri komplikáciách. Aerolinky často zamietnu prvú reklamáciu, ale ustupujú pri pevne argumentovanom druhom podaní.",
+        },
+        {
+          question: "Aká je priemerná úspešnosť pri samostatnej reklamácii?",
+          answer:
+            "Pri rutinných prípadoch 30 – 50 %, pri zložitejších 10 – 20 %. Špecializované firmy dosahujú 80 – 95 %, pretože majú právnu infraštruktúru a judikatúru.",
+        },
+        {
+          question: "Kedy sa oplatí odovzdať prípad firme a kedy skúsiť sám?",
+          answer:
+            "Jednoduché 3-hodinové meškanie s jasným dôkazom často vyriešite sami. Pri zamietnutí, mimoriadnych okolnostiach alebo starších prípadoch je firma efektívnejšia.",
+        },
+        {
+          question: "Koľko je premlčacia doba nárokov na Slovensku?",
+          answer:
+            "Pre nároky podľa EU261 je na Slovensku uplatniteľná všeobecná 3-ročná premlčacia doba podľa Občianskeho zákonníka.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "right-to-care-jedlo-hotel-doprava",
     title: "Právo na starostlivosť: jedlo, hotel a doprava pri meškaní letu",
     slug: "right-to-care-jedlo-hotel-doprava",
