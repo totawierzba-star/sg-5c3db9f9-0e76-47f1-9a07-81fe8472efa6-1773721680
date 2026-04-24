@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "nakupy-pri-meskanej-batozine-co-preplacaju",
+    title: "Nákupy pri meškanej batožine: čo preplatia",
+    slug: "nakupy-pri-meskanej-batozine-co-preplacaju",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Meškaná batožina – aké nákupy aerolinka preplatí. Denné limity a dokumentácia.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        { question: "Čo môžem nakúpiť?", answer: "Základné potreby – hygiena, spodná bielizeň, 50 – 100 € denne." },
+        { question: "Dôkazy?", answer: "Originálne účtenky a karta." },
+      ],
+    },
+  },
+
+  {
     id: "batozina-uplne-stratena-montrealsky-dohovor",
     title: "Úplne stratená batožina: Montrealský dohovor 1 600 €",
     slug: "batozina-uplne-stratena-montrealsky-dohovor",
