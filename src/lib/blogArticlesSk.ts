@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "vtacia-zrazka-mimoriadna-okolnost",
+    title: "Vtáčia zrážka ako mimoriadna okolnosť (ECJ C-315/15)",
+    slug: "vtacia-zrazka-mimoriadna-okolnost",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Vtáčia zrážka je mimoriadnou okolnosťou (rozsudok Pešková). Kedy ruší kompenzáciu a aké sú povinnosti aerolinky.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        { question: "Vtáčia zrážka mimoriadna?", answer: "Áno, ECJ C-315/15 Pešková." },
+        { question: "Dôkazy?", answer: "Foto poškodenia, zápis technika." },
+      ],
+    },
+  },
+
+  {
     id: "strajk-atc-vs-strajk-posadky-rozdiel",
     title: "Štrajk ATC vs štrajk posádky: EU261 rozdiel",
     slug: "strajk-atc-vs-strajk-posadky-rozdiel",
