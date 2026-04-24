@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-brussels-bru-meskania",
+    title: "Letisko Brussels (BRU): meškania a odškodnenie",
+    slug: "letisko-brussels-bru-meskania",
+    category: "airport",
+    airportCode: "BRU",
+    airportName: "Brussels National",
+    flag: "🇧🇪",
+    wordCount: 1900,
+    readTime: 7,
+    excerpt:
+      "Brussels Airport (hub Brussels Airlines) – prehľad EU261 nárokov pri meškaní alebo zrušení, typických dopravcov a belgických štrajkov.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri BRU nárok na odškodnenie?",
+          answer:
+            "Áno, EU261 plne. Sumy 250/400/600 €.",
+        },
+        {
+          question: "Akí dopravcovia z BRU?",
+          answer:
+            "Brussels Airlines (hub), Ryanair, TUI fly, Lufthansa, Ethiopian, Emirates.",
+        },
+        {
+          question: "Sú belgické štrajky mimoriadne okolnosti?",
+          answer:
+            "Štrajk posádky aerolinky nie. Štrajk ATC alebo pozemných služieb áno.",
+        },
+        {
+          question: "Kto je belgický regulátor?",
+          answer:
+            "FOD Mobiliteit / SPF Mobilité.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-londyn-gatwick-lgw-meskania",
     title: "Letisko Londýn Gatwick (LGW): meškania a odškodnenie",
     slug: "letisko-londyn-gatwick-lgw-meskania",
