@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "aerolinka-skrachovala-ako-dostat-peniaze",
+    title: "Aerolinka skrachovala: ako dostať peniaze",
+    slug: "aerolinka-skrachovala-ako-dostat-peniaze",
+    category: "longtail",
+    wordCount: 1500,
+    readTime: 6,
+    excerpt: "Bankrot aerolinky. Chargeback z karty, cestovné poistenie, konkurzná podstata – sprievodca vrátenia peňazí.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "rose",
+    schema: {
+      faqItems: [
+        { question: "Aerolinka skrachovala – peniaze?", answer: "Tri cesty: chargeback karty, poistenie, konkurzná podstata." },
+        { question: "Chargeback?", answer: "Najrýchlejšia cesta pri platbe kartou, 2-6 týždňov." },
+      ],
+    },
+  },
+
+  {
     id: "zdravotny-problem-na-palube-odskodnenie",
     title: "Zdravotný problém na palube: nárok na odškodnenie?",
     slug: "zdravotny-problem-na-palube-odskodnenie",
