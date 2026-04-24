@@ -197,7 +197,7 @@ export default function KtoZaplatiOdskodnenieCodeshareLetyPage() {
           <ClaimWingerSkSection
             className="mb-12"
             title="Zmätok medzi dvoma aerolinkami? ClaimWinger to vyrieši"
-            description="Naši špecialisti presne identifikujú operujúcu aerolinku, pošlú reklamáciu správnej strane a ustránia typické trik aerolínií „to nie sme my, to sú oni"."
+            description="Naši špecialisti presne identifikujú operujúcu aerolinku, pošlú reklamáciu správnej strane a ustránia typické triky aerolínií s presmerovaním prípadu medzi sebou."
             ctaHref="https://claimwinger.com/sk?utm_source=problemlot-sk&utm_medium=embedded_cta&utm_campaign=codeshare"
             ctaLabel="Odovzdať codeshare prípad"
             loadingLabel="Načítava sa formulár ClaimWinger..."
@@ -343,7 +343,7 @@ export default function KtoZaplatiOdskodnenieCodeshareLetyPage() {
                 "ak vás presmerujú, vždy žiadajte oficiálne oznámenie",
                 "udržujte paralelnú korešpondenciu s oboma aerolinkami",
                 "pri mlčaní nad 6 týždňov eskalujte na NEB krajiny odletu",
-                "nepríjmite argument „to nebol náš let" – overte operated by",
+                "nepríjmite argument že to nebol ich let – overte si operated by",
                 "pri súdnej ceste žaluje sa operujúca aerolinka",
               ].map((item) => (
                 <Card key={item} className="border-slate-200 p-4 dark:border-slate-700">
