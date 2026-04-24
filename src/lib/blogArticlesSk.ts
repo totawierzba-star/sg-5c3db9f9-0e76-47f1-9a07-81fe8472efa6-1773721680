@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "strajk-atc-vs-strajk-posadky-rozdiel",
+    title: "Štrajk ATC vs štrajk posádky: EU261 rozdiel",
+    slug: "strajk-atc-vs-strajk-posadky-rozdiel",
+    category: "longtail",
+    wordCount: 1400,
+    readTime: 6,
+    excerpt: "Štrajk ATC = mimoriadna okolnosť. Štrajk vlastnej posádky aerolinky = nie (ECJ C-28/20). Kľúčový rozdiel pre EU261 kompenzáciu.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "rose",
+    schema: {
+      faqItems: [
+        { question: "Je štrajk mimoriadna okolnosť?", answer: "Externý áno, vlastný posádky nie." },
+        { question: "ECJ C-28/20?", answer: "Štrajk zamestnancov aerolinky NIE je mimoriadna okolnosť." },
+      ],
+    },
+  },
+
+  {
     id: "pocasie-ako-mimoriadna-okolnost",
     title: "Počasie ako mimoriadna okolnosť: kedy platí EU261",
     slug: "pocasie-ako-mimoriadna-okolnost",
