@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "aegean-airlines-odskodnenie",
+    title: "Aegean Airlines odškodnenie podľa EU261",
+    slug: "aegean-airlines-odskodnenie",
+    category: "airline",
+    airlineName: "Aegean Airlines",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "Aegean Airlines meškal alebo zrušil let? Prehľad nárokov podľa EU261 pri letoch do Grécka, cez Atény na ostrovy a do blízkeho Východu.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "blue",
+    schema: {
+      faqItems: [
+        {
+          question: "Aegean Airlines spadá pod EU261?",
+          answer:
+            "Áno. Aegean je grécka EÚ aerolinka a členka Star Alliance. Lety plne podliehajú EU261.",
+        },
+        {
+          question: "Koľko dostanem za meškanie letu Aegean?",
+          answer:
+            "250 € pri krátkych trasách, 400 € pri letoch 1 500 – 3 500 km (napr. Atény – Dubaj), 600 € nad 3 500 km mimo EÚ.",
+        },
+        {
+          question: "Štrajk v Grécku – je to mimoriadna okolnosť?",
+          answer:
+            "Závisí. Štrajk ATC áno, štrajk vlastnej posádky Aegean nie (rozsudok ECJ C-28/20).",
+        },
+        {
+          question: "Olympic Air a Aegean – kto platí?",
+          answer:
+            "Olympic Air je dcérska spoločnosť Aegeanu. Reklamujete u operujúcej aerolinky, v praxi zvyčajne cez Aegean customer care.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "volotea-odskodnenie",
     title: "Volotea odškodnenie: EU261 pre slovenských cestujúcich",
     slug: "volotea-odskodnenie",
