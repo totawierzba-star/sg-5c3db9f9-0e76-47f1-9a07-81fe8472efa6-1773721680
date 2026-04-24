@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ako-kontaktovat-dopravny-urad-sr-staznost",
+    title: "Dopravný úrad SR: ako podať sťažnosť na aerolinku",
+    slug: "ako-kontaktovat-dopravny-urad-sr-staznost",
+    category: "longtail",
+    wordCount: 2400,
+    readTime: 9,
+    excerpt:
+      "Slovenský národný regulátor pre EU261 je Dopravný úrad SR. Návod, kedy sa na neho obrátiť, čo priložiť a ako eskaláciu skombinovať so súdnou cestou.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Kto je slovenský národný regulátor pre práva cestujúcich?",
+          answer:
+            "Dopravný úrad SR, Divízia civilného letectva – pôsobí ako National Enforcement Body pre EC 261/2004.",
+        },
+        {
+          question: "Kedy má zmysel sťažovať sa na Dopravný úrad?",
+          answer:
+            "Keď aerolinka nereaguje dlhšie než 6 týždňov alebo odmietla reklamáciu bez jasného odôvodnenia.",
+        },
+        {
+          question: "Môže Dopravný úrad nariadiť aerolinke vyplatiť peniaze?",
+          answer:
+            "Priamo nie. Vydáva stanoviská, ktoré aerolinky obvykle rešpektujú, a môže uložiť pokutu pri systémových porušeniach.",
+        },
+        {
+          question: "Koľko trvá posúdenie sťažnosti?",
+          answer:
+            "Spravidla 2 – 6 mesiacov. Ide o administratívny proces, nie súdne konanie.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "metody-vyplatenia-kompenzacie",
     title: "Metódy vyplatenia kompenzácie: prevod, šek alebo voucher?",
     slug: "metody-vyplatenia-kompenzacie",
