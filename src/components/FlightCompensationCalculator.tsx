@@ -26,6 +26,7 @@ import {
   type RouteBand,
 } from "@/lib/flightCompensationCalculator";
 import { cn } from "@/lib/utils";
+import { worldLandRings } from "@/lib/worldLandRings";
 
 type CalculatorStep = 1 | 2 | 3 | 4;
 
@@ -583,6 +584,9 @@ type RouteViewport = {
   distanceKm: number;
   scaleBarKm: number;
   scaleBarWidth: number;
+  centerLat: number;
+  centerLon: number;
+  scale: number;
 };
 
 const MAP_WIDTH = 100;
@@ -643,97 +647,85 @@ function RouteArcMap({
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
+          <clipPath id="calculator-map-clip">
+            <rect x="0" y="0" width={MAP_WIDTH} height={MAP_HEIGHT} rx="7" />
+          </clipPath>
         </defs>
-        {MAP_GRID_X.map((x) => (
-          <line
-            key={`x-${x}`}
-            x1={x}
-            x2={x}
-            y1="0"
-            y2={MAP_HEIGHT}
-            stroke="rgba(186,230,253,0.14)"
-            strokeWidth="0.45"
-          />
-        ))}
-        {MAP_GRID_Y.map((y) => (
-          <line
-            key={`y-${y}`}
-            x1="0"
-            x2={MAP_WIDTH}
-            y1={y}
-            y2={y}
-            stroke="rgba(186,230,253,0.14)"
-            strokeWidth="0.45"
-          />
-        ))}
-        <ellipse
-          cx="50"
-          cy="31"
-          rx="42"
-          ry="18"
-          fill="none"
-          stroke="rgba(186,230,253,0.08)"
-          strokeWidth="0.7"
-        />
-        <ellipse
-          cx="50"
-          cy="31"
-          rx="28"
-          ry="11"
-          fill="none"
-          stroke="rgba(186,230,253,0.07)"
-          strokeWidth="0.65"
-        />
-        {routeViewport && (
-          <path
-            d={routeViewport.routePath}
-            fill="none"
-            stroke="url(#calculator-route-gradient)"
-            strokeLinecap="round"
-            strokeWidth="1.85"
-            filter="url(#calculator-route-glow)"
-          />
-        )}
-        {routeViewport && (
-          <g>
+        <g clipPath="url(#calculator-map-clip)">
+          <LandMassLayer viewport={routeViewport} />
+          {MAP_GRID_X.map((x) => (
             <line
-              x1="8"
-              x2={8 + routeViewport.scaleBarWidth}
-              y1={MAP_HEIGHT - 8}
-              y2={MAP_HEIGHT - 8}
-              stroke="rgba(224,242,254,0.9)"
-              strokeLinecap="round"
-              strokeWidth="0.8"
+              key={`x-${x}`}
+              x1={x}
+              x2={x}
+              y1="0"
+              y2={MAP_HEIGHT}
+              stroke="rgba(186,230,253,0.14)"
+              strokeWidth="0.45"
             />
+          ))}
+          {MAP_GRID_Y.map((y) => (
             <line
-              x1="8"
-              x2="8"
-              y1={MAP_HEIGHT - 9.2}
-              y2={MAP_HEIGHT - 6.8}
-              stroke="rgba(224,242,254,0.9)"
-              strokeLinecap="round"
-              strokeWidth="0.8"
+              key={`y-${y}`}
+              x1="0"
+              x2={MAP_WIDTH}
+              y1={y}
+              y2={y}
+              stroke="rgba(186,230,253,0.14)"
+              strokeWidth="0.45"
             />
-            <line
-              x1={8 + routeViewport.scaleBarWidth}
-              x2={8 + routeViewport.scaleBarWidth}
-              y1={MAP_HEIGHT - 9.2}
-              y2={MAP_HEIGHT - 6.8}
-              stroke="rgba(224,242,254,0.9)"
+          ))}
+          {routeViewport && (
+            <path
+              d={routeViewport.routePath}
+              fill="none"
+              stroke="url(#calculator-route-gradient)"
               strokeLinecap="round"
-              strokeWidth="0.8"
+              strokeWidth="1.85"
+              filter="url(#calculator-route-glow)"
             />
-            <text
-              x="8"
-              y={MAP_HEIGHT - 3.5}
-              fill="rgba(224,242,254,0.9)"
-              fontSize="2.7"
-              fontWeight="700"
-            >
-              {routeViewport.scaleBarKm} km
-            </text>
-          </g>
-        )}
+          )}
+          {routeViewport && (
+            <g>
+              <line
+                x1="8"
+                x2={8 + routeViewport.scaleBarWidth}
+                y1={MAP_HEIGHT - 8}
+                y2={MAP_HEIGHT - 8}
+                stroke="rgba(224,242,254,0.9)"
+                strokeLinecap="round"
+                strokeWidth="0.8"
+              />
+              <line
+                x1="8"
+                x2="8"
+                y1={MAP_HEIGHT - 9.2}
+                y2={MAP_HEIGHT - 6.8}
+                stroke="rgba(224,242,254,0.9)"
+                strokeLinecap="round"
+                strokeWidth="0.8"
+              />
+              <line
+                x1={8 + routeViewport.scaleBarWidth}
+                x2={8 + routeViewport.scaleBarWidth}
+                y1={MAP_HEIGHT - 9.2}
+                y2={MAP_HEIGHT - 6.8}
+                stroke="rgba(224,242,254,0.9)"
+                strokeLinecap="round"
+                strokeWidth="0.8"
+              />
+              <text
+                x="8"
+                y={MAP_HEIGHT - 3.5}
+                fill="rgba(224,242,254,0.9)"
+                fontSize="2.7"
+                fontWeight="700"
+              >
+                {routeViewport.scaleBarKm} km
+              </text>
+            </g>
+          )}
+        </g>
       </svg>
 
       {routeViewport && from && (
@@ -757,6 +749,27 @@ function RouteArcMap({
         </div>
       )}
     </div>
+  );
+}
+
+function LandMassLayer({ viewport }: { viewport: RouteViewport | null }) {
+  const paths = viewport
+    ? buildLocalLandPaths(viewport)
+    : buildWorldLandPaths();
+
+  return (
+    <g>
+      {paths.map((path, index) => (
+        <path
+          key={`${index}-${path.length}`}
+          d={path}
+          fill="rgba(125,211,252,0.16)"
+          stroke="rgba(186,230,253,0.28)"
+          strokeLinejoin="round"
+          strokeWidth="0.45"
+        />
+      ))}
+    </g>
   );
 }
 
@@ -841,6 +854,9 @@ function buildRouteViewport(from: CompensationAirport, to: CompensationAirport):
     distanceKm,
     scaleBarKm,
     scaleBarWidth,
+    centerLat,
+    centerLon,
+    scale,
   };
 }
 
@@ -894,6 +910,106 @@ function projectLocalKmToMapPoint(point: LocalKmPoint, scale: number): MapPoint 
     x: clamp(MAP_WIDTH / 2 + point.x * scale, MAP_PADDING_X, MAP_WIDTH - MAP_PADDING_X),
     y: clamp(MAP_HEIGHT / 2 + point.y * scale, MAP_PADDING_Y, MAP_HEIGHT - MAP_PADDING_Y),
   };
+}
+
+function projectGeoCoordinateToLocalMapPoint(
+  lon: number,
+  lat: number,
+  viewport: Pick<RouteViewport, "centerLat" | "centerLon" | "scale">,
+): MapPoint {
+  const point = projectGeoCoordinateToLocalKm(lon, lat, viewport.centerLat, viewport.centerLon);
+
+  return {
+    x: MAP_WIDTH / 2 + point.x * viewport.scale,
+    y: MAP_HEIGHT / 2 + point.y * viewport.scale,
+  };
+}
+
+function projectGeoCoordinateToLocalKm(
+  lon: number,
+  lat: number,
+  centerLat: number,
+  centerLon: number,
+): LocalKmPoint {
+  const centerLatRad = (centerLat * Math.PI) / 180;
+  const lonDelta = normalizeLongitudeDelta(lon - centerLon);
+
+  return {
+    x: lonDelta * KM_PER_DEGREE_LON * Math.cos(centerLatRad),
+    y: (centerLat - lat) * KM_PER_DEGREE_LAT,
+  };
+}
+
+function buildLocalLandPaths(viewport: RouteViewport) {
+  return worldLandRings
+    .map((ring) =>
+      buildLandPath(ring, ([lon, lat]) =>
+        projectGeoCoordinateToLocalMapPoint(lon, lat, viewport),
+      ),
+    )
+    .filter(Boolean);
+}
+
+function buildWorldLandPaths() {
+  return worldLandRings
+    .map((ring) =>
+      buildLandPath(ring, ([lon, lat]) => ({
+        x: ((lon + 180) / 360) * MAP_WIDTH,
+        y: ((90 - lat) / 180) * MAP_HEIGHT,
+      })),
+    )
+    .filter(Boolean);
+}
+
+function buildLandPath(
+  ring: readonly (readonly [number, number])[],
+  project: (coordinate: readonly [number, number]) => MapPoint,
+) {
+  if (ring.length < 3) {
+    return "";
+  }
+
+  const points = ring.map(project);
+
+  if (!mapBoundsIntersect(points)) {
+    return "";
+  }
+
+  const [firstPoint, ...restPoints] = points;
+
+  return [
+    "M",
+    formatMapNumber(firstPoint.x),
+    formatMapNumber(firstPoint.y),
+    ...restPoints.flatMap((point) => [
+      "L",
+      formatMapNumber(point.x),
+      formatMapNumber(point.y),
+    ]),
+    "Z",
+  ].join(" ");
+}
+
+function mapBoundsIntersect(points: MapPoint[]) {
+  const margin = 18;
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+
+  for (const point of points) {
+    minX = Math.min(minX, point.x);
+    maxX = Math.max(maxX, point.x);
+    minY = Math.min(minY, point.y);
+    maxY = Math.max(maxY, point.y);
+  }
+
+  return (
+    maxX >= -margin &&
+    minX <= MAP_WIDTH + margin &&
+    maxY >= -margin &&
+    minY <= MAP_HEIGHT + margin
+  );
 }
 
 function chooseScaleBarKm(distanceKm: number) {
