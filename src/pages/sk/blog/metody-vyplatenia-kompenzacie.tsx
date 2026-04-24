@@ -453,7 +453,6 @@ export default function MetodyVyplateniaKompenzaciePage() {
           </section>
         </div>
       </article>
-      </article>
     </LayoutSk>
   );
 }
