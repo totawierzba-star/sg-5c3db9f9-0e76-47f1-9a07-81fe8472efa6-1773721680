@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ako-podat-reklamaciu-lufthansa-krok-za-krokom",
+    title: "Ako podať reklamáciu Lufthansa krok za krokom",
+    slug: "ako-podat-reklamaciu-lufthansa-krok-za-krokom",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 10,
+    excerpt:
+      "Kompletný návod na reklamáciu Lufthansy vrátane formulára Feedback, vzoru v angličtine a eskalácie na LBA alebo nemecký súd. Platí aj pre Austrian, SWISS, Brussels Airlines.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "yellow",
+    schema: {
+      faqItems: [
+        {
+          question: "Kde podať reklamáciu Lufthansa?",
+          answer:
+            "Online formulár Feedback / Kompensationsantrag na lufthansa.com. Rovnaký systém pre Austrian, SWISS, Brussels Airlines.",
+        },
+        {
+          question: "Koľko trvá odpoveď Lufthansa?",
+          answer:
+            "Oficiálne 28 dní, v praxi 2 – 6 týždňov pri jednoduchých prípadoch.",
+        },
+        {
+          question: "Aký jazyk použiť?",
+          answer:
+            "Nemčina alebo angličtina. Právny odbor Lufthansy posudzuje ich lepšie než slovenčinu.",
+        },
+        {
+          question: "Akceptuje Lufthansa tretiu stranu?",
+          answer:
+            "Áno. S plnou mocou môže reklamovať aj špecializovaná firma ako ClaimWinger.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ako-podat-reklamaciu-wizz-air-krok-za-krokom",
     title: "Ako podať reklamáciu Wizz Air krok za krokom (EU261)",
     slug: "ako-podat-reklamaciu-wizz-air-krok-za-krokom",
