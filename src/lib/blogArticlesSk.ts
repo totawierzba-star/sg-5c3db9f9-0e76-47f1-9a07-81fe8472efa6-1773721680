@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ita-airways-odskodnenie",
+    title: "ITA Airways odškodnenie podľa EU261 (následník Alitalie)",
+    slug: "ita-airways-odskodnenie",
+    category: "airline",
+    airlineName: "ITA Airways",
+    wordCount: 2400,
+    readTime: 9,
+    excerpt:
+      "ITA Airways je nová talianska vlajková aerolinka. Prehľad nárokov pri meškaní alebo zrušení, rozdiel oproti Alitalii a postup reklamácie v taliančine.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        {
+          question: "ITA Airways je to isté ako Alitalia?",
+          answer:
+            "Nie. ITA Airways vznikla v roku 2021 ako samostatná spoločnosť a neprevzala záväzky Alitalie. Pri starých prípadoch Alitalie treba kontaktovať likvidátora.",
+        },
+        {
+          question: "Mám pri ITA Airways nárok podľa EU261?",
+          answer:
+            "Áno. ITA Airways je EÚ aerolinka s talianskym AOC a plne spadá pod EU261.",
+        },
+        {
+          question: "Koľko dostanem za meškanie ITA Airways?",
+          answer:
+            "250 € do 1 500 km, 400 € 1 500 – 3 500 km, 600 € nad 3 500 km mimo EÚ (typicky Rím – USA, Rím – Tokio, Rím – Buenos Aires).",
+        },
+        {
+          question: "Ako dlho trvá reklamácia u ITA Airways?",
+          answer:
+            "Štandardne 4 – 8 týždňov. Taliansky proces je pomalší ako nemecký alebo holandský.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "brussels-airlines-odskodnenie",
     title: "Brussels Airlines odškodnenie podľa EU261",
     slug: "brussels-airlines-odskodnenie",
