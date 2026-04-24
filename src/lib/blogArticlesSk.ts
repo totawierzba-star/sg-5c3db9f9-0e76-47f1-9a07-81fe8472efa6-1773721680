@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "vieden-los-angeles-meskanie-letu",
+    title: "Viedeň – Los Angeles meškanie letu: 600 €",
+    slug: "vieden-los-angeles-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 6,
+    excerpt: "Lufthansa/United cez Frankfurt do Los Angeles. EU261 600 € pri meškaní 4+ hod pri prílete do LAX.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        { question: "Nárok VIE – LAX?", answer: "600 € pri meškaní 4+ hod pri jednej rezervácii." },
+        { question: "Priamy let?", answer: "Neexistuje. Prestup cez FRA, MUC, CDG, AMS." },
+      ],
+    },
+  },
+
+  {
     id: "vieden-tel-aviv-meskanie-letu",
     title: "Viedeň – Tel Aviv meškanie letu: 400 €",
     slug: "vieden-tel-aviv-meskanie-letu",
