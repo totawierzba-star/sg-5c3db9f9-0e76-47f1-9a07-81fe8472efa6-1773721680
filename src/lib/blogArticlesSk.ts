@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-barcelona-bcn-meskania",
+    title: "Letisko Barcelona (BCN): meškania a odškodnenie EU261",
+    slug: "letisko-barcelona-bcn-meskania",
+    category: "airport",
+    airportCode: "BCN",
+    airportName: "Barcelona El Prat",
+    flag: "🇪🇸",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "Barcelona El Prat je hlavný mediteránny hub Vueling. Prehľad EU261 nárokov, typických dopravcov, typických problémov a postupu reklamácie.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri BCN nárok na odškodnenie?",
+          answer:
+            "Áno, ak let spadá pod EU261 a meškanie pri prílete je 3+ hodín.",
+        },
+        {
+          question: "Koľko dostanem pri lete z BCN?",
+          answer:
+            "250 / 400 / 600 € podľa vzdialenosti. Transatlantika = 600 €.",
+        },
+        {
+          question: "Akí dopravcovia lietajú z BCN?",
+          answer:
+            "Vueling (hub), Ryanair, Wizz Air, Iberia, easyJet, Lufthansa, Air France, Turkish Airlines.",
+        },
+        {
+          question: "Sú štrajky v BCN mimoriadnou okolnosťou?",
+          answer:
+            "Štrajk externých služieb (pozemný personál, bezpečnosť) áno. Štrajk vlastnej posádky aerolinky nie.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-madrid-mad-meskania",
     title: "Letisko Madrid (MAD): meškania a odškodnenie EU261",
     slug: "letisko-madrid-mad-meskania",
