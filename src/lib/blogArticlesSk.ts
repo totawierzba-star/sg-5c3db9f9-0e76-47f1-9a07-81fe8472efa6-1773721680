@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-londyn-heathrow-lhr-meskania",
+    title: "Letisko Londýn Heathrow (LHR): meškania a odškodnenie",
+    slug: "letisko-londyn-heathrow-lhr-meskania",
+    category: "airport",
+    airportCode: "LHR",
+    airportName: "London Heathrow",
+    flag: "🇬🇧",
+    wordCount: 2100,
+    readTime: 8,
+    excerpt:
+      "Heathrow po Brexite: UK261 pre odlety z UK, EU261 pre prílety s EÚ aerolinkou. Prehľad nárokov, terminálov a postupu reklamácie cez CAA.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "violet",
+    schema: {
+      faqItems: [
+        {
+          question: "Platí na Heathrow UK261 alebo EU261?",
+          answer:
+            "Pri odlete z LHR platí UK261 (takmer identická kópia EU261). Pri prílete do UK s EÚ aerolinkou platí EU261.",
+        },
+        {
+          question: "Koľko dostanem pri LHR?",
+          answer:
+            "220 / 350 / 520 GBP (UK261) alebo 250 / 400 / 600 € (EU261) podľa vzdialenosti.",
+        },
+        {
+          question: "Kto je britský regulátor?",
+          answer:
+            "Civil Aviation Authority (CAA). Alternatívne CEDR.",
+        },
+        {
+          question: "Dlhé rady na LHR – aerolinka zodpovedá?",
+          answer:
+            "Bezpečnostné rady nie sú zodpovednosťou aerolinky, ale zmeškaný nadväzujúci let pre meškanie odvozového letu áno.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-zurich-zrh-meskania",
     title: "Letisko Zurich (ZRH): meškania a odškodnenie EU261",
     slug: "letisko-zurich-zrh-meskania",
