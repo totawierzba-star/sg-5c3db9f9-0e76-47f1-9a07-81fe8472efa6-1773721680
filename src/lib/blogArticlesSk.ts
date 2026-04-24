@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ako-podat-reklamaciu-ita-airways-krok-za-krokom",
+    title: "Ako podať reklamáciu ITA Airways krok za krokom",
+    slug: "ako-podat-reklamaciu-ita-airways-krok-za-krokom",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 10,
+    excerpt:
+      "Návod na reklamáciu ITA Airways cez Modulo di reclamo, vzor v taliančine a eskalácia na ENAC alebo Giudice di Pace. Rozdiel oproti Alitalii.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "teal",
+    schema: {
+      faqItems: [
+        {
+          question: "Kde podať reklamáciu ITA Airways?",
+          answer:
+            "Cez formulár Modulo di reclamo na itaspa.com v sekcii Customer Care. V taliančine alebo anglicky.",
+        },
+        {
+          question: "Koľko trvá odpoveď ITA Airways?",
+          answer:
+            "V praxi 4 – 8 týždňov. Pri komplikovaných prípadoch aj 2 – 3 mesiace.",
+        },
+        {
+          question: "ITA Airways vs Alitalia – proces?",
+          answer:
+            "ITA od 15. 10. 2021 – reklamácia priamo. Staré Alitalia prípady idú na správcu konkurznej podstaty.",
+        },
+        {
+          question: "Čo robiť pri zamietnutí ITA?",
+          answer:
+            "Odvolanie, následne ENAC (taliansky NEB) alebo Giudice di Pace / slovenský súd.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ako-podat-reklamaciu-lufthansa-krok-za-krokom",
     title: "Ako podať reklamáciu Lufthansa krok za krokom",
     slug: "ako-podat-reklamaciu-lufthansa-krok-za-krokom",
