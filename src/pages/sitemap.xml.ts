@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import { blogArticlesHi } from '@/lib/blogArticlesHi';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
 import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
@@ -118,6 +119,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/vi/chuyen-bay-bi-huy', priority: '0.9', changefreq: 'weekly' },
     { url: '/vi/kiem-tra-boi-thuong', priority: '0.9', changefreq: 'weekly' },
     { url: '/vi/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- HINDI MAIN ---
+    { url: '/hi', priority: '1.0', changefreq: 'daily' },
+    { url: '/hi/der-se-flight', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hi/cancel-flight', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hi/muavza-calculator', priority: '0.9', changefreq: 'weekly' },
+    { url: '/hi/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -144,8 +152,15 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const hiBlogPages = blogArticlesHi.map((article) => ({
+    url: `/hi/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
   const sitemap = generateSiteMap([
     ...pages,
+    ...hiBlogPages,
     ...huBlogPages,
     ...zhBlogPages,
     ...trBlogPages,

@@ -1,221 +1,206 @@
-import { SEO } from "@/components/SEO";
-import { LayoutHi } from "@/components/LayoutHi";
 import Link from "next/link";
 import { useState } from "react";
-import { blogArticlesHi, getCategoryLabelHi, BlogArticleHi } from "@/lib/blogArticlesHi";
-import { Plane, Clock, BookOpen, ArrowRight, Filter } from "lucide-react";
+import { ArrowRight, BookOpen, Clock, Filter, Plane } from "lucide-react";
+
+import { LayoutHi } from "@/components/LayoutHi";
+import { SEO } from "@/components/SEO";
+import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
+import {
+  blogArticlesHi,
+  getCategoryLabelHi,
+  type BlogArticleHi,
+  type BlogArticleHiCategory,
+} from "@/lib/blogArticlesHi";
+
+const categories: Array<BlogArticleHiCategory | "all"> = [
+  "all",
+  "snippet",
+  "foundation",
+  "airline",
+  "airport",
+  "route",
+  "special",
+];
+
+const categoryLabel = (category: BlogArticleHiCategory | "all") =>
+  category === "all" ? "सभी गाइड" : getCategoryLabelHi(category);
 
 export default function HindiBlogIndex() {
-  const [selectedCategory, setSelectedCategory] = useState<BlogArticleHi["category"] | "all">("all");
-
-  const filteredArticles = selectedCategory === "all" 
-    ? blogArticlesHi 
-    : blogArticlesHi.filter(article => article.category === selectedCategory);
-
-  const featuredArticles = blogArticlesHi.filter(article => article.featured);
+  const [selectedCategory, setSelectedCategory] = useState<BlogArticleHiCategory | "all">("all");
+  const filteredArticles =
+    selectedCategory === "all"
+      ? blogArticlesHi
+      : blogArticlesHi.filter((article) => article.category === selectedCategory);
+  const featuredArticles = blogArticlesHi.filter((article) => article.featured).slice(0, 8);
   const totalWords = blogArticlesHi.reduce((total, article) => total + article.wordCount, 0);
+  const ctaHref =
+    "https://claimwinger.com/hi/deri-udaan?utm_source=problemlot-hi&utm_medium=blog_index&utm_campaign=hi_blog&utm_content=bottom_cta";
 
   return (
     <LayoutHi>
       <SEO
-        title="उड़ान मुआवजा Blog – विलंबित और रद्द उड़ान गाइड"
-        description="विलंबित या रद्द की गई उड़ान के लिए मुआवजा प्राप्त करने के बारे में विस्तृत गाइड। EU 261/2004, हवाई अड्डे की जानकारी और यात्री अधिकार।"
+        title="हिंदी उड़ान मुआवज़ा ब्लॉग | EU261, UK261, Air India और यूरोप रूट"
+        description="भारतीय यात्रियों के लिए हिंदी गाइड: यूरोप उड़ान देरी, Air India EU261, UK261, DGCA, missed connection और €600 यानी लगभग ₹52,000 तक मुआवज़ा।"
         url="https://problemlot.com/hi/blog"
+        canonicalUrl="https://problemlot.com/hi/blog"
+        locale="hi_IN"
+        language="Hindi"
       />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-amber-50 via-white to-emerald-50 py-16 dark:from-gray-950 dark:via-gray-900 dark:to-emerald-950/20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="mb-6 inline-flex items-center space-x-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-200">
               <BookOpen className="h-4 w-4" />
-              <span>उड़ान मुआवजा ज्ञान केंद्र</span>
+              <span>भारतीय यात्रियों के लिए EU261 ज्ञान केंद्र</span>
             </div>
-            
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              उड़ान मुआवजा Blog
+
+            <h1 className="mb-6 text-4xl font-bold text-gray-950 dark:text-white md:text-5xl">
+              उड़ान मुआवज़ा ब्लॉग हिंदी में
             </h1>
 
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
-              विलंबित या रद्द की गई उड़ान के लिए मुआवजा प्राप्त करने के बारे में सब कुछ जानें। 
-              EU 261/2004 अधिकार, हवाई अड्डे की जानकारी और व्यावहारिक सलाह।
+            <p className="mx-auto mb-8 max-w-3xl text-xl leading-9 text-gray-700 dark:text-gray-300">
+              Air India, IndiGo, Lufthansa, British Airways, EU261, UK261 और DGCA पर गहन हिंदी गाइड। लंबे भारत-यूरोप रूट,
+              यूरोपीय hub transit और खोज परिणामों के लिए साफ, सीधे जवाब।
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
               <div className="flex items-center space-x-2">
-                <BookOpen className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                <span><strong>{blogArticlesHi.length}</strong> विस्तृत गाइड</span>
+                <BookOpen className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
+                <span>
+                  <strong>{blogArticlesHi.length}</strong> गाइड
+                </span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                <span><strong>{Math.round(totalWords / 1000)}K+</strong> शब्द</span>
+                <Clock className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
+                <span>
+                  <strong>{Math.round(totalWords / 1000)}K+</strong> शब्द
+                </span>
               </div>
               <div className="flex items-center space-x-2">
-                <Plane className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                <span><strong>€600</strong> तक मुआवजा</span>
+                <Plane className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
+                <span>
+                  <strong>€600 / ₹52,000</strong> तक दावा
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Articles */}
-      {featuredArticles.length > 0 && (
-        <section className="py-12 bg-white dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              फीचर्ड गाइड
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {featuredArticles.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/hi/blog/${article.slug}`}
-                  className="group bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 border-2 border-blue-100 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 transition-all hover:shadow-xl"
-                >
-                  <div className="flex items-center space-x-2 mb-3">
-                    <span className="text-2xl">{article.flag}</span>
-                    <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                      {getCategoryLabelHi(article.category)}
-                    </span>
-                    {article.airportCode && (
-                      <span className="text-sm text-gray-500 dark:text-gray-500">
-                        • {article.airportCode}
-                      </span>
-                    )}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-500">
-                    <div className="flex items-center space-x-4">
-                      <span>{article.readTime} मिनट पढ़ें</span>
-                      <span>{article.wordCount.toLocaleString()} शब्द</span>
-                    </div>
-                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Category Filter */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-4 overflow-x-auto">
-            <Filter className="h-5 w-5 text-gray-600 dark:text-gray-400 flex-shrink-0" />
-            <button
-              onClick={() => setSelectedCategory("all")}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap ${
-                selectedCategory === "all"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              सभी गाइड ({blogArticlesHi.length})
-            </button>
-            <button
-              onClick={() => setSelectedCategory("airport")}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap ${
-                selectedCategory === "airport"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              हवाई अड्डा ({blogArticlesHi.filter(a => a.category === "airport").length})
-            </button>
-            <button
-              onClick={() => setSelectedCategory("airline")}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap ${
-                selectedCategory === "airline"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              एयरलाइन ({blogArticlesHi.filter(a => a.category === "airline").length})
-            </button>
-            <button
-              onClick={() => setSelectedCategory("foundation")}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap ${
-                selectedCategory === "foundation"
-                  ? "bg-blue-600 text-white"
-                  : "bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              बुनियादी ({blogArticlesHi.filter(a => a.category === "foundation").length})
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* All Articles Grid */}
-      <section className="py-12 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {filteredArticles.length > 0 ? (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredArticles.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/hi/blog/${article.slug}`}
-                  className="group bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800 hover:border-blue-600 dark:hover:border-blue-400 transition-all hover:shadow-lg"
-                >
-                  <div className="flex items-center space-x-2 mb-3">
-                    <span className="text-xl">{article.flag}</span>
-                    <span className="text-xs font-medium text-blue-600 dark:text-blue-400">
-                      {getCategoryLabelHi(article.category)}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-500">
-                    <span>{article.readTime} मिनट</span>
-                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-gray-600 dark:text-gray-400">
-                इस श्रेणी में कोई लेख उपलब्ध नहीं है।
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            अपना दावा अभी जांचें
+      <section className="bg-white py-12 dark:bg-gray-950">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-6 text-2xl font-bold text-gray-950 dark:text-white">
+            प्राथमिक गाइड
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            3 मिनट में पता करें कि आप €250-€600 मुआवजे के पात्र हैं या नहीं। कोई जोखिम नहीं, सफलता पर भुगतान करें।
+          <div className="grid gap-6 md:grid-cols-2">
+            {featuredArticles.map((article) => (
+              <ArticleCard key={article.id} article={article} featured />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-8 dark:bg-gray-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-4 overflow-x-auto">
+            <Filter className="h-5 w-5 flex-shrink-0 text-gray-600 dark:text-gray-400" />
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`whitespace-nowrap rounded-lg px-4 py-2 font-medium transition-colors ${
+                  selectedCategory === category
+                    ? "bg-emerald-700 text-white"
+                    : "bg-white text-gray-700 hover:bg-gray-100 dark:bg-gray-950 dark:text-gray-300 dark:hover:bg-gray-800"
+                }`}
+              >
+                {categoryLabel(category)} (
+                {category === "all"
+                  ? blogArticlesHi.length
+                  : blogArticlesHi.filter((article) => article.category === category).length}
+                )
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 dark:bg-gray-950">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {filteredArticles.map((article) => (
+              <ArticleCard key={article.id} article={article} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-r from-emerald-800 to-slate-950 py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-3xl font-bold text-white">
+            अपनी उड़ान पात्रता अभी जांचें
+          </h2>
+          <p className="mb-8 text-xl text-emerald-50">
+            3 मिनट में देखें कि आप €250-€600 यानी लगभग ₹21,000-₹52,000 तक मुआवज़े के पात्र हैं या नहीं।
           </p>
           <a
-            href="https://claimwinger.com"
+            href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-xl"
+            onClick={() =>
+              pushClaimWingerEvent("claimwinger_cta_click", {
+                language: "hi",
+                campaign: "hi_blog_index",
+                content: "bottom_cta",
+                destination: ctaHref,
+              })
+            }
+            className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-lg font-semibold text-emerald-900 shadow-xl transition-colors hover:bg-emerald-50"
           >
-            निःशुल्क दावा जांचें
+            मुफ्त दावा जांचें
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
-          <p className="text-blue-100 mt-4 text-sm">
-            ✓ कोई अग्रिम लागत नहीं • ✓ कोई छिपा शुल्क नहीं • ✓ सफलता पर 25% प्रोविजन
+          <p className="mt-4 text-sm text-emerald-100">
+            No win, no fee | हिंदी प्रक्रिया | ClaimWinger विधि सलाहकार
           </p>
         </div>
       </section>
     </LayoutHi>
+  );
+}
+
+function ArticleCard({ article, featured = false }: { article: BlogArticleHi; featured?: boolean }) {
+  return (
+    <Link
+      href={`/hi/blog/${article.slug}`}
+      className={`group rounded-xl border bg-white p-6 transition-all hover:border-emerald-600 hover:shadow-lg dark:bg-gray-950 dark:hover:border-emerald-400 ${
+        featured
+          ? "border-emerald-100 bg-gradient-to-br from-emerald-50 to-white dark:border-gray-800 dark:from-gray-900 dark:to-gray-950"
+          : "border-gray-200 dark:border-gray-800"
+      }`}
+    >
+      <div className="mb-3 flex items-center gap-2">
+        <span className="rounded-full bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+          {article.cluster}
+        </span>
+        <span className="text-xs font-medium text-emerald-700 dark:text-emerald-300">
+          {getCategoryLabelHi(article.category)}
+        </span>
+        {article.airportCode && (
+          <span className="text-xs text-gray-500 dark:text-gray-500">{article.airportCode}</span>
+        )}
+      </div>
+      <h3 className="mb-2 text-lg font-semibold text-gray-950 transition-colors group-hover:text-emerald-700 dark:text-white dark:group-hover:text-emerald-300">
+        {article.title}
+      </h3>
+      <p className="mb-4 text-sm leading-6 text-gray-600 line-clamp-3 dark:text-gray-400">
+        {article.excerpt}
+      </p>
+      <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-500">
+        <span>{article.readTime} मिनट पढ़ें</span>
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+      </div>
+    </Link>
   );
 }

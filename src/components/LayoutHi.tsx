@@ -71,7 +71,7 @@ export function LayoutHi({ children }: LayoutHiProps) {
 
               {/* CTA Button */}
               <a
-                href="https://claimwinger.com"
+                href="https://claimwinger.com/hi/deri-udaan?utm_source=problemlot-hi&utm_medium=nav_cta&utm_campaign=site_nav&utm_content=header_cta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
@@ -144,7 +144,7 @@ export function LayoutHi({ children }: LayoutHiProps) {
                 />
 
                 <a
-                  href="https://claimwinger.com"
+                  href="https://claimwinger.com/hi/deri-udaan?utm_source=problemlot-hi&utm_medium=nav_cta&utm_campaign=site_nav&utm_content=mobile_header_cta"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"
@@ -209,17 +209,17 @@ export function LayoutHi({ children }: LayoutHiProps) {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <a href="https://claimwinger.com/hi?utm_source=problemlot-hi&utm_medium=footer_link&utm_campaign=site_footer&utm_content=claimwinger_home" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     ClaimWinger
                   </a>
                 </li>
                 <li>
-                  <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <a href="https://claimwinger.com/hi/deri-udaan?utm_source=problemlot-hi&utm_medium=footer_link&utm_campaign=site_footer&utm_content=delayed_flight" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     विलंबित उड़ान दावा
                   </a>
                 </li>
                 <li>
-                  <a href="https://claimwinger.com/cancelled-flight" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <a href="https://claimwinger.com/hi/radd-udaan?utm_source=problemlot-hi&utm_medium=footer_link&utm_campaign=site_footer&utm_content=cancelled_flight" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     रद्द उड़ान दावा
                   </a>
                 </li>
