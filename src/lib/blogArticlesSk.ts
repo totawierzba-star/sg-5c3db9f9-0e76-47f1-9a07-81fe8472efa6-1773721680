@@ -2113,6 +2113,26 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-milan-meskanie-letu",
+    title: "Bratislava – Miláno meškanie letu: 250 € kompenzácia",
+    slug: "bratislava-milan-meskanie-letu",
+    category: "longtail",
+    wordCount: 1700,
+    readTime: 6,
+    excerpt:
+      "Trasa Bratislava – Miláno (Wizz Air do BGY, Ryanair do MXP). EU261 nárok pri meškaní alebo zrušení a typické problémy.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        { question: "Mám nárok pri Bratislava – Miláno?", answer: "Áno, 250 € pri meškaní 3+ hod alebo zrušení menej ako 14 dní vopred." },
+        { question: "Ktoré milánske letisko?", answer: "Wizz Air do BGY, Ryanair do MXP, Austrian/ITA cez Viedeň do LIN." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-rim-meskanie-letu",
     title: "Bratislava – Rím meškanie letu: kompenzácia 250 €",
     slug: "bratislava-rim-meskanie-letu",
