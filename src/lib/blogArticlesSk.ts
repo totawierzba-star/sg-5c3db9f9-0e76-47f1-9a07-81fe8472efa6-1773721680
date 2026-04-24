@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-rim-fiumicino-fco-meskania",
+    title: "Letisko Rím Fiumicino (FCO): meškania a odškodnenie",
+    slug: "letisko-rim-fiumicino-fco-meskania",
+    category: "airport",
+    airportCode: "FCO",
+    airportName: "Rím Fiumicino",
+    flag: "🇮🇹",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "Sprievodca nárokom na kompenzáciu pri meškaní alebo zrušení letu na letisku Rím Fiumicino. Hub ITA Airways, časté štrajky a tipy na reklamáciu.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri FCO nárok na odškodnenie?",
+          answer:
+            "Áno, ak let spadá pod EU261 a meškanie pri prílete je 3+ hodín.",
+        },
+        {
+          question: "Koľko dostanem pri lete z FCO?",
+          answer:
+            "250 / 400 / 600 € podľa vzdialenosti. Transatlantika = 600 €.",
+        },
+        {
+          question: "Fiumicino vs Ciampino – rozdiel?",
+          answer:
+            "FCO je hlavné medzinárodné letisko, CIA je low-cost letisko pre Ryanair a Wizz Air. Proces reklamácie rovnaký.",
+        },
+        {
+          question: "Sú talianske štrajky mimoriadne okolnosti?",
+          answer:
+            "Štrajk ATC áno. Štrajk vlastnej posádky aerolinky nie (ECJ C-28/20).",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-barcelona-bcn-meskania",
     title: "Letisko Barcelona (BCN): meškania a odškodnenie EU261",
     slug: "letisko-barcelona-bcn-meskania",
