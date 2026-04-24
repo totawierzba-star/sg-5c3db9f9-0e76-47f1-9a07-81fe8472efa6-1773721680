@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "pocasie-ako-mimoriadna-okolnost",
+    title: "Počasie ako mimoriadna okolnosť: kedy platí EU261",
+    slug: "pocasie-ako-mimoriadna-okolnost",
+    category: "longtail",
+    wordCount: 1500,
+    readTime: 6,
+    excerpt: "Kedy je zlé počasie mimoriadnou okolnosťou podľa EU261 a kedy nie. Ako dokázať nárok aj pri tvrdení aerolinky.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "gray",
+    schema: {
+      faqItems: [
+        { question: "Je zlé počasie vždy mimoriadne?", answer: "Nie. Musí reálne bezpečne znemožniť let." },
+        { question: "Dôkazy?", answer: "Meteo report, TAF, METAR, oznámenie ATC." },
+      ],
+    },
+  },
+
+  {
     id: "downgrade-triedy-letu-kompenzacia",
     title: "Downgrade triedy letu: kompenzácia 30 – 75 %",
     slug: "downgrade-triedy-letu-kompenzacia",
