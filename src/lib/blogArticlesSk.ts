@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-madrid-mad-meskania",
+    title: "Letisko Madrid (MAD): meškania a odškodnenie EU261",
+    slug: "letisko-madrid-mad-meskania",
+    category: "airport",
+    airportCode: "MAD",
+    airportName: "Madrid-Barajas",
+    flag: "🇪🇸",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "Sprievodca EU261 nárokom pri meškaní alebo zrušení letu na letisku Adolfo Suárez Madrid-Barajas. Typické dopravcovia, sumy a mimoriadne okolnosti.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri meškaní na MAD nárok na odškodnenie?",
+          answer:
+            "Áno, ak let spadá pod EU261 a meškanie pri prílete je 3+ hodín. Rozhodujúca je trasa a aerolinka, nie samotné letisko.",
+        },
+        {
+          question: "Koľko dostanem pri lete z MAD?",
+          answer:
+            "250 / 400 / 600 € podľa vzdialenosti. Transatlantické linky do Latinskej Ameriky = 600 €.",
+        },
+        {
+          question: "Je horúčava mimoriadna okolnosť?",
+          answer:
+            "Iba ak naozaj bránila letu (napr. prekročenie MTOW). Všeobecné letné teploty nie.",
+        },
+        {
+          question: "MAD vs Cuatro Vientos?",
+          answer:
+            "Všetky komerčné lety pre cestujúcich idú z MAD (Barajas). Cuatro Vientos je pre všeobecné letectvo.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ako-podat-reklamaciu-ita-airways-krok-za-krokom",
     title: "Ako podať reklamáciu ITA Airways krok za krokom",
     slug: "ako-podat-reklamaciu-ita-airways-krok-za-krokom",
