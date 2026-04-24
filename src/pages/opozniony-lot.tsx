@@ -91,7 +91,9 @@ export default function OpoznionyLot() {
                 </div>
               </div>
               <Button asChild className="mt-6 w-full">
-                <Link href="/ile-mozesz-dostac">Oblicz dokładną kwotę</Link>
+                <Link href="/ile-mozesz-dostac">
+                  Sprawdź lot w kalkulatorze odszkodowania
+                </Link>
               </Button>
             </Card>
           </div>

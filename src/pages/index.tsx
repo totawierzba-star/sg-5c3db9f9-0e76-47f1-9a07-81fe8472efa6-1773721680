@@ -163,8 +163,12 @@ export default function Home() {
 
             <div className="text-center mt-10">
               <Button size="lg" asChild className="shadow-lg">
-                <Link href="/ile-mozesz-dostac">Oblicz dokładną kwotę dla Twojego lotu</Link>
+                <Link href="/ile-mozesz-dostac">Otwórz kalkulator odszkodowania za lot</Link>
               </Button>
+              <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
+                Kalkulator sprawdza opóźniony lot, odwołanie, overbooking i
+                utraconą przesiadkę według EU261 oraz UK261.
+              </p>
             </div>
           </div>
         </div>

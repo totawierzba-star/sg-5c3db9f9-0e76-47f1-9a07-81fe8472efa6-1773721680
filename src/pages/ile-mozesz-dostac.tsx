@@ -1,30 +1,129 @@
 import { SEO } from "@/components/SEO";
-import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { FlightCompensationCalculator } from "@/components/FlightCompensationCalculator";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Euro, Ruler, Clock } from "lucide-react";
+import Head from "next/head";
 import Link from "next/link";
+
+const calculatorFaq = [
+  {
+    question: "Jak działa kalkulator odszkodowania za lot?",
+    answer:
+      "Kalkulator analizuje trasę, dystans, typ zakłócenia i zakres EU261/UK261. Wynik pokazuje wstępną kwotę 250, 400 albo 600 euro oraz informuje, czy sprawa wymaga dodatkowej weryfikacji.",
+  },
+  {
+    question: "Czy kalkulator sprawdza opóźnione i odwołane loty?",
+    answer:
+      "Tak. Narzędzie obsługuje opóźniony lot, odwołany lot, odmowę wejścia na pokład oraz utraconą przesiadkę na jednej rezerwacji.",
+  },
+  {
+    question: "Czy wynik kalkulatora jest ostateczną decyzją?",
+    answer:
+      "Nie. Wynik jest szybką oceną na podstawie podanych danych. Ostateczna analiza powinna uwzględniać dokumenty rezerwacji, rzeczywisty czas przylotu i powód zakłócenia wskazany przez linię lotniczą.",
+  },
+  {
+    question: "Kiedy można dostać 600 euro odszkodowania?",
+    answer:
+      "Kwota 600 euro dotyczy zwykle tras powyżej 3500 km, jeśli lot kwalifikuje się pod EU261 lub UK261 i opóźnienie przy przylocie wyniosło co najmniej 3 godziny albo doszło do kwalifikowanego odwołania.",
+  },
+];
+
+const calculatorJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://problemlot.com/ile-mozesz-dostac#calculator",
+      name: "Kalkulator odszkodowania za lot",
+      applicationCategory: "FinanceApplication",
+      operatingSystem: "Web",
+      url: "https://problemlot.com/ile-mozesz-dostac",
+      inLanguage: "pl-PL",
+      description:
+        "Darmowy kalkulator odszkodowania za opóźniony lub odwołany lot według EU261 i UK261.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "ProblemLot.com",
+        url: "https://problemlot.com",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://problemlot.com/ile-mozesz-dostac#faq",
+      mainEntity: calculatorFaq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://problemlot.com/ile-mozesz-dostac#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Strona główna",
+          item: "https://problemlot.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Kalkulator odszkodowania",
+          item: "https://problemlot.com/ile-mozesz-dostac",
+        },
+      ],
+    },
+  ],
+};
 
 export default function IleMozeszDostac() {
   return (
     <Layout>
       <SEO
-        title="Ile odszkodowania za opóźniony lot? 250 €, 400 €, 600 €"
-        description="Sprawdź, ile pieniędzy możesz otrzymać za opóźniony lub odwołany lot."
+        title="Kalkulator odszkodowania za lot | Sprawdź 250, 400 lub 600 €"
+        description="Darmowy kalkulator odszkodowania za opóźniony, odwołany lot, overbooking lub utraconą przesiadkę. Sprawdź kwotę według EU261 i UK261."
         url="https://problemlot.com/ile-mozesz-dostac"
+        canonicalUrl="https://problemlot.com/ile-mozesz-dostac"
       />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(calculatorJsonLd) }}
+        />
+      </Head>
 
       <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-display font-bold text-4xl md:text-5xl mb-6 text-balance">
-              Ile odszkodowania możesz otrzymać za opóźniony lot?
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Wysokość odszkodowania zależy od odległości lotu i długości opóźnienia. Sprawdź dokładnie, ile Ci przysługuje.
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-4xl text-center">
+              <h1 className="font-display font-bold text-4xl md:text-5xl mb-6 text-balance">
+                Kalkulator odszkodowania za lot
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                Sprawdź w kilka kroków, czy za opóźniony lot, odwołany lot,
+                overbooking lub utraconą przesiadkę może przysługiwać Ci 250, 400
+                albo 600 euro odszkodowania według EU261 lub UK261.
+              </p>
+            </div>
+            <div id="kalkulator" className="mt-10 text-left scroll-mt-24">
+              <FlightCompensationCalculator />
+            </div>
+            <p className="mx-auto mt-5 max-w-3xl text-center text-sm leading-6 text-muted-foreground">
+              Wynik kalkulatora jest wstępną oceną. Po kliknięciu CTA możesz
+              przejść do ClaimWinger, gdzie sprawa zostanie zweryfikowana na
+              podstawie dokumentów lotu i przyczyny zakłócenia.
             </p>
-            <ClaimWingerHeroEmbed className="mt-8" />
           </div>
         </div>
       </section>
@@ -245,13 +344,31 @@ export default function IleMozeszDostac() {
             Sprawdź dokładnie, ile możesz otrzymać
           </h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Nasze narzędzie obliczy precyzyjnie wysokość Twojego odszkodowania na podstawie szczegółów lotu. To zajmuje tylko 2 minuty.
+            Wróć do kalkulatora i przeanalizuj trasę, typ problemu oraz warunki
+            EU261 lub UK261. To najprostszy sposób, żeby oszacować realną kwotę
+            przed zgłoszeniem sprawy.
           </p>
           <Button size="lg" variant="secondary" asChild>
-            <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
-              Oblicz swoje odszkodowanie teraz
-            </a>
+            <Link href="#kalkulator">Uruchom kalkulator odszkodowania</Link>
           </Button>
+        </div>
+      </section>
+
+      <section id="faq" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="font-display mb-8 text-3xl font-bold">
+              FAQ: kalkulator odszkodowania za lot
+            </h2>
+            <div className="space-y-4">
+              {calculatorFaq.map((item) => (
+                <Card key={item.question} className="p-6">
+                  <h3 className="mb-2 text-lg font-bold">{item.question}</h3>
+                  <p className="leading-7 text-muted-foreground">{item.answer}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

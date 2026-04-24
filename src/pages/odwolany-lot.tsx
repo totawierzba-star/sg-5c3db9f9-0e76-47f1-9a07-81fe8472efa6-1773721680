@@ -192,7 +192,7 @@ export default function OdwolanyLotPage() {
 
               <div className="mt-6 text-center">
                 <Link href="/ile-mozesz-dostac" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
-                  Zobacz szczegółową tabelę kwot odszkodowania →
+                  Sprawdź odwołany lot w kalkulatorze odszkodowania →
                 </Link>
               </div>
             </div>
