@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "kosice-praha-meskanie-letu",
+    title: "Košice – Praha meškanie letu: 250 € EU261",
+    slug: "kosice-praha-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Košice – Praha trasa pri Smartwings alebo Ryanair. EU261 kompenzácia 250 € pri meškaní 3+ hod.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        { question: "Nárok pri KSC – Praha?", answer: "Áno, 250 € pri meškaní 3+ hod." },
+        { question: "Kto lieta?", answer: "Smartwings, Ryanair. ČSA už zanikla." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-berlin-meskanie-letu",
     title: "Bratislava – Berlín meškanie letu: 250 €",
     slug: "bratislava-berlin-meskanie-letu",
