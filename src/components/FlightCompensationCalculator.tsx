@@ -18,6 +18,7 @@ import {
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 import {
   buildClaimWingerCalculatorUrl,
+  calculateGreatCircleDistanceKm,
   calculateFlightCompensation,
   type CompensationInput,
   type FlightDisruption,
@@ -570,6 +571,29 @@ type MapPoint = {
   y: number;
 };
 
+type LocalKmPoint = {
+  x: number;
+  y: number;
+};
+
+type RouteViewport = {
+  fromPoint: MapPoint;
+  toPoint: MapPoint;
+  routePath: string;
+  distanceKm: number;
+  scaleBarKm: number;
+  scaleBarWidth: number;
+};
+
+const MAP_WIDTH = 100;
+const MAP_HEIGHT = 62;
+const MAP_PADDING_X = 12;
+const MAP_PADDING_Y = 9;
+const KM_PER_DEGREE_LAT = 110.574;
+const KM_PER_DEGREE_LON = 111.32;
+const MAP_GRID_X = [20, 40, 60, 80];
+const MAP_GRID_Y = [15.5, 31, 46.5];
+
 function RouteArcMap({
   from,
   to,
@@ -577,25 +601,32 @@ function RouteArcMap({
   from: CompensationAirport | null;
   to: CompensationAirport | null;
 }) {
-  const fromPoint = from ? projectAirportToMap(from) : null;
-  const toPoint = to ? projectAirportToMap(to) : null;
-  const routePath = fromPoint && toPoint ? buildRoutePath(fromPoint, toPoint) : null;
+  const routeViewport = from && to ? buildRouteViewport(from, to) : null;
 
   return (
     <div
-      className="relative my-7 h-64 overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/45 shadow-inner"
-      aria-label="Schematyczna wizualizacja trasy bez granic państw"
+      className="relative my-7 aspect-[100/62] min-h-[240px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/45 shadow-inner"
+      aria-label={
+        routeViewport && from && to
+          ? `Mapa trasy ${from.code}-${to.code}, dystans ${routeViewport.distanceKm} kilometrów, bez granic państw`
+          : "Mapa trasy bez granic państw"
+      }
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(125,211,252,0.22),transparent_28%),radial-gradient(circle_at_78%_70%,rgba(59,130,246,0.20),transparent_30%)]" />
-      <div className="absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(186,230,253,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(186,230,253,0.18)_1px,transparent_1px)] [background-size:12.5%_25%]" />
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(15,23,42,0.05),rgba(14,165,233,0.12))]" />
       <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-2 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
         <MapPin className="h-3.5 w-3.5" />
-        Bez granic państw
+        Mapa trasy · bez granic państw
       </div>
+      {routeViewport && (
+        <div className="absolute right-4 top-4 z-10 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
+          Kadr dopasowany do dystansu
+        </div>
+      )}
 
       <svg
         className="absolute inset-0 h-full w-full"
-        viewBox="0 0 100 56"
+        viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
         preserveAspectRatio="none"
         role="presentation"
       >
@@ -613,37 +644,116 @@ function RouteArcMap({
             </feMerge>
           </filter>
         </defs>
-        <path
-          d="M 0 28 C 20 24 35 32 50 28 S 82 24 100 29"
-          fill="none"
-          stroke="rgba(186,230,253,0.12)"
-          strokeWidth="0.8"
-        />
-        <path
-          d="M 0 40 C 18 36 36 43 52 39 S 82 35 100 41"
+        {MAP_GRID_X.map((x) => (
+          <line
+            key={`x-${x}`}
+            x1={x}
+            x2={x}
+            y1="0"
+            y2={MAP_HEIGHT}
+            stroke="rgba(186,230,253,0.14)"
+            strokeWidth="0.45"
+          />
+        ))}
+        {MAP_GRID_Y.map((y) => (
+          <line
+            key={`y-${y}`}
+            x1="0"
+            x2={MAP_WIDTH}
+            y1={y}
+            y2={y}
+            stroke="rgba(186,230,253,0.14)"
+            strokeWidth="0.45"
+          />
+        ))}
+        <ellipse
+          cx="50"
+          cy="31"
+          rx="42"
+          ry="18"
           fill="none"
           stroke="rgba(186,230,253,0.08)"
           strokeWidth="0.7"
         />
-        {routePath && (
+        <ellipse
+          cx="50"
+          cy="31"
+          rx="28"
+          ry="11"
+          fill="none"
+          stroke="rgba(186,230,253,0.07)"
+          strokeWidth="0.65"
+        />
+        {routeViewport && (
           <path
-            d={routePath}
+            d={routeViewport.routePath}
             fill="none"
             stroke="url(#calculator-route-gradient)"
             strokeLinecap="round"
-            strokeWidth="1.7"
+            strokeWidth="1.85"
             filter="url(#calculator-route-glow)"
           />
         )}
+        {routeViewport && (
+          <g>
+            <line
+              x1="8"
+              x2={8 + routeViewport.scaleBarWidth}
+              y1={MAP_HEIGHT - 8}
+              y2={MAP_HEIGHT - 8}
+              stroke="rgba(224,242,254,0.9)"
+              strokeLinecap="round"
+              strokeWidth="0.8"
+            />
+            <line
+              x1="8"
+              x2="8"
+              y1={MAP_HEIGHT - 9.2}
+              y2={MAP_HEIGHT - 6.8}
+              stroke="rgba(224,242,254,0.9)"
+              strokeLinecap="round"
+              strokeWidth="0.8"
+            />
+            <line
+              x1={8 + routeViewport.scaleBarWidth}
+              x2={8 + routeViewport.scaleBarWidth}
+              y1={MAP_HEIGHT - 9.2}
+              y2={MAP_HEIGHT - 6.8}
+              stroke="rgba(224,242,254,0.9)"
+              strokeLinecap="round"
+              strokeWidth="0.8"
+            />
+            <text
+              x="8"
+              y={MAP_HEIGHT - 3.5}
+              fill="rgba(224,242,254,0.9)"
+              fontSize="2.7"
+              fontWeight="700"
+            >
+              {routeViewport.scaleBarKm} km
+            </text>
+          </g>
+        )}
       </svg>
 
-      {fromPoint && from && <AirportMapPoint airport={from} point={fromPoint} tone="from" />}
-      {toPoint && to && <AirportMapPoint airport={to} point={toPoint} tone="to" />}
+      {routeViewport && from && (
+        <AirportMapPoint airport={from} point={routeViewport.fromPoint} tone="from" />
+      )}
+      {routeViewport && to && (
+        <AirportMapPoint airport={to} point={routeViewport.toPoint} tone="to" />
+      )}
 
-      {!routePath && (
+      {routeViewport ? (
+        <div className="absolute bottom-4 right-4 z-10 rounded-2xl border border-white/10 bg-slate-950/55 px-3 py-2 text-right text-xs font-semibold text-sky-100 backdrop-blur">
+          <span className="block text-[10px] uppercase tracking-[0.18em] text-sky-100/60">
+            Dystans
+          </span>
+          {routeViewport.distanceKm.toLocaleString("pl-PL")} km
+        </div>
+      ) : (
         <div className="absolute inset-x-6 bottom-5 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm leading-6 text-sky-100/80 backdrop-blur">
-          Wybierz lotnisko wylotu i przylotu, aby zobaczyć łuk trasy. To celowo
-          neutralna wizualizacja bez granic państw i konturów kontynentów.
+          Wybierz lotnisko wylotu i przylotu, aby zobaczyć mapę trasy z lokalną
+          skalą dystansu. Wizualizacja nie pokazuje granic państw.
         </div>
       )}
     </div>
@@ -659,20 +769,32 @@ function AirportMapPoint({
   point: MapPoint;
   tone: "from" | "to";
 }) {
+  const labelPosition =
+    point.x > 72
+      ? "right-0 text-right"
+      : point.x < 28
+        ? "left-0 text-left"
+        : "left-1/2 -translate-x-1/2 text-center";
+
   return (
     <div
       className="absolute z-20 -translate-x-1/2 -translate-y-1/2"
-      style={{ left: `${point.x}%`, top: `${(point.y / 56) * 100}%` }}
+      style={{ left: `${(point.x / MAP_WIDTH) * 100}%`, top: `${(point.y / MAP_HEIGHT) * 100}%` }}
     >
       <div
         className={cn(
-          "flex h-4 w-4 items-center justify-center rounded-full ring-4 ring-slate-950/45",
+          "relative flex h-4 w-4 items-center justify-center rounded-full ring-4 ring-slate-950/45",
           tone === "from" ? "bg-sky-200" : "bg-white",
         )}
       >
         <span className="h-1.5 w-1.5 rounded-full bg-blue-800" />
       </div>
-      <div className="mt-2 -translate-x-[calc(50%-0.5rem)] rounded-xl border border-white/10 bg-slate-950/70 px-3 py-2 text-left text-xs shadow-lg backdrop-blur">
+      <div
+        className={cn(
+          "absolute top-6 w-max max-w-36 rounded-xl border border-white/10 bg-slate-950/75 px-3 py-2 text-xs shadow-lg backdrop-blur",
+          labelPosition,
+        )}
+      >
         <p className="font-mono text-sm font-black text-white">{airport.code}</p>
         <p className="max-w-28 truncate text-sky-100/80">{airport.city.pl}</p>
       </div>
@@ -680,18 +802,66 @@ function AirportMapPoint({
   );
 }
 
-function projectAirportToMap(airport: CompensationAirport): MapPoint {
+function buildRouteViewport(from: CompensationAirport, to: CompensationAirport): RouteViewport {
+  const distanceKm = calculateGreatCircleDistanceKm(from, to);
+  const centerLat = (from.lat + to.lat) / 2;
+  const centerLon = normalizeLongitude(
+    from.lon + normalizeLongitudeDelta(to.lon - from.lon) / 2,
+  );
+  const fromKm = projectAirportToLocalKm(from, centerLat, centerLon);
+  const toKm = projectAirportToLocalKm(to, centerLat, centerLon);
+  const spanXKm = Math.max(
+    Math.abs(toKm.x - fromKm.x),
+    distanceKm * 0.22,
+    120,
+  );
+  const spanYKm = Math.max(
+    Math.abs(toKm.y - fromKm.y),
+    distanceKm * 0.16,
+    120,
+  );
+  const scale = Math.min(
+    (MAP_WIDTH - MAP_PADDING_X * 2) / spanXKm,
+    (MAP_HEIGHT - MAP_PADDING_Y * 2) / spanYKm,
+  );
+  const fromPoint = projectLocalKmToMapPoint(fromKm, scale);
+  const toPoint = projectLocalKmToMapPoint(toKm, scale);
+  const straightRouteUnits = Math.max(
+    Math.hypot(toPoint.x - fromPoint.x, toPoint.y - fromPoint.y),
+    1,
+  );
+  const scaleBarKm = chooseScaleBarKm(distanceKm);
+  const kmPerMapUnit = distanceKm / straightRouteUnits;
+  const scaleBarWidth = clamp(scaleBarKm / kmPerMapUnit, 10, 34);
+
   return {
-    x: clamp(((airport.lon + 180) / 360) * 100, 5, 95),
-    y: clamp(((90 - airport.lat) / 180) * 56, 5, 51),
+    fromPoint,
+    toPoint,
+    routePath: buildRoutePath(fromPoint, toPoint),
+    distanceKm,
+    scaleBarKm,
+    scaleBarWidth,
   };
 }
 
 function buildRoutePath(from: MapPoint, to: MapPoint) {
-  const distance = Math.hypot(to.x - from.x, to.y - from.y);
-  const lift = clamp(distance * 0.28, 6, 18);
-  const controlX = (from.x + to.x) / 2;
-  const controlY = Math.min(from.y, to.y) - lift;
+  const dx = to.x - from.x;
+  const dy = to.y - from.y;
+  const distance = Math.max(Math.hypot(dx, dy), 1);
+  const curve = clamp(distance * 0.22, 5, 14);
+  const normalX = -dy / distance;
+  const normalY = dx / distance;
+  const upwardDirection = normalY > 0 ? -1 : 1;
+  const controlX = clamp(
+    (from.x + to.x) / 2 + normalX * curve * upwardDirection,
+    4,
+    MAP_WIDTH - 4,
+  );
+  const controlY = clamp(
+    (from.y + to.y) / 2 + normalY * curve * upwardDirection,
+    5,
+    MAP_HEIGHT - 5,
+  );
 
   return [
     "M",
@@ -703,6 +873,44 @@ function buildRoutePath(from: MapPoint, to: MapPoint) {
     formatMapNumber(to.x),
     formatMapNumber(to.y),
   ].join(" ");
+}
+
+function projectAirportToLocalKm(
+  airport: CompensationAirport,
+  centerLat: number,
+  centerLon: number,
+): LocalKmPoint {
+  const centerLatRad = (centerLat * Math.PI) / 180;
+  const lonDelta = normalizeLongitudeDelta(airport.lon - centerLon);
+
+  return {
+    x: lonDelta * KM_PER_DEGREE_LON * Math.cos(centerLatRad),
+    y: (centerLat - airport.lat) * KM_PER_DEGREE_LAT,
+  };
+}
+
+function projectLocalKmToMapPoint(point: LocalKmPoint, scale: number): MapPoint {
+  return {
+    x: clamp(MAP_WIDTH / 2 + point.x * scale, MAP_PADDING_X, MAP_WIDTH - MAP_PADDING_X),
+    y: clamp(MAP_HEIGHT / 2 + point.y * scale, MAP_PADDING_Y, MAP_HEIGHT - MAP_PADDING_Y),
+  };
+}
+
+function chooseScaleBarKm(distanceKm: number) {
+  if (distanceKm <= 200) return 50;
+  if (distanceKm <= 500) return 100;
+  if (distanceKm <= 1200) return 250;
+  if (distanceKm <= 2500) return 500;
+  if (distanceKm <= 5500) return 1000;
+  return 2000;
+}
+
+function normalizeLongitudeDelta(delta: number) {
+  return ((((delta + 180) % 360) + 360) % 360) - 180;
+}
+
+function normalizeLongitude(longitude: number) {
+  return normalizeLongitudeDelta(longitude);
 }
 
 function clamp(value: number, min: number, max: number) {
