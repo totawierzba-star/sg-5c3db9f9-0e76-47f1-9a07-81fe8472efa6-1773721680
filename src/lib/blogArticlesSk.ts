@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-barcelona-zruseny-let",
+    title: "Bratislava – Barcelona zrušený let: 400 € EU261",
+    slug: "bratislava-barcelona-zruseny-let",
+    category: "longtail",
+    wordCount: 1400,
+    readTime: 6,
+    excerpt: "Zrušenie Wizz Air priameho letu Bratislava – Barcelona? EU261 nárok 400 € pri oznámení menej ako 14 dní vopred.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "orange",
+    schema: {
+      faqItems: [
+        { question: "Mám nárok pri zrušení BTS – BCN?", answer: "Áno, 400 € pri oznámení do 14 dní bez primeraného presmerovania." },
+        { question: "Má Wizz Air priamy let?", answer: "Áno, Wizz Air celoročne." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-madrid-meskanie-letu",
     title: "Bratislava – Madrid meškanie letu: 400 € EU261",
     slug: "bratislava-madrid-meskanie-letu",
