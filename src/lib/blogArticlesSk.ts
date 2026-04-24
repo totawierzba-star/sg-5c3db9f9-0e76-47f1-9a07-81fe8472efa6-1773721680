@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-lisabon-lis-meskania",
+    title: "Letisko Lisabon (LIS): meškania a odškodnenie",
+    slug: "letisko-lisabon-lis-meskania",
+    category: "airport",
+    airportCode: "LIS",
+    airportName: "Lisabon Humberto Delgado",
+    flag: "🇵🇹",
+    wordCount: 1900,
+    readTime: 7,
+    excerpt:
+      "Lisabon (hub TAP Air Portugal) – prehľad EU261 nárokov pri meškaní, typických problémov jedno-dráhového letiska a transatlantickej trasy.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "green",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri LIS nárok na odškodnenie?",
+          answer:
+            "Áno, EU261 plne. Sumy 250/400/600 €.",
+        },
+        {
+          question: "Akí dopravcovia z LIS?",
+          answer:
+            "TAP Air Portugal (hub), Ryanair, Wizz Air, easyJet, Iberia, Lufthansa.",
+        },
+        {
+          question: "Preťaženie LIS – mimoriadna okolnosť?",
+          answer:
+            "Nie. Aj pri jednej dráhe sa preťaženie nepovažuje za mimoriadnu okolnosť.",
+        },
+        {
+          question: "Portugalský regulátor?",
+          answer:
+            "ANAC (Autoridade Nacional da Aviação Civil).",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-brussels-bru-meskania",
     title: "Letisko Brussels (BRU): meškania a odškodnenie",
     slug: "letisko-brussels-bru-meskania",
