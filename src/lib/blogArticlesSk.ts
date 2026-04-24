@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "let-prelozi-ina-aerolinka-prava-cestujuceho",
+    title: "Let preložila iná aerolinka: vaše práva",
+    slug: "let-prelozi-ina-aerolinka-prava-cestujuceho",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Pri presmerovaní na let iného dopravcu zostáva nárok voči pôvodnej aerolinke. Výpočet podľa pôvodnej trasy.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "indigo",
+    schema: {
+      faqItems: [
+        { question: "Kto zodpovedá?", answer: "Pôvodná aerolinka, nie tá na ktorej sa letí." },
+        { question: "Ako sa počíta suma?", answer: "Podľa pôvodnej plánovanej trasy." },
+      ],
+    },
+  },
+
+  {
     id: "aerolinka-skrachovala-ako-dostat-peniaze",
     title: "Aerolinka skrachovala: ako dostať peniaze",
     slug: "aerolinka-skrachovala-ako-dostat-peniaze",
