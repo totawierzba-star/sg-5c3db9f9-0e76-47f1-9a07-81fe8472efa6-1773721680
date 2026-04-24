@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "emailova-sablona-reklamacie-aerolinky",
+    title: "Vzor reklamácie letu e-mailom: šablóna a návod",
+    slug: "emailova-sablona-reklamacie-aerolinky",
+    category: "longtail",
+    wordCount: 2400,
+    readTime: 9,
+    excerpt:
+      "Overené vzory e-mailovej reklamácie za meškanie alebo zrušenie letu v slovenčine aj angličtine, návod na vyplnenie a prehľad aerolínií.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        {
+          question: "Musí reklamácia prísť mailom alebo poštou?",
+          answer:
+            "Obidve formy sú platné. E-mail je rýchlejší a aerolinky ho zvyčajne prijímajú cez oficiálny formulár. Pri súdnom konaní je preukaznejšia doporučená pošta.",
+        },
+        {
+          question: "Čo je v reklamácii najdôležitejšie?",
+          answer:
+            "PNR, číslo letu, dátum, trasa, čas meškania, právny základ (nariadenie ES 261/2004), vyčíslená suma, termín na odpoveď a IBAN.",
+        },
+        {
+          question: "V akom jazyku posielať reklamáciu?",
+          answer:
+            "Slovenskej aerolinke v slovenčine. Zahraničnej v angličtine alebo v národnom jazyku. Odporúčame dvojjazyčné podanie.",
+        },
+        {
+          question: "Čo ak aerolinka neodpovedá do 30 dní?",
+          answer:
+            "Pošlite urgenciu. Po 14 dňoch eskalujte na Dopravný úrad SR alebo špecializovanú firmu.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ako-zvysit-sance-na-uspech-reklamacie",
     title: "Ako zvýšiť šance na úspech reklamácie letu: 10 krokov",
     slug: "ako-zvysit-sance-na-uspech-reklamacie",
