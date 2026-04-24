@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "taxi-a-doprava-pri-zruseni-letu-rimbursment",
+    title: "Taxi a doprava pri zrušení letu: preplatenie",
+    slug: "taxi-a-doprava-pri-zruseni-letu-rimbursment",
+    category: "longtail",
+    wordCount: 1100,
+    readTime: 5,
+    excerpt: "Aerolinka platí dopravu medzi letiskom, hotelom a alternatívnym letiskom. Právo na preplatenie výdavkov.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "teal",
+    schema: {
+      faqItems: [
+        { question: "Preplatí aerolinka taxi?", answer: "Áno, primerané náklady – shuttle, taxi, vlak." },
+        { question: "Dôkazy?", answer: "Originálne účtenky." },
+      ],
+    },
+  },
+
+  {
     id: "hotel-pri-meskani-letu-kedy-musi-aerolinka-zaplatit",
     title: "Hotel pri meškaní letu: kedy musí aerolinka zaplatiť",
     slug: "hotel-pri-meskani-letu-kedy-musi-aerolinka-zaplatit",
