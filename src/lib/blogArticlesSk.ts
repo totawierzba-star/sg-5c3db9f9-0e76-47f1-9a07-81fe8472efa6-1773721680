@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "ako-podat-reklamaciu-wizz-air-krok-za-krokom",
+    title: "Ako podať reklamáciu Wizz Air krok za krokom (EU261)",
+    slug: "ako-podat-reklamaciu-wizz-air-krok-za-krokom",
+    category: "longtail",
+    wordCount: 2500,
+    readTime: 10,
+    excerpt:
+      "Podrobný návod na EU261 reklamáciu u Wizz Air: formulár, vzor textu, eskalácia, práva cestujúceho a typické chyby pri podaní.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "pink",
+    schema: {
+      faqItems: [
+        {
+          question: "Cez aký kanál podať reklamáciu Wizz Air?",
+          answer:
+            "Oficiálny EU261 Claim Form na wizzair.com v sekcii Help Centre. Nie chat ani telefón.",
+        },
+        {
+          question: "Koľko trvá odpoveď Wizz Air?",
+          answer:
+            "Oficiálne 30 dní, v praxi 4 – 8 týždňov. Pri mlčaní posielajte urgenciu.",
+        },
+        {
+          question: "Čo ak Wizz Air odmietne reklamáciu?",
+          answer:
+            "Odvolanie s dodatočnými argumentmi, sťažnosť na regulátora alebo odovzdanie špecializovanej firme.",
+        },
+        {
+          question: "Mám prijať voucher 20 % bonus?",
+          answer:
+            "Opatrne. Voucher je platný obmedzený čas a len s Wizz Air. EU261 vám dáva právo na hotovosť.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "airbaltic-odskodnenie",
     title: "airBaltic odškodnenie podľa EU261",
     slug: "airbaltic-odskodnenie",
