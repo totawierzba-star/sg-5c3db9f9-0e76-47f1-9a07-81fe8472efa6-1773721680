@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "predcasny-odlet-letu-odskodnenie",
+    title: "Predčasný odlet letu: máte nárok na odškodnenie 250–600 €?",
+    slug: "predcasny-odlet-letu-odskodnenie",
+    category: "longtail",
+    wordCount: 2600,
+    readTime: 10,
+    excerpt:
+      "Posunula aerolinka váš let na skôr? Ak ide o viac než 1 hodinu, pravidlá EÚ to považujú za zrušenie. Vysvetľujeme, kedy máte nárok na 250, 400 alebo 600 € a ako postupovať.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        {
+          question: "Môžem žiadať odškodnenie, ak aerolinka posunula let na skôr?",
+          answer:
+            "Áno, pri posunutí odletu o viac ako 1 hodinu skôr sa let podľa pravidiel EÚ a rozsudku C-146/20 považuje za zrušený. Môžete mať nárok na kompenzáciu 250, 400 alebo 600 € podľa vzdialenosti, ak vás aerolinka informovala menej než 14 dní pred pôvodným odletom.",
+        },
+        {
+          question: "Čo ak bol let posunutý len o pár minút skôr?",
+          answer:
+            "Menšie posuny pod 1 hodinu sa zatiaľ nepovažujú za zrušenie. Nárok na paušálnu kompenzáciu nevzniká, pokiaľ celá trasa neskončila meškaním pri prílete aspoň o 3 hodiny oproti pôvodnému plánu.",
+        },
+        {
+          question: "Čo ak som zmeškal let, lebo odletel skôr?",
+          answer:
+            "Ak vás aerolinka o posunutí neinformovala alebo informovala neskoro, máte nárok na refundáciu a pravdepodobne aj na kompenzáciu. Kľúčové je zdokumentovať dátum a čas, kedy vám prišlo oznámenie.",
+        },
+        {
+          question: "Platí to aj pri low-cost aerolinkách ako Ryanair alebo Wizz Air?",
+          answer:
+            "Áno. Pravidlo o posunutí odletu o viac než 1 hodinu skôr platí pre všetky aerolinky pod EU261 bez ohľadu na to, či ide o tradičnú alebo low-cost spoločnosť.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "mozem-ziadat-odskodnenie-pri-zmene-casu-letu",
     title: "Môžem žiadať odškodnenie pri zmene času letu?",
     slug: "mozem-ziadat-odskodnenie-pri-zmene-casu-letu",
