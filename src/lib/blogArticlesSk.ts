@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-alicante-meskanie-letu",
+    title: "Bratislava – Alicante meškanie letu: 400 €",
+    slug: "bratislava-alicante-meskanie-letu",
+    category: "longtail",
+    wordCount: 1400,
+    readTime: 6,
+    excerpt: "Sezónny Ryanair let Bratislava – Alicante meškal? EU261 nárok 400 €. Costa Blanca letná dovolenka.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "amber",
+    schema: {
+      faqItems: [
+        { question: "Nárok pri BTS – Alicante?", answer: "Áno, 400 € pri meškaní 3+ hod." },
+        { question: "Kto lieta?", answer: "Ryanair sezónne." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-barcelona-zruseny-let",
     title: "Bratislava – Barcelona zrušený let: 400 € EU261",
     slug: "bratislava-barcelona-zruseny-let",
