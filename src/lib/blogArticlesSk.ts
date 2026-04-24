@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "vieden-tel-aviv-meskanie-letu",
+    title: "Viedeň – Tel Aviv meškanie letu: 400 €",
+    slug: "vieden-tel-aviv-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 6,
+    excerpt: "Austrian, El Al, Wizz Air Viedeň – Tel Aviv. EU261 400 € pri meškaní 3+ hod. Bezpečnostné mimoriadne okolnosti.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "sky",
+    schema: {
+      faqItems: [
+        { question: "Nárok VIE – Tel Aviv?", answer: "400 € pri meškaní 3+ hod." },
+        { question: "Bezpečnostné dôvody?", answer: "Môžu byť mimoriadnou okolnosťou – kompenzácia nevzniká, ale right to care áno." },
+      ],
+    },
+  },
+
+  {
     id: "vieden-sanghaj-meskanie-letu",
     title: "Viedeň – Šanghaj meškanie letu: 600 €",
     slug: "vieden-sanghaj-meskanie-letu",
