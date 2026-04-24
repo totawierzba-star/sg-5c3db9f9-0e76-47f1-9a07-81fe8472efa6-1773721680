@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "kapacitne-dovody-mimoriadne-okolnosti",
+    title: "Kapacitné dôvody a mimoriadne okolnosti (EU261)",
+    slug: "kapacitne-dovody-mimoriadne-okolnosti",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Prevádzkové a kapacitné dôvody nie sú mimoriadne okolnosti. Kompenzácia 250/400/600 € vzniká.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "cyan",
+    schema: {
+      faqItems: [
+        { question: "Kapacitné dôvody = mimoriadne?", answer: "Nie. Aerolinka nesie prevádzkové riziká." },
+        { question: "Prevádzkový dôvod – nárok?", answer: "Áno, plný EU261 nárok." },
+      ],
+    },
+  },
+
+  {
     id: "let-prelozi-ina-aerolinka-prava-cestujuceho",
     title: "Let preložila iná aerolinka: vaše práva",
     slug: "let-prelozi-ina-aerolinka-prava-cestujuceho",
