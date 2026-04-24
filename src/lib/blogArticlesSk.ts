@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "vieden-tokyo-meskanie-letu",
+    title: "Viedeň – Tokio meškanie letu: 600 € EU261",
+    slug: "vieden-tokyo-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 6,
+    excerpt: "Austrian priamy let Viedeň – Tokio. EU261 nárok 600 € pri meškaní 4+ hod. Long-haul špecifiká.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "rose",
+    schema: {
+      faqItems: [
+        { question: "Nárok VIE – Tokio?", answer: "600 € pri meškaní 4+ hod (long-haul)." },
+        { question: "Kto lieta?", answer: "Austrian priamy do HND." },
+      ],
+    },
+  },
+
+  {
     id: "kosice-vieden-meskanie-letu",
     title: "Košice – Viedeň prestup meškanie: EU261 prehľad",
     slug: "kosice-vieden-meskanie-letu",
