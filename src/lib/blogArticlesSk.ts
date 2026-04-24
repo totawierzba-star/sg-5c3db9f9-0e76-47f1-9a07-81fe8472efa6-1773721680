@@ -2113,6 +2113,44 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "metody-vyplatenia-kompenzacie",
+    title: "Metódy vyplatenia kompenzácie: prevod, šek alebo voucher?",
+    slug: "metody-vyplatenia-kompenzacie",
+    category: "longtail",
+    wordCount: 2200,
+    readTime: 8,
+    excerpt:
+      "Prevod, šek, voucher alebo hotovosť? Prehľad spôsobov, akými aerolinky vyplácajú kompenzáciu EU261. Čo musíte prijať, čo môžete odmietnuť a ako najrýchlejšie dostať peniaze na účet.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "lime",
+    schema: {
+      faqItems: [
+        {
+          question: "Aké formy vyplatenia kompenzácie povoľuje EU261?",
+          answer:
+            "Čl. 7 ods. 3 povoľuje hotovosť, bankový prevod, elektronický transfer, bankové šeky alebo voucher s písomným súhlasom cestujúceho.",
+        },
+        {
+          question: "Môže mi aerolinka dať voucher namiesto peňazí?",
+          answer:
+            "Len ak výslovne a písomne súhlasíte. Máte právo žiadať hotovosť alebo bankový prevod.",
+        },
+        {
+          question: "Ako rýchlo mi aerolinka vyplatí kompenzáciu?",
+          answer:
+            "Bežne 14 – 30 dní od schválenia. Pri SEPA prevode do 3 pracovných dní po iniciácii.",
+        },
+        {
+          question: "Je voucher 125 % hodnoty lepšia voľba než hotovosť?",
+          answer:
+            "Zvyčajne nie. Voucher má obmedzené platnosti, expiráciu a vylúčené sezóny. Hotovosť je univerzálna.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "emailova-sablona-reklamacie-aerolinky",
     title: "Vzor reklamácie letu e-mailom: šablóna a návod",
     slug: "emailova-sablona-reklamacie-aerolinky",
