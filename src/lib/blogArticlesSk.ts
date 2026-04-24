@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "hotel-pri-meskani-letu-kedy-musi-aerolinka-zaplatit",
+    title: "Hotel pri meškaní letu: kedy musí aerolinka zaplatiť",
+    slug: "hotel-pri-meskani-letu-kedy-musi-aerolinka-zaplatit",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Right to care podľa článku 9 EU261. Hotel + doprava pri meškaní cez noc. Platí aj pri mimoriadnych okolnostiach.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "emerald",
+    schema: {
+      faqItems: [
+        { question: "Kedy hotel?", answer: "Vždy, keď meškanie vyžaduje nocľah." },
+        { question: "Aj pri mimoriadnych?", answer: "Áno, right to care platí vždy." },
+      ],
+    },
+  },
+
+  {
     id: "nakupy-pri-meskanej-batozine-co-preplacaju",
     title: "Nákupy pri meškanej batožine: čo preplatia",
     slug: "nakupy-pri-meskanej-batozine-co-preplacaju",
