@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "zdravotny-problem-na-palube-odskodnenie",
+    title: "Zdravotný problém na palube: nárok na odškodnenie?",
+    slug: "zdravotny-problem-na-palube-odskodnenie",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 5,
+    excerpt: "Medicínske odklonenie letu kvôli zdravotnému problému pasažiera. EU261 prehľad nárokov a right to care.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        { question: "Meškanie kvôli zdraviu pasažiera?", answer: "Typicky mimoriadna okolnosť. Kompenzácia nevzniká, ale right to care áno." },
+        { question: "Zdravie posádky?", answer: "Zložitejšie, závisí od rozumných opatrení aerolinky." },
+      ],
+    },
+  },
+
+  {
     id: "vtacia-zrazka-mimoriadna-okolnost",
     title: "Vtáčia zrážka ako mimoriadna okolnosť (ECJ C-315/15)",
     slug: "vtacia-zrazka-mimoriadna-okolnost",
