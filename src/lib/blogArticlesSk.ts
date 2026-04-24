@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-londyn-gatwick-lgw-meskania",
+    title: "Letisko Londýn Gatwick (LGW): meškania a odškodnenie",
+    slug: "letisko-londyn-gatwick-lgw-meskania",
+    category: "airport",
+    airportCode: "LGW",
+    airportName: "London Gatwick",
+    flag: "🇬🇧",
+    wordCount: 1900,
+    readTime: 7,
+    excerpt:
+      "Gatwick po Brexite: UK261 pri odlete, EU261 pri prílete s EÚ aerolinkou. easyJet hub – prehľad nárokov a terminálov.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "indigo",
+    schema: {
+      faqItems: [
+        {
+          question: "UK261 alebo EU261 na LGW?",
+          answer:
+            "Odlet z LGW: UK261. Prílet s EÚ aerolinkou: EU261. Sumy ekvivalentné.",
+        },
+        {
+          question: "Koľko dostanem z LGW?",
+          answer:
+            "220/350/520 GBP alebo 250/400/600 €.",
+        },
+        {
+          question: "Akí dopravcovia z LGW?",
+          answer:
+            "easyJet (hub), British Airways, Virgin Atlantic, Norwegian, TUI, Wizz Air, Ryanair.",
+        },
+        {
+          question: "North vs South terminal?",
+          answer:
+            "Spojené shuttle vlakom. Záleží na aerolinke – proces reklamácie rovnaký.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-londyn-heathrow-lhr-meskania",
     title: "Letisko Londýn Heathrow (LHR): meškania a odškodnenie",
     slug: "letisko-londyn-heathrow-lhr-meskania",
