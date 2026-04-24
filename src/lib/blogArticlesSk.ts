@@ -2113,6 +2113,45 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "volotea-odskodnenie",
+    title: "Volotea odškodnenie: EU261 pre slovenských cestujúcich",
+    slug: "volotea-odskodnenie",
+    category: "airline",
+    airlineName: "Volotea",
+    wordCount: 2100,
+    readTime: 8,
+    excerpt:
+      "Volotea vám meškal alebo zrušil let do Stredomoria? Prehľad nárokov podľa EU261, typických trás z Viedne a Budapešti a postupu reklamácie.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "fuchsia",
+    schema: {
+      faqItems: [
+        {
+          question: "Volotea je EÚ aerolinka?",
+          answer:
+            "Áno. Volotea (V7) má španielsky a taliansky AOC. Lety z EÚ plne spadajú pod EU261.",
+        },
+        {
+          question: "Koľko dostanem za meškanie Volotea?",
+          answer:
+            "250 € pri krátkych trasách, 400 € pri letoch nad 1 500 km. Volotea neoperuje long-haul.",
+        },
+        {
+          question: "Volotea mení letový poriadok pred sezónou – mám nárok?",
+          answer:
+            "Ak oznámenie prišlo viac než 14 dní pred odletom, kompenzácia nevzniká, ale máte právo na refundáciu.",
+        },
+        {
+          question: "Ako podať reklamáciu Volotea?",
+          answer:
+            "Cez formulár na volotea.com v sekcii Ayuda / Contacto. Odporúča sa posielať v angličtine alebo španielčine.",
+        },
+      ],
+    },
+  },
+
+  {
     id: "ita-airways-odskodnenie",
     title: "ITA Airways odškodnenie podľa EU261 (následník Alitalie)",
     slug: "ita-airways-odskodnenie",
