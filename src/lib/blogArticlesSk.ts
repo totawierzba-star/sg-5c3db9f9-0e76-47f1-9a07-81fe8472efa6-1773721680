@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-pariz-meskanie-letu",
+    title: "Bratislava – Paríž meškanie letu: 250 € kompenzácia",
+    slug: "bratislava-pariz-meskanie-letu",
+    category: "longtail",
+    wordCount: 1500,
+    readTime: 6,
+    excerpt: "Meškanie alebo zrušenie letu Bratislava – Paríž (CDG/BVA/ORY)? EU261 nárok 250 € pri priamom Ryanair lete aj pri prestupe.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "blue",
+    schema: {
+      faqItems: [
+        { question: "Mám nárok pri BTS – Paríž?", answer: "Áno, 250 € pri meškaní 3+ hod." },
+        { question: "Ktoré pariánske letisko?", answer: "Ryanair do BVA, Air France do CDG." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-milan-meskanie-letu",
     title: "Bratislava – Miláno meškanie letu: 250 € kompenzácia",
     slug: "bratislava-milan-meskanie-letu",
