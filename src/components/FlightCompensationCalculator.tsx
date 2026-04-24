@@ -608,15 +608,15 @@ function RouteArcMap({
       className="relative my-7 aspect-[100/62] min-h-[240px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/45 shadow-inner"
       aria-label={
         routeViewport && from && to
-          ? `Mapa trasy ${from.code}-${to.code}, dystans ${routeViewport.distanceKm} kilometrów, bez granic państw`
-          : "Mapa trasy bez granic państw"
+          ? `Mapa trasy ${from.code}-${to.code}, dystans ${routeViewport.distanceKm} kilometrów`
+          : "Mapa trasy lotu"
       }
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(125,211,252,0.22),transparent_28%),radial-gradient(circle_at_78%_70%,rgba(59,130,246,0.20),transparent_30%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(15,23,42,0.05),rgba(14,165,233,0.12))]" />
       <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-2 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
         <MapPin className="h-3.5 w-3.5" />
-        Mapa trasy · bez granic państw
+        Mapa trasy
       </div>
       {routeViewport && (
         <div className="absolute right-4 top-4 z-10 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
@@ -753,7 +753,7 @@ function RouteArcMap({
       ) : (
         <div className="absolute inset-x-6 bottom-5 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm leading-6 text-sky-100/80 backdrop-blur">
           Wybierz lotnisko wylotu i przylotu, aby zobaczyć mapę trasy z lokalną
-          skalą dystansu. Wizualizacja nie pokazuje granic państw.
+          skalą dystansu.
         </div>
       )}
     </div>
