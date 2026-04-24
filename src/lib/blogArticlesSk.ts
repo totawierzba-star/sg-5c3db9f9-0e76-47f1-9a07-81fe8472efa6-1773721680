@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "bratislava-madrid-meskanie-letu",
+    title: "Bratislava – Madrid meškanie letu: 400 € EU261",
+    slug: "bratislava-madrid-meskanie-letu",
+    category: "longtail",
+    wordCount: 1400,
+    readTime: 6,
+    excerpt: "Meškanie alebo zrušenie letu Bratislava – Madrid? EU261 nárok 400 € pri 3+ hod meškaní. Prehľad dopravcov a postupu.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        { question: "Nárok pri BTS – Madrid?", answer: "Áno, 400 € pri 3+ hod meškaní." },
+        { question: "Akí dopravcovia?", answer: "Ryanair sezónne, Iberia cez Viedeň, Wizz Air cez Budapešť." },
+      ],
+    },
+  },
+
+  {
     id: "bratislava-pariz-meskanie-letu",
     title: "Bratislava – Paríž meškanie letu: 250 € kompenzácia",
     slug: "bratislava-pariz-meskanie-letu",
