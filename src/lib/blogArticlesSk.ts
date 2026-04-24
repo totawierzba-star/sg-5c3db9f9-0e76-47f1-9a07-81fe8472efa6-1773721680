@@ -2113,6 +2113,25 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "vieden-sanghaj-meskanie-letu",
+    title: "Viedeň – Šanghaj meškanie letu: 600 €",
+    slug: "vieden-sanghaj-meskanie-letu",
+    category: "longtail",
+    wordCount: 1200,
+    readTime: 6,
+    excerpt: "Austrian priamy let Viedeň – Šanghaj PVG. EU261 600 € pri long-haul meškaní 4+ hod.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "red",
+    schema: {
+      faqItems: [
+        { question: "Nárok VIE – Šanghaj?", answer: "600 € pri meškaní 4+ hod." },
+        { question: "Kto lieta?", answer: "Austrian priamy do PVG, Air China, China Eastern." },
+      ],
+    },
+  },
+
+  {
     id: "vieden-tokyo-meskanie-letu",
     title: "Viedeň – Tokio meškanie letu: 600 € EU261",
     slug: "vieden-tokyo-meskanie-letu",
