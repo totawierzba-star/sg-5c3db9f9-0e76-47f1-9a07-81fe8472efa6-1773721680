@@ -2113,6 +2113,47 @@ export const blogArticlesSk: BlogArticleSk[] = [
     },
   },
   {
+    id: "letisko-kodan-cph-meskania",
+    title: "Letisko Kodaň (CPH): meškania a odškodnenie EU261",
+    slug: "letisko-kodan-cph-meskania",
+    category: "airport",
+    airportCode: "CPH",
+    airportName: "Copenhagen Kastrup",
+    flag: "🇩🇰",
+    wordCount: 1900,
+    readTime: 7,
+    excerpt:
+      "Kodaň – najväčšie letisko v Škandinávii, hub SAS. Prehľad EU261 nárokov pri meškaní, škandinávskych dopravcov a zimného počasia ako mimoriadnej okolnosti.",
+    publishDate: "2026-04-24",
+    featured: false,
+    color: "blue",
+    schema: {
+      faqItems: [
+        {
+          question: "Mám pri CPH nárok?",
+          answer:
+            "Áno, EU261 plne. Sumy 250/400/600 €.",
+        },
+        {
+          question: "Akí dopravcovia z CPH?",
+          answer:
+            "SAS (hub), Norwegian, Ryanair, Wizz Air, easyJet, KLM, Lufthansa, Emirates.",
+        },
+        {
+          question: "Zimné počasie = mimoriadna okolnosť?",
+          answer:
+            "Môže byť, ak reálne bránilo letu. Aerolinka musí predložiť dôkazy.",
+        },
+        {
+          question: "Dánsky regulátor?",
+          answer:
+            "Trafikstyrelsen (Danish Transport Authority).",
+        },
+      ],
+    },
+  },
+
+  {
     id: "letisko-dublin-dub-meskania",
     title: "Letisko Dublin (DUB): meškania a odškodnenie EU261",
     slug: "letisko-dublin-dub-meskania",
