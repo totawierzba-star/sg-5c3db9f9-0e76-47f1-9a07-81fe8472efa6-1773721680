@@ -246,6 +246,7 @@ export function buildClaimWingerCalculatorUrl({
   source = "problemlot",
   campaign = "pl_compensation_calculator",
   content = "calculator_result_cta",
+  lang = "pl",
   baseUrl,
 }: {
   result: CompensationResult;
@@ -253,6 +254,7 @@ export function buildClaimWingerCalculatorUrl({
   source?: string;
   campaign?: string;
   content?: string;
+  lang?: string;
   baseUrl?: string;
 }) {
   const targetBaseUrl =
@@ -266,7 +268,7 @@ export function buildClaimWingerCalculatorUrl({
     utm_medium: "calculator",
     utm_campaign: campaign,
     utm_content: content,
-    lang: "pl",
+    lang,
     from: input.from?.code || "",
     to: input.to?.code || "",
     disruption: input.disruption || "",

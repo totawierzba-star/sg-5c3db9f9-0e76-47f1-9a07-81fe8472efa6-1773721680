@@ -22,13 +22,17 @@ import {
   calculateFlightCompensation,
   type CompensationInput,
   type FlightDisruption,
-  type ReasonCode,
-  type RouteBand,
 } from "@/lib/flightCompensationCalculator";
+import {
+  getCalculatorCopy,
+  type CalculatorCopy,
+  type CalculatorLocaleCode,
+} from "@/lib/flightCompensationCalculatorCopy";
 import { cn } from "@/lib/utils";
 import { worldLandRings } from "@/lib/worldLandRings";
 
 type CalculatorStep = 1 | 2 | 3 | 4;
+type CalculatorResult = NonNullable<ReturnType<typeof calculateFlightCompensation>>;
 
 const initialInput: CompensationInput = {
   from: null,
@@ -42,61 +46,14 @@ const initialInput: CompensationInput = {
   extraordinaryCircumstances: "unknown",
 };
 
-const disruptionLabels: Record<FlightDisruption, { title: string; description: string }> = {
-  delay: {
-    title: "Opóźnienie",
-    description: "Lot dotarł do celu co najmniej kilka godzin po czasie.",
-  },
-  cancelled: {
-    title: "Odwołanie",
-    description: "Linia odwołała rejs albo przeniosła Cię na inny lot.",
-  },
-  denied_boarding: {
-    title: "Odmowa wejścia",
-    description: "Nie wpuszczono Cię na pokład mimo ważnej rezerwacji.",
-  },
-  missed_connection: {
-    title: "Utracona przesiadka",
-    description: "Opóźnienie pierwszego odcinka zerwało dalszą podróż.",
-  },
-};
-
-const routeBandLabels: Record<RouteBand, string> = {
-  short: "krótki dystans",
-  medium: "średni dystans",
-  long: "daleki dystans",
-};
-
-const reasonLabels: Record<ReasonCode, string> = {
-  out_of_scope:
-    "Lot jest poza zakresem EU261/UK261: nie startował z EU/UK/CH/EEA i nie był obsługiwany przez przewoźnika z tego obszaru przy przylocie.",
-  delay_under_three_hours:
-    "Opóźnienie przy przylocie było krótsze niż 3 godziny, więc próg odszkodowania nie został spełniony.",
-  covered_departure_area:
-    "Lot startował z lotniska w EU/UK/CH/EEA, więc jurysdykcja obejmuje również przewoźników spoza UE.",
-  covered_arrival_carrier:
-    "Lot przylatywał do EU/UK/CH/EEA i był obsługiwany przez przewoźnika z tego obszaru.",
-  delay_threshold_met:
-    "Opóźnienie przy przylocie przekroczyło 3 godziny.",
-  missed_connection_threshold_met:
-    "Utracona przesiadka spowodowała co najmniej 3 godziny opóźnienia na końcowym celu podróży.",
-  cancellation_notice_fourteen_days:
-    "Informacja o odwołaniu przyszła co najmniej 14 dni przed wylotem.",
-  replacement_within_legal_window:
-    "Lot zastępczy mieścił się w ustawowych widełkach czasowych, więc odszkodowanie zwykle nie przysługuje.",
-  replacement_limited_delay_reduction:
-    "Kwota została obniżona o 50%, bo opóźnienie mieści się w zakresie redukcji.",
-  cancellation_compensable:
-    "Odwołanie mieści się w warunkach, które mogą dawać prawo do odszkodowania.",
-  denied_boarding_passenger_fault:
-    "Odmowa wejścia wynikała z przyczyn po stronie pasażera, np. dokumentów lub bezpieczeństwa.",
-  denied_boarding_airline_fault:
-    "Odmowa wejścia wygląda na overbooking albo inną przyczynę po stronie linii.",
-  extraordinary_circumstances_review:
-    "Linia powołuje się na nadzwyczajne okoliczności; kwotę trzeba potraktować jako wymagającą weryfikacji.",
-};
-
-export function FlightCompensationCalculator({ className }: { className?: string }) {
+export function FlightCompensationCalculator({
+  className,
+  locale = "pl",
+}: {
+  className?: string;
+  locale?: CalculatorLocaleCode;
+}) {
+  const copy = getCalculatorCopy(locale);
   const [step, setStep] = useState<CalculatorStep>(1);
   const [input, setInput] = useState<CompensationInput>(initialInput);
   const result = calculateFlightCompensation(input);
@@ -126,6 +83,9 @@ export function FlightCompensationCalculator({ className }: { className?: string
     buildClaimWingerCalculatorUrl({
       input,
       result,
+      baseUrl: getClaimWingerBaseUrl(input, copy),
+      campaign: copy.campaign,
+      lang: copy.claimWinger.langParam,
     });
 
   return (
@@ -134,7 +94,7 @@ export function FlightCompensationCalculator({ className }: { className?: string
         "overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-950",
         className,
       )}
-      data-claimwinger-calculator="pl"
+      data-claimwinger-calculator={copy.code}
     >
       <div className="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,0.95fr)]">
         <div className="p-5 sm:p-8 lg:p-10">
@@ -152,24 +112,24 @@ export function FlightCompensationCalculator({ className }: { className?: string
                     "border-slate-200 bg-slate-50 text-slate-500 dark:border-slate-800 dark:bg-slate-900",
                 )}
               >
-                {item < step ? "✓" : item}
+                {item < step ? copy.steps.done : item}
               </span>
             ))}
             <span className="ml-auto rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:bg-slate-900 dark:text-slate-400">
-              Krok {Math.min(step, 3)} z 3
+              {copy.steps.label(Math.min(step, 3), 3)}
             </span>
           </div>
 
           {step === 1 && (
-            <RouteStep input={input} onChange={updateInput} />
+            <RouteStep input={input} onChange={updateInput} copy={copy} />
           )}
 
           {step === 2 && (
-            <SituationStep input={input} onChange={updateInput} />
+            <SituationStep input={input} onChange={updateInput} copy={copy} />
           )}
 
           {step === 3 && (
-            <DetailsStep input={input} onChange={updateInput} />
+            <DetailsStep input={input} onChange={updateInput} copy={copy} />
           )}
 
           {step === 4 && result && (
@@ -178,6 +138,7 @@ export function FlightCompensationCalculator({ className }: { className?: string
               ctaHref={ctaHref || "https://claimwinger.com"}
               input={input}
               onReset={reset}
+              copy={copy}
             />
           )}
 
@@ -185,7 +146,7 @@ export function FlightCompensationCalculator({ className }: { className?: string
             <div className="mt-8 flex items-center justify-between border-t border-slate-200 pt-6 dark:border-slate-800">
               {step > 1 ? (
                 <Button variant="ghost" onClick={() => setStep((step - 1) as CalculatorStep)}>
-                  Wstecz
+                  {copy.steps.back}
                 </Button>
               ) : (
                 <span />
@@ -197,14 +158,14 @@ export function FlightCompensationCalculator({ className }: { className?: string
                 }
                 className="bg-blue-700 text-white hover:bg-blue-800"
               >
-                Dalej
+                {copy.steps.next}
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
           )}
         </div>
 
-        <RoutePreview input={input} preview={preview} result={step === 4 ? result : null} />
+        <RoutePreview input={input} preview={preview} result={step === 4 ? result : null} copy={copy} />
       </div>
     </section>
   );
@@ -213,64 +174,65 @@ export function FlightCompensationCalculator({ className }: { className?: string
 function RouteStep({
   input,
   onChange,
+  copy,
 }: {
   input: CompensationInput;
   onChange: (patch: Partial<CompensationInput>) => void;
+  copy: CalculatorCopy;
 }) {
   return (
     <div>
       <h2 className="mb-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">
-        Trasa lotu
+        {copy.routeStep.title}
       </h2>
       <p className="mb-6 text-slate-600 dark:text-slate-300">
-        Ten kalkulator odszkodowania za lot sprawdza opóźnienie, odwołanie,
-        odmowę wejścia na pokład i utraconą przesiadkę według EU261 oraz UK261.
-        Wybierz lotniska i wskaż, czy przewoźnik ma siedzibę w EU/UK/CH/EEA.
+        {copy.routeStep.description}
       </p>
 
       <div className="grid gap-4 md:grid-cols-[1fr_auto_1fr] md:items-end">
         <AirportSelect
-          label="Wylot z"
+          label={copy.routeStep.fromLabel}
           value={input.from}
           onChange={(from) => onChange({ from })}
+          copy={copy}
         />
         <Button
           type="button"
           variant="outline"
           className="h-11 rounded-full"
+          aria-label={copy.routeStep.swapLabel}
           onClick={() => onChange({ from: input.to, to: input.from })}
         >
           ⇄
         </Button>
         <AirportSelect
-          label="Przylot do"
+          label={copy.routeStep.toLabel}
           value={input.to}
           onChange={(to) => onChange({ to })}
+          copy={copy}
         />
       </div>
 
       <div className="mt-6 rounded-2xl bg-slate-50 p-4 dark:bg-slate-900">
         <p className="mb-3 text-sm font-bold uppercase tracking-[0.16em] text-slate-500">
-          Przewoźnik operujący lot
+          {copy.routeStep.carrierTitle}
         </p>
         <div className="grid gap-3 sm:grid-cols-2">
           <OptionButton
             active={input.carrierJurisdiction === "eu_uk_ch_eea"}
             onClick={() => onChange({ carrierJurisdiction: "eu_uk_ch_eea" })}
-            title="EU / UK / CH / EEA"
-            description="Np. LOT, Lufthansa, KLM, British Airways, SWISS, Norwegian."
+            title={copy.routeStep.carrierEuTitle}
+            description={copy.routeStep.carrierEuDescription}
           />
           <OptionButton
             active={input.carrierJurisdiction === "other"}
             onClick={() => onChange({ carrierJurisdiction: "other" })}
-            title="Spoza tego obszaru"
-            description="Np. Emirates, Qatar Airways, Turkish Airlines, Air India."
+            title={copy.routeStep.carrierOtherTitle}
+            description={copy.routeStep.carrierOtherDescription}
           />
         </div>
         <p className="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-400">
-          Przy wylocie z EU/UK/CH/EEA przepisy zwykle obejmują także linie spoza
-          Europy. Przy przylocie do tego obszaru znaczenie ma również to, czy
-          lot obsługiwał przewoźnik europejski, brytyjski lub szwajcarski.
+          {copy.routeStep.carrierHint}
         </p>
       </div>
     </div>
@@ -280,22 +242,22 @@ function RouteStep({
 function SituationStep({
   input,
   onChange,
+  copy,
 }: {
   input: CompensationInput;
   onChange: (patch: Partial<CompensationInput>) => void;
+  copy: CalculatorCopy;
 }) {
   return (
     <div>
       <h2 className="mb-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">
-        Co się wydarzyło?
+        {copy.situationStep.title}
       </h2>
       <p className="mb-6 text-slate-600 dark:text-slate-300">
-        Wybierz sytuację, aby oszacować, czy możesz otrzymać 250, 400 albo
-        600 euro odszkodowania. Inne progi stosuje się dla opóźnionego lotu,
-        inne dla odwołania, overbookingu i utraconej przesiadki.
+        {copy.situationStep.description}
       </p>
       <div className="grid gap-3 sm:grid-cols-2">
-        {(Object.keys(disruptionLabels) as FlightDisruption[]).map((disruption) => (
+        {(Object.keys(copy.disruptionLabels) as FlightDisruption[]).map((disruption) => (
           <OptionButton
             key={disruption}
             active={input.disruption === disruption}
@@ -308,8 +270,8 @@ function SituationStep({
                 deniedBoardingReason: null,
               })
             }
-            title={disruptionLabels[disruption].title}
-            description={disruptionLabels[disruption].description}
+            title={copy.disruptionLabels[disruption].title}
+            description={copy.disruptionLabels[disruption].description}
           />
         ))}
       </div>
@@ -320,48 +282,48 @@ function SituationStep({
 function DetailsStep({
   input,
   onChange,
+  copy,
 }: {
   input: CompensationInput;
   onChange: (patch: Partial<CompensationInput>) => void;
+  copy: CalculatorCopy;
 }) {
   return (
     <div>
       <h2 className="mb-2 text-3xl font-bold tracking-tight text-slate-950 dark:text-white">
-        Szczegóły sprawy
+        {copy.detailsStep.title}
       </h2>
       <p className="mb-6 text-slate-600 dark:text-slate-300">
-        Te odpowiedzi decydują o kwocie, redukcji 50% albo konieczności ręcznej
-        weryfikacji. W EU261 i UK261 liczy się przede wszystkim opóźnienie przy
-        końcowym celu podróży oraz realny powód zakłócenia lotu.
+        {copy.detailsStep.description}
       </p>
 
       {(input.disruption === "delay" || input.disruption === "missed_connection") && (
-        <QuestionGroup title="Jak duże było opóźnienie przy końcowym celu podróży?">
+        <QuestionGroup title={copy.detailsStep.delayQuestion}>
           <OptionGrid>
-            <OptionButton active={input.delayBand === "under_2h"} onClick={() => onChange({ delayBand: "under_2h" })} title="Poniżej 2h" />
-            <OptionButton active={input.delayBand === "2_to_3h"} onClick={() => onChange({ delayBand: "2_to_3h" })} title="2-3h" />
-            <OptionButton active={input.delayBand === "3_to_4h"} onClick={() => onChange({ delayBand: "3_to_4h" })} title="3-4h" />
-            <OptionButton active={input.delayBand === "over_4h"} onClick={() => onChange({ delayBand: "over_4h" })} title="Powyżej 4h" />
+            <OptionButton active={input.delayBand === "under_2h"} onClick={() => onChange({ delayBand: "under_2h" })} title={copy.detailsStep.delayOptions.under2h} />
+            <OptionButton active={input.delayBand === "2_to_3h"} onClick={() => onChange({ delayBand: "2_to_3h" })} title={copy.detailsStep.delayOptions.twoToThree} />
+            <OptionButton active={input.delayBand === "3_to_4h"} onClick={() => onChange({ delayBand: "3_to_4h" })} title={copy.detailsStep.delayOptions.threeToFour} />
+            <OptionButton active={input.delayBand === "over_4h"} onClick={() => onChange({ delayBand: "over_4h" })} title={copy.detailsStep.delayOptions.overFour} />
           </OptionGrid>
         </QuestionGroup>
       )}
 
       {input.disruption === "cancelled" && (
         <>
-          <QuestionGroup title="Kiedy poinformowano Cię o odwołaniu?">
+          <QuestionGroup title={copy.detailsStep.cancellationNoticeQuestion}>
             <OptionGrid>
-              <OptionButton active={input.cancellationNotice === "14_plus_days"} onClick={() => onChange({ cancellationNotice: "14_plus_days", replacementFlight: null })} title="14 dni lub więcej" />
-              <OptionButton active={input.cancellationNotice === "7_to_13_days"} onClick={() => onChange({ cancellationNotice: "7_to_13_days" })} title="7-13 dni" />
-              <OptionButton active={input.cancellationNotice === "under_7_days"} onClick={() => onChange({ cancellationNotice: "under_7_days" })} title="Mniej niż 7 dni" />
+              <OptionButton active={input.cancellationNotice === "14_plus_days"} onClick={() => onChange({ cancellationNotice: "14_plus_days", replacementFlight: null })} title={copy.detailsStep.cancellationOptions.fourteenPlus} />
+              <OptionButton active={input.cancellationNotice === "7_to_13_days"} onClick={() => onChange({ cancellationNotice: "7_to_13_days" })} title={copy.detailsStep.cancellationOptions.sevenToThirteen} />
+              <OptionButton active={input.cancellationNotice === "under_7_days"} onClick={() => onChange({ cancellationNotice: "under_7_days" })} title={copy.detailsStep.cancellationOptions.underSeven} />
             </OptionGrid>
           </QuestionGroup>
           {input.cancellationNotice && input.cancellationNotice !== "14_plus_days" && (
-            <QuestionGroup title="Jaki był lot zastępczy?">
+            <QuestionGroup title={copy.detailsStep.replacementQuestion}>
               <OptionGrid>
-                <OptionButton active={input.replacementFlight === "none"} onClick={() => onChange({ replacementFlight: "none" })} title="Nie było" description="Brak realnej alternatywy." />
-                <OptionButton active={input.replacementFlight === "within_legal_window"} onClick={() => onChange({ replacementFlight: "within_legal_window" })} title="W ustawowych widełkach" description="Zwykle bez odszkodowania." />
-                <OptionButton active={input.replacementFlight === "limited_delay"} onClick={() => onChange({ replacementFlight: "limited_delay" })} title="Z ograniczonym opóźnieniem" description="Możliwa redukcja 50%." />
-                <OptionButton active={input.replacementFlight === "major_delay"} onClick={() => onChange({ replacementFlight: "major_delay" })} title="Znacznie później" description="Zwykle pełna kwota." />
+                <OptionButton active={input.replacementFlight === "none"} onClick={() => onChange({ replacementFlight: "none" })} title={copy.detailsStep.replacementOptions.noneTitle} description={copy.detailsStep.replacementOptions.noneDescription} />
+                <OptionButton active={input.replacementFlight === "within_legal_window"} onClick={() => onChange({ replacementFlight: "within_legal_window" })} title={copy.detailsStep.replacementOptions.withinTitle} description={copy.detailsStep.replacementOptions.withinDescription} />
+                <OptionButton active={input.replacementFlight === "limited_delay"} onClick={() => onChange({ replacementFlight: "limited_delay" })} title={copy.detailsStep.replacementOptions.limitedTitle} description={copy.detailsStep.replacementOptions.limitedDescription} />
+                <OptionButton active={input.replacementFlight === "major_delay"} onClick={() => onChange({ replacementFlight: "major_delay" })} title={copy.detailsStep.replacementOptions.majorTitle} description={copy.detailsStep.replacementOptions.majorDescription} />
               </OptionGrid>
             </QuestionGroup>
           )}
@@ -369,23 +331,22 @@ function DetailsStep({
       )}
 
       {input.disruption === "denied_boarding" && (
-        <QuestionGroup title="Czy odmowa wejścia była z Twojej winy?">
+        <QuestionGroup title={copy.detailsStep.deniedBoardingQuestion}>
           <OptionGrid>
-            <OptionButton active={input.deniedBoardingReason === "airline_fault"} onClick={() => onChange({ deniedBoardingReason: "airline_fault" })} title="Nie" description="Np. overbooking." />
-            <OptionButton active={input.deniedBoardingReason === "passenger_fault"} onClick={() => onChange({ deniedBoardingReason: "passenger_fault" })} title="Tak" description="Np. brak dokumentów." />
+            <OptionButton active={input.deniedBoardingReason === "airline_fault"} onClick={() => onChange({ deniedBoardingReason: "airline_fault" })} title={copy.detailsStep.deniedOptions.noTitle} description={copy.detailsStep.deniedOptions.noDescription} />
+            <OptionButton active={input.deniedBoardingReason === "passenger_fault"} onClick={() => onChange({ deniedBoardingReason: "passenger_fault" })} title={copy.detailsStep.deniedOptions.yesTitle} description={copy.detailsStep.deniedOptions.yesDescription} />
           </OptionGrid>
         </QuestionGroup>
       )}
 
-      <QuestionGroup title="Czy linia powołuje się na nadzwyczajne okoliczności?">
+      <QuestionGroup title={copy.detailsStep.extraordinaryQuestion}>
         <OptionGrid>
-          <OptionButton active={input.extraordinaryCircumstances === "no"} onClick={() => onChange({ extraordinaryCircumstances: "no" })} title="Nie" />
-          <OptionButton active={input.extraordinaryCircumstances === "yes"} onClick={() => onChange({ extraordinaryCircumstances: "yes" })} title="Tak" description="Wymaga weryfikacji." />
-          <OptionButton active={input.extraordinaryCircumstances === "unknown"} onClick={() => onChange({ extraordinaryCircumstances: "unknown" })} title="Nie wiem" />
+          <OptionButton active={input.extraordinaryCircumstances === "no"} onClick={() => onChange({ extraordinaryCircumstances: "no" })} title={copy.detailsStep.extraordinaryOptions.no} />
+          <OptionButton active={input.extraordinaryCircumstances === "yes"} onClick={() => onChange({ extraordinaryCircumstances: "yes" })} title={copy.detailsStep.extraordinaryOptions.yes} description={copy.detailsStep.extraordinaryOptions.yesDescription} />
+          <OptionButton active={input.extraordinaryCircumstances === "unknown"} onClick={() => onChange({ extraordinaryCircumstances: "unknown" })} title={copy.detailsStep.extraordinaryOptions.unknown} />
         </OptionGrid>
         <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
-          Usterki techniczne i strajki własnych pracowników linii często nie są
-          wystarczającym powodem odmowy.
+          {copy.detailsStep.extraordinaryNote}
         </p>
       </QuestionGroup>
     </div>
@@ -397,11 +358,13 @@ function ResultStep({
   input,
   ctaHref,
   onReset,
+  copy,
 }: {
-  result: NonNullable<ReturnType<typeof calculateFlightCompensation>>;
+  result: CalculatorResult;
   input: CompensationInput;
   ctaHref: string;
   onReset: () => void;
+  copy: CalculatorCopy;
 }) {
   const positive = result.status === "eligible" || result.status === "needs_review";
 
@@ -417,54 +380,51 @@ function ResultStep({
       >
         <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
           {result.status === "needs_review"
-            ? "Wymaga weryfikacji"
+            ? copy.result.needsReview
             : positive
-              ? "Prawdopodobna kwota"
-              : "Wynik"}
+              ? copy.result.probableAmount
+              : copy.result.result}
         </p>
         <div className="mb-2 text-6xl font-black tracking-tight">
-          {positive ? `${result.amount} €` : "0 €"}
+          {positive ? formatEuroAmount(result.amount) : copy.result.noAmount}
         </div>
         <p className="text-white/80">
           {positive
-            ? "Szacunkowo na pasażera"
-            : "Ten lot prawdopodobnie nie spełnia warunków odszkodowania."}
+            ? copy.result.perPassenger
+            : copy.result.notEligible}
         </p>
         {result.reducedByHalf && (
           <p className="mt-3 inline-flex rounded-full bg-white/15 px-3 py-1 text-sm font-semibold">
-            Kwota bazowa {result.baseAmount} € obniżona o 50%
+            {copy.result.reducedByHalf(result.baseAmount)}
           </p>
         )}
       </div>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-3">
-        <MetaCard label="Dystans" value={`${result.distanceKm.toLocaleString("pl-PL")} km`} />
-        <MetaCard label="Klasa trasy" value={routeBandLabels[result.routeBand]} />
+        <MetaCard label={copy.result.distanceLabel} value={formatDistance(result.distanceKm, copy)} />
+        <MetaCard label={copy.result.routeClassLabel} value={copy.routeBandLabels[result.routeBand]} />
         <MetaCard
-          label="Zakres"
-          value={result.inPassengerRightsScope ? "EU/UK/CH/EEA" : "poza zakresem"}
+          label={copy.result.scopeLabel}
+          value={result.inPassengerRightsScope ? copy.result.coveredScope : copy.result.outsideScope}
         />
       </div>
 
       <Card className="mt-5 border-blue-100 bg-blue-50/60 p-5 dark:border-blue-900/50 dark:bg-blue-950/20">
         <h3 className="mb-2 font-bold text-slate-950 dark:text-white">
-          Co oznacza wynik kalkulatora?
+          {copy.result.explanationTitle}
         </h3>
         <p className="text-sm leading-6 text-slate-700 dark:text-slate-300">
-          To wstępna ocena prawa do odszkodowania za opóźniony lub odwołany lot.
-          ClaimWinger sprawdza później rezerwację, rzeczywisty czas przylotu,
-          przyczynę zakłócenia i odpowiedzialność linii lotniczej w modelu
-          no win, no fee.
+          {copy.result.explanationText}
         </p>
       </Card>
 
       <Card className="mt-5 p-5">
-        <h3 className="mb-3 font-bold text-slate-950 dark:text-white">Uzasadnienie</h3>
+        <h3 className="mb-3 font-bold text-slate-950 dark:text-white">{copy.result.reasonsTitle}</h3>
         <ul className="space-y-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
           {result.reasons.map((reason) => (
             <li key={reason} className="flex gap-3">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-700 dark:text-blue-300" />
-              <span>{reasonLabels[reason]}</span>
+              <span>{copy.reasonLabels[reason]}</span>
             </li>
           ))}
         </ul>
@@ -478,8 +438,8 @@ function ResultStep({
             rel="noopener noreferrer"
             onClick={() =>
               pushClaimWingerEvent("claimwinger_calculator_cta_click", {
-                language: "pl",
-                campaign: "pl_compensation_calculator",
+                language: copy.code,
+                campaign: copy.campaign,
                 content: "result_cta",
                 destination: ctaHref,
                 from: input.from?.code || "",
@@ -491,13 +451,13 @@ function ResultStep({
             }
             className="inline-flex items-center justify-center gap-2 rounded-md bg-blue-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-blue-800"
           >
-            Złóż sprawę w ClaimWinger
+            {copy.result.ctaLabel}
             <ArrowRight className="h-4 w-4" />
           </a>
         )}
         <Button variant="outline" onClick={onReset}>
           <RotateCcw className="h-4 w-4" />
-          Zacznij od nowa
+          {copy.result.resetLabel}
         </Button>
       </div>
     </div>
@@ -508,10 +468,12 @@ function RoutePreview({
   input,
   preview,
   result,
+  copy,
 }: {
   input: CompensationInput;
   preview: ReturnType<typeof calculateFlightCompensation>;
   result: ReturnType<typeof calculateFlightCompensation>;
+  copy: CalculatorCopy;
 }) {
   const displayResult = result || preview;
 
@@ -522,44 +484,41 @@ function RoutePreview({
       <div className="relative">
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-sky-300/30 bg-white/10 px-4 py-2 text-sm text-sky-100 backdrop-blur">
           <ShieldCheck className="h-4 w-4" />
-          EU261 / UK261 / CH / EEA
+          {copy.preview.badge}
         </div>
 
         <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur">
           <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
-            <AirportBadge airport={input.from} fallback="Wylot" />
+            <AirportBadge airport={input.from} fallback={copy.preview.fromFallback} copy={copy} />
             <Plane className="h-7 w-7 text-sky-200" />
-            <AirportBadge airport={input.to} fallback="Przylot" alignRight />
+            <AirportBadge airport={input.to} fallback={copy.preview.toFallback} alignRight copy={copy} />
           </div>
 
-          <RouteArcMap from={input.from} to={input.to} />
+          <RouteArcMap from={input.from} to={input.to} copy={copy} />
 
           {displayResult ? (
             <div className="grid gap-3 sm:grid-cols-3">
-              <PreviewMetric label="Dystans" value={`${displayResult.distanceKm.toLocaleString("pl-PL")} km`} />
-              <PreviewMetric label="Trasa" value={routeBandLabels[displayResult.routeBand]} />
+              <PreviewMetric label={copy.preview.distanceLabel} value={formatDistance(displayResult.distanceKm, copy)} />
+              <PreviewMetric label={copy.preview.routeLabel} value={copy.routeBandLabels[displayResult.routeBand]} />
               <PreviewMetric
-                label="Kwota"
+                label={copy.preview.amountLabel}
                 value={
                   displayResult.status === "eligible" || displayResult.status === "needs_review"
-                    ? `${displayResult.amount} €`
-                    : "0 €"
+                    ? formatEuroAmount(displayResult.amount)
+                    : copy.result.noAmount
                 }
                 accent
               />
             </div>
           ) : (
             <p className="text-sm leading-6 text-sky-100/80">
-              Wybierz trasę, aby zobaczyć dystans, klasę trasy i szacunkową kwotę.
+              {copy.preview.emptyText}
             </p>
           )}
 
           <div className="mt-5 rounded-2xl border border-white/10 bg-slate-950/35 p-4 text-sm leading-6 text-sky-100/80">
-            <strong className="block text-white">Szybka reguła pasażera</strong>
-            Jeśli lot kwalifikuje się pod EU261 albo UK261, opóźnienie minimum
-            3 godziny przy przylocie może oznaczać odszkodowanie do 600 euro za
-            pasażera. Dokładna kwota zależy od dystansu i wyjątków po stronie
-            linii lotniczej.
+            <strong className="block text-white">{copy.preview.ruleTitle}</strong>
+            {copy.preview.ruleText}
           </div>
         </div>
       </div>
@@ -601,9 +560,11 @@ const MAP_GRID_Y = [15.5, 31, 46.5];
 function RouteArcMap({
   from,
   to,
+  copy,
 }: {
   from: CompensationAirport | null;
   to: CompensationAirport | null;
+  copy: CalculatorCopy;
 }) {
   const routeViewport = from && to ? buildRouteViewport(from, to) : null;
 
@@ -612,19 +573,19 @@ function RouteArcMap({
       className="relative my-7 aspect-[100/62] min-h-[240px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/45 shadow-inner"
       aria-label={
         routeViewport && from && to
-          ? `Mapa trasy ${from.code}-${to.code}, dystans ${routeViewport.distanceKm} kilometrów`
-          : "Mapa trasy lotu"
+          ? copy.map.ariaRoute(from.code, to.code, routeViewport.distanceKm)
+          : copy.map.ariaDefault
       }
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(125,211,252,0.22),transparent_28%),radial-gradient(circle_at_78%_70%,rgba(59,130,246,0.20),transparent_30%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(15,23,42,0.05),rgba(14,165,233,0.12))]" />
       <div className="absolute left-4 top-4 z-10 inline-flex items-center gap-2 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
         <MapPin className="h-3.5 w-3.5" />
-        Mapa trasy
+        {copy.map.routeMapLabel}
       </div>
       {routeViewport && (
         <div className="absolute right-4 top-4 z-10 rounded-full border border-sky-200/20 bg-slate-950/50 px-3 py-1.5 text-xs font-semibold text-sky-100 backdrop-blur">
-          Kadr dopasowany do dystansu
+          {copy.map.fittedFrameLabel}
         </div>
       )}
 
@@ -729,23 +690,22 @@ function RouteArcMap({
       </svg>
 
       {routeViewport && from && (
-        <AirportMapPoint airport={from} point={routeViewport.fromPoint} tone="from" />
+        <AirportMapPoint airport={from} point={routeViewport.fromPoint} tone="from" copy={copy} />
       )}
       {routeViewport && to && (
-        <AirportMapPoint airport={to} point={routeViewport.toPoint} tone="to" />
+        <AirportMapPoint airport={to} point={routeViewport.toPoint} tone="to" copy={copy} />
       )}
 
       {routeViewport ? (
         <div className="absolute bottom-4 right-4 z-10 rounded-2xl border border-white/10 bg-slate-950/55 px-3 py-2 text-right text-xs font-semibold text-sky-100 backdrop-blur">
           <span className="block text-[10px] uppercase tracking-[0.18em] text-sky-100/60">
-            Dystans
+            {copy.map.distanceLabel}
           </span>
-          {routeViewport.distanceKm.toLocaleString("pl-PL")} km
+          {formatDistance(routeViewport.distanceKm, copy)}
         </div>
       ) : (
         <div className="absolute inset-x-6 bottom-5 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm leading-6 text-sky-100/80 backdrop-blur">
-          Wybierz lotnisko wylotu i przylotu, aby zobaczyć mapę trasy z lokalną
-          skalą dystansu.
+          {copy.map.emptyText}
         </div>
       )}
     </div>
@@ -777,10 +737,12 @@ function AirportMapPoint({
   airport,
   point,
   tone,
+  copy,
 }: {
   airport: CompensationAirport;
   point: MapPoint;
   tone: "from" | "to";
+  copy: CalculatorCopy;
 }) {
   const labelPosition =
     point.x > 72
@@ -809,7 +771,7 @@ function AirportMapPoint({
         )}
       >
         <p className="font-mono text-sm font-black text-white">{airport.code}</p>
-        <p className="max-w-28 truncate text-sky-100/80">{airport.city.pl}</p>
+        <p className="max-w-28 truncate text-sky-100/80">{getAirportCity(airport, copy)}</p>
       </div>
     </div>
   );
@@ -1041,10 +1003,12 @@ function AirportSelect({
   label,
   value,
   onChange,
+  copy,
 }: {
   label: string;
   value: CompensationAirport | null;
   onChange: (airport: CompensationAirport | null) => void;
+  copy: CalculatorCopy;
 }) {
   const [query, setQuery] = useState("");
   const normalizedQuery = query.trim().toLowerCase();
@@ -1078,11 +1042,12 @@ function AirportSelect({
               {value.code}
             </span>
             <div className="min-w-0 flex-1">
-              <p className="truncate font-semibold text-slate-950 dark:text-white">{value.city.pl}</p>
-              <p className="truncate text-xs text-slate-500">{value.name.pl} · {value.country}</p>
+              <p className="truncate font-semibold text-slate-950 dark:text-white">{getAirportCity(value, copy)}</p>
+              <p className="truncate text-xs text-slate-500">{getAirportName(value, copy)} · {value.country}</p>
             </div>
             <button
               type="button"
+              aria-label={copy.airport.clearLabel}
               onClick={() => onChange(null)}
               className="rounded-full bg-slate-100 px-2 py-1 text-xs font-bold text-slate-500 hover:bg-red-50 hover:text-red-700 dark:bg-slate-800"
             >
@@ -1096,7 +1061,7 @@ function AirportSelect({
               <input
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Miasto lub kod, np. WAW"
+                placeholder={copy.airport.searchPlaceholder}
                 className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
               />
             </div>
@@ -1116,9 +1081,9 @@ function AirportSelect({
                   </span>
                   <span className="min-w-0">
                     <span className="block truncate font-semibold text-slate-950 dark:text-white">
-                      {airport.city.pl}
+                      {getAirportCity(airport, copy)}
                     </span>
-                    <span className="block truncate text-xs text-slate-500">{airport.name.pl}</span>
+                    <span className="block truncate text-xs text-slate-500">{getAirportName(airport, copy)}</span>
                   </span>
                   <span className="rounded-full bg-blue-50 px-2 py-1 text-[10px] font-bold uppercase text-blue-700 dark:bg-blue-950/40 dark:text-blue-300">
                     {airport.passengerRightsArea === "other"
@@ -1199,17 +1164,21 @@ function AirportBadge({
   airport,
   fallback,
   alignRight = false,
+  copy,
 }: {
   airport: CompensationAirport | null;
   fallback: string;
   alignRight?: boolean;
+  copy: CalculatorCopy;
 }) {
   return (
     <div className={cn(alignRight && "text-right")}>
       <div className="font-mono text-3xl font-black tracking-tight">
         {airport?.code || "---"}
       </div>
-      <div className="mt-1 text-sm text-sky-100/80">{airport?.city.pl || fallback}</div>
+      <div className="mt-1 text-sm text-sky-100/80">
+        {airport ? getAirportCity(airport, copy) : fallback}
+      </div>
     </div>
   );
 }
@@ -1231,6 +1200,34 @@ function PreviewMetric({
       </p>
     </div>
   );
+}
+
+function getClaimWingerBaseUrl(input: CompensationInput, copy: CalculatorCopy) {
+  if (input.disruption === "cancelled") {
+    return copy.claimWinger.cancelledUrl;
+  }
+
+  if (input.disruption === "delay" || input.disruption === "missed_connection") {
+    return copy.claimWinger.delayUrl;
+  }
+
+  return copy.claimWinger.defaultUrl;
+}
+
+function formatDistance(distanceKm: number, copy: CalculatorCopy) {
+  return `${distanceKm.toLocaleString(copy.numberLocale)} km`;
+}
+
+function formatEuroAmount(amount: number) {
+  return `${amount} €`;
+}
+
+function getAirportCity(airport: CompensationAirport, copy: CalculatorCopy) {
+  return airport.city[copy.airportLocale] || airport.city.en || airport.city.pl;
+}
+
+function getAirportName(airport: CompensationAirport, copy: CalculatorCopy) {
+  return airport.name[copy.airportLocale] || airport.name.en || airport.name.pl;
 }
 
 function detailsAreComplete(input: CompensationInput) {
