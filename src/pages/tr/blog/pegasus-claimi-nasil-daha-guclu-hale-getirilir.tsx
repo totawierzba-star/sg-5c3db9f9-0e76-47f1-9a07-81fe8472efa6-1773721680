@@ -105,7 +105,7 @@ export default function TrPegasusStrongerClaimArticle() {
           <header className="mb-10">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
               <Sparkles className="h-4 w-4" />
-              Pegasus Claim Rehberi
+              Pegasus Dosya Rehberi
             </div>
             <h1 className="mb-5 text-4xl font-bold leading-tight text-slate-900 dark:text-white md:text-5xl">
               Pegasus claimi nasil daha guclu hale getirilir?

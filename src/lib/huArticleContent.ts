@@ -30,7 +30,7 @@ const categoryLabels: Record<string, string> = {
   "Utvonal-specifikus": "Útvonal szerinti útmutató",
   "Repuloteri utmutato": "Repülőtéri útmutató",
   "Legitarsasag-specifikus": "Légitársasági útmutató",
-  "AI / GEO kerdesek": "Gyors válaszok",
+  "Gyors valaszok": "Gyors válaszok",
   "Eljaras es hataridok": "Eljárás és határidők",
   "EU261 alapok": "EU261 alapok",
   "Gyakorlati teendok": "Gyakorlati teendők",

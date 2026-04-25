@@ -1666,7 +1666,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Ankara cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1676,7 +1676,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Dalaman cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1686,7 +1686,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Bodrum cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1696,7 +1696,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Izmir cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1706,7 +1706,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Antalya cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1716,7 +1716,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Istanbul cikisli ucusta iptal olursa ne yapilmali? Turk yolcular icin bildirim zamani, yeni rota ve nihai varis mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Iptal Rehberi",
+    category: "Kalkis Noktasi Iptal Rehberi",
     featured: true,
   },
   {
@@ -1726,7 +1726,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Istanbul cikisli ucusta 3 saat gecikme olursa ne yapilmali? Turk yolcular icin nihai varis, belge duzeni ve kapsam mantigini anlatan net rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "GEO Gecikme Rehberi",
+    category: "Kalkis Noktasi Gecikme Rehberi",
     featured: true,
   },
   {
@@ -1786,7 +1786,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Pegasus claimi nasil daha guclu hale getirilir? Turk yolcular icin belge zinciri, mesaj kayitlari ve nihai varis mantigini anlatan rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "Pegasus Claim Rehberi",
+    category: "Pegasus Dosya Rehberi",
     featured: true,
   },
   {
@@ -1796,7 +1796,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Wizz Air claimi nasil daha guclu hale getirilir? Turk yolcular icin belge duzeni, app ekranlari ve nihai varis mantigini anlatan rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "Wizz Air Claim Rehberi",
+    category: "Wizz Air Dosya Rehberi",
     featured: true,
   },
   {
@@ -1826,7 +1826,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Havayolu kalip bir cevap gonderdiyse ne yapilmali? Turk yolcular icin sablon redleri, zayif gerekceleri ve daha guclu sonraki adimi anlatan rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "Claim Takip Rehberi",
+    category: "Basvuru Takip Rehberi",
     featured: true,
   },
   {
@@ -1926,7 +1926,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Istanbul cikisli ucuslarda EU261 ne zaman guclu olabilir? Turk yolcular icin kalkis noktasi, tasiyici ve nihai varis mantigini anlatan rehber.",
     date: "2026-04-09",
     readTime: "9 dk",
-    category: "GEO Rehberi",
+    category: "Kalkis Noktasi Rehberi",
     featured: true,
   },
   {
@@ -1986,7 +1986,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "Havayolu claiminize cevap vermiyorsa ne yapilmali? Turk yolcular icin bekleme suresi, follow-up ve sonraki adimlari anlatan rehber.",
     date: "2026-04-09",
     readTime: "8 dk",
-    category: "Claim Takip Rehberi",
+    category: "Basvuru Takip Rehberi",
     featured: true,
   },
   {
@@ -2026,7 +2026,7 @@ export const blogArticlesTr: BlogArticleTr[] = [
       "EU261 dosyalarinda tek rezervasyon neden bu kadar onemli? Turk yolcular icin nihai varis, aktarma zinciri ve claim gucunu anlatan rehber.",
     date: "2026-04-09",
     readTime: "9 dk",
-    category: "Temel Claim Mantigi",
+    category: "Basvuru Mantigi",
     featured: true,
   },
   {

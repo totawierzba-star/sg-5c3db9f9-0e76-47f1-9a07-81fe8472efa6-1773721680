@@ -7,6 +7,11 @@ import {
   type UnifiedBlogArticle,
 } from "@/components/UnifiedBlogIndex";
 import { ViSeoHead } from "@/components/ViSeoHead";
+import {
+  getViBlogCategoryOrder,
+  getViBlogClusterLabel,
+  getViBlogEyebrowLabel,
+} from "@/lib/blogCategoryLabels";
 import { blogArticlesViSorted } from "@/lib/blogArticlesVi";
 import {
   combineSchemas,
@@ -23,11 +28,11 @@ const articles: UnifiedBlogArticle[] = blogArticlesViSorted.map((article) => ({
   slug: article.slug,
   excerpt: article.excerpt,
   category: article.cluster,
-  categoryLabel: article.cluster,
+  categoryLabel: getViBlogClusterLabel(article.cluster),
   date: article.updatedDate || article.date,
   readTime: article.readTime,
   featured: article.featured,
-  eyebrow: article.heroEyebrow,
+  eyebrow: getViBlogEyebrowLabel(article.heroEyebrow),
 }));
 
 export default function BlogIndexVi() {
@@ -69,6 +74,7 @@ export default function BlogIndexVi() {
         basePath="/vi/blog"
         canonicalUrl={canonicalUrl}
         theme="emerald"
+        categoryOrder={getViBlogCategoryOrder()}
         stats={[
           { value: articles.length, label: "bài hướng dẫn" },
           { value: "EU261", label: "trọng tâm" },

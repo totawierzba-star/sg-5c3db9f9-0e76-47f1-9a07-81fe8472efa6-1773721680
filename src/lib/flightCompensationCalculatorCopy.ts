@@ -17,7 +17,8 @@ export type CalculatorLocaleCode =
   | "sv"
   | "tr"
   | "vi"
-  | "zh";
+  | "zh"
+  | "bg";
 
 export type CalculatorCopy = {
   code: CalculatorLocaleCode;
@@ -556,6 +557,51 @@ function makeReasonLabels(labels: {
 }
 
 const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
+  bg: {
+    title: "Детайли за случая",
+    description:
+      "Тези отговори определят дали може да има сума, намаление с 50% или нужда от ръчна проверка.",
+    delayQuestion: "Колко беше закъснението при крайната дестинация?",
+    cancellationNoticeQuestion: "Кога бяхте уведомени за отмяната?",
+    replacementQuestion: "Какъв алтернативен полет беше предложен?",
+    deniedBoardingQuestion: "Отказът за качване беше ли по ваша вина?",
+    extraordinaryQuestion: "Авиокомпанията позовава ли се на извънредни обстоятелства?",
+    extraordinaryNote:
+      "Технически дефекти и стачки на собствения персонал на авиокомпанията често не са достатъчни за отказ.",
+    delayOptions: {
+      under2h: "Под 2 ч.",
+      twoToThree: "2-3 ч.",
+      threeToFour: "3-4 ч.",
+      overFour: "Над 4 ч.",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 дни или повече",
+      sevenToThirteen: "7-13 дни",
+      underSeven: "Под 7 дни",
+    },
+    replacementOptions: {
+      noneTitle: "Няма",
+      noneDescription: "Няма реална алтернатива.",
+      withinTitle: "В законовия прозорец",
+      withinDescription: "Обикновено без обезщетение.",
+      limitedTitle: "Ограничено закъснение",
+      limitedDescription: "Възможно е намаление с 50%.",
+      majorTitle: "Много по-късно",
+      majorDescription: "Обикновено пълна сума.",
+    },
+    deniedOptions: {
+      noTitle: "Не",
+      noDescription: "Например overbooking.",
+      yesTitle: "Да",
+      yesDescription: "Например липсващи документи.",
+    },
+    extraordinaryOptions: {
+      no: "Не",
+      yes: "Да",
+      yesDescription: "Нужна е проверка.",
+      unknown: "Не знам",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -724,6 +770,29 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
 };
 
 const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
+  bg: makeReasonLabels({
+    outOfScope: "Полетът изглежда извън обхвата на EU261/UK261.",
+    delayUnderThreeHours: "Закъснението при пристигане е под 3 часа.",
+    coveredDepartureArea: "Полетът е излетял от летище в EU/UK/CH/EEA.",
+    coveredArrivalCarrier:
+      "Полетът пристига в EU/UK/CH/EEA и е изпълнен от покрит превозвач.",
+    delayThresholdMet: "Закъснението при пристигане надхвърля 3 часа.",
+    missedConnectionThresholdMet:
+      "Изпуснатата връзка е довела до поне 3 часа закъснение при крайната дестинация.",
+    cancellationNoticeFourteenDays:
+      "Авиокомпанията е уведомила за отмяната поне 14 дни преди заминаването.",
+    replacementWithinLegalWindow:
+      "Алтернативният полет попада в законовите времеви рамки.",
+    replacementLimitedDelayReduction:
+      "Сумата може да бъде намалена с 50% заради ограничено закъснение на алтернативния полет.",
+    cancellationCompensable: "Отмяната може да отговаря на условията за обезщетение.",
+    deniedBoardingPassengerFault:
+      "Отказът за качване изглежда свързан с причина от страна на пътника.",
+    deniedBoardingAirlineFault:
+      "Отказът за качване изглежда като overbooking или друга причина от страна на авиокомпанията.",
+    extraordinaryCircumstancesReview:
+      "Авиокомпанията се позовава на извънредни обстоятелства; нужна е ръчна проверка.",
+  }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
     delayUnderThreeHours: "Zpoždění při příletu bylo kratší než 3 hodiny.",
@@ -892,6 +961,111 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
 };
 
 const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
+  bg: {
+    language: "Bulgarian",
+    numberLocale: "bg-BG",
+    campaign: "bg_compensation_calculator",
+    claimWinger: {
+      langParam: "en",
+      defaultUrl: "https://claimwinger.com",
+      delayUrl: "https://claimwinger.com/delayed-flight",
+      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+    },
+    steps: {
+      label: (c, t) => `Стъпка ${c} от ${t}`,
+      back: "Назад",
+      next: "Напред",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Забавяне",
+        description: "Полетът е пристигнал на крайната дестинация няколко часа по-късно.",
+      },
+      cancelled: {
+        title: "Отмяна",
+        description: "Авиокомпанията е отменила полета или ви е прехвърлила на друг.",
+      },
+      denied_boarding: {
+        title: "Отказан бординг",
+        description: "Не сте били допуснати на борда въпреки валидна резервация.",
+      },
+      missed_connection: {
+        title: "Изпусната връзка",
+        description: "Закъснение на първия сегмент е нарушило останалата част от пътуването.",
+      },
+    },
+    routeBandLabels: {
+      short: "къса дистанция",
+      medium: "средна дистанция",
+      long: "дълга дистанция",
+    },
+    routeStep: {
+      title: "Маршрут на полета",
+      description:
+        "Калкулаторът проверява забавени полети, отменени полети, отказан бординг и изпуснати връзки по EU261 и UK261. Изберете летищата и посочете дали реалният превозвач е от EU/UK/CH/EEA.",
+      fromLabel: "Заминаване от",
+      toLabel: "Пристигане в",
+      swapLabel: "Разменете летищата",
+      carrierTitle: "Оперативен превозвач",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Например Bulgaria Air, Lufthansa, Austrian, KLM, British Airways, SWISS.",
+      carrierOtherTitle: "Извън тази зона",
+      carrierOtherDescription: "Например Emirates, Qatar Airways, Turkish Airlines, Air Serbia.",
+      carrierHint:
+        "При полети от EU/UK/CH/EEA правилата обикновено обхващат и превозвачи извън Европа. При пристигане в тази зона има значение юрисдикцията на оперативния превозвач.",
+    },
+    situationStep: {
+      title: "Какво се случи?",
+      description:
+        "Изберете ситуацията, за да оцените дали може да имате право на 250, 400 или 600 евро обезщетение.",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Нужна е проверка",
+      probableAmount: "Вероятна сума",
+      result: "Резултат",
+      noAmount: "0 €",
+      perPassenger: "Оценка на пътник",
+      notEligible: "Този полет вероятно не изпълнява условията за обезщетение.",
+      reducedByHalf: (baseAmount) => `Базовата сума ${baseAmount} € е намалена с 50%`,
+      distanceLabel: "Дистанция",
+      routeClassLabel: "Клас на маршрута",
+      scopeLabel: "Обхват",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "извън обхвата",
+      explanationTitle: "Какво означава резултатът?",
+      explanationText:
+        "Това е първоначална оценка за обезщетение при забавен или отменен полет. ClaimWinger по-късно проверява резервацията, реалния час на пристигане, причината и отговорността на авиокомпанията.",
+      reasonsTitle: "Обосновка",
+      ctaLabel: "Изпратете случая към ClaimWinger",
+      resetLabel: "Започнете отново",
+    },
+    preview: {
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Заминаване",
+      toFallback: "Пристигане",
+      distanceLabel: "Дистанция",
+      routeLabel: "Маршрут",
+      amountLabel: "Сума",
+      emptyText: "Изберете маршрут, за да видите дистанцията, класа и ориентировъчната сума.",
+      ruleTitle: "Бързо правило за пътници",
+      ruleText:
+        "Ако полетът попада под EU261 или UK261, закъснение поне 3 часа при пристигане може да означава обезщетение до 600 евро на пътник.",
+    },
+    map: {
+      routeMapLabel: "Карта на маршрута",
+      fittedFrameLabel: "Кадър според дистанцията",
+      distanceLabel: "Дистанция",
+      emptyText: "Изберете летища на заминаване и пристигане, за да видите картата на маршрута.",
+      ariaRoute: (f, t, d) => `Карта на маршрута ${f}-${t}, дистанция ${d} километра`,
+      ariaDefault: "Карта на полетния маршрут",
+    },
+    airport: {
+      searchPlaceholder: "Град или код, напр. SOF",
+      clearLabel: "Изчистете",
+    },
+  },
   cs: {
     language: "Czech",
     numberLocale: "cs-CZ",
@@ -1227,6 +1401,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   tr: mergeCopy("tr"),
   vi: mergeCopy("vi"),
   zh: mergeCopy("zh"),
+  bg: mergeCopy("bg"),
 };
 
 export function getCalculatorCopy(locale: CalculatorLocaleCode = "pl") {

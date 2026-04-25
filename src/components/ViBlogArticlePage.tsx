@@ -17,6 +17,10 @@ import { ViSeoHead } from "@/components/ViSeoHead";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
+  getViBlogClusterLabel,
+  getViBlogEyebrowLabel,
+} from "@/lib/blogCategoryLabels";
+import {
   buildClaimWingerViLink,
   trackClaimWingerViClick,
 } from "@/lib/claimwingerLinksVi";
@@ -60,6 +64,8 @@ const EMBED_COPY: Record<
 
 export function ViBlogArticlePage({ article }: ViBlogArticlePageProps) {
   const articleUrl = `https://problemlot.com/vi/blog/${article.slug}`;
+  const clusterLabel = getViBlogClusterLabel(article.cluster);
+  const heroEyebrow = getViBlogEyebrowLabel(article.heroEyebrow);
   const primaryClaimHref = buildClaimWingerViLink(article.claimVariant, {
     medium: "article_cta",
     campaign: article.slug,
@@ -130,7 +136,7 @@ export function ViBlogArticlePage({ article }: ViBlogArticlePageProps) {
           <header className="mb-10">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300">
               <Sparkles className="h-4 w-4" />
-              {article.heroEyebrow}
+              {heroEyebrow}
             </div>
             <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
               {article.title}
@@ -150,7 +156,7 @@ export function ViBlogArticlePage({ article }: ViBlogArticlePageProps) {
               </span>
               <span className="inline-flex items-center gap-2">
                 <BookOpen className="h-4 w-4" />
-                Cụm nội dung: {article.cluster}
+                Cụm nội dung: {clusterLabel}
               </span>
             </div>
           </header>

@@ -3,6 +3,7 @@ import { useState } from "react";
 type ClaimWingerHeroEmbedProps = {
   className?: string;
   lang?: string;
+  queryParams?: Record<string, string>;
   title?: string;
   loadingLabel?: string;
   loadingDescription?: string;
@@ -11,12 +12,14 @@ type ClaimWingerHeroEmbedProps = {
 export function ClaimWingerHeroEmbed({
   className = "",
   lang = "pl",
+  queryParams = {},
   title = "Formularz ClaimWinger",
   loadingLabel = "Ladowanie formularza...",
   loadingDescription = "Za chwile zobaczysz formularz ClaimWinger do weryfikacji sprawy.",
 }: ClaimWingerHeroEmbedProps) {
   const [isClaimFormLoaded, setIsClaimFormLoaded] = useState(false);
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
+  const embedParams = new URLSearchParams({ lang, ...queryParams });
 
   return (
     <div className={wrapperClassName} data-claimwinger-embed="true">
@@ -38,7 +41,7 @@ export function ClaimWingerHeroEmbed({
       )}
 
       <iframe
-        src={`https://claimwinger.com/embed?lang=${lang}`}
+        src={`https://claimwinger.com/embed?${embedParams.toString()}`}
         width="100%"
         height="900"
         style={{ display: isClaimFormLoaded ? "block" : "none" }}

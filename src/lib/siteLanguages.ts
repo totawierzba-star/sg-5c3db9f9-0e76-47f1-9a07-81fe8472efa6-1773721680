@@ -11,7 +11,8 @@ export type SiteLanguageCode =
   | "hi"
   | "vi"
   | "sv"
-  | "no";
+  | "no"
+  | "bg";
 
 export type SiteLanguage = {
   code: SiteLanguageCode;
@@ -35,6 +36,7 @@ export const SITE_LANGUAGES: SiteLanguage[] = [
   { code: "vi", label: "Tiếng Việt", shortLabel: "VI", flag: "🇻🇳", href: "/vi" },
   { code: "sv", label: "Svenska", shortLabel: "SV", flag: "🇸🇪", href: "/sv" },
   { code: "no", label: "Norsk", shortLabel: "NO", flag: "🇳🇴", href: "/no" },
+  { code: "bg", label: "Български", shortLabel: "BG", flag: "BG", href: "/bg" },
 ];
 
 const PL_TO_EN_ROUTE_MAP: Record<string, string> = {

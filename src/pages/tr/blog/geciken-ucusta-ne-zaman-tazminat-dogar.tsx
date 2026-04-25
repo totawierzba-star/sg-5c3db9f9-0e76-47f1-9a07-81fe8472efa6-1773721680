@@ -274,7 +274,7 @@ export default function TrDelayEligibilityArticle() {
 
               <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
                 <h3 className="mb-2 text-xl font-bold text-slate-900 dark:text-white">
-                  Turk yolcular icin neden bu kadar iyi bir SEO/GEO konusu?
+                  Turk yolcular icin neden bu kadar pratik ve yuksek niyetli bir konu?
                 </h3>
                 <p className="text-slate-700 dark:text-slate-200">
                   Cunku niyet cok yuksek: hem Turkiye cikisli hem Avrupa baglantili yogun yolcu akisi vardir ve

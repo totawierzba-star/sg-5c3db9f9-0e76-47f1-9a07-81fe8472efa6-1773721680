@@ -4,6 +4,7 @@ import {
   UnifiedBlogIndex,
   type UnifiedBlogArticle,
 } from "@/components/UnifiedBlogIndex";
+import { getSvBlogCategoryLabel } from "@/lib/blogCategoryLabels";
 import { blogArticlesSv } from "@/lib/blogArticlesSv";
 
 const canonicalUrl = "https://problemlot.com/sv/blog";
@@ -14,6 +15,7 @@ const articles: UnifiedBlogArticle[] = blogArticlesSv.map((article) => ({
   slug: article.slug,
   excerpt: article.excerpt,
   category: article.category || "Guider",
+  categoryLabel: getSvBlogCategoryLabel(article.category || "Guider"),
   date: article.publishDate || article.date,
   readTime: article.readTime,
   wordCount: article.wordCount,

@@ -105,13 +105,13 @@ export default function TrIzmirDepartureEu261Article() {
           <header className="mb-10">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-700 dark:bg-red-900/30 dark:text-red-300">
               <Sparkles className="h-4 w-4" />
-              GEO Rehberi
+              Kalkis Noktasi Rehberi
             </div>
             <h1 className="mb-5 text-4xl font-bold leading-tight text-slate-900 dark:text-white md:text-5xl">
               Izmir cikisli ucusta EU261 ne zaman guclu olur?
             </h1>
             <p className="text-xl leading-8 text-slate-600 dark:text-slate-300">
-              Izmir cikisli dosyalar, `TR + diaspora EU` icin cok degerli bir GEO klastri olusturur, cunku burada
+              Izmir cikisli dosyalar, Turkiye ile Avrupa arasinda cok pratik bir yolcu senaryosu olusturur, cunku burada
               sadece tatil hareketi degil; aile ziyareti, diaspora donusu ve Avrupa baglantili seyahatler de gucludur.
               Oysa gercek analiz, <strong>kalkis noktasi</strong>, <strong>isleten tasiyici</strong> ve
               <strong> nihai varis sonucu</strong> birlikte okundugunda anlam kazanir.

@@ -762,6 +762,36 @@ export const compensationAirports = [
     "passengerRightsArea": "eu"
   },
   {
+    "code": "GOT",
+    "name": {
+      "pl": "Goteborg Landvetter",
+      "en": "Gothenburg Landvetter"
+    },
+    "city": {
+      "pl": "Goteborg",
+      "en": "Gothenburg"
+    },
+    "country": "SE",
+    "lat": 57.6628,
+    "lon": 12.2798,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "MMX",
+    "name": {
+      "pl": "Malmo",
+      "en": "Malmo"
+    },
+    "city": {
+      "pl": "Malmo",
+      "en": "Malmo"
+    },
+    "country": "SE",
+    "lat": 55.5363,
+    "lon": 13.3762,
+    "passengerRightsArea": "eu"
+  },
+  {
     "code": "OSL",
     "name": {
       "pl": "Oslo Gardermoen",
@@ -774,6 +804,36 @@ export const compensationAirports = [
     "country": "NO",
     "lat": 60.1939,
     "lon": 11.1004,
+    "passengerRightsArea": "eea"
+  },
+  {
+    "code": "BGO",
+    "name": {
+      "pl": "Bergen Flesland",
+      "en": "Bergen Flesland"
+    },
+    "city": {
+      "pl": "Bergen",
+      "en": "Bergen"
+    },
+    "country": "NO",
+    "lat": 60.2934,
+    "lon": 5.2181,
+    "passengerRightsArea": "eea"
+  },
+  {
+    "code": "TRD",
+    "name": {
+      "pl": "Trondheim Vaernes",
+      "en": "Trondheim Vaernes"
+    },
+    "city": {
+      "pl": "Trondheim",
+      "en": "Trondheim"
+    },
+    "country": "NO",
+    "lat": 63.4578,
+    "lon": 10.924,
     "passengerRightsArea": "eea"
   },
   {
@@ -867,6 +927,36 @@ export const compensationAirports = [
     "passengerRightsArea": "eu"
   },
   {
+    "code": "BRQ",
+    "name": {
+      "pl": "Brno Turany",
+      "en": "Brno Turany"
+    },
+    "city": {
+      "pl": "Brno",
+      "en": "Brno"
+    },
+    "country": "CZ",
+    "lat": 49.1513,
+    "lon": 16.6944,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "OSR",
+    "name": {
+      "pl": "Ostrava",
+      "en": "Ostrava"
+    },
+    "city": {
+      "pl": "Ostrava",
+      "en": "Ostrava"
+    },
+    "country": "CZ",
+    "lat": 49.6963,
+    "lon": 18.1111,
+    "passengerRightsArea": "eu"
+  },
+  {
     "code": "VIE",
     "name": {
       "pl": "Wiedeń",
@@ -879,6 +969,36 @@ export const compensationAirports = [
     "country": "AT",
     "lat": 48.1103,
     "lon": 16.5697,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "BTS",
+    "name": {
+      "pl": "Bratyslawa",
+      "en": "Bratislava"
+    },
+    "city": {
+      "pl": "Bratyslawa",
+      "en": "Bratislava"
+    },
+    "country": "SK",
+    "lat": 48.1702,
+    "lon": 17.2127,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "KSC",
+    "name": {
+      "pl": "Koszyce",
+      "en": "Kosice"
+    },
+    "city": {
+      "pl": "Koszyce",
+      "en": "Kosice"
+    },
+    "country": "SK",
+    "lat": 48.6631,
+    "lon": 21.2411,
     "passengerRightsArea": "eu"
   },
   {
@@ -957,6 +1077,36 @@ export const compensationAirports = [
     "passengerRightsArea": "eu"
   },
   {
+    "code": "HER",
+    "name": {
+      "pl": "Heraklion",
+      "en": "Heraklion"
+    },
+    "city": {
+      "pl": "Heraklion",
+      "en": "Heraklion"
+    },
+    "country": "GR",
+    "lat": 35.3397,
+    "lon": 25.1803,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "RHO",
+    "name": {
+      "pl": "Rodos",
+      "en": "Rhodes"
+    },
+    "city": {
+      "pl": "Rodos",
+      "en": "Rhodes"
+    },
+    "country": "GR",
+    "lat": 36.4054,
+    "lon": 28.0862,
+    "passengerRightsArea": "eu"
+  },
+  {
     "code": "OTP",
     "name": {
       "pl": "Bukareszt",
@@ -984,6 +1134,36 @@ export const compensationAirports = [
     "country": "BG",
     "lat": 42.6967,
     "lon": 23.4114,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "VAR",
+    "name": {
+      "pl": "Warna",
+      "en": "Varna"
+    },
+    "city": {
+      "pl": "Warna",
+      "en": "Varna"
+    },
+    "country": "BG",
+    "lat": 43.2321,
+    "lon": 27.8251,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "BOJ",
+    "name": {
+      "pl": "Burgas",
+      "en": "Burgas"
+    },
+    "city": {
+      "pl": "Burgas",
+      "en": "Burgas"
+    },
+    "country": "BG",
+    "lat": 42.5696,
+    "lon": 27.5152,
     "passengerRightsArea": "eu"
   },
   {
@@ -1332,6 +1512,36 @@ export const compensationAirports = [
     "passengerRightsArea": "other"
   },
   {
+    "code": "ESB",
+    "name": {
+      "pl": "Ankara",
+      "en": "Ankara"
+    },
+    "city": {
+      "pl": "Ankara",
+      "en": "Ankara"
+    },
+    "country": "TR",
+    "lat": 40.1281,
+    "lon": 32.9951,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "ADB",
+    "name": {
+      "pl": "Izmir",
+      "en": "Izmir"
+    },
+    "city": {
+      "pl": "Izmir",
+      "en": "Izmir"
+    },
+    "country": "TR",
+    "lat": 38.2924,
+    "lon": 27.157,
+    "passengerRightsArea": "other"
+  },
+  {
     "code": "RUH",
     "name": {
       "pl": "Rijad",
@@ -1572,6 +1782,36 @@ export const compensationAirports = [
     "passengerRightsArea": "other"
   },
   {
+    "code": "CAN",
+    "name": {
+      "pl": "Guangzhou",
+      "en": "Guangzhou"
+    },
+    "city": {
+      "pl": "Guangzhou",
+      "en": "Guangzhou"
+    },
+    "country": "CN",
+    "lat": 23.3924,
+    "lon": 113.2988,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "SZX",
+    "name": {
+      "pl": "Shenzhen",
+      "en": "Shenzhen"
+    },
+    "city": {
+      "pl": "Shenzhen",
+      "en": "Shenzhen"
+    },
+    "country": "CN",
+    "lat": 22.6393,
+    "lon": 113.8107,
+    "passengerRightsArea": "other"
+  },
+  {
     "code": "HKG",
     "name": {
       "pl": "Hongkong",
@@ -1632,6 +1872,51 @@ export const compensationAirports = [
     "passengerRightsArea": "other"
   },
   {
+    "code": "HAN",
+    "name": {
+      "pl": "Hanoi Noi Bai",
+      "en": "Hanoi Noi Bai"
+    },
+    "city": {
+      "pl": "Hanoi",
+      "en": "Hanoi"
+    },
+    "country": "VN",
+    "lat": 21.2187,
+    "lon": 105.8042,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "SGN",
+    "name": {
+      "pl": "Ho Chi Minh City",
+      "en": "Ho Chi Minh City"
+    },
+    "city": {
+      "pl": "Ho Chi Minh City",
+      "en": "Ho Chi Minh City"
+    },
+    "country": "VN",
+    "lat": 10.8188,
+    "lon": 106.6519,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "DAD",
+    "name": {
+      "pl": "Da Nang",
+      "en": "Da Nang"
+    },
+    "city": {
+      "pl": "Da Nang",
+      "en": "Da Nang"
+    },
+    "country": "VN",
+    "lat": 16.0439,
+    "lon": 108.1994,
+    "passengerRightsArea": "other"
+  },
+  {
     "code": "DEL",
     "name": {
       "pl": "Delhi",
@@ -1659,6 +1944,51 @@ export const compensationAirports = [
     "country": "IN",
     "lat": 19.0896,
     "lon": 72.8656,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "BLR",
+    "name": {
+      "pl": "Bengaluru",
+      "en": "Bengaluru"
+    },
+    "city": {
+      "pl": "Bengaluru",
+      "en": "Bengaluru"
+    },
+    "country": "IN",
+    "lat": 13.1986,
+    "lon": 77.7066,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "HYD",
+    "name": {
+      "pl": "Hyderabad",
+      "en": "Hyderabad"
+    },
+    "city": {
+      "pl": "Hyderabad",
+      "en": "Hyderabad"
+    },
+    "country": "IN",
+    "lat": 17.2403,
+    "lon": 78.4294,
+    "passengerRightsArea": "other"
+  },
+  {
+    "code": "MAA",
+    "name": {
+      "pl": "Chennai",
+      "en": "Chennai"
+    },
+    "city": {
+      "pl": "Chennai",
+      "en": "Chennai"
+    },
+    "country": "IN",
+    "lat": 12.9941,
+    "lon": 80.1709,
     "passengerRightsArea": "other"
   },
   {

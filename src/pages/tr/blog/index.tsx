@@ -4,6 +4,7 @@ import {
   UnifiedBlogIndex,
   type UnifiedBlogArticle,
 } from "@/components/UnifiedBlogIndex";
+import { getTrBlogCategoryLabel } from "@/lib/blogCategoryLabels";
 import { blogArticlesTrSorted, blogCategoriesTr } from "@/lib/blogArticlesTr";
 
 const canonicalUrl = "https://problemlot.com/tr/blog";
@@ -14,6 +15,7 @@ const articles: UnifiedBlogArticle[] = blogArticlesTrSorted.map((article) => ({
   slug: article.slug,
   excerpt: article.excerpt,
   category: article.category,
+  categoryLabel: getTrBlogCategoryLabel(article.category),
   date: article.date,
   readTime: article.readTime,
   featured: article.featured,
@@ -37,7 +39,7 @@ export default function BlogIndexTr() {
         theme="red"
         categoryOrder={blogCategoriesTr
           .filter((category) => category !== "Tum yazilar")
-          .map((category) => ({ id: category, label: category }))}
+          .map((category) => ({ id: category, label: getTrBlogCategoryLabel(category) }))}
         stats={[
           { value: articles.length, label: "Türkçe yazı" },
           { value: "EU261", label: "ana odak" },

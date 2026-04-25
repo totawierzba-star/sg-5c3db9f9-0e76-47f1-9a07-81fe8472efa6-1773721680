@@ -12,7 +12,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
+  getAirportSuggestionCodes,
+  type AirportSuggestionRole,
+} from "@/lib/calculatorAirportSuggestions";
+import {
   compensationAirports,
+  findCompensationAirport,
   type CompensationAirport,
 } from "@/lib/compensationAirports";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
@@ -194,6 +199,7 @@ function RouteStep({
           label={copy.routeStep.fromLabel}
           value={input.from}
           onChange={(from) => onChange({ from })}
+          role="from"
           copy={copy}
         />
         <Button
@@ -209,6 +215,7 @@ function RouteStep({
           label={copy.routeStep.toLabel}
           value={input.to}
           onChange={(to) => onChange({ to })}
+          role="to"
           copy={copy}
         />
       </div>
@@ -1003,11 +1010,13 @@ function AirportSelect({
   label,
   value,
   onChange,
+  role,
   copy,
 }: {
   label: string;
   value: CompensationAirport | null;
   onChange: (airport: CompensationAirport | null) => void;
+  role: AirportSuggestionRole;
   copy: CalculatorCopy;
 }) {
   const [query, setQuery] = useState("");
@@ -1028,7 +1037,7 @@ function AirportSelect({
             .includes(normalizedQuery),
         )
         .slice(0, 8)
-    : compensationAirports.slice(0, 8);
+    : resolveAirportSuggestions(getAirportSuggestionCodes(copy.code, role));
 
   return (
     <div>
@@ -1098,6 +1107,14 @@ function AirportSelect({
       </div>
     </div>
   );
+}
+
+function resolveAirportSuggestions(codes: readonly string[]) {
+  const suggestions = codes
+    .map(findCompensationAirport)
+    .filter((airport): airport is CompensationAirport => Boolean(airport));
+
+  return suggestions.length ? suggestions.slice(0, 8) : compensationAirports.slice(0, 8);
 }
 
 function OptionButton({
