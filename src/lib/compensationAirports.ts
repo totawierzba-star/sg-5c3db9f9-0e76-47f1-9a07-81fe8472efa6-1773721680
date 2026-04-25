@@ -897,6 +897,36 @@ export const compensationAirports = [
     "passengerRightsArea": "eu"
   },
   {
+    "code": "KUN",
+    "name": {
+      "pl": "Kowno",
+      "en": "Kaunas"
+    },
+    "city": {
+      "pl": "Kowno",
+      "en": "Kaunas"
+    },
+    "country": "LT",
+    "lat": 54.9639,
+    "lon": 24.0848,
+    "passengerRightsArea": "eu"
+  },
+  {
+    "code": "PLQ",
+    "name": {
+      "pl": "Połąga",
+      "en": "Palanga"
+    },
+    "city": {
+      "pl": "Połąga",
+      "en": "Palanga"
+    },
+    "country": "LT",
+    "lat": 55.9732,
+    "lon": 21.0939,
+    "passengerRightsArea": "eu"
+  },
+  {
     "code": "TLL",
     "name": {
       "pl": "Tallinn",

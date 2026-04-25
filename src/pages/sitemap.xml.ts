@@ -1,6 +1,9 @@
 import { GetServerSideProps } from 'next';
 import { blogArticlesHi } from '@/lib/blogArticlesHi';
+import { blogArticlesEnIrelandSorted } from '@/lib/blogArticlesEnIreland';
+import { blogArticlesBgSorted } from '@/lib/blogArticlesBg';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
+import { blogArticlesLtSorted } from '@/lib/blogArticlesLt';
 import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
 import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
@@ -126,6 +129,20 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/hi/cancel-flight', priority: '0.9', changefreq: 'weekly' },
     { url: '/hi/muavza-calculator', priority: '0.9', changefreq: 'weekly' },
     { url: '/hi/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- BULGARIAN MAIN ---
+    { url: '/bg', priority: '1.0', changefreq: 'daily' },
+    { url: '/bg/zabaven-polet', priority: '0.9', changefreq: 'weekly' },
+    { url: '/bg/otmenen-polet', priority: '0.9', changefreq: 'weekly' },
+    { url: '/bg/kalkulator', priority: '0.9', changefreq: 'weekly' },
+    { url: '/bg/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- LITHUANIAN MAIN ---
+    { url: '/lt', priority: '1.0', changefreq: 'daily' },
+    { url: '/lt/veluojantis-skrydis', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lt/atsauktas-skrydis', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lt/kompensacijos-skaiciuokle', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lt/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -158,13 +175,34 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const bgBlogPages = blogArticlesBgSorted.map((article) => ({
+    url: `/bg/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
+  const ltBlogPages = blogArticlesLtSorted.map((article) => ({
+    url: `/lt/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
+  const enIrelandBlogPages = blogArticlesEnIrelandSorted.map((article) => ({
+    url: `/en/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
   const sitemap = generateSiteMap([
     ...pages,
+    ...enIrelandBlogPages,
     ...hiBlogPages,
     ...huBlogPages,
     ...zhBlogPages,
     ...trBlogPages,
     ...viBlogPages,
+    ...bgBlogPages,
+    ...ltBlogPages,
   ]);
 
   res.setHeader('Content-Type', 'text/xml');

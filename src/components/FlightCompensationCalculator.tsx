@@ -89,8 +89,10 @@ export function FlightCompensationCalculator({
       input,
       result,
       baseUrl: getClaimWingerBaseUrl(input, copy),
+      source: `problemlot-${copy.code}`,
       campaign: copy.campaign,
       lang: copy.claimWinger.langParam,
+      utmLanguage: copy.code,
     });
 
   return (

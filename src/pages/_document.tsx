@@ -1,11 +1,55 @@
 import { cn } from "@/lib/utils";
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  type DocumentContext,
+  type DocumentInitialProps,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
 
-export default function Document() {
-  const faviconVersion = "20260411";
+type ProblemLotDocumentProps = DocumentInitialProps & {
+  lang: string;
+};
 
-  return (
-    <Html lang="pl">
+const languageByPrefix: Record<string, string> = {
+  bg: "bg",
+  cs: "cs",
+  el: "el",
+  en: "en",
+  hi: "hi",
+  hu: "hu",
+  it: "it",
+  lt: "lt",
+  no: "no",
+  sk: "sk",
+  sv: "sv",
+  tr: "tr",
+  vi: "vi",
+  zh: "zh",
+};
+
+function resolveHtmlLang(pathname?: string) {
+  const prefix = (pathname || "").split("/").filter(Boolean)[0];
+
+  return languageByPrefix[prefix] || "pl";
+}
+
+export default class ProblemLotDocument extends Document<ProblemLotDocumentProps> {
+  static async getInitialProps(ctx: DocumentContext): Promise<ProblemLotDocumentProps> {
+    const initialProps = await Document.getInitialProps(ctx);
+
+    return {
+      ...initialProps,
+      lang: resolveHtmlLang(ctx.pathname),
+    };
+  }
+
+  render() {
+    const faviconVersion = "20260411";
+
+    return (
+      <Html lang={this.props.lang}>
       <Head>
         <meta name="application-name" content="ProblemLot" />
         <meta name="apple-mobile-web-app-title" content="ProblemLot" />
@@ -72,5 +116,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         )}
       </body>
     </Html>
-  );
+    );
+  }
 }

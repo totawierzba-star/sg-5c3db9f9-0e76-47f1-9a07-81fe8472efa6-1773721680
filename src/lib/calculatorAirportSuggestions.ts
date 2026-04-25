@@ -57,6 +57,10 @@ const airportSuggestionsByLocale: Record<CalculatorLocaleCode, AirportSuggestion
     from: ["PVG", "PEK", "HKG", "CAN", "SZX", "LHR", "FRA", "CDG"],
     to: ["LHR", "FRA", "CDG", "AMS", "PVG", "PEK", "HKG", "CAN"],
   },
+  lt: {
+    from: ["VNO", "KUN", "PLQ", "RIX", "WAW", "CPH", "ARN", "OSL"],
+    to: ["LHR", "CPH", "OSL", "ARN", "WAW", "FRA", "AMS", "VNO"],
+  },
   bg: {
     from: ["SOF", "VAR", "BOJ", "OTP", "IST", "VIE", "FRA", "LHR"],
     to: ["FRA", "VIE", "LHR", "CDG", "AMS", "IST", "SOF", "VAR"],

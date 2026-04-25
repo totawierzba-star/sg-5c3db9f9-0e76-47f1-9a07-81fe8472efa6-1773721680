@@ -106,6 +106,69 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "Start with the calculator, then continue to ClaimWinger if the route and disruption look promising.",
     finalCtaLabel: "Open the calculator",
   },
+  lt: {
+    language: "Lithuanian",
+    ogLocale: "lt_LT",
+    urlPath: "/lt/kompensacijos-skaiciuokle",
+    title: "Skrydžio kompensacijos skaičiuoklė | 250, 400 arba 600 €",
+    description:
+      "Nemokama EU261 ir UK261 skrydžio kompensacijos skaičiuoklė vėluojantiems skrydžiams, atšaukimams, atsisakytam įlaipinimui ir praleistiems persėdimams.",
+    eyebrow: "Nemokama EU261 ir UK261 skaičiuoklė",
+    heading: "Skrydžio kompensacijos skaičiuoklė",
+    intro:
+      "Keliais žingsniais patikrinkite, ar vėluojantis, atšauktas arba perpildytas skrydis gali suteikti teisę į 250, 400 arba 600 eurų vienam keleiviui.",
+    afterCalculator:
+      "Rezultatas yra pirminis įvertinimas. ClaimWinger vėliau patikrina rezervaciją, faktinį atvykimo laiką, sutrikimo priežastį ir oro linijos atsakomybę.",
+    bandsHeading: "Kompensacijos dydžiai pagal atstumą",
+    bandsDescription:
+      "EU261 ir UK261 naudoja fiksuotas kompensacijos grupes. Bilieto kaina sumos nenulemia.",
+    bandShort: "Trumpas atstumas",
+    bandMedium: "Vidutinis atstumas",
+    bandLong: "Ilgas atstumas",
+    bandShortDescription: "Skrydžiai iki 1 500 km, dažnai trumpi Europos maršrutai.",
+    bandMediumDescription: "Skrydžiai nuo 1 500 iki 3 500 km ir daug ilgesnių Europos vidaus maršrutų.",
+    bandLongDescription: "Skrydžiai virš 3 500 km, įskaitant daugelį ilgųjų maršrutų iš Europos.",
+    rulesHeading: "Ką tikrina skaičiuoklė",
+    rules: [
+      "Ar išvykimas arba atvykimas patenka į EU261, UK261, Šveicarijos arba EEE keleivių teisių logiką.",
+      "Ar atvykimo vėlavimas, atšaukimo pranešimas, atsisakymas įlaipinti arba praleistas persėdimas pasiekia teisinį slenkstį.",
+      "Ar skrydį vykdęs vežėjas yra apimamas, kai skrydis atvyksta į Europą iš trečiosios šalies.",
+      "Ar ypatingos aplinkybės reikalauja rankinės teisinės patikros prieš teikiant reikalavimą.",
+    ],
+    faqHeading: "DUK: skrydžio kompensacijos skaičiuoklė",
+    faq: [
+      {
+        question: "Ar skaičiuoklės rezultatas yra galutinis?",
+        answer:
+          "Ne. Tai greitas įvertinimas pagal įvestą maršrutą ir situaciją. Tikram reikalavimui dar reikia dokumentų, faktinio atvykimo laiko ir sutrikimo priežasties patikros.",
+      },
+      {
+        question: "Ar skaičiuoklė tikrina atšauktus skrydžius?",
+        answer:
+          "Taip. Ji apima vėlavimą, atšaukimą, atsisakymą įlaipinti ir praleistą persėdimą vienoje rezervacijoje. Atšaukimo atveju svarbus pranešimo terminas ir pakaitinio skrydžio kokybė.",
+      },
+      {
+        question: "Ar kompensacija skaičiuojama vienam keleiviui?",
+        answer:
+          "Taip. EU261 ir UK261 kompensacija paprastai skaičiuojama kiekvienam keleiviui atskirai, o ne vienai rezervacijai.",
+      },
+      {
+        question: "Kada kompensacija gali siekti 600 eurų?",
+        answer:
+          "Dažniausiai tada, kai maršrutas viršija 3 500 km, skrydis patenka į taikymo sritį ir įvykdytas vėlavimo arba atšaukimo slenkstis.",
+      },
+    ],
+    relatedHeading: "Naudingi puslapiai",
+    related: [
+      { label: "Vėluojantis skrydis", href: "/lt/veluojantis-skrydis", description: "Taisyklės, kai atvykstate 3+ valandomis vėliau." },
+      { label: "Atšauktas skrydis", href: "/lt/atsauktas-skrydis", description: "Teisės, kai oro linija atšaukia skrydį." },
+      { label: "Blogas", href: "/lt/blog", description: "Gidai apie EU261, UK261, oro linijas ir maršrutus." },
+    ],
+    finalCtaTitle: "Įvertinkite atvejį prieš teikdami reikalavimą",
+    finalCtaText:
+      "Pradėkite nuo skaičiuoklės, tada pereikite į ClaimWinger, jei maršrutas ir situacija atrodo perspektyvūs.",
+    finalCtaLabel: "Atidaryti skaičiuoklę",
+  },
   bg: {
     language: "Bulgarian",
     ogLocale: "bg_BG",

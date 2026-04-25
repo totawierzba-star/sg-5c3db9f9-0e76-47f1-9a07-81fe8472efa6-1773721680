@@ -18,7 +18,8 @@ export type CalculatorLocaleCode =
   | "tr"
   | "vi"
   | "zh"
-  | "bg";
+  | "bg"
+  | "lt";
 
 export type CalculatorCopy = {
   code: CalculatorLocaleCode;
@@ -602,6 +603,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "Не знам",
     },
   },
+  lt: {
+    title: "Atvejo detalės",
+    description:
+      "Šie atsakymai padeda nustatyti galimą sumą, 50% sumažinimą arba poreikį rankinei teisinei patikrai.",
+    delayQuestion: "Kiek vėlavo atvykimas į galutinę paskirties vietą?",
+    cancellationNoticeQuestion: "Kada sužinojote apie skrydžio atšaukimą?",
+    replacementQuestion: "Koks pakaitinis skrydis buvo pasiūlytas?",
+    deniedBoardingQuestion: "Ar atsisakymas įlaipinti buvo dėl jūsų kaltės?",
+    extraordinaryQuestion: "Ar oro linija remiasi ypatingomis aplinkybėmis?",
+    extraordinaryNote:
+      "Techniniai gedimai ir pačios oro linijos darbuotojų streikai dažnai nėra pakankama priežastis atmesti kompensaciją.",
+    delayOptions: {
+      under2h: "Mažiau nei 2 val.",
+      twoToThree: "2-3 val.",
+      threeToFour: "3-4 val.",
+      overFour: "Daugiau nei 4 val.",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 dienų ar daugiau",
+      sevenToThirteen: "7-13 dienų",
+      underSeven: "Mažiau nei 7 dienos",
+    },
+    replacementOptions: {
+      noneTitle: "Nebuvo",
+      noneDescription: "Nėra realios alternatyvos.",
+      withinTitle: "Teisinėse ribose",
+      withinDescription: "Paprastai be kompensacijos.",
+      limitedTitle: "Ribotas vėlavimas",
+      limitedDescription: "Gali būti taikomas 50% sumažinimas.",
+      majorTitle: "Gerokai vėliau",
+      majorDescription: "Paprastai galima visa suma.",
+    },
+    deniedOptions: {
+      noTitle: "Ne",
+      noDescription: "Pavyzdžiui, overbooking.",
+      yesTitle: "Taip",
+      yesDescription: "Pavyzdžiui, trūkstami dokumentai.",
+    },
+    extraordinaryOptions: {
+      no: "Ne",
+      yes: "Taip",
+      yesDescription: "Reikia patikros.",
+      unknown: "Nežinau",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -793,6 +839,29 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
     extraordinaryCircumstancesReview:
       "Авиокомпанията се позовава на извънредни обстоятелства; нужна е ръчна проверка.",
   }),
+  lt: makeReasonLabels({
+    outOfScope: "Skrydis greičiausiai nepatenka į EU261/UK261 taikymo sritį.",
+    delayUnderThreeHours: "Atvykimo vėlavimas buvo trumpesnis nei 3 valandos.",
+    coveredDepartureArea: "Skrydis išvyko iš EU/UK/CH/EEA oro uosto.",
+    coveredArrivalCarrier:
+      "Skrydis atvyko į EU/UK/CH/EEA ir jį vykdė šiai sričiai priklausantis vežėjas.",
+    delayThresholdMet: "Atvykimo vėlavimas viršijo 3 valandas.",
+    missedConnectionThresholdMet:
+      "Praleistas persėdimas sukėlė bent 3 valandų vėlavimą galutinėje paskirties vietoje.",
+    cancellationNoticeFourteenDays:
+      "Oro linija apie atšaukimą pranešė bent 14 dienų iki išvykimo.",
+    replacementWithinLegalWindow:
+      "Pakaitinis skrydis patenka į teisines laiko ribas.",
+    replacementLimitedDelayReduction:
+      "Suma gali būti sumažinta 50%, nes pakaitinio skrydžio vėlavimas buvo ribotas.",
+    cancellationCompensable: "Atšaukimas gali atitikti kompensacijos sąlygas.",
+    deniedBoardingPassengerFault:
+      "Atsisakymas įlaipinti atrodo susijęs su keleivio puse.",
+    deniedBoardingAirlineFault:
+      "Atsisakymas įlaipinti panašus į overbooking arba kitą oro linijos priežastį.",
+    extraordinaryCircumstancesReview:
+      "Oro linija remiasi ypatingomis aplinkybėmis; reikia rankinės patikros.",
+  }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
     delayUnderThreeHours: "Zpoždění při příletu bylo kratší než 3 hodiny.",
@@ -961,6 +1030,113 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
 };
 
 const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
+  lt: {
+    language: "Lithuanian",
+    numberLocale: "lt-LT",
+    campaign: "lt_compensation_calculator",
+    claimWinger: {
+      langParam: "en",
+      defaultUrl: "https://claimwinger.com",
+      delayUrl: "https://claimwinger.com/delayed-flight",
+      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+    },
+    steps: {
+      label: (c, t) => `Žingsnis ${c} iš ${t}`,
+      back: "Atgal",
+      next: "Toliau",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Vėlavimas",
+        description: "Skrydis į galutinę paskirties vietą atvyko keliomis valandomis vėliau.",
+      },
+      cancelled: {
+        title: "Atšaukimas",
+        description: "Oro linija atšaukė skrydį arba perkėlė jus į kitą reisą.",
+      },
+      denied_boarding: {
+        title: "Atsisakymas įlaipinti",
+        description: "Jūsų neįleido į lėktuvą, nors turėjote galiojančią rezervaciją.",
+      },
+      missed_connection: {
+        title: "Praleistas persėdimas",
+        description: "Pirmojo segmento vėlavimas sutrikdė tolesnę kelionės dalį.",
+      },
+    },
+    routeBandLabels: {
+      short: "trumpas atstumas",
+      medium: "vidutinis atstumas",
+      long: "ilgas atstumas",
+    },
+    routeStep: {
+      ...baseCopy.routeStep,
+      title: "Skrydžio maršrutas",
+      description:
+        "Skaičiuoklė vertina vėluojančius ir atšauktus skrydžius, atsisakymą įlaipinti ir praleistus persėdimus pagal EU261 ir UK261. Pasirinkite oro uostus ir nurodykite, ar skrydį vykdęs vežėjas yra iš EU/UK/CH/EEA.",
+      fromLabel: "Išvykimas iš",
+      toLabel: "Atvykimas į",
+      swapLabel: "Sukeisti oro uostus",
+      carrierTitle: "Skrydį vykdęs vežėjas",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Pvz., airBaltic, LOT, Lufthansa, KLM, British Airways, SWISS.",
+      carrierOtherTitle: "Už šios zonos ribų",
+      carrierOtherDescription: "Pvz., Emirates, Qatar Airways, Turkish Airlines, Air Serbia.",
+      carrierHint:
+        "Išvykstant iš EU/UK/CH/EEA oro uosto taisyklės paprastai apima ir ne Europos oro linijas. Atvykstant į šią zoną svarbus skrydį vykdžiusio vežėjo statusas.",
+    },
+    situationStep: {
+      title: "Kas nutiko?",
+      description:
+        "Pasirinkite situaciją, kad įvertintumėte, ar gali priklausyti 250, 400 arba 600 eurų kompensacija.",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Reikia patikros",
+      probableAmount: "Tikėtina suma",
+      result: "Rezultatas",
+      noAmount: "0 €",
+      perPassenger: "Įvertinimas vienam keleiviui",
+      notEligible: "Šis skrydis greičiausiai neatitinka kompensacijos sąlygų.",
+      reducedByHalf: (baseAmount) => `Bazinė ${baseAmount} € suma sumažinta 50%`,
+      distanceLabel: "Atstumas",
+      routeClassLabel: "Maršruto klasė",
+      scopeLabel: "Taikymo sritis",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "už taikymo ribų",
+      explanationTitle: "Ką reiškia rezultatas?",
+      explanationText:
+        "Tai pirminis kompensacijos už vėluojantį ar atšauktą skrydį įvertinimas. ClaimWinger vėliau patikrina rezervaciją, faktinį atvykimo laiką, sutrikimo priežastį ir oro linijos atsakomybę.",
+      reasonsTitle: "Pagrindimas",
+      ctaLabel: "Perduoti atvejį ClaimWinger",
+      resetLabel: "Pradėti iš naujo",
+    },
+    preview: {
+      ...baseCopy.preview,
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Išvykimas",
+      toFallback: "Atvykimas",
+      distanceLabel: "Atstumas",
+      routeLabel: "Maršrutas",
+      amountLabel: "Suma",
+      emptyText: "Pasirinkite maršrutą, kad matytumėte atstumą, klasę ir orientacinę sumą.",
+      ruleTitle: "Greita keleivio taisyklė",
+      ruleText:
+        "Jei skrydis patenka į EU261 arba UK261 taikymo sritį, bent 3 valandų atvykimo vėlavimas gali reikšti kompensaciją iki 600 eurų vienam keleiviui.",
+    },
+    map: {
+      routeMapLabel: "Maršruto žemėlapis",
+      fittedFrameLabel: "Vaizdas pagal atstumą",
+      distanceLabel: "Atstumas",
+      emptyText: "Pasirinkite išvykimo ir atvykimo oro uostus, kad matytumėte maršruto žemėlapį.",
+      ariaRoute: (f, t, d) => `Maršruto žemėlapis ${f}-${t}, atstumas ${d} kilometrų`,
+      ariaDefault: "Skrydžio maršruto žemėlapis",
+    },
+    airport: {
+      searchPlaceholder: "Miestas arba kodas, pvz., VNO",
+      clearLabel: "Išvalyti",
+    },
+  },
   bg: {
     language: "Bulgarian",
     numberLocale: "bg-BG",
@@ -1402,6 +1578,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   vi: mergeCopy("vi"),
   zh: mergeCopy("zh"),
   bg: mergeCopy("bg"),
+  lt: mergeCopy("lt"),
 };
 
 export function getCalculatorCopy(locale: CalculatorLocaleCode = "pl") {
