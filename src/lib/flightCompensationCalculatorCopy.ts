@@ -19,7 +19,8 @@ export type CalculatorLocaleCode =
   | "vi"
   | "zh"
   | "bg"
-  | "lt";
+  | "lt"
+  | "lv";
 
 export type CalculatorCopy = {
   code: CalculatorLocaleCode;
@@ -648,6 +649,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "Nežinau",
     },
   },
+  lv: {
+    title: "Gadījuma detaļas",
+    description:
+      "Šīs atbildes palīdz noteikt iespējamo summu, 50% samazinājumu vai vajadzību pēc manuālas juridiskas pārbaudes.",
+    delayQuestion: "Cik liela bija kavēšanās galamērķī?",
+    cancellationNoticeQuestion: "Kad uzzinājāt par lidojuma atcelšanu?",
+    replacementQuestion: "Kāds aizvietojošais lidojums tika piedāvāts?",
+    deniedBoardingQuestion: "Vai iekāpšanas atteikums bija jūsu vainas dēļ?",
+    extraordinaryQuestion: "Vai aviokompānija atsaucas uz ārkārtējiem apstākļiem?",
+    extraordinaryNote:
+      "Tehniskas kļūmes un pašas aviokompānijas darbinieku streiki bieži nav pietiekams pamats kompensācijas atteikumam.",
+    delayOptions: {
+      under2h: "Mazāk nekā 2 st.",
+      twoToThree: "2-3 st.",
+      threeToFour: "3-4 st.",
+      overFour: "Vairāk nekā 4 st.",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 dienas vai vairāk",
+      sevenToThirteen: "7-13 dienas",
+      underSeven: "Mazāk nekā 7 dienas",
+    },
+    replacementOptions: {
+      noneTitle: "Nebija",
+      noneDescription: "Nav reālas alternatīvas.",
+      withinTitle: "Tiesiskajā laika logā",
+      withinDescription: "Parasti bez kompensācijas.",
+      limitedTitle: "Ierobežota kavēšanās",
+      limitedDescription: "Var piemērot 50% samazinājumu.",
+      majorTitle: "Daudz vēlāk",
+      majorDescription: "Parasti iespējama pilna summa.",
+    },
+    deniedOptions: {
+      noTitle: "Nē",
+      noDescription: "Piemēram, overbooking.",
+      yesTitle: "Jā",
+      yesDescription: "Piemēram, trūkstoši dokumenti.",
+    },
+    extraordinaryOptions: {
+      no: "Nē",
+      yes: "Jā",
+      yesDescription: "Nepieciešama pārbaude.",
+      unknown: "Nezinu",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -861,6 +907,29 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
       "Atsisakymas įlaipinti panašus į overbooking arba kitą oro linijos priežastį.",
     extraordinaryCircumstancesReview:
       "Oro linija remiasi ypatingomis aplinkybėmis; reikia rankinės patikros.",
+  }),
+  lv: makeReasonLabels({
+    outOfScope: "Lidojums, visticamāk, neietilpst EU261/UK261 darbības jomā.",
+    delayUnderThreeHours: "Ierašanās kavēšanās bija īsāka par 3 stundām.",
+    coveredDepartureArea: "Lidojums izlidoja no EU/UK/CH/EEA lidostas.",
+    coveredArrivalCarrier:
+      "Lidojums ieradās EU/UK/CH/EEA un to veica aptverts pārvadātājs.",
+    delayThresholdMet: "Ierašanās kavēšanās pārsniedza 3 stundas.",
+    missedConnectionThresholdMet:
+      "Nokavēts savienojums izraisīja vismaz 3 stundu kavēšanos galamērķī.",
+    cancellationNoticeFourteenDays:
+      "Aviokompānija paziņoja par atcelšanu vismaz 14 dienas pirms izlidošanas.",
+    replacementWithinLegalWindow:
+      "Aizvietojošais lidojums ietilpst tiesiskajā laika logā.",
+    replacementLimitedDelayReduction:
+      "Summa var tikt samazināta par 50%, jo aizvietojošā lidojuma kavēšanās bija ierobežota.",
+    cancellationCompensable: "Atcelšana var atbilst kompensācijas nosacījumiem.",
+    deniedBoardingPassengerFault:
+      "Iekāpšanas atteikums šķiet saistīts ar pasažiera puses iemeslu.",
+    deniedBoardingAirlineFault:
+      "Iekāpšanas atteikums izskatās pēc overbooking vai cita aviokompānijas iemesla.",
+    extraordinaryCircumstancesReview:
+      "Aviokompānija atsaucas uz ārkārtējiem apstākļiem; nepieciešama manuāla pārbaude.",
   }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
@@ -1135,6 +1204,113 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
     airport: {
       searchPlaceholder: "Miestas arba kodas, pvz., VNO",
       clearLabel: "Išvalyti",
+    },
+  },
+  lv: {
+    language: "Latvian",
+    numberLocale: "lv-LV",
+    campaign: "lv_compensation_calculator",
+    claimWinger: {
+      langParam: "en",
+      defaultUrl: "https://claimwinger.com",
+      delayUrl: "https://claimwinger.com/delayed-flight",
+      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+    },
+    steps: {
+      label: (c, t) => `Solis ${c} no ${t}`,
+      back: "Atpakaļ",
+      next: "Tālāk",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Kavēšanās",
+        description: "Lidojums galamērķī ieradās vairākas stundas vēlāk.",
+      },
+      cancelled: {
+        title: "Atcelšana",
+        description: "Aviokompānija atcēla lidojumu vai pārcēla jūs uz citu reisu.",
+      },
+      denied_boarding: {
+        title: "Iekāpšanas atteikums",
+        description: "Jūs neielaida lidmašīnā, lai gan jums bija derīga rezervācija.",
+      },
+      missed_connection: {
+        title: "Nokavēts savienojums",
+        description: "Pirmā posma kavēšanās izjauca nākamo ceļojuma daļu.",
+      },
+    },
+    routeBandLabels: {
+      short: "īss attālums",
+      medium: "vidējs attālums",
+      long: "garš attālums",
+    },
+    routeStep: {
+      ...baseCopy.routeStep,
+      title: "Lidojuma maršruts",
+      description:
+        "Kalkulators vērtē kavētus un atceltus lidojumus, atteiktu iekāpšanu un nokavētus savienojumus saskaņā ar EU261 un UK261. Izvēlieties lidostas un norādiet, vai faktiskais pārvadātājs ir no EU/UK/CH/EEA.",
+      fromLabel: "Izlidošana no",
+      toLabel: "Ierašanās uz",
+      swapLabel: "Samainīt lidostas",
+      carrierTitle: "Faktiskais pārvadātājs",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Piem., airBaltic, Ryanair, Lufthansa, LOT, Finnair, British Airways.",
+      carrierOtherTitle: "Ārpus šīs zonas",
+      carrierOtherDescription: "Piem., Emirates, Qatar Airways, Turkish Airlines, flydubai.",
+      carrierHint:
+        "Izlidojot no EU/UK/CH/EEA lidostas, noteikumi parasti aptver arī ne Eiropas aviokompānijas. Ielidojot šajā zonā, svarīgs ir faktiskais pārvadātājs.",
+    },
+    situationStep: {
+      title: "Kas notika?",
+      description:
+        "Izvēlieties situāciju, lai novērtētu, vai var pienākties 250, 400 vai 600 EUR kompensācija.",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Nepieciešama pārbaude",
+      probableAmount: "Iespējamā summa",
+      result: "Rezultāts",
+      noAmount: "0 €",
+      perPassenger: "Aplēse par pasažieri",
+      notEligible: "Šis lidojums, visticamāk, neatbilst kompensācijas nosacījumiem.",
+      reducedByHalf: (baseAmount) => `Bāzes summa ${baseAmount} € samazināta par 50%`,
+      distanceLabel: "Attālums",
+      routeClassLabel: "Maršruta klase",
+      scopeLabel: "Darbības joma",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "ārpus darbības jomas",
+      explanationTitle: "Ko nozīmē rezultāts?",
+      explanationText:
+        "Tas ir sākotnējs kompensācijas novērtējums par kavētu vai atceltu lidojumu. ClaimWinger vēlāk pārbauda rezervāciju, faktisko ierašanās laiku, traucējuma iemeslu un aviokompānijas atbildību.",
+      reasonsTitle: "Pamatojums",
+      ctaLabel: "Nodot gadījumu ClaimWinger",
+      resetLabel: "Sākt no jauna",
+    },
+    preview: {
+      ...baseCopy.preview,
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Izlidošana",
+      toFallback: "Ierašanās",
+      distanceLabel: "Attālums",
+      routeLabel: "Maršruts",
+      amountLabel: "Summa",
+      emptyText: "Izvēlieties maršrutu, lai redzētu attālumu, klasi un aptuveno summu.",
+      ruleTitle: "Ātra pasažiera likumsakarība",
+      ruleText:
+        "Ja lidojums ietilpst EU261 vai UK261 darbības jomā, vismaz 3 stundu kavēšanās galamērķī var nozīmēt kompensāciju līdz 600 EUR par pasažieri.",
+    },
+    map: {
+      routeMapLabel: "Maršruta karte",
+      fittedFrameLabel: "Skats pēc attāluma",
+      distanceLabel: "Attālums",
+      emptyText: "Izvēlieties izlidošanas un ierašanās lidostas, lai redzētu maršruta karti.",
+      ariaRoute: (f, t, d) => `Maršruta karte ${f}-${t}, attālums ${d} kilometri`,
+      ariaDefault: "Lidojuma maršruta karte",
+    },
+    airport: {
+      searchPlaceholder: "Pilsēta vai kods, piem., RIX",
+      clearLabel: "Notīrīt",
     },
   },
   bg: {
@@ -1579,6 +1755,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   zh: mergeCopy("zh"),
   bg: mergeCopy("bg"),
   lt: mergeCopy("lt"),
+  lv: mergeCopy("lv"),
 };
 
 export function getCalculatorCopy(locale: CalculatorLocaleCode = "pl") {

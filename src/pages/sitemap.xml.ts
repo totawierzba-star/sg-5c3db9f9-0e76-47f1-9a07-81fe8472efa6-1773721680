@@ -4,6 +4,7 @@ import { blogArticlesEnIrelandSorted } from '@/lib/blogArticlesEnIreland';
 import { blogArticlesBgSorted } from '@/lib/blogArticlesBg';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesLtSorted } from '@/lib/blogArticlesLt';
+import { blogArticlesLvSorted } from '@/lib/blogArticlesLv';
 import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
 import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
@@ -143,6 +144,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/lt/atsauktas-skrydis', priority: '0.9', changefreq: 'weekly' },
     { url: '/lt/kompensacijos-skaiciuokle', priority: '0.9', changefreq: 'weekly' },
     { url: '/lt/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- LATVIAN MAIN ---
+    { url: '/lv', priority: '1.0', changefreq: 'daily' },
+    { url: '/lv/kavejies-lidojums', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lv/atcelts-lidojums', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lv/kompensacijas-kalkulators', priority: '0.9', changefreq: 'weekly' },
+    { url: '/lv/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -187,6 +195,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const lvBlogPages = blogArticlesLvSorted.map((article) => ({
+    url: `/lv/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
   const enIrelandBlogPages = blogArticlesEnIrelandSorted.map((article) => ({
     url: `/en/blog/${article.slug}`,
     priority: article.featured ? '0.8' : '0.7',
@@ -203,6 +217,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     ...viBlogPages,
     ...bgBlogPages,
     ...ltBlogPages,
+    ...lvBlogPages,
   ]);
 
   res.setHeader('Content-Type', 'text/xml');

@@ -169,6 +169,69 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "Pradėkite nuo skaičiuoklės, tada pereikite į ClaimWinger, jei maršrutas ir situacija atrodo perspektyvūs.",
     finalCtaLabel: "Atidaryti skaičiuoklę",
   },
+  lv: {
+    language: "Latvian",
+    ogLocale: "lv_LV",
+    urlPath: "/lv/kompensacijas-kalkulators",
+    title: "Lidojuma kompensācijas kalkulators | 250, 400 vai 600 €",
+    description:
+      "Bezmaksas EU261 un UK261 lidojuma kompensācijas kalkulators kavētiem lidojumiem, atcelšanai, atteiktai iekāpšanai un nokavētiem savienojumiem.",
+    eyebrow: "Bezmaksas EU261 un UK261 kalkulators",
+    heading: "Lidojuma kompensācijas kalkulators",
+    intro:
+      "Dažos soļos pārbaudiet, vai kavēts, atcelts vai pārdots lidojums var dot tiesības uz 250, 400 vai 600 EUR kompensāciju par pasažieri.",
+    afterCalculator:
+      "Rezultāts ir sākotnējs novērtējums. ClaimWinger pēc tam pārbauda rezervāciju, faktisko ierašanās laiku, traucējuma iemeslu un aviokompānijas atbildību.",
+    bandsHeading: "Kompensācijas summas pēc attāluma",
+    bandsDescription:
+      "EU261 un UK261 izmanto fiksētas kompensācijas grupas. Biļetes cena summu nenosaka.",
+    bandShort: "Īss attālums",
+    bandMedium: "Vidējs attālums",
+    bandLong: "Garš attālums",
+    bandShortDescription: "Lidojumi līdz 1 500 km, bieži īsi Eiropas maršruti.",
+    bandMediumDescription: "Lidojumi no 1 500 līdz 3 500 km un daudzi garāki Eiropas iekšējie maršruti.",
+    bandLongDescription: "Lidojumi virs 3 500 km, tostarp daudzi tālie maršruti no Eiropas.",
+    rulesHeading: "Ko pārbauda kalkulators",
+    rules: [
+      "Vai izlidošana vai ierašanās ietilpst EU261, UK261, Šveices vai EEZ pasažieru tiesību loģikā.",
+      "Vai ierašanās kavēšanās, atcelšanas paziņojums, atteikta iekāpšana vai nokavēts savienojums sasniedz tiesisko slieksni.",
+      "Vai faktiskais pārvadātājs ir aptverts, ja lidojums ielido Eiropā no trešās valsts.",
+      "Vai ārkārtēji apstākļi prasa manuālu juridisku pārbaudi pirms prasības iesniegšanas.",
+    ],
+    faqHeading: "BUJ: lidojuma kompensācijas kalkulators",
+    faq: [
+      {
+        question: "Vai kalkulatora rezultāts ir galīgs?",
+        answer:
+          "Nē. Tas ir ātrs novērtējums pēc ievadītā maršruta un situācijas. Reālai prasībai vēl jāpārbauda dokumenti, faktiskais ierašanās laiks un traucējuma iemesls.",
+      },
+      {
+        question: "Vai kalkulators pārbauda arī atceltus lidojumus?",
+        answer:
+          "Jā. Tas aptver kavēšanos, atcelšanu, atteiktu iekāpšanu un nokavētu savienojumu vienā rezervācijā. Atcelšanas gadījumā svarīgs ir paziņojuma termiņš un aizvietojošā lidojuma kvalitāte.",
+      },
+      {
+        question: "Vai kompensācija tiek aprēķināta katram pasažierim?",
+        answer:
+          "Jā. EU261 un UK261 kompensācija parasti tiek aprēķināta katram pasažierim atsevišķi, nevis vienai rezervācijai.",
+      },
+      {
+        question: "Kad kompensācija var būt 600 EUR?",
+        answer:
+          "Visbiežāk tad, ja maršruts pārsniedz 3 500 km, lidojums ir noteikumu darbības jomā un ir izpildīts kavēšanās vai atcelšanas slieksnis.",
+      },
+    ],
+    relatedHeading: "Noderīgas nākamās lapas",
+    related: [
+      { label: "Kavējies lidojums", href: "/lv/kavejies-lidojums", description: "Noteikumi, ja galamērķī ierodaties 3+ stundas vēlāk." },
+      { label: "Atcelts lidojums", href: "/lv/atcelts-lidojums", description: "Tiesības, ja aviokompānija atceļ lidojumu." },
+      { label: "Blogs", href: "/lv/blog", description: "Ceļveži par EU261, UK261, aviokompānijām un maršrutiem." },
+    ],
+    finalCtaTitle: "Novērtējiet gadījumu pirms prasības iesniegšanas",
+    finalCtaText:
+      "Sāciet ar kalkulatoru, pēc tam pārejiet uz ClaimWinger, ja maršruts un situācija izskatās perspektīvi.",
+    finalCtaLabel: "Atvērt kalkulatoru",
+  },
   bg: {
     language: "Bulgarian",
     ogLocale: "bg_BG",

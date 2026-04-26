@@ -271,44 +271,46 @@ export function UnifiedBlogIndex({
         />
       </Head>
 
-      <div className={cn("min-h-screen bg-gradient-to-b", styles.page)}>
-        <section className={cn("relative overflow-hidden bg-gradient-to-br py-16 text-white", styles.hero)}>
+      <div className={cn("min-h-screen overflow-x-hidden bg-gradient-to-b", styles.page)}>
+        <section className={cn("relative overflow-hidden bg-gradient-to-br py-10 text-white sm:py-14 lg:py-16", styles.hero)}>
           <div className="absolute inset-0 opacity-25">
             <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-white blur-3xl" />
             <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-cyan-300 blur-3xl" />
           </div>
-          <div className="relative mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.35fr_0.65fr] lg:px-8">
-            <div>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-white/20 backdrop-blur">
+          <div className="relative mx-auto grid w-full max-w-7xl gap-7 px-4 sm:gap-10 sm:px-6 lg:grid-cols-[1.35fr_0.65fr] lg:px-8">
+            <div className="min-w-0">
+              <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-full bg-white/12 px-3 py-2 text-xs font-semibold text-white shadow-sm ring-1 ring-white/20 backdrop-blur sm:mb-6 sm:px-4 sm:text-sm">
                 <BookOpen className="h-4 w-4" />
-                {labels.eyebrow}
+                <span className="truncate">{labels.eyebrow}</span>
               </div>
-              <h1 className="max-w-4xl text-4xl font-black tracking-tight md:text-6xl">
+              <h1 className="max-w-4xl text-3xl font-black tracking-tight sm:text-4xl md:text-6xl">
                 {labels.title}
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-white/82 md:text-xl">
+              <p className="mt-4 max-w-3xl text-base leading-7 text-white/82 sm:mt-6 sm:text-lg sm:leading-8 md:text-xl">
                 {labels.description}
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 lg:grid-cols-1">
               {resolvedStats.map((stat) => (
                 <div
                   key={`${stat.label}-${stat.value}`}
-                  className="rounded-3xl bg-white/12 p-5 shadow-sm ring-1 ring-white/20 backdrop-blur"
+                  className="min-w-0 rounded-2xl bg-white/12 p-3 shadow-sm ring-1 ring-white/20 backdrop-blur sm:rounded-3xl sm:p-5"
                 >
-                  <div className="text-3xl font-black">{stat.value}</div>
-                  <div className="mt-1 text-sm font-medium text-white/78">{stat.label}</div>
+                  <div className="truncate text-xl font-black sm:text-3xl">{stat.value}</div>
+                  <div className="mt-1 line-clamp-2 text-[11px] font-medium leading-4 text-white/78 sm:text-sm sm:leading-5">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="sticky top-14 z-30 border-b border-slate-200/70 bg-white/86 py-5 shadow-sm backdrop-blur-xl dark:border-slate-800 dark:bg-gray-950/86">
+        <section className="sticky top-14 z-30 border-b border-slate-200/70 bg-white/92 py-4 shadow-sm backdrop-blur-xl dark:border-slate-800 dark:bg-gray-950/92 sm:py-5">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-              <div>
+            <div className="grid min-w-0 gap-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+              <div className="min-w-0">
                 <label className="sr-only" htmlFor="blog-search">
                   {labels.searchPlaceholder}
                 </label>
@@ -320,7 +322,7 @@ export function UnifiedBlogIndex({
                     value={searchQuery}
                     onChange={(event) => setSearchQuery(event.target.value)}
                     placeholder={labels.searchPlaceholder}
-                    className="w-full rounded-2xl border border-slate-200 bg-white py-4 pl-12 pr-4 text-slate-950 outline-none transition focus:border-transparent focus:ring-4 focus:ring-blue-200 dark:border-slate-800 dark:bg-gray-900 dark:text-white dark:focus:ring-blue-900/40"
+                    className="w-full rounded-2xl border border-slate-200 bg-white py-3.5 pl-11 pr-4 text-sm text-slate-950 outline-none transition focus:border-transparent focus:ring-4 focus:ring-blue-200 dark:border-slate-800 dark:bg-gray-900 dark:text-white dark:focus:ring-blue-900/40 sm:py-4 sm:pl-12 sm:text-base"
                   />
                 </div>
                 <div className="mt-3 text-sm font-medium text-slate-600 dark:text-slate-300">
@@ -328,7 +330,7 @@ export function UnifiedBlogIndex({
                 </div>
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <div className="mb-3 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-slate-200">
                     <Filter className="h-4 w-4" />
@@ -344,7 +346,7 @@ export function UnifiedBlogIndex({
                     </button>
                   )}
                 </div>
-                <div className="flex gap-2 overflow-x-auto pb-1 lg:flex-wrap lg:overflow-visible">
+                <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none] lg:mx-0 lg:flex-wrap lg:overflow-visible lg:px-0 lg:pb-1 [&::-webkit-scrollbar]:hidden">
                   <CategoryButton
                     isActive={selectedCategory === "all"}
                     label={labels.allCategoryLabel}
@@ -368,21 +370,21 @@ export function UnifiedBlogIndex({
           </div>
         </section>
 
-        <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <main className="mx-auto w-full max-w-7xl px-4 py-9 sm:px-6 sm:py-12 lg:px-8">
           {isDefaultView && featuredArticles.length > 0 && (
             <section className="mb-14">
-              <div className="mb-6 flex items-center gap-3">
+              <div className="mb-5 flex items-center gap-3 sm:mb-6">
                 <span
                   aria-hidden="true"
                   className={cn("rounded-full px-3 py-1 text-xs font-black uppercase tracking-[0.22em]", styles.eyebrow)}
                 >
                   <Sparkles className="h-3.5 w-3.5" />
                 </span>
-                <h2 className="text-2xl font-black text-slate-950 dark:text-white">
+                <h2 className="text-xl font-black text-slate-950 dark:text-white sm:text-2xl">
                   {labels.featuredTitle}
                 </h2>
               </div>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-4 sm:gap-6 md:grid-cols-3">
                 {featuredArticles.map((article, index) => (
                   <ArticleCard
                     key={article.id || article.slug}
@@ -399,16 +401,16 @@ export function UnifiedBlogIndex({
           )}
 
           <section>
-            <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div className="mb-5 flex flex-col gap-3 sm:mb-7 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className={cn("text-sm font-black uppercase tracking-[0.22em]", styles.accentText)}>
                   {selectedCategoryLabel}
                 </p>
-                <h2 className="mt-2 text-3xl font-black text-slate-950 dark:text-white">
+                <h2 className="mt-2 text-2xl font-black text-slate-950 dark:text-white sm:text-3xl">
                   {selectedCategory === "all" ? labels.allArticlesTitle : selectedCategoryLabel}
                 </h2>
               </div>
-              <div className="rounded-2xl bg-white px-4 py-3 text-sm font-bold text-slate-700 shadow-sm ring-1 ring-slate-200 dark:bg-gray-900 dark:text-slate-200 dark:ring-slate-800">
+              <div className="w-fit rounded-2xl bg-white px-4 py-3 text-sm font-bold text-slate-700 shadow-sm ring-1 ring-slate-200 dark:bg-gray-900 dark:text-slate-200 dark:ring-slate-800">
                 {filteredArticles.length} {labels.countLabel(filteredArticles.length)}
               </div>
             </div>
@@ -430,7 +432,7 @@ export function UnifiedBlogIndex({
                 </button>
               </div>
             ) : (
-              <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              <div className="grid gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
                 {filteredArticles.map((article) => (
                   <ArticleCard
                     key={article.id || article.slug}
@@ -445,11 +447,11 @@ export function UnifiedBlogIndex({
           </section>
 
           {cta && (
-            <section className={cn("mt-16 overflow-hidden rounded-[2rem] bg-gradient-to-br p-8 text-white shadow-2xl md:p-12", styles.cta)}>
+            <section className={cn("mt-12 overflow-hidden rounded-[2rem] bg-gradient-to-br p-6 text-white shadow-2xl sm:mt-16 sm:p-8 md:p-12", styles.cta)}>
               <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
                 <div>
-                  <h2 className="text-3xl font-black md:text-4xl">{cta.title}</h2>
-                  <p className="mt-4 max-w-2xl text-lg leading-8 text-white/82">{cta.description}</p>
+                  <h2 className="text-2xl font-black sm:text-3xl md:text-4xl">{cta.title}</h2>
+                  <p className="mt-4 max-w-2xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">{cta.description}</p>
                   {cta.note && <p className="mt-4 text-sm font-semibold text-white/72">{cta.note}</p>}
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
@@ -499,7 +501,7 @@ function CategoryButton({
       type="button"
       onClick={onClick}
       className={cn(
-        "inline-flex shrink-0 items-center gap-2 rounded-full px-4 py-2.5 text-sm font-bold transition",
+        "inline-flex shrink-0 items-center gap-2 rounded-full px-3.5 py-2.5 text-xs font-bold transition sm:px-4 sm:text-sm",
         isActive
           ? styles.primary
           : "bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-gray-800 dark:text-slate-200 dark:hover:bg-gray-700",
@@ -546,8 +548,8 @@ function ArticleCard({
       )}
     >
       <div className={cn("h-1.5 w-full", styles.primary)} />
-      <article className="flex flex-1 flex-col p-6">
-        <div className="mb-4 flex flex-wrap items-center gap-2">
+      <article className="flex flex-1 flex-col p-5 sm:p-6">
+        <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4">
           <span className={cn("rounded-full px-3 py-1 text-xs font-black", styles.primarySoft)}>
             {categoryLabel}
           </span>
@@ -560,17 +562,17 @@ function ArticleCard({
 
         <h3
           className={cn(
-            "line-clamp-2 text-xl font-black leading-snug text-slate-950 transition-colors dark:text-white",
+            "line-clamp-3 text-lg font-black leading-snug text-slate-950 transition-colors dark:text-white sm:line-clamp-2 sm:text-xl",
             styles.titleHover,
           )}
         >
           {article.title}
         </h3>
-        <p className="mt-3 line-clamp-3 flex-1 text-sm leading-7 text-slate-600 dark:text-slate-300">
+        <p className="mt-3 line-clamp-3 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-300 sm:leading-7">
           {article.excerpt}
         </p>
 
-        <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+        <div className="mt-5 flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400 sm:mt-6 sm:text-sm">
           {article.date && (
             <span className="inline-flex items-center gap-1.5">
               <CalendarDays className="h-4 w-4" />
@@ -585,7 +587,7 @@ function ArticleCard({
           )}
         </div>
 
-        <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-sm font-black dark:border-slate-800">
+        <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-sm font-black dark:border-slate-800 sm:mt-6">
           <span className={styles.accentText}>{readMoreLabel}</span>
           <ArrowRight className={cn("h-4 w-4 transition group-hover:translate-x-1", styles.accentText)} />
         </div>
