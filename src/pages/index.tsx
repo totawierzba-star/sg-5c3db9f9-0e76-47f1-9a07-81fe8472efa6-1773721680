@@ -1,14 +1,12 @@
+import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, XCircle, Plane, Shield, Zap } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
-  const [isClaimFormLoaded, setIsClaimFormLoaded] = useState(false);
-
   return (
     <Layout>
       <SEO
@@ -30,32 +28,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-10 text-balance max-w-3xl mx-auto">
               Opóźniony, odwołany lub utracona przesiadka? Sprawdź swoje prawa i uzyskaj odszkodowanie bez wysiłku. Płacisz tylko w przypadku sukcesu.
             </p>
-            <div className="mx-auto max-w-4xl">
-              {!isClaimFormLoaded && (
-                <div
-                  id="loading"
-                  className="flex min-h-[220px] items-center justify-center rounded-3xl border border-primary/20 bg-white/80 p-8 text-center shadow-xl backdrop-blur"
-                >
-                  <div>
-                    <p className="text-lg font-semibold text-foreground">Ładowanie formularza...</p>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      Za chwilę zobaczysz formularz ClaimWinger do weryfikacji sprawy.
-                    </p>
-                  </div>
-                </div>
-              )}
-
-              <iframe
-                id="claimwinger-iframe"
-                src="https://claimwinger.com/embed?lang=pl"
-                width="100%"
-                height="900"
-                style={{ display: isClaimFormLoaded ? "block" : "none" }}
-                onLoad={() => setIsClaimFormLoaded(true)}
-                title="Formularz ClaimWinger"
-                className="rounded-3xl border-0 bg-white shadow-2xl"
-              />
-            </div>
+            <ClaimWingerHeroEmbed className="mx-auto max-w-4xl" lang="pl" />
             <p className="text-sm text-muted-foreground mt-6">
               ⚡ Sprawdzenie zajmuje 2 minuty • 💰 Bez kosztów początkowych
             </p>

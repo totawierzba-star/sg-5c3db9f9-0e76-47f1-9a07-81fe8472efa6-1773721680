@@ -97,7 +97,7 @@ export function ClaimWingerLvSection({
 
       <ClaimWingerHeroEmbed
         className="mb-8"
-        lang="en"
+        lang="lv"
         queryParams={embedQueryParams}
         title="ClaimWinger English form"
         loadingLabel={loadingLabel}

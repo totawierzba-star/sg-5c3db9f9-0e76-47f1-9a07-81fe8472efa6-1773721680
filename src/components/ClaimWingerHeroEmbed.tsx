@@ -1,8 +1,15 @@
-import { useState } from "react";
+import Script from "next/script";
+import { useEffect, useState } from "react";
+
+import { getClaimWingerEmbedLang } from "@/lib/claimwingerEmbedLang";
+
+let claimedSlot: symbol | null = null;
 
 type ClaimWingerHeroEmbedProps = {
   className?: string;
   lang?: string;
+  minHeight?: number;
+  // Legacy props kept so existing callers continue to type-check; ignored.
   queryParams?: Record<string, string>;
   title?: string;
   loadingLabel?: string;
@@ -12,42 +19,53 @@ type ClaimWingerHeroEmbedProps = {
 export function ClaimWingerHeroEmbed({
   className = "",
   lang = "pl",
-  queryParams = {},
-  title = "Formularz ClaimWinger",
-  loadingLabel = "Ladowanie formularza...",
-  loadingDescription = "Za chwile zobaczysz formularz ClaimWinger do weryfikacji sprawy.",
+  minHeight = 700,
 }: ClaimWingerHeroEmbedProps) {
-  const [isClaimFormLoaded, setIsClaimFormLoaded] = useState(false);
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      const existing = document.getElementById("claimwinger-form");
+      if (existing && claimedSlot === null) {
+        return;
+      }
+    }
+
+    if (claimedSlot !== null) {
+      return;
+    }
+
+    const token = Symbol("claimwinger-embed");
+    claimedSlot = token;
+    setActive(true);
+
+    return () => {
+      if (claimedSlot === token) {
+        claimedSlot = null;
+      }
+    };
+  }, []);
+
+  if (!active) {
+    return null;
+  }
+
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
-  const embedParams = new URLSearchParams({ lang, ...queryParams });
+  const resolvedLang = getClaimWingerEmbedLang(lang);
 
   return (
-    <div className={wrapperClassName} data-claimwinger-embed="true">
-      {!isClaimFormLoaded && (
-        <div
-          aria-live="polite"
-          role="status"
-          className="flex min-h-[220px] items-center justify-center rounded-3xl border border-primary/20 bg-white/80 p-8 text-center shadow-xl backdrop-blur"
-        >
-          <div>
-            <p className="text-lg font-semibold text-foreground">
-              {loadingLabel}
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {loadingDescription}
-            </p>
-          </div>
-        </div>
-      )}
-
-      <iframe
-        src={`https://claimwinger.com/embed?${embedParams.toString()}`}
-        width="100%"
-        height="900"
-        style={{ display: isClaimFormLoaded ? "block" : "none" }}
-        onLoad={() => setIsClaimFormLoaded(true)}
-        title={title}
-        className="w-full rounded-3xl border-0 bg-white shadow-2xl"
+    <div className={wrapperClassName}>
+      <div
+        id="claimwinger-form"
+        data-claimwinger-embed=""
+        data-lang={resolvedLang}
+        data-min-height={String(minHeight)}
+        style={{ minHeight: `${minHeight}px` }}
+      />
+      <Script
+        id="claimwinger-embed-script"
+        src="https://claimwinger.com/embed.js"
+        strategy="afterInteractive"
       />
     </div>
   );
