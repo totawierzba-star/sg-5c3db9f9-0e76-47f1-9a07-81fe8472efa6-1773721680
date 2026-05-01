@@ -67,15 +67,58 @@ export default class ProblemLotDocument extends Document<ProblemLotDocumentProps
           name="google-site-verification"
           content="DPV_dIXtVkWNE_tb-yvnEz2pTSn_JUs4WgVzj2jTKsE"
         />
-        {/* Google Tag Manager */}
+        {/* Consent Mode defaults and guarded GTM loader */}
         <script dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KD4RSD4F');`
+          __html: `(function(w,d){
+  var GTM_ID = 'GTM-KD4RSD4F';
+  var CONSENT_KEY = 'problemlot_consent_v1';
+  w.dataLayer = w.dataLayer || [];
+  function gtag(){w.dataLayer.push(arguments);}
+  w.gtag = w.gtag || gtag;
+  w.gtag('consent', 'default', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  w.gtag('set', 'ads_data_redaction', true);
+  w.gtag('set', 'url_passthrough', false);
+  w.__loadProblemLotGtm = function(){
+    if (w.__problemLotGtmLoaded) return;
+    w.__problemLotGtmLoaded = true;
+    w.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var firstScript = d.getElementsByTagName('script')[0];
+    var tag = d.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
+    firstScript.parentNode.insertBefore(tag, firstScript);
+  };
+  try {
+    var savedConsent = JSON.parse(w.localStorage.getItem(CONSENT_KEY) || 'null');
+    if (savedConsent && savedConsent.status === 'accepted') {
+      w.gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        functionality_storage: 'granted',
+        security_storage: 'granted'
+      });
+      w.gtag('set', 'ads_data_redaction', false);
+      w.dataLayer.push({event: 'problemlot_consent_granted', consent_source: 'stored'});
+      w.__loadProblemLotGtm();
+    } else if (savedConsent && savedConsent.status === 'rejected') {
+      w.dataLayer.push({event: 'problemlot_consent_denied', consent_source: 'stored'});
+    }
+  } catch (error) {
+    w.dataLayer.push({event: 'problemlot_consent_storage_error'});
+  }
+})(window,document);`
         }} />
-        {/* End Google Tag Manager */}
+        {/* End Consent Mode defaults and guarded GTM loader */}
         
         {/*
           CRITICAL: DO NOT REMOVE THIS SCRIPT
@@ -93,17 +136,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "min-h-screen w-full scroll-smooth bg-background text-foreground antialiased"
         )}
       >
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KD4RSD4F"
-            height="0" 
-            width="0" 
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
-        
         <Main />
         <NextScript />
 

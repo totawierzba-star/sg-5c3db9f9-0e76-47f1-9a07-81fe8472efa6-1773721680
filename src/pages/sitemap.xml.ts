@@ -41,6 +41,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     // --- POLISH MAIN ---
     { url: '', priority: '1.0', changefreq: 'daily' },
     { url: '/o-autorze', priority: '0.8', changefreq: 'monthly' },
+    { url: '/polityka-prywatnosci', priority: '0.3', changefreq: 'yearly' },
     { url: '/anulowany-lot-delegacja', priority: '0.9', changefreq: 'weekly' },
     { url: '/bilet-firmowy-prawa', priority: '0.9', changefreq: 'weekly' },
     { url: '/odszkodowanie-lot-sluzbowy', priority: '0.9', changefreq: 'weekly' },

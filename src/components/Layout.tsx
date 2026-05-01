@@ -222,6 +222,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
             <p>© 2026 ProblemLot.com - Wszystkie prawa zastrzeżone</p>
             <p className="mt-2">
+              <Link href="/polityka-prywatnosci" className="hover:text-white transition-colors">
+                Polityka prywatnosci
+              </Link>
+            </p>
+            <p className="mt-2">
               Strona informacyjna. Roszczenia obsługuje{" "}
               <a
                 href="https://claimwinger.com"

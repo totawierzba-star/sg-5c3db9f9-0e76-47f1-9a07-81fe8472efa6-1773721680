@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/toaster";
 import { ClaimWingerBlogEmbedInjector } from "@/components/ClaimWingerBlogEmbedInjector";
+import { ConsentBanner } from "@/components/ConsentBanner";
 import "@/styles/globals.css";
 import Head from "next/head";
 import type { AppProps } from "next/app";
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Component {...pageProps} />
       <ClaimWingerBlogEmbedInjector />
+      <ConsentBanner />
       <Toaster />
     </>
   );
