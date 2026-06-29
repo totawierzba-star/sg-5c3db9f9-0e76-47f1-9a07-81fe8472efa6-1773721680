@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
 type ClaimWingerHiSectionProps = {
@@ -82,6 +83,11 @@ export function ClaimWingerHiSection({
         title="ClaimWinger हिंदी फॉर्म"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
+      />
+      <ClaimWingerAppCta
+        locale="hi"
+        placement="claimwinger_section"
+        className="mt-8"
       />
     </section>
   );

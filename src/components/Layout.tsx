@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeSwitch } from "./ThemeSwitch";
@@ -117,6 +119,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
                 {/* Mobile Language Selector */}
                 <div className="border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+                  <GooglePlayButton
+                    locale="pl"
+                    placement="mobile_menu"
+                    campaign="android_app_menu"
+                    className="w-full justify-center"
+                  />
+                </div>
                 <MobileLanguageList
                   currentLocale="pl"
                   title="Wybierz język"
@@ -240,6 +250,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="pl" />
     </div>
     </ThemeProvider>
   );

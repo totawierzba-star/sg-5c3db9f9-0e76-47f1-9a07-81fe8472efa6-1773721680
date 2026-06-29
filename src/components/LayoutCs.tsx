@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { ReactNode, useState } from "react";
 import { Menu, X, Plane, Scale, BookOpen } from "lucide-react";
 import { ThemeSwitch } from "./ThemeSwitch";
@@ -100,6 +102,14 @@ export function LayoutCs({ children }: LayoutCsProps) {
                   Blog
                 </Link>
 
+                <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+                  <GooglePlayButton
+                    locale="cs"
+                    placement="mobile_menu"
+                    campaign="android_app_menu"
+                    className="w-full justify-center"
+                  />
+                </div>
                 <MobileLanguageList
                   currentLocale="cs"
                   title="Jazyk"
@@ -219,6 +229,9 @@ export function LayoutCs({ children }: LayoutCsProps) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="cs" />
     </div>
   );
 }

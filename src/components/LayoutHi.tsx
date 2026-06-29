@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { ReactNode, useState } from "react";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeProvider";
@@ -135,6 +137,14 @@ export function LayoutHi({ children }: LayoutHiProps) {
                   Blog
                 </Link>
 
+                <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+                  <GooglePlayButton
+                    locale="hi"
+                    placement="mobile_menu"
+                    campaign="android_app_menu"
+                    className="w-full justify-center"
+                  />
+                </div>
                 <MobileLanguageList
                   currentLocale="hi"
                   title="भाषा चुनें"
@@ -270,6 +280,9 @@ export function LayoutHi({ children }: LayoutHiProps) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="hi" />
     </div>
   );
 }

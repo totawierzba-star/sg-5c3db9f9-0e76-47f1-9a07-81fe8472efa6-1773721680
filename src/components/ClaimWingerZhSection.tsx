@@ -1,6 +1,7 @@
 import { ShieldCheck, Sparkles } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 
 type ClaimWingerZhSectionProps = {
   className?: string;
@@ -54,6 +55,11 @@ export function ClaimWingerZhSection({
         title="ClaimWinger 中文表单"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
+      />
+      <ClaimWingerAppCta
+        locale="zh"
+        placement="claimwinger_section"
+        className="mt-8"
       />
     </section>
   );

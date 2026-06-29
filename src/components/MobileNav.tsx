@@ -7,6 +7,7 @@ import { getTranslations } from "@/lib/translations";
 import { type Locale } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { MobileLanguageList } from "@/components/LanguageMenu";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 
 interface MobileNavProps {
   isOpen?: boolean;
@@ -139,6 +140,12 @@ export function MobileNav({
           </nav>
 
           <div className="p-6 border-t border-slate-700 space-y-4">
+            <GooglePlayButton
+              locale={locale}
+              placement="mobile_nav_drawer"
+              campaign="android_app_menu"
+              className="w-full justify-center bg-white text-slate-900 hover:bg-slate-100"
+            />
             <MobileLanguageList
               currentLocale={locale === "en" ? "en" : "pl"}
               title="Język / Language"

@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { ClaimWingerLogo } from "@/components/ClaimWingerLogo";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
@@ -87,6 +88,11 @@ export function ClaimWingerElSection({
         title="ClaimWinger ελληνική φόρμα"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
+      />
+      <ClaimWingerAppCta
+        locale="el"
+        placement="claimwinger_section"
+        className="mt-8"
       />
     </section>
   );

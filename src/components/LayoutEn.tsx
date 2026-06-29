@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { ReactNode } from "react";
 import { Plane } from "lucide-react";
 
@@ -87,6 +89,14 @@ export function LayoutEn({ children }: LayoutEnProps) {
             >
               Blog
             </Link>
+            <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+              <GooglePlayButton
+                locale="en"
+                placement="mobile_menu"
+                campaign="android_app_menu"
+                className="w-full justify-center"
+              />
+            </div>
             <MobileLanguageList
               currentLocale="en"
               title="Language"
@@ -207,6 +217,9 @@ export function LayoutEn({ children }: LayoutEnProps) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="en" />
     </div>
   );
 }

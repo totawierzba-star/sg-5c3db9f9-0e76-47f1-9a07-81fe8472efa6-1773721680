@@ -1,6 +1,7 @@
 import { ShieldCheck, Sparkles, ArrowRight } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
 type ClaimWingerHuSectionProps = {
@@ -82,6 +83,11 @@ export function ClaimWingerHuSection({
         title="ClaimWinger magyar űrlap"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
+      />
+      <ClaimWingerAppCta
+        locale="hu"
+        placement="claimwinger_section"
+        className="mt-8"
       />
     </section>
   );
