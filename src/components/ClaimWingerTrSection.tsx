@@ -1,6 +1,7 @@
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 
 import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { pushClaimWingerEvent } from "@/lib/claimwingerTracking";
 
 type ClaimWingerTrSectionProps = {
@@ -79,6 +80,11 @@ export function ClaimWingerTrSection({
         title="ClaimWinger Turkce form"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
+      />
+      <ClaimWingerAppCta
+        locale="tr"
+        placement="claimwinger_section"
+        className="mt-8"
       />
     </section>
   );

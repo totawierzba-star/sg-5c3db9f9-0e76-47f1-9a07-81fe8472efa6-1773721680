@@ -1,5 +1,7 @@
 import { ReactNode, useState } from "react";
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { Menu, X, Sun, Moon, Plane } from "lucide-react";
 
 import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
@@ -139,6 +141,14 @@ export function LayoutTr({ children }: LayoutTrProps) {
                 Blog
               </Link>
 
+              <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+                <GooglePlayButton
+                  locale="tr"
+                  placement="mobile_menu"
+                  campaign="android_app_menu"
+                  className="w-full justify-center"
+                />
+              </div>
               <MobileLanguageList
                 currentLocale="tr"
                 title="Dil"
@@ -246,6 +256,9 @@ export function LayoutTr({ children }: LayoutTrProps) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="tr" />
     </div>
   );
 }

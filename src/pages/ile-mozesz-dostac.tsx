@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { FlightCompensationCalculator } from "@/components/FlightCompensationCalculator";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -124,6 +125,11 @@ export default function IleMozeszDostac() {
               przejść do ClaimWinger, gdzie sprawa zostanie zweryfikowana na
               podstawie dokumentów lotu i przyczyny zakłócenia.
             </p>
+            <ClaimWingerAppCta
+              locale="pl"
+              placement="calculator_result"
+              className="mx-auto mt-8 max-w-3xl"
+            />
           </div>
         </div>
       </section>

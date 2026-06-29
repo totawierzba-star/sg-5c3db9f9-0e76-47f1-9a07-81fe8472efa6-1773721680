@@ -1,5 +1,7 @@
 import { ReactNode, useState } from "react";
 import Link from "next/link";
+import { ClaimWingerAppBanner } from "@/components/ClaimWingerAppBanner";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import { Menu, X, Sun, Moon, Plane, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeProvider";
 import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/LanguageMenu";
@@ -186,6 +188,14 @@ export function LayoutZh({ children }: LayoutZhProps) {
                 联系我们 (WhatsApp)
               </a>
 
+                <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
+                  <GooglePlayButton
+                    locale="zh"
+                    placement="mobile_menu"
+                    campaign="android_app_menu"
+                    className="w-full justify-center"
+                  />
+                </div>
                 <MobileLanguageList
                   currentLocale="zh"
                   title="语言"
@@ -314,6 +324,9 @@ export function LayoutZh({ children }: LayoutZhProps) {
           </div>
         </div>
       </footer>
+
+      <div aria-hidden className="h-16 md:hidden" />
+      <ClaimWingerAppBanner locale="zh" />
     </div>
   );
 }

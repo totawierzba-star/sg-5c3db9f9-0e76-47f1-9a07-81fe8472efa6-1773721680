@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Euro, Ruler, ShieldCheck } from "lucide-react";
 
 import { FlightCompensationCalculator } from "@/components/FlightCompensationCalculator";
+import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import type { CalculatorLocaleCode } from "@/lib/flightCompensationCalculatorCopy";
@@ -1090,6 +1091,11 @@ export function LocalizedCalculatorPage({ locale }: { locale: Exclude<Calculator
             <p className="mx-auto mt-5 max-w-3xl text-center text-sm leading-6 text-slate-600 dark:text-slate-300">
               {copy.afterCalculator}
             </p>
+            <ClaimWingerAppCta
+              locale={locale}
+              placement="calculator_result"
+              className="mx-auto mt-8 max-w-3xl"
+            />
           </div>
         </section>
 
