@@ -446,6 +446,12 @@ export default function QatarAirwaysOdwolaniePolska() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/odwolany-lot-dzien-przed-wylotem-odszkodowanie" className="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                  <ArrowRight className="w-4 h-4" />
+                  Odwołany lot dzień przed wylotem — zwrot, lot zastępczy i odszkodowanie
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog/odwolany-lot-historia-pasazera" className="text-blue-600 hover:text-blue-800 flex items-center gap-2">
                   <ArrowRight className="w-4 h-4" />
                   Historia pasażera: Jak wywalczyłem odszkodowanie za odwołany lot

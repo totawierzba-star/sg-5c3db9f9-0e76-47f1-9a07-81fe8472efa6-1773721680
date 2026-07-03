@@ -454,6 +454,15 @@ export default function RyanairOdwolanie14DniPrzedLotem() {
                 </p>
               </Link>
 
+              <Link href="/blog/odwolany-lot-dzien-przed-wylotem-odszkodowanie" className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+                <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 mb-2">
+                  Odwołany lot dzień przed wylotem
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Sprawdź, kiedy odwołanie na ostatnią chwilę daje zwrot, lot zastępczy i 250-600 EUR.
+                </p>
+              </Link>
+
               <Link href="/blog/ryanair-voucher-zamiast-gotowki-wymusic" className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 mb-2">
                   Ryanair voucher — jak wymusić gotówkę?

@@ -698,6 +698,26 @@ export default function NadzwyczajneOkolicznosciOdszkodowanie() {
             </Card>
           </div>
 
+          <Card className="mt-10">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+                Pogoda jako powód odmowy
+              </h2>
+              <p className="text-slate-700 dark:text-slate-300 mb-4">
+                Jeżeli linia napisała tylko "weather" albo "złe warunki pogodowe",
+                sprawdź osobny przewodnik o tym, kiedy taka odmowa jest zasadna,
+                a kiedy warto ją zakwestionować.
+              </p>
+              <Link
+                href="/blog/opozniony-lot-przez-pogode-odszkodowanie"
+                className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:underline"
+              >
+                Opóźniony lot przez pogodę — czy należy się odszkodowanie?
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </CardContent>
+          </Card>
+
           {/* Back to Blog */}
           <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-700">
             <Link

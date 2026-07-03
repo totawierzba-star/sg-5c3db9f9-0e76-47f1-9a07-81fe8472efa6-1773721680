@@ -334,6 +334,36 @@ export default function OpoznienieNocneHotelTransportKtoPlaci() {
                   Czytaj więcej <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
+
+              <Link
+                href="/blog/opozniony-lot-przez-pogode-odszkodowanie"
+                className="block bg-white border border-slate-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+              >
+                <h3 className="font-bold text-lg text-slate-900 mb-2">
+                  Opóźniony lot przez pogodę
+                </h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Sprawdź, kiedy pogoda blokuje odszkodowanie, ale nie zwrot za hotel i opiekę.
+                </p>
+                <span className="text-blue-600 text-sm font-semibold flex items-center gap-1">
+                  Czytaj więcej <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+
+              <Link
+                href="/blog/lot-przekierowany-na-inne-lotnisko-odszkodowanie"
+                className="block bg-white border border-slate-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+              >
+                <h3 className="font-bold text-lg text-slate-900 mb-2">
+                  Lot przekierowany na inne lotnisko
+                </h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Dowiedz się, kto płaci za dojazd i kiedy przekierowanie daje roszczenie.
+                </p>
+                <span className="text-blue-600 text-sm font-semibold flex items-center gap-1">
+                  Czytaj więcej <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
             </div>
           </section>
         </div>

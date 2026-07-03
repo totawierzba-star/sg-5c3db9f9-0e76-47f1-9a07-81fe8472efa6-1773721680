@@ -390,6 +390,10 @@ export default function ClaimWingerAirHelpFlightrightPorownanie() {
                 <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Co zrobić gdy linia nie odpowiada</span>
               </Link>
+              <Link href="/blog/skarga-ulc-rzecznik-praw-pasazera-odszkodowanie-lot" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Skarga do ULC po odmowie linii</span>
+              </Link>
             </div>
           </section>
         </div>

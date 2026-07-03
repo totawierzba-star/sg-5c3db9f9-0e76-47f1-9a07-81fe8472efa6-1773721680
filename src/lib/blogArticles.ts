@@ -1413,6 +1413,51 @@ export const blogArticles: BlogArticle[] = [
     category: "Prawo lotnicze",
     featured: true,
     color: "blue"
+  },
+  {
+    title: "Opóźniony lot przez pogodę — czy należy się odszkodowanie?",
+    slug: "opozniony-lot-przez-pogode-odszkodowanie",
+    excerpt: "Burza, mgła, śnieg albo wiatr? Sprawdź, kiedy pogoda wyłącza odszkodowanie 250-600 EUR, a kiedy linia nadal musi zapewnić posiłki, hotel i transport.",
+    date: "2026-07-05",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    color: "sky"
+  },
+  {
+    title: "Lot przekierowany na inne lotnisko — dojazd i odszkodowanie",
+    slug: "lot-przekierowany-na-inne-lotnisko-odszkodowanie",
+    excerpt: "Samolot wylądował na innym lotnisku? Zobacz, kto płaci za dojazd, kiedy należy się zwrot kosztów i kiedy możliwe jest 250-600 EUR odszkodowania.",
+    date: "2026-07-06",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    color: "indigo"
+  },
+  {
+    title: "Skarga do ULC / Rzecznika Praw Pasażerów — kiedy po odmowie linii?",
+    slug: "skarga-ulc-rzecznik-praw-pasazera-odszkodowanie-lot",
+    excerpt: "Linia odmówiła albo milczy? Sprawdź, kiedy złożyć wniosek do Rzecznika Praw Pasażerów, co przygotować i kiedy lepsza jest ścieżka claim lub sąd.",
+    date: "2026-07-07",
+    readTime: "9 min",
+    category: "Prawo lotnicze",
+    color: "blue"
+  },
+  {
+    title: "Odwołany lot dzień przed wylotem — zwrot, lot zastępczy i odszkodowanie",
+    slug: "odwolany-lot-dzien-przed-wylotem-odszkodowanie",
+    excerpt: "Odwołanie na ostatnią chwilę? Poznaj regułę 14 i 7 dni, prawo do zwrotu, lotu zastępczego, hotelu oraz 250-600 EUR odszkodowania.",
+    date: "2026-07-08",
+    readTime: "8 min",
+    category: "Prawo lotnicze",
+    color: "red"
+  },
+  {
+    title: "Opóźniony bagaż — co kupić, jak zgłosić PIR i ile można odzyskać?",
+    slug: "opozniony-bagaz-odszkodowanie-21-dni",
+    excerpt: "Bagaż nie doleciał razem z Tobą? Sprawdź, jak zgłosić PIR, jakie zakupy są rozsądne, jakie rachunki zachować i jak działa termin 21 dni.",
+    date: "2026-07-09",
+    readTime: "7 min",
+    category: "Prawo lotnicze",
+    color: "emerald"
   }
 ];
 

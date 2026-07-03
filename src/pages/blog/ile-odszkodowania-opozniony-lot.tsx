@@ -418,6 +418,10 @@ export default function IleOdskodowaniaOpoznionyLot() {
                 <Plane className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Nadzwyczajne okoliczności</span>
               </Link>
+              <Link href="/blog/lot-przekierowany-na-inne-lotnisko-odszkodowanie" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <Plane className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Lot przekierowany na inne lotnisko</span>
+              </Link>
               <Link href="/blog/przedawnienie-roszczen-lotniczych" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <Plane className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Przedawnienie roszczeń</span>

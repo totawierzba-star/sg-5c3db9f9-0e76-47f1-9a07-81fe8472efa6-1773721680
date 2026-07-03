@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function MissedConnectionGuide() {
   return (
@@ -149,6 +150,24 @@ export default function MissedConnectionGuide() {
             </div>
           </div>
 
+        </section>
+
+        <section className="mb-12 border-t pt-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Co jeśli problem skończył się lądowaniem na innym lotnisku?
+          </h2>
+          <p className="text-gray-700 mb-5">
+            Przy lotach łączonych zdarza się, że przewoźnik dowozi pasażerów do
+            innego portu i dopiero potem autobusem do celu. Wtedy warto oddzielnie
+            policzyć opóźnienie w miejscu docelowym i koszty dojazdu.
+          </p>
+          <Link
+            href="/blog/lot-przekierowany-na-inne-lotnisko-odszkodowanie"
+            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Lot przekierowany na inne lotnisko — kto płaci za dojazd?
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </section>
 
         <script

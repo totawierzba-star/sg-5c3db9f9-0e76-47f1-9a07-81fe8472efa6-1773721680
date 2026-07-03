@@ -425,6 +425,24 @@ export default function WizzAirOdwolanyLotPolskaPrawa() {
             </div>
           </section>
 
+          <section className="mb-12 bg-white border border-purple-200 rounded-2xl p-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Odwołanie tuż przed podróżą
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Jeżeli Wizz Air odwołał lot dzień przed wylotem, sprawdź osobny
+              przewodnik o regule 14 i 7 dni, prawie do lotu zastępczego oraz
+              dodatkowym odszkodowaniu.
+            </p>
+            <Link
+              href="/blog/odwolany-lot-dzien-przed-wylotem-odszkodowanie"
+              className="inline-flex items-center gap-2 text-purple-700 font-semibold hover:text-purple-900"
+            >
+              Odwołany lot dzień przed wylotem — zwrot, lot zastępczy i odszkodowanie
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </section>
+
           <section className="bg-gradient-to-r from-purple-100 to-purple-50 rounded-2xl p-8 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Wizz Air odwołał Twój lot? Sprawdź odszkodowanie!

@@ -374,6 +374,16 @@ export default function ZgubionyBagazPage() {
               Przeczytaj również:
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
+              <Link href="/blog/opozniony-bagaz-odszkodowanie-21-dni" className="group">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition-colors">
+                  <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 mb-2">
+                    Opóźniony bagaż: PIR, paragony i termin 21 dni
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Co kupić po opóźnieniu bagażu i jak odzyskać uzasadnione koszty.
+                  </p>
+                </div>
+              </Link>
               <Link href="/blog/odszkodowanie-lot-polish-airlines" className="group">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition-colors">
                   <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 mb-2">

@@ -518,6 +518,10 @@ export default function LiniaNieOdpowiada() {
                 <FileText className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Jak złożyć wniosek o odszkodowanie</span>
               </Link>
+              <Link href="/blog/skarga-ulc-rzecznik-praw-pasazera-odszkodowanie-lot" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <FileText className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Skarga do ULC / Rzecznika Praw Pasażerów</span>
+              </Link>
               <Link href="/blog/najczestsze-bledy-reklamacja" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                 <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Najczęstsze błędy przy reklamacji</span>

@@ -878,6 +878,18 @@ export default function NajczestszeBledyReklamacja() {
               </Link>
 
               <Link
+                href="/blog/opozniony-bagaz-odszkodowanie-21-dni"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  Opóźniony bagaż — co kupić i jak zgłosić PIR?
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Osobna checklista dla reklamacji bagażowej: paragony, termin 21 dni i limit Konwencji Montrealskiej.
+                </p>
+              </Link>
+
+              <Link
                 href="/blog/nadzwyczajne-okolicznosci-odszkodowanie"
                 className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
               >

@@ -1,4 +1,5 @@
 import { GetServerSideProps } from 'next';
+import { blogArticles } from '@/lib/blogArticles';
 import { blogArticlesHi } from '@/lib/blogArticlesHi';
 import { blogArticlesEnIrelandSorted } from '@/lib/blogArticlesEnIreland';
 import { blogArticlesBgSorted } from '@/lib/blogArticlesBg';
@@ -10,6 +11,27 @@ import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
 
 const EXTERNAL_DATA_URL = 'https://problemlot.com';
+
+const businessTravelArtifactSlugs = new Set([
+  'lot-b2b-odszkodowanie-lot-sluzbowy',
+  'overbooking-lot-sluzbowy-pracy',
+  'odwolany-lot-sluzbowy-koszty-hotel-przesiadki',
+  'ec-261-2004-loty-sluzbowe-rozporzadzenie',
+  'lot-sluzbowy-opozniony-3-godziny-kroki',
+  'zgubiony-bagaz-podroz-sluzbowa-odszkodowanie-procedura',
+  'opoznienie-lotu-spotkanie-biznesowe-koszty-konsekwencje',
+  'lot-sluzbowy-odwolany-ostatnia-chwila-co-zrobic',
+  'bilet-sluzbowy-firma-reklamacja-kto-sklada',
+  'jak-napisac-polityke-podrozy-sluzbowych-firmy',
+  'travel-policy-regulamin-firmowy-elementy',
+  'limity-klasy-biletow-podroz-sluzbowa-jak-ustalic',
+  'self-booking-tool-vs-agencja-travel-porownanie-firmy',
+  'zarzadzanie-wydatkami-loty-sluzbowe-narzedzia-systemy',
+  'duty-of-care-obowiazek-pracodawcy-podrozujacy-pracownik',
+  'polityka-zrownowazonych-podrozy-sluzbowych-jak-wdrozyc',
+  'podroze-sluzbowe-work-life-balance-polityka-przedluzania-wyjazdow',
+  'kpi-podrozy-sluzbowe-jak-mierzyc-efektywnosc-travel-policy',
+]);
 
 function generateSiteMap(pages: { url: string; priority: string; changefreq: string }[]) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -49,6 +71,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/pracodawca-a-odszkodowanie', priority: '0.9', changefreq: 'weekly' },
     
     // --- POLISH ARTICLES ---
+    { url: '/blog', priority: '0.8', changefreq: 'weekly' },
     { url: '/artykuly', priority: '0.8', changefreq: 'weekly' },
     { url: '/artykuly/bleisure-polityka-podrozy-sluzbowych', priority: '0.7', changefreq: 'monthly' },
     { url: '/artykuly/business-class-vs-premium-economy', priority: '0.7', changefreq: 'monthly' },
@@ -208,8 +231,24 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const polishBlogPages = Array.from(
+    new Map(
+      blogArticles
+        .filter((article) => !businessTravelArtifactSlugs.has(article.slug))
+        .map((article) => [
+          article.slug,
+          {
+            url: `/blog/${article.slug}`,
+            priority: article.featured ? '0.8' : '0.7',
+            changefreq: 'monthly',
+          },
+        ]),
+    ).values(),
+  );
+
   const sitemap = generateSiteMap([
     ...pages,
+    ...polishBlogPages,
     ...enIrelandBlogPages,
     ...hiBlogPages,
     ...huBlogPages,

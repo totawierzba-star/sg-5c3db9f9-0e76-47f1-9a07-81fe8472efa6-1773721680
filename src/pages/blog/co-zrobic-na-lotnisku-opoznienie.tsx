@@ -199,6 +199,26 @@ export default function AirportDelayGuide() {
           </div>
         </section>
 
+        <section className="mb-12 border-t pt-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Dodatkowe sytuacje, które warto sprawdzić:
+          </h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/blog/opozniony-lot-przez-pogode-odszkodowanie" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Opóźnienie przez pogodę</h3>
+              <p className="text-sm text-gray-600">Kiedy pogoda wyłącza odszkodowanie, a kiedy nadal należy się opieka?</p>
+            </Link>
+            <Link href="/blog/opozniony-bagaz-odszkodowanie-21-dni" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Opóźniony bagaż</h3>
+              <p className="text-sm text-gray-600">Co kupić, jak zgłosić PIR i jak pilnować terminu 21 dni?</p>
+            </Link>
+            <Link href="/blog/lot-przekierowany-na-inne-lotnisko-odszkodowanie" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Lot przekierowany</h3>
+              <p className="text-sm text-gray-600">Kto płaci za dojazd z innego lotniska i kiedy jest odszkodowanie?</p>
+            </Link>
+          </div>
+        </section>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

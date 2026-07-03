@@ -1023,6 +1023,18 @@ export default function JakZlozycWniosekOdszkodowanie() {
               </Link>
 
               <Link
+                href="/blog/skarga-ulc-rzecznik-praw-pasazera-odszkodowanie-lot"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  Skarga do ULC / Rzecznika Praw Pasażerów
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Zobacz, kiedy eskalować sprawę po odmowie lub braku odpowiedzi przewoźnika.
+                </p>
+              </Link>
+
+              <Link
                 href="/blog/przedawnienie-roszczen-lotniczych"
                 className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
               >
