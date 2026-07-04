@@ -218,7 +218,6 @@ export function LayoutEn({ children }: LayoutEnProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="en" />
     </div>
   );

@@ -239,7 +239,6 @@ export function LayoutSk({ children }: LayoutSkProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="sk" />
     </div>
   );

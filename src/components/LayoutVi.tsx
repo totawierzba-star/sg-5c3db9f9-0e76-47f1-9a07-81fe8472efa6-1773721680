@@ -260,7 +260,6 @@ export function LayoutVi({ children }: LayoutViProps) {
           </div>
         </footer>
 
-        <div aria-hidden className="h-16 md:hidden" />
         <ClaimWingerAppBanner locale="vi" />
       </div>
     </ThemeProvider>

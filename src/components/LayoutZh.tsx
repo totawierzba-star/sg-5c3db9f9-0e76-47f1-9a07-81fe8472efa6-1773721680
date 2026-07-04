@@ -325,7 +325,6 @@ export function LayoutZh({ children }: LayoutZhProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="zh" />
     </div>
   );

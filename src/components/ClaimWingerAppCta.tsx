@@ -1,8 +1,16 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { Smartphone, Camera, PenLine, BellRing } from "lucide-react";
 
 import { ClaimWingerLogo } from "@/components/ClaimWingerLogo";
 import { GooglePlayButton } from "@/components/GooglePlayButton";
-import { getAppCopy } from "@/lib/claimwingerApp";
+import {
+  detectClaimWingerDeviceOS,
+  getAppCopy,
+  getClaimWingerAppCtaVariant,
+  type ClaimWingerDeviceOS,
+} from "@/lib/claimwingerApp";
 import { type SiteLanguageCode } from "@/lib/siteLanguages";
 
 type ClaimWingerAppCtaProps = {
@@ -28,11 +36,26 @@ export function ClaimWingerAppCta({
   title,
   description,
 }: ClaimWingerAppCtaProps) {
+  const [deviceOS, setDeviceOS] = useState<ClaimWingerDeviceOS>("unknown");
   const copy = getAppCopy(locale);
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
+  const isWebFallback =
+    getClaimWingerAppCtaVariant(deviceOS) === "web_fallback";
+  const cardTitle =
+    title ??
+    (isWebFallback ? copy.fallbackTitle ?? copy.webCta : copy.title);
+  const cardDescription =
+    description ??
+    (isWebFallback
+      ? copy.fallbackDescription ?? copy.fallbackBarText
+      : copy.description);
 
   // Short labels describing the three key app capabilities, per locale.
   const featureLabels = APP_FEATURE_LABELS[locale] ?? APP_FEATURE_LABELS.en;
+
+  useEffect(() => {
+    setDeviceOS(detectClaimWingerDeviceOS(window.navigator.userAgent));
+  }, []);
 
   return (
     <section className={wrapperClassName} data-claimwinger-app-cta="true">
@@ -47,10 +70,10 @@ export function ClaimWingerAppCta({
         </div>
 
         <h2 className="mb-3 text-2xl font-bold text-slate-900 dark:text-white">
-          {title ?? copy.title}
+          {cardTitle}
         </h2>
         <p className="max-w-3xl text-base leading-7 text-slate-600 dark:text-slate-300">
-          {description ?? copy.description}
+          {cardDescription}
         </p>
 
         <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">

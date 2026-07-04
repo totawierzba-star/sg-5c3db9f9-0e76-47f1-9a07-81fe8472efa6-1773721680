@@ -179,7 +179,6 @@ export function LayoutSv({ children }: LayoutProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="sv" />
     </div>
   );

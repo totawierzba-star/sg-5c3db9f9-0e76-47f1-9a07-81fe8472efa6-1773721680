@@ -221,7 +221,6 @@ export function LayoutBg({ children }: LayoutBgProps) {
           </div>
         </footer>
 
-        <div aria-hidden className="h-16 md:hidden" />
         <ClaimWingerAppBanner locale="bg" />
       </div>
     </ThemeProvider>

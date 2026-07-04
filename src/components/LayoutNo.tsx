@@ -194,7 +194,6 @@ export function LayoutNo({ children }: LayoutNoProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="no" />
     </div>
   );

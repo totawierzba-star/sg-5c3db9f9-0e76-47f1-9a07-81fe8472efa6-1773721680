@@ -223,7 +223,6 @@ export function LayoutLv({ children }: LayoutLvProps) {
           </div>
         </footer>
 
-        <div aria-hidden className="h-16 md:hidden" />
         <ClaimWingerAppBanner locale="lv" />
       </div>
     </ThemeProvider>

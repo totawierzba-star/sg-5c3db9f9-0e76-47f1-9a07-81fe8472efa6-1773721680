@@ -251,7 +251,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="pl" />
     </div>
     </ThemeProvider>

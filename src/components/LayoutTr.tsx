@@ -257,7 +257,6 @@ export function LayoutTr({ children }: LayoutTrProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="tr" />
     </div>
   );

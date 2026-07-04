@@ -247,7 +247,6 @@ export function LayoutEl({ children }: LayoutElProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="el" />
     </div>
   );

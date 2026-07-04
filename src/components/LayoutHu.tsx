@@ -234,7 +234,6 @@ export function LayoutHu({ children }: LayoutHuProps) {
         </div>
       </footer>
 
-      <div aria-hidden className="h-16 md:hidden" />
       <ClaimWingerAppBanner locale="hu" />
     </div>
   );
