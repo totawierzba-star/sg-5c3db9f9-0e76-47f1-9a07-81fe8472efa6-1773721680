@@ -43,6 +43,8 @@ type GooglePlayButtonProps = {
   locale: SiteLanguageCode;
   placement: string;
   campaign?: string;
+  articleSlug?: string;
+  contentCluster?: string;
   className?: string;
   /** Tighter padding / single-line label for dense spots like nav drawers. */
   compact?: boolean;
@@ -58,6 +60,8 @@ export function GooglePlayButton({
   locale,
   placement,
   campaign,
+  articleSlug,
+  contentCluster,
   className,
   compact = false,
   fallbackToWeb = true,
@@ -108,6 +112,8 @@ export function GooglePlayButton({
         pagePath,
         deviceOS,
         ctaVariant,
+        articleSlug,
+        contentCluster,
       });
     };
 
@@ -129,7 +135,7 @@ export function GooglePlayButton({
     observer.observe(link);
 
     return () => observer.disconnect();
-  }, [ctaVariant, deviceOS, locale, pagePath, placement]);
+  }, [articleSlug, contentCluster, ctaVariant, deviceOS, locale, pagePath, placement]);
 
   return (
     <a
@@ -144,6 +150,8 @@ export function GooglePlayButton({
           pagePath,
           deviceOS,
           ctaVariant,
+          articleSlug,
+          contentCluster,
         })
       }
       className={cn(

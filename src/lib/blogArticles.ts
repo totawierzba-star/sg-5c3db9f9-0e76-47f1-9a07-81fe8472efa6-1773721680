@@ -1,3 +1,5 @@
+import { claimWingerAppArticleCards } from "@/lib/claimWingerAppSeoArticles";
+
 export interface BlogArticle {
   id?: string;
   title: string;
@@ -12,6 +14,8 @@ export interface BlogArticle {
 }
 
 export const blogArticles: BlogArticle[] = [
+  ...claimWingerAppArticleCards,
+
   // Oryginalne artykuły (1-20)
   {
     title: "Odszkodowanie LOT Polish Airlines — kompletny przewodnik 2025",

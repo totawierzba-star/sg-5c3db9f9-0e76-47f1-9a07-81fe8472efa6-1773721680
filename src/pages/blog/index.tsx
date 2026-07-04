@@ -70,6 +70,7 @@ export default function BlogIndex() {
           { id: "Wizz Air", label: "Wizz Air" },
           { id: "Linie lotnicze", label: "Linie lotnicze" },
           { id: "Prawo lotnicze", label: "Prawo lotnicze" },
+          { id: "Aplikacja i narzędzia", label: "Aplikacja i narzędzia" },
           { id: "Lotniska", label: "Lotniska" },
           { id: "Porównania", label: "Porównania" },
         ]}

@@ -16,6 +16,9 @@ import { type SiteLanguageCode } from "@/lib/siteLanguages";
 type ClaimWingerAppCtaProps = {
   locale: SiteLanguageCode;
   placement: string;
+  campaign?: string;
+  articleSlug?: string;
+  contentCluster?: string;
   className?: string;
   title?: string;
   description?: string;
@@ -32,6 +35,9 @@ const FEATURE_ICONS = [Camera, PenLine, BellRing];
 export function ClaimWingerAppCta({
   locale,
   placement,
+  campaign = "android_app_card",
+  articleSlug,
+  contentCluster,
   className = "",
   title,
   description,
@@ -95,7 +101,9 @@ export function ClaimWingerAppCta({
           <GooglePlayButton
             locale={locale}
             placement={placement}
-            campaign="android_app_card"
+            campaign={campaign}
+            articleSlug={articleSlug}
+            contentCluster={contentCluster}
           />
         </div>
       </div>

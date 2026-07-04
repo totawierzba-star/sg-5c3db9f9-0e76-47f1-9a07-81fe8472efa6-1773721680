@@ -394,6 +394,22 @@ export default function ClaimWingerAirHelpFlightrightPorownanie() {
                 <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-900 font-medium">Skarga do ULC po odmowie linii</span>
               </Link>
+              <Link href="/blog/czy-aplikacja-do-odszkodowania-za-lot-jest-bezpieczna" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <Shield className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Czy aplikacja do odszkodowania jest bezpieczna?</span>
+              </Link>
+              <Link href="/blog/no-win-no-fee-aplikacja-odszkodowanie-za-lot" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <DollarSign className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">No win, no fee w aplikacji ClaimWinger</span>
+              </Link>
+              <Link href="/blog/jak-wybrac-aplikacje-do-odszkodowania-za-lot" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Jak wybrać aplikację do odszkodowania za lot</span>
+              </Link>
+              <Link href="/blog/aplikacja-czy-formularz-online-odszkodowanie-za-lot" className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                <span className="text-gray-900 font-medium">Aplikacja czy formularz online?</span>
+              </Link>
             </div>
           </section>
         </div>

@@ -34,6 +34,8 @@ type ClaimWingerAppTrackingContext = {
   pagePath?: string;
   deviceOS?: ClaimWingerDeviceOS;
   ctaVariant?: ClaimWingerAppCtaVariant;
+  articleSlug?: string;
+  contentCluster?: string;
 };
 
 export type ClaimWingerStickyBannerExposure = "delayed" | "after_scroll" | "hidden";
@@ -228,6 +230,8 @@ function buildTrackingPayload(
     page_path: context.pagePath || "unknown",
     device_os: context.deviceOS || "unknown",
     cta_variant: context.ctaVariant || "google_play",
+    article_slug: context.articleSlug || "none",
+    content_cluster: context.contentCluster || "none",
     store:
       context.ctaVariant === "web_fallback" ? "claimwinger_web" : "google_play",
   };

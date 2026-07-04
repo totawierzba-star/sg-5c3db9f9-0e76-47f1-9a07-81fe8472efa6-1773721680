@@ -221,6 +221,56 @@ export default function JakZlozycWniosekOdszkodowanie() {
                 </div>
               </div>
             </div>
+
+            <div className="my-8 grid gap-4 md:grid-cols-2">
+              <Link
+                href="/blog/aplikacja-claimwinger-android-odszkodowanie-za-lot"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  Aplikacja ClaimWinger na Androida
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Jak zgłosić odszkodowanie z telefonu i dodać dokumenty bez komputera.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/dokumenty-do-odszkodowania-za-lot-aplikacja"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  Dokumenty do odszkodowania
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Co przygotować przed zgłoszeniem sprawy w aplikacji lub formularzu.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/aplikacja-czy-formularz-online-odszkodowanie-za-lot"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  Aplikacja czy formularz online?
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Którą ścieżkę wybrać przy zgłaszaniu odszkodowania za lot.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/no-win-no-fee-aplikacja-odszkodowanie-za-lot"
+                className="block p-6 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+              >
+                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                  No win, no fee w aplikacji
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Co oznacza brak opłat z góry i co sprawdzić przed podpisem.
+                </p>
+              </Link>
+            </div>
           </section>
 
           {/* CTA #1 - Po intro */}

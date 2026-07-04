@@ -216,6 +216,18 @@ export default function AirportDelayGuide() {
               <h3 className="font-bold text-gray-900 mb-2">Lot przekierowany</h3>
               <p className="text-sm text-gray-600">Kto płaci za dojazd z innego lotniska i kiedy jest odszkodowanie?</p>
             </Link>
+            <Link href="/blog/jak-zglosic-opozniony-lot-z-telefonu" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Zgłoszenie z telefonu</h3>
+              <p className="text-sm text-gray-600">Co sfotografować na lotnisku i jak zacząć sprawę w aplikacji ClaimWinger?</p>
+            </Link>
+            <Link href="/blog/odwolany-lot-na-lotnisku-aplikacja" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Odwołany lot w aplikacji</h3>
+              <p className="text-sm text-gray-600">Jak zebrać komunikat o odwołaniu, lot zastępczy i rachunki za opiekę?</p>
+            </Link>
+            <Link href="/blog/pobierz-claimwinger-google-play-android" className="block p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+              <h3 className="font-bold text-gray-900 mb-2">Pobierz ClaimWinger</h3>
+              <p className="text-sm text-gray-600">Oficjalna ścieżka Google Play dla Androida i alternatywa online.</p>
+            </Link>
           </div>
         </section>
 

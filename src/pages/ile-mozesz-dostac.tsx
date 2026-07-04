@@ -403,6 +403,26 @@ export default function IleMozeszDostac() {
                   <p className="font-semibold text-sm">Strona główna →</p>
                 </Card>
               </Link>
+              <Link href="/blog/aplikacja-claimwinger-android-odszkodowanie-za-lot">
+                <Card className="p-4 hover:shadow-lg hover:border-primary transition-all cursor-pointer">
+                  <p className="font-semibold text-sm">Aplikacja ClaimWinger →</p>
+                </Card>
+              </Link>
+              <Link href="/blog/aplikacja-czy-formularz-online-odszkodowanie-za-lot">
+                <Card className="p-4 hover:shadow-lg hover:border-primary transition-all cursor-pointer">
+                  <p className="font-semibold text-sm">Aplikacja czy formularz →</p>
+                </Card>
+              </Link>
+              <Link href="/blog/sledzenie-statusu-odszkodowania-za-lot">
+                <Card className="p-4 hover:shadow-lg hover:border-primary transition-all cursor-pointer">
+                  <p className="font-semibold text-sm">Status sprawy →</p>
+                </Card>
+              </Link>
+              <Link href="/blog/pobierz-claimwinger-google-play-android">
+                <Card className="p-4 hover:shadow-lg hover:border-primary transition-all cursor-pointer">
+                  <p className="font-semibold text-sm">Pobierz aplikację →</p>
+                </Card>
+              </Link>
             </div>
           </div>
         </div>
