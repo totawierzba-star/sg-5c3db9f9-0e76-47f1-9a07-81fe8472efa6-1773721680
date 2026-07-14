@@ -69,6 +69,10 @@ const airportSuggestionsByLocale: Record<CalculatorLocaleCode, AirportSuggestion
     from: ["TLL", "RIX", "HEL", "ARN", "FRA", "LHR", "OSL", "CPH"],
     to: ["LHR", "FRA", "ARN", "OSL", "CPH", "AMS", "HEL", "TLL"],
   },
+  ja: {
+    from: ["NRT", "HND", "KIX", "WAW", "FRA", "HEL", "CDG", "MUC"],
+    to: ["WAW", "FRA", "HEL", "CDG", "AMS", "MUC", "LHR", "NRT"],
+  },
   bg: {
     from: ["SOF", "VAR", "BOJ", "OTP", "IST", "VIE", "FRA", "LHR"],
     to: ["FRA", "VIE", "LHR", "CDG", "AMS", "IST", "SOF", "VAR"],

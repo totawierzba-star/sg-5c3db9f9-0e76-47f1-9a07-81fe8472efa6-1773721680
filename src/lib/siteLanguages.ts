@@ -16,7 +16,8 @@ export type SiteLanguageCode =
   | "lt"
   | "lv"
   | "sr"
-  | "et";
+  | "et"
+  | "ja";
 
 export type SiteLanguage = {
   code: SiteLanguageCode;
@@ -45,6 +46,7 @@ export const SITE_LANGUAGES: SiteLanguage[] = [
   { code: "lv", label: "Latviešu", shortLabel: "LV", flag: "🇱🇻", href: "/lv" },
   { code: "sr", label: "Srpski", shortLabel: "SR", flag: "🇷🇸", href: "/sr" },
   { code: "et", label: "Eesti", shortLabel: "ET", flag: "🇪🇪", href: "/et" },
+  { code: "ja", label: "日本語", shortLabel: "JA", flag: "🇯🇵", href: "/ja" },
 ];
 
 const PL_TO_EN_ROUTE_MAP: Record<string, string> = {

@@ -297,6 +297,75 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "Alustage kalkulaatoriga ja jätkake ClaimWingeriga, kui marsruut ja olukord näivad paljutõotavad.",
     finalCtaLabel: "Ava kalkulaator",
   },
+  ja: {
+    language: "Japanese",
+    ogLocale: "ja_JP",
+    urlPath: "/ja/keisanki",
+    title: "フライト補償金計算機 | 250・400・600ユーロを確認",
+    description:
+      "EU規則261/2004とUK261に基づく無料のフライト補償金計算機です。フライトの遅延、欠航、搭乗拒否、乗り継ぎ失敗に対応し、日本発着のフライトも確認できます。",
+    eyebrow: "無料のEU261・UK261計算機",
+    heading: "フライト補償金計算機",
+    intro:
+      "フライトの遅延、欠航、オーバーブッキング、乗り継ぎ失敗が、乗客1人あたり250、400または600ユーロの補償金の対象になるかどうかを、数ステップで確認できます。",
+    afterCalculator:
+      "結果は最初の概算です。ClaimWingerはその後、予約内容、実際の到着時刻、トラブルの原因、航空会社の責任を確認したうえで請求を行います。請求フォームは日本語でご利用いただけます。",
+    bandsHeading: "距離別の補償金額",
+    bandsDescription:
+      "EU規則261/2004とUK261は固定額の補償金を定めています。チケット代金は金額に影響しません。",
+    bandShort: "短距離",
+    bandMedium: "中距離",
+    bandLong: "長距離",
+    bandShortDescription: "1,500kmまでのフライト。ヨーロッパ内の短い区間で、250ユーロが基準です。",
+    bandMediumDescription: "1,500〜3,500kmのフライト。ヨーロッパ内の長めの区間で、400ユーロが基準です。",
+    bandLongDescription: "3,500kmを超えるフライト。ワルシャワ–東京(約8,600km)やフランクフルト–東京(約9,350km)など、EUと日本を結ぶ路線はすべて600ユーロの区分に入ります。",
+    rulesHeading: "計算機が確認する内容",
+    rules: [
+      "出発地または到着地がEU261、UK261、スイスまたはEEAの旅客権利ルールの適用範囲に入るか。",
+      "到着時の遅延、欠航の通知期間、搭乗拒否、乗り継ぎ失敗が法定の基準を満たすか。",
+      "日本発のフライトが対象か — 日本の空港から出発するフライトは、LOTポーランド航空やLufthansaなどEU・EEAの航空会社が運航する場合のみ対象になります。",
+      "特別な事情により、請求の前に手動での法的確認が必要になるか。",
+    ],
+    faqHeading: "よくある質問:フライト補償金計算機",
+    faq: [
+      {
+        question: "計算結果は最終的なものですか?",
+        answer:
+          "いいえ。入力された路線と状況に基づく迅速な概算です。実際の請求では、書類、実際の到着時刻、トラブルの原因をさらに確認する必要があります。",
+      },
+      {
+        question: "EU規則261/2004は日本発着のフライトにも適用されますか?",
+        answer:
+          "日本はEUに加盟していませんが、EU規則261/2004はEU・EEA・英国・スイスの空港から出発するすべてのフライトに適用されます。例えばワルシャワ発東京行きは、JAL運航便であっても対象です。一方、日本の空港から出発するフライトは、LOTポーランド航空、Lufthansa、Finnair、Air France、KLMなどEUの航空会社が運航する場合のみ対象で、日本発のJAL便・ANA便は対象外です。LOTポーランド航空はEUの航空会社なので、東京発ワルシャワ行きを含む両方向のLOT便が対象になります。",
+      },
+      {
+        question: "欠航したフライトも確認できますか?",
+        answer:
+          "はい。1つの予約の中での遅延、欠航、搭乗拒否、乗り継ぎ失敗に対応しています。欠航の場合は、通知された時期と代替便の内容も重要になります。",
+      },
+      {
+        question: "補償金は乗客ごとに支払われますか?",
+        answer:
+          "はい。EU規則261/2004とUK261の補償金は、原則として予約ごとではなく乗客1人ごとに計算されます。家族での予約なら、それぞれの乗客に請求権が生じます。",
+      },
+      {
+        question: "補償金が600ユーロになるのはどんな場合ですか?",
+        answer:
+          "原則として、3,500kmを超える路線で、フライトが規則の適用範囲に入り、最終目的地への3時間以上の遅延または欠航の条件を満たした場合です。ワルシャワ–東京(約8,600km)やフランクフルト–東京(約9,350km)をはじめ、EUと日本を結ぶ路線はすべて3,500kmを超えるため、600ユーロの区分に該当します。",
+      },
+    ],
+    relatedHeading: "役立つ関連ページ",
+    related: [
+      { label: "ホーム", href: "/ja", description: "乗客の権利と補償金の概要。" },
+      { label: "フライト遅延", href: "/ja/chien-furaito", description: "最終目的地に3時間以上遅れて到着した場合のルール。" },
+      { label: "欠航", href: "/ja/kekko-furaito", description: "航空会社がフライトを欠航した場合の権利。" },
+      { label: "ブログ", href: "/ja/blog", description: "EU261、UK261、航空会社や路線に関するガイド。" },
+    ],
+    finalCtaTitle: "請求の前に補償金を見積もりましょう",
+    finalCtaText:
+      "まず計算機で確認し、路線と状況が有望であればClaimWingerにお進みください。ClaimWingerのフォームは日本語でご利用いただけます。",
+    finalCtaLabel: "計算機を開く",
+  },
   bg: {
     language: "Bulgarian",
     ogLocale: "bg_BG",

@@ -1782,6 +1782,21 @@ export const compensationAirports = [
     "passengerRightsArea": "other"
   },
   {
+    "code": "KIX",
+    "name": {
+      "pl": "Osaka Kansai",
+      "en": "Osaka Kansai"
+    },
+    "city": {
+      "pl": "Osaka",
+      "en": "Osaka"
+    },
+    "country": "JP",
+    "lat": 34.4342,
+    "lon": 135.244,
+    "passengerRightsArea": "other"
+  },
+  {
     "code": "PEK",
     "name": {
       "pl": "Pekin",

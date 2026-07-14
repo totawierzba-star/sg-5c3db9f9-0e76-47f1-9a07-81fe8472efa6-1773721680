@@ -22,6 +22,7 @@ export type CalculatorLocaleCode =
   | "lt"
   | "lv"
   | "et"
+  | "ja"
   | "sr";
 
 export type CalculatorCopy = {
@@ -786,6 +787,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "Ei tea",
     },
   },
+  ja: {
+    title: "ケースの詳細",
+    description:
+      "これらの回答により、想定される補償金の額、50%の減額の有無、または専門家による確認の必要性が判断されます。",
+    delayQuestion: "最終目的地での遅延はどのくらいでしたか？",
+    cancellationNoticeQuestion: "欠航はいつ通知されましたか？",
+    replacementQuestion: "どのような代替便が提示されましたか？",
+    deniedBoardingQuestion: "搭乗拒否はご自身の事情によるものでしたか？",
+    extraordinaryQuestion: "航空会社は特別な事情を主張していますか？",
+    extraordinaryNote:
+      "機材の技術的な不具合や航空会社自身の従業員によるストライキは、多くの場合、補償金の支払いを拒否する十分な理由にはなりません。",
+    delayOptions: {
+      under2h: "2時間未満",
+      twoToThree: "2〜3時間",
+      threeToFour: "3〜4時間",
+      overFour: "4時間超",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14日以上前",
+      sevenToThirteen: "7〜13日前",
+      underSeven: "7日未満",
+    },
+    replacementOptions: {
+      noneTitle: "なし",
+      noneDescription: "実質的な代替手段はありませんでした。",
+      withinTitle: "法定の時間枠内",
+      withinDescription: "通常は補償金の対象外です。",
+      limitedTitle: "限定的な遅延",
+      limitedDescription: "50%減額の可能性があります。",
+      majorTitle: "大幅に遅い便",
+      majorDescription: "通常は全額の対象です。",
+    },
+    deniedOptions: {
+      noTitle: "いいえ",
+      noDescription: "例：オーバーブッキング。",
+      yesTitle: "はい",
+      yesDescription: "例：書類の不備。",
+    },
+    extraordinaryOptions: {
+      no: "いいえ",
+      yes: "はい",
+      yesDescription: "確認が必要です。",
+      unknown: "わかりません",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -1068,6 +1114,32 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
       "Lennust mahajätmine näib olevat ülebroneerimine või muu lennufirma põhjus.",
     extraordinaryCircumstancesReview:
       "Lennufirma viitab erakorralistele asjaoludele; vajalik on käsitsi kontroll.",
+  }),
+  ja: makeReasonLabels({
+    outOfScope:
+      "このフライトはEU規則261/2004（EU261）/UK261の適用範囲外と考えられます。EU/UK/CH/EEAの空港からの出発ではなく、運航したのも適用範囲内の航空会社ではありませんでした。",
+    delayUnderThreeHours:
+      "到着時の遅延が3時間未満だったため、補償金の基準は満たされていません。",
+    coveredDepartureArea:
+      "フライトはEU/UK/CH/EEAの空港から出発したため、JALやANAなど域外の航空会社が運航する便にも規則が適用されます。",
+    coveredArrivalCarrier:
+      "フライトはEU/UK/CH/EEAに到着し、適用範囲内の航空会社が運航していました。日本からの出発便は、この条件を満たす場合にのみ対象となります。",
+    delayThresholdMet: "到着時の遅延が3時間を超えました。",
+    missedConnectionThresholdMet:
+      "乗り継ぎに失敗したことで、最終目的地で少なくとも3時間の遅延が発生しました。",
+    cancellationNoticeFourteenDays:
+      "航空会社は出発の少なくとも14日前に欠航を通知しました。",
+    replacementWithinLegalWindow:
+      "代替便が法定の時間枠内に収まっているため、通常は補償金の対象になりません。",
+    replacementLimitedDelayReduction:
+      "代替便の遅延が限定的だったため、補償金は50%減額される可能性があります。",
+    cancellationCompensable: "この欠航は補償金の条件を満たす可能性があります。",
+    deniedBoardingPassengerFault:
+      "搭乗拒否は、書類の不備や保安上の問題など乗客側の事情によるものと考えられます。",
+    deniedBoardingAirlineFault:
+      "搭乗拒否はオーバーブッキングなど航空会社側の事情によるものと考えられます。",
+    extraordinaryCircumstancesReview:
+      "航空会社が特別な事情を主張しているため、金額については専門家による確認が必要です。",
   }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
@@ -1556,6 +1628,115 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
     airport: {
       searchPlaceholder: "Linn või kood, nt TLL",
       clearLabel: "Tühjenda",
+    },
+  },
+  ja: {
+    language: "Japanese",
+    numberLocale: "ja-JP",
+    campaign: "ja_compensation_calculator",
+    claimWinger: {
+      langParam: "ja",
+      defaultUrl: "https://claimwinger.com/ja/furaito-hosho-keisanki/",
+      delayUrl: "https://claimwinger.com/ja/chien-furaito/",
+      cancelledUrl: "https://claimwinger.com/ja/kekko-furaito/",
+    },
+    steps: {
+      label: (c, t) => `ステップ ${c} / ${t}`,
+      back: "戻る",
+      next: "次へ",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "フライトの遅延",
+        description: "フライトが最終目的地に数時間遅れて到着しました。",
+      },
+      cancelled: {
+        title: "欠航",
+        description: "航空会社がフライトを欠航にしたか、別の便に振り替えました。",
+      },
+      denied_boarding: {
+        title: "搭乗拒否",
+        description: "有効な予約があったにもかかわらず、搭乗を認められませんでした。",
+      },
+      missed_connection: {
+        title: "乗り継ぎの失敗",
+        description: "最初の区間の遅延により、その後の旅程が乱れました。",
+      },
+    },
+    routeBandLabels: {
+      short: "短距離",
+      medium: "中距離",
+      long: "長距離",
+    },
+    routeStep: {
+      ...baseCopy.routeStep,
+      title: "フライトの経路",
+      description:
+        "この計算ツールは、EU規則261/2004（EU261）およびUK261に基づき、フライトの遅延、欠航、搭乗拒否、乗り継ぎの失敗を確認します。空港を選択し、運航した航空会社がEU/UK/CH/EEAの会社かどうかを指定してください。",
+      fromLabel: "出発地",
+      toLabel: "到着地",
+      swapLabel: "空港を入れ替える",
+      carrierTitle: "運航した航空会社",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription:
+        "例：LOTポーランド航空、Lufthansa、Finnair、Air France、KLM。",
+      carrierOtherTitle: "この地域以外",
+      carrierOtherDescription:
+        "例：JAL、ANA。日本発の便では、これらの航空会社は対象外です。",
+      carrierHint:
+        "EU/UK/CH/EEAの空港から出発する場合は、JALやANAなど域外の航空会社が運航する便でも通常は規則の対象になります。日本からこの地域へ出発する場合は、LufthansaやFinnairなどEU/UK/CH/EEAの航空会社が運航する便のみが対象です。",
+    },
+    situationStep: {
+      title: "何が起きましたか？",
+      description:
+        "状況を選択して、250ユーロ、400ユーロ、または600ユーロの補償金を受け取れる可能性があるかを確認しましょう。日本とヨーロッパの間の路線は3500kmを超えるため、通常は600ユーロが対象です。",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "確認が必要です",
+      probableAmount: "見込みの金額",
+      result: "結果",
+      noAmount: "0ユーロ",
+      perPassenger: "乗客1名あたりの目安",
+      notEligible: "このフライトは補償金の条件を満たしていない可能性が高いです。",
+      reducedByHalf: (baseAmount) => `基準額${baseAmount}ユーロから50%減額されています`,
+      distanceLabel: "距離",
+      routeClassLabel: "路線区分",
+      scopeLabel: "適用範囲",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "適用範囲外",
+      explanationTitle: "この結果は何を意味しますか？",
+      explanationText:
+        "これはフライトの遅延や欠航に対する補償金の暫定的な評価です。ClaimWingerが後ほど、予約内容、実際の到着時刻、運航乱れの原因、航空会社の責任を成功報酬型で確認します。",
+      reasonsTitle: "判断の理由",
+      ctaLabel: "ClaimWingerに申請する",
+      resetLabel: "最初からやり直す",
+    },
+    preview: {
+      ...baseCopy.preview,
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "出発",
+      toFallback: "到着",
+      distanceLabel: "距離",
+      routeLabel: "経路",
+      amountLabel: "金額",
+      emptyText: "経路を選択すると、距離、路線区分、金額の目安が表示されます。",
+      ruleTitle: "乗客のためのクイックルール",
+      ruleText:
+        "フライトがEU261またはUK261の対象であれば、最終目的地への3時間以上の遅延で、乗客1名あたり最大600ユーロの補償金を受け取れる可能性があります。日本とヨーロッパの間の路線は3500kmを超えるため通常600ユーロ、ロンドン路線はUK261により520ポンドです。",
+    },
+    map: {
+      routeMapLabel: "経路マップ",
+      fittedFrameLabel: "距離に合わせた表示",
+      distanceLabel: "距離",
+      emptyText: "出発空港と到着空港を選択すると、経路マップが表示されます。",
+      ariaRoute: (f, t, d) => `経路マップ ${f}-${t}、距離${d}キロメートル`,
+      ariaDefault: "フライト経路マップ",
+    },
+    airport: {
+      searchPlaceholder: "都市名またはコード（例：NRT）",
+      clearLabel: "クリア",
     },
   },
   bg: {
@@ -2107,6 +2288,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   lt: mergeCopy("lt"),
   lv: mergeCopy("lv"),
   et: mergeCopy("et"),
+  ja: mergeCopy("ja"),
   sr: mergeCopy("sr"),
 };
 

@@ -59,6 +59,7 @@ const CLAIMWINGER_WEB_BASE_URLS: Record<SiteLanguageCode, string> = {
   lv: "https://claimwinger.com/lv",
   sr: "https://claimwinger.com",
   et: "https://claimwinger.com/et",
+  ja: "https://claimwinger.com/ja",
 };
 
 const HOME_PATHS = new Set([
@@ -80,6 +81,7 @@ const HOME_PATHS = new Set([
   "/lv",
   "/sr",
   "/et",
+  "/ja",
 ]);
 
 const HIGH_INTENT_PATH_PARTS = [
@@ -123,6 +125,9 @@ const HIGH_INTENT_PATH_PARTS = [
   "hilinenud-lend",
   "tuhistatud-lend",
   "kalkulaator",
+  "chien-furaito",
+  "kekko-furaito",
+  "keisanki",
 ];
 
 /**
@@ -539,6 +544,19 @@ export const APP_CTA_COPY: Record<SiteLanguageCode, AppCtaCopy> = {
     barText: "ClaimWingeri rakendus Androidile",
     fallbackBarText: "Kontrollige oma nõuet veebis",
     closeLabel: "Sulge",
+  },
+  ja: {
+    badge: "モバイルアプリ",
+    title: "ClaimWingerアプリをダウンロード",
+    description:
+      "スマートフォンから直接、補償金の確認と請求ができます。搭乗券を撮影し、指でサインして、ステータス通知を受け取るだけ。前払い費用は一切かかりません。",
+    cta: "Google Playでダウンロード",
+    storePrefix: "ダウンロード:",
+    webCta: "オンラインで請求を確認",
+    webCtaShort: "オンライン",
+    barText: "ClaimWinger Androidアプリ",
+    fallbackBarText: "オンラインで請求を確認",
+    closeLabel: "閉じる",
   },
 };
 

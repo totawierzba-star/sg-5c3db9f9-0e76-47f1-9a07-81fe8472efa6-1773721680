@@ -4,6 +4,7 @@ import { blogArticlesHi } from '@/lib/blogArticlesHi';
 import { blogArticlesEnIrelandSorted } from '@/lib/blogArticlesEnIreland';
 import { blogArticlesBgSorted } from '@/lib/blogArticlesBg';
 import { blogArticlesEtSorted } from '@/lib/blogArticlesEt';
+import { blogArticlesJaSorted } from '@/lib/blogArticlesJa';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesLtSorted } from '@/lib/blogArticlesLt';
 import { blogArticlesLvSorted } from '@/lib/blogArticlesLv';
@@ -191,6 +192,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/et/tuhistatud-lend', priority: '0.9', changefreq: 'weekly' },
     { url: '/et/kalkulaator', priority: '0.9', changefreq: 'weekly' },
     { url: '/et/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- JAPANESE MAIN ---
+    { url: '/ja', priority: '1.0', changefreq: 'daily' },
+    { url: '/ja/chien-furaito', priority: '0.9', changefreq: 'weekly' },
+    { url: '/ja/kekko-furaito', priority: '0.9', changefreq: 'weekly' },
+    { url: '/ja/keisanki', priority: '0.9', changefreq: 'weekly' },
+    { url: '/ja/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -253,6 +261,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const jaBlogPages = blogArticlesJaSorted.map((article) => ({
+    url: `/ja/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
   const enIrelandBlogPages = blogArticlesEnIrelandSorted.map((article) => ({
     url: `/en/blog/${article.slug}`,
     priority: article.featured ? '0.8' : '0.7',
@@ -288,6 +302,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     ...lvBlogPages,
     ...srBlogPages,
     ...etBlogPages,
+    ...jaBlogPages,
   ]);
 
   res.setHeader('Content-Type', 'text/xml');
