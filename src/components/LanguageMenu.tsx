@@ -113,7 +113,12 @@ export function MobileLanguageList({
         {title}
       </div>
 
-      <div className={cn("flex flex-col gap-2", listClassName)}>
+      <div
+        className={cn(
+          "flex max-h-[45vh] flex-col gap-2 overflow-y-auto overscroll-contain pr-1",
+          listClassName,
+        )}
+      >
         {SITE_LANGUAGES.map((language) =>
           language.code === currentLocale ? (
             <span
