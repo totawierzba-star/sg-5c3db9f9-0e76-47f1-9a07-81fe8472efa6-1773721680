@@ -1,35 +1,102 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// Supported locales
+const locales = ['pl', 'en', 'zh', 'cs', 'hi', 'sk', 'it', 'vi', 'hu', 'el', 'tr', 'sv', 'no', 'bg', 'lt', 'lv', 'sr'] as const;
+type Locale = (typeof locales)[number];
+
+// Default locale
+const defaultLocale: Locale = 'pl';
+
 export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
-
-  // Skip middleware for static files, API routes, and Next.js internal routes
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.includes("/favicon.ico") ||
-    pathname.match(/\.(png|jpg|jpeg|svg|ico|xml|txt|html|webmanifest)$/)
-  ) {
-    return NextResponse.next();
+  const { pathname } = request.nextUrl;
+  const hostname = request.headers.get("host") || "";
+  
+  // Redirect www to non-www
+  if (hostname.startsWith("www.")) {
+    const url = request.nextUrl.clone();
+    url.host = hostname.replace("www.", "");
+    return NextResponse.redirect(url, 301);
   }
 
-  // For root path or any non-/en path, serve Polish content from /pages
-  if (pathname === "/" || !pathname.startsWith("/en")) {
-    return NextResponse.next();
-  }
+  // Language detection - only for root path on first visit
+  if (pathname === "/" && !request.cookies.get("preferredLanguage")) {
+    const acceptLanguage = request.headers.get("accept-language") || "";
+    const normalizedAcceptLanguage = acceptLanguage.toLowerCase();
+    
+    // Check if browser prefers Chinese
+    const prefersChinese = normalizedAcceptLanguage.includes("zh");
+    const prefersVietnamese = normalizedAcceptLanguage.includes("vi");
+    const prefersLithuanian = normalizedAcceptLanguage.includes("lt");
+    const prefersLatvian = normalizedAcceptLanguage.includes("lv");
+    const prefersSerbian = normalizedAcceptLanguage.includes("sr");
+    
+    if (prefersChinese) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/zh";
+      
+      const response = NextResponse.redirect(url);
+      // Set cookie to remember preference
+      response.cookies.set("preferredLanguage", "zh", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersVietnamese) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/vi";
 
-  // For /en paths, serve English content from /pages/en
-  if (pathname.startsWith("/en")) {
-    return NextResponse.next();
-  }
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "vi", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersLithuanian) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/lt";
 
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "lt", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersLatvian) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/lv";
+
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "lv", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersSerbian) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/sr";
+
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "sr", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else {
+      // Set Polish as preferred language
+      const response = NextResponse.next();
+      response.cookies.set("preferredLanguage", "pl", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    }
+  }
+  
   return NextResponse.next();
 }
 
+// Apply middleware to all routes
 export const config = {
-  matcher: [
-    // Match all pathnames except static files and API routes
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.ico|.*\\.xml|.*\\.txt|.*\\.html|.*\\.webmanifest).*)",
-  ],
+  matcher: "/:path*",
 };
