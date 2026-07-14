@@ -69,6 +69,10 @@ const airportSuggestionsByLocale: Record<CalculatorLocaleCode, AirportSuggestion
     from: ["SOF", "VAR", "BOJ", "OTP", "IST", "VIE", "FRA", "LHR"],
     to: ["FRA", "VIE", "LHR", "CDG", "AMS", "IST", "SOF", "VAR"],
   },
+  sr: {
+    from: ["BEG", "VIE", "ZRH", "FRA", "MUC", "IST", "LHR", "CDG"],
+    to: ["VIE", "ZRH", "FRA", "MUC", "LHR", "CDG", "AMS", "BEG"],
+  },
 };
 
 export function getAirportSuggestionCodes(

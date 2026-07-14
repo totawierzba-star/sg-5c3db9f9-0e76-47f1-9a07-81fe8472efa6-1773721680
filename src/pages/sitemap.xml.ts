@@ -6,6 +6,7 @@ import { blogArticlesBgSorted } from '@/lib/blogArticlesBg';
 import { blogArticlesHuSorted } from '@/lib/blogArticlesHu';
 import { blogArticlesLtSorted } from '@/lib/blogArticlesLt';
 import { blogArticlesLvSorted } from '@/lib/blogArticlesLv';
+import { blogArticlesSrSorted } from '@/lib/blogArticlesSr';
 import { blogArticlesTrSorted } from '@/lib/blogArticlesTr';
 import { blogArticlesViSorted } from '@/lib/blogArticlesVi';
 import { blogArticlesZhSorted } from '@/lib/blogArticlesZh';
@@ -175,6 +176,13 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     { url: '/lv/atcelts-lidojums', priority: '0.9', changefreq: 'weekly' },
     { url: '/lv/kompensacijas-kalkulators', priority: '0.9', changefreq: 'weekly' },
     { url: '/lv/blog', priority: '0.8', changefreq: 'weekly' },
+
+    // --- SERBIAN MAIN ---
+    { url: '/sr', priority: '1.0', changefreq: 'daily' },
+    { url: '/sr/kasnjenje-leta', priority: '0.9', changefreq: 'weekly' },
+    { url: '/sr/otkazan-let', priority: '0.9', changefreq: 'weekly' },
+    { url: '/sr/kalkulator', priority: '0.9', changefreq: 'weekly' },
+    { url: '/sr/blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
   const huBlogPages = blogArticlesHuSorted.map((article) => ({
@@ -225,6 +233,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     changefreq: 'monthly',
   }));
 
+  const srBlogPages = blogArticlesSrSorted.map((article) => ({
+    url: `/sr/blog/${article.slug}`,
+    priority: article.featured ? '0.8' : '0.7',
+    changefreq: 'monthly',
+  }));
+
   const enIrelandBlogPages = blogArticlesEnIrelandSorted.map((article) => ({
     url: `/en/blog/${article.slug}`,
     priority: article.featured ? '0.8' : '0.7',
@@ -258,6 +272,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     ...bgBlogPages,
     ...ltBlogPages,
     ...lvBlogPages,
+    ...srBlogPages,
   ]);
 
   res.setHeader('Content-Type', 'text/xml');

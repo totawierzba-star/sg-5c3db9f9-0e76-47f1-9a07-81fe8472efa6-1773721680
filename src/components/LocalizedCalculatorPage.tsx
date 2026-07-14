@@ -737,6 +737,75 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "Začnite kalkulačkou a pokračujte do ClaimWinger, ak trasa a situácia vyzerajú nádejne.",
     finalCtaLabel: "Otvoriť kalkulačku",
   },
+  sr: {
+    language: "Serbian",
+    ogLocale: "sr_RS",
+    urlPath: "/sr/kalkulator",
+    title: "Kalkulator obeštećenja za let | 250, 400 ili 600 €",
+    description:
+      "Besplatan kalkulator po Uredbi EU 261 i UK261 za kašnjenje leta, otkazan let, uskraćeno ukrcavanje i propuštenu vezu.",
+    eyebrow: "Besplatan kalkulator EU261 i UK261",
+    heading: "Kalkulator obeštećenja za let",
+    intro:
+      "Proverite u nekoliko koraka da li vam kašnjenje leta, otkazan let, prebukiranje ili propuštena veza mogu doneti 250, 400 ili 600 € po putniku.",
+    afterCalculator:
+      "Rezultat je prva procena. ClaimWinger zatim proverava rezervaciju, stvarno vreme dolaska, uzrok problema i odgovornost avio-kompanije. Sam obrazac za podnošenje zahteva je na engleskom jeziku.",
+    bandsHeading: "Iznos obeštećenja prema udaljenosti",
+    bandsDescription:
+      "Uredba EU 261 i UK261 koriste fiksne iznose. Cena karte ne određuje visinu obeštećenja.",
+    bandShort: "Kratka distanca",
+    bandMedium: "Srednja distanca",
+    bandLong: "Duga distanca",
+    bandShortDescription: "Letovi do 1.500 km, npr. Beč–Beograd ili Minhen–Beograd.",
+    bandMediumDescription: "Letovi od 1.500 do 3.500 km, npr. London–Beograd i mnoge duže evropske rute.",
+    bandLongDescription: "Letovi preko 3.500 km, po pravilu interkontinentalne rute.",
+    rulesHeading: "Šta kalkulator proverava",
+    rules: [
+      "Da li polazak ili dolazak spada u domet pravila EU261, UK261, Švajcarske ili EEA.",
+      "Da li kašnjenje pri dolasku, otkazivanje, uskraćeno ukrcavanje ili propuštena veza dostižu zakonski prag.",
+      "Da li je let iz Srbije pokriven — letovi iz Beograda računaju se samo kada ih obavlja avio-kompanija iz EU/EEA.",
+      "Da li vanredne okolnosti zahtevaju ručnu pravnu proveru pre podnošenja zahteva za obeštećenje.",
+    ],
+    faqHeading: "FAQ: kalkulator obeštećenja",
+    faq: [
+      {
+        question: "Da li je rezultat kalkulatora konačan?",
+        answer:
+          "Ne. To je brza prva procena na osnovu rute i situacije koju unesete. Pravi zahtev za obeštećenje zahteva proveru dokumenata, vremena dolaska i uzroka problema.",
+      },
+      {
+        question: "Važi li EU261 za letove iz Srbije i ka Srbiji?",
+        answer:
+          "Srbija nije u EU, ali Uredba EU 261 pokriva svaki let koji polazi sa aerodroma u EU/EEA — npr. Beč–Beograd ili Frankfurt–Beograd, čak i na letu Air Serbia. Let iz Beograda ka EU pokriven je samo kada ga obavlja avio-kompanija iz EU/EEA, kao što su Wizz Air, Lufthansa ili Austrian.",
+      },
+      {
+        question: "Da li kalkulator proverava otkazane letove?",
+        answer:
+          "Da. Pokriva kašnjenje, otkazan let, uskraćeno ukrcavanje i propuštenu vezu u okviru jedne rezervacije. Kod otkazivanja su važni rok obaveštenja i ponuđeni zamenski let.",
+      },
+      {
+        question: "Da li se obeštećenje računa po putniku?",
+        answer:
+          "Da. Po EU261 i UK261 obeštećenje se po pravilu računa po putniku, a ne po rezervaciji.",
+      },
+      {
+        question: "Kada iznos može biti 600 €?",
+        answer:
+          "Po pravilu na rutama dužim od 3.500 km — praktično samo interkontinentalnim — kada let spada u domet pravila i kada je ispunjen prag kašnjenja ili otkazivanja.",
+      },
+    ],
+    relatedHeading: "Korisne stranice",
+    related: [
+      { label: "Početna", href: "/sr", description: "Prava putnika i obeštećenje za letove iz Srbije i EU." },
+      { label: "Kašnjenje leta", href: "/sr/kasnjenje-leta", description: "Pravila kada stignete sa 3+ sata zakašnjenja." },
+      { label: "Otkazan let", href: "/sr/otkazan-let", description: "Prava kod otkazivanja, povraćaja novca i preusmeravanja." },
+      { label: "Blog", href: "/sr/blog", description: "Vodiči o Uredbi EU 261, avio-kompanijama i rutama." },
+    ],
+    finalCtaTitle: "Procenite slučaj pre podnošenja",
+    finalCtaText:
+      "Počnite od kalkulatora, a zatim pređite na ClaimWinger ako ruta i situacija izgledaju obećavajuće. Obrazac ClaimWinger je na engleskom jeziku.",
+    finalCtaLabel: "Otvorite kalkulator",
+  },
   sv: {
     language: "Swedish",
     ogLocale: "sv_SE",

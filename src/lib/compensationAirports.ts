@@ -2157,6 +2157,21 @@ export const compensationAirports = [
     "passengerRightsArea": "other"
   },
   {
+    "code": "INI",
+    "name": {
+      "pl": "Nisz Konstantyn Wielki",
+      "en": "Nis Constantine the Great"
+    },
+    "city": {
+      "pl": "Nisz",
+      "en": "Nis"
+    },
+    "country": "RS",
+    "lat": 43.3373,
+    "lon": 21.8536,
+    "passengerRightsArea": "other"
+  },
+  {
     "code": "TIA",
     "name": {
       "pl": "Tirana",

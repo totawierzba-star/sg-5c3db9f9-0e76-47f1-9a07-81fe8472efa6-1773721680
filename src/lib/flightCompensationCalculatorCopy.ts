@@ -20,7 +20,8 @@ export type CalculatorLocaleCode =
   | "zh"
   | "bg"
   | "lt"
-  | "lv";
+  | "lv"
+  | "sr";
 
 export type CalculatorCopy = {
   code: CalculatorLocaleCode;
@@ -604,6 +605,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "Не знам",
     },
   },
+  sr: {
+    title: "Detalji slučaja",
+    description:
+      "Ovi odgovori određuju da li postoji iznos, umanjenje od 50% ili potreba za ručnom proverom.",
+    delayQuestion: "Koliko je iznosilo kašnjenje na krajnjoj destinaciji?",
+    cancellationNoticeQuestion: "Kada ste obavešteni o otkazivanju leta?",
+    replacementQuestion: "Kakav zamenski let vam je ponuđen?",
+    deniedBoardingQuestion: "Da li je ukrcavanje odbijeno vašom krivicom?",
+    extraordinaryQuestion: "Da li se avio-kompanija poziva na vanredne okolnosti?",
+    extraordinaryNote:
+      "Tehnički kvarovi i štrajkovi sopstvenog osoblja avio-kompanije često nisu dovoljan razlog za odbijanje obeštećenja.",
+    delayOptions: {
+      under2h: "Ispod 2 h",
+      twoToThree: "2-3 h",
+      threeToFour: "3-4 h",
+      overFour: "Preko 4 h",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 dana ili više",
+      sevenToThirteen: "7-13 dana",
+      underSeven: "Manje od 7 dana",
+    },
+    replacementOptions: {
+      noneTitle: "Nije bilo",
+      noneDescription: "Nema realne alternative.",
+      withinTitle: "U zakonskom okviru",
+      withinDescription: "Obično bez obeštećenja.",
+      limitedTitle: "Ograničeno kašnjenje",
+      limitedDescription: "Moguće umanjenje od 50%.",
+      majorTitle: "Znatno kasnije",
+      majorDescription: "Obično pun iznos.",
+    },
+    deniedOptions: {
+      noTitle: "Ne",
+      noDescription: "Na primer overbooking.",
+      yesTitle: "Da",
+      yesDescription: "Na primer nedostajuća dokumenta.",
+    },
+    extraordinaryOptions: {
+      no: "Ne",
+      yes: "Da",
+      yesDescription: "Potrebna je provera.",
+      unknown: "Ne znam",
+    },
+  },
   lt: {
     title: "Atvejo detalės",
     description:
@@ -884,6 +930,29 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
       "Отказът за качване изглежда като overbooking или друга причина от страна на авиокомпанията.",
     extraordinaryCircumstancesReview:
       "Авиокомпанията се позовава на извънредни обстоятелства; нужна е ръчна проверка.",
+  }),
+  sr: makeReasonLabels({
+    outOfScope: "Let izgleda izvan opsega EU261/UK261.",
+    delayUnderThreeHours: "Kašnjenje pri dolasku je bilo kraće od 3 sata.",
+    coveredDepartureArea: "Let je poleteo sa aerodroma u EU/UK/CH/EEA.",
+    coveredArrivalCarrier:
+      "Let stiže u EU/UK/CH/EEA i izvršio ga je pokriveni prevoznik.",
+    delayThresholdMet: "Kašnjenje pri dolasku je premašilo 3 sata.",
+    missedConnectionThresholdMet:
+      "Propuštena veza je dovela do najmanje 3 sata kašnjenja na krajnjoj destinaciji.",
+    cancellationNoticeFourteenDays:
+      "Avio-kompanija je obavestila o otkazivanju najmanje 14 dana pre polaska.",
+    replacementWithinLegalWindow:
+      "Zamenski let se uklapa u zakonske vremenske okvire.",
+    replacementLimitedDelayReduction:
+      "Iznos može biti umanjen za 50% zbog ograničenog kašnjenja zamenskog leta.",
+    cancellationCompensable: "Otkazivanje može ispunjavati uslove za obeštećenje.",
+    deniedBoardingPassengerFault:
+      "Odbijeno ukrcavanje izgleda povezano sa razlogom na strani putnika.",
+    deniedBoardingAirlineFault:
+      "Odbijeno ukrcavanje liči na overbooking ili drugi razlog na strani avio-kompanije.",
+    extraordinaryCircumstancesReview:
+      "Avio-kompanija se poziva na vanredne okolnosti; potrebna je ručna provera.",
   }),
   lt: makeReasonLabels({
     outOfScope: "Skrydis greičiausiai nepatenka į EU261/UK261 taikymo sritį.",
@@ -1418,6 +1487,111 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
       clearLabel: "Изчистете",
     },
   },
+  sr: {
+    language: "Serbian",
+    numberLocale: "sr-Latn-RS",
+    campaign: "sr_compensation_calculator",
+    claimWinger: {
+      langParam: "en",
+      defaultUrl: "https://claimwinger.com",
+      delayUrl: "https://claimwinger.com/delayed-flight",
+      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+    },
+    steps: {
+      label: (c, t) => `Korak ${c} od ${t}`,
+      back: "Nazad",
+      next: "Dalje",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Kašnjenje",
+        description: "Let je stigao na krajnju destinaciju nekoliko sati kasnije.",
+      },
+      cancelled: {
+        title: "Otkazan let",
+        description: "Avio-kompanija je otkazala let ili vas prebacila na drugi.",
+      },
+      denied_boarding: {
+        title: "Odbijeno ukrcavanje",
+        description: "Niste primljeni na let uprkos važećoj rezervaciji.",
+      },
+      missed_connection: {
+        title: "Propuštena veza",
+        description: "Kašnjenje prvog segmenta je poremetilo ostatak putovanja.",
+      },
+    },
+    routeBandLabels: {
+      short: "kratka distanca",
+      medium: "srednja distanca",
+      long: "duga distanca",
+    },
+    routeStep: {
+      title: "Ruta leta",
+      description:
+        "Kalkulator proverava kašnjenja letova, otkazane letove, odbijeno ukrcavanje i propuštene veze po Uredbi EU 261 i UK261. Izaberite aerodrome i navedite da li je operativni prevoznik iz EU/UK/CH/EEA.",
+      fromLabel: "Polazak iz",
+      toLabel: "Dolazak u",
+      swapLabel: "Zamenite aerodrome",
+      carrierTitle: "Operativni prevoznik",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Na primer Wizz Air, Austrian, Lufthansa, KLM, British Airways, SWISS.",
+      carrierOtherTitle: "Izvan ove zone",
+      carrierOtherDescription: "Na primer Air Serbia, Turkish Airlines, Emirates, Qatar Airways.",
+      carrierHint:
+        "Kod letova koji polaze sa aerodroma u EU/UK/CH/EEA pravila obično pokrivaju i prevoznike izvan Evrope, npr. Air Serbia na letu Beč-Beograd. Kod polaska iz Srbije ka ovoj zoni važno je da let izvodi prevoznik iz EU/UK/CH/EEA, npr. Wizz Air ili Lufthansa.",
+    },
+    situationStep: {
+      title: "Šta se dogodilo?",
+      description:
+        "Izaberite situaciju da procenite da li možete imati pravo na 250, 400 ili 600 € obeštećenja.",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Potrebna je provera",
+      probableAmount: "Verovatan iznos",
+      result: "Rezultat",
+      noAmount: "0 €",
+      perPassenger: "Procena po putniku",
+      notEligible: "Ovaj let verovatno ne ispunjava uslove za obeštećenje.",
+      reducedByHalf: (baseAmount) => `Osnovni iznos ${baseAmount} € je umanjen za 50%`,
+      distanceLabel: "Distanca",
+      routeClassLabel: "Klasa rute",
+      scopeLabel: "Opseg",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "izvan opsega",
+      explanationTitle: "Šta znači rezultat?",
+      explanationText:
+        "Ovo je početna procena obeštećenja za kašnjenje leta ili otkazan let. ClaimWinger kasnije proverava rezervaciju, stvarno vreme dolaska, uzrok i odgovornost avio-kompanije. Formular ClaimWinger je na engleskom jeziku.",
+      reasonsTitle: "Obrazloženje",
+      ctaLabel: "Pošaljite slučaj ClaimWinger-u",
+      resetLabel: "Počnite ponovo",
+    },
+    preview: {
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Polazak",
+      toFallback: "Dolazak",
+      distanceLabel: "Distanca",
+      routeLabel: "Ruta",
+      amountLabel: "Iznos",
+      emptyText: "Izaberite rutu da vidite distancu, klasu rute i okvirni iznos.",
+      ruleTitle: "Brzo pravilo za putnike",
+      ruleText:
+        "Ako let potpada pod EU261 ili UK261, kašnjenje od najmanje 3 sata pri dolasku može značiti obeštećenje do 600 € po putniku.",
+    },
+    map: {
+      routeMapLabel: "Mapa rute",
+      fittedFrameLabel: "Kadar prilagođen distanci",
+      distanceLabel: "Distanca",
+      emptyText: "Izaberite aerodrome polaska i dolaska da vidite mapu rute.",
+      ariaRoute: (f, t, d) => `Mapa rute ${f}-${t}, distanca ${d} kilometara`,
+      ariaDefault: "Mapa rute leta",
+    },
+    airport: {
+      searchPlaceholder: "Grad ili kod, npr. BEG",
+      clearLabel: "Obrišite",
+    },
+  },
   cs: {
     language: "Czech",
     numberLocale: "cs-CZ",
@@ -1756,6 +1930,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   bg: mergeCopy("bg"),
   lt: mergeCopy("lt"),
   lv: mergeCopy("lv"),
+  sr: mergeCopy("sr"),
 };
 
 export function getCalculatorCopy(locale: CalculatorLocaleCode = "pl") {

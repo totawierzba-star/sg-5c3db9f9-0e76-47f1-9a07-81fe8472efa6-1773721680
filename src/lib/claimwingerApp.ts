@@ -57,6 +57,7 @@ const CLAIMWINGER_WEB_BASE_URLS: Record<SiteLanguageCode, string> = {
   bg: "https://claimwinger.com/bg",
   lt: "https://claimwinger.com/lt",
   lv: "https://claimwinger.com/lv",
+  sr: "https://claimwinger.com",
 };
 
 const HOME_PATHS = new Set([
@@ -76,6 +77,7 @@ const HOME_PATHS = new Set([
   "/bg",
   "/lt",
   "/lv",
+  "/sr",
 ]);
 
 const HIGH_INTENT_PATH_PARTS = [
@@ -114,6 +116,8 @@ const HIGH_INTENT_PATH_PARTS = [
   "forsenat-flyg",
   "installat-flyg",
   "ersattning-kalkulator",
+  "kasnjenje-leta",
+  "otkazan-let",
 ];
 
 /**
@@ -504,6 +508,19 @@ export const APP_CTA_COPY: Record<SiteLanguageCode, AppCtaCopy> = {
     barText: "ClaimWinger lietotne Android ierīcēm",
     fallbackBarText: "Pārbaudiet prasību online",
     closeLabel: "Aizvērt",
+  },
+  sr: {
+    badge: "Mobilna aplikacija",
+    title: "Preuzmite aplikaciju ClaimWinger",
+    description:
+      "Proverite obeštećenje i podnesite zahtev direktno sa telefona. Slikajte kartu za ukrcavanje, potpišite se prstom i pratite status — bez unapred plaćenih troškova. Aplikacija je na engleskom jeziku.",
+    cta: "Preuzmite sa Google Play",
+    storePrefix: "Preuzmite sa",
+    webCta: "Proverite zahtev online",
+    webCtaShort: "Online",
+    barText: "Aplikacija ClaimWinger za Android",
+    fallbackBarText: "Proverite svoj zahtev online",
+    closeLabel: "Zatvori",
   },
 };
 
