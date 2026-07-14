@@ -233,6 +233,70 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "Sāciet ar kalkulatoru, pēc tam pārejiet uz ClaimWinger, ja maršruts un situācija izskatās perspektīvi.",
     finalCtaLabel: "Atvērt kalkulatoru",
   },
+  et: {
+    language: "Estonian",
+    ogLocale: "et_EE",
+    urlPath: "/et/kalkulaator",
+    title: "Lennuhüvitise kalkulaator | 250, 400 või 600 €",
+    description:
+      "Tasuta EU261 ja UK261 lennuhüvitise kalkulaator hilinenud lendude, tühistatud lendude, lennureisist mahajätmise ja nurjunud ümberistumiste jaoks.",
+    eyebrow: "Tasuta EU261 ja UK261 kalkulaator",
+    heading: "Lennuhüvitise kalkulaator",
+    intro:
+      "Kontrollige mõne sammuga, kas hilinenud lend, tühistatud lend või ülebroneeritud lend võib anda teile õiguse 250, 400 või 600 euro suurusele hüvitisele reisija kohta.",
+    afterCalculator:
+      "Tulemus on esialgne hinnang. ClaimWinger kontrollib seejärel broneeringut, tegelikku saabumisaega, häire põhjust ja lennufirma vastutust.",
+    bandsHeading: "Hüvitise summad vahemaa järgi",
+    bandsDescription:
+      "Määrus (EÜ) nr 261/2004 ja UK261 kasutavad fikseeritud hüvitise vahemikke. Pileti hind summat ei mõjuta.",
+    bandShort: "Lühike vahemaa",
+    bandMedium: "Keskmine vahemaa",
+    bandLong: "Pikk vahemaa",
+    bandShortDescription: "Lennud kuni 1 500 km, näiteks Tallinn–Stockholm (u 390 km) annab 250 €.",
+    bandMediumDescription: "Lennud 1 500 kuni 3 500 km, näiteks Tallinn–Frankfurt (u 1 540 km) või Tallinn–London (u 1 830 km) annavad 400 €.",
+    bandLongDescription: "Lennud üle 3 500 km, sealhulgas paljud kauglennud Euroopast.",
+    rulesHeading: "Mida kalkulaator kontrollib",
+    rules: [
+      "Kas väljumine või saabumine kuulub EU261, UK261, Šveitsi või EMP reisijaõiguste loogika alla.",
+      "Kas saabumise hilinemine, tühistamise etteteatamine, lennureisist mahajätmine või nurjunud ümberistumine ületab seadusliku künnise.",
+      "Kas tegutsev lennuettevõtja on hõlmatud, kui lend saabub Euroopasse kolmandast riigist.",
+      "Kas erakorralised asjaolud nõuavad enne nõude esitamist käsitsi õiguslikku kontrolli.",
+    ],
+    faqHeading: "KKK: lennuhüvitise kalkulaator",
+    faq: [
+      {
+        question: "Kas kalkulaatori tulemus on lõplik?",
+        answer:
+          "Ei. See on kiire hinnang teie sisestatud marsruudi ja olukorra põhjal. Tegeliku nõude puhul tuleb veel kontrollida dokumente, tegelikku saabumisaega ja häire põhjust.",
+      },
+      {
+        question: "Kas kalkulaator kontrollib ka tühistatud lende?",
+        answer:
+          "Jah. See hõlmab hilinemist, tühistamist, lennureisist mahajätmist ja nurjunud ümberistumist ühes broneeringus. Tühistamise korral on olulised etteteatamise aeg ja asenduslennu kvaliteet.",
+      },
+      {
+        question: "Kas hüvitis arvutatakse iga reisija kohta?",
+        answer:
+          "Jah. Määruse (EÜ) nr 261/2004 ja UK261 hüvitis arvutatakse üldjuhul iga reisija kohta eraldi, mitte broneeringu kohta.",
+      },
+      {
+        question: "Millal võib hüvitis olla 600 €?",
+        answer:
+          "Enamasti siis, kui marsruut ületab 3 500 km, lend kuulub määruse kohaldamisalasse ning hilinemise või tühistamise künnis on täidetud. Eestist väljuvad lennud jäävad tavaliselt 250 € või 400 € vahemikku.",
+      },
+    ],
+    relatedHeading: "Kasulikud järgmised lehed",
+    related: [
+      { label: "Avaleht", href: "/et", description: "Ülevaade reisijate õigustest ja hüvitistest." },
+      { label: "Hilinenud lend", href: "/et/hilinenud-lend", description: "Reeglid, kui saabute sihtkohta 3+ tundi hiljem." },
+      { label: "Tühistatud lend", href: "/et/tuhistatud-lend", description: "Õigused, kui lennufirma tühistab teie lennu." },
+      { label: "Blogi", href: "/et/blog", description: "Juhendid EU261, UK261, lennufirmade ja marsruutide kohta." },
+    ],
+    finalCtaTitle: "Hinnake oma juhtumit enne nõude esitamist",
+    finalCtaText:
+      "Alustage kalkulaatoriga ja jätkake ClaimWingeriga, kui marsruut ja olukord näivad paljutõotavad.",
+    finalCtaLabel: "Ava kalkulaator",
+  },
   bg: {
     language: "Bulgarian",
     ogLocale: "bg_BG",

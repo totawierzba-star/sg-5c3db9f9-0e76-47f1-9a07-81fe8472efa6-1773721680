@@ -21,6 +21,7 @@ export type CalculatorLocaleCode =
   | "bg"
   | "lt"
   | "lv"
+  | "et"
   | "sr";
 
 export type CalculatorCopy = {
@@ -740,6 +741,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "Nezinu",
     },
   },
+  et: {
+    title: "Juhtumi üksikasjad",
+    description:
+      "Need vastused aitavad kindlaks teha võimaliku summa, 50% vähenduse või vajaduse käsitsi tehtava õigusliku kontrolli järele.",
+    delayQuestion: "Kui suur oli hilinemine lõppsihtkohas?",
+    cancellationNoticeQuestion: "Millal saite teada lennu tühistamisest?",
+    replacementQuestion: "Millist asenduslendu teile pakuti?",
+    deniedBoardingQuestion: "Kas lennust mahajätmine toimus teie süü tõttu?",
+    extraordinaryQuestion: "Kas lennufirma viitab erakorralistele asjaoludele?",
+    extraordinaryNote:
+      "Tehnilised rikked ja lennufirma enda töötajate streigid ei ole sageli piisav alus hüvitisest keeldumiseks.",
+    delayOptions: {
+      under2h: "Alla 2 tunni",
+      twoToThree: "2-3 tundi",
+      threeToFour: "3-4 tundi",
+      overFour: "Üle 4 tunni",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 päeva või rohkem",
+      sevenToThirteen: "7-13 päeva",
+      underSeven: "Vähem kui 7 päeva",
+    },
+    replacementOptions: {
+      noneTitle: "Ei pakutud",
+      noneDescription: "Tegelikku alternatiivi polnud.",
+      withinTitle: "Seadusliku ajaakna piires",
+      withinDescription: "Tavaliselt ilma hüvitiseta.",
+      limitedTitle: "Piiratud hilinemine",
+      limitedDescription: "Võimalik on 50% vähendus.",
+      majorTitle: "Palju hiljem",
+      majorDescription: "Tavaliselt täissumma.",
+    },
+    deniedOptions: {
+      noTitle: "Ei",
+      noDescription: "Näiteks ülebroneerimine.",
+      yesTitle: "Jah",
+      yesDescription: "Näiteks puuduvad dokumendid.",
+    },
+    extraordinaryOptions: {
+      no: "Ei",
+      yes: "Jah",
+      yesDescription: "Vajalik on kontroll.",
+      unknown: "Ei tea",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -999,6 +1045,29 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
       "Iekāpšanas atteikums izskatās pēc overbooking vai cita aviokompānijas iemesla.",
     extraordinaryCircumstancesReview:
       "Aviokompānija atsaucas uz ārkārtējiem apstākļiem; nepieciešama manuāla pārbaude.",
+  }),
+  et: makeReasonLabels({
+    outOfScope: "Lend ei kuulu tõenäoliselt EU261/UK261 kohaldamisalasse.",
+    delayUnderThreeHours: "Saabumise hilinemine oli lühem kui 3 tundi.",
+    coveredDepartureArea: "Lend väljus EU/UK/CH/EEA lennujaamast.",
+    coveredArrivalCarrier:
+      "Lend saabus EU/UK/CH/EEA piirkonda ja seda teostas kohaldamisalasse kuuluv lennufirma.",
+    delayThresholdMet: "Saabumise hilinemine ületas 3 tundi.",
+    missedConnectionThresholdMet:
+      "Jätkulennust mahajäämine põhjustas lõppsihtkohas vähemalt 3-tunnise hilinemise.",
+    cancellationNoticeFourteenDays:
+      "Lennufirma teatas tühistamisest vähemalt 14 päeva enne väljumist.",
+    replacementWithinLegalWindow:
+      "Asenduslend jäi seadusliku ajaakna piiresse.",
+    replacementLimitedDelayReduction:
+      "Summat võidakse vähendada 50%, kuna asenduslennu hilinemine oli piiratud.",
+    cancellationCompensable: "Tühistamine võib vastata hüvitise tingimustele.",
+    deniedBoardingPassengerFault:
+      "Lennust mahajätmine näib olevat seotud reisijapoolse põhjusega.",
+    deniedBoardingAirlineFault:
+      "Lennust mahajätmine näib olevat ülebroneerimine või muu lennufirma põhjus.",
+    extraordinaryCircumstancesReview:
+      "Lennufirma viitab erakorralistele asjaoludele; vajalik on käsitsi kontroll.",
   }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
@@ -1380,6 +1449,113 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
     airport: {
       searchPlaceholder: "Pilsēta vai kods, piem., RIX",
       clearLabel: "Notīrīt",
+    },
+  },
+  et: {
+    language: "Estonian",
+    numberLocale: "et-EE",
+    campaign: "et_compensation_calculator",
+    claimWinger: {
+      langParam: "et",
+      defaultUrl: "https://claimwinger.com/et/lennuhuvitise-kalkulaator/",
+      delayUrl: "https://claimwinger.com/et/hilinenud-lend/",
+      cancelledUrl: "https://claimwinger.com/et/tuhistatud-lend/",
+    },
+    steps: {
+      label: (c, t) => `Samm ${c} / ${t}`,
+      back: "Tagasi",
+      next: "Edasi",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Hilinemine",
+        description: "Lend jõudis lõppsihtkohta mitu tundi hiljem.",
+      },
+      cancelled: {
+        title: "Tühistamine",
+        description: "Lennufirma tühistas lennu või suunas teid teisele lennule.",
+      },
+      denied_boarding: {
+        title: "Lennust mahajätmine",
+        description: "Teid ei lubatud pardale, kuigi teil oli kehtiv broneering.",
+      },
+      missed_connection: {
+        title: "Jätkulennust mahajäämine",
+        description: "Esimese etapi hilinemine rikkus reisi järgmise osa.",
+      },
+    },
+    routeBandLabels: {
+      short: "lühike vahemaa",
+      medium: "keskmine vahemaa",
+      long: "pikk vahemaa",
+    },
+    routeStep: {
+      ...baseCopy.routeStep,
+      title: "Lennu marsruut",
+      description:
+        "Kalkulaator hindab hilinenud ja tühistatud lende, lennust mahajätmist ning jätkulennust mahajäämist määruse (EÜ) nr 261/2004 (EU261) ja UK261 alusel. Valige lennujaamad ja märkige, kas lendu teostanud lennufirma on EU/UK/CH/EEA piirkonnast.",
+      fromLabel: "Väljumine",
+      toLabel: "Saabumine",
+      swapLabel: "Vaheta lennujaamad",
+      carrierTitle: "Lendu teostanud lennufirma",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Nt airBaltic, Ryanair, Wizz Air, Lufthansa, Finnair.",
+      carrierOtherTitle: "Väljaspool seda piirkonda",
+      carrierOtherDescription: "Nt Emirates, Qatar Airways, Turkish Airlines, flydubai.",
+      carrierHint:
+        "EU/UK/CH/EEA lennujaamast väljumisel katavad reeglid tavaliselt ka Euroopa-välised lennufirmad. Sellesse piirkonda saabumisel on oluline lendu teostanud lennufirma.",
+    },
+    situationStep: {
+      title: "Mis juhtus?",
+      description:
+        "Valige olukord, et hinnata, kas teil võib olla õigus 250, 400 või 600 euro suurusele hüvitisele.",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Vajalik on kontroll",
+      probableAmount: "Tõenäoline summa",
+      result: "Tulemus",
+      noAmount: "0 €",
+      perPassenger: "Hinnang reisija kohta",
+      notEligible: "See lend ei vasta tõenäoliselt hüvitise tingimustele.",
+      reducedByHalf: (baseAmount) => `Baassummat ${baseAmount} € on vähendatud 50% võrra`,
+      distanceLabel: "Vahemaa",
+      routeClassLabel: "Marsruudi klass",
+      scopeLabel: "Kohaldamisala",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "väljaspool kohaldamisala",
+      explanationTitle: "Mida tulemus tähendab?",
+      explanationText:
+        "See on esialgne hinnang hilinenud või tühistatud lennu hüvitisele. ClaimWinger kontrollib hiljem broneeringut, tegelikku saabumisaega, lennuhäire põhjust ja lennufirma vastutust.",
+      reasonsTitle: "Põhjendus",
+      ctaLabel: "Edasta juhtum ClaimWingerile",
+      resetLabel: "Alusta uuesti",
+    },
+    preview: {
+      ...baseCopy.preview,
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Väljumine",
+      toFallback: "Saabumine",
+      distanceLabel: "Vahemaa",
+      routeLabel: "Marsruut",
+      amountLabel: "Summa",
+      emptyText: "Valige marsruut, et näha vahemaad, klassi ja ligikaudset summat.",
+      ruleTitle: "Kiire reegel reisijale",
+      ruleText:
+        "Kui lend kuulub EU261 või UK261 kohaldamisalasse, võib vähemalt 3-tunnine hilinemine lõppsihtkohas tähendada kuni 600 euro suurust hüvitist reisija kohta.",
+    },
+    map: {
+      routeMapLabel: "Marsruudi kaart",
+      fittedFrameLabel: "Vaade vahemaa järgi",
+      distanceLabel: "Vahemaa",
+      emptyText: "Valige väljumis- ja saabumislennujaam, et näha marsruudi kaarti.",
+      ariaRoute: (f, t, d) => `Marsruudi kaart ${f}-${t}, vahemaa ${d} kilomeetrit`,
+      ariaDefault: "Lennumarsruudi kaart",
+    },
+    airport: {
+      searchPlaceholder: "Linn või kood, nt TLL",
+      clearLabel: "Tühjenda",
     },
   },
   bg: {
@@ -1930,6 +2106,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   bg: mergeCopy("bg"),
   lt: mergeCopy("lt"),
   lv: mergeCopy("lv"),
+  et: mergeCopy("et"),
   sr: mergeCopy("sr"),
 };
 

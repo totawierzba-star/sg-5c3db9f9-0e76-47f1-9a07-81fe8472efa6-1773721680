@@ -15,7 +15,8 @@ export type SiteLanguageCode =
   | "bg"
   | "lt"
   | "lv"
-  | "sr";
+  | "sr"
+  | "et";
 
 export type SiteLanguage = {
   code: SiteLanguageCode;
@@ -39,10 +40,11 @@ export const SITE_LANGUAGES: SiteLanguage[] = [
   { code: "vi", label: "Tiếng Việt", shortLabel: "VI", flag: "🇻🇳", href: "/vi" },
   { code: "sv", label: "Svenska", shortLabel: "SV", flag: "🇸🇪", href: "/sv" },
   { code: "no", label: "Norsk", shortLabel: "NO", flag: "🇳🇴", href: "/no" },
-  { code: "bg", label: "Български", shortLabel: "BG", flag: "BG", href: "/bg" },
-  { code: "lt", label: "Lietuvių", shortLabel: "LT", flag: "LT", href: "/lt" },
-  { code: "lv", label: "Latviešu", shortLabel: "LV", flag: "LV", href: "/lv" },
-  { code: "sr", label: "Srpski", shortLabel: "SR", flag: "RS", href: "/sr" },
+  { code: "bg", label: "Български", shortLabel: "BG", flag: "🇧🇬", href: "/bg" },
+  { code: "lt", label: "Lietuvių", shortLabel: "LT", flag: "🇱🇹", href: "/lt" },
+  { code: "lv", label: "Latviešu", shortLabel: "LV", flag: "🇱🇻", href: "/lv" },
+  { code: "sr", label: "Srpski", shortLabel: "SR", flag: "🇷🇸", href: "/sr" },
+  { code: "et", label: "Eesti", shortLabel: "ET", flag: "🇪🇪", href: "/et" },
 ];
 
 const PL_TO_EN_ROUTE_MAP: Record<string, string> = {

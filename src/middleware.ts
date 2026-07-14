@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 // Supported locales
-const locales = ['pl', 'en', 'zh', 'cs', 'hi', 'sk', 'it', 'vi', 'hu', 'el', 'tr', 'sv', 'no', 'bg', 'lt', 'lv', 'sr'] as const;
+const locales = ['pl', 'en', 'zh', 'cs', 'hi', 'sk', 'it', 'vi', 'hu', 'el', 'tr', 'sv', 'no', 'bg', 'lt', 'lv', 'sr', 'et'] as const;
 type Locale = (typeof locales)[number];
 
 // Default locale
@@ -30,6 +30,7 @@ export function middleware(request: NextRequest) {
     const prefersLithuanian = normalizedAcceptLanguage.includes("lt");
     const prefersLatvian = normalizedAcceptLanguage.includes("lv");
     const prefersSerbian = normalizedAcceptLanguage.includes("sr");
+    const prefersEstonian = normalizedAcceptLanguage.includes("et");
     
     if (prefersChinese) {
       const url = request.nextUrl.clone();
@@ -78,6 +79,16 @@ export function middleware(request: NextRequest) {
 
       const response = NextResponse.redirect(url);
       response.cookies.set("preferredLanguage", "sr", {
+        maxAge: 60 * 60 * 24 * 365, // 1 year
+        path: "/",
+      });
+      return response;
+    } else if (prefersEstonian) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/et";
+
+      const response = NextResponse.redirect(url);
+      response.cookies.set("preferredLanguage", "et", {
         maxAge: 60 * 60 * 24 * 365, // 1 year
         path: "/",
       });

@@ -4,11 +4,11 @@ import { ClaimWingerHeroEmbed } from "@/components/ClaimWingerHeroEmbed";
 import { ClaimWingerAppCta } from "@/components/ClaimWingerAppCta";
 import { ClaimWingerLogo } from "@/components/ClaimWingerLogo";
 import {
-  buildClaimWingerLtLink,
-  trackClaimWingerLtClick,
-} from "@/lib/claimwingerLinksLt";
+  buildClaimWingerEtLink,
+  trackClaimWingerEtClick,
+} from "@/lib/claimwingerLinksEt";
 
-type ClaimWingerLtSectionProps = {
+type ClaimWingerEtSectionProps = {
   className?: string;
   title?: string;
   description?: string;
@@ -22,28 +22,28 @@ type ClaimWingerLtSectionProps = {
   embedContent?: string;
 };
 
-export function ClaimWingerLtSection({
+export function ClaimWingerEtSection({
   className = "",
-  title = "Patikrinkite savo skrydį su ClaimWinger forma",
-  description = "ClaimWinger forma pasiekiama lietuvių kalba. Ji tinka vėluojantiems ir atšauktiems skrydžiams, atsisakytam įlaipinimui bei praleistiems persėdimams pagal EB 261 ir UK261.",
-  badge = "Be išankstinio mokesčio",
-  ctaLabel = "Atidaryti ClaimWinger",
-  ctaHref = buildClaimWingerLtLink("home", {
+  title = "Kontrollige oma lendu ClaimWingeri vormis",
+  description = "ClaimWingeri vorm on saadaval eesti keeles. See sobib hilinenud ja tühistatud lendude, lennureisist mahajätmise ning maha jäänud jätkulendude puhul vastavalt EU261 ja UK261 määrustele.",
+  badge = "Ilma ettemaksuta",
+  ctaLabel = "Ava ClaimWinger",
+  ctaHref = buildClaimWingerEtLink("home", {
     medium: "embedded_cta",
-    campaign: "lt_claim_entry",
+    campaign: "et_claim_entry",
   }),
-  loadingLabel = "Įkeliama lietuviška ClaimWinger forma...",
-  loadingDescription = "Po akimirkos matysite formą, kurioje galėsite patikrinti konkretų skrydžio atvejį.",
-  placement = "lt_embed_section",
-  embedCampaign = "lt_claim_entry",
+  loadingLabel = "Laaditakse ClaimWingeri eestikeelset vormi...",
+  loadingDescription = "Hetke pärast näete vormi, milles saate kontrollida oma konkreetset lennujuhtumit.",
+  placement = "et_embed_section",
+  embedCampaign = "et_claim_entry",
   embedContent,
-}: ClaimWingerLtSectionProps) {
+}: ClaimWingerEtSectionProps) {
   const wrapperClassName = ["not-prose", className].filter(Boolean).join(" ");
   const embedQueryParams: Record<string, string> = {
-    utm_source: "problemlot-lt",
+    utm_source: "problemlot-et",
     utm_medium: "embed",
     utm_campaign: embedCampaign,
-    utm_language: "lt",
+    utm_language: "et",
   };
 
   if (embedContent) {
@@ -52,8 +52,8 @@ export function ClaimWingerLtSection({
 
   return (
     <section className={wrapperClassName} data-claimwinger-embed="true">
-      <div className="mb-6 rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-amber-50 p-6 shadow-sm dark:border-emerald-900 dark:from-emerald-950/40 dark:via-gray-900 dark:to-gray-900">
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-200">
+      <div className="mb-6 rounded-3xl border border-red-200 bg-gradient-to-br from-red-50 via-white to-slate-50 p-6 shadow-sm dark:border-red-900 dark:from-red-950/40 dark:via-gray-900 dark:to-gray-900">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-100 px-4 py-2 text-sm font-medium text-red-800 dark:bg-red-900/30 dark:text-red-200">
           <Sparkles className="h-4 w-4" />
           {badge}
         </div>
@@ -69,16 +69,16 @@ export function ClaimWingerLtSection({
 
         <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
-            <ShieldCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-            No win, no fee
+            <ShieldCheck className="h-4 w-4 text-red-600 dark:text-red-400" />
+            Tasu ainult võidu korral
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
-            <ShieldCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-            EB 261 / UK261 patikra
+            <ShieldCheck className="h-4 w-4 text-red-600 dark:text-red-400" />
+            EU261 / UK261 kontroll
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
-            <ShieldCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-            Lietuviška forma
+            <ShieldCheck className="h-4 w-4 text-red-600 dark:text-red-400" />
+            Eestikeelne vorm
           </span>
         </div>
 
@@ -87,8 +87,8 @@ export function ClaimWingerLtSection({
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackClaimWingerLtClick(placement, ctaHref)}
-            className="inline-flex items-center gap-2 rounded-2xl bg-emerald-700 px-6 py-3 font-semibold text-white transition hover:bg-emerald-800"
+            onClick={() => trackClaimWingerEtClick(placement, ctaHref)}
+            className="inline-flex items-center gap-2 rounded-2xl bg-red-700 px-6 py-3 font-semibold text-white transition hover:bg-red-800"
           >
             {ctaLabel}
             <ArrowRight className="h-4 w-4" />
@@ -98,14 +98,14 @@ export function ClaimWingerLtSection({
 
       <ClaimWingerHeroEmbed
         className="mb-8"
-        lang="lt"
+        lang="et"
         queryParams={embedQueryParams}
-        title="ClaimWinger lietuviška forma"
+        title="ClaimWingeri eestikeelne vorm"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
       />
       <ClaimWingerAppCta
-        locale="lt"
+        locale="et"
         placement="claimwinger_section"
         className="mt-8"
       />

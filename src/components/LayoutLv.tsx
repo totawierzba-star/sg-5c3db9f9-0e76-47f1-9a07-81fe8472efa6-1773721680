@@ -192,7 +192,7 @@ export function LayoutLv({ children }: LayoutLvProps) {
                 <ul className="space-y-2 text-sm">
                   <li>
                     <a href={claimLinks.home} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-red-400">
-                      Angļu forma
+                      Latviešu forma
                     </a>
                   </li>
                   <li>

@@ -130,4 +130,5 @@ const APP_FEATURE_LABELS: Record<SiteLanguageCode, [string, string, string]> = {
   lt: ["Įlaipinimo kortelės nuotrauka", "Parašas pirštu", "Būsenos pranešimai"],
   lv: ["Iekāpšanas kartes foto", "Paraksts ar pirkstu", "Statusa paziņojumi"],
   sr: ["Fotografija bording karte", "Potpis prstom", "Obaveštenja o statusu"],
+  et: ["Pardakaardi foto", "Sõrmega allkiri", "Staatuse teavitused"],
 };

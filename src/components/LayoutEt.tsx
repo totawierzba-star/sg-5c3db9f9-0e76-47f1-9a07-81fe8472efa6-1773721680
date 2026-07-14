@@ -9,37 +9,37 @@ import { DesktopLanguageDropdown, MobileLanguageList } from "@/components/Langua
 import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { ThemeProvider } from "@/contexts/ThemeProvider";
 import {
-  buildClaimWingerLtLink,
-  trackClaimWingerLtClick,
-} from "@/lib/claimwingerLinksLt";
+  buildClaimWingerEtLink,
+  trackClaimWingerEtClick,
+} from "@/lib/claimwingerLinksEt";
 
-interface LayoutLtProps {
+interface LayoutEtProps {
   children: ReactNode;
 }
 
 const claimLinks = {
-  home: buildClaimWingerLtLink("home", {
+  home: buildClaimWingerEtLink("home", {
     medium: "nav_button",
-    campaign: "lt_locale_launch",
+    campaign: "et_locale_launch",
   }),
-  delayed: buildClaimWingerLtLink("delayed", {
+  delayed: buildClaimWingerEtLink("delayed", {
     medium: "footer_link",
-    campaign: "lt_delayed_flight",
+    campaign: "et_delayed_flight",
   }),
-  cancelled: buildClaimWingerLtLink("cancelled", {
+  cancelled: buildClaimWingerEtLink("cancelled", {
     medium: "footer_link",
-    campaign: "lt_cancelled_flight",
+    campaign: "et_cancelled_flight",
   }),
 };
 
 const navLinks = [
-  { href: "/lt/veluojantis-skrydis", label: "Vėluojantis skrydis" },
-  { href: "/lt/atsauktas-skrydis", label: "Atšauktas skrydis" },
-  { href: "/lt/kompensacijos-skaiciuokle", label: "Skaičiuoklė" },
-  { href: "/lt/blog", label: "Blogas" },
+  { href: "/et/hilinenud-lend", label: "Hilinenud lend" },
+  { href: "/et/tuhistatud-lend", label: "Tühistatud lend" },
+  { href: "/et/kalkulaator", label: "Kalkulaator" },
+  { href: "/et/blog", label: "Blogi" },
 ];
 
-export function LayoutLt({ children }: LayoutLtProps) {
+export function LayoutEt({ children }: LayoutEtProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -47,7 +47,7 @@ export function LayoutLt({ children }: LayoutLtProps) {
     const previousLang = html.lang;
     const previousDir = html.dir;
 
-    html.lang = "lt";
+    html.lang = "et";
     html.dir = "ltr";
 
     return () => {
@@ -62,13 +62,13 @@ export function LayoutLt({ children }: LayoutLtProps) {
         <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-gray-950/95">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
-              <Link href="/lt" className="group flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-700 transition-colors group-hover:bg-emerald-800">
+              <Link href="/et" className="group flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-red-700 transition-colors group-hover:bg-red-800">
                   <Plane className="h-5 w-5 text-white" />
                 </div>
                 <div>
                   <div className="text-lg font-bold text-slate-900 dark:text-white">ProblemLot.com</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">Lietuviška versija</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">Eesti versioon</div>
                 </div>
               </Link>
 
@@ -77,15 +77,15 @@ export function LayoutLt({ children }: LayoutLtProps) {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="font-medium text-slate-700 transition-colors hover:text-emerald-700 dark:text-slate-300 dark:hover:text-emerald-400"
+                    className="font-medium text-slate-700 transition-colors hover:text-red-700 dark:text-slate-300 dark:hover:text-red-400"
                   >
                     {link.label}
                   </Link>
                 ))}
 
                 <DesktopLanguageDropdown
-                  currentLocale="lt"
-                  buttonClassName="font-medium text-slate-700 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400"
+                  currentLocale="et"
+                  buttonClassName="font-medium text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400"
                 />
 
                 <ThemeSwitch />
@@ -94,10 +94,10 @@ export function LayoutLt({ children }: LayoutLtProps) {
                   href={claimLinks.home}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackClaimWingerLtClick("layout_desktop_nav", claimLinks.home)}
-                  className="rounded-xl bg-emerald-700 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-emerald-800"
+                  onClick={() => trackClaimWingerEtClick("layout_desktop_nav", claimLinks.home)}
+                  className="rounded-xl bg-red-700 px-5 py-2.5 font-semibold text-white transition-colors hover:bg-red-800"
                 >
-                  Patikrinti skrydį
+                  Kontrollige lendu
                 </a>
               </nav>
 
@@ -106,7 +106,7 @@ export function LayoutLt({ children }: LayoutLtProps) {
                 <button
                   onClick={() => setMobileMenuOpen((open) => !open)}
                   className="p-2 text-slate-700 dark:text-slate-300"
-                  aria-label="Atidaryti meniu"
+                  aria-label="Ava menüü"
                 >
                   {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
@@ -119,7 +119,7 @@ export function LayoutLt({ children }: LayoutLtProps) {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block py-2 font-medium text-slate-700 transition-colors hover:text-emerald-700 dark:text-slate-300 dark:hover:text-emerald-400"
+                    className="block py-2 font-medium text-slate-700 transition-colors hover:text-red-700 dark:text-slate-300 dark:hover:text-red-400"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -128,18 +128,18 @@ export function LayoutLt({ children }: LayoutLtProps) {
 
                 <div className="mt-2 border-t border-gray-200 pt-3 dark:border-gray-700">
                   <GooglePlayButton
-                    locale="lt"
+                    locale="et"
                     placement="mobile_menu"
                     campaign="android_app_menu"
                     className="w-full justify-center"
                   />
                 </div>
                 <MobileLanguageList
-                  currentLocale="lt"
-                  title="Kalba"
+                  currentLocale="et"
+                  title="Keel"
                   onNavigate={() => setMobileMenuOpen(false)}
                   itemClassName="block rounded-md px-3 py-2 text-sm text-slate-700 transition-colors hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-gray-800"
-                  activeItemClassName="block rounded-md bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300"
+                  activeItemClassName="block rounded-md bg-red-50 px-3 py-2 text-sm font-medium text-red-700 dark:bg-red-950/30 dark:text-red-300"
                 />
 
                 <a
@@ -147,12 +147,12 @@ export function LayoutLt({ children }: LayoutLtProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => {
-                    trackClaimWingerLtClick("layout_mobile_nav", claimLinks.home);
+                    trackClaimWingerEtClick("layout_mobile_nav", claimLinks.home);
                     setMobileMenuOpen(false);
                   }}
-                  className="block rounded-xl bg-emerald-700 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-emerald-800"
+                  className="block rounded-xl bg-red-700 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-red-800"
                 >
-                  Atidaryti ClaimWinger
+                  Ava ClaimWinger
                 </a>
               </div>
             )}
@@ -169,17 +169,17 @@ export function LayoutLt({ children }: LayoutLtProps) {
                   <ClaimWingerLogo compact textClassName="text-white" />
                 </div>
                 <p className="text-sm leading-6 text-slate-400">
-                  Praktiniai paaiškinimai lietuviškai apie kompensaciją už vėluojantį,
-                  atšauktą arba perpildytą skrydį pagal EU261 ir UK261.
+                  Praktilised eestikeelsed selgitused hüvitise kohta hilinenud,
+                  tühistatud või ülebroneeritud lennu korral vastavalt EU261 ja UK261 määrustele.
                 </p>
               </div>
 
               <div>
-                <h3 className="mb-4 font-semibold text-white">Pagrindiniai puslapiai</h3>
+                <h3 className="mb-4 font-semibold text-white">Peamised lehed</h3>
                 <ul className="space-y-2 text-sm">
                   {navLinks.map((link) => (
                     <li key={link.href}>
-                      <Link href={link.href} className="transition-colors hover:text-emerald-400">
+                      <Link href={link.href} className="transition-colors hover:text-red-400">
                         {link.label}
                       </Link>
                     </li>
@@ -191,39 +191,39 @@ export function LayoutLt({ children }: LayoutLtProps) {
                 <h3 className="mb-4 font-semibold text-white">ClaimWinger</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href={claimLinks.home} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-emerald-400">
-                      Lietuviška forma
+                    <a href={claimLinks.home} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-red-400">
+                      Eestikeelne vorm
                     </a>
                   </li>
                   <li>
-                    <a href={claimLinks.delayed} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-emerald-400">
-                      Delayed flight
+                    <a href={claimLinks.delayed} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-red-400">
+                      Hilinenud lend
                     </a>
                   </li>
                   <li>
-                    <a href={claimLinks.cancelled} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-emerald-400">
-                      Cancelled flight
+                    <a href={claimLinks.cancelled} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-red-400">
+                      Tühistatud lend
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="mb-4 font-semibold text-white">Svarbu</h3>
+                <h3 className="mb-4 font-semibold text-white">Oluline</h3>
                 <p className="text-sm leading-6 text-slate-400">
-                  Turinys yra informacinis. Tikroji teisė į kompensaciją priklauso nuo
-                  maršruto, oro linijos, sutrikimo priežasties ir keleivio dokumentų.
+                  Sisu on informatiivne. Tegelik õigus hüvitisele sõltub marsruudist,
+                  lennufirmast, häire põhjusest ja reisija dokumentidest.
                 </p>
               </div>
             </div>
 
             <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-              <p>&copy; {new Date().getFullYear()} ProblemLot.com - Lietuviška versija</p>
+              <p>&copy; {new Date().getFullYear()} ProblemLot.com - Eesti versioon</p>
             </div>
           </div>
         </footer>
 
-        <ClaimWingerAppBanner locale="lt" />
+        <ClaimWingerAppBanner locale="et" />
       </div>
     </ThemeProvider>
   );

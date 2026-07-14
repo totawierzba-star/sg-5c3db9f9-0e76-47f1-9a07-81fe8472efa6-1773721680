@@ -17,6 +17,7 @@ const languageByPrefix: Record<string, string> = {
   cs: "cs",
   el: "el",
   en: "en",
+  et: "et",
   hi: "hi",
   hu: "hu",
   it: "it",

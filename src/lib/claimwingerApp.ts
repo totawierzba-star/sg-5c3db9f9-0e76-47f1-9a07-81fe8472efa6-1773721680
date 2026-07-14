@@ -58,6 +58,7 @@ const CLAIMWINGER_WEB_BASE_URLS: Record<SiteLanguageCode, string> = {
   lt: "https://claimwinger.com/lt",
   lv: "https://claimwinger.com/lv",
   sr: "https://claimwinger.com",
+  et: "https://claimwinger.com/et",
 };
 
 const HOME_PATHS = new Set([
@@ -78,6 +79,7 @@ const HOME_PATHS = new Set([
   "/lt",
   "/lv",
   "/sr",
+  "/et",
 ]);
 
 const HIGH_INTENT_PATH_PARTS = [
@@ -118,6 +120,9 @@ const HIGH_INTENT_PATH_PARTS = [
   "ersattning-kalkulator",
   "kasnjenje-leta",
   "otkazan-let",
+  "hilinenud-lend",
+  "tuhistatud-lend",
+  "kalkulaator",
 ];
 
 /**
@@ -521,6 +526,19 @@ export const APP_CTA_COPY: Record<SiteLanguageCode, AppCtaCopy> = {
     barText: "Aplikacija ClaimWinger za Android",
     fallbackBarText: "Proverite svoj zahtev online",
     closeLabel: "Zatvori",
+  },
+  et: {
+    badge: "Mobiilirakendus",
+    title: "Laadige alla ClaimWingeri rakendus",
+    description:
+      "Kontrollige hüvitist ja esitage nõue otse telefonist. Pildistage pardakaart, allkirjastage sõrmega ja jälgige staatust — ilma ettemaksuta.",
+    cta: "Laadige alla Google Playst",
+    storePrefix: "Laadige alla",
+    webCta: "Kontrollige nõuet veebis",
+    webCtaShort: "Veebis",
+    barText: "ClaimWingeri rakendus Androidile",
+    fallbackBarText: "Kontrollige oma nõuet veebis",
+    closeLabel: "Sulge",
   },
 };
 

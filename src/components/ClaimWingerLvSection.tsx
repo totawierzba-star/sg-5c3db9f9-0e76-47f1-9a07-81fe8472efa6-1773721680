@@ -78,7 +78,7 @@ export function ClaimWingerLvSection({
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
             <ShieldCheck className="h-4 w-4 text-red-600 dark:text-red-400" />
-            Angļu forma
+            Latviešu forma
           </span>
         </div>
 
@@ -100,7 +100,7 @@ export function ClaimWingerLvSection({
         className="mb-8"
         lang="lv"
         queryParams={embedQueryParams}
-        title="ClaimWinger English form"
+        title="ClaimWinger latviešu forma"
         loadingLabel={loadingLabel}
         loadingDescription={loadingDescription}
       />
