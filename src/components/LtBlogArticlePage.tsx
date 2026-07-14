@@ -269,13 +269,13 @@ export function LtBlogArticlePage({ article }: LtBlogArticlePageProps) {
           <ClaimWingerLtSection
             className="mb-12"
             title="Patikrinkite savo atvejį ClaimWinger"
-            description="Forma yra anglų kalba, nes ClaimWinger dar neturi atskiros lietuviškos versijos. Ji įkelta aukštai straipsnyje, kad galėtumėte iškart patikrinti vėlavimą, atšaukimą, overbookingą arba praleistą persėdimą pagal EB 261 ar UK261."
+            description="Forma pasiekiama lietuvių kalba. Ji įkelta aukštai straipsnyje, kad galėtumėte iškart patikrinti vėlavimą, atšaukimą, overbookingą arba praleistą persėdimą pagal EB 261 ar UK261."
             ctaHref={embedHref}
             ctaLabel={content.ctaPath === "/cancelled-flight" ? "Patikrinti atšauktą skrydį" : "Patikrinti vėluojantį skrydį"}
             placement={`lt_article_${article.slug}_embed_high`}
             embedCampaign={article.slug}
             embedContent="high_article_embed"
-            loadingLabel="Įkeliama angliška ClaimWinger forma..."
+            loadingLabel="Įkeliama lietuviška ClaimWinger forma..."
             loadingDescription="Po akimirkos galėsite patikrinti konkretų skrydį be išankstinio mokesčio."
           />
 
@@ -325,7 +325,7 @@ export function LtBlogArticlePage({ article }: LtBlogArticlePageProps) {
                 Naudingos patikros nuorodos
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Pasirinkite kelią pagal savo situaciją. Visos nuorodos veda į ClaimWinger anglų kalbos srautą,
+                Pasirinkite kelią pagal savo situaciją. Visos nuorodos veda į lietuvišką ClaimWinger srautą,
                 pritaikytą Lietuvos keleiviams.
               </p>
               <div className="grid gap-4 md:grid-cols-3">

@@ -1173,10 +1173,10 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
     numberLocale: "lt-LT",
     campaign: "lt_compensation_calculator",
     claimWinger: {
-      langParam: "en",
-      defaultUrl: "https://claimwinger.com",
-      delayUrl: "https://claimwinger.com/delayed-flight",
-      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+      langParam: "lt",
+      defaultUrl: "https://claimwinger.com/lt/",
+      delayUrl: "https://claimwinger.com/lt/",
+      cancelledUrl: "https://claimwinger.com/lt/",
     },
     steps: {
       label: (c, t) => `Žingsnis ${c} iš ${t}`,

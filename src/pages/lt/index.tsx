@@ -42,9 +42,9 @@ const homeFaqs = [
       "Taip, bet kiekvienu atveju reikia vertinti maršrutą ir skrydį vykdantį vežėją. Išvykstant iš Lietuvos oro uosto EU261 paprastai taikomas bet kuriai oro linijai, o atvykstant iš trečiosios šalies svarbu, ar vežėjas patenka į EU/UK/CH/EEA taikymo sritį.",
   },
   {
-    question: "Kodėl ClaimWinger forma yra anglų kalba?",
+    question: "Ar ClaimWinger forma yra lietuvių kalba?",
     answer:
-      "ClaimWinger kol kas neturi atskiros lietuviškos versijos, todėl lietuviški puslapiai veda į anglišką formą. Ji gali būti naudojama konkrečiam skrydžio atvejui patikrinti ir turi lietuviškai pažymėtus UTM parametrus srauto analitikai.",
+      "Taip. ClaimWinger turi lietuvišką versiją adresu claimwinger.com/lt, todėl lietuviški puslapiai veda tiesiai į lietuvišką formą. Joje galite patikrinti konkretų skrydžio atvejį, o nuorodos turi lietuviškai pažymėtus UTM parametrus srauto analitikai.",
   },
   {
     question: "Kur kreiptis, jei oro linija neatsako?",
@@ -188,7 +188,7 @@ export default function LithuanianHomePage() {
                 className="lg:mt-2"
                 badge="Greita skrydžio patikra"
                 title="Patikrinkite skrydį čia pat"
-                description="Naudokite anglišką ClaimWinger formą pirminiam įvertinimui. Tai greičiausias kelias, jei jau žinote maršrutą, datą ir kas nutiko skrydžiui."
+                description="Naudokite lietuvišką ClaimWinger formą pirminiam įvertinimui. Tai greičiausias kelias, jei jau žinote maršrutą, datą ir kas nutiko skrydžiui."
                 ctaHref={claimHref}
                 ctaLabel="Patikrinti ClaimWinger"
                 placement="lt_home_hero_embed"

@@ -41,8 +41,8 @@ export type LtArticleContent = {
   contextualLinks: LtContextualLink[];
 };
 
-const delayedAnchor = "anglišką ClaimWinger formą dėl vėluojančio skrydžio";
-const cancelledAnchor = "anglišką ClaimWinger formą dėl atšaukto skrydžio";
+const delayedAnchor = "lietuvišką ClaimWinger formą dėl vėluojančio skrydžio";
+const cancelledAnchor = "lietuvišką ClaimWinger formą dėl atšaukto skrydžio";
 
 function getDestination(path: BlogArticleLtCtaPath): ClaimWingerLtDestination {
   return path === "/cancelled-flight" ? "cancelled" : "delayed";
@@ -150,7 +150,7 @@ function buildKeyPoints(article: BlogArticleLt) {
     "Saugokite rezervaciją, įlaipinimo kortelę, skrydžio numerį, oro linijos laiškus ir realaus atvykimo laiko įrodymus.",
     "Vertinama galutinė paskirties vieta, ypač jei kelionė buvo viena rezervacija su persėdimu.",
     "Maistas, viešbutis ir transportas yra atskiros priežiūros teisės, kurios gali egzistuoti šalia 250 / 400 / 600 eurų kompensacijos.",
-    "ClaimWinger gali patikrinti bylą pagal no-win-no-fee modelį per anglišką formą, nes atskiros lietuviškos ClaimWinger versijos dar nėra.",
+    "ClaimWinger gali patikrinti bylą pagal no-win-no-fee modelį per lietuvišką formą adresu claimwinger.com/lt.",
   ];
 
   if (article.airlineName) {
@@ -326,7 +326,7 @@ function buildFaqs(article: BlogArticleLt): LtArticleFaq[] {
     {
       question: "Ar ClaimWinger gali patikrinti šį atvejį?",
       answer:
-        "Taip, galite pateikti duomenis per anglišką ClaimWinger formą. Modelis yra no-win-no-fee, todėl išankstinis mokestis netaikomas.",
+        "Taip, galite pateikti duomenis per lietuvišką ClaimWinger formą. Modelis yra no-win-no-fee, todėl išankstinis mokestis netaikomas.",
     },
   ];
 

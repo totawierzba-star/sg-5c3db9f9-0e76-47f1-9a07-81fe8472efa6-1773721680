@@ -25,14 +25,14 @@ type ClaimWingerLtSectionProps = {
 export function ClaimWingerLtSection({
   className = "",
   title = "Patikrinkite savo skrydį su ClaimWinger forma",
-  description = "ClaimWinger kol kas neturi atskiros lietuviškos versijos, todėl naudojame anglišką formą. Ji tinka vėluojantiems ir atšauktiems skrydžiams, atsisakytam įlaipinimui bei praleistiems persėdimams pagal EB 261 ir UK261.",
+  description = "ClaimWinger forma pasiekiama lietuvių kalba. Ji tinka vėluojantiems ir atšauktiems skrydžiams, atsisakytam įlaipinimui bei praleistiems persėdimams pagal EB 261 ir UK261.",
   badge = "Be išankstinio mokesčio",
   ctaLabel = "Atidaryti ClaimWinger",
   ctaHref = buildClaimWingerLtLink("home", {
     medium: "embedded_cta",
     campaign: "lt_claim_entry",
   }),
-  loadingLabel = "Įkeliama angliška ClaimWinger forma...",
+  loadingLabel = "Įkeliama lietuviška ClaimWinger forma...",
   loadingDescription = "Po akimirkos matysite formą, kurioje galėsite patikrinti konkretų skrydžio atvejį.",
   placement = "lt_embed_section",
   embedCampaign = "lt_claim_entry",
@@ -78,7 +78,7 @@ export function ClaimWingerLtSection({
           </span>
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200 dark:bg-gray-800 dark:ring-gray-700">
             <ShieldCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-            Angliška forma
+            Lietuviška forma
           </span>
         </div>
 
@@ -98,7 +98,7 @@ export function ClaimWingerLtSection({
 
       <ClaimWingerHeroEmbed
         className="mb-8"
-        lang="en"
+        lang="lt"
         queryParams={embedQueryParams}
         title="ClaimWinger English form"
         loadingLabel={loadingLabel}

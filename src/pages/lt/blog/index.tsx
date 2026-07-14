@@ -87,7 +87,7 @@ export default function LithuanianBlogIndex() {
         cta={{
           title: "Norite patikrinti konkretų skrydį?",
           description:
-            "ClaimWinger kol kas neturi atskiros lietuviškos versijos, todėl naudojame anglišką formą. Joje galite patikrinti vėlavimą, atšaukimą, overbooking arba praleistą persėdimą be išankstinio mokesčio.",
+            "ClaimWinger forma pasiekiama lietuvių kalba. Joje galite patikrinti vėlavimą, atšaukimą, overbooking arba praleistą persėdimą be išankstinio mokesčio.",
           href: ctaHref,
           label: "Patikrinti ClaimWinger",
           note: "No win, no fee. Be išankstinio mokesčio.",

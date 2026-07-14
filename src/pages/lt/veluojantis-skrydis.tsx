@@ -117,8 +117,8 @@ export default function LithuanianDelayedFlightPage() {
             <ClaimWingerLtSection
               className="mt-10"
               badge="Vėluojančio skrydžio patikra"
-              title="Patikrinkite vėlavimą angliškoje formoje"
-              description="Įveskite maršrutą ir skrydžio informaciją ClaimWinger formoje. Forma yra anglų kalba, bet tinka Lietuvos keleiviams, kurių atvejai patenka į EU261 arba UK261 taikymo sritį."
+              title="Patikrinkite vėlavimą lietuviškoje formoje"
+              description="Įveskite maršrutą ir skrydžio informaciją ClaimWinger formoje. Forma yra lietuvių kalba ir tinka Lietuvos keleiviams, kurių atvejai patenka į EU261 arba UK261 taikymo sritį."
               ctaHref={claimHref}
               ctaLabel="Patikrinti vėluojantį skrydį"
               placement="lt_delayed_hero_embed"

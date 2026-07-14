@@ -139,8 +139,8 @@ export default function LithuanianCancelledFlightPage() {
             <ClaimWingerLtSection
               className="mt-10"
               badge="Atšaukto skrydžio patikra"
-              title="Patikrinkite atšaukimą angliškoje formoje"
-              description="ClaimWinger gali įvertinti, ar atšaukimas patenka į EU261 arba UK261 taikymo sritį. Forma yra anglų kalba, nes atskiros lietuviškos ClaimWinger versijos kol kas nėra."
+              title="Patikrinkite atšaukimą lietuviškoje formoje"
+              description="ClaimWinger gali įvertinti, ar atšaukimas patenka į EU261 arba UK261 taikymo sritį. Forma pasiekiama lietuvių kalba adresu claimwinger.com/lt."
               ctaHref={claimHref}
               ctaLabel="Patikrinti atšauktą skrydį"
               placement="lt_cancelled_hero_embed"
