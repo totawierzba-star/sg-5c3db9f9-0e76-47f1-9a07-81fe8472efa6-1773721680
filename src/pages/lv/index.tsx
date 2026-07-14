@@ -42,9 +42,9 @@ const homeFaqs = [
       "Jā, taču katrā gadījumā jāvērtē maršruts un faktiskais pārvadātājs. Izlidojot no Rīgas vai citas ES lidostas, noteikumi parasti attiecas arī uz ne Eiropas aviokompānijām.",
   },
   {
-    question: "Kāpēc ClaimWinger forma ir angļu valodā?",
+    question: "Vai ClaimWinger forma ir latviešu valodā?",
     answer:
-      "ClaimWinger pagaidām nav atsevišķas latviešu versijas, tāpēc latviešu lapas izmanto angļu formu ar latviešu UTM parametriem analītikai.",
+      "Jā. ClaimWinger ir latviešu versija vietnē claimwinger.com/lv, tāpēc latviešu lapas ved tieši uz latviešu formu ar latviešu UTM parametriem analītikai.",
   },
 ];
 
@@ -183,7 +183,7 @@ export default function LatvianHomePage() {
                 className="lg:mt-2"
                 badge="Ātra lidojuma pārbaude"
                 title="Pārbaudiet lidojumu tepat"
-                description="Izmantojiet ClaimWinger angļu formu sākotnējam izvērtējumam. Tas ir ātrākais ceļš, ja jau zināt maršrutu, datumu un kas notika ar lidojumu."
+                description="Izmantojiet ClaimWinger latviešu formu sākotnējam izvērtējumam. Tas ir ātrākais ceļš, ja jau zināt maršrutu, datumu un kas notika ar lidojumu."
                 ctaHref={claimHref}
                 ctaLabel="Pārbaudīt ClaimWinger"
                 placement="lv_home_hero_embed"

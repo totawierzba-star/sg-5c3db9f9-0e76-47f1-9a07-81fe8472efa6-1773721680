@@ -41,8 +41,8 @@ export type LvArticleContent = {
   contextualLinks: LvContextualLink[];
 };
 
-const delayedAnchor = "ClaimWinger angļu formu kavētam lidojumam";
-const cancelledAnchor = "ClaimWinger angļu formu atceltam lidojumam";
+const delayedAnchor = "ClaimWinger latviešu formu kavētam lidojumam";
+const cancelledAnchor = "ClaimWinger latviešu formu atceltam lidojumam";
 
 type LvManualProfile = {
   heading: string;
@@ -495,7 +495,7 @@ function buildKeyPoints(article: BlogArticleLv) {
     "Svarīgs ir galamērķis, īpaši tad, ja ceļojums bija viena rezervācija ar savienojumu Rīgā, Helsinkos, Varšavā vai citā hubā.",
     "Ēdiens, viesnīca un transports ir atsevišķas aprūpes tiesības, kas var pastāvēt paralēli 250 / 400 / 600 EUR kompensācijai.",
     `Biežākā kļūda šajā tēmā: ${manual.mistake}`,
-    "ClaimWinger var pārbaudīt lietu pēc no-win-no-fee modeļa angļu formā, jo atsevišķas latviešu ClaimWinger versijas pagaidām nav.",
+    "ClaimWinger var pārbaudīt lietu pēc no-win-no-fee modeļa latviešu formā vietnē claimwinger.com/lv.",
   ];
 
   if (article.airlineName) {
@@ -716,7 +716,7 @@ function buildFaqs(article: BlogArticleLv): LvArticleFaq[] {
     {
       question: "Vai ClaimWinger var pārbaudīt šo gadījumu?",
       answer:
-        "Jā, datus var iesniegt ClaimWinger angļu formā. Modelis ir no-win-no-fee, tāpēc avansa maksa netiek prasīta.",
+        "Jā, datus var iesniegt ClaimWinger latviešu formā. Modelis ir no-win-no-fee, tāpēc avansa maksa netiek prasīta.",
     },
   ];
 

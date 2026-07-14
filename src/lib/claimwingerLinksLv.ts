@@ -10,9 +10,9 @@ type BuildClaimWingerLvLinkOptions = {
 };
 
 const CLAIMWINGER_LV_PATHS: Record<ClaimWingerLvDestination, string> = {
-  home: "https://claimwinger.com",
-  delayed: "https://claimwinger.com/delayed-flight",
-  cancelled: "https://claimwinger.com/cancelled-flight",
+  home: "https://claimwinger.com/lv/",
+  delayed: "https://claimwinger.com/lv/aizkavets-lidojums/",
+  cancelled: "https://claimwinger.com/lv/atcelts-lidojums/",
 };
 
 export function buildClaimWingerLvLink(

@@ -25,14 +25,14 @@ type ClaimWingerLvSectionProps = {
 export function ClaimWingerLvSection({
   className = "",
   title = "Pārbaudiet savu lidojumu ClaimWinger formā",
-  description = "ClaimWinger pagaidām nav atsevišķas latviešu versijas, tāpēc izmantojam angļu formu. Tā der kavētiem un atceltiem lidojumiem, atteiktai iekāpšanai un nokavētiem savienojumiem saskaņā ar EU261 un UK261.",
+  description = "ClaimWinger forma ir pieejama latviešu valodā. Tā der kavētiem un atceltiem lidojumiem, atteiktai iekāpšanai un nokavētiem savienojumiem saskaņā ar EU261 un UK261.",
   badge = "Bez avansa maksas",
   ctaLabel = "Atvērt ClaimWinger",
   ctaHref = buildClaimWingerLvLink("home", {
     medium: "embedded_cta",
     campaign: "lv_claim_entry",
   }),
-  loadingLabel = "Ielādējas ClaimWinger angļu forma...",
+  loadingLabel = "Ielādējas ClaimWinger latviešu forma...",
   loadingDescription = "Pēc brīža redzēsiet formu, kurā varēsiet pārbaudīt konkrētu lidojuma gadījumu.",
   placement = "lv_embed_section",
   embedCampaign = "lv_claim_entry",
@@ -98,7 +98,7 @@ export function ClaimWingerLvSection({
 
       <ClaimWingerHeroEmbed
         className="mb-8"
-        lang="en"
+        lang="lv"
         queryParams={embedQueryParams}
         title="ClaimWinger English form"
         loadingLabel={loadingLabel}

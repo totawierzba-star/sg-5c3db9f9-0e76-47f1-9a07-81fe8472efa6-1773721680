@@ -146,8 +146,8 @@ export default function LatvianCancelledFlightPage() {
             <ClaimWingerLvSection
               className="mt-10"
               badge="Atcelta lidojuma pārbaude"
-              title="Pārbaudiet atcelšanu angļu formā"
-              description="ClaimWinger var izvērtēt, vai atcelšana ietilpst EU261 vai UK261. Forma ir angļu valodā, jo atsevišķas latviešu ClaimWinger versijas pagaidām nav."
+              title="Pārbaudiet atcelšanu latviešu formā"
+              description="ClaimWinger var izvērtēt, vai atcelšana ietilpst EU261 vai UK261. Forma ir pieejama latviešu valodā vietnē claimwinger.com/lv."
               ctaHref={claimHref}
               ctaLabel="Pārbaudīt atcelto lidojumu"
               placement="lv_cancelled_hero_embed"

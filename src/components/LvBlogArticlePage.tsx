@@ -269,13 +269,13 @@ export function LvBlogArticlePage({ article }: LvBlogArticlePageProps) {
           <ClaimWingerLvSection
             className="mb-12"
             title="Pārbaudiet savu gadījumu ClaimWinger"
-            description="Forma ir angļu valodā, jo ClaimWinger vēl nav atsevišķas latviešu versijas. Tā ir ievietota augstu rakstā, lai jūs uzreiz varētu pārbaudīt kavēšanos, atcelšanu, overbooking vai nokavētu savienojumu saskaņā ar EK 261 vai UK261."
+            description="Forma ir pieejama latviešu valodā. Tā ir ievietota augstu rakstā, lai jūs uzreiz varētu pārbaudīt kavēšanos, atcelšanu, overbooking vai nokavētu savienojumu saskaņā ar EK 261 vai UK261."
             ctaHref={embedHref}
             ctaLabel={content.ctaPath === "/cancelled-flight" ? "Pārbaudīt atceltu lidojumu" : "Pārbaudīt kavētu lidojumu"}
             placement={`lv_article_${article.slug}_embed_high`}
             embedCampaign={article.slug}
             embedContent="high_article_embed"
-            loadingLabel="Ielādējas ClaimWinger angļu forma..."
+            loadingLabel="Ielādējas ClaimWinger latviešu forma..."
             loadingDescription="Pēc brīža varēsiet pārbaudīt konkrēto lidojumu bez avansa maksas."
           />
 
@@ -325,7 +325,7 @@ export function LvBlogArticlePage({ article }: LvBlogArticlePageProps) {
                 Noderīgas pārbaudes saites
               </h2>
               <p className="mb-6 text-base leading-7 text-slate-700 dark:text-slate-300">
-                Izvēlieties ceļu pēc savas situācijas. Visas saites ved uz ClaimWinger angļu plūsmu,
+                Izvēlieties ceļu pēc savas situācijas. Visas saites ved uz ClaimWinger latviešu plūsmu,
                 kas atzīmēta Latvijas pasažieru datplūsmai.
               </p>
               <div className="grid gap-4 md:grid-cols-3">

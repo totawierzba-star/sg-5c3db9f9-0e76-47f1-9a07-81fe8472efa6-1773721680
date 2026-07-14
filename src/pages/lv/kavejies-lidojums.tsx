@@ -116,8 +116,8 @@ export default function LatvianDelayedFlightPage() {
             <ClaimWingerLvSection
               className="mt-10"
               badge="Kavēta lidojuma pārbaude"
-              title="Pārbaudiet kavēšanos angļu formā"
-              description="Ievadiet maršrutu un lidojuma informāciju ClaimWinger formā. Forma ir angļu valodā, bet tā der Latvijas pasažieriem, kuru gadījumi ietilpst EU261 vai UK261."
+              title="Pārbaudiet kavēšanos latviešu formā"
+              description="Ievadiet maršrutu un lidojuma informāciju ClaimWinger formā. Forma ir latviešu valodā un der Latvijas pasažieriem, kuru gadījumi ietilpst EU261 vai UK261."
               ctaHref={claimHref}
               ctaLabel="Pārbaudīt kavēto lidojumu"
               placement="lv_delayed_hero_embed"

@@ -1280,10 +1280,10 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
     numberLocale: "lv-LV",
     campaign: "lv_compensation_calculator",
     claimWinger: {
-      langParam: "en",
-      defaultUrl: "https://claimwinger.com",
-      delayUrl: "https://claimwinger.com/delayed-flight",
-      cancelledUrl: "https://claimwinger.com/cancelled-flight",
+      langParam: "lv",
+      defaultUrl: "https://claimwinger.com/lv/lidojuma-kompensacijas-kalkulators/",
+      delayUrl: "https://claimwinger.com/lv/aizkavets-lidojums/",
+      cancelledUrl: "https://claimwinger.com/lv/atcelts-lidojums/",
     },
     steps: {
       label: (c, t) => `Solis ${c} no ${t}`,

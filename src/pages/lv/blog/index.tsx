@@ -87,7 +87,7 @@ export default function LatvianBlogIndex() {
         cta={{
           title: "Vēlaties pārbaudīt konkrētu lidojumu?",
           description:
-            "ClaimWinger pagaidām nav atsevišķas latviešu versijas, tāpēc izmantojam angļu formu. Tajā var pārbaudīt kavēšanos, atcelšanu, overbooking vai nokavētu savienojumu bez avansa maksas.",
+            "ClaimWinger forma ir pieejama latviešu valodā. Tajā var pārbaudīt kavēšanos, atcelšanu, overbooking vai nokavētu savienojumu bez avansa maksas.",
           href: ctaHref,
           label: "Pārbaudīt ClaimWinger",
           note: "No win, no fee. Bez avansa maksas.",
