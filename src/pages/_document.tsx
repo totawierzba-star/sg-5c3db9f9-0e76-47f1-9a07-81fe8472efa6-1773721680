@@ -15,6 +15,7 @@ type ProblemLotDocumentProps = DocumentInitialProps & {
 const languageByPrefix: Record<string, string> = {
   bg: "bg",
   cs: "cs",
+  de: "de",
   el: "el",
   en: "en",
   et: "et",

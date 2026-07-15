@@ -60,6 +60,7 @@ const CLAIMWINGER_WEB_BASE_URLS: Record<SiteLanguageCode, string> = {
   sr: "https://claimwinger.com",
   et: "https://claimwinger.com/et",
   ja: "https://claimwinger.com/ja",
+  de: "https://claimwinger.com/de",
 };
 
 const HOME_PATHS = new Set([
@@ -82,6 +83,7 @@ const HOME_PATHS = new Set([
   "/sr",
   "/et",
   "/ja",
+  "/de",
 ]);
 
 const HIGH_INTENT_PATH_PARTS = [
@@ -128,6 +130,9 @@ const HIGH_INTENT_PATH_PARTS = [
   "chien-furaito",
   "kekko-furaito",
   "keisanki",
+  "verspaeteter-flug",
+  "annullierter-flug",
+  "rechner",
 ];
 
 /**
@@ -557,6 +562,19 @@ export const APP_CTA_COPY: Record<SiteLanguageCode, AppCtaCopy> = {
     barText: "ClaimWinger Androidアプリ",
     fallbackBarText: "オンラインで請求を確認",
     closeLabel: "閉じる",
+  },
+  de: {
+    badge: "Mobile App",
+    title: "ClaimWinger-App herunterladen",
+    description:
+      "Prüfen Sie Ihre Entschädigung und reichen Sie den Anspruch direkt vom Smartphone ein. Bordkarte fotografieren, per Finger unterschreiben und Status-Benachrichtigungen erhalten — ohne Vorabkosten.",
+    cta: "Bei Google Play laden",
+    storePrefix: "Laden bei",
+    webCta: "Anspruch online prüfen",
+    webCtaShort: "Online",
+    barText: "ClaimWinger-App für Android",
+    fallbackBarText: "Prüfen Sie Ihren Anspruch online",
+    closeLabel: "Schließen",
   },
 };
 

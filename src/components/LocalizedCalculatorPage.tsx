@@ -366,6 +366,70 @@ const pageCopies: Record<Exclude<CalculatorLocaleCode, "pl">, CalculatorPageCopy
       "まず計算機で確認し、路線と状況が有望であればClaimWingerにお進みください。ClaimWingerのフォームは日本語でご利用いただけます。",
     finalCtaLabel: "計算機を開く",
   },
+  de: {
+    language: "German",
+    ogLocale: "de_DE",
+    urlPath: "/de/rechner",
+    title: "Flug-Entschädigungsrechner | 250, 400 oder 600 €",
+    description:
+      "Kostenloser Entschädigungsrechner nach EU-Verordnung 261/2004 und UK261 für verspätete Flüge, annullierte Flüge, Nichtbeförderung und verpasste Anschlussflüge.",
+    eyebrow: "Kostenloser EU261- und UK261-Rechner",
+    heading: "Flug-Entschädigungsrechner",
+    intro:
+      "Prüfen Sie in wenigen Schritten, ob Ihr verspäteter Flug, annullierter Flug oder überbuchter Flug Ihnen einen Anspruch auf 250, 400 oder 600 € Entschädigung pro Fluggast geben kann.",
+    afterCalculator:
+      "Das Ergebnis ist eine erste Einschätzung. ClaimWinger prüft anschließend die Buchung, die tatsächliche Ankunftszeit, die Ursache der Störung und die Verantwortung der Airline.",
+    bandsHeading: "Entschädigungsbeträge nach Entfernung",
+    bandsDescription:
+      "Die EU-Verordnung 261/2004 (Fluggastrechteverordnung) und UK261 verwenden feste Entschädigungsstufen. Der Ticketpreis beeinflusst die Höhe nicht.",
+    bandShort: "Kurze Strecke",
+    bandMedium: "Mittlere Strecke",
+    bandLong: "Lange Strecke",
+    bandShortDescription: "Flüge bis 1.500 km, zum Beispiel Frankfurt–Warschau (ca. 900 km) mit 250 €.",
+    bandMediumDescription: "Flüge von 1.500 bis 3.500 km, zum Beispiel Berlin–Antalya (ca. 2.500 km) mit 400 €.",
+    bandLongDescription: "Flüge über 3.500 km, zum Beispiel Frankfurt–New York (ca. 6.200 km) mit 600 €.",
+    rulesHeading: "Was der Rechner prüft",
+    rules: [
+      "Ob der Abflug oder die Ankunft unter die Fluggastrechte-Logik von EU261, UK261, der Schweiz oder des EWR fällt — alle Abflüge von deutschen und anderen EU-Flughäfen sind unabhängig von der Airline abgedeckt.",
+      "Ob die Ankunftsverspätung (ab 3 Stunden am Endziel), die Vorankündigung der Annullierung, die Nichtbeförderung oder der verpasste Anschlussflug die gesetzliche Schwelle erreicht — bei Umsteigeverbindungen, etwa mit LOT Polish Airlines über Warschau, zählt die Verspätung am Endziel.",
+      "Ob die ausführende Airline abgedeckt ist, wenn der Flug aus einem Drittstaat nach Europa ankommt.",
+      "Ob außergewöhnliche Umstände vor der Einreichung der Forderung eine manuelle rechtliche Prüfung erfordern.",
+    ],
+    faqHeading: "FAQ: Flug-Entschädigungsrechner",
+    faq: [
+      {
+        question: "Ist das Ergebnis des Rechners endgültig?",
+        answer:
+          "Nein. Es ist eine schnelle Einschätzung auf Basis der von Ihnen eingegebenen Strecke und Situation. Für eine tatsächliche Forderung müssen noch die Dokumente, die tatsächliche Ankunftszeit und die Ursache der Störung geprüft werden.",
+      },
+      {
+        question: "Prüft der Rechner auch annullierte Flüge?",
+        answer:
+          "Ja. Er deckt verspätete Flüge, annullierte Flüge, Nichtbeförderung und verpasste Anschlussflüge in einer Buchung ab. Bei einer Annullierung sind zudem die Frist der Vorankündigung und die Qualität des Ersatzflugs wichtig.",
+      },
+      {
+        question: "Wird die Entschädigung pro Fluggast berechnet?",
+        answer:
+          "Ja. Die Entschädigung nach der EU-Verordnung 261/2004 und UK261 wird in der Regel pro Fluggast berechnet, nicht pro Buchung.",
+      },
+      {
+        question: "Wann kann die Entschädigung 600 € betragen?",
+        answer:
+          "Meist dann, wenn die Strecke über 3.500 km liegt, der Flug in den Anwendungsbereich der Verordnung fällt und die Schwelle für Verspätung oder Annullierung erfüllt ist — zum Beispiel Frankfurt–New York (ca. 6.200 km). Innereuropäische Flüge, auch Verbindungen über Warschau, liegen meist in der Stufe von 250 € oder 400 €.",
+      },
+    ],
+    relatedHeading: "Nützliche nächste Seiten",
+    related: [
+      { label: "Startseite", href: "/de", description: "Überblick über Fluggastrechte und Entschädigungen." },
+      { label: "Verspäteter Flug", href: "/de/verspaeteter-flug", description: "Regeln, wenn Sie Ihr Endziel mit 3+ Stunden Verspätung erreichen." },
+      { label: "Annullierter Flug", href: "/de/annullierter-flug", description: "Ihre Rechte, wenn die Airline Ihren Flug annulliert." },
+      { label: "Blog", href: "/de/blog", description: "Ratgeber zu EU261, UK261, Airlines und Strecken." },
+    ],
+    finalCtaTitle: "Schätzen Sie Ihren Anspruch vor der Einreichung ein",
+    finalCtaText:
+      "Beginnen Sie mit dem Rechner und fahren Sie mit ClaimWinger fort, wenn Strecke und Störung vielversprechend aussehen.",
+    finalCtaLabel: "Rechner öffnen",
+  },
   bg: {
     language: "Bulgarian",
     ogLocale: "bg_BG",

@@ -23,6 +23,7 @@ export type CalculatorLocaleCode =
   | "lv"
   | "et"
   | "ja"
+  | "de"
   | "sr";
 
 export type CalculatorCopy = {
@@ -832,6 +833,51 @@ const localizedDetails: Record<SimpleLocaleCode, PartialDetailsStep> = {
       unknown: "わかりません",
     },
   },
+  de: {
+    title: "Details zum Fall",
+    description:
+      "Diese Antworten helfen dabei, den möglichen Betrag, eine Kürzung um 50 % oder die Notwendigkeit einer manuellen rechtlichen Prüfung zu bestimmen.",
+    delayQuestion: "Wie groß war die Verspätung am Endziel?",
+    cancellationNoticeQuestion: "Wann haben Sie von der Annullierung des Fluges erfahren?",
+    replacementQuestion: "Welcher Ersatzflug wurde Ihnen angeboten?",
+    deniedBoardingQuestion: "Erfolgte die Nichtbeförderung aus Gründen, die bei Ihnen lagen?",
+    extraordinaryQuestion: "Beruft sich die Fluggesellschaft auf außergewöhnliche Umstände?",
+    extraordinaryNote:
+      "Technische Defekte und Streiks des eigenen Personals der Fluggesellschaft reichen oft nicht aus, um die Entschädigung zu verweigern.",
+    delayOptions: {
+      under2h: "Unter 2 Stunden",
+      twoToThree: "2-3 Stunden",
+      threeToFour: "3-4 Stunden",
+      overFour: "Über 4 Stunden",
+    },
+    cancellationOptions: {
+      fourteenPlus: "14 Tage oder mehr",
+      sevenToThirteen: "7-13 Tage",
+      underSeven: "Weniger als 7 Tage",
+    },
+    replacementOptions: {
+      noneTitle: "Keiner",
+      noneDescription: "Keine echte Alternative.",
+      withinTitle: "Im gesetzlichen Zeitfenster",
+      withinDescription: "In der Regel keine Entschädigung.",
+      limitedTitle: "Begrenzte Verspätung",
+      limitedDescription: "Eine Kürzung um 50 % ist möglich.",
+      majorTitle: "Deutlich später",
+      majorDescription: "In der Regel der volle Betrag.",
+    },
+    deniedOptions: {
+      noTitle: "Nein",
+      noDescription: "Zum Beispiel Überbuchung.",
+      yesTitle: "Ja",
+      yesDescription: "Zum Beispiel fehlende Dokumente.",
+    },
+    extraordinaryOptions: {
+      no: "Nein",
+      yes: "Ja",
+      yesDescription: "Eine Prüfung ist erforderlich.",
+      unknown: "Weiß ich nicht",
+    },
+  },
   cs: {
     title: "Podrobnosti případu",
     description: "Tyto odpovědi rozhodují o výši částky, případném snížení o 50 % nebo nutnosti ruční kontroly.",
@@ -1140,6 +1186,31 @@ const localizedReasons: Record<SimpleLocaleCode, Record<ReasonCode, string>> = {
       "搭乗拒否はオーバーブッキングなど航空会社側の事情によるものと考えられます。",
     extraordinaryCircumstancesReview:
       "航空会社が特別な事情を主張しているため、金額については専門家による確認が必要です。",
+  }),
+  de: makeReasonLabels({
+    outOfScope:
+      "Der Flug fällt wahrscheinlich nicht in den Anwendungsbereich von EU261/UK261.",
+    delayUnderThreeHours: "Die Verspätung bei der Ankunft betrug weniger als 3 Stunden.",
+    coveredDepartureArea: "Der Flug startete von einem Flughafen in EU/UK/CH/EEA.",
+    coveredArrivalCarrier:
+      "Der Flug kam in EU/UK/CH/EEA an und wurde von einer Fluggesellschaft aus dem Anwendungsbereich durchgeführt.",
+    delayThresholdMet: "Die Verspätung bei der Ankunft betrug mehr als 3 Stunden.",
+    missedConnectionThresholdMet:
+      "Der verpasste Anschlussflug führte am Endziel zu einer Verspätung von mindestens 3 Stunden.",
+    cancellationNoticeFourteenDays:
+      "Die Fluggesellschaft hat die Annullierung mindestens 14 Tage vor dem Abflug mitgeteilt.",
+    replacementWithinLegalWindow:
+      "Der Ersatzflug lag innerhalb des gesetzlichen Zeitfensters.",
+    replacementLimitedDelayReduction:
+      "Der Betrag kann um 50 % gekürzt werden, da die Verspätung des Ersatzflugs begrenzt war.",
+    cancellationCompensable:
+      "Die Annullierung kann die Voraussetzungen für eine Entschädigung erfüllen.",
+    deniedBoardingPassengerFault:
+      "Die Nichtbeförderung scheint auf Gründe zurückzugehen, die beim Fluggast lagen.",
+    deniedBoardingAirlineFault:
+      "Die Nichtbeförderung sieht nach Überbuchung oder einem anderen Grund auf Seiten der Fluggesellschaft aus.",
+    extraordinaryCircumstancesReview:
+      "Die Fluggesellschaft beruft sich auf außergewöhnliche Umstände; eine manuelle Prüfung ist erforderlich.",
   }),
   cs: makeReasonLabels({
     outOfScope: "Let je mimo rozsah EU261/UK261.",
@@ -1739,6 +1810,116 @@ const simpleCopies: Record<SimpleLocaleCode, Partial<CalculatorCopy>> = {
       clearLabel: "クリア",
     },
   },
+  de: {
+    language: "German",
+    numberLocale: "de-DE",
+    campaign: "de_compensation_calculator",
+    claimWinger: {
+      langParam: "de",
+      defaultUrl: "https://claimwinger.com/de/flugentschaedigung-rechner/",
+      delayUrl: "https://claimwinger.com/de/verspaeteter-flug/",
+      cancelledUrl: "https://claimwinger.com/de/annullierter-flug/",
+    },
+    steps: {
+      label: (c, t) => `Schritt ${c} von ${t}`,
+      back: "Zurück",
+      next: "Weiter",
+      done: "✓",
+    },
+    disruptionLabels: {
+      delay: {
+        title: "Verspätung",
+        description: "Der Flug erreichte das Endziel mehrere Stunden zu spät.",
+      },
+      cancelled: {
+        title: "Annullierung",
+        description:
+          "Die Fluggesellschaft hat den Flug annulliert oder Sie auf einen anderen Flug umgebucht.",
+      },
+      denied_boarding: {
+        title: "Nichtbeförderung",
+        description: "Sie durften trotz gültiger Buchung nicht an Bord.",
+      },
+      missed_connection: {
+        title: "Verpasster Anschlussflug",
+        description: "Eine Verspätung auf dem ersten Teilflug hat den Rest der Reise gestört.",
+      },
+    },
+    routeBandLabels: {
+      short: "kurze Strecke",
+      medium: "mittlere Strecke",
+      long: "lange Strecke",
+    },
+    routeStep: {
+      ...baseCopy.routeStep,
+      title: "Flugroute",
+      description:
+        "Dieser Rechner prüft verspätete und annullierte Flüge, Nichtbeförderung und verpasste Anschlussflüge nach der EU-Fluggastrechteverordnung 261/2004 (EU261) und UK261. Wählen Sie die Flughäfen aus und geben Sie an, ob die ausführende Fluggesellschaft aus EU/UK/CH/EEA stammt.",
+      fromLabel: "Abflug von",
+      toLabel: "Ankunft in",
+      swapLabel: "Flughäfen tauschen",
+      carrierTitle: "Ausführende Fluggesellschaft",
+      carrierEuTitle: "EU / UK / CH / EEA",
+      carrierEuDescription: "Z. B. Lufthansa, Eurowings, LOT Polish Airlines, Ryanair, Condor.",
+      carrierOtherTitle: "Außerhalb dieses Gebiets",
+      carrierOtherDescription: "Z. B. Emirates, Qatar Airways, Turkish Airlines, Air India.",
+      carrierHint:
+        "Bei Abflügen von einem Flughafen in EU/UK/CH/EEA gelten die Regeln in der Regel auch für außereuropäische Fluggesellschaften. Bei Ankünften in diesem Gebiet kommt es auf die ausführende Fluggesellschaft an.",
+    },
+    situationStep: {
+      title: "Was ist passiert?",
+      description:
+        "Wählen Sie die Situation aus, um einzuschätzen, ob Ihnen 250, 400 oder 600 € Entschädigung zustehen können. Der Betrag hängt von der Distanz ab: bis 1500 km 250 € (z. B. Frankfurt–Warschau, ca. 900 km), 1500 bis 3500 km 400 € (z. B. Berlin–Antalya, ca. 2500 km), über 3500 km 600 € (z. B. Frankfurt–New York, ca. 6200 km).",
+    },
+    result: {
+      ...baseCopy.result,
+      needsReview: "Prüfung erforderlich",
+      probableAmount: "Wahrscheinlicher Betrag",
+      result: "Ergebnis",
+      noAmount: "0 €",
+      perPassenger: "Schätzung pro Fluggast",
+      notEligible:
+        "Dieser Flug erfüllt die Voraussetzungen für eine Entschädigung wahrscheinlich nicht.",
+      reducedByHalf: (baseAmount) => `Der Grundbetrag von ${baseAmount} € wurde um 50 % gekürzt`,
+      distanceLabel: "Distanz",
+      routeClassLabel: "Streckenklasse",
+      scopeLabel: "Anwendungsbereich",
+      coveredScope: "EU/UK/CH/EEA",
+      outsideScope: "außerhalb des Anwendungsbereichs",
+      explanationTitle: "Was bedeutet das Ergebnis?",
+      explanationText:
+        "Dies ist eine erste Einschätzung der Entschädigung für einen verspäteten oder annullierten Flug. ClaimWinger prüft anschließend die Buchung, die tatsächliche Ankunftszeit, den Grund der Flugstörung und die Verantwortung der Fluggesellschaft.",
+      reasonsTitle: "Begründung",
+      ctaLabel: "Fall an ClaimWinger übergeben",
+      resetLabel: "Neu starten",
+    },
+    preview: {
+      ...baseCopy.preview,
+      badge: "EU261 / UK261 / CH / EEA",
+      fromFallback: "Abflug",
+      toFallback: "Ankunft",
+      distanceLabel: "Distanz",
+      routeLabel: "Route",
+      amountLabel: "Betrag",
+      emptyText:
+        "Wählen Sie eine Route, um Distanz, Streckenklasse und den ungefähren Betrag zu sehen.",
+      ruleTitle: "Schnelle Regel für Fluggäste",
+      ruleText:
+        "Fällt der Flug unter EU261 oder UK261, kann eine Verspätung von mindestens 3 Stunden am Endziel eine Entschädigung von bis zu 600 € pro Fluggast bedeuten. Auf London-Routen gilt UK261 mit Beträgen in Pfund (£).",
+    },
+    map: {
+      routeMapLabel: "Routenkarte",
+      fittedFrameLabel: "Ansicht an die Distanz angepasst",
+      distanceLabel: "Distanz",
+      emptyText: "Wählen Sie Abflug- und Ankunftsflughafen, um die Routenkarte zu sehen.",
+      ariaRoute: (f, t, d) => `Routenkarte ${f}-${t}, Distanz ${d} Kilometer`,
+      ariaDefault: "Karte der Flugroute",
+    },
+    airport: {
+      searchPlaceholder: "Stadt oder Code, z. B. FRA",
+      clearLabel: "Löschen",
+    },
+  },
   bg: {
     language: "Bulgarian",
     numberLocale: "bg-BG",
@@ -2289,6 +2470,7 @@ export const calculatorCopies: Record<CalculatorLocaleCode, CalculatorCopy> = {
   lv: mergeCopy("lv"),
   et: mergeCopy("et"),
   ja: mergeCopy("ja"),
+  de: mergeCopy("de"),
   sr: mergeCopy("sr"),
 };
 
