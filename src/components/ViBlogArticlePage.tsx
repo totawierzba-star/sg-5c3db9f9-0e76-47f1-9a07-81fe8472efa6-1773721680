@@ -172,6 +172,17 @@ export function ViBlogArticlePage({ article }: ViBlogArticlePageProps) {
             </Card>
           </section>
 
+          <ClaimWingerViSection
+            className="mb-12"
+            title={embedCopy.title}
+            description={embedCopy.description}
+            ctaHref={primaryClaimHref}
+            ctaLabel={embedCopy.ctaLabel}
+            placement={`vi_article_${article.slug}_embed_high`}
+            loadingLabel="Đang tải form ClaimWinger tiếng Việt..."
+            loadingDescription="Bạn có thể kiểm tra hồ sơ ngay trong luồng tiếng Việt mà không cần rời bài viết."
+          />
+
           <section className="mb-10">
             <div className="grid gap-4 md:grid-cols-2">
               {article.keyPoints.map((point) => (
@@ -184,17 +195,6 @@ export function ViBlogArticlePage({ article }: ViBlogArticlePageProps) {
               ))}
             </div>
           </section>
-
-          <ClaimWingerViSection
-            className="mb-12"
-            title={embedCopy.title}
-            description={embedCopy.description}
-            ctaHref={primaryClaimHref}
-            ctaLabel={embedCopy.ctaLabel}
-            placement={`vi_article_${article.slug}_embed_high`}
-            loadingLabel="Đang tải form ClaimWinger tiếng Việt..."
-            loadingDescription="Bạn có thể kiểm tra hồ sơ ngay trong luồng tiếng Việt mà không cần rời bài viết."
-          />
 
           {article.sections.map((section) => (
             <section key={section.title} className="mb-12">

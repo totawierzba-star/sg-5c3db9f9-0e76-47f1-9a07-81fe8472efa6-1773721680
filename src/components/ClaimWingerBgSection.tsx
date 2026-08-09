@@ -84,7 +84,7 @@ export function ClaimWingerBgSection({
 
       <ClaimWingerHeroEmbed
         className="mb-8"
-        lang="en"
+        lang="bg"
         queryParams={{
           utm_source: "problemlot-bg",
           utm_medium: "embed",

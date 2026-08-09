@@ -11,7 +11,7 @@ import { ClaimWingerZhSection } from "@/components/ClaimWingerZhSection";
 
 const EMBED_ATTR = "data-claimwinger-blog-embed";
 const HIDDEN_ATTR = "data-claimwinger-blog-embed-hidden";
-const EXISTING_EMBED_SELECTOR = '[data-claimwinger-embed="true"]';
+const EXISTING_EMBED_SELECTOR = "[data-claimwinger-embed], #claimwinger-form";
 
 type BlogEmbedConfig = {
   isMatch: (path: string) => boolean;

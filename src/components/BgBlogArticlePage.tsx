@@ -266,17 +266,6 @@ export function BgBlogArticlePage({ article }: BgBlogArticlePageProps) {
             </Card>
           </section>
 
-          <section className="mb-10 grid gap-4 md:grid-cols-2">
-            {content.keyPoints.map((point) => (
-              <Card key={point} className="rounded-2xl border-sky-100 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-sky-700 dark:text-sky-300" />
-                  <p className="text-sm leading-6 text-slate-700 dark:text-slate-300">{point}</p>
-                </div>
-              </Card>
-            ))}
-          </section>
-
           <ClaimWingerBgSection
             className="mb-12"
             title="Проверете случая си в ClaimWinger"
@@ -287,6 +276,17 @@ export function BgBlogArticlePage({ article }: BgBlogArticlePageProps) {
             loadingLabel="Зареждане на английския формуляр ClaimWinger..."
             loadingDescription="Можете да проверите случая си директно тук, без предварително плащане."
           />
+
+          <section className="mb-10 grid gap-4 md:grid-cols-2">
+            {content.keyPoints.map((point) => (
+              <Card key={point} className="rounded-2xl border-sky-100 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-sky-700 dark:text-sky-300" />
+                  <p className="text-sm leading-6 text-slate-700 dark:text-slate-300">{point}</p>
+                </div>
+              </Card>
+            ))}
+          </section>
 
           <main className="space-y-8">
             <CompensationTable />
