@@ -6,9 +6,9 @@ export const config = {
 };
 
 const BRAND_NAME = "Problemlot";
-const DEFAULT_TITLE = "EU261, opoznienia i odwolane loty";
+const DEFAULT_TITLE = "EU261, opóźnienia i odwołane loty";
 const DEFAULT_DESCRIPTION =
-  "Przewodniki dla pasazerow: opoznienia, odwolania, overbooking i odszkodowanie do 600 EUR.";
+  "Przewodniki dla pasażerów: opóźnienia, odwołania, overbooking i odszkodowanie do 600 EUR.";
 
 function clampText(value: string, maxLength: number) {
   if (value.length <= maxLength) {
@@ -327,10 +327,10 @@ export default function handler(req: NextRequest) {
                   }}
                 >
                   <div style={{ display: "flex", fontWeight: 700 }}>
-                    Opoznienia
+                    Opóźnienia
                   </div>
                   <div style={{ display: "flex", fontWeight: 700 }}>
-                    Odwolania
+                    Odwołania
                   </div>
                   <div style={{ display: "flex", fontWeight: 700 }}>
                     Odszkodowania
